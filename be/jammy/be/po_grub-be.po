@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-12-13 13:32+0000\n"
-"PO-Revision-Date: 2021-12-25 23:29\n"
-"Last-Translator: Mikola Tsekhan <mail@tsekhan.com>\n"
+"POT-Creation-Date: 2022-04-15 23:47+0000\n"
+"PO-Revision-Date: 2022-04-18 16:20\n"
+"Last-Translator: \n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-12-19 11:09+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2022-04-18 15:20+0000\n"
+"X-Generator: Launchpad (build 5cc3bd61c85a328825183f316ddd801c0f7d7ef2)\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -25,27 +25,63 @@ msgstr ""
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:1097
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:87
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:174
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:253
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:309
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:917
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:916
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:345
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:419
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:87
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:174
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:917
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:916
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:87
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:174
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:519
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:346
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:420
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:243
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:297
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:340
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:412
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:916
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:368
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:442
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:88
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:179
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:340
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:412
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:364
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:409
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:472
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:243
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:297
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:664
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:1047
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:139
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:406
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:643
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:776
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:852
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:862
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:459
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:539
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:238
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:429
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:269
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:341
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:305
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:381
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:364
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:409
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:472
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:44
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:368
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:441
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:86
 #: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/disk/loopback.c:93
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:915
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:251
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:306
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:243
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:297
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:914
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:348
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:421
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:232
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:340
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:412
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1468
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1813
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2091
@@ -72,13 +108,13 @@ msgstr ""
 #: grub-core/disk/loopback.c:86 grub-core/efiemu/main.c:293
 #: grub-core/font/font_cmd.c:32 grub-core/kern/emu/hostdisk.c:519
 #: grub-core/loader/arm/linux.c:368 grub-core/loader/arm/linux.c:413
-#: grub-core/loader/arm/linux.c:476 grub-core/loader/arm64/linux.c:254
-#: grub-core/loader/arm64/linux.c:310 grub-core/loader/arm64/xen_boot.c:398
+#: grub-core/loader/arm/linux.c:476 grub-core/loader/arm64/xen_boot.c:398
 #: grub-core/loader/arm64/xen_boot.c:411 grub-core/loader/arm64/xen_boot.c:462
-#: grub-core/loader/efi/chainloader.c:917 grub-core/loader/i386/bsd.c:1469
+#: grub-core/loader/efi/chainloader.c:915 grub-core/loader/efi/linux.c:380
+#: grub-core/loader/efi/linux.c:453 grub-core/loader/i386/bsd.c:1469
 #: grub-core/loader/i386/bsd.c:1814 grub-core/loader/i386/bsd.c:2092
 #: grub-core/loader/i386/coreboot/chainloader.c:438
-#: grub-core/loader/i386/efi/linux.c:88 grub-core/loader/i386/efi/linux.c:179
+#: grub-core/loader/i386/efi/linux.c:87 grub-core/loader/i386/efi/linux.c:177
 #: grub-core/loader/i386/linux.c:706 grub-core/loader/i386/linux.c:1102
 #: grub-core/loader/i386/pc/chainloader.c:290
 #: grub-core/loader/i386/pc/freedos.c:105 grub-core/loader/i386/pc/linux.c:141
@@ -86,8 +122,8 @@ msgstr ""
 #: grub-core/loader/i386/pc/plan9.c:409
 #: grub-core/loader/i386/pc/pxechainloader.c:94
 #: grub-core/loader/i386/pc/truecrypt.c:96 grub-core/loader/i386/xen.c:643
-#: grub-core/loader/i386/xen.c:776 grub-core/loader/i386/xen.c:852
-#: grub-core/loader/i386/xen.c:862 grub-core/loader/i386/xnu.c:487
+#: grub-core/loader/i386/xen.c:776 grub-core/loader/i386/xen.c:851
+#: grub-core/loader/i386/xen.c:861 grub-core/loader/i386/xnu.c:487
 #: grub-core/loader/ia64/efi/linux.c:459 grub-core/loader/ia64/efi/linux.c:539
 #: grub-core/loader/mips/linux.c:238 grub-core/loader/mips/linux.c:429
 #: grub-core/loader/multiboot.c:323 grub-core/loader/multiboot.c:375
@@ -106,11 +142,27 @@ msgstr ""
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/efi/linux.c:92
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:1103
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:93
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:260
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:352
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:93
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:93
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:258
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:250
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:353
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:250
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:347
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:375
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:94
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:347
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:250
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:1053
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:412
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:783
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:867
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:545
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:432
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:347
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:387
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:375
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:355
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:347
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1805
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1906
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2013
@@ -128,12 +180,12 @@ msgstr ""
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/xnu.c:1308
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/xnu.c:1449
 #: grub-core/commands/boot.c:147 grub-core/commands/legacycfg.c:552
-#: grub-core/commands/legacycfg.c:593 grub-core/loader/arm64/linux.c:261
+#: grub-core/commands/legacycfg.c:593 grub-core/loader/efi/linux.c:387
 #: grub-core/loader/i386/bsd.c:1806 grub-core/loader/i386/bsd.c:1907
 #: grub-core/loader/i386/bsd.c:2014 grub-core/loader/i386/bsd.c:2047
-#: grub-core/loader/i386/bsd.c:2096 grub-core/loader/i386/efi/linux.c:94
+#: grub-core/loader/i386/bsd.c:2096 grub-core/loader/i386/efi/linux.c:93
 #: grub-core/loader/i386/linux.c:1108 grub-core/loader/i386/pc/linux.c:422
-#: grub-core/loader/i386/xen.c:783 grub-core/loader/i386/xen.c:867
+#: grub-core/loader/i386/xen.c:783 grub-core/loader/i386/xen.c:866
 #: grub-core/loader/ia64/efi/linux.c:545 grub-core/loader/mips/linux.c:432
 #: grub-core/loader/multiboot.c:389
 #: grub-core/loader/powerpc/ieee1275/linux.c:347
@@ -149,35 +201,61 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:114
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:114
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:114
-#: grub-core/loader/i386/efi/linux.c:119
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:119
+#: grub-core/loader/i386/efi/linux.c:118
 msgid "can't allocate initrd"
 msgstr ""
 
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/efi/linux.c:130
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:720
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:131
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:342
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1013
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1034
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1074
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1012
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1033
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1073
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:452
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:131
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1013
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1034
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1074
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1012
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1033
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1073
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:131
 #: .pc/debug_verifiers.patch/grub-core/kern/verifiers.c:156
+#: .pc/efi-EFI-Device-Tree-Fixup-Protocol.patch/grub-core/loader/efi/fdt.c:155
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:453
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:330
+#: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:154
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:445
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/efi/fdt.c:142
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:1012
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:1033
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:1073
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:475
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:136
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:445
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:319
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:330
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:675
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:791
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:1011
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:150
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:326
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:368
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:942
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:423
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:471
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:319
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:319
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:143
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:146
 #: .pc/pc-verifiers-module.patch/grub-core/kern/verifiers.c:156
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1002
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1023
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1063
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:339
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:330
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:474
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1001
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1022
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1062
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:454
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:292
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:313
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:345
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:142
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:145
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:445
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1282
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2123
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:675
@@ -199,25 +277,25 @@ msgstr ""
 #: grub-core/efiemu/loadcore.c:350 grub-core/kern/elf.c:117
 #: grub-core/kern/elfXX.c:29 grub-core/kern/elfXX.c:156
 #: grub-core/kern/verifiers.c:158 grub-core/loader/arm/linux.c:323
-#: grub-core/loader/arm64/linux.c:343 grub-core/loader/arm64/xen_boot.c:356
-#: grub-core/loader/efi/chainloader.c:1013
-#: grub-core/loader/efi/chainloader.c:1034
-#: grub-core/loader/efi/chainloader.c:1074 grub-core/loader/efi/fdt.c:151
-#: grub-core/loader/i386/bsd.c:1283 grub-core/loader/i386/bsd.c:2124
-#: grub-core/loader/i386/bsdXX.c:20 grub-core/loader/i386/bsdXX.c:36
-#: grub-core/loader/i386/bsdXX.c:63 grub-core/loader/i386/bsdXX.c:357
-#: grub-core/loader/i386/bsdXX.c:376 grub-core/loader/i386/bsdXX.c:519
-#: grub-core/loader/i386/bsdXX.c:535 grub-core/loader/i386/bsdXX.c:615
-#: grub-core/loader/i386/bsdXX.c:638
+#: grub-core/loader/arm64/xen_boot.c:356
+#: grub-core/loader/efi/chainloader.c:1011
+#: grub-core/loader/efi/chainloader.c:1032
+#: grub-core/loader/efi/chainloader.c:1072 grub-core/loader/efi/fdt.c:192
+#: grub-core/loader/efi/linux.c:486 grub-core/loader/i386/bsd.c:1283
+#: grub-core/loader/i386/bsd.c:2124 grub-core/loader/i386/bsdXX.c:20
+#: grub-core/loader/i386/bsdXX.c:36 grub-core/loader/i386/bsdXX.c:63
+#: grub-core/loader/i386/bsdXX.c:357 grub-core/loader/i386/bsdXX.c:376
+#: grub-core/loader/i386/bsdXX.c:519 grub-core/loader/i386/bsdXX.c:535
+#: grub-core/loader/i386/bsdXX.c:615 grub-core/loader/i386/bsdXX.c:638
 #: grub-core/loader/i386/coreboot/chainloader.c:112
 #: grub-core/loader/i386/coreboot/chainloader.c:148
 #: grub-core/loader/i386/coreboot/chainloader.c:170
-#: grub-core/loader/i386/efi/linux.c:136 grub-core/loader/i386/linux.c:725
+#: grub-core/loader/i386/efi/linux.c:135 grub-core/loader/i386/linux.c:725
 #: grub-core/loader/i386/multiboot_mbi.c:171
 #: grub-core/loader/i386/pc/chainloader.c:202
 #: grub-core/loader/i386/pc/linux.c:160 grub-core/loader/i386/pc/plan9.c:457
 #: grub-core/loader/i386/pc/plan9.c:550 grub-core/loader/i386/pc/plan9.c:566
-#: grub-core/loader/i386/xen.c:942 grub-core/loader/i386/xen_file.c:72
+#: grub-core/loader/i386/xen.c:941 grub-core/loader/i386/xen_file.c:72
 #: grub-core/loader/i386/xen_fileXX.c:43 grub-core/loader/i386/xen_fileXX.c:186
 #: grub-core/loader/i386/xen_fileXX.c:339 grub-core/loader/ia64/efi/linux.c:423
 #: grub-core/loader/ia64/efi/linux.c:471 grub-core/loader/linux.c:319
@@ -243,7 +321,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:188
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:188
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:188
-#: grub-core/loader/i386/efi/linux.c:193 grub-core/loader/i386/linux.c:718
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:193
+#: grub-core/loader/i386/efi/linux.c:191 grub-core/loader/i386/linux.c:718
 #: grub-core/loader/i386/pc/linux.c:153
 msgid "cannot allocate kernel buffer"
 msgstr ""
@@ -252,18 +331,21 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:194
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:194
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:194
-#: grub-core/loader/i386/efi/linux.c:199
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:199
+#: grub-core/loader/i386/efi/linux.c:197
 #, c-format
 msgid "Can't read kernel %s"
 msgstr ""
 
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/efi/linux.c:201
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:204
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:351
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:461
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:204
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:204
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:348
-#: grub-core/loader/arm64/linux.c:355 grub-core/loader/i386/efi/linux.c:209
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:465
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:487
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:209
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:463
 #, c-format
 msgid "%s has invalid signature"
 msgstr ""
@@ -272,7 +354,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:236
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:236
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:236
-#: grub-core/loader/i386/efi/linux.c:241
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:241
+#: grub-core/loader/i386/efi/linux.c:228
 msgid "invalid magic number"
 msgstr ""
 
@@ -280,7 +363,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:243
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:243
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:243
-#: grub-core/loader/i386/efi/linux.c:248
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:248
+#: grub-core/loader/i386/efi/linux.c:235
 msgid "too many setup sectors"
 msgstr ""
 
@@ -288,7 +372,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:250
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:250
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:250
-#: grub-core/loader/i386/efi/linux.c:255
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:255
+#: grub-core/loader/i386/efi/linux.c:242
 msgid "kernel too old"
 msgstr ""
 
@@ -296,7 +381,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:257
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:257
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:257
-#: grub-core/loader/i386/efi/linux.c:262
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:262
+#: grub-core/loader/i386/efi/linux.c:249
 msgid "kernel doesn't support EFI handover"
 msgstr ""
 
@@ -304,7 +390,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:265
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:265
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:265
-#: grub-core/loader/i386/efi/linux.c:270
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:270
+#: grub-core/loader/i386/efi/linux.c:257
 msgid "kernel doesn't support 64-bit CPUs"
 msgstr ""
 
@@ -312,7 +399,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:275
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:275
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:275
-#: grub-core/loader/i386/efi/linux.c:280
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:280
+#: grub-core/loader/i386/efi/linux.c:267
 msgid "kernel doesn't support 32-bit handover"
 msgstr ""
 
@@ -320,7 +408,8 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:285
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:285
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:285
-#: grub-core/loader/i386/efi/linux.c:290
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:290
+#: grub-core/loader/i386/efi/linux.c:277
 msgid "can't allocate cmdline"
 msgstr ""
 
@@ -328,28 +417,46 @@ msgstr ""
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:318
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:318
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:318
-#: grub-core/loader/i386/efi/linux.c:323
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:323
+#: grub-core/loader/i386/efi/linux.c:310
 msgid "can't allocate kernel"
 msgstr ""
 
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/efi/linux.c:371
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:1181
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:375
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:405
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:515
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:375
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:375
+#: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:50
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:520
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:383
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:498
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:542
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:380
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:498
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:493
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:383
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:1131
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:483
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:970
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:972
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:591
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:498
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:383
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:511
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:493
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:399
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:383
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:530
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:514
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:498
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:1131
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:483
-#: grub-core/loader/arm/linux.c:505 grub-core/loader/arm64/linux.c:410
-#: grub-core/loader/i386/efi/linux.c:380 grub-core/loader/i386/linux.c:1186
-#: grub-core/loader/i386/pc/linux.c:496 grub-core/loader/i386/xen.c:970
-#: grub-core/loader/i386/xen.c:972 grub-core/loader/ia64/efi/linux.c:591
+#: grub-core/loader/arm/linux.c:505 grub-core/loader/efi/linux.c:542
+#: grub-core/loader/i386/efi/linux.c:367 grub-core/loader/i386/linux.c:1186
+#: grub-core/loader/i386/pc/linux.c:496 grub-core/loader/i386/xen.c:969
+#: grub-core/loader/i386/xen.c:971 grub-core/loader/ia64/efi/linux.c:591
 #: grub-core/loader/mips/linux.c:498
 #: grub-core/loader/powerpc/ieee1275/linux.c:383
-#: grub-core/loader/riscv/linux.c:50
 #: grub-core/loader/sparc64/ieee1275/linux.c:511
 msgid "Load Linux."
 msgstr ""
@@ -357,25 +464,42 @@ msgstr ""
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/efi/linux.c:374
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:1183
 #: .pc/0077-ubuntu-Update-the-linux-boot-protocol-version-check.patch/grub-core/loader/i386/efi/linux.c:378
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:407
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:517
 #: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/i386/efi/linux.c:378
 #: .pc/0105-efilinux-Fix-integer-overflows-in-grub_cmd_initrd.patch/grub-core/loader/i386/efi/linux.c:378
+#: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:52
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:522
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:385
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:500
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:544
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:383
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:500
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:495
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:385
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:1133
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:486
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:974
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:594
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:500
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:385
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:513
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:495
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:401
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:385
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:532
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:516
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:500
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:1133
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:486
-#: grub-core/loader/arm/linux.c:507 grub-core/loader/arm64/linux.c:412
-#: grub-core/loader/i386/efi/linux.c:383 grub-core/loader/i386/linux.c:1188
-#: grub-core/loader/i386/pc/linux.c:499 grub-core/loader/i386/xen.c:974
+#: grub-core/loader/arm/linux.c:507 grub-core/loader/efi/linux.c:544
+#: grub-core/loader/i386/efi/linux.c:370 grub-core/loader/i386/linux.c:1188
+#: grub-core/loader/i386/pc/linux.c:499 grub-core/loader/i386/xen.c:973
 #: grub-core/loader/ia64/efi/linux.c:594 grub-core/loader/mips/linux.c:500
 #: grub-core/loader/powerpc/ieee1275/linux.c:385
-#: grub-core/loader/riscv/linux.c:52
 #: grub-core/loader/sparc64/ieee1275/linux.c:513
 msgid "Load initrd."
 msgstr ""
 
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:469
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:467
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1153
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:467
 #: grub-core/loader/i386/bsd.c:1154 grub-core/loader/i386/linux.c:469
@@ -384,6 +508,7 @@ msgid "Booting in blind mode"
 msgstr ""
 
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:926
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:882
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:882
 #: grub-core/loader/i386/linux.c:931
 msgid "Legacy `ask' parameter no longer supported."
@@ -392,6 +517,9 @@ msgstr ""
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:942
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:952
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:982
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:898
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:908
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:938
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:898
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:908
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:938
@@ -404,45 +532,72 @@ msgstr ""
 #. TRANSLATORS: "x" has to be entered in, like an identifier,
 #. so please don't use better Unicode codepoints.
 #: .pc/0076-ubuntu-Make-the-linux-command-in-EFI-grub-always-try.patch/grub-core/loader/i386/linux.c:965
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/linux.c:921
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/linux.c:921
 #: grub-core/loader/i386/linux.c:970
 #, c-format
 msgid "%s is deprecated. VGA mode %d isn't recognized. Use set gfxpayload=WIDTHxHEIGHT[xDEPTH] before linux command instead.\n"
 msgstr ""
 
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:69
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:67
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:59
-#: grub-core/loader/arm64/linux.c:70
-msgid "plain image kernel not supported - rebuild with CONFIG_(U)EFI_STUB enabled"
-msgstr ""
-
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:275
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:333
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/arm64/linux.c:362
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:591
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:598
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1026
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:591
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:598
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1026
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:590
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:597
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1025
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:370
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:385
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:443
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:472
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:590
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:597
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1025
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:371
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:386
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:444
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:477
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:265
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:321
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:340
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:365
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:380
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:436
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:455
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:590
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:597
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:1025
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:393
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:408
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:466
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:499
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:365
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:380
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:436
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:455
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:259
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:265
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:321
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:340
 #: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:259
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:95
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:107
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:117
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:146
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:590
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:597
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1015
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:273
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:330
-#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/arm64/linux.c:356
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:393
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:408
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:465
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:487
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:589
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:596
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1014
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:373
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:388
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:445
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:471
 #: .pc/ubuntu-linuxefi.patch/grub-core/kern/efi/mm.c:144
 #: .pc/ubuntu-linuxefi.patch/grub-core/kern/efi/mm.c:157
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:265
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:321
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/arm64/linux.c:340
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:305
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:365
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:380
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:436
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:455
 #: grub-core/commands/acpihalt.c:368 grub-core/kern/efi/mm.c:176
 #: grub-core/kern/efi/mm.c:189 grub-core/kern/emu/misc.c:95
 #: grub-core/kern/emu/misc.c:107 grub-core/kern/emu/misc.c:117
@@ -450,24 +605,44 @@ msgstr ""
 #: grub-core/kern/emu/mm.c:44 grub-core/kern/emu/mm.c:73
 #: grub-core/kern/mm.c:376 grub-core/lib/relocator.c:1282
 #: grub-core/lib/relocator.c:1439 grub-core/lib/relocator.c:1538
-#: grub-core/loader/arm/linux.c:263 grub-core/loader/arm64/linux.c:276
-#: grub-core/loader/arm64/linux.c:334 grub-core/loader/arm64/linux.c:367
-#: grub-core/loader/arm64/xen_boot.c:344 grub-core/loader/arm64/xen_boot.c:367
-#: grub-core/loader/efi/chainloader.c:591
-#: grub-core/loader/efi/chainloader.c:598
-#: grub-core/loader/efi/chainloader.c:1026 grub-core/osdep/unix/dl.c:48
+#: grub-core/loader/arm/linux.c:263 grub-core/loader/arm64/xen_boot.c:344
+#: grub-core/loader/arm64/xen_boot.c:367 grub-core/loader/efi/chainloader.c:590
+#: grub-core/loader/efi/chainloader.c:597
+#: grub-core/loader/efi/chainloader.c:1024 grub-core/loader/efi/linux.c:405
+#: grub-core/loader/efi/linux.c:420 grub-core/loader/efi/linux.c:477
+#: grub-core/loader/efi/linux.c:499 grub-core/osdep/unix/dl.c:48
 #: grub-core/osdep/windows/dl.c:46 grub-core/script/lexer.c:161
 #: grub-core/script/lexer.c:197
 msgid "out of memory"
 msgstr ""
 
-#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1136
-#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1137
-#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1119
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/chainloader.c:1135
+#: .pc/0099-chainloader-Avoid-a-double-free-when-validation-fail.patch/grub-core/loader/efi/chainloader.c:1136
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/chainloader.c:1139
+#: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/loader/efi/chainloader.c:1118
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/chainloader.c:437
-#: grub-core/loader/efi/chainloader.c:1140
+#: grub-core/loader/efi/chainloader.c:1135
 #: grub-core/loader/i386/pc/chainloader.c:303
 msgid "Load another boot loader."
+msgstr ""
+
+#: .pc/0096-linuxefi-fail-kernel-validation-without-shim-protoco.patch/grub-core/loader/efi/linux.c:77
+#: .pc/efi-implement-grub_efi_run_image.patch/grub-core/loader/efi/linux.c:78
+#: .pc/efi-implemented-LoadFile2-initrd-loading-protocol-fo.patch/grub-core/loader/arm64/linux.c:59
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/arm64/linux.c:68
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/efi/linux.c:78
+#: .pc/loader-Move-arm64-linux-loader-to-common-code.patch/grub-core/loader/arm64/linux.c:68
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm64/linux.c:59
+#: .pc/ubuntu-disable-LOAD-FILE2-protocol-for-initrd-on-ARM.patch/grub-core/loader/efi/linux.c:78
+#: .pc/ubuntu-linuxefi-arm64.patch/grub-core/loader/efi/linux.c:76
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/linux.c:68
+#: grub-core/loader/efi/linux.c:80
+msgid "plain image kernel not supported - rebuild with CONFIG_(U)EFI_STUB enabled"
+msgstr ""
+
+#: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:30
+#: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:40
+msgid "Linux not supported yet"
 msgstr ""
 
 #: .pc/blacklist-1440x900x32.patch/grub-core/video/i386/pc/vbe.c:1191
@@ -798,26 +973,27 @@ msgstr ""
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:180
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:186
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:208
-#: grub-core/disk/cryptodisk.c:705 grub-core/kern/emu/hostdisk.c:152
-#: grub-core/kern/emu/hostdisk.c:262 grub-core/kern/emu/hostdisk.c:434
-#: grub-core/kern/emu/misc.c:181 grub-core/kern/emu/misc.c:187
-#: grub-core/kern/emu/misc.c:209 grub-core/osdep/bsd/getroot.c:92
-#: grub-core/osdep/bsd/getroot.c:168 grub-core/osdep/hurd/getroot.c:68
-#: grub-core/osdep/linux/blocklist.c:65 grub-core/osdep/linux/getroot.c:150
-#: grub-core/osdep/linux/hostdisk.c:194 grub-core/osdep/linux/hostdisk.c:424
-#: grub-core/osdep/linux/ofpath.c:417 grub-core/osdep/linux/ofpath.c:422
-#: grub-core/osdep/linux/ofpath.c:517 grub-core/osdep/linux/ofpath.c:530
-#: grub-core/osdep/sun/getroot.c:110 grub-core/osdep/windows/blocklist.c:98
-#: grub-core/tests/video_checksum.c:279 util/editenv.c:54 util/glue-efi.c:125
-#: util/glue-efi.c:130 util/glue-efi.c:140 util/grub-editenv.c:139
-#: util/grub-editenv.c:198 util/grub-file.c:83 util/grub-fstest.c:128
-#: util/grub-fstest.c:568 util/grub-install-common.c:92
-#: util/grub-install-common.c:94 util/grub-install-common.c:101
-#: util/grub-install-common.c:694 util/grub-menulst2cfg.c:53
-#: util/grub-menulst2cfg.c:68 util/grub-mkimage.c:307 util/grub-mklayout.c:504
-#: util/grub-mklayout.c:516 util/grub-mknetdir.c:133 util/grub-mknetdir.c:151
-#: util/grub-mkrescue.c:630 util/grub-mkrescue.c:634 util/grub-mkrescue.c:884
-#: util/grub-mkrescue.c:888 util/grub-mkstandalone.c:253 util/grub-mount.c:498
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:498 grub-core/disk/cryptodisk.c:705
+#: grub-core/kern/emu/hostdisk.c:152 grub-core/kern/emu/hostdisk.c:262
+#: grub-core/kern/emu/hostdisk.c:434 grub-core/kern/emu/misc.c:181
+#: grub-core/kern/emu/misc.c:187 grub-core/kern/emu/misc.c:209
+#: grub-core/osdep/bsd/getroot.c:92 grub-core/osdep/bsd/getroot.c:168
+#: grub-core/osdep/hurd/getroot.c:68 grub-core/osdep/linux/blocklist.c:65
+#: grub-core/osdep/linux/getroot.c:150 grub-core/osdep/linux/hostdisk.c:194
+#: grub-core/osdep/linux/hostdisk.c:424 grub-core/osdep/linux/ofpath.c:417
+#: grub-core/osdep/linux/ofpath.c:422 grub-core/osdep/linux/ofpath.c:517
+#: grub-core/osdep/linux/ofpath.c:530 grub-core/osdep/sun/getroot.c:110
+#: grub-core/osdep/windows/blocklist.c:98 grub-core/tests/video_checksum.c:279
+#: util/editenv.c:54 util/glue-efi.c:125 util/glue-efi.c:130
+#: util/glue-efi.c:140 util/grub-editenv.c:139 util/grub-editenv.c:198
+#: util/grub-file.c:83 util/grub-fstest.c:128 util/grub-fstest.c:568
+#: util/grub-install-common.c:92 util/grub-install-common.c:94
+#: util/grub-install-common.c:101 util/grub-install-common.c:694
+#: util/grub-menulst2cfg.c:53 util/grub-menulst2cfg.c:68
+#: util/grub-mkimage.c:307 util/grub-mklayout.c:504 util/grub-mklayout.c:516
+#: util/grub-mknetdir.c:133 util/grub-mknetdir.c:151 util/grub-mkrescue.c:630
+#: util/grub-mkrescue.c:634 util/grub-mkrescue.c:884 util/grub-mkrescue.c:888
+#: util/grub-mkstandalone.c:253 util/grub-mount.c:498
 #: util/grub-render-label.c:169 util/grub-script-check.c:175
 #: util/grub-syslinux2cfg.c:181 util/grub-syslinux2cfg.c:191
 #: util/grub-syslinux2cfg.c:212 util/grub-syslinux2cfg.c:228 util/misc.c:91
@@ -856,6 +1032,7 @@ msgstr ""
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:637
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:891
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:212
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:506
 #: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:766
 #: grub-core/disk/cryptodisk.c:810 grub-core/kern/emu/hostdisk.c:307
 #: grub-core/kern/emu/hostfs.c:149 grub-core/kern/emu/misc.c:213
@@ -948,6 +1125,29 @@ msgstr ""
 #: grub-core/kern/emu/hostdisk.c:567
 #, c-format
 msgid "the drive name `%s' in device.map is incorrect. Using %s instead. Please use the form [hfc]d[0-9]* (E.g. `hd0' or `cd')"
+msgstr ""
+
+#: .pc/efi-EFI-Device-Tree-Fixup-Protocol.patch/grub-core/loader/efi/fdt.c:161
+#: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:160
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/efi/fdt.c:148
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:450
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:450
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:152
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:151
+#: grub-core/loader/arm/linux.c:454 grub-core/loader/efi/fdt.c:198
+msgid "invalid device tree"
+msgstr ""
+
+#. TRANSLATORS: DTB stands for device tree blob.
+#: .pc/efi-EFI-Device-Tree-Fixup-Protocol.patch/grub-core/loader/efi/fdt.c:187
+#: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:185
+#: .pc/linux-ignore-FDT-unless-we-need-to-modify-it.patch/grub-core/loader/efi/fdt.c:173
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:498
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:498
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:177
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:176
+#: grub-core/loader/arm/linux.c:510 grub-core/loader/efi/fdt.c:224
+msgid "Load DTB file."
 msgstr ""
 
 #: .pc/efi-variable-storage-minimise-writes.patch/grub-core/osdep/unix/platform.c:77
@@ -1046,6 +1246,7 @@ msgstr ""
 #: .pc/install-powerpc-machtypes.patch/util/grub-install.c:313
 #: .pc/install-stage2-confusion.patch/util/grub-install.c:254
 #: .pc/install-stage2-confusion.patch/util/grub-install.c:301
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:594
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:97
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:101
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:104
@@ -1294,6 +1495,7 @@ msgstr ""
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:71
 #: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:71
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:108
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:458
 #: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:71
 #: grub-core/kern/emu/main.c:108 include/grub/util/install.h:71
 #: util/grub-editenv.c:58 util/grub-fstest.c:525 util/grub-glue-efi.c:58
@@ -1522,6 +1724,7 @@ msgstr ""
 #: .pc/install-stage2-confusion.patch/util/grub-install.c:304
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:109
 #: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:110
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:453
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:303
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:316
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:292
@@ -2235,6 +2438,36 @@ msgstr ""
 msgid "Installation finished. No error reported."
 msgstr ""
 
+#: .pc/efivar-check-that-efivarfs-is-writeable.patch/grub-core/osdep/unix/efivar.c:176
+#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:176
+#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:174
+#: grub-core/osdep/unix/efivar.c:179
+#, c-format
+msgid "Cannot set EFI variable %s"
+msgstr ""
+
+#: .pc/efivar-check-that-efivarfs-is-writeable.patch/grub-core/osdep/unix/efivar.c:557
+#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:526
+#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:431
+#: grub-core/osdep/unix/efivar.c:591
+msgid "EFI variables are not supported on this system."
+msgstr ""
+
+#: .pc/efivar-check-that-efivarfs-is-writeable.patch/grub-core/osdep/unix/efivar.c:566
+#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:535
+#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:440
+#: grub-core/osdep/unix/efivar.c:600
+msgid "Cannot read EFI Boot* variables"
+msgstr ""
+
+#: .pc/efivar-check-that-efivarfs-is-writeable.patch/grub-core/osdep/unix/efivar.c:629
+#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:594
+#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:474
+#: grub-core/osdep/unix/efivar.c:663
+#, c-format
+msgid "Cannot delete EFI variable %s"
+msgstr ""
+
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:85
 #: grub-core/gettext/gettext.c:85
 msgid "premature end of file"
@@ -2478,6 +2711,128 @@ msgstr ""
 #: grub-core/osdep/basic/no_platform.c:45
 #: grub-core/osdep/windows/platform.c:431
 msgid "no SGI routines are available for your platform"
+msgstr ""
+
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:110
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:225
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:139
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:248
+#: .pc/probe-fusionio.patch/util/deviceiter.c:601
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:364
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:422
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:287
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:296
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:225
+#: .pc/ubuntu-skip-disk-by-id-lvm-pvm-uuid-entries.patch/util/deviceiter.c:607
+#: grub-core/fs/ext2.c:724 grub-core/fs/squash4.c:467
+#: grub-core/kern/buffer.c:108 grub-core/kern/misc.c:364
+#: grub-core/kern/misc.c:422 grub-core/kern/mm.c:392 grub-core/lib/arg.c:224
+#: grub-core/lib/arg.c:471 grub-core/loader/i386/efi/linux.c:109
+#: grub-core/loader/i386/pc/linux.c:238 grub-core/loader/linux.c:139
+#: grub-core/loader/linux.c:248 grub-core/net/efi/dhcp.c:365
+#: grub-core/osdep/unix/config.c:112 grub-core/osdep/unix/config.c:137
+#: grub-core/osdep/unix/config.c:162 grub-core/script/lexer.c:179
+#: grub-core/video/bitmap.c:145 grub-core/video/readers/png.c:307
+#: grub-core/video/readers/png.c:312 include/grub/buffer.h:79
+#: include/grub/buffer.h:117 include/grub/misc.h:287 include/grub/misc.h:296
+#: util/deviceiter.c:610
+msgid "overflow is detected"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:242
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:242
+#: grub-core/loader/arm/linux.c:246
+msgid "device tree must be supplied (see `devicetree' command)"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:334
+#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:334
+#: grub-core/loader/arm/linux.c:338
+msgid "invalid zImage"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:789
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:873
+#: grub-core/loader/i386/xen.c:789 grub-core/loader/i386/xen.c:872
+msgid "initrd already loaded"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/xen.c:976
+#: grub-core/loader/i386/xen.c:975
+msgid "Load module."
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:124
+#: grub-core/loader/ia64/efi/linux.c:124
+msgid "Could not locate FPSWA driver"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:132
+#: grub-core/loader/ia64/efi/linux.c:132
+msgid "FPSWA protocol wasn't able to find the interface"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:335
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:212
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:216 grub-core/kern/dl.c:217
+#: grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
+#: grub-core/loader/i386/bsdXX.c:46 grub-core/loader/ia64/efi/linux.c:335
+#: grub-core/loader/multiboot_elfxx.c:69
+msgid "invalid arch-independent ELF magic"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:341
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:298
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:294
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:331
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1451
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/multiboot.c:232
+#: grub-core/kern/arm/dl.c:277 grub-core/kern/arm64/dl.c:44
+#: grub-core/kern/i386/dl.c:36 grub-core/kern/ia64/dl.c:41
+#: grub-core/kern/mips/dl.c:48 grub-core/kern/powerpc/dl.c:36
+#: grub-core/kern/riscv/dl.c:47 grub-core/kern/sparc64/dl.c:36
+#: grub-core/kern/x86_64/dl.c:36 grub-core/loader/i386/bsd.c:1452
+#: grub-core/loader/i386/bsdXX.c:49 grub-core/loader/ia64/efi/linux.c:341
+#: grub-core/loader/mips/linux.c:298 grub-core/loader/multiboot.c:233
+#: grub-core/loader/multiboot_elfxx.c:73
+#: grub-core/loader/powerpc/ieee1275/linux.c:294
+#: grub-core/loader/sparc64/ieee1275/linux.c:331
+msgid "invalid arch-dependent ELF magic"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:345
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:248
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:280
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:320
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:618
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:622
+#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:623
+#: grub-core/loader/ia64/efi/linux.c:345 grub-core/loader/mips/linux.c:248
+#: grub-core/loader/multiboot_elfxx.c:76
+#: grub-core/loader/powerpc/ieee1275/linux.c:280
+#: grub-core/loader/sparc64/ieee1275/linux.c:320
+msgid "this ELF file is not of the right type"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:580
+#: grub-core/loader/ia64/efi/linux.c:580
+msgid "No FPSWA found"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:582
+#: grub-core/loader/ia64/efi/linux.c:582
+#, c-format
+msgid "FPSWA revision: %x\n"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:591
+#: grub-core/loader/ia64/efi/linux.c:591
+msgid "FILE [ARGS...]"
+msgstr ""
+
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:597
+#: grub-core/loader/ia64/efi/linux.c:597
+msgid "Display FPSWA version."
 msgstr ""
 
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:212
@@ -2942,54 +3297,11 @@ msgstr ""
 msgid "list network addresses"
 msgstr ""
 
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:242
-#: grub-core/loader/arm/linux.c:246
-msgid "device tree must be supplied (see `devicetree' command)"
-msgstr ""
-
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:334
-#: grub-core/loader/arm/linux.c:338
-msgid "invalid zImage"
-msgstr ""
-
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:450
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:149
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:148
-#: grub-core/loader/arm/linux.c:454 grub-core/loader/efi/fdt.c:157
-msgid "invalid device tree"
-msgstr ""
-
-#. TRANSLATORS: DTB stands for device tree blob.
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/arm/linux.c:498
-#: .pc/no-devicetree-if-secure-boot.patch/grub-core/loader/efi/fdt.c:174
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/fdt.c:173
-#: grub-core/loader/arm/linux.c:510 grub-core/loader/efi/fdt.c:182
-msgid "Load DTB file."
-msgstr ""
-
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:212
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:216 grub-core/kern/dl.c:217
-#: grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
-#: grub-core/loader/i386/bsdXX.c:46 grub-core/loader/ia64/efi/linux.c:335
-#: grub-core/loader/multiboot_elfxx.c:69
-msgid "invalid arch-independent ELF magic"
-msgstr ""
-
 #: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:376
 #: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:380
 #: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:381
 #, c-format
 msgid "symbol `%s' not found"
-msgstr ""
-
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:618
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:622
-#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:623
-#: grub-core/loader/ia64/efi/linux.c:345 grub-core/loader/mips/linux.c:248
-#: grub-core/loader/multiboot_elfxx.c:76
-#: grub-core/loader/powerpc/ieee1275/linux.c:280
-#: grub-core/loader/sparc64/ieee1275/linux.c:320
-msgid "this ELF file is not of the right type"
 msgstr ""
 
 #: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:749
@@ -3031,28 +3343,6 @@ msgstr ""
 #: grub-core/osdep/linux/getroot.c:1059
 #, c-format
 msgid "unknown kind of RAID device `%s'"
-msgstr ""
-
-#: .pc/probe-fusionio.patch/util/deviceiter.c:601
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:364
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:422
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:287
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:296
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:225
-#: .pc/ubuntu-skip-disk-by-id-lvm-pvm-uuid-entries.patch/util/deviceiter.c:607
-#: grub-core/fs/ext2.c:724 grub-core/fs/squash4.c:467
-#: grub-core/kern/buffer.c:108 grub-core/kern/misc.c:364
-#: grub-core/kern/misc.c:422 grub-core/kern/mm.c:392 grub-core/lib/arg.c:224
-#: grub-core/lib/arg.c:471 grub-core/loader/i386/efi/linux.c:110
-#: grub-core/loader/i386/pc/linux.c:238 grub-core/loader/linux.c:139
-#: grub-core/loader/linux.c:248 grub-core/net/efi/dhcp.c:365
-#: grub-core/osdep/unix/config.c:112 grub-core/osdep/unix/config.c:137
-#: grub-core/osdep/unix/config.c:162 grub-core/script/lexer.c:179
-#: grub-core/video/bitmap.c:145 grub-core/video/readers/png.c:307
-#: grub-core/video/readers/png.c:312 include/grub/buffer.h:79
-#: include/grub/buffer.h:117 include/grub/misc.h:287 include/grub/misc.h:296
-#: util/deviceiter.c:610
-msgid "overflow is detected"
 msgstr ""
 
 #: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:563
@@ -3126,11 +3416,13 @@ msgid "Exit from GRUB."
 msgstr ""
 
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
-#: grub-core/kern/emu/main.c:99 util/grub-fstest.c:516 util/grub-mount.c:452
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452 grub-core/kern/emu/main.c:99
+#: util/grub-fstest.c:516 util/grub-mount.c:452
 msgid "DEVICE_NAME"
 msgstr ""
 
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:137
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:170
 #: grub-core/kern/emu/main.c:99 grub-core/loader/i386/bsd.c:138
@@ -3211,8 +3503,10 @@ msgid "%s: info:"
 msgstr ""
 
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:79
-#: grub-core/kern/emu/misc.c:79 util/grub-fstest.c:567 util/grub-fstest.c:576
-#: util/grub-mount.c:497 util/grub-mount.c:505
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:497
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:505 grub-core/kern/emu/misc.c:79
+#: util/grub-fstest.c:567 util/grub-fstest.c:576 util/grub-mount.c:497
+#: util/grub-mount.c:505
 #, c-format
 msgid "%s: error:"
 msgstr ""
@@ -3302,6 +3596,66 @@ msgstr ""
 #: .pc/ubuntu-efi-allow-loopmount-chainload.patch/grub-core/disk/loopback.c:232
 #: grub-core/disk/loopback.c:226
 msgid "Make a virtual drive from a file."
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:69
+#: grub-core/commands/legacycfg.c:531 grub-core/commands/legacycfg.c:545
+#: grub-core/commands/legacycfg.c:565 grub-core/commands/legacycfg.c:578
+#: grub-core/commands/time.c:43 grub-core/script/function.c:119
+#: util/grub-file.c:100 util/grub-fstest.c:57 util/grub-mount.c:69
+#, c-format
+msgid "can't find command `%s'"
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:392 util/grub-fstest.c:402
+#: util/grub-mount.c:392
+#, c-format
+msgid "`loopback' command fails: %s"
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:402 util/grub-fstest.c:413
+#: util/grub-mount.c:402
+#, c-format
+msgid "`cryptomount' command fails: %s"
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:453 util/grub-fstest.c:520
+#: util/grub-mount.c:453
+msgid "Set debug environment variable."
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:454 util/grub-fstest.c:521
+#: util/grub-mount.c:454
+msgid "Mount crypto devices."
+msgstr ""
+
+#. TRANSLATORS: "prompt" is a keyword.
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:457 util/grub-fstest.c:524
+#: util/grub-mount.c:457
+msgid "FILE|prompt"
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:457 util/grub-fstest.c:524
+#: util/grub-mount.c:457
+msgid "Load zfs crypto key."
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:483 grub-core/fs/zfs/zfscrypt.c:442
+#: util/grub-fstest.c:553 util/grub-mount.c:483
+msgid "Enter ZFS password: "
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:552 util/grub-mount.c:552
+msgid "IMAGE1 [IMAGE2 ...] MOUNTPOINT"
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:553 util/grub-fstest.c:725
+#: util/grub-mount.c:553
+msgid "Debug tool for filesystem driver."
+msgstr ""
+
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:575 util/grub-mount.c:575
+msgid "need an image and mountpoint"
 msgstr ""
 
 #: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:35
@@ -3598,21 +3952,6 @@ msgstr ""
 msgid "size"
 msgstr ""
 
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1451
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/multiboot.c:232
-#: grub-core/kern/arm/dl.c:277 grub-core/kern/arm64/dl.c:44
-#: grub-core/kern/i386/dl.c:36 grub-core/kern/ia64/dl.c:41
-#: grub-core/kern/mips/dl.c:48 grub-core/kern/powerpc/dl.c:36
-#: grub-core/kern/riscv/dl.c:47 grub-core/kern/sparc64/dl.c:36
-#: grub-core/kern/x86_64/dl.c:36 grub-core/loader/i386/bsd.c:1452
-#: grub-core/loader/i386/bsdXX.c:49 grub-core/loader/ia64/efi/linux.c:341
-#: grub-core/loader/mips/linux.c:298 grub-core/loader/multiboot.c:233
-#: grub-core/loader/multiboot_elfxx.c:73
-#: grub-core/loader/powerpc/ieee1275/linux.c:294
-#: grub-core/loader/sparc64/ieee1275/linux.c:331
-msgid "invalid arch-dependent ELF magic"
-msgstr ""
-
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2144
 #: grub-core/loader/i386/bsd.c:2148
 msgid "Load kernel of FreeBSD."
@@ -3766,32 +4105,6 @@ msgstr ""
 #: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/basic/no_platform.c:38
 #: grub-core/osdep/basic/no_platform.c:38
 msgid "no EFI routines are available for your platform"
-msgstr ""
-
-#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:176
-#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:174
-#: grub-core/osdep/unix/efivar.c:176
-#, c-format
-msgid "Cannot set EFI variable %s"
-msgstr ""
-
-#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:526
-#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:431
-#: grub-core/osdep/unix/efivar.c:557
-msgid "EFI variables are not supported on this system."
-msgstr ""
-
-#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:535
-#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:440
-#: grub-core/osdep/unix/efivar.c:566
-msgid "Cannot read EFI Boot* variables"
-msgstr ""
-
-#: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/efivar.c:594
-#: .pc/ubuntu-resilient-boot-ignore-alternative-esps.patch/grub-core/osdep/unix/efivar.c:474
-#: grub-core/osdep/unix/efivar.c:629
-#, c-format
-msgid "Cannot delete EFI variable %s"
 msgstr ""
 
 #: .pc/ubuntu-resilient-boot-boot-order.patch/grub-core/osdep/unix/platform.c:88
@@ -4682,14 +4995,6 @@ msgstr ""
 #. TRANSLATORS: there are 3 modifiers.
 #: grub-core/commands/keystatus.c:88
 msgid "Check key modifier status."
-msgstr ""
-
-#: grub-core/commands/legacycfg.c:531 grub-core/commands/legacycfg.c:545
-#: grub-core/commands/legacycfg.c:565 grub-core/commands/legacycfg.c:578
-#: grub-core/commands/time.c:43 grub-core/script/function.c:119
-#: util/grub-file.c:100 util/grub-fstest.c:57 util/grub-mount.c:69
-#, c-format
-msgid "can't find command `%s'"
 msgstr ""
 
 #: grub-core/commands/legacycfg.c:832 grub-core/normal/auth.c:225
@@ -5984,10 +6289,6 @@ msgstr ""
 msgid "Assume input is passphrase."
 msgstr ""
 
-#: grub-core/fs/zfs/zfscrypt.c:442 util/grub-fstest.c:553 util/grub-mount.c:483
-msgid "Enter ZFS password: "
-msgstr ""
-
 #: grub-core/fs/zfs/zfscrypt.c:481
 msgid "[-h|-p|-r] [FILE]"
 msgstr ""
@@ -6484,14 +6785,6 @@ msgstr ""
 msgid "Load Truecrypt ISO."
 msgstr ""
 
-#: grub-core/loader/i386/xen.c:789 grub-core/loader/i386/xen.c:873
-msgid "initrd already loaded"
-msgstr ""
-
-#: grub-core/loader/i386/xen.c:976
-msgid "Load module."
-msgstr ""
-
 #: grub-core/loader/i386/xnu.c:1003
 msgid "Press any key to launch xnu"
 msgstr ""
@@ -6501,35 +6794,6 @@ msgstr ""
 #. not a program.
 #: grub-core/loader/i386/xnu.c:1159
 msgid "Load `device-properties' dump."
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:124
-msgid "Could not locate FPSWA driver"
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:132
-msgid "FPSWA protocol wasn't able to find the interface"
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:580
-msgid "No FPSWA found"
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:582
-#, c-format
-msgid "FPSWA revision: %x\n"
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:591
-msgid "FILE [ARGS...]"
-msgstr ""
-
-#: grub-core/loader/ia64/efi/linux.c:597
-msgid "Display FPSWA version."
-msgstr ""
-
-#: grub-core/loader/riscv/linux.c:30 grub-core/loader/riscv/linux.c:40
-msgid "Linux not supported yet"
 msgstr ""
 
 #: grub-core/mmap/mmap.c:541
@@ -7383,16 +7647,6 @@ msgstr ""
 msgid "OS file %s open error: %s"
 msgstr ""
 
-#: util/grub-fstest.c:402 util/grub-mount.c:392
-#, c-format
-msgid "`loopback' command fails: %s"
-msgstr ""
-
-#: util/grub-fstest.c:413 util/grub-mount.c:402
-#, c-format
-msgid "`cryptomount' command fails: %s"
-msgstr ""
-
 #: util/grub-fstest.c:474 util/grub-fstest.c:478
 msgid "couldn't retrieve UUID"
 msgstr ""
@@ -7481,23 +7735,6 @@ msgstr ""
 msgid "Specify the number of input files."
 msgstr ""
 
-#: util/grub-fstest.c:520 util/grub-mount.c:453
-msgid "Set debug environment variable."
-msgstr ""
-
-#: util/grub-fstest.c:521 util/grub-mount.c:454
-msgid "Mount crypto devices."
-msgstr ""
-
-#. TRANSLATORS: "prompt" is a keyword.
-#: util/grub-fstest.c:524 util/grub-mount.c:457
-msgid "FILE|prompt"
-msgstr ""
-
-#: util/grub-fstest.c:524 util/grub-mount.c:457
-msgid "Load zfs crypto key."
-msgstr ""
-
 #: util/grub-fstest.c:526
 msgid "Uncompress data."
 msgstr ""
@@ -7528,10 +7765,6 @@ msgstr ""
 
 #: util/grub-fstest.c:724
 msgid "IMAGE_PATH COMMANDS"
-msgstr ""
-
-#: util/grub-fstest.c:725 util/grub-mount.c:553
-msgid "Debug tool for filesystem driver."
 msgstr ""
 
 #: util/grub-glue-efi.c:53
@@ -7929,14 +8162,6 @@ msgstr ""
 msgid "Graft point syntax (E.g. /boot/grub/grub.cfg=./grub.cfg) is accepted"
 msgstr ""
 
-#: util/grub-mount.c:552
-msgid "IMAGE1 [IMAGE2 ...] MOUNTPOINT"
-msgstr ""
-
-#: util/grub-mount.c:575
-msgid "need an image and mountpoint"
-msgstr ""
-
 #: util/grub-probe.c:731
 msgid "given argument is a system device, not a path"
 msgstr ""
@@ -8067,19 +8292,4 @@ msgstr ""
 #, c-format
 msgid "invalid line format: %s"
 msgstr ""
-
-#~ msgid "%s, with Linux %s"
-#~ msgstr "%s, з Linux %s"
-
-#~ msgid "Loading Linux %s ..."
-#~ msgstr "Загружаецца Linux %s ..."
-
-#~ msgid "%s, with kFreeBSD %s"
-#~ msgstr "%s, з kFreeBSD %s"
-
-#~ msgid "Loading initial ramdisk ..."
-#~ msgstr "Загружаецца пачатковы ramdisk ..."
-
-#~ msgid "Loading kernel of FreeBSD %s ..."
-#~ msgstr "Загружаецца ядро FreeBSD %s ..."
 
