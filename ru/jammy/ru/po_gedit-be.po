@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gedit/issues\n"
-"POT-Creation-Date: 2021-11-22 17:23+0000\n"
-"PO-Revision-Date: 2022-01-23 16:02\n"
-"Last-Translator: Alex Nehaichik <mail@l0gin.net>\n"
+"POT-Creation-Date: 2022-03-03 07:44+0000\n"
+"PO-Revision-Date: 2022-04-18 16:26\n"
+"Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2022-01-23 10:57+0000\n"
-"X-Generator: Launchpad (build f3013409c2c85e163eed04d2ad6b0c4075353eab)\n"
+"X-Launchpad-Export-Date: 2022-04-16 07:28+0000\n"
+"X-Generator: Launchpad (build 5cc3bd61c85a328825183f316ddd801c0f7d7ef2)\n"
 "Language: ru\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -453,7 +453,7 @@ msgstr ""
 #: gedit/gedit-commands-file.c:605 gedit/gedit-commands-file.c:829
 #: gedit/gedit-commands-file.c:1551 gedit/gedit-encodings-dialog.c:192
 #: gedit/gedit-file-chooser-open-dialog.c:78
-#: gedit/gedit-preferences-dialog.c:820 gedit/gedit-progress-info-bar.c:49
+#: gedit/gedit-preferences-dialog.c:821 gedit/gedit-progress-info-bar.c:49
 #: gedit/resources/ui/gedit-encodings-dialog.ui:44
 #: gedit/resources/ui/gedit-highlight-mode-dialog.ui:31
 #: plugins/filebrowser/gedit-file-browser-utils.c:211
@@ -815,7 +815,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:142 gedit/gedit-io-error-info-bar.c:422
+#: gedit/gedit-io-error-info-bar.c:142 gedit/gedit-io-error-info-bar.c:479
 msgid "_Retry"
 msgstr ""
 
@@ -891,90 +891,103 @@ msgstr ""
 msgid "Ch_aracter Encoding:"
 msgstr ""
 
+#: gedit/gedit-io-error-info-bar.c:451
+msgid "_Continue loading"
+msgstr ""
+
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
-#: gedit/gedit-io-error-info-bar.c:430 gedit/gedit-io-error-info-bar.c:695
+#: gedit/gedit-io-error-info-bar.c:487 gedit/gedit-io-error-info-bar.c:745
 msgid "Edit Any_way"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:518
+#: gedit/gedit-io-error-info-bar.c:553
 msgid "The number of followed links is limited and the actual file could not be found within this limit."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:522
+#: gedit/gedit-io-error-info-bar.c:557
 msgid "You do not have the permissions necessary to open the file."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:528
+#: gedit/gedit-io-error-info-bar.c:563
 msgid "Unable to detect the character encoding."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:529 gedit/gedit-io-error-info-bar.c:553
+#: gedit/gedit-io-error-info-bar.c:564 gedit/gedit-io-error-info-bar.c:588
 msgid "Please check that you are not trying to open a binary file."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:530
+#: gedit/gedit-io-error-info-bar.c:565
 msgid "Select a character encoding from the menu and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:536
+#: gedit/gedit-io-error-info-bar.c:571
 #, c-format
 msgid "There was a problem opening the file “%s”."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:538
+#: gedit/gedit-io-error-info-bar.c:573
 msgid "The file you opened has some invalid characters. If you continue editing this file you could corrupt this document."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:541
+#: gedit/gedit-io-error-info-bar.c:576
 msgid "You can also choose another character encoding and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:550
+#: gedit/gedit-io-error-info-bar.c:585
 #, c-format
 msgid "Could not open the file “%s” using the “%s” character encoding."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:554 gedit/gedit-io-error-info-bar.c:629
+#: gedit/gedit-io-error-info-bar.c:589 gedit/gedit-io-error-info-bar.c:679
 msgid "Select a different character encoding from the menu and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:566
+#: gedit/gedit-io-error-info-bar.c:597
+#, c-format
+msgid "The file “%s” is very big."
+msgstr ""
+
+#: gedit/gedit-io-error-info-bar.c:599
+msgid "Large files can make gedit slow or unresponsive. You can continue loading this file at your own risk"
+msgstr ""
+
+#: gedit/gedit-io-error-info-bar.c:611
 #, c-format
 msgid "Could not open the file “%s”."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:624
+#: gedit/gedit-io-error-info-bar.c:674
 #, c-format
 msgid "Could not save the file “%s” using the “%s” character encoding."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:627
+#: gedit/gedit-io-error-info-bar.c:677
 msgid "The document contains one or more characters that cannot be encoded using the specified character encoding."
 msgstr ""
 
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
-#: gedit/gedit-io-error-info-bar.c:700
+#: gedit/gedit-io-error-info-bar.c:750
 msgid "D_on’t Edit"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:710
+#: gedit/gedit-io-error-info-bar.c:760
 #, c-format
 msgid "This file “%s” is already open in another window."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:724
+#: gedit/gedit-io-error-info-bar.c:774
 msgid "Do you want to edit it anyway?"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:780 gedit/gedit-io-error-info-bar.c:870
-#: gedit/gedit-io-error-info-bar.c:1160
+#: gedit/gedit-io-error-info-bar.c:830 gedit/gedit-io-error-info-bar.c:920
+#: gedit/gedit-io-error-info-bar.c:1210
 msgid "S_ave Anyway"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:783 gedit/gedit-io-error-info-bar.c:873
-#: gedit/gedit-io-error-info-bar.c:1163
+#: gedit/gedit-io-error-info-bar.c:833 gedit/gedit-io-error-info-bar.c:923
+#: gedit/gedit-io-error-info-bar.c:1213
 msgid "D_on’t Save"
 msgstr ""
 
@@ -982,93 +995,93 @@ msgstr ""
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #. 
-#: gedit/gedit-io-error-info-bar.c:797
+#: gedit/gedit-io-error-info-bar.c:847
 #, c-format
 msgid "The file “%s” has been modified since reading it."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:812
+#: gedit/gedit-io-error-info-bar.c:862
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:892
+#: gedit/gedit-io-error-info-bar.c:942
 #, c-format
 msgid "Could not create a backup file while saving “%s”"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:897
+#: gedit/gedit-io-error-info-bar.c:947
 #, c-format
 msgid "Could not create a temporary backup file while saving “%s”"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:914
+#: gedit/gedit-io-error-info-bar.c:964
 msgid "Could not back up the old copy of the file before saving the new one. You can ignore this warning and save the file anyway, but if an error occurs while saving, you could lose the old copy of the file. Save anyway?"
 msgstr ""
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
-#: gedit/gedit-io-error-info-bar.c:974
+#: gedit/gedit-io-error-info-bar.c:1024
 #, c-format
 msgid "Cannot handle “%s:” locations in write mode. Please check that you typed the location correctly and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:982
+#: gedit/gedit-io-error-info-bar.c:1032
 msgid "Cannot handle this location in write mode. Please check that you typed the location correctly and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:991
+#: gedit/gedit-io-error-info-bar.c:1041
 #, c-format
 msgid "“%s” is not a valid location. Please check that you typed the location correctly and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:998
+#: gedit/gedit-io-error-info-bar.c:1048
 msgid "You do not have the permissions necessary to save the file. Please check that you typed the location correctly and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1004
+#: gedit/gedit-io-error-info-bar.c:1054
 msgid "There is not enough disk space to save the file. Please free some disk space and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1009
+#: gedit/gedit-io-error-info-bar.c:1059
 msgid "You are trying to save the file on a read-only disk. Please check that you typed the location correctly and try again."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1015
+#: gedit/gedit-io-error-info-bar.c:1065
 msgid "A file with the same name already exists. Please use a different name."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1020
+#: gedit/gedit-io-error-info-bar.c:1070
 msgid "The disk where you are trying to save the file has a limitation on length of the file names. Please use a shorter name."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1031
+#: gedit/gedit-io-error-info-bar.c:1081
 msgid "The disk where you are trying to save the file has a limitation on file sizes. Please try saving a smaller file or saving it to a disk that does not have this limitation."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1048
+#: gedit/gedit-io-error-info-bar.c:1098
 #, c-format
 msgid "Could not save the file “%s”."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1088
+#: gedit/gedit-io-error-info-bar.c:1138
 #, c-format
 msgid "The file “%s” changed on disk."
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1099
+#: gedit/gedit-io-error-info-bar.c:1149
 msgid "Drop Changes and _Reload"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1109 gedit/resources/gtk/menus-common.ui:148
+#: gedit/gedit-io-error-info-bar.c:1159 gedit/resources/gtk/menus-common.ui:148
 #: gedit/resources/gtk/menus.ui:9 gedit/resources/gtk/menus-traditional.ui:9
 msgid "_Reload"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1173
+#: gedit/gedit-io-error-info-bar.c:1223
 #, c-format
 msgid "Some invalid chars have been detected while saving “%s”"
 msgstr ""
 
-#: gedit/gedit-io-error-info-bar.c:1189
+#: gedit/gedit-io-error-info-bar.c:1239
 msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
 
@@ -1094,7 +1107,7 @@ msgstr ""
 msgid "Add Scheme"
 msgstr ""
 
-#: gedit/gedit-preferences-dialog.c:821
+#: gedit/gedit-preferences-dialog.c:820
 msgid "A_dd Scheme"
 msgstr ""
 
@@ -1164,64 +1177,64 @@ msgstr[3] ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: gedit/gedit-tab.c:823
+#: gedit/gedit-tab.c:834
 #, c-format
 msgid "Reverting %s from %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:830
+#: gedit/gedit-tab.c:841
 #, c-format
 msgid "Reverting %s"
 msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: gedit/gedit-tab.c:843
+#: gedit/gedit-tab.c:854
 #, c-format
 msgid "Loading %s from %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:850
+#: gedit/gedit-tab.c:861
 #, c-format
 msgid "Loading %s"
 msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: gedit/gedit-tab.c:930
+#: gedit/gedit-tab.c:941
 #, c-format
 msgid "Saving %s to %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:935
+#: gedit/gedit-tab.c:946
 #, c-format
 msgid "Saving %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:1483
+#: gedit/gedit-tab.c:1494
 #, c-format
 msgid "Error opening file %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:1488
+#: gedit/gedit-tab.c:1499
 #, c-format
 msgid "Error reverting file %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:1493
+#: gedit/gedit-tab.c:1504
 #, c-format
 msgid "Error saving file %s"
 msgstr ""
 
-#: gedit/gedit-tab.c:1524
+#: gedit/gedit-tab.c:1535
 msgid "Name:"
 msgstr ""
 
-#: gedit/gedit-tab.c:1525
+#: gedit/gedit-tab.c:1536
 msgid "MIME Type:"
 msgstr ""
 
-#: gedit/gedit-tab.c:1526
+#: gedit/gedit-tab.c:1537
 msgid "Encoding:"
 msgstr ""
 
@@ -2676,29 +2689,29 @@ msgstr ""
 msgid "If you delete an item, it is permanently lost."
 msgstr ""
 
-#: plugins/filebrowser/gedit-file-browser-store.c:1701
+#: plugins/filebrowser/gedit-file-browser-store.c:1693
 msgid "(Empty)"
 msgstr ""
 
-#: plugins/filebrowser/gedit-file-browser-store.c:3325
+#: plugins/filebrowser/gedit-file-browser-store.c:3317
 msgid "The renamed file is currently filtered out. You need to adjust your filter settings to make the file visible"
 msgstr ""
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: plugins/filebrowser/gedit-file-browser-store.c:3581
+#: plugins/filebrowser/gedit-file-browser-store.c:3573
 msgid "Untitled File"
 msgstr ""
 
-#: plugins/filebrowser/gedit-file-browser-store.c:3609
+#: plugins/filebrowser/gedit-file-browser-store.c:3601
 msgid "The new file is currently filtered out. You need to adjust your filter settings to make the file visible"
 msgstr ""
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: plugins/filebrowser/gedit-file-browser-store.c:3638
+#: plugins/filebrowser/gedit-file-browser-store.c:3630
 msgid "Untitled Folder"
 msgstr ""
 
-#: plugins/filebrowser/gedit-file-browser-store.c:3661
+#: plugins/filebrowser/gedit-file-browser-store.c:3653
 msgid "The new directory is currently filtered out. You need to adjust your filter settings to make the directory visible"
 msgstr ""
 
@@ -2853,6 +2866,18 @@ msgstr ""
 
 #: plugins/modelines/modelines.plugin.desktop.in:6
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
+msgstr ""
+
+#: plugins/openlinks/gedit-open-links-plugin.c:184
+msgid "Open Link"
+msgstr ""
+
+#: plugins/openlinks/openlinks.plugin.desktop.in:5
+msgid "Open Links"
+msgstr ""
+
+#: plugins/openlinks/openlinks.plugin.desktop.in:6
+msgid "Easy open URI links."
 msgstr ""
 
 #: plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml:5
