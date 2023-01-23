@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-initial-setup/issues\n"
-"POT-Creation-Date: 2021-11-11 11:50+0000\n"
-"PO-Revision-Date: 2022-04-18 16:25\n"
+"POT-Creation-Date: 2023-01-20 18:40+0000\n"
+"PO-Revision-Date: 2023-01-23 09:53\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2022-04-16 07:28+0000\n"
-"X-Generator: Launchpad (build 5cc3bd61c85a328825183f316ddd801c0f7d7ef2)\n"
+"X-Launchpad-Export-Date: 2023-01-23 07:48+0000\n"
+"X-Generator: Launchpad (build e04feada4865d7ca041d8edeee137fe87b5bcb3e)\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -19,48 +19,47 @@ msgstr ""
 "X-Crowdin-File: /main/jammy/en_GB/po_gnome-initial-setup-be.po\n"
 "X-Crowdin-File-ID: 23\n"
 
-#: data/com.ubuntu.welcome.policy.in:11
-msgid "Manage Livepatch"
-msgstr ""
-
-#: data/com.ubuntu.welcome.policy.in:12
-msgid "Authentication is required to enable Livepatch"
-msgstr ""
-
 #: data/gnome-initial-setup-first-login.desktop.in.in:3
 #: data/gnome-initial-setup.desktop.in.in:3
 msgid "Initial Setup"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:416
+#: gnome-initial-setup/gis-assistant.c:423
 msgid "_Next"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:417
+#: gnome-initial-setup/gis-assistant.c:424
 msgid "_Done"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:418
+#: gnome-initial-setup/gis-assistant.c:425
 msgid "_Accept"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:419
+#: gnome-initial-setup/gis-assistant.c:426
 msgid "_Skip"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:420
+#: gnome-initial-setup/gis-assistant.c:427
 msgid "_Previous"
 msgstr ""
 
-#: gnome-initial-setup/gis-assistant.c:421
+#: gnome-initial-setup/gis-assistant.c:428
 msgid "_Cancel"
 msgstr ""
 
-#: gnome-initial-setup/gnome-initial-setup.c:321
+#: gnome-initial-setup/gnome-initial-setup.c:322
 msgid "Force existing user mode"
 msgstr ""
 
-#: gnome-initial-setup/gnome-initial-setup.c:327
+#. By default, libhandy reads settings from the Settings portal, which causes
+#. * the portal to be started, which causes gnome-keyring to be started. This
+#. * interferes with our attempt below to manually start gnome-keyring and set
+#. * the login keyring password to a well-known value, which we overwrite with
+#. * the user's password once they choose one.
+#. 
+#. overwrite
+#: gnome-initial-setup/gnome-initial-setup.c:336
 msgid "— GNOME initial setup"
 msgstr ""
 
@@ -235,9 +234,7 @@ msgstr ""
 msgid "This will be used to name your home folder and can’t be changed."
 msgstr ""
 
-#. Show the login dialog
 #: gnome-initial-setup/pages/goa/gis-goa-page.c:111
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:260
 msgid "Add Account"
 msgstr ""
 
@@ -535,18 +532,25 @@ msgstr ""
 msgid "Privacy controls can be changed at any time from the Settings application."
 msgstr ""
 
-#: gnome-initial-setup/pages/software/gis-software-page.c:112
+#: gnome-initial-setup/pages/software/gis-software-page.c:113
 #: gnome-initial-setup/pages/software/gis-software-page.ui:16
-#: gnome-initial-setup/pages/software/gis-software-page.ui:31
 msgid "Third-Party Repositories"
 msgstr ""
 
-#: gnome-initial-setup/pages/software/gis-software-page.c:113
-msgid "Third-party repositories provide access to additional software from selected external sources. They include popular apps, as well as firmware that is important for some devices. Some proprietary software is included."
+#: gnome-initial-setup/pages/software/gis-software-page.c:114
+msgid "Third-party repositories provide access to additional software from selected external sources, including popular apps and drivers that are important for some devices. Some proprietary software is included."
+msgstr ""
+
+#: gnome-initial-setup/pages/software/gis-software-page.c:127
+msgid "_Disable Third-Party Repositories"
+msgstr ""
+
+#: gnome-initial-setup/pages/software/gis-software-page.c:132
+msgid "_Enable Third-Party Repositories"
 msgstr ""
 
 #. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
 #. * detect any distribution.
 #: gnome-initial-setup/pages/summary/gis-summary-page.c:233
 #, c-format
@@ -554,7 +558,7 @@ msgid "_Start Using %s"
 msgstr ""
 
 #. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
 #. * detect any distribution.
 #: gnome-initial-setup/pages/summary/gis-summary-page.c:240
 #, c-format
@@ -565,7 +569,7 @@ msgstr ""
 msgid "Setup Complete"
 msgstr ""
 
-#: gnome-initial-setup/pages/summary/gis-summary-page.ui:70
+#: gnome-initial-setup/pages/summary/gis-summary-page.ui:64
 msgid "All done!"
 msgstr ""
 
@@ -611,6 +615,93 @@ msgstr ""
 
 #: gnome-initial-setup/pages/timezone/gis-timezone-page.ui:56
 msgid "Please search for a nearby city"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:18
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:18
+msgid "<b>Enable Ubuntu Pro</b>"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:59
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:59
+msgid "Upgrade this machine to Ubuntu Pro for security updates on a much wider range of packages, until 2032. Fulfill FedRAMP, FIPS, STIG and HIPAA and other compliance and hardening requirements with certified tooling and crypto-modules. Free up to 5 machines.\n\n"
+"More information on <a href=\"https://ubuntu.com/pro\">ubuntu.com/pro</a>."
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:73
+msgid "Enter code on ubuntu.com/pro/attach"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:145
+msgid "Or add token manually"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:170
+msgid "Token"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-attach-page.ui:206
+msgid "From your admin, or from ubuntu.com/pro"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:78
+msgid "Enable Ubuntu Pro for this installation or skip this step."
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:96
+msgid "Enable Ubuntu Pro"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:120
+msgid "An internet connection is required to enable Ubuntu Pro"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:132
+msgid "Skip for now"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-offer-page.ui:151
+msgid "<small>You can always enable Ubuntu Pro later via the 'pro attach' command</small>"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-page.c:170
+msgid "Attach machine via your Ubuntu One account"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-page.c:206
+msgid "Valid token"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-page.c:215
+msgid "Invalid token"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-page.c:221
+msgid "Code expired"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-page.c:316
+msgid "Ubuntu Pro"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-services-page.ui:18
+msgid "<b>Ubuntu Pro Services</b>"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-services-page.ui:57
+msgid "Your subscription:"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-services-page.ui:75
+msgid "List of your enabled services:"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-services-page.ui:94
+msgid "Other available services:"
+msgstr ""
+
+#: gnome-initial-setup/pages/ubuntu-pro/gis-ubuntupro-services-page.ui:117
+msgid "You can start using Ubuntu Pro features once Ubuntu has finished installing. If you want to change the default enablements for your token you can do so via the ubuntu.com/pro web interface. Alternatively you can change enabled services by going to the Settings menu or the `ua` command-line."
 msgstr ""
 
 #. Translators: This is meant to be a warm, engaging welcome message,
@@ -667,7 +758,6 @@ msgid "Show the First Report"
 msgstr ""
 
 #: gnome-initial-setup/pages/ubuntu-report/gis-ubuntu-report-page.ui:92
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:108
 msgid "Legal notice"
 msgstr ""
 
@@ -687,103 +777,6 @@ msgstr ""
 msgid "You can change your mind later in Settings -> Privacy -> Diagnostics."
 msgstr ""
 
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:96
-#, c-format
-msgid "Failed to add an Ubuntu Single Sign-on account: %s."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:144
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:160
-msgid "To use Livepatch, you need to use an Ubuntu One Account."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:148
-msgid "Sign In / Register…"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:152
-msgid "To use Livepatch, you need to use your Ubuntu One Account."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:156
-msgid "Continue"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:164
-msgid "Use"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.c:253
-msgid "Ubuntu Single Sign-on accounts are not supported"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.ui:32
-msgid "Add another…"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-auth-dialog.ui:48
-msgid "Cancel"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:58
-msgid "You're all set: Livepatch is now being enabled."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:59
-msgid "You're all set: Livepatch is now on."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:60
-msgid "Failed to setup Livepatch: please retry."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:61
-msgid "Failed to disable Livepatch: please retry."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:195
-msgid "Sorry there's been a problem with setting up Canonical Livepatch"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:197
-#, c-format
-msgid "The error was: %s"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:200
-msgid "Settings…"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:202
-msgid "Ignore"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:439
-#, c-format
-msgid "Failed to show Livepatch policy: %s"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.c:497
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:17
-msgid "Livepatch"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:72
-msgid "Canonical Livepatch helps keep your computer secure, by applying some updates that would normally require restarting."
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:81
-msgid "Would you like to set up Livepatch now?"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:99
-msgid "Set Up Livepatch…"
-msgstr ""
-
-#: gnome-initial-setup/pages/livepatch/gis-livepatch-page.ui:130
-msgid "Sign Out"
-msgstr ""
-
 #: gnome-initial-setup/pages/apps/gis-apps-page.c:161
 msgid "Ready to go"
 msgstr ""
@@ -799,4 +792,80 @@ msgstr ""
 #: gnome-initial-setup/pages/apps/gis-apps-page.ui:101
 msgid "Open “Software” now"
 msgstr ""
+
+#~ msgid "Cancel"
+#~ msgstr "Скасаваць"
+
+#~ msgid "To use Livepatch, you need to use an Ubuntu One Account."
+#~ msgstr ""
+#~ "Для выкарыстання Livepatch, вам трэба скарыстацца адзіным уліковым запісам "
+#~ "Ubuntu."
+
+#~ msgid "Sign In / Register…"
+#~ msgstr "Увайсці / Зарэгістравацца…"
+
+#~ msgid "To use Livepatch, you need to use your Ubuntu One Account."
+#~ msgstr ""
+#~ "Для выкарыстання Livepatch, вам трэба скарыстацца сваім адзіным уліковым "
+#~ "запісам Ubuntu."
+
+#~ msgid "Continue"
+#~ msgstr "Працягнуць"
+
+#~ msgid "Use"
+#~ msgstr "Выкарыстаць"
+
+#~ msgid "Ubuntu Single Sign-on accounts are not supported"
+#~ msgstr "Уліковыя запісы аднаразовага ўваходу Ubuntu не падтрымліваюцца"
+
+#~ msgid "Add another…"
+#~ msgstr "Дадаць іншы…"
+
+#~ msgid "You're all set: Livepatch is now being enabled."
+#~ msgstr "Усё гатова: Livepatch цяпер уключаны."
+
+#~ msgid "You're all set: Livepatch is now on."
+#~ msgstr "Усё гатова: Livepatch цяпер укл."
+
+#~ msgid "Failed to setup Livepatch: please retry."
+#~ msgstr "Не ўдалося наладзіць Livepatch: паспрабуйце ізноў."
+
+#~ msgid "Failed to disable Livepatch: please retry."
+#~ msgstr "Не ўдалося адключыць Livepatch: паспрабуйце ізноў."
+
+#~ msgid "Sorry there's been a problem with setting up Canonical Livepatch"
+#~ msgstr "На жаль, узнікла праблема з наладкай Canonical Livepatch"
+
+#, c-format
+#~ msgid "The error was: %s"
+#~ msgstr "Узнікла памылка: %s"
+
+#~ msgid "Settings…"
+#~ msgstr "Налады…"
+
+#~ msgid "Ignore"
+#~ msgstr "Ігнараваць"
+
+#, c-format
+#~ msgid "Failed to show Livepatch policy: %s"
+#~ msgstr "Не ўдалося паказаць палітыку Livepatch: %s"
+
+#~ msgid "Livepatch"
+#~ msgstr "Livepatch"
+
+#~ msgid ""
+#~ "Canonical Livepatch helps keep your computer secure, by applying some "
+#~ "updates that would normally require restarting."
+#~ msgstr ""
+#~ "Canonical Livepatch дапамагае захоўваць ваш камп'ютар абароненым, ужываючы "
+#~ "некаторыя абнаўленні, якія звычайна патрабуюць перазапуску."
+
+#~ msgid "Would you like to set up Livepatch now?"
+#~ msgstr "Хочаце наладзіць Livepatch зараз?"
+
+#~ msgid "Set Up Livepatch…"
+#~ msgstr "Наладзіць Livepatch…"
+
+#~ msgid "Sign Out"
+#~ msgstr "Выйсьці"
 
