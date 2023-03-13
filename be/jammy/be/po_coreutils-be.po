@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2020-03-05 13:28+0000\n"
-"PO-Revision-Date: 2023-03-12 14:31\n"
+"PO-Revision-Date: 2023-03-13 14:29\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
@@ -1710,7 +1710,7 @@ msgstr ""
 #: src/split.c:1575 src/tail.c:1997 src/wc.c:877
 #, c-format
 msgid "cannot open %s for reading"
-msgstr ""
+msgstr "немагчыма адкрыць %s для чытання"
 
 #: src/copy.c:1107 src/copy.c:1286 src/dd.c:1818 src/dd.c:2356 src/dd.c:2515
 #: src/head.c:849 src/tail.c:1837 src/tail.c:1900 src/truncate.c:114
@@ -2943,7 +2943,7 @@ msgstr ""
 #: src/dd.c:2459 src/dd.c:2499 src/nohup.c:157 src/nohup.c:159
 #, c-format
 msgid "failed to open %s"
-msgstr ""
+msgstr "немагчыма адкрыць %s"
 
 #: src/dd.c:2521
 #, c-format
@@ -4110,7 +4110,10 @@ msgid "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
 "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
 "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
 "  or:  %s [OPTION]... -d DIRECTORY...\n"
-msgstr ""
+msgstr "Выкарыстанне: %s [ПАРАМЕТР]... [-T] КРЫНІЦА ПРЫЗНАЧЭННЯ\n"
+"          або:  %s [ПАРАМЕТР]... КРЫНІЦА... КАТАЛОГ\n"
+"          або:  %s [ПАРАМЕТР]... -t КАТАЛОГ КРЫНІЦА...\n"
+"          або:  %s [ПАРАМЕТР]... -d КАТАЛОГ...\n"
 
 #: src/install.c:578
 msgid "\n"
@@ -4173,11 +4176,11 @@ msgstr ""
 
 #: src/install.c:901
 msgid "the strip option may not be used when installing a directory"
-msgstr ""
+msgstr "пры ўсталяванні каталога нельга ўжываць параметр strip"
 
 #: src/install.c:904
 msgid "target directory not allowed when installing a directory"
-msgstr ""
+msgstr "пры ўсталяванні каталога нельга задаваць мэтавы каталог"
 
 #: src/install.c:974 src/mkdir.c:292 src/stdbuf.c:352
 #, c-format
@@ -4400,7 +4403,7 @@ msgstr ""
 #: src/ln.c:232
 #, c-format
 msgid "%s: cannot overwrite directory"
-msgstr ""
+msgstr "%s: немагчыма перазапісаць папку"
 
 #: src/ln.c:279
 #, c-format
@@ -4458,7 +4461,13 @@ msgid "      --backup[=CONTROL]      make a backup of each existing destination 
 "                                directories (note: will probably fail due to\n"
 "                                system restrictions, even for the superuser)\n"
 "  -f, --force                 remove existing destination files\n"
-msgstr ""
+msgstr "      --backup[=КАНТРОЛЬ]     ствараць рэзервовую копію кожнага існуючага \n"
+"                              файла прызначэння\n"
+"  -b                         аналагічна --backup, але не прымае аргументаў\n"
+"  -d, -F, --directory         дазваляць суперкарыстальніку ствараць жорсткія\n"
+"                              спасылкі на каталогі (нататка: верагодна, што гэта не атрымаецца\n"
+"                              па прычыне сістэмных абмежаванняў, нават у суперкарыстальніка)\n"
+"  -f, --force                 выдаляць існуючыя файлы прызначэння\n"
 
 #: src/ln.c:437
 msgid "  -i, --interactive           prompt whether to remove destinations\n"
@@ -4583,7 +4592,7 @@ msgstr ""
 #: src/ls.c:2949 src/pwd.c:164
 #, c-format
 msgid "cannot open directory %s"
-msgstr ""
+msgstr "немагчыма адкрыць папку %s"
 
 #: src/ls.c:2964
 #, c-format
@@ -4593,7 +4602,7 @@ msgstr ""
 #: src/ls.c:2973
 #, c-format
 msgid "%s: not listing already-listed directory"
-msgstr ""
+msgstr "%s: прапускаць ужо пералічаны каталог"
 
 #: src/ls.c:2998 src/ls.c:3415
 #, c-format
@@ -4608,7 +4617,7 @@ msgstr ""
 #: src/ls.c:3075
 #, c-format
 msgid "closing directory %s"
-msgstr ""
+msgstr "закрываецца каталог %s"
 
 #: src/ls.c:3793
 #, c-format
@@ -4798,7 +4807,11 @@ msgid "\n"
 " 0  if OK,\n"
 " 1  if minor problems (e.g., cannot access subdirectory),\n"
 " 2  if serious trouble (e.g., cannot access command-line argument).\n"
-msgstr ""
+msgstr "\n"
+"Статусы выхаду:\n"
+" 0  усё добра,\n"
+" 1  нязначныя праблемы (напрыклад, недаступна падпапка),\n"
+" 2  сур'ёзныя праблемы (напрыклад, недаступны аргумент каманднага радка).\n"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/digest.c:144
@@ -5008,7 +5021,7 @@ msgstr ""
 #: src/mkdir.c:59 src/rmdir.c:174
 #, c-format
 msgid "Usage: %s [OPTION]... DIRECTORY...\n"
-msgstr ""
+msgstr "Выкарыстанне: %s [ПАРАМЕТР]... КАТАЛОГ...\n"
 
 #: src/mkdir.c:60
 msgid "Create the DIRECTORY(ies), if they do not already exist.\n"
@@ -5030,7 +5043,7 @@ msgstr ""
 #: src/mkdir.c:225
 #, c-format
 msgid "created directory %s"
-msgstr ""
+msgstr "створаны каталог %s"
 
 #: src/mkdir.c:248 src/mkfifo.c:122 src/mknod.c:139
 #, c-format
@@ -5153,7 +5166,9 @@ msgstr ""
 msgid "  -d, --directory     create a directory, not a file\n"
 "  -u, --dry-run       do not create anything; merely print a name (unsafe)\n"
 "  -q, --quiet         suppress diagnostics about file/dir-creation failure\n"
-msgstr ""
+msgstr "  -d, --directory     стварыць папку, а не файл\n"
+"  -u, --dry-run       нічога не ствараць; проста надрукаваць назву (небяспечна)\n"
+"  -q, --quiet         не выводзіць дыягностыку збою стварэння файла/каталога\n"
 
 #: src/mktemp.c:82
 msgid "      --suffix=SUFF   append SUFF to TEMPLATE; SUFF must not contain a slash.\n"
@@ -6005,7 +6020,7 @@ msgstr ""
 #: src/pinky.c:341
 #, c-format
 msgid "Directory: "
-msgstr ""
+msgstr "Каталог: "
 
 #: src/pinky.c:343
 #, c-format
@@ -6621,7 +6636,9 @@ msgstr ""
 msgid "\n"
 "By default, rm does not remove directories.  Use the --recursive (-r or -R)\n"
 "option to remove each listed directory, too, along with all of its contents.\n"
-msgstr ""
+msgstr "\n"
+"Прадвызначана, rm не выдаляе каталогі. Выкарыстоўвайце параметр --recursive\n"
+"(-r або -R), каб выдаліць усе пералічаныя каталогі разам з іх змесцівам.\n"
 
 #: src/rm.c:170
 #, c-format
@@ -6669,19 +6686,22 @@ msgstr[3] ""
 #: src/rmdir.c:133 src/rmdir.c:249
 #, c-format
 msgid "removing directory, %s"
-msgstr ""
+msgstr "выдаляецца каталог, %s"
 
 #: src/rmdir.c:152
 #, c-format
 msgid "failed to remove directory %s"
-msgstr ""
+msgstr "не ўдалося выдаліць каталог %s"
 
 #: src/rmdir.c:165
 msgid "Remove the DIRECTORY(ies), if they are empty.\n\n"
 "      --ignore-fail-on-non-empty\n"
 "                  ignore each failure that is solely because a directory\n"
 "                    is non-empty\n"
-msgstr ""
+msgstr "Выдаліць КАТАЛОГ(і), калі ён(яны) пусты(я).\n\n"
+"      --ignore-fail-on-non-empty\n"
+"                  ігнараваць збоі, якія ўзнікаюць па прычыне таго, што каталог\n"
+"                  не пусты\n"
 
 #: src/rmdir.c:172
 msgid "  -p, --parents   remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is\n"
