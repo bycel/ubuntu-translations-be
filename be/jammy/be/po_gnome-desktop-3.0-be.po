@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-desktop/issues\n"
-"POT-Creation-Date: 2021-11-19 02:57+0000\n"
-"PO-Revision-Date: 2022-01-11 18:55\n"
+"POT-Creation-Date: 2022-10-21 10:22+0000\n"
+"PO-Revision-Date: 2023-03-23 07:48\n"
 "Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-12-18 21:08+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 "Language: be\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -19,26 +19,74 @@ msgstr ""
 "X-Crowdin-File: /main/jammy/en_GB/po_gnome-desktop-3.0-be.po\n"
 "X-Crowdin-File-ID: 143\n"
 
-#: libgnome-desktop/gnome-languages.c:734
+#: libgnome-desktop/gnome-languages.c:705
 msgid "Unspecified"
 msgstr "Не вызначана"
 
+#. TRANSLATORS: Used to distinguish the labels representing the gez_ER
+#. and gez_ET locales from gez_ER@abegede respective gez_ET@abegede. The
+#. difference is related to collation.
+#: libgnome-desktop/gnome-languages.c:1370
+msgid "Abegede"
+msgstr ""
+
+#. TRANSLATORS: Used to distinguish Cyrillic from Latin written language variants.
+#: libgnome-desktop/gnome-languages.c:1372
+msgid "Cyrillic"
+msgstr ""
+
+#. TRANSLATORS: Also known as "Nagari", a written variant for many languages
+#. of the Indian subcontinent. See:
+#. https://en.wikipedia.org/wiki/Devanagari
+#: libgnome-desktop/gnome-languages.c:1376
+msgid "Devanagari"
+msgstr ""
+
+#. TRANSLATORS: Used to distinguish the label representing the tt_RU
+#. locale from tt_RU@iqtelif. It's a special alphabet for Tatar.
+#: libgnome-desktop/gnome-languages.c:1379
+msgid "IQTElif"
+msgstr ""
+
+#. TRANSLATORS: The alphabet/script, not the language. Used to distinguish
+#. Latin from Cyrillic written language variants.
+#: libgnome-desktop/gnome-languages.c:1382
+msgid "Latin"
+msgstr ""
+
+#. TRANSLATORS: "Saho" is a variant of the Afar language. Used to
+#. distinguish the label representing the aa_ER locale from aa_ER@saaho.
+#: libgnome-desktop/gnome-languages.c:1385
+msgid "Saho"
+msgstr ""
+
+#. TRANSLATORS: "Valencia" is a dialect of the Catalan language spoken
+#. in Valencia. Used to distinguish the label representing the ca_ES
+#. locale from ca_ES@valencia.
+#: libgnome-desktop/gnome-languages.c:1389
+msgid "Valencia"
+msgstr ""
+
 #: libgnome-desktop/gnome-rr-config.c:754
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:712
 #, c-format
 msgid "CRTC %d cannot drive output %s"
 msgstr "кантролер ЭПТ %d не можа кіраваць вывадам %s"
 
 #: libgnome-desktop/gnome-rr-config.c:761
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:719
 #, c-format
 msgid "output %s does not support mode %dx%d@%dHz"
 msgstr "вывад %s не падтрымлівае рэжым %dx%d@%dГц"
 
 #: libgnome-desktop/gnome-rr-config.c:772
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:730
 #, c-format
 msgid "CRTC %d does not support rotation=%d"
 msgstr "кантролер ЭПТ %d не падтрымлівае паварот=%d"
 
 #: libgnome-desktop/gnome-rr-config.c:785
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:743
 #, c-format
 msgid "output %s does not have the same parameters as another cloned output:\n"
 "existing mode = %d, new mode = %d\n"
@@ -50,21 +98,25 @@ msgstr "параметры вывада %s адрозніваюцца ад па�
 "наяўны паварот = %d, новы паварот = %d"
 
 #: libgnome-desktop/gnome-rr-config.c:800
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:758
 #, c-format
 msgid "cannot clone to output %s"
 msgstr "не ўдалося кланіраваць на вывад %s"
 
 #: libgnome-desktop/gnome-rr-config.c:926
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:883
 #, c-format
 msgid "Trying modes for CRTC %d\n"
 msgstr "Выпрабаванне рэжымаў кантролера ЭПТ %d\n"
 
 #: libgnome-desktop/gnome-rr-config.c:950
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:907
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
 msgstr "кантролер ЭПТ %d: выпрабаванне рэжыму %dx%d@%dГц з вывадам на %dx%d@%dГц (спроба %d)\n"
 
 #: libgnome-desktop/gnome-rr-config.c:997
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:954
 #, c-format
 msgid "could not assign CRTCs to outputs:\n"
 "%s"
@@ -72,6 +124,7 @@ msgstr "не ўдалося прызначыць кантролеры ЭПТ д�
 "%s"
 
 #: libgnome-desktop/gnome-rr-config.c:1001
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:958
 #, c-format
 msgid "none of the selected modes were compatible with the possible modes:\n"
 "%s"
@@ -82,11 +135,12 @@ msgstr "ніякі з выбраных рэжымаў не сумяшчальн�
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
 #: libgnome-desktop/gnome-rr-config.c:1082
+#: libgnome-desktop/gnome-rr/gnome-rr-config.c:1039
 #, c-format
 msgid "required virtual size does not fit available size: requested=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"
 msgstr "запатрабаваны віртуальны памер не ўмяшчаецца ў даступны памер: запатрабавана=(%d, %d), мінімум=(%d, %d), максімум=(%d, %d)"
 
-#: libgnome-desktop/gnome-wall-clock.c:258
+#: libgnome-desktop/gnome-wall-clock.c:282
 msgctxt "time separator"
 msgid "∶"
 msgstr "∶"
@@ -94,105 +148,84 @@ msgstr "∶"
 #. Translators: This is the time format with full date
 #. plus day used in 24-hour mode. Please keep the under-
 #. score to separate the date from the time.
-#: libgnome-desktop/gnome-wall-clock.c:335
+#: libgnome-desktop/gnome-wall-clock.c:359
 msgid "%a %b %-e_%R:%S"
 msgstr "%a, %-e %B_%R:%S"
 
-#: libgnome-desktop/gnome-wall-clock.c:336
+#: libgnome-desktop/gnome-wall-clock.c:360
 msgid "%a %b %-e_%R"
 msgstr "%a, %-e %B_%R"
 
 #. Translators: This is the time format with full date
 #. used in 24-hour mode. Please keep the underscore to
 #. separate the date from the time.
-#: libgnome-desktop/gnome-wall-clock.c:341
+#: libgnome-desktop/gnome-wall-clock.c:365
 msgid "%b %-e_%R:%S"
 msgstr "%-e %B_%R:%S"
 
-#: libgnome-desktop/gnome-wall-clock.c:342
+#: libgnome-desktop/gnome-wall-clock.c:366
 msgid "%b %-e_%R"
 msgstr "%-e %B_%R"
 
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
-#: libgnome-desktop/gnome-wall-clock.c:346
+#: libgnome-desktop/gnome-wall-clock.c:370
 msgid "%a %R:%S"
 msgstr "%a, %R:%S"
 
-#: libgnome-desktop/gnome-wall-clock.c:347
+#: libgnome-desktop/gnome-wall-clock.c:371
 msgid "%a %R"
 msgstr "%a, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
-#: libgnome-desktop/gnome-wall-clock.c:351
+#: libgnome-desktop/gnome-wall-clock.c:375
 msgid "%R:%S"
 msgstr "%R:%S"
 
-#: libgnome-desktop/gnome-wall-clock.c:352
+#: libgnome-desktop/gnome-wall-clock.c:376
 msgid "%R"
 msgstr "%R"
 
 #. Translators: This is a time format with full date
 #. plus day used for AM/PM. Please keep the under-
 #. score to separate the date from the time.
-#: libgnome-desktop/gnome-wall-clock.c:360
+#: libgnome-desktop/gnome-wall-clock.c:384
 msgid "%a %b %-e_%l:%M:%S %p"
 msgstr "%a, %-e %B_%l:%M:%S %p"
 
-#: libgnome-desktop/gnome-wall-clock.c:361
+#: libgnome-desktop/gnome-wall-clock.c:385
 msgid "%a %b %-e_%l:%M %p"
 msgstr "%a, %-e %B_%l:%M %p"
 
 #. Translators: This is a time format with full date
 #. used for AM/PM. Please keep the underscore to
 #. separate the date from the time.
-#: libgnome-desktop/gnome-wall-clock.c:366
+#: libgnome-desktop/gnome-wall-clock.c:390
 msgid "%b %-e_%l:%M:%S %p"
 msgstr "%-e %B_%l:%M:%S %p"
 
-#: libgnome-desktop/gnome-wall-clock.c:367
+#: libgnome-desktop/gnome-wall-clock.c:391
 msgid "%b %-e_%l:%M %p"
 msgstr "%-e %B_%l:%M %p"
 
 #. Translators: This is a time format with day used
 #. for AM/PM.
-#: libgnome-desktop/gnome-wall-clock.c:371
+#: libgnome-desktop/gnome-wall-clock.c:395
 msgid "%a %l:%M:%S %p"
 msgstr "%a, %l:%M:%S %p"
 
-#: libgnome-desktop/gnome-wall-clock.c:372
+#: libgnome-desktop/gnome-wall-clock.c:396
 msgid "%a %l:%M %p"
 msgstr "%a, %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
-#: libgnome-desktop/gnome-wall-clock.c:376
+#: libgnome-desktop/gnome-wall-clock.c:400
 msgid "%l:%M:%S %p"
 msgstr "%l:%M:%S %p"
 
-#: libgnome-desktop/gnome-wall-clock.c:377
+#: libgnome-desktop/gnome-wall-clock.c:401
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
-
-#~ msgid "Abegede"
-#~ msgstr "Абегедэ"
-
-#~ msgid "Cyrillic"
-#~ msgstr "Кірыліца"
-
-#~ msgid "Devanagari"
-#~ msgstr "Дэванагары"
-
-#~ msgid "IQTElif"
-#~ msgstr "IQTElif"
-
-#~ msgid "Latin"
-#~ msgstr "Лацініца"
-
-#~ msgid "Saho"
-#~ msgstr "Сахо"
-
-#~ msgid "Valencia"
-#~ msgstr "Валенсія"
 
