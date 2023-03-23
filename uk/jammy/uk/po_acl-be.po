@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2018-06-18 23:10-0400\n"
-"PO-Revision-Date: 2021-12-25 23:32\n"
+"POT-Creation-Date: 2021-03-16 07:43+0100\n"
+"PO-Revision-Date: 2023-03-23 08:01\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-12-22 06:31+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 14:02+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -18,20 +18,6 @@ msgstr ""
 "X-Crowdin-File: /main/jammy/en_GB/po_acl-be.po\n"
 "X-Crowdin-File-ID: 625\n"
 "Language: uk_UA\n"
-
-#: libacl/perm_copy_fd.c:124 libacl/perm_copy_fd.c:136
-#: libacl/perm_copy_fd.c:198 libacl/perm_copy_file.c:124
-#: libacl/perm_copy_file.c:139 libacl/perm_copy_file.c:150
-#: libacl/perm_copy_file.c:235
-#, c-format
-msgid "setting permissions for %s"
-msgstr ""
-
-#: libacl/perm_copy_fd.c:186 libacl/perm_copy_file.c:199
-#: libacl/perm_copy_file.c:224
-#, c-format
-msgid "preserving permissions for %s"
-msgstr ""
 
 #: libacl/acl_error.c:33
 msgid "Multiple entries of same type"
@@ -47,6 +33,20 @@ msgstr ""
 
 #: libacl/acl_error.c:39
 msgid "Invalid entry type"
+msgstr ""
+
+#: libacl/perm_copy_fd.c:124 libacl/perm_copy_fd.c:136
+#: libacl/perm_copy_fd.c:198 libacl/perm_copy_file.c:124
+#: libacl/perm_copy_file.c:139 libacl/perm_copy_file.c:150
+#: libacl/perm_copy_file.c:235
+#, c-format
+msgid "setting permissions for %s"
+msgstr ""
+
+#: libacl/perm_copy_fd.c:186 libacl/perm_copy_file.c:199
+#: libacl/perm_copy_file.c:224
+#, c-format
+msgid "preserving permissions for %s"
 msgstr ""
 
 #: tools/chacl.c:46
@@ -149,58 +149,6 @@ msgstr ""
 msgid "%s: malloc failed: %s\n"
 msgstr ""
 
-#: tools/getfacl.c:497
-#, c-format
-msgid "%s: Removing leading '/' from absolute path names\n"
-msgstr ""
-
-#: tools/getfacl.c:568
-#, c-format
-msgid "%s %s -- get file access control lists\n"
-msgstr ""
-
-#: tools/getfacl.c:570 tools/getfacl.c:750
-#, c-format
-msgid "Usage: %s [-%s] file ...\n"
-msgstr ""
-
-#: tools/getfacl.c:576
-#, c-format
-msgid "  -d, --default           display the default access control list\n"
-msgstr ""
-
-#: tools/getfacl.c:580
-#, c-format
-msgid "  -a,  --access           display the file access control list only\n"
-"  -d, --default           display the default access control list only\n"
-"  -c, --omit-header       do not display the comment header\n"
-"  -e, --all-effective     print all effective rights\n"
-"  -E, --no-effective      print no effective rights\n"
-"  -s, --skip-base         skip files that only have the base entries\n"
-"  -R, --recursive         recurse into subdirectories\n"
-"  -L, --logical           logical walk, follow symbolic links\n"
-"  -P, --physical          physical walk, do not follow symbolic links\n"
-"  -t, --tabular           use tabular output format\n"
-"  -n, --numeric           print numeric user/group identifiers\n"
-"  -p, --absolute-names    don't strip leading '/' in pathnames\n"
-msgstr ""
-
-#: tools/getfacl.c:595 tools/setfacl.c:299
-#, c-format
-msgid "  -v, --version           print version and exit\n"
-"  -h, --help              this help text\n"
-msgstr ""
-
-#: tools/getfacl.c:737 tools/setfacl.c:316
-#, c-format
-msgid "%s: Standard input: %s\n"
-msgstr ""
-
-#: tools/getfacl.c:752 tools/setfacl.c:655
-#, c-format
-msgid "Try `%s --help' for more information.\n"
-msgstr ""
-
 #: tools/do_set.c:410
 #, c-format
 msgid "%s: %s: Malformed access ACL `%s': %s at entry %d\n"
@@ -283,6 +231,17 @@ msgid "  -R, --recursive         recurse into subdirectories\n"
 "      --test              test mode (ACLs are not modified)\n"
 msgstr ""
 
+#: tools/setfacl.c:299 tools/getfacl.c:597
+#, c-format
+msgid "  -v, --version           print version and exit\n"
+"  -h, --help              this help text\n"
+msgstr ""
+
+#: tools/setfacl.c:316 tools/getfacl.c:743
+#, c-format
+msgid "%s: Standard input: %s\n"
+msgstr ""
+
 #: tools/setfacl.c:452
 #, c-format
 msgid "%s: Option -%c incomplete\n"
@@ -302,4 +261,79 @@ msgstr ""
 #, c-format
 msgid "%s: %s in line %d of standard input\n"
 msgstr ""
+
+#: tools/setfacl.c:655 tools/getfacl.c:758
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr ""
+
+#: tools/getfacl.c:498
+#, c-format
+msgid "%s: Removing leading '/' from absolute path names\n"
+msgstr ""
+
+#: tools/getfacl.c:569
+#, c-format
+msgid "%s %s -- get file access control lists\n"
+msgstr ""
+
+#: tools/getfacl.c:571 tools/getfacl.c:756
+#, c-format
+msgid "Usage: %s [-%s] file ...\n"
+msgstr ""
+
+#: tools/getfacl.c:577
+#, c-format
+msgid "  -d, --default           display the default access control list\n"
+msgstr ""
+
+#: tools/getfacl.c:581
+#, c-format
+msgid "  -a, --access            display the file access control list only\n"
+"  -d, --default           display the default access control list only\n"
+"  -c, --omit-header       do not display the comment header\n"
+"  -e, --all-effective     print all effective rights\n"
+"  -E, --no-effective      print no effective rights\n"
+"  -s, --skip-base         skip files that only have the base entries\n"
+"  -R, --recursive         recurse into subdirectories\n"
+"  -L, --logical           logical walk, follow symbolic links\n"
+"  -P, --physical          physical walk, do not follow symbolic links\n"
+"  -t, --tabular           use tabular output format\n"
+"  -n, --numeric           print numeric user/group identifiers\n"
+"      --one-file-system   skip files on different filesystems\n"
+"  -p, --absolute-names    don't strip leading '/' in pathnames\n"
+msgstr ""
+
+#, c-format
+#~ msgid ""
+#~ "  -a,  --access           display the file access control list only\n"
+#~ "  -d, --default           display the default access control list only\n"
+#~ "  -c, --omit-header       do not display the comment header\n"
+#~ "  -e, --all-effective     print all effective rights\n"
+#~ "  -E, --no-effective      print no effective rights\n"
+#~ "  -s, --skip-base         skip files that only have the base entries\n"
+#~ "  -R, --recursive         recurse into subdirectories\n"
+#~ "  -L, --logical           logical walk, follow symbolic links\n"
+#~ "  -P, --physical          physical walk, do not follow symbolic links\n"
+#~ "  -t, --tabular           use tabular output format\n"
+#~ "  -n, --numeric           print numeric user/group identifiers\n"
+#~ "  -p, --absolute-names    don't strip leading '/' in pathnames\n"
+#~ msgstr ""
+#~ "  -a,  --access           адлюстраваць толькі спіс кантролю доступу да "
+#~ "файла\n"
+#~ "  -d, --default           адлюстраваць толькі спіс кантролю доступу па "
+#~ "змаўчанні\n"
+#~ "  -c, --omit-header       не адлюстроўваць загаловак з каментарыямі\n"
+#~ "  -e, --all-effective     надрукаваць усе дзеючыя правы\n"
+#~ "  -E, --no-effective      надрукаваць правы, якія не дзейнічаюць\n"
+#~ "  -s, --skip-base         прапускаць файлы, якія маюць толькі базавыя запіс\n"
+#~ "  -R, --recursive         рэкурсія ў падкаталогах\n"
+#~ "  -L, --logical            лагічны праход, прытрымлівацца сімвалічных "
+#~ "спасылак\n"
+#~ "  -P, --physical          фізічны праход, не прытрымлівацца сімвалічных "
+#~ "спасылак\n"
+#~ "  -t, --tabular           выкарыстоўваць фармат вываду з табуляцыяй\n"
+#~ "  -n, --numeric           друкаваць лічбавыя ідэнтыфікатары "
+#~ "карыстальніка/групы\n"
+#~ "  -p, --absolute-names    не прыбіраць '/' у пачатку шляху каталогаў\n"
 
