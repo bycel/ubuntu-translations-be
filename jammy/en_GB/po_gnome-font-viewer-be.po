@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2021-09-24 18:53+0000\n"
+"POT-Creation-Date: 2022-02-15 05:27+0000\n"
 "PO-Revision-Date: 2018-03-19 01:28+0000\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-12-18 21:09+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 "Language: be\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
+#: src/main.c:37
 msgid "GNOME Fonts"
 msgstr "Шрыфты GNOME"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
-msgstr "Прагляд шрыфтоў у вашай сістэме"
+msgstr "Прагляд шрыфтоў вашай сістэмы"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
 msgid ""
@@ -34,9 +34,9 @@ msgid ""
 "thumbnails. Selecting any thumbnails shows the full view of how the font "
 "would look under various sizes."
 msgstr ""
-"Шрыфты GNOME паказвае шрыфты, усталяваныя на вашым камп'ютары, у выглядзе "
-"мініяцюр. Выбраўшы любую мініяцюру, можна ўбачыць, як адпаведны шрыфт будзе "
-"выглядаць у розных памерах."
+"Шрыфты GNOME паказвае шрыфты, усталяваныя на вашым камп'ютары ў выглядзе "
+"мініяцюр. Калі выбраць любую мініяцюру, можна ўбачыць, як адпаведны шрыфт "
+"будзе выглядаць у розных памерах."
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
 msgid ""
@@ -44,13 +44,13 @@ msgid ""
 "and other formats. Fonts may be installed only for your use or made "
 "available to all users on the computer."
 msgstr ""
-"Шрыфты GNOME таксама падтрымлівае ўсталяванне новых файлаў з шрыфтамі ў "
-"фармаце .ttf ды іншых. Шрыфты могуць быць усталяваны толькі для вас або для "
-"ўсіх карыстальнікаў камп'ютара."
+"«Шрыфты GNOME» таксама падтрымлівае ўсталяванне новых шрыфтоў з файлаў .ttf "
+"і іншых фарматаў. Шрыфты можна ўсталяваць толькі для сябе або для ўсіх "
+"карыстальнікаў камп'ютара."
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
-msgstr ""
+msgstr "Праект GNOME"
 
 #: src/font-thumbnailer.c:181
 msgid "Text to thumbnail (default: Aa)"
@@ -72,144 +72,146 @@ msgstr "ПАМЕР"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "ФАЙЛ_ШРЫФТУ ВЫХАДНЫ_ФАЙЛ"
 
-#: src/font-view-app-menu.ui:6
+#: src/font-view-window.ui:54
 msgid "About Fonts"
-msgstr ""
+msgstr "Пра Шрыфты"
 
-#: src/font-view.c:391
+#: src/main.c:44
 msgid "Show the application's version"
-msgstr "Паказаць нумар версіі праграмы"
+msgstr "Паказаць версію праграмы"
 
 #. Translators, this string is used to display information about
 #. * a 'font variation axis'. The %s gets replaced with the name
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #. 
-#: src/font-view.c:509
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
-msgstr ""
+msgstr "%s %g — %g, прадвызначана %g"
 
-#: src/font-view.c:565
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
-msgstr ""
+msgstr "Экземпляр %d"
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: src/font-view.c:632
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr "Назва"
 
-#: src/font-view.c:635
+#: src/font-view-window.c:373
 msgid "Location"
-msgstr ""
+msgstr "Размяшчэнне"
 
-#: src/font-view.c:638
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr "Стыль"
 
-#: src/font-view.c:648
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr "Тып"
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr "Версія"
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr "Аўтарскія правы"
 
-#: src/font-view.c:714
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr "Апісанне"
 
-#: src/font-view.c:718
+#: src/font-view-window.c:464
 msgid "Manufacturer"
-msgstr ""
+msgstr "Вытворца"
 
-#: src/font-view.c:722
+#: src/font-view-window.c:468
 msgid "Designer"
-msgstr ""
+msgstr "Дызайнер"
 
-#: src/font-view.c:726
+#: src/font-view-window.c:472
 msgid "License"
-msgstr ""
+msgstr "Ліцэнзія"
 
-#: src/font-view.c:751
+#: src/font-view-window.c:497
 msgid "Glyph Count"
-msgstr ""
+msgstr "Колькасць гліфаў"
 
-#: src/font-view.c:753
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
-msgstr ""
+msgstr "Каляровыя гліфы"
 
-#: src/font-view.c:753
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr "так"
 
-#: src/font-view.c:753
+#: src/font-view-window.c:500
 msgid "no"
-msgstr ""
+msgstr "не"
 
-#: src/font-view.c:757
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view.c:763
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:770
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:876
+#: src/font-view.c:740
 msgid "This font could not be installed."
-msgstr ""
+msgstr "Немагчыма ўсталяваць гэты шрыфт."
 
-#: src/font-view.c:1014
+#: src/font-view.c:875
 msgid "This font could not be displayed."
-msgstr "Не ўдалося паказаць гэты шрыфт."
+msgstr "Немагчыма паказаць гэты шрыфт."
 
-#: src/font-view.c:1147
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr "Усталяваць"
 
 #: src/font-view.c:1150
 msgid "Installing…"
-msgstr ""
+msgstr "Усталяванне…"
 
-#: src/font-view.c:1153
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr "Усталяваны"
 
-#: src/font-view.c:1156
+#: src/font-view-window.c:120
 msgid "Failed"
-msgstr ""
+msgstr "Збой"
 
-#: src/font-view.c:1172
+#: src/font-view.c:993
 msgid "Info"
 msgstr "Звесткі"
 
-#: src/font-view.c:1189
+#: src/font-view-window.ui:187
 msgid "Back"
 msgstr "Назад"
 
-#: src/font-view.c:1267
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr "Усе шрыфты"
 
-#: src/font-view.c:1385 src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
+#: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr "Шрыфты"
 
-#: src/font-view.c:1389
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 "Ігар Грачышка <ihar.hrachyshka@gmail.com>\n"
@@ -224,7 +226,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: src/org.gnome.font-viewer.desktop.in.in:6
 msgid "fonts;fontface;"
-msgstr "шрыфты;"
+msgstr "fonts;fontface;шрыфты;"
 
 #: src/open-type-layout.h:13
 msgctxt "OpenType layout"
@@ -249,7 +251,7 @@ msgstr ""
 #: src/open-type-layout.h:17
 msgctxt "OpenType layout"
 msgid "Alternative Fractions"
-msgstr ""
+msgstr "Альтэрнатыўныя дробы"
 
 #: src/open-type-layout.h:18
 msgctxt "OpenType layout"
@@ -329,102 +331,102 @@ msgstr ""
 #: src/open-type-layout.h:33
 msgctxt "OpenType layout"
 msgid "Small Capitals From Capitals"
-msgstr ""
+msgstr "Капітэль з загалоўных літар"
 
 #: src/open-type-layout.h:34
 msgctxt "OpenType layout"
 msgid "Character Variation 1"
-msgstr ""
+msgstr "Варыянт сімвала 1"
 
 #: src/open-type-layout.h:35
 msgctxt "OpenType layout"
 msgid "Character Variation 2"
-msgstr ""
+msgstr "Варыянт сімвала 2"
 
 #: src/open-type-layout.h:36
 msgctxt "OpenType layout"
 msgid "Character Variation 3"
-msgstr ""
+msgstr "Варыянт сімвала 3"
 
 #: src/open-type-layout.h:37
 msgctxt "OpenType layout"
 msgid "Character Variation 4"
-msgstr ""
+msgstr "Варыянт сімвала 4"
 
 #: src/open-type-layout.h:38
 msgctxt "OpenType layout"
 msgid "Character Variation 5"
-msgstr ""
+msgstr "Варыянт сімвала 5"
 
 #: src/open-type-layout.h:39
 msgctxt "OpenType layout"
 msgid "Character Variation 6"
-msgstr ""
+msgstr "Варыянт сімвала 6"
 
 #: src/open-type-layout.h:40
 msgctxt "OpenType layout"
 msgid "Character Variation 7"
-msgstr ""
+msgstr "Варыянт сімвала 7"
 
 #: src/open-type-layout.h:41
 msgctxt "OpenType layout"
 msgid "Character Variation 8"
-msgstr ""
+msgstr "Варыянт сімвала 8"
 
 #: src/open-type-layout.h:42
 msgctxt "OpenType layout"
 msgid "Character Variation 9"
-msgstr ""
+msgstr "Варыянт сімвала 9"
 
 #: src/open-type-layout.h:43
 msgctxt "OpenType layout"
 msgid "Character Variation 10"
-msgstr ""
+msgstr "Варыянт сімвала 10"
 
 #: src/open-type-layout.h:44
 msgctxt "OpenType layout"
 msgid "Character Variation 11"
-msgstr ""
+msgstr "Варыянт сімвала 11"
 
 #: src/open-type-layout.h:45
 msgctxt "OpenType layout"
 msgid "Character Variation 12"
-msgstr ""
+msgstr "Варыянт сімвала 12"
 
 #: src/open-type-layout.h:46
 msgctxt "OpenType layout"
 msgid "Character Variation 13"
-msgstr ""
+msgstr "Варыянт сімвала 13"
 
 #: src/open-type-layout.h:47
 msgctxt "OpenType layout"
 msgid "Character Variation 14"
-msgstr ""
+msgstr "Варыянт сімвала 14"
 
 #: src/open-type-layout.h:48
 msgctxt "OpenType layout"
 msgid "Character Variation 15"
-msgstr ""
+msgstr "Варыянт сімвала 15"
 
 #: src/open-type-layout.h:49
 msgctxt "OpenType layout"
 msgid "Character Variation 16"
-msgstr ""
+msgstr "Варыянт сімвала 16"
 
 #: src/open-type-layout.h:50
 msgctxt "OpenType layout"
 msgid "Character Variation 17"
-msgstr ""
+msgstr "Варыянт сімвала 17"
 
 #: src/open-type-layout.h:51
 msgctxt "OpenType layout"
 msgid "Character Variation 18"
-msgstr ""
+msgstr "Варыянт сімвала 18"
 
 #: src/open-type-layout.h:52
 msgctxt "OpenType layout"
 msgid "Character Variation 19"
-msgstr ""
+msgstr "Варыянт сімвала 19"
 
 #: src/open-type-layout.h:53
 msgctxt "OpenType layout"
@@ -434,7 +436,7 @@ msgstr ""
 #: src/open-type-layout.h:54
 msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
-msgstr ""
+msgstr "Дадатковыя лігатуры"
 
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
@@ -479,12 +481,12 @@ msgstr ""
 #: src/open-type-layout.h:63
 msgctxt "OpenType layout"
 msgid "Fractions"
-msgstr ""
+msgstr "Дробы"
 
 #: src/open-type-layout.h:64
 msgctxt "OpenType layout"
 msgid "Full Widths"
-msgstr ""
+msgstr "Поўная шырыня"
 
 #: src/open-type-layout.h:65
 msgctxt "OpenType layout"
@@ -499,12 +501,12 @@ msgstr ""
 #: src/open-type-layout.h:67
 msgctxt "OpenType layout"
 msgid "Alternate Half Widths"
-msgstr ""
+msgstr "Альтэрнатыўная палова шырыні"
 
 #: src/open-type-layout.h:68
 msgctxt "OpenType layout"
 msgid "Historical Forms"
-msgstr ""
+msgstr "Гістарычныя формы"
 
 #: src/open-type-layout.h:69
 msgctxt "OpenType layout"
@@ -514,12 +516,12 @@ msgstr ""
 #: src/open-type-layout.h:70
 msgctxt "OpenType layout"
 msgid "Historical Ligatures"
-msgstr ""
+msgstr "Гістарычныя лігатуры"
 
 #: src/open-type-layout.h:71
 msgctxt "OpenType layout"
 msgid "Hangul"
-msgstr ""
+msgstr "Хангыль"
 
 #: src/open-type-layout.h:72
 msgctxt "OpenType layout"
@@ -529,7 +531,7 @@ msgstr ""
 #: src/open-type-layout.h:73
 msgctxt "OpenType layout"
 msgid "Half Widths"
-msgstr ""
+msgstr "Палова шырыні"
 
 #: src/open-type-layout.h:74
 msgctxt "OpenType layout"
@@ -544,7 +546,7 @@ msgstr ""
 #: src/open-type-layout.h:76
 msgctxt "OpenType layout"
 msgid "Italics"
-msgstr ""
+msgstr "Курсіў"
 
 #: src/open-type-layout.h:77
 msgctxt "OpenType layout"
@@ -554,22 +556,22 @@ msgstr ""
 #: src/open-type-layout.h:78
 msgctxt "OpenType layout"
 msgid "JIS78 Forms"
-msgstr ""
+msgstr "Формы JIS78"
 
 #: src/open-type-layout.h:79
 msgctxt "OpenType layout"
 msgid "JIS83 Forms"
-msgstr ""
+msgstr "Формы JIS83"
 
 #: src/open-type-layout.h:80
 msgctxt "OpenType layout"
 msgid "JIS90 Forms"
-msgstr ""
+msgstr "Формы JIS90"
 
 #: src/open-type-layout.h:81
 msgctxt "OpenType layout"
 msgid "JIS2004 Forms"
-msgstr ""
+msgstr "Формы JIS2004"
 
 #: src/open-type-layout.h:82
 msgctxt "OpenType layout"
@@ -584,7 +586,7 @@ msgstr ""
 #: src/open-type-layout.h:84
 msgctxt "OpenType layout"
 msgid "Standard Ligatures"
-msgstr ""
+msgstr "Стандартныя лігатуры"
 
 #: src/open-type-layout.h:85
 msgctxt "OpenType layout"
@@ -669,17 +671,17 @@ msgstr ""
 #: src/open-type-layout.h:101
 msgctxt "OpenType layout"
 msgid "Optical Bounds"
-msgstr ""
+msgstr "Аптычныя межы"
 
 #: src/open-type-layout.h:102
 msgctxt "OpenType layout"
 msgid "Ordinals"
-msgstr ""
+msgstr "Парадкавыя"
 
 #: src/open-type-layout.h:103
 msgctxt "OpenType layout"
 msgid "Ornaments"
-msgstr ""
+msgstr "Арнаменты"
 
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
@@ -724,12 +726,12 @@ msgstr ""
 #: src/open-type-layout.h:112
 msgctxt "OpenType layout"
 msgid "Proportional Widths"
-msgstr ""
+msgstr "Прапарцыйная шырыня"
 
 #: src/open-type-layout.h:113
 msgctxt "OpenType layout"
 msgid "Quarter Widths"
-msgstr ""
+msgstr "Чвэрць шырыні"
 
 #: src/open-type-layout.h:114
 msgctxt "OpenType layout"
@@ -784,7 +786,7 @@ msgstr ""
 #: src/open-type-layout.h:124
 msgctxt "OpenType layout"
 msgid "Stylistic Alternates"
-msgstr ""
+msgstr "Стылістычныя альтэрнатывы"
 
 #: src/open-type-layout.h:125
 msgctxt "OpenType layout"
@@ -794,117 +796,117 @@ msgstr ""
 #: src/open-type-layout.h:126
 msgctxt "OpenType layout"
 msgid "Optical size"
-msgstr ""
+msgstr "Аптычны памер"
 
 #: src/open-type-layout.h:127
 msgctxt "OpenType layout"
 msgid "Small Capitals"
-msgstr ""
+msgstr "Капітэль"
 
 #: src/open-type-layout.h:128
 msgctxt "OpenType layout"
 msgid "Simplified Forms"
-msgstr ""
+msgstr "Спрошчаныя формы"
 
 #: src/open-type-layout.h:129
 msgctxt "OpenType layout"
 msgid "Stylistic Set 1"
-msgstr ""
+msgstr "Стылістычны набор 1"
 
 #: src/open-type-layout.h:130
 msgctxt "OpenType layout"
 msgid "Stylistic Set 2"
-msgstr ""
+msgstr "Стылістычны набор 2"
 
 #: src/open-type-layout.h:131
 msgctxt "OpenType layout"
 msgid "Stylistic Set 3"
-msgstr ""
+msgstr "Стылістычны набор 3"
 
 #: src/open-type-layout.h:132
 msgctxt "OpenType layout"
 msgid "Stylistic Set 4"
-msgstr ""
+msgstr "Стылістычны набор 4"
 
 #: src/open-type-layout.h:133
 msgctxt "OpenType layout"
 msgid "Stylistic Set 5"
-msgstr ""
+msgstr "Стылістычны набор 5"
 
 #: src/open-type-layout.h:134
 msgctxt "OpenType layout"
 msgid "Stylistic Set 6"
-msgstr ""
+msgstr "Стылістычны набор 6"
 
 #: src/open-type-layout.h:135
 msgctxt "OpenType layout"
 msgid "Stylistic Set 7"
-msgstr ""
+msgstr "Стылістычны набор 7"
 
 #: src/open-type-layout.h:136
 msgctxt "OpenType layout"
 msgid "Stylistic Set 8"
-msgstr ""
+msgstr "Стылістычны набор 8"
 
 #: src/open-type-layout.h:137
 msgctxt "OpenType layout"
 msgid "Stylistic Set 9"
-msgstr ""
+msgstr "Стылістычны набор 9"
 
 #: src/open-type-layout.h:138
 msgctxt "OpenType layout"
 msgid "Stylistic Set 10"
-msgstr ""
+msgstr "Стылістычны набор 10"
 
 #: src/open-type-layout.h:139
 msgctxt "OpenType layout"
 msgid "Stylistic Set 11"
-msgstr ""
+msgstr "Стылістычны набор 11"
 
 #: src/open-type-layout.h:140
 msgctxt "OpenType layout"
 msgid "Stylistic Set 12"
-msgstr ""
+msgstr "Стылістычны набор 12"
 
 #: src/open-type-layout.h:141
 msgctxt "OpenType layout"
 msgid "Stylistic Set 13"
-msgstr ""
+msgstr "Стылістычны набор 13"
 
 #: src/open-type-layout.h:142
 msgctxt "OpenType layout"
 msgid "Stylistic Set 14"
-msgstr ""
+msgstr "Стылістычны набор 14"
 
 #: src/open-type-layout.h:143
 msgctxt "OpenType layout"
 msgid "Stylistic Set 15"
-msgstr ""
+msgstr "Стылістычны набор 15"
 
 #: src/open-type-layout.h:144
 msgctxt "OpenType layout"
 msgid "Stylistic Set 16"
-msgstr ""
+msgstr "Стылістычны набор 16"
 
 #: src/open-type-layout.h:145
 msgctxt "OpenType layout"
 msgid "Stylistic Set 17"
-msgstr ""
+msgstr "Стылістычны набор 17"
 
 #: src/open-type-layout.h:146
 msgctxt "OpenType layout"
 msgid "Stylistic Set 18"
-msgstr ""
+msgstr "Стылістычны набор 18"
 
 #: src/open-type-layout.h:147
 msgctxt "OpenType layout"
 msgid "Stylistic Set 19"
-msgstr ""
+msgstr "Стылістычны набор 19"
 
 #: src/open-type-layout.h:148
 msgctxt "OpenType layout"
 msgid "Stylistic Set 20"
-msgstr ""
+msgstr "Стылістычны набор 20"
 
 #: src/open-type-layout.h:149
 msgctxt "OpenType layout"
@@ -919,12 +921,12 @@ msgstr ""
 #: src/open-type-layout.h:151
 msgctxt "OpenType layout"
 msgid "Subscript"
-msgstr ""
+msgstr "Ніжні індэкс"
 
 #: src/open-type-layout.h:152
 msgctxt "OpenType layout"
 msgid "Superscript"
-msgstr ""
+msgstr "Верхні індэкс"
 
 #: src/open-type-layout.h:153
 msgctxt "OpenType layout"
@@ -954,12 +956,12 @@ msgstr ""
 #: src/open-type-layout.h:158
 msgctxt "OpenType layout"
 msgid "Traditional Forms"
-msgstr ""
+msgstr "Традыцыйныя формы"
 
 #: src/open-type-layout.h:159
 msgctxt "OpenType layout"
 msgid "Third Widths"
-msgstr ""
+msgstr "Траціна шырыні"
 
 #: src/open-type-layout.h:160
 msgctxt "OpenType layout"
@@ -999,7 +1001,7 @@ msgstr ""
 #: src/open-type-layout.h:167
 msgctxt "OpenType layout"
 msgid "Vertical Kerning"
-msgstr ""
+msgstr "Вертыкальны кернінг"
 
 #: src/open-type-layout.h:168
 msgctxt "OpenType layout"
@@ -1019,4 +1021,4 @@ msgstr ""
 #: src/open-type-layout.h:171
 msgctxt "OpenType layout"
 msgid "Slashed Zero"
-msgstr ""
+msgstr "Перакрэслены нуль"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: whois\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-10-07 20:42+0000\n"
+"POT-Creation-Date: 2022-04-08 18:45+0000\n"
 "PO-Revision-Date: 2007-03-24 12:22+0000\n"
 "Last-Translator: Alex Nehaichik <mail@l0gin.net>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2021-12-22 06:04+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 14:00+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 
-#: ../whois.c:236
+#: ../whois.c:240
 #, c-format
 msgid ""
 "Version %s.\n"
@@ -30,30 +30,30 @@ msgstr ""
 "\n"
 "Паведамляйце пра памылкі на %s.\n"
 
-#: ../whois.c:325
+#: ../whois.c:329
 msgid ""
 "This TLD has no whois server, but you can access the whois database at"
 msgstr ""
 "Гэты TLD ня мае whois паслужніка, але вы можаце атрымаць доступ да базы на"
 
-#: ../whois.c:330
+#: ../whois.c:334
 msgid "This TLD has no whois server."
 msgstr "Гэты TLD ня мае whois паслужніка."
 
-#: ../whois.c:333
+#: ../whois.c:337
 msgid "No whois server is known for this kind of object."
 msgstr "Паслужнік whois для аб'ектаў гэтага тыпу невядомы."
 
-#: ../whois.c:336
+#: ../whois.c:340
 msgid "Unknown AS number or IP network. Please upgrade this program."
 msgstr "Невядомы AS нумар ці IP сетка. Калі ласка, абнавіце гэтую праграму."
 
-#: ../whois.c:340 ../whois.c:347 ../whois.c:380 ../whois.c:397
+#: ../whois.c:344 ../whois.c:353 ../whois.c:388 ../whois.c:405
 #, c-format
 msgid "Using server %s.\n"
 msgstr "Выкарыстоўваецца паслужнік %s.\n"
 
-#: ../whois.c:354
+#: ../whois.c:362
 #, c-format
 msgid ""
 "\n"
@@ -64,7 +64,7 @@ msgstr ""
 "Запыт IPv4 канца %s у адраса 6to4 IPv6.\n"
 "\n"
 
-#: ../whois.c:361
+#: ../whois.c:369
 #, c-format
 msgid ""
 "\n"
@@ -75,7 +75,7 @@ msgstr ""
 "Запыт канца IPv4 %s у адрасе Teredo IPv6.\n"
 "\n"
 
-#: ../whois.c:398
+#: ../whois.c:406
 #, c-format
 msgid ""
 "Query string: \"%s\"\n"
@@ -84,7 +84,7 @@ msgstr ""
 "Радок запыта: \"%s\"\n"
 "\n"
 
-#: ../whois.c:408
+#: ../whois.c:416
 #, c-format
 msgid ""
 "\n"
@@ -97,16 +97,16 @@ msgstr ""
 "Знойдзены накіравальнік да %s.\n"
 "\n"
 
-#: ../whois.c:450 ../whois.c:453
+#: ../whois.c:458 ../whois.c:461
 #, c-format
 msgid "Cannot parse this line: %s"
 msgstr "Немагчыма разабраць радок: %s"
 
-#: ../whois.c:642
+#: ../whois.c:650
 msgid "Warning: RIPE flags used with a traditional server."
 msgstr "Увага! Сьцягі RIPE выкарыстоўваюцца для традыцыйнага паслужніка."
 
-#: ../whois.c:815 ../whois.c:931
+#: ../whois.c:823 ../whois.c:939
 msgid ""
 "Catastrophic error: disclaimer text has been changed.\n"
 "Please upgrade this program.\n"
@@ -114,26 +114,26 @@ msgstr ""
 "Катастрафічная памылка: адмаўленьне было зьменена.\n"
 "Калі ласка, абнавіце праграму.\n"
 
-#: ../whois.c:1032
+#: ../whois.c:1040
 #, c-format
 msgid "Host %s not found."
 msgstr "Вузел %s ня знойдзены."
 
-#: ../whois.c:1042
+#: ../whois.c:1050
 #, c-format
 msgid "%s/tcp: unknown service"
 msgstr "%s/tcp: невядомая паслуга"
 
-#: ../whois.c:1117
+#: ../whois.c:1125
 msgid "Timeout."
 msgstr "Час выйшаў."
 
-#: ../whois.c:1123
+#: ../whois.c:1131
 #, c-format
 msgid "Interrupted by signal %d..."
 msgstr "Абарвана сыгналам %d..."
 
-#: ../whois.c:1491
+#: ../whois.c:1499
 #, c-format
 msgid ""
 "Usage: whois [OPTION]... OBJECT...\n"
@@ -144,16 +144,17 @@ msgid ""
 "-H                     hide legal disclaimers\n"
 msgstr ""
 
-#: ../whois.c:1498
+#: ../whois.c:1506
 #, c-format
 msgid ""
 "      --verbose        explain what is being done\n"
+"      --no-recursion   disable recursion from registry to registrar servers\n"
 "      --help           display this help and exit\n"
 "      --version        output version information and exit\n"
 "\n"
 msgstr ""
 
-#: ../whois.c:1504
+#: ../whois.c:1513
 #, c-format
 msgid ""
 "These flags are supported by whois.ripe.net and some RIPE-like servers:\n"
@@ -163,7 +164,7 @@ msgid ""
 "-M                     find all levels of more specific matches\n"
 msgstr ""
 
-#: ../whois.c:1511
+#: ../whois.c:1520
 #, c-format
 msgid ""
 "-c                     find the smallest match containing a mnt-irt "
@@ -172,7 +173,7 @@ msgid ""
 "-b                     return brief IP address ranges with abuse contact\n"
 msgstr ""
 
-#: ../whois.c:1516
+#: ../whois.c:1525
 #, c-format
 msgid ""
 "-B                     turn off object filtering (show email addresses)\n"
@@ -180,7 +181,7 @@ msgid ""
 "-d                     return DNS reverse delegation objects too\n"
 msgstr ""
 
-#: ../whois.c:1521
+#: ../whois.c:1530
 #, c-format
 msgid ""
 "-i ATTR[,ATTR]...      do an inverse look-up for specified ATTRibutes\n"
@@ -189,7 +190,7 @@ msgid ""
 "-r                     turn off recursive look-ups for contact information\n"
 msgstr ""
 
-#: ../whois.c:1527
+#: ../whois.c:1536
 #, c-format
 msgid ""
 "-R                     force to show local copy of the domain object even\n"
@@ -199,7 +200,7 @@ msgid ""
 "-g SOURCE:FIRST-LAST   find updates from SOURCE from serial FIRST to LAST\n"
 msgstr ""
 
-#: ../whois.c:1534
+#: ../whois.c:1543
 #, c-format
 msgid ""
 "-t TYPE                request template for object of TYPE\n"
@@ -230,36 +231,36 @@ msgstr "Нерэчаісны нумар \"%s\".\n"
 msgid "Try '%s --help' for more information.\n"
 msgstr "Паспрабуйце \"%s --help\" для больш падрабязных зьвестак.\n"
 
-#: ../mkpasswd.c:292
+#: ../mkpasswd.c:302
 #, c-format
 msgid "Wrong salt length: %d byte when %d expected.\n"
 msgid_plural "Wrong salt length: %d bytes when %d expected.\n"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../mkpasswd.c:297
+#: ../mkpasswd.c:307
 #, c-format
 msgid "Wrong salt length: %d byte when %d <= n <= %d expected.\n"
 msgid_plural "Wrong salt length: %d bytes when %d <= n <= %d expected.\n"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../mkpasswd.c:306
+#: ../mkpasswd.c:316
 #, c-format
 msgid "Illegal salt character '%c'.\n"
 msgstr "Нераэчаісны сымбаль прыправы \"%c\".\n"
 
-#: ../mkpasswd.c:357 ../mkpasswd.c:370
+#: ../mkpasswd.c:372 ../mkpasswd.c:385
 #, c-format
 msgid "Password: "
 msgstr "Пароль: "
 
-#: ../mkpasswd.c:389
+#: ../mkpasswd.c:404
 #, c-format
 msgid "Method not supported by crypt(3).\n"
 msgstr ""
 
-#: ../mkpasswd.c:497
+#: ../mkpasswd.c:512
 #, c-format
 msgid ""
 "Usage: mkpasswd [OPTIONS]... [PASSWORD [SALT]]\n"
@@ -270,7 +271,7 @@ msgstr ""
 "Шыфруе ПАРОЛЬ з дапамогай crypt(3).\n"
 "\n"
 
-#: ../mkpasswd.c:500
+#: ../mkpasswd.c:515
 #, c-format
 msgid ""
 "      -m, --method=TYPE     select method TYPE\n"
@@ -278,7 +279,7 @@ msgid ""
 "      -S, --salt=SALT       use the specified SALT\n"
 msgstr ""
 
-#: ../mkpasswd.c:505
+#: ../mkpasswd.c:520
 #, c-format
 msgid ""
 "      -R, --rounds=NUMBER   use the specified NUMBER of rounds\n"
@@ -287,7 +288,7 @@ msgid ""
 "      -s, --stdin           like --password-fd=0\n"
 msgstr ""
 
-#: ../mkpasswd.c:511
+#: ../mkpasswd.c:526
 #, c-format
 msgid ""
 "      -h, --help            display this help and exit\n"
@@ -300,7 +301,7 @@ msgid ""
 "Report bugs to %s.\n"
 msgstr ""
 
-#: ../mkpasswd.c:534
+#: ../mkpasswd.c:549
 #, c-format
 msgid "Available methods:\n"
 msgstr ""

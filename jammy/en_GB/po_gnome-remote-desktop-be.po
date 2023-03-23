@@ -7,24 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-remote-desktop\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-04-14 21:34+0000\n"
+"POT-Creation-Date: 2022-12-13 22:23+0000\n"
 "PO-Revision-Date: 2022-04-16 07:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2022-04-18 15:16+0000\n"
-"X-Generator: Launchpad (build 5cc3bd61c85a328825183f316ddd801c0f7d7ef2)\n"
+"X-Launchpad-Export-Date: 2023-03-22 13:24+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 
-#: src/grd-daemon.c:423
+#: src/grd-daemon.c:503
 msgid "GNOME Remote Desktop"
-msgstr ""
+msgstr "Аддалены працоўны стол GNOME"
 
 #: src/grd-prompt.c:124
 #, c-format
 msgid "Do you want to share your desktop?"
-msgstr ""
+msgstr "Хочаце даць доступ да свайго працоўнага стала?"
 
 #: src/grd-prompt.c:125
 #, c-format
@@ -32,25 +32,27 @@ msgid ""
 "A user on the computer '%s' is trying to remotely view or control your "
 "desktop."
 msgstr ""
+"Карыстальнік камп'ютара «%s» спрабуе аддалена праглядаць або кіраваць вашым "
+"працоўным столом."
 
 #: src/grd-prompt.c:131
 msgid "Refuse"
-msgstr ""
+msgstr "Адхіліць"
 
 #: src/grd-prompt.c:136
 msgid "Accept"
-msgstr ""
+msgstr "Прыняць"
 
-#: src/grd-ctl.c:44
+#: src/grd-ctl.c:53
 #, c-format
 msgid "Usage: %s [OPTIONS...] COMMAND [SUBCOMMAND]...\n"
-msgstr ""
+msgstr "Выкарыстанне: %s [ПАРАМЕТРЫ...] КАМАНДА [ПАДКАМАНДА ]...\n"
 
-#: src/grd-ctl.c:383
+#: src/grd-ctl.c:461
 msgid "Commands:\n"
-msgstr ""
+msgstr "Каманды:\n"
 
-#: src/grd-ctl.c:388
+#: src/grd-ctl.c:466
 msgid ""
 "  rdp                                        - RDP subcommands:\n"
 "    enable                                   - Enable the RDP backend\n"
@@ -69,8 +71,24 @@ msgid ""
 "                                               devices\n"
 "\n"
 msgstr ""
+"  rdp                                        - Падкаманды RDP:\n"
+"    enable                                   - Уключыць бэкэнд RDP\n"
+"    disable                                  - Адключыць бэкэнд RDP\n"
+"    set-tls-cert <path-to-cert>              - Задаць шлях да сертыфікату "
+"TLS\n"
+"    set-tls-key <path-to-key>                - Задаць шлях да ключа TLS\n"
+"    set-credentials <username> <password>    - Задаць імя карыстальніка і\n"
+"                                               пароль\n"
+"    clear-credentials                        - Ачысціць імя карыстальніка і\n"
+"                                               пароль\n"
+"    enable-view-only                         - Адключыць аддаленае "
+"кіраванне\n"
+"                                               прыладамі ўводу\n"
+"    disable-view-only                        - Уключыць аддаленае кіраванне\n"
+"                                               прыладамі ўводу\n"
+"\n"
 
-#: src/grd-ctl.c:407
+#: src/grd-ctl.c:485
 msgid ""
 "  vnc                                        - VNC subcommands:\n"
 "    enable                                   - Enable the VNC backend\n"
@@ -86,8 +104,20 @@ msgid ""
 "                                               devices\n"
 "\n"
 msgstr ""
+"  vnc                                        - Падкаманды VNC:\n"
+"    enable                                   - Уключыць бэкэнд VNC\n"
+"    disable                                  - Адключыць бэкэнд VNC\n"
+"    set-password <password>                  - Задаць пароль VNC\n"
+"    clear-password                           - Ачысціць пароль VNC\n"
+"    set-auth-method password|prompt          - Задаць метад аўтарызацыі\n"
+"    enable-view-only                         - Адключыць аддаленае "
+"кіраванне\n"
+"                                               прыладамі ўводу\n"
+"    disable-view-only                        - Уключыць аддаленае кіраванне\n"
+"                                               прыладамі ўводу\n"
+"\n"
 
-#: src/grd-ctl.c:422
+#: src/grd-ctl.c:444
 msgid ""
 "  status [--show-credentials]                - Show current status\n"
 "\n"
@@ -97,7 +127,7 @@ msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:7
 msgid "Whether the RDP backend is enabled or not"
-msgstr ""
+msgstr "Ці ўключаны бэкэнд RDP"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:8
 msgid "If set to to 'true' the RDP backend will be initialized."
@@ -105,7 +135,7 @@ msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:14
 msgid "Screenshare mode of RDP connections"
-msgstr ""
+msgstr "Рэжым супольнага доступу да экрана для злучэнняў RDP"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:15
 msgid ""
@@ -125,7 +155,7 @@ msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:41
 msgid "Path to the certificate file"
-msgstr ""
+msgstr "Шлях да файла сертыфіката"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:42
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:50
@@ -133,25 +163,30 @@ msgid ""
 "In order to be able to use RDP with TLS Security, both the private key file "
 "and the certificate file need to be provided to the RDP server."
 msgstr ""
+"Каб мець магчымасць выкарыстоўваць RDP з TLS Security, для сервера RDP "
+"патрэбна ўказаць файл закрытага ключа і файл сертыфіката."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:49
 msgid "Path to the private key file"
-msgstr ""
+msgstr "Шлях да файла закрытага ключа"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:57
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:74
 msgid "Only allow remote connections to view the screen content"
-msgstr ""
+msgstr "Дазволіць аддаленым злучэнням толькі праглядаць змесціва экрана"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:58
 msgid ""
 "When view-only is true, remote RDP connections cannot manipulate input "
 "devices (e.g. mouse and keyboard)."
 msgstr ""
+"Калі значэнне ключа view-only (толькі для прагляду) мае значэнне «true», "
+"аддаленыя злучэнні RDP не могуць кіраваць прыладамі ўводу (напрыклад, мышшу "
+"і клавіятурай)."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:67
 msgid "Whether the VNC backend is enabled or not"
-msgstr ""
+msgstr "Ці ўключаны бэкэнд VNC"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:68
 msgid "If set to to 'true' the VNC backend will be initialized."
@@ -162,10 +197,13 @@ msgid ""
 "When view-only is true, remote VNC connections cannot manipulate input "
 "devices (e.g. mouse and keyboard)."
 msgstr ""
+"Калі значэнне ключа view-only (толькі для прагляду) мае значэнне «true», "
+"аддаленыя злучэнні VNC не могуць кіраваць прыладамі ўводу (напрыклад, мышшу "
+"і клавіятурай)."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:82
 msgid "Method used to authenticate VNC connections"
-msgstr ""
+msgstr "Метад аўтэнтыфікацыі для злучэнняў VNC"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
 msgid ""
@@ -175,3 +213,8 @@ msgid ""
 "access to the workstation to explicitly approve the new connection. * "
 "password - by requiring the remote client to provide a known password"
 msgstr ""
+"Метад аўтэнтыфікацыі VNC апісвае, як выконваецца аўтэнтыфікацыя аддаленага "
+"злучэння. Зараз гэта можа быць зроблена двума спосабамі: * prompt - запыт "
+"пры кожным новым злучэнні, ад карыстальніка, які мае фізічны доступ да "
+"працоўнай станцыі, патрабуецца яўна ўхваліць новае злучэнне; * password - ад "
+"аддаленага кліента патрабуецца ўвесці вядомы яму пароль"

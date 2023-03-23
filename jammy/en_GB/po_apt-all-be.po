@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-11-24 16:24+0100\n"
+"POT-Creation-Date: 2022-10-31 15:18+0100\n"
 "PO-Revision-Date: 2010-10-28 18:09+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2021-12-19 11:09+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 17:45+0000\n"
+"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
 
 #: apt-pkg/acquire-item.cc
 msgid ""
@@ -177,7 +177,8 @@ msgstr ""
 msgid "Conflicting distribution: %s (expected %s but got %s)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc
+#. Both messages are reused from the ReleaseInfoChange feature in acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid "Repository '%s' changed its '%s' value from '%s' to '%s'"
 msgstr ""
@@ -188,7 +189,7 @@ msgid "Repository '%s' changed its default priority for %s from %hi to %hi."
 msgstr ""
 
 #. TRANSLATOR: the "this" refers to changes in the repository like a new release or owner change
-#: apt-pkg/acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid ""
 "More information about this can be found online in the Release notes at: %s"
@@ -2662,7 +2663,7 @@ msgstr ""
 msgid "Remove packages and config files"
 msgstr ""
 
-#: cmdline/apt-get.cc cmdline/apt.cc
+#: cmdline/apt-get.cc
 msgid "Remove automatically all unused packages"
 msgstr ""
 
@@ -2809,8 +2810,8 @@ msgstr "%s ужо быў зафіксаваны.\n"
 
 #: cmdline/apt-mark.cc
 #, c-format
-msgid "%s was already not hold.\n"
-msgstr "%s ужо быў незафіксаваны.\n"
+msgid "%s was already not on hold.\n"
+msgstr ""
 
 #: cmdline/apt-mark.cc
 msgid "Executing dpkg failed. Are you root?"
@@ -3576,6 +3577,13 @@ msgstr ""
 msgid "Unknown error executing apt-key"
 msgstr ""
 
+#: methods/gpgv.cc
+#, c-format
+msgid ""
+"Key is stored in legacy trusted.gpg keyring (%s), see the DEPRECATION "
+"section in apt-key(8) for details."
+msgstr ""
+
 #. TRANSLATORS: The second %s is the reason and is untranslated for repository owners.
 #: methods/gpgv.cc
 #, c-format
@@ -3623,6 +3631,10 @@ msgstr ""
 #: methods/store.cc
 msgid "Empty files can't be valid archives"
 msgstr ""
+
+#, c-format
+#~ msgid "%s was already not hold.\n"
+#~ msgstr "%s ужо быў незафіксаваны.\n"
 
 #, c-format
 #~ msgid ""

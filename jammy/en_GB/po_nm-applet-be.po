@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 98e6872775a91bf27122ff608b6db605\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/network-manager-"
 "applet/\n"
-"POT-Creation-Date: 2021-08-25 16:15+0000\n"
+"POT-Creation-Date: 2022-03-07 15:59+0000\n"
 "PO-Revision-Date: 2021-09-04 09:50+0000\n"
 "Last-Translator: Bruce Cowan <Unknown>\n"
 "Language-Team: Belarusian\n"
@@ -18,16 +18,17 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || "
 "n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2021-12-18 18:42+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
-"Language: be\n"
-"X-Crowdin-File-ID: 2172\n"
-"X-Crowdin-File: /Addition apps/network-manager-applet.master.be.po\n"
-"X-Crowdin-Project: 98e6872775a91bf27122ff608b6db605\n"
+"X-Launchpad-Export-Date: 2023-03-22 13:26+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 "X-Crowdin-Language: be\n"
 "X-Crowdin-Project-ID: 2\n"
+"Language: be\n"
+"X-Crowdin-File: /Addition apps/network-manager-applet.master.be.po\n"
+"X-Crowdin-File-ID: 2172\n"
+"X-Crowdin-Project: 98e6872775a91bf27122ff608b6db605\n"
 
-#: ../src/applet-dialogs.c:724 ../src/applet.c:3258
+#: nm-applet.desktop.in:3 src/applet-dialogs.c:724 src/applet.c:2173
+#: src/applet.c:2271 src/applet.c:3354
 msgid "Network"
 msgstr "Сетка"
 
@@ -71,17 +72,17 @@ msgstr "Пашыраная канфігурацыя сеткі"
 msgid "Manage and change your network connection settings"
 msgstr "Налады сеткавага злучэння"
 
-#: ../shared/nm-utils/nm-shared-utils.c:793
+#: shared/nm-utils/nm-shared-utils.c:793
 #, c-format
 msgid "object class '%s' has no property named '%s'"
 msgstr "клас аб’екта \"%s\" не мае ўласцівасці з назвай \"%s\""
 
-#: ../shared/nm-utils/nm-shared-utils.c:800
+#: shared/nm-utils/nm-shared-utils.c:800
 #, c-format
 msgid "property '%s' of object class '%s' is not writable"
 msgstr "уласцівасць \"%s\" класа аб’екта \"%s\" недаступная для запісу"
 
-#: ../shared/nm-utils/nm-shared-utils.c:807
+#: shared/nm-utils/nm-shared-utils.c:807
 #, c-format
 msgid ""
 "construct property \"%s\" for object '%s' can't be set after construction"
@@ -89,21 +90,21 @@ msgstr ""
 "уласцівасць стварэння \"%s\" для аб’екта \"%s\" не можа быць вызначаная "
 "пасля стварэння"
 
-#: ../shared/nm-utils/nm-shared-utils.c:815
+#: shared/nm-utils/nm-shared-utils.c:815
 #, c-format
 msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
 msgstr ""
 "\"%s::%s\" - непрыдатная назва для ўласцівасці; \"%s\" не ёсць падтыпам "
 "GObject"
 
-#: ../shared/nm-utils/nm-shared-utils.c:824
+#: shared/nm-utils/nm-shared-utils.c:824
 #, c-format
 msgid "unable to set property '%s' of type '%s' from value of type '%s'"
 msgstr ""
 "не атрымалася вызначыць уласцівасць \"%s\" тыпу \"%s\" са значэння тыпу "
 "\"%s\""
 
-#: ../shared/nm-utils/nm-shared-utils.c:835
+#: shared/nm-utils/nm-shared-utils.c:835
 #, c-format
 msgid ""
 "value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
@@ -112,19 +113,28 @@ msgstr ""
 "значэнне \"%sд тыпу \"%s\" непрыдатнае альбо знаходзіцца па-за дыяпазонам "
 "для ўласцівасці \"%s\" тыпу \"%s\""
 
-#: ../src/ethernet-dialog.c:90
+#: src/8021x.ui:7 src/ethernet-dialog.c:90
 msgid "802.1X authentication"
 msgstr "Аўтэнтыфікацыя 802.1X"
 
-#: ../src/applet-device-ethernet.c:341 ../src/applet-dialogs.c:1179
-#: ../src/connection-editor/connection-helpers.c:284
-#: ../src/connection-editor/connection-helpers.c:747
-#: ../src/connection-editor/page-bluetooth.c:293
-#: ../src/connection-editor/page-mobile.c:530
-#: ../src/connection-editor/page-proxy.c:107
-#: ../src/connection-editor/page-team-port.c:192
-#: ../src/connection-editor/page-team.c:330
-#: ../src/connection-editor/vpn-helpers.c:198 ../src/mobile-helpers.c:451
+#: src/8021x.ui:31 src/applet-device-ethernet.c:341 src/applet-dialogs.c:1179
+#: src/connection-editor/ce-ip4-routes.ui:30
+#: src/connection-editor/ce-ip6-routes.ui:30
+#: src/connection-editor/ce-new-connection.ui:50
+#: src/connection-editor/ce-page-dcb.ui:569
+#: src/connection-editor/ce-page-dcb.ui:1019
+#: src/connection-editor/ce-page-wireguard.ui:41
+#: src/connection-editor/ce-ppp-auth-methods.ui:28
+#: src/connection-editor/connection-helpers.c:284
+#: src/connection-editor/connection-helpers.c:747
+#: src/connection-editor/nm-connection-editor.ui:197
+#: src/connection-editor/page-bluetooth.c:293
+#: src/connection-editor/page-mobile.c:530
+#: src/connection-editor/page-proxy.c:107
+#: src/connection-editor/page-team-port.c:192
+#: src/connection-editor/page-team.c:330
+#: src/connection-editor/vpn-helpers.c:198 src/gsm-unlock.ui:28
+#: src/mobile-helpers.c:451
 msgid "_Cancel"
 msgstr "_Скасаваць"
 
@@ -136,213 +146,217 @@ msgstr "Пад_лучыцца"
 msgid "_Network name"
 msgstr "_Назва сеткі"
 
-#: ../src/ap-menu-item.c:67
+#: src/ap-menu-item.c:68
 msgid "ad-hoc"
 msgstr "ad-hoc"
 
-#: ../src/ap-menu-item.c:72
+#: src/ap-menu-item.c:73
 msgid "secure."
 msgstr "бяспечны."
 
-#: ../src/applet-device-broadband.c:147
+#: src/applet-device-broadband.c:147
 msgid "Wrong PUK code; please contact your provider."
 msgstr "Хібны PUK. Звярніцеся да пастаўшчыка паслуг."
 
-#: ../src/applet-device-broadband.c:189
+#: src/applet-device-broadband.c:189
 msgid "Wrong PIN code; please contact your provider."
 msgstr "Хібны PIN. Звярніцеся да пастаўшчыка паслуг."
 
 #. Start the spinner to show the progress of the unlock
-#: ../src/applet-device-broadband.c:240
+#: src/applet-device-broadband.c:240
 msgid "Sending unlock code…"
 msgstr "Адпраўленне коду разблакавання…"
 
-#: ../src/applet-device-broadband.c:725 ../src/applet-dialogs.c:521
+#: src/applet-device-broadband.c:725 src/applet-dialogs.c:521
 #, c-format
 msgid "Mobile Broadband (%s)"
 msgstr "Мабільная сувязь (%s)"
 
-#: ../src/applet-device-broadband.c:727
-#: ../src/connection-editor/connection-helpers.c:95
-#: ../src/connection-editor/page-mobile.c:295
+#: src/applet-device-broadband.c:727
+#: src/connection-editor/connection-helpers.c:95
+#: src/connection-editor/page-mobile.c:295
 msgid "Mobile Broadband"
 msgstr "Мабільная сувязь"
 
-#: ../src/applet-device-broadband.c:780 ../src/applet-device-bt.c:61
-#: ../src/applet-device-ethernet.c:107
+#: src/applet-device-broadband.c:780 src/applet-device-bt.c:61
+#: src/applet-device-ethernet.c:107
 msgid "Available"
 msgstr "Даступна"
 
 #. Default connection item
-#: ../src/applet-device-broadband.c:793
+#: src/applet-device-broadband.c:793
 msgid "New Mobile Broadband connection…"
 msgstr "Новае мабільнае злучэнне…"
 
-#: ../src/applet-device-broadband.c:809 ../src/applet-device-bt.c:75
-#: ../src/applet-device-ethernet.c:124 ../src/applet-device-wifi.c:1269
+#: src/applet-device-broadband.c:809 src/applet-device-bt.c:75
+#: src/applet-device-ethernet.c:124 src/applet-device-wifi.c:1296
 msgid "Connection Established"
 msgstr "Злучэнне наладжана"
 
-#: ../src/applet-device-broadband.c:810
+#: src/applet-device-broadband.c:810
 msgid "You are now connected to the Mobile Broadband network."
 msgstr "Вы злучаныя з сеткай мабільнай сувязі."
 
-#: ../src/applet-device-broadband.c:950 ../src/applet-device-broadband.c:956
+#: src/applet-device-broadband.c:950 src/applet-device-broadband.c:956
 msgid "Mobile Broadband network."
 msgstr "Сетка мабільнай сувязі."
 
-#: ../src/applet-device-broadband.c:951
+#: src/applet-device-broadband.c:951
 msgid "You are now registered on the home network."
 msgstr "Вы зарэгістраваныя ў хатняй сетцы."
 
-#: ../src/applet-device-broadband.c:957
+#: src/applet-device-broadband.c:957
 msgid "You are now registered on a roaming network."
 msgstr "Вы зарэгістраваныя ў роўмінг-сетцы."
 
-#: ../src/applet-device-bt.c:76
+#: src/applet-device-bt.c:76
 msgid "You are now connected to the mobile broadband network."
 msgstr "Вы злучаныя з сеткай мабільнай сувязі."
 
-#: ../src/applet-device-bt.c:104 ../src/mobile-helpers.c:584
+#: src/applet-device-bt.c:104 src/mobile-helpers.c:584
 #, c-format
 msgid "Preparing mobile broadband connection “%s”…"
 msgstr "Падрыхтоўка злучэння з сеткай мабільнай сувязі \"%s\"…"
 
-#: ../src/applet-device-bt.c:107 ../src/mobile-helpers.c:587
+#: src/applet-device-bt.c:107 src/mobile-helpers.c:587
 #, c-format
 msgid "Configuring mobile broadband connection “%s”…"
 msgstr "Наладка злучэння з сеткай мабільнай сувязі \"%s\"…"
 
-#: ../src/applet-device-bt.c:110 ../src/mobile-helpers.c:590
+#: src/applet-device-bt.c:110 src/mobile-helpers.c:590
 #, c-format
 msgid "User authentication required for mobile broadband connection “%s”…"
 msgstr ""
 "Для злучэння з сеткай мабільнай сувязі \"%s\" патрабуецца аўтэнтыфікацыя…"
 
-#: ../src/applet-device-bt.c:113 ../src/applet.c:2604
-#: ../src/mobile-helpers.c:593
+#: src/applet-device-bt.c:113 src/applet.c:2694 src/mobile-helpers.c:593
 #, c-format
 msgid "Requesting a network address for “%s”…"
 msgstr "Запыт сеткавага адраса для \"%s\"…"
 
-#: ../src/applet-device-bt.c:117 ../src/mobile-helpers.c:612
+#: src/applet-device-bt.c:117 src/mobile-helpers.c:612
 #, c-format
 msgid "Mobile broadband connection “%s” active"
 msgstr "Злучэнне з мабільнай сеткай \"%s\" актыўна"
 
-#: ../src/applet-device-ethernet.c:16
+#: src/applet-device-ethernet.c:16
 msgid "Auto Ethernet"
 msgstr "Аўтаматычны Ethernet"
 
-#: ../src/applet-device-ethernet.c:72
+#: src/applet-device-ethernet.c:72
 #, c-format
 msgid "Ethernet Networks (%s)"
 msgstr "Сеткі Ethernet (%s)"
 
-#: ../src/applet-device-ethernet.c:74
+#: src/applet-device-ethernet.c:74
 #, c-format
 msgid "Ethernet Network (%s)"
 msgstr "Сетка Ethernet (%s)"
 
-#: ../src/applet-device-ethernet.c:77
+#: src/applet-device-ethernet.c:77
 msgid "Ethernet Networks"
 msgstr "Сеткі Ethernet"
 
-#: ../src/applet-device-ethernet.c:79
+#: src/applet-device-ethernet.c:79
 msgid "Ethernet Network"
 msgstr "Сетка Ethernet"
 
 #. Notify user of unmanaged or unavailable device
-#: ../src/applet-device-ethernet.c:99 ../src/applet.c:1359
+#: src/applet-device-ethernet.c:99 src/applet.c:1279
 msgid "disconnected"
 msgstr "адлучана"
 
-#: ../src/applet-device-ethernet.c:125
+#: src/applet-device-ethernet.c:125
 msgid "You are now connected to the ethernet network."
 msgstr "Вы падлучаныя да сеткі Ethernet."
 
-#: ../src/applet-device-ethernet.c:153
+#: src/applet-device-ethernet.c:153
 #, c-format
 msgid "Preparing ethernet network connection “%s”…"
 msgstr "Падрыхтоўка сеткавага злучэння Ethernet \"%s\"…"
 
-#: ../src/applet-device-ethernet.c:156
+#: src/applet-device-ethernet.c:156
 #, c-format
 msgid "Configuring ethernet network connection “%s”…"
 msgstr "Наладка сеткавага злучэння Ethernet \"%s\"…"
 
-#: ../src/applet-device-ethernet.c:159
+#: src/applet-device-ethernet.c:159
 #, c-format
 msgid "User authentication required for ethernet network connection “%s”…"
 msgstr "Для сеткавага злучэння Ethernet \"%s\" патрабуецца аўтэнтыфікацыя…"
 
-#: ../src/applet-device-ethernet.c:162
+#: src/applet-device-ethernet.c:162
 #, c-format
 msgid "Requesting an ethernet network address for “%s”…"
 msgstr "Запыт сеткавага адраса для злучэння Ethernet \"%s\"…"
 
-#: ../src/applet-device-ethernet.c:166
+#: src/applet-device-ethernet.c:166
 #, c-format
 msgid "Ethernet network connection “%s” active"
 msgstr "Сеткавае злучэнне Ethernet \"%s\" актыўна"
 
-#: ../src/applet-device-ethernet.c:338
+#: src/applet-device-ethernet.c:338
 msgid "DSL authentication"
 msgstr "Аўтэнтыфікацыя DSL"
 
-#: ../src/applet-device-ethernet.c:342 ../src/applet-dialogs.c:1180
-#: ../src/connection-editor/page-bluetooth.c:295
-#: ../src/connection-editor/page-mobile.c:532 ../src/mobile-helpers.c:452
+#: src/applet-device-ethernet.c:342 src/applet-dialogs.c:1180
+#: src/connection-editor/ce-ip4-routes.ui:44
+#: src/connection-editor/ce-ip6-routes.ui:44
+#: src/connection-editor/ce-page-dcb.ui:583
+#: src/connection-editor/ce-page-dcb.ui:1033
+#: src/connection-editor/ce-ppp-auth-methods.ui:42
+#: src/connection-editor/page-bluetooth.c:295
+#: src/connection-editor/page-mobile.c:532 src/mobile-helpers.c:452
 msgid "_OK"
 msgstr "_Добра"
 
-#: ../src/applet-device-wifi.c:208
+#: src/applet-device-wifi.c:210
 msgid "_Connect to Hidden Wi-Fi Network…"
 msgstr "_Падлучыцца да схаванай сеткі Wi-Fi…"
 
-#: ../src/applet-device-wifi.c:259
+#: src/applet-device-wifi.c:294
 msgid "Create _New Wi-Fi Network…"
 msgstr "Стварыць _новую сетку Wi-Fi…"
 
-#: ../src/applet-device-wifi.c:341
+#: src/applet-device-wifi.c:384
 msgid "(none)"
 msgstr "(няма)"
 
-#: ../src/applet-device-wifi.c:523 ../src/applet-device-wifi.c:1369
+#: src/applet-device-wifi.c:566 src/applet-device-wifi.c:1394
 msgid "Failed to add new connection"
 msgstr "Не атрымалася дадаць новае злучэнне"
 
-#: ../src/applet-device-wifi.c:524
+#: src/applet-device-wifi.c:567
 msgid "Insufficient privileges."
 msgstr "Не стае правоў."
 
-#: ../src/applet-device-wifi.c:526 ../src/applet-device-wifi.c:1351
-#: ../src/applet-device-wifi.c:1374 ../src/applet.c:417 ../src/applet.c:506
+#: src/applet-device-wifi.c:569 src/applet-device-wifi.c:1377
+#: src/applet-device-wifi.c:1397 src/applet.c:428 src/applet.c:511
 msgid "Connection failure"
 msgstr "Не атрымалася падлучыцца"
 
-#: ../src/applet-device-wifi.c:827
+#: src/applet-device-wifi.c:870
 #, c-format
 msgid "Wi-Fi Networks (%s)"
 msgstr "Сеткі Wi-Fi (%s)"
 
-#: ../src/applet-device-wifi.c:829
+#: src/applet-device-wifi.c:872
 #, c-format
 msgid "Wi-Fi Network (%s)"
 msgstr "Сетка Wi-Fi (%s)"
 
-#: ../src/applet-device-wifi.c:831
+#: src/applet-device-wifi.c:874
 msgid "Wi-Fi Network"
 msgid_plural "Wi-Fi Networks"
 msgstr[0] "Сетка Wi-Fi"
 msgstr[1] "Сеткі Wi-Fi"
 msgstr[2] "Сеткі Wi-Fi"
 
-#: ../src/applet-device-wifi.c:860
+#: src/applet-device-wifi.c:903
 msgid "Wi-Fi is disabled"
 msgstr "Wi-Fi выключаны"
 
-#: ../src/applet-device-wifi.c:861
+#: src/applet-device-wifi.c:904
 msgid "Wi-Fi is disabled by hardware switch"
 msgstr "Wi-Fi выключаны апаратным пераключальнікам"
 
@@ -350,242 +364,245 @@ msgstr "Wi-Fi выключаны апаратным пераключальнік
 msgid "More networks"
 msgstr "Яшчэ сеткі"
 
-#: ../src/applet-device-wifi.c:1083
+#: src/applet-device-wifi.c:1109
 msgid "Wi-Fi Networks Available"
 msgstr "Даступныя сеткі Wi-Fi"
 
-#: ../src/applet-device-wifi.c:1084
+#: src/applet-device-wifi.c:1110
 msgid "Use the network menu to connect to a Wi-Fi network"
 msgstr "Выкарыстоўвайце меню са спісам сетак, каб падлучыцца да сеткі Wi-Fi"
 
-#: ../src/applet-device-wifi.c:1087 ../src/applet.c:828
+#: src/applet.c:745
 msgid "Don’t show this message again"
 msgstr "Больш не паказваць гэтае паведамленне"
 
-#: ../src/applet-device-wifi.c:1268
+#: src/applet-device-wifi.c:1294
 #, c-format
 msgid "You are now connected to the Wi-Fi network “%s”."
 msgstr "Вы падлучаныя да сеткі Wi-Fi \"%s\"."
 
-#: ../src/applet-device-wifi.c:1303
+#: src/applet-device-wifi.c:1331
 #, c-format
 msgid "Preparing Wi-Fi network connection “%s”…"
 msgstr "Падрыхтоўка сеткавага злучэння Wi-Fi \"%s\"…"
 
-#: ../src/applet-device-wifi.c:1306
+#: src/applet-device-wifi.c:1334
 #, c-format
 msgid "Configuring Wi-Fi network connection “%s”…"
 msgstr "Наладка сеткавага злучэння Wi-Fi \"%s\"…"
 
-#: ../src/applet-device-wifi.c:1309
+#: src/applet-device-wifi.c:1337
 #, c-format
 msgid "User authentication required for Wi-Fi network “%s”…"
 msgstr "Для сеткавага злучэння Wi-Fi \"%s\" патрабуецца аўтэнтыфікацыя…"
 
-#: ../src/applet-device-wifi.c:1312
+#: src/applet-device-wifi.c:1340
 #, c-format
 msgid "Requesting a Wi-Fi network address for “%s”…"
 msgstr "Запыт сеткавага адраса для сеткі Wi-Fi \"%s\"…"
 
-#: ../src/applet-device-wifi.c:1323
+#: src/applet-device-wifi.c:1351
 #, c-format
 msgid "Wi-Fi network connection “%s” active: %s (%d%%)"
 msgstr "Сеткавае злучэнне Wi-Fi \"%s\" актыўна: %s (%d%%)"
 
-#: ../src/applet-device-wifi.c:1327
+#: src/applet-device-wifi.c:1355
 #, c-format
 msgid "Wi-Fi network connection “%s” active"
 msgstr "Сеткавае злучэнне Wi-Fi \"%s\" актыўна"
 
-#: ../src/applet-device-wifi.c:1346
+#: src/applet-device-wifi.c:1374
 msgid "Failed to activate connection"
 msgstr "Не атрымалася актываваць злучэнне"
 
-#: ../src/applet-device-wifi.c:1348 ../src/applet-device-wifi.c:1371
-#: ../src/applet.c:414 ../src/applet.c:468 ../src/applet.c:503
+#: src/applet-device-wifi.c:1375 src/applet-device-wifi.c:1395 src/applet.c:426
+#: src/applet.c:477 src/applet.c:509
 msgid "Unknown error"
 msgstr "Невядомая памылка"
 
-#: ../src/applet-dialogs.c:28
+#: src/applet-dialogs.c:28
 msgid "Error displaying connection information:"
 msgstr "Не атрымалася адлюстраваць інфармацыю пра злучэнне:"
 
-#: ../src/applet-dialogs.c:60 ../src/connection-editor/page-wifi-security.c:369
+#: src/applet-dialogs.c:60 src/connection-editor/page-wifi-security.c:384
 msgid "LEAP"
 msgstr "LEAP"
 
-#: ../src/applet-dialogs.c:62
+#: src/applet-dialogs.c:62
 msgid "Dynamic WEP"
 msgstr "Дынамічны WEP"
 
-#: ../src/applet-dialogs.c:64 ../src/applet-dialogs.c:226
-#: ../src/applet-dialogs.c:228
+#: src/applet-dialogs.c:64 src/applet-dialogs.c:226
 msgid "WPA/WPA2"
 msgstr "WPA/WPA2"
 
 #. Create the expander
-#: ../src/applet-dialogs.c:163
+#: src/applet-dialogs.c:163
 msgid "More addresses"
 msgstr "Яшчэ адрасы"
 
-#: ../src/applet-dialogs.c:224
+#: src/applet-dialogs.c:224
 msgid "WEP"
 msgstr "WEP"
 
-#: ../src/applet-dialogs.c:230
+#: src/applet-dialogs.c:230
 msgid "WPA3"
 msgstr "WPA3"
 
-#: ../src/applet-dialogs.c:234 ../src/applet-dialogs.c:243
-#: ../src/connection-editor/page-wifi-security.c:320
+#: src/applet-dialogs.c:234 src/applet-dialogs.c:243
+#: src/connection-editor/page-wifi-security.c:327
 msgctxt "Wi-Fi/Ethernet security"
 msgid "None"
 msgstr "Няма"
 
-#: ../src/applet-dialogs.c:313 ../src/applet-dialogs.c:586
+#: src/applet-dialogs.c:313 src/applet-dialogs.c:586
 #, c-format
 msgid "%u Mb/s"
 msgstr "%u Мбіт/с"
 
-#: ../src/applet-dialogs.c:315 ../src/applet-dialogs.c:588
+#: src/applet-dialogs.c:315 src/applet-dialogs.c:588
 msgctxt "Speed"
 msgid "Unknown"
 msgstr "Невядома"
 
 #. Address
-#: ../src/applet-dialogs.c:330 ../src/applet-dialogs.c:352
+#: src/applet-dialogs.c:330 src/applet-dialogs.c:352
 msgctxt "Address"
 msgid "Unknown"
 msgstr "Невядома"
 
-#: ../src/applet-dialogs.c:331 ../src/applet-dialogs.c:404
+#: src/applet-dialogs.c:331 src/applet-dialogs.c:404
 msgid "IP Address"
 msgstr "IP-адрас"
 
-#: ../src/applet-dialogs.c:353
+#: src/applet-dialogs.c:353
 msgid "Broadcast Address"
 msgstr "Адрас шырокай трансляцыі"
 
 #. Prefix
-#: ../src/applet-dialogs.c:365
+#: src/applet-dialogs.c:365
 msgctxt "Subnet Mask"
 msgid "Unknown"
 msgstr "Невядома"
 
-#: ../src/applet-dialogs.c:366
+#: src/applet-dialogs.c:366
 msgid "Subnet Mask"
 msgstr "Маска падсеткі"
 
-#: ../src/applet-dialogs.c:428
+#: src/applet-dialogs.c:428
 msgid "Primary DNS"
 msgstr "Першы DNS"
 
-#: ../src/applet-dialogs.c:428
+#: src/applet-dialogs.c:428
 msgid "Secondary DNS"
 msgstr "Другі DNS"
 
-#: ../src/applet-dialogs.c:428
+#: src/applet-dialogs.c:428
 msgid "Tertiary DNS"
 msgstr "Трэці DNS"
 
-#: ../src/applet-dialogs.c:507
+#: src/applet-dialogs.c:507
 #, c-format
 msgid "Ethernet (%s)"
 msgstr "Ethernet (%s)"
 
-#: ../src/applet-dialogs.c:510
+#: src/applet-dialogs.c:510
 #, c-format
 msgid "802.11 Wi-Fi (%s)"
 msgstr "802.11 Wi-Fi (%s)"
 
-#: ../src/applet-dialogs.c:517
+#: src/applet-dialogs.c:517
 #, c-format
 msgid "GSM (%s)"
 msgstr "GSM (%s)"
 
-#: ../src/applet-dialogs.c:519
+#: src/applet-dialogs.c:519
 #, c-format
 msgid "CDMA (%s)"
 msgstr "CDMA (%s)"
 
 #. --- General ---
-#: ../src/applet-dialogs.c:527 ../src/applet-dialogs.c:861
-#: ../src/connection-editor/page-general.c:368
+#: src/applet-dialogs.c:527 src/applet-dialogs.c:861
+#: src/connection-editor/ce-page-team-port.ui:394
+#: src/connection-editor/ce-page-team.ui:776
+#: src/connection-editor/page-general.c:368
 msgid "General"
 msgstr "Асноўнае"
 
-#: ../src/applet-dialogs.c:530
+#: src/applet-dialogs.c:530
 msgid "Interface"
 msgstr "Інтэрфейс"
 
-#: ../src/applet-dialogs.c:545
+#: src/applet-dialogs.c:545
 msgid "Hardware Address"
 msgstr "Апаратны адрас"
 
 #. Driver
-#: ../src/applet-dialogs.c:558
+#: src/applet-dialogs.c:558
 msgid "Driver"
 msgstr "Драйвер"
 
-#: ../src/applet-dialogs.c:591
+#: src/applet-dialogs.c:591
 msgid "Speed"
 msgstr "Хуткасць"
 
-#: ../src/applet-dialogs.c:604
+#: src/applet-dialogs.c:604
 msgid "Security"
 msgstr "Бяспека"
 
 #. --- IPv4 ---
-#: ../src/applet-dialogs.c:629 ../src/applet-dialogs.c:891
+#: src/applet-dialogs.c:629 src/applet-dialogs.c:891
+#: src/connection-editor/ce-page-team.ui:493
 msgid "IPv4"
 msgstr "IPv4"
 
-#: ../src/applet-dialogs.c:648 ../src/applet-dialogs.c:696
+#: src/applet-dialogs.c:648 src/applet-dialogs.c:696
 msgid "Default Route"
 msgstr "Прадвызначаны маршрут"
 
-#: ../src/applet-dialogs.c:676 ../src/applet-dialogs.c:918
+#: src/applet-dialogs.c:676 src/applet-dialogs.c:918
+#: src/connection-editor/ce-page-team.ui:497
 msgid "IPv6"
 msgstr "IPv6"
 
-#: ../src/applet-dialogs.c:717
+#: src/applet-dialogs.c:717 src/connection-editor/ce-page-wifi.ui:52
 msgid "Hotspot"
 msgstr "Пункт доступу"
 
-#: ../src/applet-dialogs.c:735
+#: src/applet-dialogs.c:735
 msgid "Password"
 msgstr "Пароль"
 
-#: ../src/applet-dialogs.c:865
+#: src/applet-dialogs.c:865
 msgid "VPN Type"
 msgstr "Тып VPN"
 
-#: ../src/applet-dialogs.c:870
+#: src/applet-dialogs.c:870
 msgid "VPN Gateway"
 msgstr "Шлюз VPN"
 
-#: ../src/applet-dialogs.c:874
+#: src/applet-dialogs.c:874
 msgid "VPN Username"
 msgstr "Карыстальнік VPN"
 
-#: ../src/applet-dialogs.c:878
+#: src/applet-dialogs.c:878
 msgid "VPN Banner"
 msgstr "Банер VPN"
 
-#: ../src/applet-dialogs.c:882
+#: src/applet-dialogs.c:882
 msgid "Base Connection"
 msgstr "Базавае злучэнне"
 
-#: ../src/applet-dialogs.c:883
+#: src/applet-dialogs.c:883
 msgid "Unknown"
 msgstr "Невядома"
 
 #. Shouldn't really happen but ...
-#: ../src/applet-dialogs.c:1080
+#: src/applet-dialogs.c:1080
 msgid "No valid active connections found!"
 msgstr "Актыўных злучэнняў не знойдзена!"
 
-#: ../src/applet-dialogs.c:1128
+#: src/applet-dialogs.c:1128
 msgid ""
 "Copyright © 2004-2017 Red Hat, Inc.\n"
 "Copyright © 2005-2008 Novell, Inc.\n"
@@ -595,28 +612,33 @@ msgstr ""
 "Аўтарскія правы © 2005-2008 Novell, Inc.\n"
 "ды іншыя ўдзельнікі суполкі"
 
-#: ../src/applet-dialogs.c:1131
+#: src/applet-dialogs.c:1131
 msgid ""
 "Notification area applet for managing your network devices and connections."
 msgstr ""
 "Аплет прасторы апавяшчэнняў для кіравання сеткавымі прыладамі і злучэннямі."
 
-#: ../src/applet-dialogs.c:1133
+#: src/applet-dialogs.c:1133
 msgid "NetworkManager Website"
 msgstr "Сеціўная пляцоўка NetworkManager"
 
-#: ../src/applet-dialogs.c:1137
+#: src/applet-dialogs.c:1137
 msgid "translator-credits"
 msgstr ""
 "Zmicer Turok, nashtlumach@gmail. com\n"
 "\n"
 "Launchpad Contributions:\n"
 "  Alex Nehaichik https://launchpad.net/~nab\n"
+"  Alexander Vlasov https://launchpad.net/~sachavav\n"
+"  Bruce Cowan https://launchpad.net/~bruce89-deactivatedaccount\n"
 "  Ihar Hrachyshka https://launchpad.net/~ihar-hrachyshka\n"
 "  Iryna Nikanchuk https://launchpad.net/~unetriste-deactivatedaccount\n"
+"  Mikola Susla https://launchpad.net/~mikolabel\n"
+"  Mikola Tsekhan https://launchpad.net/~tsekhan\n"
+"  Sergei Chernooki https://launchpad.net/~chernooki\n"
 "  Valanćin Susla https://launchpad.net/~ben1508"
 
-#: ../src/applet-dialogs.c:1147
+#: src/applet-dialogs.c:1147
 msgid ""
 "The NetworkManager Applet could not find some required resources (the .ui "
 "file was not found)."
@@ -624,33 +646,33 @@ msgstr ""
 "Аплет NetworkManager не здолеў адшукаць некаторыя патрэбныя рэсурсы (.ui-"
 "файл не знойдзены)."
 
-#: ../src/applet-dialogs.c:1152
+#: src/applet-dialogs.c:1152
 msgid "Missing resources"
 msgstr "Адсутныя рэсурсы"
 
-#: ../src/applet-dialogs.c:1177
+#: src/applet-dialogs.c:1177
 msgid "Mobile broadband network password"
 msgstr "Пароль да мабільнай сеткі"
 
-#: ../src/applet-dialogs.c:1186
+#: src/applet-dialogs.c:1186
 #, c-format
 msgid "A password is required to connect to “%s”."
 msgstr "Для злучэння з сеткай \"%s\" патрабуецца пароль."
 
-#: ../src/applet-dialogs.c:1201
+#: src/applet-dialogs.c:1201
 msgid "Password:"
 msgstr "Пароль:"
 
-#: ../src/applet-dialogs.c:1483
+#: src/applet-dialogs.c:1483
 msgid "SIM PIN unlock required"
 msgstr "Для разблакавання SIM-карткі патрабуецца PIN-код"
 
-#: ../src/applet-dialogs.c:1484
+#: src/applet-dialogs.c:1484
 msgid "SIM PIN Unlock Required"
 msgstr "Для разблакавання SIM-карткі патрабуецца PIN-код"
 
 #. FIXME: some warning about # of times you can enter incorrect PIN
-#: ../src/applet-dialogs.c:1486
+#: src/applet-dialogs.c:1486
 #, c-format
 msgid ""
 "The mobile broadband device “%s” requires a SIM PIN code before it can be "
@@ -659,25 +681,25 @@ msgstr ""
 "Для працы прылады мабільнай сувязі \"%s\" патрабуецца PIN-код ад SIM-карткі."
 
 #. Translators: PIN code entry label
-#: ../src/applet-dialogs.c:1488
+#: src/applet-dialogs.c:1488
 msgid "PIN code:"
 msgstr "PIN-код:"
 
 #. Translators: Show/obscure PIN checkbox label
-#: ../src/applet-dialogs.c:1492
+#: src/applet-dialogs.c:1492
 msgid "Show PIN code"
 msgstr "Паказаць PIN-код"
 
-#: ../src/applet-dialogs.c:1494
+#: src/applet-dialogs.c:1494
 msgid "SIM PUK unlock required"
 msgstr "Для разблакавання SIM-карткі патрабуецца PUK-код"
 
-#: ../src/applet-dialogs.c:1495
+#: src/applet-dialogs.c:1495
 msgid "SIM PUK Unlock Required"
 msgstr "Для разблакавання SIM-карткі патрабуецца PUK-код"
 
 #. FIXME: some warning about # of times you can enter incorrect PUK
-#: ../src/applet-dialogs.c:1497
+#: src/applet-dialogs.c:1497
 #, c-format
 msgid ""
 "The mobile broadband device “%s” requires a SIM PUK code before it can be "
@@ -686,55 +708,55 @@ msgstr ""
 "Для працы прылады мабільнай сувязі \"%s\" патрабуецца PUK-код ад SIM-карткі."
 
 #. Translators: PUK code entry label
-#: ../src/applet-dialogs.c:1499
+#: src/applet-dialogs.c:1499
 msgid "PUK code:"
 msgstr "PUK-код:"
 
 #. Translators: New PIN entry label
-#: ../src/applet-dialogs.c:1502
+#: src/applet-dialogs.c:1502
 msgid "New PIN code:"
 msgstr "Новы PIN-код:"
 
 #. Translators: New PIN verification entry label
-#: ../src/applet-dialogs.c:1504
+#: src/applet-dialogs.c:1504
 msgid "Re-enter new PIN code:"
 msgstr "Паўторна ўвядзіце новы PIN-код:"
 
 #. Translators: Show/obscure PIN/PUK checkbox label
-#: ../src/applet-dialogs.c:1509
+#: src/applet-dialogs.c:1509
 msgid "Show PIN/PUK codes"
 msgstr "Паказаць PIN- і PUK-коды"
 
-#: ../src/applet-vpn-request.c:427
+#: src/applet-vpn-request.c:427
 msgid "Connection had no VPN setting"
 msgstr "У злучэння адсутнічаюць налады VPN"
 
-#: ../src/applet-vpn-request.c:477
+#: src/applet-vpn-request.c:477
 #, c-format
 msgid "Failed to write connection to VPN UI: %s (%d)"
 msgstr "Не атрымалася запісаць злучэнне ў VPN UI: %s (%d)"
 
-#: ../src/applet-vpn-request.c:485
+#: src/applet-vpn-request.c:485
 msgid "Failed to write connection to VPN UI: incomplete write"
 msgstr "Не атрымалася запісаць злучэнне ў VPN UI: незавершаны запіс"
 
-#: ../src/applet.c:412
+#: src/applet.c:425
 msgid "Failed to add/activate connection"
 msgstr "Не атрымалася дадаць/уключыць злучэнне"
 
-#: ../src/applet.c:466
+#: src/applet.c:476
 msgid "Device disconnect failed"
 msgstr "Не атрымалася адлучыць прыладу"
 
-#: ../src/applet.c:471
+#: src/applet.c:479
 msgid "Disconnect failure"
 msgstr "Не атрымалася адлучыцца"
 
-#: ../src/applet.c:501
+#: src/applet.c:508
 msgid "Connection activation failed"
 msgstr "Не атрымалася ўключыць злучэнне"
 
-#: ../src/applet.c:925
+#: src/applet.c:845
 #, c-format
 msgid ""
 "\n"
@@ -744,7 +766,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" разарвалася праз страту злучэння з сеткаю."
 
-#: ../src/applet.c:927
+#: src/applet.c:847
 #, c-format
 msgid ""
 "\n"
@@ -754,7 +776,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз страту злучэння з сеткаю."
 
-#: ../src/applet.c:929
+#: src/applet.c:849
 #, c-format
 msgid ""
 "\n"
@@ -763,7 +785,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз нечаканае спыненне службы VPN."
 
-#: ../src/applet.c:931
+#: src/applet.c:851
 #, c-format
 msgid ""
 "\n"
@@ -773,7 +795,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз вяртанне службай VPN хібнай канфігурацыі."
 
-#: ../src/applet.c:933
+#: src/applet.c:853
 #, c-format
 msgid ""
 "\n"
@@ -782,7 +804,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз перасягненне часу чакання."
 
-#: ../src/applet.c:935
+#: src/applet.c:855
 #, c-format
 msgid ""
 "\n"
@@ -791,7 +813,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз несвоечасовы запуск службы VPN."
 
-#: ../src/applet.c:937
+#: src/applet.c:857
 #, c-format
 msgid ""
 "\n"
@@ -800,7 +822,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз няўдалы запуск службы VPN."
 
-#: ../src/applet.c:939
+#: src/applet.c:859
 #, c-format
 msgid ""
 "\n"
@@ -809,7 +831,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз адсутнасць прыдатных ключоў."
 
-#: ../src/applet.c:941
+#: src/applet.c:861
 #, c-format
 msgid ""
 "\n"
@@ -818,7 +840,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла праз хібныя сакрэтныя ключы."
 
-#: ../src/applet.c:946
+#: src/applet.c:866
 #, c-format
 msgid ""
 "\n"
@@ -827,7 +849,7 @@ msgstr ""
 "\n"
 "VPN-злучэнне \"%s\" схібіла."
 
-#: ../src/applet.c:973
+#: src/applet.c:893
 #, c-format
 msgid ""
 "VPN connection has been successfully established.\n"
@@ -838,19 +860,19 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../src/applet.c:975
+#: src/applet.c:895
 msgid "VPN connection has been successfully established.\n"
 msgstr "Злучэнне VPN паспяхова наладжана.\n"
 
-#: ../src/applet.c:977
+#: src/applet.c:897
 msgid "VPN Login Message"
 msgstr "Паведамленне аўтарызацыі VPN"
 
-#: ../src/applet.c:985 ../src/applet.c:1025
+#: src/applet.c:905 src/applet.c:945
 msgid "VPN Connection Failed"
 msgstr "Не атрымалася злучыцца па VPN"
 
-#: ../src/applet.c:1029
+#: src/applet.c:949
 #, c-format
 msgid ""
 "\n"
@@ -863,7 +885,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/applet.c:1032
+#: src/applet.c:952
 #, c-format
 msgid ""
 "\n"
@@ -876,153 +898,155 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/applet.c:1347
+#: src/applet.c:1267
 msgid "device not ready (firmware missing)"
 msgstr "прылада не гатовая (адсутнічае прашыўка)"
 
-#: ../src/applet.c:1349
+#: src/applet.c:1269
 msgid "device not ready"
 msgstr "прылада не гатовая"
 
-#: ../src/applet.c:1375
+#: src/applet.c:1295
 msgid "Disconnect"
 msgstr "Адлучыцца"
 
-#: ../src/applet.c:1389
+#: src/applet.c:1312
 msgid "device not managed"
 msgstr "прыладай нельга кіраваць"
 
-#: ../src/applet.c:1463
+#: src/applet.c:1386
 msgid "No network devices available"
 msgstr "Даступныя сеткавыя прылады адсутнічаюць"
 
-#: ../src/applet.c:1509
+#: src/applet.c:1445
 msgid "_VPN Connections"
 msgstr "VPN-з_лучэнні"
 
-#: ../src/applet.c:1553
+#. separator is added if there will be items under it
+#: src/applet.c:1500
 msgid "_Configure VPN…"
 msgstr "_Наладзіць VPN…"
 
-#: ../src/applet.c:1556
+#: src/applet.c:1503
 msgid "_Add a VPN connection…"
 msgstr "_Дадаць VPN-злучэнне…"
 
-#: ../src/applet.c:1662
+#: src/applet.c:1621
 msgid "NetworkManager is not running…"
 msgstr "NetworkManager не запушчаны…"
 
-#: ../src/applet.c:1667 ../src/applet.c:2735
+#: src/applet.c:1626 src/applet.c:2825
 msgid "Networking disabled"
 msgstr "Падтрымка сеткі выключаная"
 
 #. 'Enable Networking' item
-#: ../src/applet.c:1877
+#: src/applet.c:1851
 msgid "Enable _Networking"
 msgstr "_Уключыць падтрымку сеткі"
 
 #. 'Enable Wi-Fi' item
-#: ../src/applet.c:1886
+#: src/applet.c:1860
 msgid "Enable _Wi-Fi"
 msgstr "_Уключыць Wi-Fi"
 
 #. 'Enable Mobile Broadband' item
-#: ../src/applet.c:1895
+#: src/applet.c:1869
 msgid "Enable _Mobile Broadband"
 msgstr "Уключыць _мабільную сувязь"
 
 #. Toggle notifications item
-#: ../src/applet.c:1907
+#: src/applet.c:1881
 msgid "Enable N_otifications"
 msgstr "Уключыць _апавяшчэнні"
 
 #. 'Connection Information' item
-#: ../src/applet.c:1919
+#: src/applet.c:1893
 msgid "Connection _Information"
 msgstr "Інфармацыя пра _злучэнне"
 
 #. 'Edit Connections...' item
-#: ../src/applet.c:1927
+#: src/applet.c:1901
 msgid "Edit Connections…"
 msgstr "Рэдагаваць злучэнні…"
 
-#: ../src/applet.c:1941
+#: src/applet.c:1915
 msgid "_About"
 msgstr "_Пра праграму"
 
-#: src/applet.c:2270
+#: src/applet.c:2175
 msgid "Disconnected - you are now offline"
 msgstr "Адключаны - вы зараз адлучаны"
 
-#: ../src/applet.c:2295
+#: src/applet.c:2177
 msgid "Disconnected"
 msgstr "Адлучана"
 
-#: src/applet.c:2304
+#: src/applet.c:2295
 msgid "Don't show this message again"
 msgstr "Больш не паказваць гэта паведамленне"
 
-#: src/applet.c:2358
+#: src/applet.c:2262
 msgid "Wireless network"
 msgstr "Безправадная сетка"
 
-#: src/applet.c:2361
+#: src/applet.c:2265
 msgid "Ethernet network"
 msgstr ""
 
-#: src/applet.c:2364
+#: src/applet.c:2268
 msgid "Modem network"
 msgstr "Мадэмная сетка"
 
-#: ../src/applet.c:2255
+#: src/applet.c:2332
 #, c-format
 msgid "You are now connected to “%s”."
 msgstr "Вы падлучаныя да \"%s\"."
 
-#: ../src/applet.c:2598
+#: src/applet.c:2688
 #, c-format
 msgid "Preparing network connection “%s”…"
 msgstr "Падрыхтоўка сеткавага злучэння \"%s\"…"
 
-#: ../src/applet.c:2601
+#: src/applet.c:2691
 #, c-format
 msgid "User authentication required for network connection “%s”…"
 msgstr "Для сеткавага злучэння \"%s\" патрабуецца аўтэнтыфікацыя…"
 
-#: ../src/applet.c:2607
+#: src/applet.c:2697
 #, c-format
 msgid "Network connection “%s” active"
 msgstr "Сеткавае злучэнне \"%s\" актыўна"
 
-#: ../src/applet.c:2680
+#: src/applet.c:2770
 #, c-format
 msgid "Starting VPN connection “%s”…"
 msgstr "Запуск VPN-злучэння \"%s\"…"
 
-#: ../src/applet.c:2683
+#: src/applet.c:2773
 #, c-format
 msgid "User authentication required for VPN connection “%s”…"
 msgstr "Для VPN-злучэння \"%s\" патрабуецца аўтэнтыфікацыя…"
 
-#: ../src/applet.c:2686
+#: src/applet.c:2776
 #, c-format
 msgid "Requesting a VPN address for “%s”…"
 msgstr "Запыт сеткавага адраса для VPN-злучэння \"%s\"…"
 
-#: ../src/applet.c:2689
+#: src/applet.c:2779
 #, c-format
 msgid "VPN connection active"
 msgstr "VPN-злучэнне актыўна"
 
-#: ../src/applet.c:2739
+#: src/applet.c:2829
 msgid "No network connection"
 msgstr "Не падлучана да сеткі"
 
-#: ../src/applet.c:3359
+#: src/applet.c:3468
 msgid "NetworkManager Applet"
 msgstr "Аплет NetworkManager"
 
-#: ../src/connection-editor/ce-page.h:97
+#: src/connection-editor/ce-ip4-routes.ui:88
+#: src/connection-editor/ce-ip6-routes.ui:88 src/connection-editor/ce-page.h:97
 msgid ""
 "IP addresses identify your computer on the network. Click the “Add” button "
 "to add an IP address."
@@ -1042,7 +1066,16 @@ msgstr ""
 msgid "_Add"
 msgstr "_Дадаць"
 
-#: ../src/connection-editor/connection-helpers.c:748
+#: src/connection-editor/ce-ip4-routes.ui:124
+#: src/connection-editor/ce-ip6-routes.ui:124
+#: src/connection-editor/ce-page-bond.ui:208
+#: src/connection-editor/ce-page-bridge.ui:148
+#: src/connection-editor/ce-page-ip4.ui:165
+#: src/connection-editor/ce-page-ip6.ui:199
+#: src/connection-editor/ce-page-team.ui:262
+#: src/connection-editor/ce-page-wireguard.ui:617
+#: src/connection-editor/connection-helpers.c:748
+#: src/connection-editor/nm-connection-list.ui:101
 msgid "_Delete"
 msgstr "_Выдаліць"
 
@@ -1134,7 +1167,7 @@ msgid "Bonded _connections"
 msgstr "_Звязаныя злучэнні"
 
 #: src/connection-editor/ce-page-bond.ui:105
-#: src/connection-editor/ce-page-wifi.ui:400
+#: src/connection-editor/ce-page-wifi.ui:294
 msgid "M_ode"
 msgstr "_Рэжым"
 
@@ -1370,10 +1403,11 @@ msgstr "Параметры…"
 msgid "Priority Groups"
 msgstr "Групы прыярытэту"
 
-#: ../src/connection-editor/ce-page.c:111
-#: ../src/connection-editor/page-wifi.c:144
-#: ../src/connection-editor/page-wifi.c:148
-#: ../src/connection-editor/page-wifi.c:169
+#: src/connection-editor/ce-page-dcb.ui:419
+#: src/connection-editor/ce-page-dcb.ui:442
+#: src/connection-editor/ce-page-dcb.ui:465 src/connection-editor/ce-page.c:111
+#: src/connection-editor/page-wifi.c:144 src/connection-editor/page-wifi.c:148
+#: src/connection-editor/page-wifi.c:169
 #, c-format
 msgid "default"
 msgstr "прадвызначана"
@@ -1591,8 +1625,14 @@ msgstr ""
 "параметр можа выкарыстоўвацца толькі для інтэрфейсаў Ethernet. nm-applet "
 "можа актываваць злучэнне толькі калі гэты параметр абраны."
 
-#: ../src/connection-editor/page-ip4.c:118
-#: ../src/connection-editor/page-ip6.c:136
+#: src/connection-editor/ce-page-ethernet.ui:17
+#: src/connection-editor/ce-page-ethernet.ui:77
+#: src/connection-editor/ce-page-general.ui:26
+#: src/connection-editor/ce-page-ip4.ui:12
+#: src/connection-editor/ce-page-ip6.ui:12
+#: src/connection-editor/ce-page-proxy.ui:24
+#: src/connection-editor/ce-page-wifi.ui:32
+#: src/connection-editor/page-ip4.c:118 src/connection-editor/page-ip6.c:136
 msgid "Automatic"
 msgstr "Аўтаматычна"
 
@@ -1636,12 +1676,15 @@ msgstr "Палова"
 msgid "Full"
 msgstr "Поўны"
 
-#: ../src/connection-editor/page-ip6.c:149
+#: src/connection-editor/ce-page-ethernet.ui:74
+#: src/connection-editor/page-ip6.c:149
 msgid "Ignore"
 msgstr "Ігнараваць"
 
-#: ../src/connection-editor/page-ip4.c:155
-#: ../src/connection-editor/page-ip6.c:185
+#: src/connection-editor/ce-page-ethernet.ui:80
+#: src/connection-editor/ce-page-ip4.ui:18
+#: src/connection-editor/ce-page-ip6.ui:18 src/connection-editor/page-ip4.c:155
+#: src/connection-editor/page-ip6.c:185
 msgid "Manual"
 msgstr "Уласнаручна"
 
@@ -1888,8 +1931,9 @@ msgstr "Аўтаматычна з уласнымі наладамі DNS"
 msgid "Link-Local"
 msgstr "Лакальнае злучэнне"
 
-#: ../src/connection-editor/page-ip4.c:175
-#: ../src/connection-editor/page-ip6.c:205
+#: src/connection-editor/ce-page-ip4.ui:24
+#: src/connection-editor/ce-page-ip6.ui:24 src/connection-editor/page-ip4.c:175
+#: src/connection-editor/page-ip6.c:205
 msgid "Shared to other computers"
 msgstr "Даступна для іншых камп'ютараў"
 
@@ -1921,13 +1965,15 @@ msgstr ""
 msgid "D_HCP client ID"
 msgstr "DHCP-ідэнтыфікатар _кліента"
 
-#: ../src/connection-editor/page-ip4.c:359
-#: ../src/connection-editor/page-ip6.c:348
+#: src/connection-editor/ce-page-ip4.ui:242
+#: src/connection-editor/ce-page-ip6.ui:249
+#: src/connection-editor/page-ip4.c:359 src/connection-editor/page-ip6.c:348
 msgid "S_earch domains"
 msgstr "_Дамены пошуку"
 
-#: ../src/connection-editor/page-ip4.c:350
-#: ../src/connection-editor/page-ip6.c:339
+#: src/connection-editor/ce-page-ip4.ui:256
+#: src/connection-editor/ce-page-ip6.ui:263
+#: src/connection-editor/page-ip4.c:350 src/connection-editor/page-ip6.c:339
 msgid "DNS ser_vers"
 msgstr "DNS-_серверы"
 
@@ -1955,13 +2001,15 @@ msgid "_Routes…"
 msgstr "М_аршруты…"
 
 #. TRANSLATORS: Default zone set for firewall, when no zone is selected
-#: ../src/connection-editor/page-general.c:41
+#: src/connection-editor/ce-page-ip6.ui:35
+#: src/connection-editor/page-general.c:41
 #| msgid "default"
 msgid "Default"
 msgstr "Прадвызначана"
 
-#: ../src/connection-editor/page-ip4.c:185
-#: ../src/connection-editor/page-ip6.c:213
+#: src/connection-editor/ce-page-ip6.ui:38
+#: src/connection-editor/ce-page-macsec.ui:32
+#: src/connection-editor/page-ip4.c:185 src/connection-editor/page-ip6.c:213
 msgid "Disabled"
 msgstr "Выключана"
 
@@ -2030,7 +2078,8 @@ msgstr "Пры злучэнні з IPv4-сеткай дазволіць злуч
 msgid "PSK"
 msgstr "PSK"
 
-#: ../src/connection-editor/page-ppp.c:115
+#: src/connection-editor/ce-page-macsec.ui:15
+#: src/connection-editor/page-ppp.c:115
 msgid "EAP"
 msgstr "EAP"
 
@@ -2575,13 +2624,15 @@ msgstr "Балансаванне загрузкі"
 msgid "LACP"
 msgstr "LACP"
 
-#: ../src/connection-editor/connection-helpers.c:92
-#: ../src/connection-editor/page-ethernet.c:334
+#: src/connection-editor/ce-page-team.ui:485
+#: src/connection-editor/connection-helpers.c:92
+#: src/connection-editor/page-ethernet.c:334
 msgid "Ethernet"
 msgstr "Ethernet"
 
-#: ../src/connection-editor/connection-helpers.c:107
-#: ../src/connection-editor/page-vlan.c:575
+#: src/connection-editor/ce-page-team.ui:489
+#: src/connection-editor/connection-helpers.c:107
+#: src/connection-editor/page-vlan.c:575
 msgid "VLAN"
 msgstr "VLAN"
 
@@ -2830,19 +2881,19 @@ msgstr "Мбіт/с"
 msgid "_Rate"
 msgstr "_Чашчыня"
 
-#: src/connection-editor/ce-page-wifi.ui:311
+#: src/connection-editor/ce-page-wifi.ui:205
 msgid "_BSSID"
 msgstr "_BSSID"
 
-#: src/connection-editor/ce-page-wifi.ui:336
+#: src/connection-editor/ce-page-wifi.ui:230
 msgid "C_hannel"
 msgstr "_Канал"
 
-#: src/connection-editor/ce-page-wifi.ui:368
+#: src/connection-editor/ce-page-wifi.ui:262
 msgid "Ban_d"
 msgstr "_Паласа"
 
-#: src/connection-editor/ce-page-wifi.ui:414
+#: src/connection-editor/ce-page-wifi.ui:308
 msgid "SS_ID"
 msgstr "SS_ID"
 
@@ -2978,35 +3029,35 @@ msgstr "_Паказваць прыватны ключ"
 msgid "<b>_Peers</b>"
 msgstr "<b>_Вузлы</b>"
 
-#: ../src/connection-editor/ce-page.c:105
+#: src/connection-editor/ce-page.c:105
 msgid "automatic"
 msgstr "аўтаматычна"
 
-#: ../src/connection-editor/ce-page.c:117
+#: src/connection-editor/ce-page.c:117
 msgid "off"
 msgstr "выключыць"
 
-#: ../src/connection-editor/ce-page.c:163
+#: src/connection-editor/ce-page.c:163
 msgid "unspecified error"
 msgstr "нявызначаная памылка"
 
-#: ../src/connection-editor/ce-page.c:268
+#: src/connection-editor/ce-page.c:268
 msgid "Preserve"
 msgstr "Захаваны"
 
-#: ../src/connection-editor/ce-page.c:269
+#: src/connection-editor/ce-page.c:269
 msgid "Permanent"
 msgstr "Пастаянны"
 
-#: ../src/connection-editor/ce-page.c:270
+#: src/connection-editor/ce-page.c:270
 msgid "Random"
 msgstr "Выпадковы"
 
-#: ../src/connection-editor/ce-page.c:271
+#: src/connection-editor/ce-page.c:271
 msgid "Stable"
 msgstr "Стабільны"
 
-#: ../src/connection-editor/ce-page.c:275
+#: src/connection-editor/ce-page.c:275
 msgid ""
 "The MAC address entered here will be used as hardware address for the "
 "network device this connection is activated on. This feature is known as MAC "
@@ -3016,58 +3067,57 @@ msgstr ""
 "злучэння. Гэтую магчымасць яшчэ называюць кланаваннем альбо падменай MAC-"
 "адраса. Прыклад: 00:11:22:33:44:55"
 
-#: ../src/connection-editor/ce-page.c:315
+#: src/connection-editor/ce-page.c:315
 msgid "MAC address"
 msgstr "MAC-адрас"
 
-#: ../src/connection-editor/ce-page.c:315
+#: src/connection-editor/ce-page.c:315
 msgid "HW address"
 msgstr "HW-адрас"
 
-#: ../src/connection-editor/ce-page.c:318
+#: src/connection-editor/ce-page.c:318
 #, c-format
 msgid "invalid %s for %s (%s)"
 msgstr "хібны %s для %s (%s)"
 
-#: ../src/connection-editor/ce-page.c:322
+#: src/connection-editor/ce-page.c:322
 #, c-format
 msgid "invalid %s (%s)"
 msgstr "хібны %s (%s)"
 
-#: ../src/connection-editor/ce-page.c:362
+#: src/connection-editor/ce-page.c:362
 #, c-format
 msgid "invalid interface-name for %s (%s): "
 msgstr "хібная назва інтэрфейсу для %s (%s): "
 
-#: ../src/connection-editor/ce-page.c:366
+#: src/connection-editor/ce-page.c:366
 #, c-format
 msgid "invalid interface-name (%s): "
 msgstr "хібная назва інтэрфейсу (%s): "
 
-#: ../src/connection-editor/ce-page.c:545
+#: src/connection-editor/ce-page.c:545
 msgid "can’t parse device name"
 msgstr "не атрымалася разабраць назву прылады"
 
-#: ../src/connection-editor/ce-page.c:563
+#: src/connection-editor/ce-page.c:563
 msgid "invalid hardware address"
 msgstr "хібны апаратны адрас"
 
-#: ../src/connection-editor/ce-page.c:585
+#: src/connection-editor/ce-page.c:585
 #, c-format
 msgid "invalid %s (%s): "
 msgstr "хібны %s (%s): "
 
-#: ../src/connection-editor/ce-page.c:586
-#: ../src/connection-editor/ce-page.c:591
+#: src/connection-editor/ce-page.c:586 src/connection-editor/ce-page.c:591
 msgid "device"
 msgstr "прылада"
 
-#: ../src/connection-editor/ce-page.c:590
+#: src/connection-editor/ce-page.c:590
 #, c-format
 msgid "invalid %s (%s) "
 msgstr "хібны %s (%s) "
 
-#: ../src/connection-editor/ce-page.h:94
+#: src/connection-editor/ce-page.h:94
 msgid ""
 "IP addresses identify your computer on the network. Click the “Add” button "
 "to add static IP address to be configured in addition to the automatic ones."
@@ -3075,7 +3125,7 @@ msgstr ""
 "IP-адрасы вызначаюць ваш камп'ютар у сетцы. Пстрыкніце па кнопцы \"Дадаць\", "
 "каб дадаць статычны IP-адрас, наладжаны ў дадатак да аўтаматычнага."
 
-#: ../src/connection-editor/ce-page.h:99
+#: src/connection-editor/ce-page.h:99
 msgid ""
 "The IP address identify your computer on the network and determines the "
 "address range distributed to other computers. Click the “Add” button to add "
@@ -3087,20 +3137,20 @@ msgstr ""
 "каб дадаць IP-адрас. Калі адрас не пазначаны, дыяпазон будзе вызначацца "
 "аўтаматычна."
 
-#: ../src/connection-editor/ce-page.h:104
+#: src/connection-editor/ce-page.h:104
 msgid "Additional static addresses"
 msgstr "Дадатковыя статычныя адрасы"
 
-#: ../src/connection-editor/ce-page.h:105
+#: src/connection-editor/ce-page.h:105
 msgid "Addresses"
 msgstr "Адрасы"
 
-#: ../src/connection-editor/ce-page.h:106
+#: src/connection-editor/ce-page.h:106
 msgid "Address (optional)"
 msgstr "Адрасы (неабавязкова)"
 
-#: ../src/connection-editor/ce-polkit-button.c:60
-#: ../src/connection-editor/ce-polkit.c:49
+#: src/connection-editor/ce-polkit-button.c:60
+#: src/connection-editor/ce-polkit.c:49
 msgid "No polkit authorization to perform the action"
 msgstr "Для выканання дзеяння адсутнічае аўтарызацыя polkit"
 
@@ -3162,98 +3212,98 @@ msgstr ""
 "аўтэнтыфікацыі. Калі ж узнікаюць памылкі злучэння, паспрабуйце выключыць "
 "некаторыя з метадаў."
 
-#: ../src/connection-editor/connection-helpers.c:93
-#: ../src/connection-editor/page-wifi.c:389
+#: src/connection-editor/connection-helpers.c:93
+#: src/connection-editor/page-wifi.c:389
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: ../src/connection-editor/connection-helpers.c:101
-#: ../src/connection-editor/page-bluetooth.c:106
+#: src/connection-editor/connection-helpers.c:101
+#: src/connection-editor/page-bluetooth.c:106
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../src/connection-editor/connection-helpers.c:102
-#: ../src/connection-editor/page-dsl.c:203
+#: src/connection-editor/connection-helpers.c:102
+#: src/connection-editor/page-dsl.c:203
 msgid "DSL/PPPoE"
 msgstr "DSL/PPPoE"
 
-#: ../src/connection-editor/connection-helpers.c:103
-#: ../src/connection-editor/page-infiniband.c:131
+#: src/connection-editor/connection-helpers.c:103
+#: src/connection-editor/page-infiniband.c:131
 msgid "InfiniBand"
 msgstr "InfiniBand"
 
-#: ../src/connection-editor/connection-helpers.c:104
-#: ../src/connection-editor/page-bond.c:429
+#: src/connection-editor/connection-helpers.c:104
+#: src/connection-editor/page-bond.c:429
 msgid "Bond"
 msgstr "Bond"
 
-#: ../src/connection-editor/connection-helpers.c:105
-#: ../src/connection-editor/page-team.c:1014
+#: src/connection-editor/connection-helpers.c:105
+#: src/connection-editor/page-team.c:1014
 msgid "Team"
 msgstr "Каманда"
 
-#: ../src/connection-editor/connection-helpers.c:106
-#: ../src/connection-editor/page-bridge.c:216
+#: src/connection-editor/connection-helpers.c:106
+#: src/connection-editor/page-bridge.c:216
 msgid "Bridge"
 msgstr "Мост"
 
-#: ../src/connection-editor/connection-helpers.c:108
-#: ../src/connection-editor/page-ip-tunnel.c:159
+#: src/connection-editor/connection-helpers.c:108
+#: src/connection-editor/page-ip-tunnel.c:159
 msgid "IP tunnel"
 msgstr "Тунэль IP"
 
-#: ../src/connection-editor/connection-helpers.c:109
-#: ../src/connection-editor/page-macsec.c:173
+#: src/connection-editor/connection-helpers.c:109
+#: src/connection-editor/page-macsec.c:173
 msgid "MACsec"
 msgstr "MACsec"
 
-#: ../src/connection-editor/connection-helpers.c:110
-#: ../src/connection-editor/page-wireguard.c:510
+#: src/connection-editor/connection-helpers.c:110
+#: src/connection-editor/page-wireguard.c:510
 msgid "WireGuard"
 msgstr "WireGuard"
 
-#: ../src/connection-editor/connection-helpers.c:112
-#: ../src/connection-editor/connection-helpers.c:374
-#: ../src/connection-editor/page-vpn.c:92
+#: src/connection-editor/connection-helpers.c:112
+#: src/connection-editor/connection-helpers.c:374
+#: src/connection-editor/page-vpn.c:92
 msgid "VPN"
 msgstr "VPN"
 
-#: ../src/connection-editor/connection-helpers.c:192
+#: src/connection-editor/connection-helpers.c:192
 msgid "No VPN service type."
 msgstr "Тып сэрвісу VPN адсутнічае."
 
-#: ../src/connection-editor/connection-helpers.c:197
+#: src/connection-editor/connection-helpers.c:197
 msgid "The VPN plugin failed to import the VPN connection correctly: "
 msgstr "Убудова VPN не здолела карэктна імпартаваць VPN-злучэнне: "
 
-#: ../src/connection-editor/connection-helpers.c:281
-#: ../src/connection-editor/page-proxy.c:104
-#: ../src/connection-editor/page-team-port.c:189
-#: ../src/connection-editor/page-team.c:327
+#: src/connection-editor/connection-helpers.c:281
+#: src/connection-editor/page-proxy.c:104
+#: src/connection-editor/page-team-port.c:189
+#: src/connection-editor/page-team.c:327
 msgid "Select file to import"
 msgstr "Абраць файл для імпарту"
 
-#: ../src/connection-editor/connection-helpers.c:285
-#: ../src/connection-editor/page-proxy.c:108
-#: ../src/connection-editor/page-team-port.c:193
-#: ../src/connection-editor/page-team.c:331
+#: src/connection-editor/connection-helpers.c:285
+#: src/connection-editor/page-proxy.c:108
+#: src/connection-editor/page-team-port.c:193
+#: src/connection-editor/page-team.c:331
 msgid "_Open"
 msgstr "_Адкрыць"
 
-#: ../src/connection-editor/connection-helpers.c:316
+#: src/connection-editor/connection-helpers.c:316
 msgid "Hardware"
 msgstr "Апаратнае"
 
-#: ../src/connection-editor/connection-helpers.c:343
+#: src/connection-editor/connection-helpers.c:343
 msgid "Virtual"
 msgstr "Віртуальнае"
 
-#: ../src/connection-editor/connection-helpers.c:492
-#: ../src/connection-editor/connection-helpers.c:494
+#: src/connection-editor/connection-helpers.c:492
+#: src/connection-editor/connection-helpers.c:494
 msgid "Import a saved VPN configuration…"
 msgstr "Імпартаваць захаваную канфігурацыю VPN…"
 
-#: ../src/connection-editor/connection-helpers.c:524
+#: src/connection-editor/connection-helpers.c:524
 msgid ""
 "The connection editor dialog could not be initialized due to an unknown "
 "error."
@@ -3261,15 +3311,15 @@ msgstr ""
 "Не атрымалася ініцыялізаваць дыялогавае акно рэдактара злучэнняў праз "
 "невядомую памылку."
 
-#: ../src/connection-editor/connection-helpers.c:533
+#: src/connection-editor/connection-helpers.c:533
 msgid "Could not create new connection"
 msgstr "Не атрымалася стварыць новае злучэнне"
 
-#: ../src/connection-editor/connection-helpers.c:696
+#: src/connection-editor/connection-helpers.c:696
 msgid "Connection delete failed"
 msgstr "Не атрымалася выдаліць злучэнне"
 
-#: ../src/connection-editor/connection-helpers.c:744
+#: src/connection-editor/connection-helpers.c:744
 #, c-format
 msgid "Are you sure you wish to delete the connection %s?"
 msgstr "Сапраўды хочаце выдаліць злучэнне \"%s\"?"
@@ -3282,63 +3332,61 @@ msgstr "_Новае злучэнне"
 msgid "_Quit"
 msgstr "_Выйсці"
 
-#: ../src/connection-editor/ip4-routes-dialog.c:683
-#: ../src/connection-editor/ip6-routes-dialog.c:704
-#: ../src/connection-editor/page-ip4.c:1119
-#: ../src/connection-editor/page-ip6.c:1121
+#: src/connection-editor/ip4-routes-dialog.c:683
+#: src/connection-editor/ip6-routes-dialog.c:704
+#: src/connection-editor/page-ip4.c:1119 src/connection-editor/page-ip6.c:1121
 msgid "Address"
 msgstr "Адрас"
 
-#: ../src/connection-editor/ip4-routes-dialog.c:702
-#: ../src/connection-editor/page-ip4.c:1138
+#: src/connection-editor/ip4-routes-dialog.c:702
+#: src/connection-editor/page-ip4.c:1138
 msgid "Netmask"
 msgstr "Сеткавая маска"
 
-#: ../src/connection-editor/ip4-routes-dialog.c:721
-#: ../src/connection-editor/ip6-routes-dialog.c:742
-#: ../src/connection-editor/page-ip4.c:1157
-#: ../src/connection-editor/page-ip6.c:1159
+#: src/connection-editor/ip4-routes-dialog.c:721
+#: src/connection-editor/ip6-routes-dialog.c:742
+#: src/connection-editor/page-ip4.c:1157 src/connection-editor/page-ip6.c:1159
 msgid "Gateway"
 msgstr "Шлюз"
 
-#: ../src/connection-editor/ip4-routes-dialog.c:740
-#: ../src/connection-editor/ip6-routes-dialog.c:761
+#: src/connection-editor/ip4-routes-dialog.c:740
+#: src/connection-editor/ip6-routes-dialog.c:761
 msgid "Metric"
 msgstr "Метрыка"
 
-#: ../src/connection-editor/ip6-routes-dialog.c:723
-#: ../src/connection-editor/page-ip6.c:1140
+#: src/connection-editor/ip6-routes-dialog.c:723
+#: src/connection-editor/page-ip6.c:1140
 msgid "Prefix"
 msgstr "Прэфікс"
 
-#: ../src/connection-editor/nm-connection-editor.c:97
+#: src/connection-editor/nm-connection-editor.c:97
 #, c-format
 msgid "Editing %s"
 msgstr "Рэдагаванне %s"
 
-#: ../src/connection-editor/nm-connection-editor.c:101
+#: src/connection-editor/nm-connection-editor.c:101
 msgid "Editing un-named connection"
 msgstr "Рэдагаванне безназоўнага злучэння"
 
-#: ../src/connection-editor/nm-connection-editor.c:121
+#: src/connection-editor/nm-connection-editor.c:121
 msgid "Missing connection name"
 msgstr "Назва злучэння адсутнічае"
 
-#: ../src/connection-editor/nm-connection-editor.c:337
+#: src/connection-editor/nm-connection-editor.c:337
 msgid "Editor initializing…"
 msgstr "Ініцыялізацыя рэдактара…"
 
-#: ../src/connection-editor/nm-connection-editor.c:344
-#: ../src/connection-editor/nm-connection-list.c:457
+#: src/connection-editor/nm-connection-editor.c:344
+#: src/connection-editor/nm-connection-list.c:457
 msgid "Connection cannot be modified"
 msgstr "Немагчыма змяніць злучэнне"
 
-#: ../src/connection-editor/nm-connection-editor.c:359
+#: src/connection-editor/nm-connection-editor.c:359
 #, c-format
 msgid "Invalid setting %s: %s"
 msgstr "Хібны параметр %s: %s"
 
-#: ../src/connection-editor/nm-connection-editor.c:435
+#: src/connection-editor/nm-connection-editor.c:435
 msgid ""
 "The connection editor could not find some required resources (the .ui file "
 "was not found)."
@@ -3346,36 +3394,36 @@ msgstr ""
 "Рэдактар злучэнняў не здолеў адшукаць некаторыя патрэбныя рэсурсы (.ui-файл "
 "не знойдзены)."
 
-#: ../src/connection-editor/nm-connection-editor.c:568
-#: ../src/connection-editor/vpn-helpers.c:199
+#: src/connection-editor/nm-connection-editor.c:568
+#: src/connection-editor/vpn-helpers.c:199
 msgid "_Save"
 msgstr "_Захаваць"
 
-#: ../src/connection-editor/nm-connection-editor.c:569
+#: src/connection-editor/nm-connection-editor.c:569
 msgid "Save any changes made to this connection."
 msgstr "Захаваць усе змены, зробленыя для гэтага злучэння."
 
-#: ../src/connection-editor/nm-connection-editor.c:570
+#: src/connection-editor/nm-connection-editor.c:570
 msgid "Authenticate to save this connection for all users of this machine."
 msgstr ""
 "Для захавання гэтага злучэння для ўсіх карыстальнікаў камп'ютара патрабуецца "
 "аўтэнтыфікацыя."
 
-#: ../src/connection-editor/nm-connection-editor.c:586
+#: src/connection-editor/nm-connection-editor.c:586
 msgid "Could not create connection"
 msgstr "Не атрымалася стварыць злучэнне"
 
-#: ../src/connection-editor/nm-connection-editor.c:586
+#: src/connection-editor/nm-connection-editor.c:586
 msgid "Could not edit connection"
 msgstr "Не атрымалася адрэдагаваць злучэнне"
 
-#: ../src/connection-editor/nm-connection-editor.c:588
+#: src/connection-editor/nm-connection-editor.c:588
 msgid "Unknown error creating connection editor dialog."
 msgstr ""
 "Падчас стварэння дыялогавага акна для рэдактара злучэння адбылася невядомая "
 "памылка."
 
-#: ../src/connection-editor/nm-connection-editor.c:729
+#: src/connection-editor/nm-connection-editor.c:729
 msgid ""
 "Warning: the connection contains some properties not supported by the "
 "editor. They will be cleared upon save."
@@ -3383,11 +3431,11 @@ msgstr ""
 "Увага: злучэнне мае пэўныя ўласцівасці, якія не падтрымлівацца рэдактарам. "
 "Яны ачысцяцца пасля захавання."
 
-#: ../src/connection-editor/nm-connection-editor.c:751
+#: src/connection-editor/nm-connection-editor.c:751
 msgid "Error initializing editor"
 msgstr "Памылка ініцыялізацыі рэдактара"
 
-#: ../src/connection-editor/nm-connection-editor.c:1176
+#: src/connection-editor/nm-connection-editor.c:1176
 msgid "Connection add failed"
 msgstr "Не атрымалася дадаць злучэнне"
 
@@ -3435,17 +3483,17 @@ msgstr "Змяніць цэтлік"
 msgid "Filename"
 msgstr "Назва файла"
 
-#: ../src/connection-editor/nm-connection-list.c:134
+#: src/connection-editor/nm-connection-list.c:134
 msgid "never"
 msgstr "ніколі"
 
-#: ../src/connection-editor/nm-connection-list.c:145
-#: ../src/connection-editor/nm-connection-list.c:156
+#: src/connection-editor/nm-connection-list.c:145
+#: src/connection-editor/nm-connection-list.c:156
 msgid "now"
 msgstr "зараз"
 
 #. less than an hour ago
-#: ../src/connection-editor/nm-connection-list.c:163
+#: src/connection-editor/nm-connection-list.c:163
 #, c-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -3453,7 +3501,7 @@ msgstr[0] "%d хвіліна таму"
 msgstr[1] "%d хвіліны таму"
 msgstr[2] "%d хвілін таму"
 
-#: ../src/connection-editor/nm-connection-list.c:167
+#: src/connection-editor/nm-connection-list.c:167
 #, c-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
@@ -3461,7 +3509,7 @@ msgstr[0] "%d гадзіна таму"
 msgstr[1] "%d гадзіны таму"
 msgstr[2] "%d гадзін таму"
 
-#: ../src/connection-editor/nm-connection-list.c:179
+#: src/connection-editor/nm-connection-list.c:179
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -3469,7 +3517,7 @@ msgstr[0] "%d дзень таму"
 msgstr[1] "%d дні таму"
 msgstr[2] "%d дзён таму"
 
-#: ../src/connection-editor/nm-connection-list.c:185
+#: src/connection-editor/nm-connection-list.c:185
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -3477,7 +3525,7 @@ msgstr[0] "%d месяц таму"
 msgstr[1] "%d месяцы таму"
 msgstr[2] "%d месяцаў таму"
 
-#: ../src/connection-editor/nm-connection-list.c:189
+#: src/connection-editor/nm-connection-list.c:189
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -3485,80 +3533,80 @@ msgstr[0] "%d год таму"
 msgstr[1] "%d гады таму"
 msgstr[2] "%d гадоў таму"
 
-#: ../src/connection-editor/nm-connection-list.c:459
+#: src/connection-editor/nm-connection-list.c:459
 msgid "Connection cannot be deleted"
 msgstr "Злучэнне немагчыма выдаліць"
 
-#: ../src/connection-editor/nm-connection-list.c:462
+#: src/connection-editor/nm-connection-list.c:462
 msgid "Select a connection to edit"
 msgstr "Абярыце злучэнне для рэдагавання"
 
-#: ../src/connection-editor/nm-connection-list.c:464
+#: src/connection-editor/nm-connection-list.c:464
 msgid "Select a connection to delete"
 msgstr "Абярыце злучэнне для выдалення"
 
-#: ../src/connection-editor/nm-connection-list.c:785
+#: src/connection-editor/nm-connection-list.c:785
 msgid "Name"
 msgstr "Назва"
 
-#: ../src/connection-editor/nm-connection-list.c:798
+#: src/connection-editor/nm-connection-list.c:798
 msgid "Last Used"
 msgstr "Дата апошняга выкарыстання"
 
-#: ../src/connection-editor/nm-connection-list.c:836
+#: src/connection-editor/nm-connection-list.c:836
 msgid "Edit the selected connection"
 msgstr "Рэдагаваць абранае злучэнне"
 
-#: ../src/connection-editor/nm-connection-list.c:837
+#: src/connection-editor/nm-connection-list.c:837
 msgid "Authenticate to edit the selected connection"
 msgstr "Для рэдагавання абранага злучэння патрабуецца аўтэнтыфікацыя"
 
-#: ../src/connection-editor/nm-connection-list.c:842
+#: src/connection-editor/nm-connection-list.c:842
 msgid "Delete the selected connection"
 msgstr "Выдаліць абранае злучэнне"
 
-#: ../src/connection-editor/nm-connection-list.c:843
+#: src/connection-editor/nm-connection-list.c:843
 msgid "Authenticate to delete the selected connection"
 msgstr "Для выдалення абранага злучэння патрабуецца аўтэнтыфікацыя"
 
-#: ../src/connection-editor/nm-connection-list.c:1053
+#: src/connection-editor/nm-connection-list.c:1053
 #, c-format
 msgid "Unrecognized connection type"
 msgstr "Нераспазнаны тып злучэння"
 
-#: ../src/connection-editor/nm-connection-list.c:1058
+#: src/connection-editor/nm-connection-list.c:1058
 #, c-format
 msgid "Don’t know how to import “%s” connections"
 msgstr "Невядома як імпартаваць злучэнні \"%s\""
 
-#: ../src/connection-editor/nm-connection-list.c:1062
+#: src/connection-editor/nm-connection-list.c:1062
 msgid "Error importing connection"
 msgstr "Не атрымалася імпартаваць злучэнне"
 
-#: ../src/connection-editor/nm-connection-list.c:1069
-#: ../src/connection-editor/nm-connection-list.c:1084
-#: ../src/connection-editor/nm-connection-list.c:1087
+#: src/connection-editor/nm-connection-list.c:1069
+#: src/connection-editor/nm-connection-list.c:1084
+#: src/connection-editor/nm-connection-list.c:1087
 msgid "Error creating connection"
 msgstr "Не атрымалася стварыць злучэнне"
 
-#: ../src/connection-editor/nm-connection-list.c:1069
+#: src/connection-editor/nm-connection-list.c:1069
 msgid "Connection type not specified."
 msgstr "Тып злучэння не вызначаны."
 
-#: ../src/connection-editor/nm-connection-list.c:1085
+#: src/connection-editor/nm-connection-list.c:1085
 msgid "No VPN plugins are installed."
 msgstr "Убудоў VPN не ўсталявана."
 
-#: ../src/connection-editor/nm-connection-list.c:1088
+#: src/connection-editor/nm-connection-list.c:1088
 #, c-format
 msgid "Don’t know how to create “%s” connections"
 msgstr "Невядома як ствараць злучэнні \"%s\""
 
-#: ../src/connection-editor/nm-connection-list.c:1122
+#: src/connection-editor/nm-connection-list.c:1122
 msgid "Error editing connection"
 msgstr "Не атрымалася адрэдагаваць злучэнне"
 
-#: ../src/connection-editor/nm-connection-list.c:1123
+#: src/connection-editor/nm-connection-list.c:1123
 #, c-format
 msgid "Did not find a connection with UUID “%s”"
 msgstr "Злучэнне з UUID \"%s\" не знойдзена"
@@ -3571,62 +3619,62 @@ msgstr "Сеткавыя злучэнні"
 msgid "Add a new connection"
 msgstr "Дадаць новае злучэнне"
 
-#: ../src/connection-editor/page-8021x-security.c:97
+#: src/connection-editor/page-8021x-security.c:97
 msgid "802.1X Security"
 msgstr "Бяспека 802.1X"
 
-#: ../src/connection-editor/page-8021x-security.c:99
+#: src/connection-editor/page-8021x-security.c:99
 msgid "Could not load 802.1X Security user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка для бяспекі 802.1X."
 
-#: ../src/connection-editor/page-8021x-security.c:113
+#: src/connection-editor/page-8021x-security.c:113
 msgid "Use 802.1_X security for this connection"
 msgstr "Выкарыстоўваць бяспеку _802.1X для гэтага злучэння"
 
-#: ../src/connection-editor/page-bluetooth.c:44
+#: src/connection-editor/page-bluetooth.c:44
 msgid "MAC address of the Bluetooth device. Example: 00:11:22:33:44:55"
 msgstr "MAC-адрас прылады Bluetooth. Прыклад: 00:11:22:33:44:55"
 
-#: ../src/connection-editor/page-bluetooth.c:108
+#: src/connection-editor/page-bluetooth.c:108
 msgid "Could not load Bluetooth user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка Bluetooth."
 
-#: ../src/connection-editor/page-bluetooth.c:156
+#: src/connection-editor/page-bluetooth.c:156
 #, c-format
 msgid "invalid Bluetooth device (%s)"
 msgstr "непрыдатная прылада Bluetooth (%s)"
 
-#: ../src/connection-editor/page-bluetooth.c:239
+#: src/connection-editor/page-bluetooth.c:239
 #, c-format
 msgid "Bluetooth connection %d"
 msgstr "Злучэнне Bluetooth %d"
 
-#: ../src/connection-editor/page-bluetooth.c:290
+#: src/connection-editor/page-bluetooth.c:290
 msgid "Bluetooth Type"
 msgstr "Тып Bluetooth"
 
-#: ../src/connection-editor/page-bluetooth.c:308
+#: src/connection-editor/page-bluetooth.c:308
 msgid "Select the type of the Bluetooth connection profile."
 msgstr "Абярыце тып профілю злучэння Bluetooth."
 
-#: ../src/connection-editor/page-bluetooth.c:313
+#: src/connection-editor/page-bluetooth.c:313
 msgid "_Personal Area Network"
 msgstr "_Асабістая сетка"
 
-#: ../src/connection-editor/page-bluetooth.c:318
+#: src/connection-editor/page-bluetooth.c:318
 msgid "_Dial-Up Network"
 msgstr "Сетка _Dial-Up"
 
-#: ../src/connection-editor/page-bond.c:432
+#: src/connection-editor/page-bond.c:432
 msgid "Could not load bond user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка агрэгаванага злучэння (bond)."
 
-#: ../src/connection-editor/page-bond.c:551
+#: src/connection-editor/page-bond.c:551
 msgid "primary"
 msgstr "асноўны"
 
-#: ../src/connection-editor/page-bond.c:606
+#: src/connection-editor/page-bond.c:606
 #, c-format
 msgid "Bond connection %d"
 msgstr "Агрэгаванае злучэнне (bond) %d"
@@ -3634,46 +3682,46 @@ msgstr "Агрэгаванае злучэнне (bond) %d"
 #. Translators: a "Bridge Port" is a network
 #. * device that is part of a bridge.
 #. 
-#: ../src/connection-editor/page-bridge-port.c:91
+#: src/connection-editor/page-bridge-port.c:91
 msgid "Bridge Port"
 msgstr "Порт моста"
 
-#: ../src/connection-editor/page-bridge-port.c:93
+#: src/connection-editor/page-bridge-port.c:93
 msgid "Could not load bridge port user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка порта злучэння тыпу мост."
 
-#: ../src/connection-editor/page-bridge.c:219
+#: src/connection-editor/page-bridge.c:219
 msgid "Could not load bridge user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка злучэння тыпу мост."
 
-#: ../src/connection-editor/page-bridge.c:335
+#: src/connection-editor/page-bridge.c:335
 #, c-format
 msgid "Bridge connection %d"
 msgstr "Злучэнне тыпу мост %d"
 
-#: ../src/connection-editor/page-dcb.c:610
+#: src/connection-editor/page-dcb.c:610
 msgid "DCB"
 msgstr "DСВ"
 
-#: ../src/connection-editor/page-dcb.c:612
+#: src/connection-editor/page-dcb.c:612
 msgid "Could not load DCB user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка DСВ."
 
-#: ../src/connection-editor/page-dsl.c:205
+#: src/connection-editor/page-dsl.c:205
 msgid "Could not load DSL user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка DSL."
 
-#: ../src/connection-editor/page-dsl.c:306
+#: src/connection-editor/page-dsl.c:306
 msgid "missing parent interface"
 msgstr "бацькоўскі інтэрфейс адсутнічае"
 
-#: ../src/connection-editor/page-dsl.c:351
+#: src/connection-editor/page-dsl.c:351
 #, c-format
 msgid "DSL connection %d"
 msgstr "Злучэнне DSL %d"
 
-#: ../src/connection-editor/page-ethernet.c:67
+#: src/connection-editor/page-ethernet.c:67
 msgid ""
 "This option locks this connection to the network device specified either by "
 "its interface name or permanent MAC or both. Examples: “em1”, "
@@ -3683,34 +3731,33 @@ msgstr ""
 "назвай інтэрфейсу, альбо нязменным MAC-адрасам, альбо абодвума варыянтамі. "
 "Прыклады: \"em1\", \"3C:97:0E:42:1A:19\", \"em1 (3C:97:0E:42:1A:19)\""
 
-#: ../src/connection-editor/page-ethernet.c:248
+#: src/connection-editor/page-ethernet.c:248
 msgid "ignored"
 msgstr "ігнаруецца"
 
-#: ../src/connection-editor/page-ethernet.c:336
+#: src/connection-editor/page-ethernet.c:336
 msgid "Could not load ethernet user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка Ethernet."
 
-#: ../src/connection-editor/page-ethernet.c:498
+#: src/connection-editor/page-ethernet.c:498
 msgid "Ethernet device"
 msgstr "Прылада Ethernet"
 
-#: ../src/connection-editor/page-ethernet.c:502
-#: ../src/connection-editor/page-vlan.c:723
-#: ../src/connection-editor/page-wifi.c:521
+#: src/connection-editor/page-ethernet.c:502
+#: src/connection-editor/page-vlan.c:723 src/connection-editor/page-wifi.c:521
 msgid "cloned MAC"
 msgstr "кланаваны MAC-адрас"
 
-#: ../src/connection-editor/page-ethernet.c:506
+#: src/connection-editor/page-ethernet.c:506
 msgid "Wake-on-LAN password"
 msgstr "Пароль абуджэння па лакальнай сетцы"
 
-#: ../src/connection-editor/page-ethernet.c:546
+#: src/connection-editor/page-ethernet.c:546
 #, c-format
 msgid "Ethernet connection %d"
 msgstr "Злучэнне Ethernet %d"
 
-#: ../src/connection-editor/page-general.c:42
+#: src/connection-editor/page-general.c:42
 msgid ""
 "The zone defines the trust level of the connection. Default is not a regular "
 "zone, selecting it results in the use of the default zone set in the "
@@ -3720,11 +3767,11 @@ msgstr ""
 "зона. Гэта азначае, што зона будзе памешчаная ў міжсеткавы экран. Параметр "
 "можна выкарыстоўваць толькі калі ўключаны firewalld."
 
-#: ../src/connection-editor/page-general.c:371
+#: src/connection-editor/page-general.c:371
 msgid "Could not load General user interface."
 msgstr "Не атрымалася загрузіць асноўны інтэрфейс карыстальніка."
 
-#: ../src/connection-editor/page-infiniband.c:43
+#: src/connection-editor/page-infiniband.c:43
 msgid ""
 "This option locks this connection to the network device specified either by "
 "its interface name or permanent MAC or both. Examples: “ib0”, "
@@ -3737,192 +3784,184 @@ msgstr ""
 "\"80:00:00:48:fe:80:00:00:00:00:00:00:00:02:c9:03:00:00:0f:65\", \"ib0 "
 "(80:00:00:48:fe:80:00:00:00:00:00:00:00:02:c9:03:00:00:0f:65)\""
 
-#: ../src/connection-editor/page-infiniband.c:134
+#: src/connection-editor/page-infiniband.c:134
 msgid "Could not load InfiniBand user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка InfiniBand."
 
-#: ../src/connection-editor/page-infiniband.c:197
+#: src/connection-editor/page-infiniband.c:197
 msgid "infiniband device"
 msgstr "прылада infiniband"
 
-#: ../src/connection-editor/page-infiniband.c:237
+#: src/connection-editor/page-infiniband.c:237
 #, c-format
 msgid "InfiniBand connection %d"
 msgstr "Злучэнне InfiniBand %d"
 
-#: ../src/connection-editor/page-ip-tunnel.c:161
+#: src/connection-editor/page-ip-tunnel.c:161
 msgid "Could not load IP tunnel user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка тунэля IP."
 
-#: ../src/connection-editor/page-ip-tunnel.c:275
+#: src/connection-editor/page-ip-tunnel.c:275
 #, c-format
 msgid "IP tunnel connection %d"
 msgstr "Тунэльнае IP-злучэнне %d"
 
-#: ../src/connection-editor/page-ip4.c:114
-#: ../src/connection-editor/page-ip6.c:130
+#: src/connection-editor/page-ip4.c:114 src/connection-editor/page-ip6.c:130
 msgid "Automatic (VPN)"
 msgstr "Аўтаматычна (VPN)"
 
-#: ../src/connection-editor/page-ip4.c:115
-#: ../src/connection-editor/page-ip6.c:131
+#: src/connection-editor/page-ip4.c:115 src/connection-editor/page-ip6.c:131
 msgid "Automatic (VPN) addresses only"
 msgstr "Толькі аўтаматычна атрыманыя адрасы (VPN)"
 
-#: ../src/connection-editor/page-ip4.c:119
-#: ../src/connection-editor/page-ip6.c:137
+#: src/connection-editor/page-ip4.c:119 src/connection-editor/page-ip6.c:137
 msgid "Automatic, addresses only"
 msgstr "Аўтаматычна, толькі адрасы"
 
-#: ../src/connection-editor/page-ip4.c:121
-#: ../src/connection-editor/page-ip6.c:133
+#: src/connection-editor/page-ip4.c:121 src/connection-editor/page-ip6.c:133
 msgid "Automatic (PPPoE)"
 msgstr "Аўтаматычна (PPPoE)"
 
-#: ../src/connection-editor/page-ip4.c:122
-#: ../src/connection-editor/page-ip6.c:134
+#: src/connection-editor/page-ip4.c:122 src/connection-editor/page-ip6.c:134
 msgid "Automatic (PPPoE) addresses only"
 msgstr "Толькі аўтаматычна атрыманыя адрасы (PPPoE)"
 
-#: ../src/connection-editor/page-ip4.c:124
+#: src/connection-editor/page-ip4.c:124
 msgid "Automatic (DHCP)"
 msgstr "Аўтаматычна (DHCP)"
 
-#: ../src/connection-editor/page-ip4.c:125
+#: src/connection-editor/page-ip4.c:125
 msgid "Automatic (DHCP) addresses only"
 msgstr "Толькі аўтаматычна атрыманыя адрасы (DHCP)"
 
-#: ../src/connection-editor/page-ip4.c:168
-#: ../src/connection-editor/page-ip6.c:198
+#: src/connection-editor/page-ip4.c:168 src/connection-editor/page-ip6.c:198
 msgid "Link-Local Only"
 msgstr "Толькі лакальнае злучэнне"
 
-#: ../src/connection-editor/page-ip4.c:348
-#: ../src/connection-editor/page-ip6.c:337
+#: src/connection-editor/page-ip4.c:348 src/connection-editor/page-ip6.c:337
 msgid "Additional DNS ser_vers"
 msgstr "Д_адатковыя DNS-серверы"
 
-#: ../src/connection-editor/page-ip4.c:357
-#: ../src/connection-editor/page-ip6.c:346
+#: src/connection-editor/page-ip4.c:357 src/connection-editor/page-ip6.c:346
 msgid "Additional s_earch domains"
 msgstr "_Дадатковыя дамены пошуку"
 
-#: ../src/connection-editor/page-ip4.c:1019
+#: src/connection-editor/page-ip4.c:1019
 #, c-format
 msgid "Editing IPv4 routes for %s"
 msgstr "Рэдагаванне маршрутаў IPv4 для %s"
 
-#: ../src/connection-editor/page-ip4.c:1209
+#: src/connection-editor/page-ip4.c:1209
 msgid "IPv4 Settings"
 msgstr "Налады IPv4"
 
-#: ../src/connection-editor/page-ip4.c:1211
+#: src/connection-editor/page-ip4.c:1211
 msgid "Could not load IPv4 user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка IPv4."
 
-#: ../src/connection-editor/page-ip4.c:1304
+#: src/connection-editor/page-ip4.c:1304
 #, c-format
 msgid "IPv4 address “%s” invalid"
 msgstr "IPv4-адрас \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip4.c:1312
+#: src/connection-editor/page-ip4.c:1312
 #, c-format
 msgid "IPv4 address netmask “%s” invalid"
 msgstr "Сеткавая маска IPv4-адрасу \"%s\" хібная"
 
-#: ../src/connection-editor/page-ip4.c:1321
+#: src/connection-editor/page-ip4.c:1321
 #, c-format
 msgid "IPv4 gateway “%s” invalid"
 msgstr "Шлюз IPv4 \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip4.c:1364
+#: src/connection-editor/page-ip4.c:1364
 #, c-format
 msgid "IPv4 DNS server “%s” invalid"
 msgstr "DNS-сервер IPv4 \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip6.c:173
+#: src/connection-editor/page-ip6.c:173
 msgid "Automatic, DHCP only"
 msgstr "Аўтаматычна, толькі DHCP"
 
-#: ../src/connection-editor/page-ip6.c:1022
+#: src/connection-editor/page-ip6.c:1022
 #, c-format
 msgid "Editing IPv6 routes for %s"
 msgstr "Рэдагаванне IPv6-маршрутаў для %s"
 
-#: ../src/connection-editor/page-ip6.c:1211
+#: src/connection-editor/page-ip6.c:1211
 msgid "IPv6 Settings"
 msgstr "Налады IPv6"
 
-#: ../src/connection-editor/page-ip6.c:1213
+#: src/connection-editor/page-ip6.c:1213
 msgid "Could not load IPv6 user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка IPv6."
 
-#: ../src/connection-editor/page-ip6.c:1308
+#: src/connection-editor/page-ip6.c:1308
 #, c-format
 msgid "IPv6 address “%s” invalid"
 msgstr "IPv6-адрас \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip6.c:1316
+#: src/connection-editor/page-ip6.c:1316
 #, c-format
 msgid "IPv6 prefix “%s” invalid"
 msgstr "Прэфікс IPv6 \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip6.c:1325
+#: src/connection-editor/page-ip6.c:1325
 #, c-format
 msgid "IPv6 gateway “%s” invalid"
 msgstr "Шлюз IPv6 \"%s\" хібны"
 
-#: ../src/connection-editor/page-ip6.c:1367
+#: src/connection-editor/page-ip6.c:1367
 #, c-format
 msgid "IPv6 DNS server “%s” invalid"
 msgstr "DNS-сервер IPv6 \"%s\" хібны"
 
-#: ../src/connection-editor/page-macsec.c:175
+#: src/connection-editor/page-macsec.c:175
 msgid "Could not load MACsec user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка MACsec."
 
-#: ../src/connection-editor/page-macsec.c:314
+#: src/connection-editor/page-macsec.c:314
 #, c-format
 msgid "MACSEC connection %d"
 msgstr "Злучэнне MACsec %d"
 
-#: ../src/connection-editor/page-master.c:221
-#: ../src/connection-editor/page-master.c:232
+#: src/connection-editor/page-master.c:221
+#: src/connection-editor/page-master.c:232
 msgid "Duplicate ports"
 msgstr ""
 
-#: ../src/connection-editor/page-master.c:222
+#: src/connection-editor/page-master.c:222
 #, c-format
 msgid "Ports “%s” and “%s” both apply to device “%s”"
 msgstr ""
 
-#: ../src/connection-editor/page-master.c:233
+#: src/connection-editor/page-master.c:233
 #, c-format
 msgid ""
 "Ports “%s” and “%s” apply to different virtual ports (“%s” and “%s”) of the "
 "same physical device."
 msgstr ""
 
-#: ../src/connection-editor/page-master.c:357
+#: src/connection-editor/page-master.c:357
 #, c-format
 msgid "%s port %d"
 msgstr ""
 
-#: ../src/connection-editor/page-mobile.c:297
+#: src/connection-editor/page-mobile.c:297
 msgid "Could not load mobile broadband user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка злучэння мабільнага сувязі."
 
-#: ../src/connection-editor/page-mobile.c:314
+#: src/connection-editor/page-mobile.c:314
 msgid "Unsupported mobile broadband connection type."
 msgstr "Гэты тып злучэння мабільнай сувязі не падтрымліваецца."
 
 #. Fall back to just asking for GSM vs. CDMA
-#: ../src/connection-editor/page-mobile.c:527
+#: src/connection-editor/page-mobile.c:527
 msgid "Select Mobile Broadband Provider Type"
 msgstr "Абярыце тып правайдэра злучэння мабільнай сувязі"
 
-#: ../src/connection-editor/page-mobile.c:554
+#: src/connection-editor/page-mobile.c:554
 msgid ""
 "Select the technology your mobile broadband provider uses. If you are "
 "unsure, ask your provider."
@@ -3930,7 +3969,7 @@ msgstr ""
 "Абярыце тэхналогію, якую выкарыстоўвае ваш мабільны аператар. Калі вы не "
 "ўпэўненыя, звярніцеся да правайдэра."
 
-#: ../src/connection-editor/page-mobile.c:559
+#: src/connection-editor/page-mobile.c:559
 msgid "My provider uses _GSM-based technology (i.e. GPRS, EDGE, UMTS, HSDPA)"
 msgstr ""
 "Мой аператар выкарыстоўвае GSM-_тэхналогію (напрыклад, GPRS, EDGE, UMTS, "
@@ -3938,86 +3977,86 @@ msgstr ""
 
 #. Translators: CDMA has 'D' accelerator key; 'C' collides with 'Cancel' button.
 #. You may need to change it according to your language.
-#: ../src/connection-editor/page-mobile.c:566
+#: src/connection-editor/page-mobile.c:566
 msgid "My provider uses C_DMA-based technology (i.e. 1xRTT, EVDO)"
 msgstr "Мой аператар выкарыстоўвае CDMA-т_эхналогію (напрыклад, 1xRTT, EVDO)"
 
-#: ../src/connection-editor/page-mobile.c:576 ../src/mb-menu-item.c:36
-#: ../src/mobile-helpers.c:268
+#: src/connection-editor/page-mobile.c:576 src/mb-menu-item.c:36
+#: src/mobile-helpers.c:268
 #| msgid "CDMA (%s)"
 msgid "CDMA"
 msgstr "CDMA"
 
-#: ../src/connection-editor/page-mobile.c:579 ../src/mb-menu-item.c:40
-#: ../src/mobile-helpers.c:266
+#: src/connection-editor/page-mobile.c:579 src/mb-menu-item.c:40
+#: src/mobile-helpers.c:266
 msgid "GSM"
 msgstr "GSM"
 
-#: ../src/connection-editor/page-ppp.c:116
+#: src/connection-editor/page-ppp.c:116
 msgid "PAP"
 msgstr "PAP"
 
-#: ../src/connection-editor/page-ppp.c:117
+#: src/connection-editor/page-ppp.c:117
 msgid "CHAP"
 msgstr "CHAP"
 
-#: ../src/connection-editor/page-ppp.c:118
+#: src/connection-editor/page-ppp.c:118
 msgid "MSCHAPv2"
 msgstr "MSCHAPv2"
 
-#: ../src/connection-editor/page-ppp.c:119
+#: src/connection-editor/page-ppp.c:119
 msgid "MSCHAP"
 msgstr "MSCHAP"
 
 #. Translators: "none" refers to authentication methods
-#: ../src/connection-editor/page-ppp.c:122
+#: src/connection-editor/page-ppp.c:122
 msgid "none"
 msgstr "нічога"
 
-#: ../src/connection-editor/page-ppp.c:182
+#: src/connection-editor/page-ppp.c:182
 #, c-format
 msgid "Editing PPP authentication methods for %s"
 msgstr "Рэдагаванне метадаў PPP-аўтэнтыфікацыі для %s"
 
-#: ../src/connection-editor/page-ppp.c:264
+#: src/connection-editor/page-ppp.c:264
 msgid "PPP Settings"
 msgstr "Налады PPP"
 
-#: ../src/connection-editor/page-ppp.c:266
+#: src/connection-editor/page-ppp.c:266
 msgid "Could not load PPP user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка PPP."
 
-#: ../src/connection-editor/page-proxy.c:198
+#: src/connection-editor/page-proxy.c:198
 msgid "Proxy"
 msgstr "Проксі"
 
-#: ../src/connection-editor/page-proxy.c:200
+#: src/connection-editor/page-proxy.c:200
 msgid "Could not load proxy user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка проксі."
 
-#: ../src/connection-editor/page-team-port.c:209
-#: ../src/connection-editor/page-team.c:347
+#: src/connection-editor/page-team-port.c:209
+#: src/connection-editor/page-team.c:347
 msgid "Error: file doesn’t contain a valid JSON configuration"
 msgstr "Памылка: файл не змяшчае канфігурацыі JSON"
 
 #. Translators: a "Team Port" is a network
 #. * device that is part of a team.
 #. 
-#: ../src/connection-editor/page-team-port.c:638
+#: src/connection-editor/page-team-port.c:638
 msgid "Team Port"
 msgstr "Порт агрэгаванага злучэння (team)"
 
-#: ../src/connection-editor/page-team-port.c:640
+#: src/connection-editor/page-team-port.c:640
 msgid "Could not load team port user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка порта агрэгацыі (team)."
 
-#: ../src/connection-editor/page-team.c:1017
+#: src/connection-editor/page-team.c:1017
 msgid "Could not load team user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка агрэгаванага злучэння (team)."
 
-#: ../src/connection-editor/page-team.c:1114
+#: src/connection-editor/page-team.c:1114
 #, c-format
 msgid "Team connection %d"
 msgstr "Агрэгаванае злучэнне (team) %d"
@@ -4025,57 +4064,57 @@ msgstr "Агрэгаванае злучэнне (team) %d"
 #. Translators: the first %s is a device name (eg, "em1"), the
 #. * second is a connection name (eg, "Auto Ethernet").
 #. 
-#: ../src/connection-editor/page-vlan.c:399
+#: src/connection-editor/page-vlan.c:399
 #, c-format
 msgid "%s (via “%s”)"
 msgstr "%s (праз \"%s\")"
 
-#: ../src/connection-editor/page-vlan.c:411
+#: src/connection-editor/page-vlan.c:411
 #, c-format
 msgid "New connection…"
 msgstr "Новае злучэнне…"
 
-#: ../src/connection-editor/page-vlan.c:577
+#: src/connection-editor/page-vlan.c:577
 msgid "Could not load vlan user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка VLAN."
 
-#: ../src/connection-editor/page-vlan.c:716
+#: src/connection-editor/page-vlan.c:716
 msgid "vlan parent"
 msgstr "бацькоўскі vlan"
 
-#: ../src/connection-editor/page-vlan.c:784
+#: src/connection-editor/page-vlan.c:784
 #, c-format
 msgid "VLAN connection %d"
 msgstr "Злучэнне VLAN %d"
 
-#: ../src/connection-editor/page-vpn.c:50
+#: src/connection-editor/page-vpn.c:50
 #, c-format
 msgid "Could not load editor VPN plugin for “%s” (%s)."
 msgstr "Не атрымалася загрузіць убудову рэдактара VPN для \"%s\" (%s)."
 
-#: ../src/connection-editor/page-vpn.c:51
+#: src/connection-editor/page-vpn.c:51
 msgid "unknown failure"
 msgstr "невядомая хіба"
 
-#: ../src/connection-editor/page-vpn.c:94
+#: src/connection-editor/page-vpn.c:94
 msgid "Could not load VPN user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка VPN."
 
-#: ../src/connection-editor/page-vpn.c:109
+#: src/connection-editor/page-vpn.c:109
 #, c-format
 msgid "Could not find VPN plugin for “%s”."
 msgstr "Не атрымалася адшукаць убудову VPN для \"%s\"."
 
-#: ../src/connection-editor/page-vpn.c:191
+#: src/connection-editor/page-vpn.c:191
 #, c-format
 msgid "VPN connection %d"
 msgstr "Злучэнне VPN %d"
 
-#: ../src/connection-editor/page-vpn.c:197
+#: src/connection-editor/page-vpn.c:197
 msgid "Choose a VPN Connection Type"
 msgstr "Абярыце тып VPN-злучэння"
 
-#: ../src/connection-editor/page-vpn.c:198
+#: src/connection-editor/page-vpn.c:198
 msgid ""
 "Select the type of VPN you wish to use for the new connection. If the type "
 "of VPN connection you wish to create does not appear in the list, you may "
@@ -4084,59 +4123,60 @@ msgstr ""
 "Абярыце тып новага VPN-злучэння. Калі патрэбнага тыпу няма ў спісе, гэта "
 "значыць, што ў сістэме не ўсталявана адпаведнай убудовы VPN."
 
-#: ../src/connection-editor/page-wifi-security.c:346
+#: src/connection-editor/page-wifi-security.c:359
 msgid "WEP 40/128-bit Key (Hex or ASCII)"
 msgstr "WEP, 40/128-бітны ключ (Шаснаццатковы ці ASCII)"
 
-#: ../src/connection-editor/page-wifi-security.c:356
+#: src/connection-editor/page-wifi-security.c:372
 msgid "WEP 128-bit Passphrase"
 msgstr "WEP, 128-бітны пароль"
 
-#: ../src/connection-editor/page-wifi-security.c:382
+#: src/connection-editor/page-wifi-security.c:397
 msgid "Dynamic WEP (802.1X)"
 msgstr "Дынамічны WEP (802.1X)"
 
-#: ../src/connection-editor/page-wifi-security.c:395
+#: src/connection-editor/page-wifi-security.c:410
 msgid "WPA & WPA2 Personal"
 msgstr "WPA & WPA2 Personal"
 
-#: ../src/connection-editor/page-wifi-security.c:408
+#: src/connection-editor/page-wifi-security.c:423
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA & WPA2 Enterprise"
 
-#: ../src/connection-editor/page-wifi-security.c:421
+#: src/connection-editor/page-wifi-security.c:436
 msgid "WPA3 Personal"
 msgstr "WPA3 Personal"
 
-#: ../src/connection-editor/page-wifi-security.c:431
+#: src/connection-editor/page-wifi-security.c:449
+#: src/connection-editor/page-wifi-security.c:457
 msgid "Enhanced Open"
 msgstr "Палепшаны адкрыты"
 
-#: ../src/connection-editor/page-wifi-security.c:476
+#: src/connection-editor/page-wifi-security.c:503
 msgid "Could not load Wi-Fi security user interface; missing Wi-Fi setting."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка бяспекі Wi-Fi. Адсутнічае "
 "параметр Wi-Fi."
 
-#: ../src/connection-editor/page-wifi-security.c:487
+#: src/connection-editor/page-wifi-security.c:514
 msgid "Wi-Fi Security"
 msgstr "Бяспека Wi-Fi"
 
-#: ../src/connection-editor/page-wifi-security.c:489
+#: src/connection-editor/page-wifi-security.c:516
 msgid "Could not load Wi-Fi security user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка бяспекі Wi-Fi."
 
-#: ../src/connection-editor/page-wifi-security.c:570
+#: src/connection-editor/page-wifi-security.c:597
 #, c-format
 msgid "missing SSID"
 msgstr "адсутнічае SSID"
 
-#: ../src/connection-editor/page-wifi-security.c:576
+#: src/connection-editor/page-wifi-security.c:603
 #, c-format
 msgid "Security not compatible with Ad-Hoc mode"
 msgstr "Бяспека несумяшчальная з рэжымам Ad-Hoc"
 
-#: ../src/connection-editor/page-wifi.c:61
+#: src/connection-editor/page-wifi.c:61
 msgid ""
 "This option locks this connection to the Wi-Fi access point (AP) specified "
 "by the BSSID entered here. Example: 00:11:22:33:44:55"
@@ -4144,7 +4184,7 @@ msgstr ""
 "Гэты параметр прывязвае злучэнне да пэўнага пункту доступу Wi-Fi, "
 "вызначанага яго BSSID. Прыклад: 00:11:22:33:44:55"
 
-#: ../src/connection-editor/page-wifi.c:72
+#: src/connection-editor/page-wifi.c:72
 msgid ""
 "This option locks this connection to the network device specified either by "
 "its interface name or permanent MAC or both. Examples: “wlan0”, "
@@ -4154,64 +4194,64 @@ msgstr ""
 "назвай інтэрфейсу, альбо нязменным MAC-адрасам, альбо абодвума пунктамі. "
 "Прыклады: \"wlan0\", \"3C:97:0E:42:1A:19\", \"wlan0(3C:97:0E:42:1A:19)\""
 
-#: ../src/connection-editor/page-wifi.c:173
+#: src/connection-editor/page-wifi.c:173
 #, c-format
 msgid "%u (%u MHz)"
 msgstr "%u (%u МГц)"
 
-#: ../src/connection-editor/page-wifi.c:391
+#: src/connection-editor/page-wifi.c:391
 msgid "Could not load Wi-Fi user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка Wi-Fi."
 
-#: ../src/connection-editor/page-wifi.c:511
+#: src/connection-editor/page-wifi.c:511
 msgid "bssid"
 msgstr "bssid"
 
-#: ../src/connection-editor/page-wifi.c:517
+#: src/connection-editor/page-wifi.c:517
 msgid "Wi-Fi device"
 msgstr "Прылада Wi-Fi"
 
-#: ../src/connection-editor/page-wifi.c:564
+#: src/connection-editor/page-wifi.c:564
 #, c-format
 msgid "Wi-Fi connection %d"
 msgstr "Злучэнне Wi-Fi %d"
 
-#: ../src/connection-editor/page-wireguard.c:261
+#: src/connection-editor/page-wireguard.c:261
 msgid "Public key"
 msgstr "Публічны ключ"
 
-#: ../src/connection-editor/page-wireguard.c:268
+#: src/connection-editor/page-wireguard.c:268
 msgid "Allowed IPs"
 msgstr "Дазволеныя IP"
 
-#: ../src/connection-editor/page-wireguard.c:512
+#: src/connection-editor/page-wireguard.c:512
 msgid "Could not load WireGuard user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка WireGuard."
 
-#: ../src/connection-editor/page-wireguard.c:628
+#: src/connection-editor/page-wireguard.c:628
 #, c-format
 msgid "WireGuard connection %d"
 msgstr "Злучэнне WireGuard %d"
 
-#: ../src/connection-editor/vpn-helpers.c:118
+#: src/connection-editor/vpn-helpers.c:118
 #, c-format
 msgid "A file named “%s” already exists."
 msgstr "Файл з назвай \"%s\" ужо існуе."
 
-#: ../src/connection-editor/vpn-helpers.c:120
+#: src/connection-editor/vpn-helpers.c:120
 msgid "_Replace"
 msgstr "_Замяніць"
 
-#: ../src/connection-editor/vpn-helpers.c:122
+#: src/connection-editor/vpn-helpers.c:122
 #, c-format
 msgid "Do you want to replace %s with the VPN connection you are saving?"
 msgstr "Хочаце замяніць %s на VPN-злучэнне, якое вы зараз захоўваеце?"
 
-#: ../src/connection-editor/vpn-helpers.c:158
+#: src/connection-editor/vpn-helpers.c:158
 msgid "Cannot export VPN connection"
 msgstr "Не атрымалася экспартаваць VPN-злучэнне"
 
-#: ../src/connection-editor/vpn-helpers.c:160
+#: src/connection-editor/vpn-helpers.c:160
 #, c-format
 msgid ""
 "The VPN connection “%s” could not be exported to %s.\n"
@@ -4222,7 +4262,7 @@ msgstr ""
 "\n"
 "Памылка: %s."
 
-#: ../src/connection-editor/vpn-helpers.c:195
+#: src/connection-editor/vpn-helpers.c:195
 msgid "Export VPN connection…"
 msgstr "Экспарт VPN-злучэння…"
 
@@ -4242,16 +4282,16 @@ msgstr "Інфармацыя пра злучэнне"
 msgid "_Close"
 msgstr "_Закрыць"
 
-#: ../src/main.c:28
+#: src/main.c:28
 msgid "Usage:"
 msgstr "Выкарыстанне:"
 
-#: ../src/main.c:30
+#: src/main.c:30
 msgid ""
 "This program is a component of NetworkManager (https://networkmanager.dev)."
 msgstr ""
 
-#: ../src/main.c:31
+#: src/main.c:31
 msgid ""
 "It is not intended for command-line interaction but instead runs in the "
 "GNOME desktop environment."
@@ -4259,120 +4299,120 @@ msgstr ""
 "Яна не прызначаная для запуску з загаднага радка, а запускаецца ў працоўным "
 "асяроддзі GNOME."
 
-#: ../src/mb-menu-item.c:38
+#: src/mb-menu-item.c:38
 msgid "EVDO"
 msgstr "EVDO"
 
-#: ../src/mb-menu-item.c:42
+#: src/mb-menu-item.c:42
 msgid "GPRS"
 msgstr "GPRS"
 
-#: ../src/mb-menu-item.c:44
+#: src/mb-menu-item.c:44
 msgid "EDGE"
 msgstr "EDGE"
 
-#: ../src/mb-menu-item.c:46
+#: src/mb-menu-item.c:46
 msgid "UMTS"
 msgstr "UMTS"
 
-#: ../src/mb-menu-item.c:48
+#: src/mb-menu-item.c:48
 msgid "HSDPA"
 msgstr "HSDPA"
 
-#: ../src/mb-menu-item.c:50
+#: src/mb-menu-item.c:50
 msgid "HSUPA"
 msgstr "HSUPA"
 
-#: ../src/mb-menu-item.c:52
+#: src/mb-menu-item.c:52
 msgid "HSPA"
 msgstr "HSPA"
 
-#: ../src/mb-menu-item.c:54
+#: src/mb-menu-item.c:54
 msgid "HSPA+"
 msgstr "HSPA+"
 
-#: ../src/mb-menu-item.c:56
+#: src/mb-menu-item.c:56
 msgid "LTE"
 msgstr "LTE"
 
-#: ../src/mb-menu-item.c:103
+#: src/mb-menu-item.c:103
 msgid "not enabled"
 msgstr "выключана"
 
-#: ../src/mb-menu-item.c:109
+#: src/mb-menu-item.c:109
 msgid "not registered"
 msgstr "не зарэгістравана"
 
-#: ../src/mb-menu-item.c:127
+#: src/mb-menu-item.c:127
 #, c-format
 msgid "Home network (%s)"
 msgstr "Хатняя сетка (%s)"
 
-#: ../src/mb-menu-item.c:129
+#: src/mb-menu-item.c:129
 #, c-format
 msgid "Home network"
 msgstr "Хатняя сетка"
 
-#: ../src/mb-menu-item.c:137
+#: src/mb-menu-item.c:137
 msgid "searching"
 msgstr "пошук"
 
-#: ../src/mb-menu-item.c:140
+#: src/mb-menu-item.c:140
 msgid "registration denied"
 msgstr "адмоўлена ў рэгістрацыі"
 
-#: ../src/mb-menu-item.c:145 ../src/mb-menu-item.c:151
+#: src/mb-menu-item.c:145 src/mb-menu-item.c:151
 #, c-format
 msgid "%s (%s roaming)"
 msgstr "%s (%s-роўмінг)"
 
-#: ../src/mb-menu-item.c:147 ../src/mb-menu-item.c:153
+#: src/mb-menu-item.c:147 src/mb-menu-item.c:153
 #, c-format
 msgid "%s (roaming)"
 msgstr "%s (роўмінг)"
 
-#: ../src/mb-menu-item.c:156
+#: src/mb-menu-item.c:156
 #, c-format
 msgid "Roaming network (%s)"
 msgstr "Сетка роўмінгу (%s)"
 
-#: ../src/mb-menu-item.c:158
+#: src/mb-menu-item.c:158
 #, c-format
 msgid "Roaming network"
 msgstr "Сетка роўмінгу"
 
-#: ../src/mobile-helpers.c:316
+#: src/mobile-helpers.c:316
 #, c-format
 msgid "PIN code for SIM card “%s” on “%s”"
 msgstr "PIN-код для SIM-карты \"%s\" у \"%s\""
 
-#: ../src/mobile-helpers.c:449
+#: src/mobile-helpers.c:449
 msgid "PIN code required"
 msgstr "Патрабуецца PIN-код"
 
-#: ../src/mobile-helpers.c:457
+#: src/mobile-helpers.c:457
 msgid "PIN code is needed for the mobile broadband device"
 msgstr "Для прылады мабільнай сувязі патрабуецца PIN-код"
 
-#: ../src/mobile-helpers.c:607
+#: src/mobile-helpers.c:607
 #, c-format
 msgid "Mobile broadband connection “%s” active: (%d%%%s%s)"
 msgstr "Мабільнае злучэнне \"%s\" актыўна: (%d%%%s%s)"
 
-#: ../src/mobile-helpers.c:610
+#: src/mobile-helpers.c:610
 msgid "roaming"
 msgstr "роўмінг"
 
 #. The %s is a mobile provider name, eg "T-Mobile"
-#: ../src/utils/utils.c:160
+#: src/utils/utils.c:160
 #, c-format
 msgid "%s connection"
 msgstr "Злучэнне %s"
 
-#: ../src/utils/utils.c:534
+#: src/utils/utils.c:534
 msgid "PEM certificates (*.pem, *.crt, *.cer)"
 msgstr "Сертыфікаты PEM (*.pem, *.crt, *.cer)"
 
-#: ../src/utils/utils.c:546
+#: src/utils/utils.c:546
 msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
 msgstr "Прыватныя ключы DER-, PEM- ці PKCS#12 (*.der, *.pem, *.p12)"
