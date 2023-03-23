@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2021-09-24 18:53+0000\n"
-"PO-Revision-Date: 2021-12-25 23:30\n"
+"POT-Creation-Date: 2022-02-15 05:27+0000\n"
+"PO-Revision-Date: 2023-03-23 07:48\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Esperanto\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-12-18 21:09+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
+"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
 "Language: eo\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -19,11 +19,11 @@ msgstr ""
 "X-Crowdin-File: /main/jammy/en_GB/po_gnome-font-viewer-be.po\n"
 "X-Crowdin-File-ID: 147\n"
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view.c:383
+#: src/main.c:37
 msgid "GNOME Fonts"
 msgstr ""
 
-#: data/org.gnome.font-viewer.appdata.xml.in:7 src/font-view.c:1386
+#: data/org.gnome.font-viewer.appdata.xml.in:7
 #: src/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr ""
@@ -36,7 +36,7 @@ msgstr ""
 msgid "GNOME Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
 msgstr ""
 
-#: data/org.gnome.font-viewer.appdata.xml.in:21
+#: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
 msgstr ""
 
@@ -60,11 +60,11 @@ msgstr ""
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr ""
 
-#: src/font-view-app-menu.ui:6
+#: src/font-view-window.ui:54
 msgid "About Fonts"
 msgstr ""
 
-#: src/font-view.c:391
+#: src/main.c:44
 msgid "Show the application's version"
 msgstr ""
 
@@ -73,99 +73,100 @@ msgstr ""
 #. * of the axis, for example 'Width'. The three %g get replaced
 #. * with the minimum, maximum and default values for the axis.
 #. 
-#: src/font-view.c:509
+#: src/font-view-window.c:250
 #, c-format
 msgid "%s %g — %g, default %g"
 msgstr ""
 
-#: src/font-view.c:565
+#: src/font-view-window.c:305
 #, c-format
 msgid "Instance %d"
 msgstr ""
 
-#. Translators, this seperates the list of Layout Features.
-#: src/font-view.c:608
+#. Translators, this seperates the list of Layout
+#. * Features.
+#: src/font-view-window.c:343
 msgctxt "OpenType layout"
 msgid ", "
 msgstr ""
 
-#: src/font-view.c:632
+#: src/font-view-window.c:370
 msgid "Name"
 msgstr ""
 
-#: src/font-view.c:635
+#: src/font-view-window.c:373
 msgid "Location"
 msgstr ""
 
-#: src/font-view.c:638
+#: src/font-view-window.c:376
 msgid "Style"
 msgstr ""
 
-#: src/font-view.c:648
+#: src/font-view-window.c:386
 msgid "Type"
 msgstr ""
 
-#: src/font-view.c:706 src/font-view.c:732
+#: src/font-view-window.c:452 src/font-view-window.c:478
 msgid "Version"
 msgstr ""
 
-#: src/font-view.c:710 src/font-view.c:737
+#: src/font-view-window.c:456 src/font-view-window.c:483
 msgid "Copyright"
 msgstr ""
 
-#: src/font-view.c:714
+#: src/font-view-window.c:460
 msgid "Description"
 msgstr ""
 
-#: src/font-view.c:718
+#: src/font-view-window.c:464
 msgid "Manufacturer"
 msgstr ""
 
-#: src/font-view.c:722
+#: src/font-view-window.c:468
 msgid "Designer"
 msgstr ""
 
-#: src/font-view.c:726
+#: src/font-view-window.c:472
 msgid "License"
 msgstr ""
 
-#: src/font-view.c:751
+#: src/font-view-window.c:497
 msgid "Glyph Count"
 msgstr ""
 
-#: src/font-view.c:753
+#: src/font-view-window.c:499
 msgid "Color Glyphs"
 msgstr ""
 
-#: src/font-view.c:753
+#: src/font-view-window.c:500
 msgid "yes"
 msgstr ""
 
-#: src/font-view.c:753
+#: src/font-view-window.c:500
 msgid "no"
 msgstr ""
 
-#: src/font-view.c:757
+#: src/font-view-window.c:504
 msgid "Layout Features"
 msgstr ""
 
-#: src/font-view.c:763
+#: src/font-view-window.c:510
 msgid "Variation Axes"
 msgstr ""
 
-#: src/font-view.c:770
+#: src/font-view-window.c:517
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:876
+#: src/font-view.c:740
 msgid "This font could not be installed."
 msgstr ""
 
-#: src/font-view.c:1014
+#: src/font-view.c:875
 msgid "This font could not be displayed."
 msgstr ""
 
-#: src/font-view.c:1147
+#: src/font-view-window.c:136
 msgid "Install"
 msgstr ""
 
@@ -173,31 +174,32 @@ msgstr ""
 msgid "Installing…"
 msgstr ""
 
-#: src/font-view.c:1153
+#: src/font-view-window.c:128
 msgid "Installed"
 msgstr ""
 
-#: src/font-view.c:1156
+#: src/font-view-window.c:120
 msgid "Failed"
 msgstr ""
 
-#: src/font-view.c:1172
+#: src/font-view.c:993
 msgid "Info"
 msgstr ""
 
-#: src/font-view.c:1189
+#: src/font-view-window.ui:187
 msgid "Back"
 msgstr ""
 
-#: src/font-view.c:1267
+#: src/font-view-window.ui:40
 msgid "All Fonts"
 msgstr ""
 
-#: src/font-view.c:1385 src/org.gnome.font-viewer.desktop.in.in:3
+#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
+#: src/org.gnome.font-viewer.desktop.in.in:3
 msgid "Fonts"
 msgstr ""
 
-#: src/font-view.c:1389
+#: src/font-view-application.c:129
 msgid "translator-credits"
 msgstr ""
 
