@@ -14,17 +14,17 @@ msgstr ""
 "Project-Id-Version: gnome-settings-daemon.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-"
 "daemon/issues\n"
-"POT-Creation-Date: 2022-05-03 22:09+0000\n"
-"PO-Revision-Date: 2023-03-04 15:33+0000\n"
-"Last-Translator: Kasia Bondarava <Unknown>\n"
+"POT-Creation-Date: 2023-03-24 13:27+0000\n"
+"PO-Revision-Date: 2023-04-03 07:28+0000\n"
+"Last-Translator: Ihar Hrachyshka <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2023-05-27 08:10+0000\n"
+"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
 "Language: be\n"
 "X-Project-Style: gnome\n"
@@ -389,7 +389,7 @@ msgid ""
 "This is the number of days after which the display color profile is "
 "considered invalid."
 msgstr ""
-"Колькасць дзён, пасля якіх колеравы профіль манітора становіцца непрыдатным."
+"Колькасць дзён, пасля якіх колерны профіль дысплэя лічыцца памылковым."
 
 #: data/org.gnome.settings-daemon.plugins.color.gschema.xml.in:11
 msgid "The duration a printer profile is valid"
@@ -400,7 +400,7 @@ msgid ""
 "This is the number of days after which the printer color profile is "
 "considered invalid."
 msgstr ""
-"Колькасць дзён, пасля якіх колеравы профіль прынтара становіцца непрыдатным."
+"Колькасць дзён, пасля якіх колерны профіль прынтара лічыцца памылковым."
 
 #: data/org.gnome.settings-daemon.plugins.color.gschema.xml.in:16
 msgid "If the night light mode is enabled"
@@ -411,8 +411,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"Рэжым начнога святла мяняе колеравую тэмпературу экрана пры заходзе сонца "
-"або ў прадвызначаны час."
+"Начны рэжым змяняе тэмпературу колераў дысплэя пры заходзе сонца або ў "
+"вызначаны перыяд часу."
 
 #: data/org.gnome.settings-daemon.plugins.color.gschema.xml.in:21
 msgid "Temperature of the display when enabled"
@@ -926,7 +926,7 @@ msgstr "Уключэнне/выключэнне сэнсарнай панэлі"
 
 #: data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in:343
 msgid "Binding to toggle the touchpad on/off."
-msgstr "Спалучэнне клавіш для ўключэння/выключэнне сэнсарнай панэлі."
+msgstr "Спалучэнне клавіш для ўключэння/выключэння сэнсарнай панэлі."
 
 #: data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in:347
 #: data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in:584
@@ -1126,7 +1126,7 @@ msgstr "Статычнае спалучэнне клавіш для адкрыц
 
 #: data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in:482
 msgid "Static binding to launch the media player."
-msgstr "Статычнае спалучэнне клавіш для запуску медыяплэера."
+msgstr "Статычнае спалучэнне клавіш для запуску медыяпрайгравальніка."
 
 #: data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in:487
 msgid "Static binding to skip to next track."
@@ -1545,10 +1545,11 @@ msgid ""
 "is set to “rgba”. Possible values are: “rgb” for red on left (most common), "
 "“bgr” for blue on left, “vrgb” for red on top, “vbgr” for red on bottom."
 msgstr ""
-"Парадак субпіксельных элементаў на экране LCD. Ужываецца толькі тады, калі "
-"згладжванне настаўлена на «rgba». Магчымыя значэнні: «rgb» для чырвонага "
-"злева (найбольш ужывальны), «bgr» для блакітнага злева, «vrgb» для чырвонага "
-"зверху, «vbgr» для чырвонага знізу."
+"Парадак субпіксельных элементаў на экране вадкакрышталічнага манітора; "
+"толькі калі зададзены параметр \"rgba\". Магчымыя значэнні: \"rgb\" для "
+"чырвонага злева (ужываецца ў пераважнай колькасці выпадкаў), \"bgr\" для "
+"блакітнага злева, \"vrgb\" для чырвонага зверху, \"vbgr\" для чырвонага "
+"знізу."
 
 #: plugins/color/gsd-color-calibrate.c:138
 msgid "Color"
@@ -2498,43 +2499,43 @@ msgstr ""
 "выключыцца."
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:1459
+#: plugins/power/gsd-power-manager.c:1492
 msgid "Lid has been opened"
 msgstr "Вечка ноўтбука адкрыта"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:1493
+#: plugins/power/gsd-power-manager.c:1526
 msgid "Lid has been closed"
 msgstr "Вечка ноўтбука закрыта"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:2144
+#: plugins/power/gsd-power-manager.c:2177
 msgid "On battery power"
 msgstr "Ад батарэі"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:2149
+#: plugins/power/gsd-power-manager.c:2182
 msgid "On AC power"
 msgstr "Ад электрасеткі"
 
-#: plugins/power/gsd-power-manager.c:2397
+#: plugins/power/gsd-power-manager.c:2430
 msgid "Automatic logout"
 msgstr "Аўтаматычны выхад з сеанса"
 
-#: plugins/power/gsd-power-manager.c:2397
+#: plugins/power/gsd-power-manager.c:2430
 msgid "You will soon log out because of inactivity."
 msgstr "Неўзабаве ваш сеанс будзе завершаны з-за бяздзейнасці."
 
-#: plugins/power/gsd-power-manager.c:2402
+#: plugins/power/gsd-power-manager.c:2435
 msgid "Automatic suspend"
 msgstr "Аўтаматычнае прыпыненне працы"
 
-#: plugins/power/gsd-power-manager.c:2402
-#: plugins/power/gsd-power-manager.c:2407
+#: plugins/power/gsd-power-manager.c:2435
+#: plugins/power/gsd-power-manager.c:2440
 msgid "Suspending soon because of inactivity."
 msgstr "Неўзабаве праца прыпыніцца з-за бяздзейнасці."
 
-#: plugins/power/gsd-power-manager.c:2407
+#: plugins/power/gsd-power-manager.c:2440
 msgid "Automatic hibernation"
 msgstr "Аўтаматычная гібернацыя"
 
@@ -2558,7 +2559,7 @@ msgstr "Наладка новага прынтара"
 #. Translators: Just wait
 #: plugins/print-notifications/gsd-printer.c:892
 msgid "Please wait…"
-msgstr "Пачакайце…"
+msgstr "Пачакайце..."
 
 #. Translators: We have no driver installed for this printer
 #: plugins/print-notifications/gsd-printer.c:919
@@ -2804,7 +2805,7 @@ msgstr "Абарона USB"
 
 #: plugins/usb-protection/gsd-usb-protection-manager.c:512
 msgid "New USB device"
-msgstr "Новая USB-прылада"
+msgstr "Новая прылада USB"
 
 #: plugins/usb-protection/gsd-usb-protection-manager.c:513
 msgid ""

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
 "POT-Creation-Date: 2023-02-03 17:35+0000\n"
-"PO-Revision-Date: 2023-02-24 21:00+0000\n"
+"PO-Revision-Date: 2023-03-23 10:42+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:24+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2023-05-27 08:08+0000\n"
+"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
+"X-Crowdin-File: /master/rosetta-eoan/en_GB/LC_MESSAGES/update-manager.po\n"
 "X-Crowdin-Language: be\n"
 "X-Crowdin-Project: ubuntu-translations\n"
-"X-Crowdin-File: /master/rosetta-eoan/en_GB/LC_MESSAGES/update-manager.po\n"
 
 #: ../UpdateManager/backend/InstallBackendAptdaemon.py:154
 msgid "Checking for updates…"
@@ -53,7 +53,7 @@ msgstr ""
 #: ../UpdateManager/backend/__init__.py:328
 #, python-format
 msgid "Refreshing %s snap"
-msgstr ""
+msgstr "Абнаўленне пакета snap %s"
 
 #: ../UpdateManager/backend/__init__.py:336
 #, python-format
@@ -115,7 +115,7 @@ msgstr[1] ""
 msgstr[2] ""
 "%d абнаўленняў Livepatch не ўдалося ўжыць з моманту апошняга перазапуску."
 
-#: ../UpdateManager/Dialogs.py:220 ../UpdateManager/UpdateManager.py:314
+#: ../UpdateManager/Dialogs.py:220 ../UpdateManager/UpdateManager.py:317
 msgid "You stopped the check for updates."
 msgstr "Вы спынілі праверку наяўнасці абнаўленняў."
 
@@ -138,7 +138,7 @@ msgstr "Аднак, %s %s даступная (вы карыстаецеся %s).
 
 #: ../UpdateManager/Dialogs.py:260
 msgid "Upgrade…"
-msgstr "Абнавіць..."
+msgstr "Абнаўленне…"
 
 #: ../UpdateManager/Dialogs.py:286
 msgid "New important security and hardware support update."
@@ -229,23 +229,23 @@ msgstr "Пера_запусціць"
 msgid "Software Updater"
 msgstr "Абнаўленне праграм"
 
-#: ../UpdateManager/UpdateManager.py:312
+#: ../UpdateManager/UpdateManager.py:315
 msgid "Some software couldn’t be checked for updates."
 msgstr ""
 "Не ўдалося праверыць наяўнасць абнаўленняў для некаторага праграмнага "
 "забеспячэння."
 
-#: ../UpdateManager/UpdateManager.py:316
+#: ../UpdateManager/UpdateManager.py:319
 msgid "Updated software is available from a previous check."
 msgstr ""
 "З часу апошняй праверкі з'явіліся новыя абнаўленні праграмнага забеспячэння."
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:427
+#: ../UpdateManager/UpdateManager.py:430
 msgid "Software index is broken"
 msgstr "Індэкс праграмнага забеспячэння пашкоджаны"
 
-#: ../UpdateManager/UpdateManager.py:429
+#: ../UpdateManager/UpdateManager.py:432
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -255,11 +255,11 @@ msgstr ""
 "гэтай праблемы вы можаце выкарыстоўваць пакетны менеджар Synaptic або "
 "выканаць каманду «sudo apt-get install -f» у тэрмінале."
 
-#: ../UpdateManager/UpdateManager.py:437
+#: ../UpdateManager/UpdateManager.py:440
 msgid "Could not initialize the package information"
 msgstr "Памылка ініцыялізацыі звестак аб пакеце"
 
-#: ../UpdateManager/UpdateManager.py:439
+#: ../UpdateManager/UpdateManager.py:442
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -272,11 +272,11 @@ msgstr ""
 "Калі ласка, паведаміце аб гэтай памылцы ў пакеце «update-manager», дадаўшы "
 "да тэксту справаздачы наступнае паведамленне:\n"
 
-#: ../UpdateManager/UpdateManager.py:474
+#: ../UpdateManager/UpdateManager.py:477
 msgid "Could not calculate the upgrade"
 msgstr "Не ўдалося вылічыць параметры абнаўлення"
 
-#: ../UpdateManager/UpdateManager.py:476
+#: ../UpdateManager/UpdateManager.py:479
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -313,7 +313,7 @@ msgstr "Версія %s: \n"
 #: ../UpdateManager/UpdatesAvailable.py:631
 msgid ""
 "No network connection detected, you can not download changelog information."
-msgstr "Немагчыма спампаваць спіс змен, бо вы не злучаны з сеткай."
+msgstr "Немагчыма спампаваць спіс змен, адсутнічае злучэнне з сеткай."
 
 #: ../UpdateManager/UpdatesAvailable.py:644
 msgid "Downloading list of changes..."
@@ -354,15 +354,15 @@ msgid ""
 "install it now?"
 msgstr ""
 "З часу выпуску %s %s з'явіліся абнаўленні праграмнага забеспячэння. Хочаце "
-"ўсталяваць іх?"
+"ўсталяваць іх зараз?"
 
 #: ../UpdateManager/UpdatesAvailable.py:862
 msgid ""
 "Updated software is available for this computer. Do you want to install it "
 "now?"
 msgstr ""
-"Абнаўленні праграмнага забеспячэння даступныя для гэтага камп'ютара. Хочаце "
-"ўсталяваць іх?"
+"Абнаўленні праграмнага забеспячэння даступны для гэтага камп'ютара. Хочаце "
+"ўсталяваць іх зараз?"
 
 #: ../UpdateManager/UpdatesAvailable.py:867
 msgid ""
@@ -383,7 +383,7 @@ msgid ""
 "least an additional %s of disk space on '%s'. %s"
 msgstr ""
 "Усяго абнаўленню неабходна %s свабоднага месца на дыску '%s'. Вызваліце "
-"дадаткова прынамсі %s месца на %s. %s"
+"прынамсі %s дадатковага месца на %s. %s"
 
 #: ../UpdateManager/UpdatesAvailable.py:905
 msgid ""
@@ -411,7 +411,7 @@ msgstr ""
 
 #: ../UpdateManager/UpdatesAvailable.py:917
 msgid "Reboot to clean up files in /tmp."
-msgstr "Перазагрузіце прыладу для ачысткі файлаў у /tmp."
+msgstr "Перазагрузіце камп'ютар для ачысткі файлаў у /tmp."
 
 #: ../UpdateManager/UpdatesAvailable.py:979
 msgid "Connecting..."
@@ -419,12 +419,11 @@ msgstr "Злучэнне..."
 
 #: ../UpdateManager/UpdatesAvailable.py:999
 msgid "You may not be able to check for updates or download new updates."
-msgstr ""
-"Вы, магчыма, не зможаце правяраць наяўнасць абнаўленняў або спампоўваць іх."
+msgstr "Няма магчымасці праверыць наяўнасць абнаўленняў або спампаваць іх."
 
 #: ../UpdateManager/UpdatesAvailable.py:1160
 msgid "Improved hardware support"
-msgstr ""
+msgstr "Палепшаная апаратная падтрымка"
 
 #: ../UpdateManager/UpdatesAvailable.py:1164
 msgid "Security updates"
@@ -444,7 +443,7 @@ msgstr "Абнаўленні ядра, якія не выкарыстоўваю�
 
 #: ../UpdateManager/UpdatesAvailable.py:1184
 msgid "Duplicate packages to be removed"
-msgstr ""
+msgstr "Дублікаты пакетаў, якія падлягаюць выдаленню"
 
 #: ../UpdateManager/UpdatesAvailable.py:1190
 msgid "Ubuntu Pro (enable in Settings…)"
@@ -617,7 +616,7 @@ msgstr "Абнаўленне з выкарыстаннем апошняй вер
 
 #: ../update-manager:95
 msgid "Do not focus on map when starting"
-msgstr "Не факусіравацца на акне пры запуску"
+msgstr "Не факусіравацца на карце пры запуску"
 
 #: ../update-manager:98
 msgid "Do not check for updates when starting"
@@ -662,9 +661,8 @@ msgid ""
 "When upgrading, if kdelibs4-dev is installed, kdelibs5-dev needs to be "
 "installed. See bugs.launchpad.net, bug #279621 for details."
 msgstr ""
-"Падчас абнаўлення, калі ў вас усталяваны kdelibs4-dev, вам будзе патрэбна "
-"ўсталяваць kdelibs5-dev. Для падрабязнасцей глядзіце bugs.launchpad.net, bug "
-"#279621."
+"Пры абнаўленні, калі ўсталяваны kdelibs4-dev, неабходна ўсталяваць kdelibs5-"
+"dev. Глядзіце bug #279621 на bugs.launchpad.net для падрабязнасцей."
 
 #: ../janitor/plugincore/plugins/dpkg_status_plugin.py:40
 #, python-format
@@ -684,8 +682,8 @@ msgstr "Састарэлыя запісы станаў dpkg"
 msgid ""
 "Remove lilo since grub is also installed.(See bug #314004 for details.)"
 msgstr ""
-"Выдаліце lilo, бо таксама ўсталяваны grub.(Глядзіце bug #314004 для "
-"падрабязнасцей.)"
+"Выдаліце lilo, паколькі таксама ўсталяваны grub. (Глядзіце bug #314004 для "
+"падрабязнасцей)"
 
 #~ msgid "Settings & Livepatch…"
 #~ msgstr "Налады і Livepatch…"
