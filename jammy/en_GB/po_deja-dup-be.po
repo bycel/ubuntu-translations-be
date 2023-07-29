@@ -3,12 +3,18 @@
 # This file is distributed under the same license as the deja-dup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
+# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
+# Вася Пупкін, 2021
+# Black Beard (blackbeardboy), 2021
+# p k (pkuhto), 2021
+# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
+# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: deja-dup\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-25 14:05+0000\n"
-"PO-Revision-Date: 2021-12-18 20:27+0000\n"
+"PO-Revision-Date: 2023-05-27 12:36+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:26+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2023-07-29 11:21+0000\n"
+"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
 
 #. Translators: Monitor in this sense means something akin to 'watcher', not
 #. a computer screen.  This program acts like a daemon that kicks off
@@ -28,14 +34,14 @@ msgstr "Мэнэджэр рэзервовага капіявання"
 
 #: data/monitor.desktop.in:7
 msgid "Schedules backups at regular intervals"
-msgstr "Выконваць рэзэрвовае капіяваньне згодна з раскладам"
+msgstr "Выконвае рэгулярнае рэзервовае капіяванне па раскладзе"
 
 #. Translators: The name is a play on the French phrase "déjà vu" meaning
 #. "already seen", but with the "vu" replaced with "dup".  "Dup" in this
 #. context is itself a reference to both the underlying command line tool
 #. "duplicity" and the act of duplicating data for backup.  As a whole, the
 #. phrase "Déjà Dup" may not be very translatable.
-#: app/main.vala:450 data/app.metainfo.xml.in:15
+#: app/main.vala:475 data/app.metainfo.xml.in:15
 msgid "Déjà Dup Backups"
 msgstr ""
 
@@ -333,22 +339,22 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
 
-#: data/ui/help-overlay.ui:38
+#: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr ""
 
-#: data/ui/help-overlay.ui:45
+#: data/ui/help-overlay.ui:51
 msgctxt "shortcut window"
 msgid "Browsing Backed Up Files"
 msgstr ""
 
-#: data/ui/help-overlay.ui:49
+#: data/ui/help-overlay.ui:55
 msgctxt "shortcut window"
 msgid "Search"
 msgstr ""
 
-#: data/ui/help-overlay.ui:55
+#: data/ui/help-overlay.ui:61
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr ""
@@ -398,7 +404,7 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: app/AssistantRestore.vala:63 data/ui/Browser.ui:353
+#: app/AssistantRestore.vala:63 data/ui/Browser.ui:356
 msgid "_Restore"
 msgstr ""
 
@@ -542,7 +548,7 @@ msgstr ""
 msgid "_Network Location"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:101
+#: libdeja/duplicity/DuplicityPlugin.vala:104
 msgid ""
 "This storage location is no longer supported. You can still use duplicity "
 "directly to back up or restore your files."
@@ -1163,7 +1169,7 @@ msgstr ""
 msgid "An operation is already in progress"
 msgstr ""
 
-#: app/main.vala:344
+#: app/main.vala:369
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -1266,7 +1272,7 @@ msgstr ""
 msgid "Backup encryption password"
 msgstr ""
 
-#: libdeja/InstallEnvFlatpak.vala:104
+#: libdeja/InstallEnvFlatpak.vala:110
 msgid ""
 "Make sure Backups has permission to run in the background in Settings → "
 "Applications → Backups and try again."
@@ -1285,9 +1291,9 @@ msgid "Listing files…"
 msgstr ""
 
 #: libdeja/Operation.vala:55 libdeja/Operation.vala:85
-#: libdeja/duplicity/DuplicityJob.vala:368
-#: libdeja/duplicity/DuplicityJob.vala:379
-#: libdeja/duplicity/DuplicityJob.vala:415
+#: libdeja/duplicity/DuplicityJob.vala:377
+#: libdeja/duplicity/DuplicityJob.vala:388
+#: libdeja/duplicity/DuplicityJob.vala:424
 msgid "Preparing…"
 msgstr ""
 
@@ -1305,8 +1311,8 @@ msgid ""
 "again."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:68
-#: libdeja/duplicity/DuplicityJob.vala:138
+#: libdeja/duplicity/DuplicityJob.vala:71
+#: libdeja/duplicity/DuplicityJob.vala:146
 msgid "Paused (no network)"
 msgstr ""
 
@@ -1323,8 +1329,8 @@ msgid ""
 "%s."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:571
-#: libdeja/duplicity/DuplicityJob.vala:585
+#: libdeja/duplicity/DuplicityJob.vala:600
+#: libdeja/duplicity/DuplicityJob.vala:614
 msgid "Cleaning up…"
 msgstr ""
 
@@ -1347,25 +1353,25 @@ msgstr ""
 #. frequently fix odd metadata errors with duplicity.  If we hit an error
 #. a second time, we'll show the unknown error message.
 #. Should emit some sort of error...
-#: libdeja/duplicity/DuplicityJob.vala:669
-#: libdeja/duplicity/DuplicityJob.vala:1057 libdeja/libtool/ToolJoblet.vala:115
+#: libdeja/duplicity/DuplicityJob.vala:698
+#: libdeja/duplicity/DuplicityJob.vala:1086 libdeja/libtool/ToolJoblet.vala:115
 msgid "Failed with an unknown error."
 msgstr ""
 
 #. notify upper layers, if they want to do anything
-#: libdeja/duplicity/DuplicityJob.vala:872
+#: libdeja/duplicity/DuplicityJob.vala:901
 msgid "Bad encryption password."
 msgstr ""
 
 #. make text a little nicer than duplicity gives
 #. duplicity gives something like "home/blah/blah not found in archive,
 #. no files restored".
-#: libdeja/duplicity/DuplicityJob.vala:921
+#: libdeja/duplicity/DuplicityJob.vala:950
 #, c-format
 msgid "Could not restore ‘%s’: File not found in backup"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:932
+#: libdeja/duplicity/DuplicityJob.vala:961
 #, c-format
 msgid ""
 "The existing backup is of a computer named %s, but the current computer’s "
@@ -1373,70 +1379,70 @@ msgid ""
 "location."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:935
+#: libdeja/duplicity/DuplicityJob.vala:964
 msgid "Computer name changed"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:970
+#: libdeja/duplicity/DuplicityJob.vala:999
 #, c-format
 msgid "Permission denied when trying to create ‘%s’."
 msgstr ""
 
 #. assume error is on backend side
-#: libdeja/duplicity/DuplicityJob.vala:974
-#: libdeja/duplicity/DuplicityJob.vala:978
+#: libdeja/duplicity/DuplicityJob.vala:1003
+#: libdeja/duplicity/DuplicityJob.vala:1007
 #, c-format
 msgid "Permission denied when trying to read ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:982
+#: libdeja/duplicity/DuplicityJob.vala:1011
 #, c-format
 msgid "Permission denied when trying to delete ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:989
+#: libdeja/duplicity/DuplicityJob.vala:1018
 #, c-format
 msgid "Backup location ‘%s’ does not exist."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:995
-#: libdeja/duplicity/DuplicityJob.vala:1028
+#: libdeja/duplicity/DuplicityJob.vala:1024
+#: libdeja/duplicity/DuplicityJob.vala:1057
 msgid "No space left."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1017
+#: libdeja/duplicity/DuplicityJob.vala:1046
 #, c-format
 msgid "Error reading file ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1019
+#: libdeja/duplicity/DuplicityJob.vala:1048
 #, c-format
 msgid "Error writing file ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1030
+#: libdeja/duplicity/DuplicityJob.vala:1059
 #, c-format
 msgid "No space left in ‘%s’."
 msgstr ""
 
-#: app/Browser.vala:372 libdeja/duplicity/DuplicityJob.vala:1038
+#: app/Browser.vala:372 libdeja/duplicity/DuplicityJob.vala:1067
 msgid "No backup files found"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1088
+#: libdeja/duplicity/DuplicityJob.vala:1117
 msgid "Uploading…"
 msgstr "Запампоўка…"
 
-#: libdeja/duplicity/DuplicityPlugin.vala:40
+#: libdeja/duplicity/DuplicityPlugin.vala:41
 msgid "Could not understand duplicity version."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:51
+#: libdeja/duplicity/DuplicityPlugin.vala:52
 #, c-format
 msgid "Could not understand duplicity version ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:54
+#: libdeja/duplicity/DuplicityPlugin.vala:55
 #, c-format
 msgid ""
 "Backups requires at least version %d.%d.%.2d of duplicity, but only found "
