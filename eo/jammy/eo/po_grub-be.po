@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-02-02 17:42+0000\n"
-"PO-Revision-Date: 2023-05-27 10:08\n"
+"POT-Creation-Date: 2023-02-20 16:36+0000\n"
+"PO-Revision-Date: 2023-07-29 12:04\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Esperanto\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-05-27 08:11+0000\n"
-"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
+"X-Launchpad-Export-Date: 2023-07-29 11:27+0000\n"
+"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -383,6 +383,7 @@ msgstr ""
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/xnu.c:933
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/xnu.c:971
 #: .pc/ubuntu-rhboot-cast-fixups.patch/grub-core/loader/i386/efi/linux.c:298
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:2288
 #: grub-core/commands/acpi.c:651 grub-core/commands/acpi.c:668
 #: grub-core/commands/i386/pc/play.c:105 grub-core/commands/keylayouts.c:230
 #: grub-core/commands/keylayouts.c:245 grub-core/commands/keylayouts.c:263
@@ -423,7 +424,7 @@ msgstr ""
 #: grub-core/loader/xnu.c:836 grub-core/loader/xnu.c:891
 #: grub-core/loader/xnu.c:934 grub-core/loader/xnu.c:972
 #: grub-core/loader/xnu_resume.c:68 grub-core/loader/xnu_resume.c:153
-#: grub-core/loader/xnu_resume.c:165 util/grub-mkimagexx.c:2288
+#: grub-core/loader/xnu_resume.c:165 util/grub-mkimagexx.c:2290
 #, c-format
 msgid "premature end of file %s"
 msgstr ""
@@ -986,6 +987,1235 @@ msgstr ""
 msgid "plain image kernel not supported - rebuild with CONFIG_(U)EFI_STUB enabled"
 msgstr ""
 
+#: .pc/0131-commands-boot-Add-API-to-pass-context-to-loader.patch/grub-core/commands/boot.c:189
+#: grub-core/commands/boot.c:239
+msgid "Boot an operating system."
+msgstr ""
+
+#: .pc/0133-loader-i386-efi-linux-Use-grub_loader_set_ex.patch/grub-core/loader/i386/efi/linux.c:109
+#: .pc/0134-loader-i386-efi-linux-Fix-a-memory-leak-in-the-initr.patch/grub-core/loader/i386/efi/linux.c:125
+#: .pc/0137-video-readers-png-Abort-sooner-if-a-read-operation-f.patch/grub-core/video/readers/png.c:307
+#: .pc/0137-video-readers-png-Abort-sooner-if-a-read-operation-f.patch/grub-core/video/readers/png.c:312
+#: .pc/0138-video-readers-png-Refuse-to-handle-multiple-image-he.patch/grub-core/video/readers/png.c:320
+#: .pc/0138-video-readers-png-Refuse-to-handle-multiple-image-he.patch/grub-core/video/readers/png.c:325
+#: .pc/0139-video-readers-png-Drop-greyscale-support-to-fix-heap.patch/grub-core/video/readers/png.c:323
+#: .pc/0139-video-readers-png-Drop-greyscale-support-to-fix-heap.patch/grub-core/video/readers/png.c:328
+#: .pc/0140-video-readers-png-Avoid-heap-OOB-R-W-inserting-huff-.patch/grub-core/video/readers/png.c:323
+#: .pc/0140-video-readers-png-Avoid-heap-OOB-R-W-inserting-huff-.patch/grub-core/video/readers/png.c:328
+#: .pc/0141-video-readers-png-Sanity-check-some-huffman-codes.patch/grub-core/video/readers/png.c:323
+#: .pc/0141-video-readers-png-Sanity-check-some-huffman-codes.patch/grub-core/video/readers/png.c:328
+#: .pc/2.12-mm/0194-mm-Clarify-grub_real_malloc.patch/grub-core/kern/mm.c:392
+#: .pc/2.12-mm/0195-mm-grub_real_malloc-Make-small-allocs-comment-match-.patch/grub-core/kern/mm.c:398
+#: .pc/2.12-mm/0196-mm-Document-grub_free.patch/grub-core/kern/mm.c:398
+#: .pc/2.12-mm/0197-mm-Document-grub_mm_init_region.patch/grub-core/kern/mm.c:398
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:364
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:422
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mm.c:427
+#: .pc/2.12-mm/0201-mm-When-adding-a-region-merge-with-region-after-as-w.patch/grub-core/kern/mm.c:427
+#: .pc/2.12-mm/0202-mm-Debug-support-for-region-operations.patch/grub-core/kern/mm.c:463
+#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/mm.c:476
+#: .pc/2.12-mm/0204-mm-Allow-dynamically-requesting-additional-memory-re.patch/grub-core/kern/mm.c:468
+#: .pc/2.12-mm/0210-mm-Try-invalidate-disk-caches-last-when-out-of-memor.patch/grub-core/kern/mm.c:498
+#: .pc/2.12-mm/0212-mm-Adjust-new-region-size-to-take-management-overhea.patch/grub-core/kern/mm.c:498
+#: .pc/2.12-mm/0213-mm-Preallocate-some-space-when-adding-new-regions.patch/grub-core/kern/mm.c:556
+#: .pc/2.12-mm/0214-mm-Avoid-complex-heap-growth-math-in-hot-path.patch/grub-core/kern/mm.c:562
+#: .pc/linuxefi-Invalidate-i-cache-before-starting-the-kern.patch/grub-core/loader/i386/efi/linux.c:126
+#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:110
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:225
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:139
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:248
+#: .pc/probe-fusionio.patch/util/deviceiter.c:601
+#: .pc/rhboot-bounce-buffers.patch/grub-core/loader/i386/efi/linux.c:128
+#: .pc/rhboot-efi-allocate-in-kernel-bounds.patch/grub-core/loader/i386/efi/linux.c:269
+#: .pc/rhboot-efi-allocate-kernel-as-code-for-real.patch/grub-core/loader/i386/efi/linux.c:271
+#: .pc/rhboot-efi-allocate-kernel-as-code.patch/grub-core/loader/i386/efi/linux.c:243
+#: .pc/rhboot-efi-enumerated-array-for-allocation-choice.patch/grub-core/loader/i386/efi/linux.c:245
+#: .pc/rhboot-efi-fix-incorrect-array-size.patch/grub-core/loader/i386/efi/linux.c:271
+#: .pc/rhboot-efi-initrd-above-4gb.patch/grub-core/loader/i386/efi/linux.c:226
+#: .pc/rhboot-efi-kernel-allocator.patch/grub-core/loader/i386/efi/linux.c:171
+#: .pc/rhboot-efi-rearrange-grub-cmd-linux.patch/grub-core/loader/i386/efi/linux.c:171
+#: .pc/rhboot-efi-split-allocation-policy.patch/grub-core/loader/i386/efi/linux.c:254
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:364
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:422
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:287
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:296
+#: .pc/rhboot-try-to-pick-better-locations-for-kernel-and-initrd.patch/grub-core/loader/i386/efi/linux.c:127
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:225
+#: .pc/ubuntu-rhboot-cast-fixups.patch/grub-core/loader/i386/efi/linux.c:271
+#: .pc/ubuntu-skip-disk-by-id-lvm-pvm-uuid-entries.patch/util/deviceiter.c:607
+#: grub-core/fs/ext2.c:724 grub-core/fs/squash4.c:467
+#: grub-core/kern/buffer.c:108 grub-core/kern/misc.c:364
+#: grub-core/kern/misc.c:422 grub-core/kern/mm.c:568 grub-core/lib/arg.c:224
+#: grub-core/lib/arg.c:471 grub-core/loader/i386/efi/linux.c:271
+#: grub-core/loader/i386/pc/linux.c:238 grub-core/loader/linux.c:139
+#: grub-core/loader/linux.c:248 grub-core/net/efi/dhcp.c:365
+#: grub-core/osdep/unix/config.c:112 grub-core/osdep/unix/config.c:137
+#: grub-core/osdep/unix/config.c:162 grub-core/script/lexer.c:179
+#: grub-core/video/bitmap.c:145 grub-core/video/readers/png.c:323
+#: grub-core/video/readers/png.c:328 include/grub/buffer.h:79
+#: include/grub/buffer.h:117 include/grub/misc.h:287 include/grub/misc.h:296
+#: util/deviceiter.c:610
+msgid "overflow is detected"
+msgstr ""
+
+#: .pc/0135-kern-efi-sb-Reject-non-kernel-files-in-the-shim_lock.patch/grub-core/kern/efi/sb.c:147
+#: .pc/kern-efi-sb-Enforce-verification-of-font-files.patch/grub-core/kern/efi/sb.c:180
+#: grub-core/kern/efi/sb.c:179
+msgid "shim_lock protocol not found"
+msgstr ""
+
+#: .pc/0135-kern-efi-sb-Reject-non-kernel-files-in-the-shim_lock.patch/grub-core/kern/efi/sb.c:150
+#: .pc/kern-efi-sb-Enforce-verification-of-font-files.patch/grub-core/kern/efi/sb.c:183
+#: grub-core/kern/efi/sb.c:182
+msgid "bad shim signature"
+msgstr ""
+
+#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:44
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:458
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:473
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:44
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:458
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:473
+#: grub-core/commands/pcidump.c:109 grub-core/commands/pcidump.c:137
+#: grub-core/commands/setpci.c:183 grub-core/commands/setpci.c:213
+#: grub-core/fs/zfs/zfs.c:3822 grub-core/kern/emu/hostdisk.c:458
+#: grub-core/kern/emu/hostdisk.c:473 grub-core/kern/file.c:44
+#, c-format
+msgid "missing `%c' symbol"
+msgstr ""
+
+#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:156
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:158
+#: grub-core/fs/bfs.c:228 grub-core/fs/fshelp.c:380 grub-core/fs/minix.c:272
+#: grub-core/kern/file.c:158
+msgid "attempt to read past the end of file"
+msgstr ""
+
+#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:210
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:212
+#: grub-core/io/gzio.c:409 grub-core/kern/file.c:212
+msgid "attempt to seek outside of the file"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:466
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:466
+#: grub-core/net/dns.c:479
+msgid "no DNS servers configured"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:529
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:529
+#: grub-core/net/dns.c:542
+msgid "domain name component is too long"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:625
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:673
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:625
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:675
+#: grub-core/net/dns.c:638 grub-core/net/dns.c:688
+msgid "no DNS record found"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:633
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:633
+#: grub-core/net/dns.c:646
+msgid "no DNS reply received"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:646
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:646
+#: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:86
+#: .pc/ubuntu-linuxefi.patch/grub-core/commands/memrw.c:85
+#: grub-core/commands/cmp.c:43 grub-core/commands/i386/pc/drivemap.c:239
+#: grub-core/commands/i386/wrmsr.c:61 grub-core/commands/iorw.c:87
+#: grub-core/commands/memrw.c:86 grub-core/commands/password.c:75
+#: grub-core/commands/password_pbkdf2.c:94 grub-core/commands/pgp.c:826
+#: grub-core/commands/regexp.c:113 grub-core/mmap/mmap.c:520
+#: grub-core/net/dns.c:659
+msgid "two arguments expected"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:689
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:691
+#: grub-core/net/dns.c:704
+msgid "only ipv4"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:693
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:695
+#: grub-core/net/dns.c:708
+msgid "only ipv6"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:697
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:699
+#: grub-core/net/dns.c:712
+msgid "prefer ipv4"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:701
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:703
+#: grub-core/net/dns.c:716
+msgid "prefer ipv6"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:720
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:752
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:722
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:754
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:711
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1069
+#: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:492
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:699
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1057
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:708
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1066
+#: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:48
+#: .pc/ubuntu-linuxefi.patch/grub-core/commands/memrw.c:48
+#: grub-core/commands/hdparm.c:286 grub-core/commands/i386/rdmsr.c:68
+#: grub-core/commands/iorw.c:49 grub-core/commands/legacycfg.c:779
+#: grub-core/commands/legacycfg.c:831 grub-core/commands/macbless.c:190
+#: grub-core/commands/memrw.c:49 grub-core/commands/minicmd.c:193
+#: grub-core/commands/pgp.c:738 grub-core/commands/pgp.c:792
+#: grub-core/commands/search.c:304 grub-core/commands/search_wrap.c:179
+#: grub-core/commands/setpci.c:242 grub-core/commands/sleep.c:71
+#: grub-core/fs/zfs/zfsinfo.c:279 grub-core/fs/zfs/zfsinfo.c:358
+#: grub-core/gettext/gettext.c:497 grub-core/kern/corecmd.c:65
+#: grub-core/kern/corecmd.c:79 grub-core/mmap/mmap.c:433
+#: grub-core/net/dns.c:735 grub-core/net/dns.c:767 grub-core/net/net.c:711
+#: grub-core/net/net.c:1069 grub-core/normal/context.c:194
+#: grub-core/script/execute.c:131 grub-core/term/gfxterm_background.c:136
+msgid "one argument expected"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:734
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:736
+#: grub-core/commands/i386/rdmsr.c:77 grub-core/commands/i386/wrmsr.c:70
+#: grub-core/commands/i386/wrmsr.c:78 grub-core/net/dns.c:749
+msgid "invalid argument"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:766
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:768
+#: grub-core/net/dns.c:781
+msgid "ADDRESS DNSSERVER"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:767
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:769
+#: grub-core/net/dns.c:782
+msgid "Perform a DNS lookup"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:769
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:772
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:771
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:774
+#: grub-core/net/dns.c:784 grub-core/net/dns.c:787
+msgid "DNSSERVER"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:770
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:772
+#: grub-core/net/dns.c:785
+msgid "Add a DNS server"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:773
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:775
+#: grub-core/net/dns.c:788
+msgid "Remove a DNS server"
+msgstr ""
+
+#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:775
+#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:777
+#: grub-core/net/dns.c:790
+msgid "List DNS servers"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:187
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:184
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:184
+#: grub-core/net/net.c:187
+msgid "timeout: could not resolve hardware address"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:397
+#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:895
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1630
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1796
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:394
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:394
+#: grub-core/net/bootp.c:1688 grub-core/net/bootp.c:1854
+#: grub-core/net/net.c:397
+#, c-format
+msgid "couldn't autoconfigure %s"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:565
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:553
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:562
+#: grub-core/net/net.c:565
+#, c-format
+msgid "unresolvable address %s"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:611
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:599
+#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:791
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:789
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:608
+#: grub-core/net/efi/net.c:791 grub-core/net/net.c:611
+#, c-format
+msgid "unrecognised network address `%s'"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:678
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:666
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:675
+#: grub-core/net/net.c:678
+msgid "destination unreachable"
+msgstr ""
+
+#. TRANSLATORS: route loop is a condition when e.g.
+#. to contact server A you need to go through B
+#. and to contact B you need to go through A.
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:701
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:689
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:698
+#: grub-core/net/net.c:701
+msgid "route loop detected"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:717
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:705
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:714
+#: grub-core/net/net.c:717
+msgid "address not found"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:721
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:709
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:718
+#: grub-core/net/net.c:721
+msgid "you can't delete this address"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:793
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:809
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:781
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:797
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:790
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:806
+#: grub-core/net/net.c:793 grub-core/net/net.c:809
+#, c-format
+msgid "Unsupported hw address type %d\n"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:830
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:818
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:827
+#: grub-core/net/net.c:830
+#, c-format
+msgid "Unsupported address type %d\n"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1034
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1148
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1022
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1136
+#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1165
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1163
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1031
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1145
+#: grub-core/net/efi/net.c:1165 grub-core/net/net.c:1034
+#: grub-core/net/net.c:1148
+msgid "three arguments expected"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1040
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1028
+#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1174
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1172
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1037
+#: grub-core/net/efi/net.c:1174 grub-core/net/net.c:1040
+msgid "card not found"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1172
+#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:697
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1432
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1160
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1169
+#: grub-core/net/bootp.c:1490 grub-core/net/net.c:1172
+#, c-format
+msgid "unrecognised network interface `%s'"
+msgstr ""
+
+#. TRANSLATORS: it refers to the network address.
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1184
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1172
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1181
+#: grub-core/net/net.c:1184
+msgid "temporary"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1207
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1195
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1204
+#: grub-core/net/net.c:1207
+#, c-format
+msgid "Unknown address type %d\n"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1317
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1303
+#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1241
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1239
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1314
+#: grub-core/net/efi/net.c:1241 grub-core/net/net.c:1317
+msgid "no server is specified"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1332
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1329
+#: grub-core/net/net.c:1332
+msgid "mismatched [ in address"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1342
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1371
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1339
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1368
+#: grub-core/net/net.c:1342 grub-core/net/net.c:1371
+msgid "bad port number"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1479
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/disk.c:236
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1395
+#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1276
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1274
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1476
+#: grub-core/kern/disk.c:236 grub-core/net/efi/net.c:1276
+#: grub-core/net/net.c:1479
+#, c-format
+msgid "disk `%s' not found"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1726
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1642
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1723
+#: grub-core/net/net.c:1727
+#, c-format
+msgid "timeout reading `%s'"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1987
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2042
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1917
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1998
+#: grub-core/net/net.c:1994 grub-core/net/net.c:2049
+msgid "list network routes"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1989
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2044
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1919
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:2000
+#: grub-core/net/net.c:1996 grub-core/net/net.c:2051
+msgid "list network cards"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1991
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2046
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1921
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:2002
+#: grub-core/net/net.c:1998 grub-core/net/net.c:2053
+msgid "list network addresses"
+msgstr ""
+
+#. TRANSLATORS: HWADDRESS stands for
+#. "hardware address".
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1995
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2024
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1899
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1980
+#: grub-core/net/net.c:2002 grub-core/net/net.c:2031
+msgid "SHORTNAME CARD ADDRESS [HWADDRESS]"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1996
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2025
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1900
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1981
+#: grub-core/net/net.c:2003 grub-core/net/net.c:2032
+msgid "Add a network address."
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1998
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2001
+#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:909
+#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:912
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1811
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1814
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1820
+#: grub-core/net/bootp.c:1869 grub-core/net/bootp.c:1872
+#: grub-core/net/bootp.c:1878 grub-core/net/net.c:2005 grub-core/net/net.c:2008
+msgid "[CARD]"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1999
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2002
+#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:910
+#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1812
+#: grub-core/net/bootp.c:1870 grub-core/net/net.c:2006 grub-core/net/net.c:2009
+msgid "perform a bootp autoconfiguration"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2028
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1903
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1984
+#: grub-core/net/net.c:2035
+msgid "[CARD [HWADDRESS]]"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2029
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1904
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1985
+#: grub-core/net/net.c:2036
+msgid "Perform an IPV6 autoconfiguration"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2032
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2039
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1907
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1914
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1988
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1995
+#: grub-core/net/net.c:2039 grub-core/net/net.c:2046
+msgid "SHORTNAME"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2033
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1908
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1989
+#: grub-core/net/net.c:2040
+msgid "Delete a network address."
+msgstr ""
+
+#. TRANSLATORS: "gw" is a keyword.
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2036
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1911
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1992
+#: grub-core/net/net.c:2043
+msgid "SHORTNAME NET [INTERFACE| gw GATEWAY]"
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2037
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1912
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1993
+#: grub-core/net/net.c:2044
+msgid "Add a network route."
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2040
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1915
+#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1996
+#: grub-core/net/net.c:2047
+msgid "Delete a network route."
+msgstr ""
+
+#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/tftp.c:400
+#: .pc/0152-net-tftp-Avoid-a-trivial-UAF.patch/grub-core/net/tftp.c:400
+#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:445
+#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:446
+#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:444
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:429
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/tftp.c:396
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:442
+#: grub-core/net/http.c:452 grub-core/net/tftp.c:400
+#, c-format
+msgid "time out opening `%s'"
+msgstr ""
+
+#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:108
+#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:108
+#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:108
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:105
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:105
+#: grub-core/net/http.c:116
+msgid "unsupported HTTP response"
+msgstr ""
+
+#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:123
+#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:123
+#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:123
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1746
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1775
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1819
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1902
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1926
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1746
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1775
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1819
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1902
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1926
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1801
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1830
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1874
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1957
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1981
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:120
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:120
+#: grub-core/commands/i386/pc/play.c:151 grub-core/commands/macbless.c:172
+#: grub-core/fs/archelp.c:260 grub-core/fs/bfs.c:621 grub-core/fs/bfs.c:704
+#: grub-core/fs/btrfs.c:1825 grub-core/fs/btrfs.c:1854
+#: grub-core/fs/btrfs.c:1898 grub-core/fs/btrfs.c:1981
+#: grub-core/fs/btrfs.c:2005 grub-core/fs/fshelp.c:257 grub-core/fs/jfs.c:707
+#: grub-core/fs/minix.c:428 grub-core/fs/ufs.c:544 grub-core/fs/zfs/zfs.c:2090
+#: grub-core/fs/zfs/zfs.c:2102 grub-core/fs/zfs/zfs.c:2308
+#: grub-core/net/efi/http.c:257 grub-core/net/http.c:131
+#, c-format
+msgid "file `%s' not found"
+msgstr ""
+
+#. TRANSLATORS: GRUB HTTP code is pretty young. So even perfectly
+#. valid answers like 403 will trigger this very generic message.
+#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:129
+#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:129
+#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:129
+#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:126
+#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:126
+#: grub-core/net/http.c:137
+#, c-format
+msgid "unsupported HTTP error %d: %s"
+msgstr ""
+
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1718
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1977
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1718
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1978
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1773
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2033
+#: grub-core/fs/btrfs.c:1797 grub-core/fs/btrfs.c:2057
+#: grub-core/fs/fshelp.c:189 grub-core/fs/fshelp.c:309 grub-core/fs/jfs.c:442
+#: grub-core/fs/minix.c:416 grub-core/fs/minix.c:578
+#: grub-core/fs/reiserfs.c:732 grub-core/fs/ufs.c:531 grub-core/fs/ufs.c:671
+#: grub-core/fs/zfs/zfs.c:2842 grub-core/fs/zfs/zfs.c:4275
+msgid "not a directory"
+msgstr ""
+
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1835
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1835
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1890
+#: grub-core/fs/archelp.c:216 grub-core/fs/archelp.c:278
+#: grub-core/fs/btrfs.c:1914 grub-core/fs/fshelp.c:227 grub-core/fs/jfs.c:747
+#: grub-core/fs/minix.c:371 grub-core/fs/ufs.c:454
+msgid "too deep nesting of symlinks"
+msgstr ""
+
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:2083
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:2109
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2164
+#: grub-core/fs/btrfs.c:2188 grub-core/fs/fshelp.c:307 grub-core/fs/jfs.c:846
+#: grub-core/fs/zfs/zfs.c:3829
+msgid "not a regular file"
+msgstr ""
+
+#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:2177
+#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:2203
+#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2258
+#: grub-core/fs/btrfs.c:2282 grub-core/fs/zfs/zfs.c:4361
+#: grub-core/partmap/msdos.c:404
+msgid "your core.img is unusually large.  It won't fit in the embedding area"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/arm64/dl.c:44
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/dl.c:48
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/powerpc/dl.c:36
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:341
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:298
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:294
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:331
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1451
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/multiboot.c:232
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/grub-core/kern/riscv/dl.c:47
+#: grub-core/kern/arm/dl.c:277 grub-core/kern/arm64/dl.c:44
+#: grub-core/kern/i386/dl.c:36 grub-core/kern/ia64/dl.c:41
+#: grub-core/kern/mips/dl.c:48 grub-core/kern/powerpc/dl.c:36
+#: grub-core/kern/riscv/dl.c:47 grub-core/kern/sparc64/dl.c:36
+#: grub-core/kern/x86_64/dl.c:36 grub-core/loader/i386/bsd.c:1452
+#: grub-core/loader/i386/bsdXX.c:49 grub-core/loader/ia64/efi/linux.c:341
+#: grub-core/loader/mips/linux.c:298 grub-core/loader/multiboot.c:233
+#: grub-core/loader/multiboot_elfxx.c:73
+#: grub-core/loader/powerpc/ieee1275/linux.c:294
+#: grub-core/loader/sparc64/ieee1275/linux.c:331
+msgid "invalid arch-dependent ELF magic"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/arm64/dl.c:192
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/grub-core/kern/riscv/dl.c:339
+#: grub-core/efiemu/i386/loadcore64.c:130 grub-core/kern/arm64/dl.c:192
+#: grub-core/kern/ia64/dl.c:145 grub-core/kern/riscv/dl.c:340
+#: grub-core/kern/sparc64/dl.c:185 grub-core/kern/x86_64/dl.c:115
+#, c-format
+msgid "relocation 0x%s is not implemented yet"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/command.c:88
+#: grub-core/commands/extcmd.c:120 grub-core/kern/command.c:88
+#, c-format
+msgid "%s: the command is not allowed when lockdown is enforced"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/device.c:42
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:763
+#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:763
+#: .pc/font-Assign-null_font-to-glyphs-in-ascii_font_glyph.patch/grub-core/font/font.c:434
+#: .pc/font-Fix-an-integer-underflow-in-blit_comb.patch/grub-core/font/font.c:434
+#: .pc/font-Fix-integer-overflow-in-BMP-index.patch/grub-core/font/font.c:432
+#: .pc/font-Fix-integer-overflow-in-ensure_comb_space.patch/grub-core/font/font.c:432
+#: .pc/font-Fix-integer-underflow-in-binary-search-of-char-index.patch/grub-core/font/font.c:434
+#: .pc/font-Fix-several-integer-overflows-in-grub_font_construct.patch/grub-core/font/font.c:432
+#: .pc/font-Fix-size-overflow-in-grub_font_get_glyph_internal.patch/grub-core/font/font.c:432
+#: .pc/font-Harden-grub_font_blit_glyph-and-grub_font_blit_glyph.patch/grub-core/font/font.c:434
+#: .pc/font-Reject-glyphs-exceeds-font-max_glyph_width-or-font-m.patch/grub-core/font/font.c:432
+#: .pc/font-Remove-grub_font_dup_glyph.patch/grub-core/font/font.c:432
+#: .pc/font-Try-opening-fonts-from-the-bundled-memdisk.patch/grub-core/font/font.c:434
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:749
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:762
+#: grub-core/commands/keylayouts.c:215 grub-core/commands/loadenv.c:61
+#: grub-core/commands/nativedisk.c:189 grub-core/efiemu/main.c:235
+#: grub-core/font/font.c:457 grub-core/gfxmenu/gfxmenu.c:63
+#: grub-core/kern/device.c:42 grub-core/kern/dl.c:763
+#, c-format
+msgid "variable `%s' isn't set"
+msgstr ""
+
+#. TRANSLATORS: It means that the specified partition e.g.
+#. hd0,msdos1=/dev/sda1 doesn't exist.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/disk.c:258
+#: grub-core/commands/gptsync.c:140 grub-core/kern/disk.c:258
+msgid "no such partition"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:217
+#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:217
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:335
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:212
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:216 grub-core/kern/dl.c:217
+#: grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
+#: grub-core/loader/i386/bsdXX.c:46 grub-core/loader/ia64/efi/linux.c:335
+#: grub-core/loader/multiboot_elfxx.c:69
+msgid "invalid arch-independent ELF magic"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:381
+#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:381
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:376
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:380
+#: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:381
+#, c-format
+msgid "symbol `%s' not found"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:623
+#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:623
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:345
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:248
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:280
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:320
+#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:618
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:622
+#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:623
+#: grub-core/loader/ia64/efi/linux.c:345 grub-core/loader/mips/linux.c:248
+#: grub-core/loader/multiboot_elfxx.c:76
+#: grub-core/loader/powerpc/ieee1275/linux.c:280
+#: grub-core/loader/sparc64/ieee1275/linux.c:320
+msgid "this ELF file is not of the right type"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/efi/mm.c:168
+#: .pc/2.12-mm/0205-kern-efi-mm-Always-request-a-fixed-number-of-pages-o.patch/grub-core/kern/efi/mm.c:168
+#: .pc/2.12-mm/0206-kern-efi-mm-Extract-function-to-add-memory-regions.patch/grub-core/kern/efi/mm.c:167
+#: .pc/2.12-mm/0207-kern-efi-mm-Pass-up-errors-from-add_memory_regions.patch/grub-core/kern/efi/mm.c:167
+#: .pc/2.12-mm/0208-kern-efi-mm-Implement-runtime-addition-of-pages.patch/grub-core/kern/efi/mm.c:167
+#: .pc/2.12-mm/0209-efi-Increase-default-memory-allocation-to-32-MiB.patch/grub-core/kern/efi/mm.c:167
+#: .pc/rhboot-try-to-pick-better-locations-for-kernel-and-initrd.patch/grub-core/kern/efi/mm.c:168
+#: .pc/ubuntu-linuxefi.patch/grub-core/kern/efi/mm.c:136
+#: grub-core/kern/efi/mm.c:167
+#, c-format
+msgid "invalid memory address (0x%s > 0x%s)"
+msgstr ""
+
+#. TRANSLATORS: The first %s is the file being looked at, the second %s is
+#. the error message.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:152
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:262
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:434
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:181
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:187
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:209
+#: .pc/core-in-fs.patch/util/setup.c:786
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:152
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:262
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:434
+#: .pc/install-locale-langpack.patch/util/grub-install-common.c:92
+#: .pc/install-locale-langpack.patch/util/grub-install-common.c:94
+#: .pc/install-locale-langpack.patch/util/grub-install-common.c:101
+#: .pc/install-locale-langpack.patch/util/grub-install-common.c:694
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:630
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:634
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:882
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:886
+#: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:150
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:180
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:186
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:208
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:498 grub-core/disk/cryptodisk.c:705
+#: grub-core/kern/emu/hostdisk.c:152 grub-core/kern/emu/hostdisk.c:262
+#: grub-core/kern/emu/hostdisk.c:434 grub-core/kern/emu/misc.c:181
+#: grub-core/kern/emu/misc.c:187 grub-core/kern/emu/misc.c:209
+#: grub-core/osdep/bsd/getroot.c:92 grub-core/osdep/bsd/getroot.c:168
+#: grub-core/osdep/hurd/getroot.c:68 grub-core/osdep/linux/blocklist.c:65
+#: grub-core/osdep/linux/getroot.c:150 grub-core/osdep/linux/hostdisk.c:194
+#: grub-core/osdep/linux/hostdisk.c:424 grub-core/osdep/linux/ofpath.c:417
+#: grub-core/osdep/linux/ofpath.c:422 grub-core/osdep/linux/ofpath.c:517
+#: grub-core/osdep/linux/ofpath.c:530 grub-core/osdep/sun/getroot.c:110
+#: grub-core/osdep/windows/blocklist.c:98 grub-core/tests/video_checksum.c:279
+#: util/editenv.c:54 util/glue-efi.c:125 util/glue-efi.c:130
+#: util/glue-efi.c:140 util/grub-editenv.c:139 util/grub-editenv.c:198
+#: util/grub-file.c:83 util/grub-fstest.c:128 util/grub-fstest.c:568
+#: util/grub-install-common.c:92 util/grub-install-common.c:94
+#: util/grub-install-common.c:101 util/grub-install-common.c:694
+#: util/grub-menulst2cfg.c:53 util/grub-menulst2cfg.c:68
+#: util/grub-mkimage.c:307 util/grub-mklayout.c:504 util/grub-mklayout.c:516
+#: util/grub-mknetdir.c:133 util/grub-mknetdir.c:151 util/grub-mkrescue.c:630
+#: util/grub-mkrescue.c:634 util/grub-mkrescue.c:884 util/grub-mkrescue.c:888
+#: util/grub-mkstandalone.c:253 util/grub-mount.c:498
+#: util/grub-render-label.c:169 util/grub-script-check.c:175
+#: util/grub-syslinux2cfg.c:181 util/grub-syslinux2cfg.c:191
+#: util/grub-syslinux2cfg.c:212 util/grub-syslinux2cfg.c:228 util/misc.c:91
+#: util/render-label.c:76 util/render-label.c:163 util/render-label.c:174
+#: util/resolve.c:246 util/setup.c:794
+#, c-format
+msgid "cannot open `%s': %s"
+msgstr ""
+
+#. TRANSLATORS: it refers to the lack of free slots.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:208
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:466
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:208
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:466
+#: grub-core/kern/emu/hostdisk.c:208 grub-core/kern/emu/hostdisk.c:466
+msgid "device count exceeds limit"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:270
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:142
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:270
+#: grub-core/disk/cryptodisk.c:762 grub-core/disk/cryptodisk.c:806
+#: grub-core/kern/emu/hostdisk.c:270 grub-core/kern/emu/hostfs.c:142
+#: grub-core/osdep/linux/hostdisk.c:459 util/grub-editenv.c:144
+#: util/grub-editenv.c:155 util/grub-fstest.c:320 util/misc.c:111
+#, c-format
+msgid "cannot seek `%s': %s"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:307
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:149
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:213
+#: .pc/core-in-fs.patch/util/setup.c:817 .pc/core-in-fs.patch/util/setup.c:836
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:307
+#: .pc/install-locale-langpack.patch/util/grub-install-common.c:1108
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:637
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:891
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:212
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:506
+#: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:766
+#: grub-core/disk/cryptodisk.c:810 grub-core/kern/emu/hostdisk.c:307
+#: grub-core/kern/emu/hostfs.c:149 grub-core/kern/emu/misc.c:213
+#: grub-core/osdep/linux/ofpath.c:195 grub-core/osdep/linux/ofpath.c:521
+#: grub-core/osdep/linux/ofpath.c:534 util/glue-efi.c:90 util/glue-efi.c:104
+#: util/grub-editenv.c:161 util/grub-fstest.c:577
+#: util/grub-install-common.c:1131 util/grub-mkrescue.c:637
+#: util/grub-mkrescue.c:893 util/grub-mount.c:506 util/grub-render-label.c:176
+#: util/misc.c:95 util/setup.c:825 util/setup.c:844
+#, c-format
+msgid "cannot read `%s': %s"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:342
+#: .pc/core-in-fs.patch/util/setup.c:791
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:342
+#: grub-core/kern/emu/hostdisk.c:342 util/editenv.c:66 util/grub-editenv.c:203
+#: util/grub-fstest.c:191 util/grub-mkfont.c:796 util/misc.c:114
+#: util/misc.c:129 util/setup.c:799
+#, c-format
+msgid "cannot write to `%s': %s"
+msgstr ""
+
+#. TRANSLATORS: Only one entry is ignored. However the suggestion
+#. is to correct/delete the whole file.
+#. device.map is a file indicating which
+#. devices are available at boot time. Fedora populated it with
+#. entries like (hd0,1) /dev/sda1 which would mean that every
+#. partition is a separate disk for BIOS. Such entries were
+#. inactive in GRUB due to its bug which is now gone. Without
+#. this additional check these entries would be harmful now.
+#. 
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:503
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:503
+#: grub-core/kern/emu/hostdisk.c:503
+#, c-format
+msgid "the device.map entry `%s' is invalid. Ignoring it. Please correct or delete your device.map"
+msgstr ""
+
+#. TRANSLATORS: device.map is a filename. Not to be translated.
+#. device.map specifies disk correspondance overrides. Previously
+#. one could create any kind of device name with this. Due to
+#. some problems we decided to limit it to just a handful
+#. possibilities.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:567
+#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:555
+#: grub-core/kern/emu/hostdisk.c:567
+#, c-format
+msgid "the drive name `%s' in device.map is incorrect. Using %s instead. Please use the form [hfc]d[0-9]* (E.g. `hd0' or `cd')"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:76
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:109
+#: grub-core/kern/emu/hostfs.c:76 grub-core/kern/emu/hostfs.c:109
+#, c-format
+msgid "can't open `%s': %s"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:99
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452 grub-core/kern/emu/main.c:99
+#: util/grub-fstest.c:516 util/grub-mount.c:452
+msgid "DEVICE_NAME"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:99
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:137
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:170
+#: grub-core/kern/emu/main.c:99 grub-core/loader/i386/bsd.c:138
+#: grub-core/loader/i386/bsd.c:171 util/grub-fstest.c:516 util/grub-mount.c:452
+msgid "Set root device."
+msgstr ""
+
+#. TRANSLATORS: "embed" is a verb (command description).  "
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:100
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:103
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:32
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:64
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:66
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:272
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:319
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:266
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:313
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:266
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:313
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:32
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:64
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:66
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:266
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:313
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:254
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:301
+#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:594
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:97
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:101
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:104
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:105
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:106
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:201
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:100
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:103
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:266
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:313
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:255
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:302
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2144
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2147
+#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2150
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:32
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:64
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:66
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:274
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:322
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:272
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:319
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:272
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:319
+#: grub-core/commands/blocklist.c:154 grub-core/commands/cat.c:163
+#: grub-core/commands/configfile.c:65 grub-core/commands/configfile.c:68
+#: grub-core/commands/configfile.c:74 grub-core/commands/configfile.c:80
+#: grub-core/commands/configfile.c:86 grub-core/commands/hashsum.c:34
+#: grub-core/commands/legacycfg.c:853 grub-core/commands/legacycfg.c:860
+#: grub-core/commands/legacycfg.c:865 grub-core/commands/legacycfg.c:870
+#: grub-core/commands/macbless.c:222 grub-core/commands/minicmd.c:213
+#: grub-core/commands/syslinuxcfg.c:186 grub-core/commands/syslinuxcfg.c:194
+#: grub-core/commands/syslinuxcfg.c:200 grub-core/commands/syslinuxcfg.c:206
+#: grub-core/commands/testload.c:163 grub-core/efiemu/main.c:312
+#: grub-core/kern/emu/main.c:100 grub-core/kern/emu/main.c:103
+#: grub-core/loader/i386/bsd.c:2148 grub-core/loader/i386/bsd.c:2151
+#: grub-core/loader/i386/bsd.c:2154
+#: grub-core/loader/i386/coreboot/chainloader.c:505
+#: grub-core/loader/ia64/efi/linux.c:594 include/grub/util/install.h:32
+#: include/grub/util/install.h:64 include/grub/util/install.h:66
+#: util/grub-glue-efi.c:52 util/grub-glue-efi.c:54 util/grub-glue-efi.c:56
+#: util/grub-install.c:274 util/grub-install.c:322 util/grub-mkfont.c:936
+#: util/grub-mkimage.c:68 util/grub-mkimage.c:74 util/grub-mkimage.c:76
+#: util/grub-mkimage.c:78 util/grub-mkimage.c:81 util/grub-mkimage.c:84
+#: util/grub-mklayout.c:52 util/grub-mklayout.c:54 util/grub-mkrescue.c:97
+#: util/grub-mkrescue.c:101 util/grub-mkrescue.c:104 util/grub-mkrescue.c:105
+#: util/grub-mkrescue.c:106 util/grub-mkstandalone.c:47
+#: util/grub-mkstandalone.c:49 util/grub-probe.c:732
+#: util/grub-render-label.c:59 util/grub-render-label.c:70
+#: util/grub-render-label.c:72 util/grub-setup.c:78 util/grub-setup.c:80
+#: util/grub-setup.c:84 util/grub-syslinux2cfg.c:74
+#: util/grub-syslinux2cfg.c:147
+msgid "FILE"
+msgstr ""
+
+#. TRANSLATORS: There are many devices in device map.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:102
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:102
+#: grub-core/kern/emu/main.c:102 util/grub-probe.c:733 util/grub-setup.c:85
+#, c-format
+msgid "use FILE as the device map [default=%s]"
+msgstr ""
+
+#. TRANSLATORS: There are many devices in device map.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:105
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:105
+#: grub-core/kern/emu/main.c:105
+msgid "use FILE as memdisk"
+msgstr ""
+
+#. TRANSLATORS: platform here isn't identifier. It can be translated.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:106
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:50
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:53
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:56
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:59
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:268
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:270
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:315
+#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:317
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:262
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:264
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:309
+#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:311
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:262
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:264
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:309
+#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:311
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:50
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:53
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:56
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:59
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:262
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:264
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:309
+#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:311
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:250
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:252
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:297
+#: .pc/install-stage2-confusion.patch/util/grub-install.c:299
+#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:99
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:106
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:262
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:264
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:309
+#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:311
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:251
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:253
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:298
+#: .pc/ubuntu-install-signed.patch/util/grub-install.c:300
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:50
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:53
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:56
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:59
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:270
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:272
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:318
+#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:320
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:268
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:270
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:315
+#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:317
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:268
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:270
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:315
+#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:317
+#: grub-core/commands/hashsum.c:35 grub-core/commands/ls.c:150
+#: grub-core/commands/macbless.c:226 grub-core/commands/syslinuxcfg.c:51
+#: grub-core/commands/syslinuxcfg.c:54 grub-core/kern/emu/main.c:106
+#: include/grub/util/install.h:50 include/grub/util/install.h:53
+#: include/grub/util/install.h:56 include/grub/util/install.h:59
+#: util/grub-install.c:270 util/grub-install.c:272 util/grub-install.c:318
+#: util/grub-install.c:320 util/grub-mkimage.c:64 util/grub-mkimage.c:67
+#: util/grub-mknetdir.c:46 util/grub-mknetdir.c:48 util/grub-mkrescue.c:99
+#: util/grub-setup.c:82 util/grub-syslinux2cfg.c:63 util/grub-syslinux2cfg.c:65
+#: util/grub-syslinux2cfg.c:67 util/grub-syslinux2cfg.c:71
+msgid "DIR"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:107
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:107
+#: grub-core/kern/emu/main.c:107 util/grub-setup.c:83
+#, c-format
+msgid "use GRUB files in the directory DIR [default=%s]"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:108
+#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:71
+#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:71
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:108
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:458
+#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:71
+#: grub-core/kern/emu/main.c:108 include/grub/util/install.h:71
+#: util/grub-editenv.c:58 util/grub-fstest.c:525 util/grub-glue-efi.c:58
+#: util/grub-macbless.c:104 util/grub-mkfont.c:962 util/grub-mkimage.c:86
+#: util/grub-mklayout.c:56 util/grub-mount.c:458 util/grub-probe.c:735
+#: util/grub-render-label.c:74 util/grub-script-check.c:52 util/grub-setup.c:90
+#: util/grub-syslinux2cfg.c:78
+msgid "print verbose messages."
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:109
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:109
+#: grub-core/kern/emu/main.c:109
+msgid "SECS"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:109
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:109
+#: grub-core/kern/emu/main.c:109
+msgid "wait until a debugger will attach"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:171
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:171
+#: grub-core/kern/emu/main.c:171 util/grub-macbless.c:143
+#: util/grub-mkrelpath.c:61 util/grub-probe.c:874 util/grub-script-check.c:75
+#: util/grub-setup.c:203
+#, c-format
+msgid "Unknown extra argument `%s'."
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:185
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:185
+#: grub-core/kern/emu/main.c:185
+msgid "GRUB emulator."
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:213
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:213
+#: grub-core/kern/emu/main.c:213 util/grub-editenv.c:268
+#: util/grub-glue-efi.c:110 util/grub-macbless.c:173 util/grub-mkfont.c:1177
+#: util/grub-mkimage.c:281 util/grub-mklayout.c:494
+#: util/grub-mkpasswd-pbkdf2.c:132 util/grub-mkrelpath.c:96
+#: util/grub-probe.c:863 util/grub-render-label.c:152
+#: util/grub-script-check.c:160 util/grub-setup.c:262
+#: util/grub-syslinux2cfg.c:163
+msgid "Error in parsing command line arguments\n"
+msgstr ""
+
+#. TRANSLATORS: In this case GRUB tells user what he has to do.
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:248
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:248
+#: grub-core/kern/emu/main.c:248
+#, c-format
+msgid "Run `gdb %s %d', and set ARGS.HOLD to zero.\n"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:48
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:48
+#: grub-core/kern/emu/misc.c:48
+#, c-format
+msgid "%s: warning:"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:64
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:64
+#: grub-core/kern/emu/misc.c:64
+#, c-format
+msgid "%s: info:"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:79
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:79
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:497
+#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:505 grub-core/kern/emu/misc.c:79
+#: util/grub-fstest.c:567 util/grub-fstest.c:576 util/grub-mount.c:497
+#: util/grub-mount.c:505
+#, c-format
+msgid "%s: error:"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:189
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:188
+#: grub-core/kern/emu/misc.c:189
+#, c-format
+msgid "file `%s' is too big"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/dl.c:258
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/powerpc/dl.c:163
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:756
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:881
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:945
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1026
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1120
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1222
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1413
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1628
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1665
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1697
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1767
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:1797
+#: grub-core/efiemu/i386/loadcore32.c:111 grub-core/kern/arm/dl.c:256
+#: grub-core/kern/i386/dl.c:75 grub-core/kern/mips/dl.c:258
+#: grub-core/kern/powerpc/dl.c:163 util/grub-mkimagexx.c:756
+#: util/grub-mkimagexx.c:881 util/grub-mkimagexx.c:945
+#: util/grub-mkimagexx.c:1026 util/grub-mkimagexx.c:1120
+#: util/grub-mkimagexx.c:1222 util/grub-mkimagexx.c:1414
+#: util/grub-mkimagexx.c:1629 util/grub-mkimagexx.c:1666
+#: util/grub-mkimagexx.c:1698 util/grub-mkimagexx.c:1769
+#: util/grub-mkimagexx.c:1799
+#, c-format
+msgid "relocation 0x%x is not implemented yet"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/loongson/init.c:301
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/mips/arc/init.c:273
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/mips/loongson/init.c:301
+#: grub-core/kern/mips/arc/init.c:273 grub-core/kern/mips/loongson/init.c:301
+msgid "Shutdown failed"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:437
+#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:437
+#: grub-core/commands/i386/pc/play.c:162 grub-core/commands/i386/pc/play.c:171
+#: grub-core/kern/misc.c:437 grub-core/script/execute.c:138
+#: grub-core/script/execute.c:244
+msgid "unrecognized number"
+msgstr ""
+
+#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/partition.c:51
+#: grub-core/kern/partition.c:51 grub-core/partmap/bsdlabel.c:108
+#, c-format
+msgid "Discarding improperly nested partition (%s,%s,%s%d)"
+msgstr ""
+
 #: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:30
 #: .pc/RISC-V-Use-common-linux-loader.patch/grub-core/loader/riscv/linux.c:40
 msgid "Linux not supported yet"
@@ -1007,16 +2237,6 @@ msgstr ""
 #: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1424
 #: grub-core/net/bootp.c:1482
 msgid "four arguments expected"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1172
-#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:697
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1432
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1160
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1169
-#: grub-core/net/bootp.c:1490 grub-core/net/net.c:1172
-#, c-format
-msgid "unrecognised network interface `%s'"
 msgstr ""
 
 #: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:700
@@ -1055,38 +2275,6 @@ msgstr ""
 #: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1538
 #: grub-core/net/bootp.c:1596
 msgid "no network card found"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:397
-#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:895
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1630
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1796
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:394
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:394
-#: grub-core/net/bootp.c:1688 grub-core/net/bootp.c:1854
-#: grub-core/net/net.c:397
-#, c-format
-msgid "couldn't autoconfigure %s"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1998
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2001
-#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:909
-#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:912
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1811
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1814
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1820
-#: grub-core/net/bootp.c:1869 grub-core/net/bootp.c:1872
-#: grub-core/net/bootp.c:1878 grub-core/net/net.c:2005 grub-core/net/net.c:2008
-msgid "[CARD]"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1999
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2002
-#: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:910
-#: .pc/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1812
-#: grub-core/net/bootp.c:1870 grub-core/net/net.c:2006 grub-core/net/net.c:2009
-msgid "perform a bootp autoconfiguration"
 msgstr ""
 
 #: .pc/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:913
@@ -1148,6 +2336,59 @@ msgstr ""
 #: grub-core/net/drivers/ieee1275/ofnet.c:75
 #: grub-core/net/drivers/uboot/ubootnet.c:62
 msgid "couldn't send network packet"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:140
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:140
+msgid "Command failed"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:142
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:142
+msgid "Invalid parameter"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:144
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:144
+msgid "Output buffer too small"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:146
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:146
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:146
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:146
+#: grub-core/commands/efi/tpm.c:148
+msgid "TPM unavailable"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:174
+#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:208
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:174
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:208
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:174
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:208
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:173
+#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:207
+#: grub-core/commands/efi/tpm.c:176 grub-core/commands/efi/tpm.c:210
+msgid "cannot allocate TPM event buffer"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:140
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:140
+#: grub-core/commands/efi/tpm.c:142
+msgid "command failed"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:142
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:142
+#: grub-core/commands/efi/tpm.c:144
+msgid "invalid parameter"
+msgstr ""
+
+#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:144
+#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:144
+#: grub-core/commands/efi/tpm.c:146
+msgid "output buffer too small"
 msgstr ""
 
 #: .pc/core-in-fs.patch/util/setup.c:167 util/setup.c:169
@@ -1307,70 +2548,6 @@ msgstr ""
 msgid "can't retrieve blocklists"
 msgstr ""
 
-#. TRANSLATORS: The first %s is the file being looked at, the second %s is
-#. the error message.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:152
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:262
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:434
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:181
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:187
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:209
-#: .pc/core-in-fs.patch/util/setup.c:786
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:152
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:262
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:434
-#: .pc/install-locale-langpack.patch/util/grub-install-common.c:92
-#: .pc/install-locale-langpack.patch/util/grub-install-common.c:94
-#: .pc/install-locale-langpack.patch/util/grub-install-common.c:101
-#: .pc/install-locale-langpack.patch/util/grub-install-common.c:694
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:630
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:634
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:882
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:886
-#: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:150
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:180
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:186
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:208
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:498 grub-core/disk/cryptodisk.c:705
-#: grub-core/kern/emu/hostdisk.c:152 grub-core/kern/emu/hostdisk.c:262
-#: grub-core/kern/emu/hostdisk.c:434 grub-core/kern/emu/misc.c:181
-#: grub-core/kern/emu/misc.c:187 grub-core/kern/emu/misc.c:209
-#: grub-core/osdep/bsd/getroot.c:92 grub-core/osdep/bsd/getroot.c:168
-#: grub-core/osdep/hurd/getroot.c:68 grub-core/osdep/linux/blocklist.c:65
-#: grub-core/osdep/linux/getroot.c:150 grub-core/osdep/linux/hostdisk.c:194
-#: grub-core/osdep/linux/hostdisk.c:424 grub-core/osdep/linux/ofpath.c:417
-#: grub-core/osdep/linux/ofpath.c:422 grub-core/osdep/linux/ofpath.c:517
-#: grub-core/osdep/linux/ofpath.c:530 grub-core/osdep/sun/getroot.c:110
-#: grub-core/osdep/windows/blocklist.c:98 grub-core/tests/video_checksum.c:279
-#: util/editenv.c:54 util/glue-efi.c:125 util/glue-efi.c:130
-#: util/glue-efi.c:140 util/grub-editenv.c:139 util/grub-editenv.c:198
-#: util/grub-file.c:83 util/grub-fstest.c:128 util/grub-fstest.c:568
-#: util/grub-install-common.c:92 util/grub-install-common.c:94
-#: util/grub-install-common.c:101 util/grub-install-common.c:694
-#: util/grub-menulst2cfg.c:53 util/grub-menulst2cfg.c:68
-#: util/grub-mkimage.c:307 util/grub-mklayout.c:504 util/grub-mklayout.c:516
-#: util/grub-mknetdir.c:133 util/grub-mknetdir.c:151 util/grub-mkrescue.c:630
-#: util/grub-mkrescue.c:634 util/grub-mkrescue.c:884 util/grub-mkrescue.c:888
-#: util/grub-mkstandalone.c:253 util/grub-mount.c:498
-#: util/grub-render-label.c:169 util/grub-script-check.c:175
-#: util/grub-syslinux2cfg.c:181 util/grub-syslinux2cfg.c:191
-#: util/grub-syslinux2cfg.c:212 util/grub-syslinux2cfg.c:228 util/misc.c:91
-#: util/render-label.c:76 util/render-label.c:163 util/render-label.c:174
-#: util/resolve.c:246 util/setup.c:794
-#, c-format
-msgid "cannot open `%s': %s"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:342
-#: .pc/core-in-fs.patch/util/setup.c:791
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:342
-#: grub-core/kern/emu/hostdisk.c:342 util/editenv.c:66 util/grub-editenv.c:203
-#: util/grub-fstest.c:191 util/grub-mkfont.c:796 util/misc.c:114
-#: util/misc.c:129 util/setup.c:799
-#, c-format
-msgid "cannot write to `%s': %s"
-msgstr ""
-
 #: .pc/core-in-fs.patch/util/setup.c:794
 #: .pc/install-locale-langpack.patch/util/grub-install-common.c:700
 #: util/editenv.c:71 util/grub-editenv.c:207 util/grub-install-common.c:700
@@ -1383,29 +2560,6 @@ msgstr ""
 #: util/setup.c:804
 #, c-format
 msgid "cannot close `%s': %s"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:307
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:149
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:213
-#: .pc/core-in-fs.patch/util/setup.c:817 .pc/core-in-fs.patch/util/setup.c:836
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:307
-#: .pc/install-locale-langpack.patch/util/grub-install-common.c:1108
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:637
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:891
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:212
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:506
-#: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:766
-#: grub-core/disk/cryptodisk.c:810 grub-core/kern/emu/hostdisk.c:307
-#: grub-core/kern/emu/hostfs.c:149 grub-core/kern/emu/misc.c:213
-#: grub-core/osdep/linux/ofpath.c:195 grub-core/osdep/linux/ofpath.c:521
-#: grub-core/osdep/linux/ofpath.c:534 util/glue-efi.c:90 util/glue-efi.c:104
-#: util/grub-editenv.c:161 util/grub-fstest.c:577
-#: util/grub-install-common.c:1131 util/grub-mkrescue.c:637
-#: util/grub-mkrescue.c:893 util/grub-mount.c:506 util/grub-render-label.c:176
-#: util/misc.c:95 util/setup.c:825 util/setup.c:844
-#, c-format
-msgid "cannot read `%s': %s"
 msgstr ""
 
 #: .pc/core-in-fs.patch/util/setup.c:820 .pc/core-in-fs.patch/util/setup.c:840
@@ -1435,68 +2589,6 @@ msgstr ""
 #: grub-core/osdep/windows/config.c:55
 #, c-format
 msgid "cannot open configuration file `%s': %s"
-msgstr ""
-
-#. TRANSLATORS: it refers to the lack of free slots.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:208
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:466
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:208
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:466
-#: grub-core/kern/emu/hostdisk.c:208 grub-core/kern/emu/hostdisk.c:466
-msgid "device count exceeds limit"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:270
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:142
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:270
-#: grub-core/disk/cryptodisk.c:762 grub-core/disk/cryptodisk.c:806
-#: grub-core/kern/emu/hostdisk.c:270 grub-core/kern/emu/hostfs.c:142
-#: grub-core/osdep/linux/hostdisk.c:459 util/grub-editenv.c:144
-#: util/grub-editenv.c:155 util/grub-fstest.c:320 util/misc.c:111
-#, c-format
-msgid "cannot seek `%s': %s"
-msgstr ""
-
-#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:44
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:458
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:473
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:44
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:458
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:473
-#: grub-core/commands/pcidump.c:109 grub-core/commands/pcidump.c:137
-#: grub-core/commands/setpci.c:183 grub-core/commands/setpci.c:213
-#: grub-core/fs/zfs/zfs.c:3822 grub-core/kern/emu/hostdisk.c:458
-#: grub-core/kern/emu/hostdisk.c:473 grub-core/kern/file.c:44
-#, c-format
-msgid "missing `%c' symbol"
-msgstr ""
-
-#. TRANSLATORS: Only one entry is ignored. However the suggestion
-#. is to correct/delete the whole file.
-#. device.map is a file indicating which
-#. devices are available at boot time. Fedora populated it with
-#. entries like (hd0,1) /dev/sda1 which would mean that every
-#. partition is a separate disk for BIOS. Such entries were
-#. inactive in GRUB due to its bug which is now gone. Without
-#. this additional check these entries would be harmful now.
-#. 
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:503
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:503
-#: grub-core/kern/emu/hostdisk.c:503
-#, c-format
-msgid "the device.map entry `%s' is invalid. Ignoring it. Please correct or delete your device.map"
-msgstr ""
-
-#. TRANSLATORS: device.map is a filename. Not to be translated.
-#. device.map specifies disk correspondance overrides. Previously
-#. one could create any kind of device name with this. Due to
-#. some problems we decided to limit it to just a handful
-#. possibilities.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostdisk.c:567
-#: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:555
-#: grub-core/kern/emu/hostdisk.c:567
-#, c-format
-msgid "the drive name `%s' in device.map is incorrect. Using %s instead. Please use the form [hfc]d[0-9]* (E.g. `hd0' or `cd')"
 msgstr ""
 
 #: .pc/efi-EFI-Device-Tree-Fixup-Protocol.patch/grub-core/loader/efi/fdt.c:161
@@ -1601,81 +2693,6 @@ msgstr ""
 msgid "pre-load specified modules MODULES"
 msgstr ""
 
-#. TRANSLATORS: "embed" is a verb (command description).  "
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:100
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:103
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:32
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:64
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:66
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:272
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:319
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:266
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:313
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:266
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:313
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:32
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:64
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:66
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:266
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:313
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:254
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:301
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:594
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:97
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:101
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:104
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:105
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:106
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:201
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:100
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:103
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:266
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:313
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:255
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:302
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2144
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2147
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:2150
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:32
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:64
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:66
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:274
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:322
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:272
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:319
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:272
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:319
-#: grub-core/commands/blocklist.c:154 grub-core/commands/cat.c:163
-#: grub-core/commands/configfile.c:65 grub-core/commands/configfile.c:68
-#: grub-core/commands/configfile.c:74 grub-core/commands/configfile.c:80
-#: grub-core/commands/configfile.c:86 grub-core/commands/hashsum.c:34
-#: grub-core/commands/legacycfg.c:853 grub-core/commands/legacycfg.c:860
-#: grub-core/commands/legacycfg.c:865 grub-core/commands/legacycfg.c:870
-#: grub-core/commands/macbless.c:222 grub-core/commands/minicmd.c:213
-#: grub-core/commands/syslinuxcfg.c:186 grub-core/commands/syslinuxcfg.c:194
-#: grub-core/commands/syslinuxcfg.c:200 grub-core/commands/syslinuxcfg.c:206
-#: grub-core/commands/testload.c:163 grub-core/efiemu/main.c:312
-#: grub-core/kern/emu/main.c:100 grub-core/kern/emu/main.c:103
-#: grub-core/loader/i386/bsd.c:2148 grub-core/loader/i386/bsd.c:2151
-#: grub-core/loader/i386/bsd.c:2154
-#: grub-core/loader/i386/coreboot/chainloader.c:505
-#: grub-core/loader/ia64/efi/linux.c:594 include/grub/util/install.h:32
-#: include/grub/util/install.h:64 include/grub/util/install.h:66
-#: util/grub-glue-efi.c:52 util/grub-glue-efi.c:54 util/grub-glue-efi.c:56
-#: util/grub-install.c:274 util/grub-install.c:322 util/grub-mkfont.c:936
-#: util/grub-mkimage.c:68 util/grub-mkimage.c:74 util/grub-mkimage.c:76
-#: util/grub-mkimage.c:78 util/grub-mkimage.c:81 util/grub-mkimage.c:84
-#: util/grub-mklayout.c:52 util/grub-mklayout.c:54 util/grub-mkrescue.c:97
-#: util/grub-mkrescue.c:101 util/grub-mkrescue.c:104 util/grub-mkrescue.c:105
-#: util/grub-mkrescue.c:106 util/grub-mkstandalone.c:47
-#: util/grub-mkstandalone.c:49 util/grub-probe.c:732
-#: util/grub-render-label.c:59 util/grub-render-label.c:70
-#: util/grub-render-label.c:72 util/grub-setup.c:78 util/grub-setup.c:80
-#: util/grub-setup.c:84 util/grub-syslinux2cfg.c:74
-#: util/grub-syslinux2cfg.c:147
-msgid "FILE"
-msgstr ""
-
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:33
 #: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:33
 #: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:33
@@ -1749,75 +2766,6 @@ msgid "choose the compression to use for core image"
 msgstr ""
 
 #. TRANSLATORS: platform here isn't identifier. It can be translated.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:106
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:50
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:53
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:56
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:59
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:268
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:270
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:315
-#: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:317
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:262
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:264
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:309
-#: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:311
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:262
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:264
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:309
-#: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:311
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:50
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:53
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:56
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:59
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:262
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:264
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:309
-#: .pc/install-powerpc-machtypes.patch/util/grub-install.c:311
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:250
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:252
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:297
-#: .pc/install-stage2-confusion.patch/util/grub-install.c:299
-#: .pc/mkrescue-efi-modules.patch/util/grub-mkrescue.c:99
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:106
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:262
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:264
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:309
-#: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:311
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:251
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:253
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:298
-#: .pc/ubuntu-install-signed.patch/util/grub-install.c:300
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:50
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:53
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:56
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:59
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:270
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:272
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:318
-#: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:320
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:268
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:270
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:315
-#: .pc/ubuntu-temp-keep-auto-nvram.patch/util/grub-install.c:317
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:268
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:270
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:315
-#: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:317
-#: grub-core/commands/hashsum.c:35 grub-core/commands/ls.c:150
-#: grub-core/commands/macbless.c:226 grub-core/commands/syslinuxcfg.c:51
-#: grub-core/commands/syslinuxcfg.c:54 grub-core/kern/emu/main.c:106
-#: include/grub/util/install.h:50 include/grub/util/install.h:53
-#: include/grub/util/install.h:56 include/grub/util/install.h:59
-#: util/grub-install.c:270 util/grub-install.c:272 util/grub-install.c:318
-#: util/grub-install.c:320 util/grub-mkimage.c:64 util/grub-mkimage.c:67
-#: util/grub-mknetdir.c:46 util/grub-mknetdir.c:48 util/grub-mkrescue.c:99
-#: util/grub-setup.c:82 util/grub-syslinux2cfg.c:63 util/grub-syslinux2cfg.c:65
-#: util/grub-syslinux2cfg.c:67 util/grub-syslinux2cfg.c:71
-msgid "DIR"
-msgstr ""
-
-#. TRANSLATORS: platform here isn't identifier. It can be translated.
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:51
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:54
 #: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:51
@@ -1865,21 +2813,6 @@ msgstr ""
 #: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:69
 #: include/grub/util/install.h:69 util/grub-mkimage.c:85
 msgid "disable shim_lock verifier"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:108
-#: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:71
-#: .pc/install-powerpc-machtypes.patch/include/grub/util/install.h:71
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:108
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:458
-#: .pc/ubuntu-resilient-boot-boot-order.patch/include/grub/util/install.h:71
-#: grub-core/kern/emu/main.c:108 include/grub/util/install.h:71
-#: util/grub-editenv.c:58 util/grub-fstest.c:525 util/grub-glue-efi.c:58
-#: util/grub-macbless.c:104 util/grub-mkfont.c:962 util/grub-mkimage.c:86
-#: util/grub-mklayout.c:56 util/grub-mount.c:458 util/grub-probe.c:735
-#: util/grub-render-label.c:74 util/grub-script-check.c:52 util/grub-setup.c:90
-#: util/grub-syslinux2cfg.c:78
-msgid "print verbose messages."
 msgstr ""
 
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:256
@@ -2849,35 +3782,6 @@ msgstr ""
 msgid "premature end of file"
 msgstr ""
 
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:720
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:752
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:722
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:754
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:711
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1069
-#: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:492
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:699
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1057
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:708
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1066
-#: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:48
-#: .pc/ubuntu-linuxefi.patch/grub-core/commands/memrw.c:48
-#: grub-core/commands/hdparm.c:286 grub-core/commands/i386/rdmsr.c:68
-#: grub-core/commands/iorw.c:49 grub-core/commands/legacycfg.c:779
-#: grub-core/commands/legacycfg.c:831 grub-core/commands/macbless.c:190
-#: grub-core/commands/memrw.c:49 grub-core/commands/minicmd.c:193
-#: grub-core/commands/pgp.c:738 grub-core/commands/pgp.c:792
-#: grub-core/commands/search.c:304 grub-core/commands/search_wrap.c:179
-#: grub-core/commands/setpci.c:242 grub-core/commands/sleep.c:71
-#: grub-core/fs/zfs/zfsinfo.c:279 grub-core/fs/zfs/zfsinfo.c:358
-#: grub-core/gettext/gettext.c:497 grub-core/kern/corecmd.c:65
-#: grub-core/kern/corecmd.c:79 grub-core/mmap/mmap.c:433
-#: grub-core/net/dns.c:735 grub-core/net/dns.c:767 grub-core/net/net.c:711
-#: grub-core/net/net.c:1069 grub-core/normal/context.c:194
-#: grub-core/script/execute.c:131 grub-core/term/gfxterm_background.c:136
-msgid "one argument expected"
-msgstr ""
-
 #. TRANSLATORS: It refers to passing the string through gettext.
 #. So it's "translate" in the same meaning as in what you're
 #. doing now.
@@ -3095,70 +3999,9 @@ msgstr ""
 msgid "no SGI routines are available for your platform"
 msgstr ""
 
-#: .pc/0133-loader-i386-efi-linux-Use-grub_loader_set_ex.patch/grub-core/loader/i386/efi/linux.c:109
-#: .pc/0134-loader-i386-efi-linux-Fix-a-memory-leak-in-the-initr.patch/grub-core/loader/i386/efi/linux.c:125
-#: .pc/0137-video-readers-png-Abort-sooner-if-a-read-operation-f.patch/grub-core/video/readers/png.c:307
-#: .pc/0137-video-readers-png-Abort-sooner-if-a-read-operation-f.patch/grub-core/video/readers/png.c:312
-#: .pc/0138-video-readers-png-Refuse-to-handle-multiple-image-he.patch/grub-core/video/readers/png.c:320
-#: .pc/0138-video-readers-png-Refuse-to-handle-multiple-image-he.patch/grub-core/video/readers/png.c:325
-#: .pc/0139-video-readers-png-Drop-greyscale-support-to-fix-heap.patch/grub-core/video/readers/png.c:323
-#: .pc/0139-video-readers-png-Drop-greyscale-support-to-fix-heap.patch/grub-core/video/readers/png.c:328
-#: .pc/0140-video-readers-png-Avoid-heap-OOB-R-W-inserting-huff-.patch/grub-core/video/readers/png.c:323
-#: .pc/0140-video-readers-png-Avoid-heap-OOB-R-W-inserting-huff-.patch/grub-core/video/readers/png.c:328
-#: .pc/0141-video-readers-png-Sanity-check-some-huffman-codes.patch/grub-core/video/readers/png.c:323
-#: .pc/0141-video-readers-png-Sanity-check-some-huffman-codes.patch/grub-core/video/readers/png.c:328
-#: .pc/2.12-mm/0194-mm-Clarify-grub_real_malloc.patch/grub-core/kern/mm.c:392
-#: .pc/2.12-mm/0195-mm-grub_real_malloc-Make-small-allocs-comment-match-.patch/grub-core/kern/mm.c:398
-#: .pc/2.12-mm/0196-mm-Document-grub_free.patch/grub-core/kern/mm.c:398
-#: .pc/2.12-mm/0197-mm-Document-grub_mm_init_region.patch/grub-core/kern/mm.c:398
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:364
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:422
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mm.c:427
-#: .pc/2.12-mm/0201-mm-When-adding-a-region-merge-with-region-after-as-w.patch/grub-core/kern/mm.c:427
-#: .pc/2.12-mm/0202-mm-Debug-support-for-region-operations.patch/grub-core/kern/mm.c:463
-#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/mm.c:476
-#: .pc/2.12-mm/0204-mm-Allow-dynamically-requesting-additional-memory-re.patch/grub-core/kern/mm.c:468
-#: .pc/2.12-mm/0210-mm-Try-invalidate-disk-caches-last-when-out-of-memor.patch/grub-core/kern/mm.c:498
-#: .pc/2.12-mm/0212-mm-Adjust-new-region-size-to-take-management-overhea.patch/grub-core/kern/mm.c:498
-#: .pc/2.12-mm/0213-mm-Preallocate-some-space-when-adding-new-regions.patch/grub-core/kern/mm.c:556
-#: .pc/2.12-mm/0214-mm-Avoid-complex-heap-growth-math-in-hot-path.patch/grub-core/kern/mm.c:562
-#: .pc/linuxefi-Invalidate-i-cache-before-starting-the-kern.patch/grub-core/loader/i386/efi/linux.c:126
-#: .pc/linuxefi-do-not-validate-kernels-twice.patch/grub-core/loader/i386/efi/linux.c:110
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/i386/pc/linux.c:225
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:139
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/linux.c:248
-#: .pc/probe-fusionio.patch/util/deviceiter.c:601
-#: .pc/rhboot-bounce-buffers.patch/grub-core/loader/i386/efi/linux.c:128
-#: .pc/rhboot-efi-allocate-in-kernel-bounds.patch/grub-core/loader/i386/efi/linux.c:269
-#: .pc/rhboot-efi-allocate-kernel-as-code-for-real.patch/grub-core/loader/i386/efi/linux.c:271
-#: .pc/rhboot-efi-allocate-kernel-as-code.patch/grub-core/loader/i386/efi/linux.c:243
-#: .pc/rhboot-efi-enumerated-array-for-allocation-choice.patch/grub-core/loader/i386/efi/linux.c:245
-#: .pc/rhboot-efi-fix-incorrect-array-size.patch/grub-core/loader/i386/efi/linux.c:271
-#: .pc/rhboot-efi-initrd-above-4gb.patch/grub-core/loader/i386/efi/linux.c:226
-#: .pc/rhboot-efi-kernel-allocator.patch/grub-core/loader/i386/efi/linux.c:171
-#: .pc/rhboot-efi-rearrange-grub-cmd-linux.patch/grub-core/loader/i386/efi/linux.c:171
-#: .pc/rhboot-efi-split-allocation-policy.patch/grub-core/loader/i386/efi/linux.c:254
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:364
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:422
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:287
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:296
-#: .pc/rhboot-try-to-pick-better-locations-for-kernel-and-initrd.patch/grub-core/loader/i386/efi/linux.c:127
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/pc/linux.c:225
-#: .pc/ubuntu-rhboot-cast-fixups.patch/grub-core/loader/i386/efi/linux.c:271
-#: .pc/ubuntu-skip-disk-by-id-lvm-pvm-uuid-entries.patch/util/deviceiter.c:607
-#: grub-core/fs/ext2.c:724 grub-core/fs/squash4.c:467
-#: grub-core/kern/buffer.c:108 grub-core/kern/misc.c:364
-#: grub-core/kern/misc.c:422 grub-core/kern/mm.c:568 grub-core/lib/arg.c:224
-#: grub-core/lib/arg.c:471 grub-core/loader/i386/efi/linux.c:271
-#: grub-core/loader/i386/pc/linux.c:238 grub-core/loader/linux.c:139
-#: grub-core/loader/linux.c:248 grub-core/net/efi/dhcp.c:365
-#: grub-core/osdep/unix/config.c:112 grub-core/osdep/unix/config.c:137
-#: grub-core/osdep/unix/config.c:162 grub-core/script/lexer.c:179
-#: grub-core/video/bitmap.c:145 grub-core/video/readers/png.c:323
-#: grub-core/video/readers/png.c:328 include/grub/buffer.h:79
-#: include/grub/buffer.h:117 include/grub/misc.h:287 include/grub/misc.h:296
-#: util/deviceiter.c:610
-msgid "overflow is detected"
+#: .pc/kern-efi-sb-Enforce-verification-of-font-files.patch/grub-core/kern/efi/sb.c:170
+#: grub-core/kern/efi/sb.c:169
+msgid "prohibited by secure boot policy"
 msgstr ""
 
 #: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/arm/linux.c:242
@@ -3192,55 +4035,6 @@ msgstr ""
 #: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:132
 #: grub-core/loader/ia64/efi/linux.c:132
 msgid "FPSWA protocol wasn't able to find the interface"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:217
-#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:217
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:335
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:212
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:216 grub-core/kern/dl.c:217
-#: grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
-#: grub-core/loader/i386/bsdXX.c:46 grub-core/loader/ia64/efi/linux.c:335
-#: grub-core/loader/multiboot_elfxx.c:69
-msgid "invalid arch-independent ELF magic"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/arm64/dl.c:44
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/dl.c:48
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/powerpc/dl.c:36
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:341
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:298
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:294
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:331
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:1451
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/multiboot.c:232
-#: grub-core/kern/arm/dl.c:277 grub-core/kern/arm64/dl.c:44
-#: grub-core/kern/i386/dl.c:36 grub-core/kern/ia64/dl.c:41
-#: grub-core/kern/mips/dl.c:48 grub-core/kern/powerpc/dl.c:36
-#: grub-core/kern/riscv/dl.c:47 grub-core/kern/sparc64/dl.c:36
-#: grub-core/kern/x86_64/dl.c:36 grub-core/loader/i386/bsd.c:1452
-#: grub-core/loader/i386/bsdXX.c:49 grub-core/loader/ia64/efi/linux.c:341
-#: grub-core/loader/mips/linux.c:298 grub-core/loader/multiboot.c:233
-#: grub-core/loader/multiboot_elfxx.c:73
-#: grub-core/loader/powerpc/ieee1275/linux.c:294
-#: grub-core/loader/sparc64/ieee1275/linux.c:331
-msgid "invalid arch-dependent ELF magic"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:623
-#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:623
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:345
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/mips/linux.c:248
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/powerpc/ieee1275/linux.c:280
-#: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/sparc64/ieee1275/linux.c:320
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:618
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:622
-#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:623
-#: grub-core/loader/ia64/efi/linux.c:345 grub-core/loader/mips/linux.c:248
-#: grub-core/loader/multiboot_elfxx.c:76
-#: grub-core/loader/powerpc/ieee1275/linux.c:280
-#: grub-core/loader/sparc64/ieee1275/linux.c:320
-msgid "this ELF file is not of the right type"
 msgstr ""
 
 #: .pc/loader-drop-argv-argument-in-grub_initrd_load.patch/grub-core/loader/ia64/efi/linux.c:580
@@ -3489,342 +4283,6 @@ msgstr ""
 msgid "Your xorriso doesn't support `--grub2-boot-info'. Your core image is too big. Boot as disk is disabled. Please use xorriso 1.2.9 or later."
 msgstr ""
 
-#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:108
-#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:108
-#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:108
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:105
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:105
-#: grub-core/net/http.c:116
-msgid "unsupported HTTP response"
-msgstr ""
-
-#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:123
-#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:123
-#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:123
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1746
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1775
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1819
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1902
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1926
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1746
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1775
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1819
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1902
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1926
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1801
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1830
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1874
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1957
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1981
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:120
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:120
-#: grub-core/commands/i386/pc/play.c:151 grub-core/commands/macbless.c:172
-#: grub-core/fs/archelp.c:260 grub-core/fs/bfs.c:621 grub-core/fs/bfs.c:704
-#: grub-core/fs/btrfs.c:1825 grub-core/fs/btrfs.c:1854
-#: grub-core/fs/btrfs.c:1898 grub-core/fs/btrfs.c:1981
-#: grub-core/fs/btrfs.c:2005 grub-core/fs/fshelp.c:257 grub-core/fs/jfs.c:707
-#: grub-core/fs/minix.c:428 grub-core/fs/ufs.c:544 grub-core/fs/zfs/zfs.c:2090
-#: grub-core/fs/zfs/zfs.c:2102 grub-core/fs/zfs/zfs.c:2308
-#: grub-core/net/efi/http.c:257 grub-core/net/http.c:131
-#, c-format
-msgid "file `%s' not found"
-msgstr ""
-
-#. TRANSLATORS: GRUB HTTP code is pretty young. So even perfectly
-#. valid answers like 403 will trigger this very generic message.
-#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:129
-#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:129
-#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:129
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:126
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:126
-#: grub-core/net/http.c:137
-#, c-format
-msgid "unsupported HTTP error %d: %s"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/tftp.c:400
-#: .pc/0152-net-tftp-Avoid-a-trivial-UAF.patch/grub-core/net/tftp.c:400
-#: .pc/0153-net-http-Do-not-tear-down-socket-if-it-s-already-bee.patch/grub-core/net/http.c:445
-#: .pc/0154-net-http-Fix-OOB-write-for-split-http-headers.patch/grub-core/net/http.c:446
-#: .pc/0155-net-http-Error-out-on-headers-with-LF-without-CR.patch/grub-core/net/http.c:444
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/http.c:429
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/tftp.c:396
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/http.c:442
-#: grub-core/net/http.c:452 grub-core/net/tftp.c:400
-#, c-format
-msgid "time out opening `%s'"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:187
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:184
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:184
-#: grub-core/net/net.c:187
-msgid "timeout: could not resolve hardware address"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:565
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:553
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:562
-#: grub-core/net/net.c:565
-#, c-format
-msgid "unresolvable address %s"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:611
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:599
-#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:791
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:789
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:608
-#: grub-core/net/efi/net.c:791 grub-core/net/net.c:611
-#, c-format
-msgid "unrecognised network address `%s'"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:678
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:666
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:675
-#: grub-core/net/net.c:678
-msgid "destination unreachable"
-msgstr ""
-
-#. TRANSLATORS: route loop is a condition when e.g.
-#. to contact server A you need to go through B
-#. and to contact B you need to go through A.
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:701
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:689
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:698
-#: grub-core/net/net.c:701
-msgid "route loop detected"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:717
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:705
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:714
-#: grub-core/net/net.c:717
-msgid "address not found"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:721
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:709
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:718
-#: grub-core/net/net.c:721
-msgid "you can't delete this address"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:793
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:809
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:781
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:797
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:790
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:806
-#: grub-core/net/net.c:793 grub-core/net/net.c:809
-#, c-format
-msgid "Unsupported hw address type %d\n"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:830
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:818
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:827
-#: grub-core/net/net.c:830
-#, c-format
-msgid "Unsupported address type %d\n"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1034
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1148
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1022
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1136
-#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1165
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1163
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1031
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1145
-#: grub-core/net/efi/net.c:1165 grub-core/net/net.c:1034
-#: grub-core/net/net.c:1148
-msgid "three arguments expected"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1040
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1028
-#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1174
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1172
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1037
-#: grub-core/net/efi/net.c:1174 grub-core/net/net.c:1040
-msgid "card not found"
-msgstr ""
-
-#. TRANSLATORS: it refers to the network address.
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1184
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1172
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1181
-#: grub-core/net/net.c:1184
-msgid "temporary"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1207
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1195
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1204
-#: grub-core/net/net.c:1207
-#, c-format
-msgid "Unknown address type %d\n"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1317
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1303
-#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1241
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1239
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1314
-#: grub-core/net/efi/net.c:1241 grub-core/net/net.c:1317
-msgid "no server is specified"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1479
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/disk.c:236
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1395
-#: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1276
-#: .pc/suse-AUDIT-0-http-boot-tracker-bug.patch/grub-core/net/efi/net.c:1274
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1476
-#: grub-core/kern/disk.c:236 grub-core/net/efi/net.c:1276
-#: grub-core/net/net.c:1479
-#, c-format
-msgid "disk `%s' not found"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1726
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1642
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1723
-#: grub-core/net/net.c:1727
-#, c-format
-msgid "timeout reading `%s'"
-msgstr ""
-
-#. TRANSLATORS: HWADDRESS stands for
-#. "hardware address".
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1995
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2024
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1899
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1980
-#: grub-core/net/net.c:2002 grub-core/net/net.c:2031
-msgid "SHORTNAME CARD ADDRESS [HWADDRESS]"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1996
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2025
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1900
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1981
-#: grub-core/net/net.c:2003 grub-core/net/net.c:2032
-msgid "Add a network address."
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2028
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1903
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1984
-#: grub-core/net/net.c:2035
-msgid "[CARD [HWADDRESS]]"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2029
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1904
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1985
-#: grub-core/net/net.c:2036
-msgid "Perform an IPV6 autoconfiguration"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2032
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2039
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1907
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1914
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1988
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1995
-#: grub-core/net/net.c:2039 grub-core/net/net.c:2046
-msgid "SHORTNAME"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2033
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1908
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1989
-#: grub-core/net/net.c:2040
-msgid "Delete a network address."
-msgstr ""
-
-#. TRANSLATORS: "gw" is a keyword.
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2036
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1911
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1992
-#: grub-core/net/net.c:2043
-msgid "SHORTNAME NET [INTERFACE| gw GATEWAY]"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2037
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1912
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1993
-#: grub-core/net/net.c:2044
-msgid "Add a network route."
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2040
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1915
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1996
-#: grub-core/net/net.c:2047
-msgid "Delete a network route."
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1987
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2042
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1917
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1998
-#: grub-core/net/net.c:1994 grub-core/net/net.c:2049
-msgid "list network routes"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1989
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2044
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1919
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:2000
-#: grub-core/net/net.c:1996 grub-core/net/net.c:2051
-msgid "list network cards"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1991
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:2046
-#: .pc/net-read-bracketed-ipv6-addr.patch/grub-core/net/net.c:1921
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:2002
-#: grub-core/net/net.c:1998 grub-core/net/net.c:2053
-msgid "list network addresses"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:381
-#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:381
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:376
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:380
-#: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:381
-#, c-format
-msgid "symbol `%s' not found"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/device.c:42
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/dl.c:763
-#: .pc/2.12-mm/0203-mm-Drop-unused-unloading-of-modules-on-OOM.patch/grub-core/kern/dl.c:763
-#: .pc/font-Assign-null_font-to-glyphs-in-ascii_font_glyph.patch/grub-core/font/font.c:434
-#: .pc/font-Fix-an-integer-underflow-in-blit_comb.patch/grub-core/font/font.c:434
-#: .pc/font-Fix-integer-overflow-in-BMP-index.patch/grub-core/font/font.c:432
-#: .pc/font-Fix-integer-overflow-in-ensure_comb_space.patch/grub-core/font/font.c:432
-#: .pc/font-Fix-integer-underflow-in-binary-search-of-char-index.patch/grub-core/font/font.c:434
-#: .pc/font-Fix-several-integer-overflows-in-grub_font_construct.patch/grub-core/font/font.c:432
-#: .pc/font-Fix-size-overflow-in-grub_font_get_glyph_internal.patch/grub-core/font/font.c:432
-#: .pc/font-Harden-grub_font_blit_glyph-and-grub_font_blit_glyph.patch/grub-core/font/font.c:434
-#: .pc/font-Reject-glyphs-exceeds-font-max_glyph_width-or-font-m.patch/grub-core/font/font.c:432
-#: .pc/font-Remove-grub_font_dup_glyph.patch/grub-core/font/font.c:432
-#: .pc/font-Try-opening-fonts-from-the-bundled-memdisk.patch/grub-core/font/font.c:434
-#: .pc/no-insmod-on-sb.patch/grub-core/kern/dl.c:749
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/dl.c:762
-#: grub-core/commands/keylayouts.c:215 grub-core/commands/loadenv.c:61
-#: grub-core/commands/nativedisk.c:189 grub-core/efiemu/main.c:235
-#: grub-core/font/font.c:457 grub-core/gfxmenu/gfxmenu.c:63
-#: grub-core/kern/device.c:42 grub-core/kern/dl.c:763
-#, c-format
-msgid "variable `%s' isn't set"
-msgstr ""
-
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:154
 #: grub-core/osdep/linux/getroot.c:154
 #, c-format
@@ -3854,6 +4312,20 @@ msgstr ""
 #: grub-core/osdep/linux/getroot.c:1059
 #, c-format
 msgid "unknown kind of RAID device `%s'"
+msgstr ""
+
+#: .pc/rhboot-efi-allocate-in-kernel-bounds.patch/grub-core/loader/i386/efi/linux.c:210
+#: .pc/rhboot-efi-allocate-kernel-as-code-for-real.patch/grub-core/loader/i386/efi/linux.c:212
+#: .pc/rhboot-efi-allocate-kernel-as-code.patch/grub-core/loader/i386/efi/linux.c:184
+#: .pc/rhboot-efi-enumerated-array-for-allocation-choice.patch/grub-core/loader/i386/efi/linux.c:186
+#: .pc/rhboot-efi-fix-incorrect-array-size.patch/grub-core/loader/i386/efi/linux.c:212
+#: .pc/rhboot-efi-initrd-above-4gb.patch/grub-core/loader/i386/efi/linux.c:170
+#: .pc/rhboot-efi-kernel-allocator.patch/grub-core/loader/i386/efi/linux.c:115
+#: .pc/rhboot-efi-rearrange-grub-cmd-linux.patch/grub-core/loader/i386/efi/linux.c:115
+#: .pc/rhboot-efi-split-allocation-policy.patch/grub-core/loader/i386/efi/linux.c:195
+#: .pc/ubuntu-rhboot-cast-fixups.patch/grub-core/loader/i386/efi/linux.c:212
+#: grub-core/loader/i386/efi/linux.c:212
+msgid "cannot allocate bounce buffer"
 msgstr ""
 
 #: .pc/rhboot-f34-efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:563
@@ -3926,194 +4398,13 @@ msgstr ""
 msgid "Exit from GRUB."
 msgstr ""
 
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:99
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452 grub-core/kern/emu/main.c:99
-#: util/grub-fstest.c:516 util/grub-mount.c:452
-msgid "DEVICE_NAME"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:99
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:452
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:137
-#: .pc/ubuntu-linuxefi.patch/grub-core/loader/i386/bsd.c:170
-#: grub-core/kern/emu/main.c:99 grub-core/loader/i386/bsd.c:138
-#: grub-core/loader/i386/bsd.c:171 util/grub-fstest.c:516 util/grub-mount.c:452
-msgid "Set root device."
-msgstr ""
-
-#. TRANSLATORS: There are many devices in device map.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:102
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:102
-#: grub-core/kern/emu/main.c:102 util/grub-probe.c:733 util/grub-setup.c:85
-#, c-format
-msgid "use FILE as the device map [default=%s]"
-msgstr ""
-
-#. TRANSLATORS: There are many devices in device map.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:105
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:105
-#: grub-core/kern/emu/main.c:105
-msgid "use FILE as memdisk"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:107
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:107
-#: grub-core/kern/emu/main.c:107 util/grub-setup.c:83
-#, c-format
-msgid "use GRUB files in the directory DIR [default=%s]"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:109
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:109
-#: grub-core/kern/emu/main.c:109
-msgid "SECS"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:109
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:109
-#: grub-core/kern/emu/main.c:109
-msgid "wait until a debugger will attach"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:171
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:171
-#: grub-core/kern/emu/main.c:171 util/grub-macbless.c:143
-#: util/grub-mkrelpath.c:61 util/grub-probe.c:874 util/grub-script-check.c:75
-#: util/grub-setup.c:203
-#, c-format
-msgid "Unknown extra argument `%s'."
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:185
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:185
-#: grub-core/kern/emu/main.c:185
-msgid "GRUB emulator."
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:213
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:213
-#: grub-core/kern/emu/main.c:213 util/grub-editenv.c:268
-#: util/grub-glue-efi.c:110 util/grub-macbless.c:173 util/grub-mkfont.c:1177
-#: util/grub-mkimage.c:281 util/grub-mklayout.c:494
-#: util/grub-mkpasswd-pbkdf2.c:132 util/grub-mkrelpath.c:96
-#: util/grub-probe.c:863 util/grub-render-label.c:152
-#: util/grub-script-check.c:160 util/grub-setup.c:262
-#: util/grub-syslinux2cfg.c:163
-msgid "Error in parsing command line arguments\n"
-msgstr ""
-
-#. TRANSLATORS: In this case GRUB tells user what he has to do.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/main.c:248
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:248
-#: grub-core/kern/emu/main.c:248
-#, c-format
-msgid "Run `gdb %s %d', and set ARGS.HOLD to zero.\n"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:48
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:48
-#: grub-core/kern/emu/misc.c:48
-#, c-format
-msgid "%s: warning:"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:64
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:64
-#: grub-core/kern/emu/misc.c:64
-#, c-format
-msgid "%s: info:"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:79
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:79
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:497
-#: .pc/ubuntu-fuse3.patch/util/grub-mount.c:505 grub-core/kern/emu/misc.c:79
-#: util/grub-fstest.c:567 util/grub-fstest.c:576 util/grub-mount.c:497
-#: util/grub-mount.c:505
-#, c-format
-msgid "%s: error:"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/misc.c:189
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:188
-#: grub-core/kern/emu/misc.c:189
-#, c-format
-msgid "file `%s' is too big"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/loongson/init.c:301
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/mips/arc/init.c:273
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/mips/loongson/init.c:301
-#: grub-core/kern/mips/arc/init.c:273 grub-core/kern/mips/loongson/init.c:301
-msgid "Shutdown failed"
-msgstr ""
-
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/mips/arc/init.c:285
 #: grub-core/kern/mips/arc/init.c:285
 msgid "Exit failed"
 msgstr ""
 
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/misc.c:437
-#: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:437
-#: grub-core/commands/i386/pc/play.c:162 grub-core/commands/i386/pc/play.c:171
-#: grub-core/kern/misc.c:437 grub-core/script/execute.c:138
-#: grub-core/script/execute.c:244
-msgid "unrecognized number"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1332
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1329
-#: grub-core/net/net.c:1332
-msgid "mismatched [ in address"
-msgstr ""
-
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1342
-#: .pc/0151-net-tftp-Prevent-a-UAF-and-double-free-from-a-failed.patch/grub-core/net/net.c:1371
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1339
-#: .pc/suse-add-support-for-UEFI-network-protocols.patch/grub-core/net/net.c:1368
-#: grub-core/net/net.c:1342 grub-core/net/net.c:1371
-msgid "bad port number"
-msgstr ""
-
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:140
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:140
-msgid "Command failed"
-msgstr ""
-
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:142
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:142
-msgid "Invalid parameter"
-msgstr ""
-
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:144
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:144
-msgid "Output buffer too small"
-msgstr ""
-
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:146
-#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:146
-#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:146
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:146
-#: grub-core/commands/efi/tpm.c:148
-msgid "TPM unavailable"
-msgstr ""
-
 #: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:148
 msgid "Unknown TPM error"
-msgstr ""
-
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:174
-#: .pc/commands-efi-tpm-Refine-the-status-of-log-event.patch/grub-core/commands/efi/tpm.c:208
-#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:174
-#: .pc/commands-efi-tpm-Use-grub_strcpy-instead-of-grub_memcpy.patch/grub-core/commands/efi/tpm.c:208
-#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:174
-#: .pc/efi-tpm-Add-EFI_CC_MEASUREMENT_PROTOCOL-support.patch/grub-core/commands/efi/tpm.c:208
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:173
-#: .pc/tpm-unknown-error-non-fatal.patch/grub-core/commands/efi/tpm.c:207
-#: grub-core/commands/efi/tpm.c:176 grub-core/commands/efi/tpm.c:210
-msgid "cannot allocate TPM event buffer"
 msgstr ""
 
 #. TRANSLATORS: The disk is simply removed from the list of available ones,
@@ -4214,19 +4505,6 @@ msgstr ""
 msgid "VARNAME"
 msgstr ""
 
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:646
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:646
-#: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:86
-#: .pc/ubuntu-linuxefi.patch/grub-core/commands/memrw.c:85
-#: grub-core/commands/cmp.c:43 grub-core/commands/i386/pc/drivemap.c:239
-#: grub-core/commands/i386/wrmsr.c:61 grub-core/commands/iorw.c:87
-#: grub-core/commands/memrw.c:86 grub-core/commands/password.c:75
-#: grub-core/commands/password_pbkdf2.c:94 grub-core/commands/pgp.c:826
-#: grub-core/commands/regexp.c:113 grub-core/mmap/mmap.c:520
-#: grub-core/net/dns.c:659
-msgid "two arguments expected"
-msgstr ""
-
 #: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:124
 #: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:128
 #: .pc/ubuntu-linuxefi.patch/grub-core/commands/iorw.c:132
@@ -4316,19 +4594,6 @@ msgstr ""
 #: .pc/ubuntu-linuxefi.patch/grub-core/commands/memrw.c:147
 #: grub-core/commands/memrw.c:151
 msgid "Write 32-bit VALUE to ADDR."
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/efi/mm.c:168
-#: .pc/2.12-mm/0205-kern-efi-mm-Always-request-a-fixed-number-of-pages-o.patch/grub-core/kern/efi/mm.c:168
-#: .pc/2.12-mm/0206-kern-efi-mm-Extract-function-to-add-memory-regions.patch/grub-core/kern/efi/mm.c:167
-#: .pc/2.12-mm/0207-kern-efi-mm-Pass-up-errors-from-add_memory_regions.patch/grub-core/kern/efi/mm.c:167
-#: .pc/2.12-mm/0208-kern-efi-mm-Implement-runtime-addition-of-pages.patch/grub-core/kern/efi/mm.c:167
-#: .pc/2.12-mm/0209-efi-Increase-default-memory-allocation-to-32-MiB.patch/grub-core/kern/efi/mm.c:167
-#: .pc/rhboot-try-to-pick-better-locations-for-kernel-and-initrd.patch/grub-core/kern/efi/mm.c:168
-#: .pc/ubuntu-linuxefi.patch/grub-core/kern/efi/mm.c:136
-#: grub-core/kern/efi/mm.c:167
-#, c-format
-msgid "invalid memory address (0x%s > 0x%s)"
 msgstr ""
 
 #: .pc/ubuntu-linuxefi.patch/grub-core/loader/efi/appleloader.c:231
@@ -4786,11 +5051,6 @@ msgstr ""
 msgid "Print a block list."
 msgstr ""
 
-#: .pc/0131-commands-boot-Add-API-to-pass-context-to-loader.patch/grub-core/commands/boot.c:189
-#: grub-core/commands/boot.c:239
-msgid "Boot an operating system."
-msgstr ""
-
 #: grub-core/commands/boottime.c:36
 #: grub-core/commands/i386/coreboot/cb_timestamps.c:108
 msgid "No boot time statistics is available\n"
@@ -4913,18 +5173,16 @@ msgstr ""
 msgid "Load BIOS dump."
 msgstr ""
 
+#: grub-core/commands/efi/tpm.c:251
+msgid "cannot allocate CC event buffer"
+msgstr ""
+
 #: grub-core/commands/eval.c:63
 msgid "STRING ..."
 msgstr ""
 
 #: grub-core/commands/eval.c:64
 msgid "Evaluate arguments as GRUB commands"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/command.c:88
-#: grub-core/commands/extcmd.c:120 grub-core/kern/command.c:88
-#, c-format
-msgid "%s: the command is not allowed when lockdown is enforced"
 msgstr ""
 
 #: grub-core/commands/file.c:41
@@ -5071,13 +5329,6 @@ msgstr ""
 
 #: grub-core/commands/file.c:687
 msgid "Check if FILE is of specified type."
-msgstr ""
-
-#. TRANSLATORS: It means that the specified partition e.g.
-#. hd0,msdos1=/dev/sda1 doesn't exist.
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/disk.c:258
-#: grub-core/commands/gptsync.c:140 grub-core/kern/disk.c:258
-msgid "no such partition"
 msgstr ""
 
 #: grub-core/commands/gptsync.c:240
@@ -5499,13 +5750,6 @@ msgstr ""
 #: grub-core/commands/i386/rdmsr.c:65 grub-core/commands/i386/wrmsr.c:48
 #: grub-core/commands/i386/wrmsr.c:53 grub-core/commands/i386/wrmsr.c:58
 msgid "unsupported instruction"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:734
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:736
-#: grub-core/commands/i386/rdmsr.c:77 grub-core/commands/i386/wrmsr.c:70
-#: grub-core/commands/i386/wrmsr.c:78 grub-core/net/dns.c:749
-msgid "invalid argument"
 msgstr ""
 
 #: grub-core/commands/i386/rdmsr.c:95
@@ -6723,31 +6967,9 @@ msgstr ""
 msgid "Slot \"%s\" opened\n"
 msgstr ""
 
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/mips/dl.c:258
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/powerpc/dl.c:163
-#: grub-core/efiemu/i386/loadcore32.c:111 grub-core/kern/arm/dl.c:256
-#: grub-core/kern/i386/dl.c:75 grub-core/kern/mips/dl.c:258
-#: grub-core/kern/powerpc/dl.c:163 util/grub-mkimagexx.c:756
-#: util/grub-mkimagexx.c:881 util/grub-mkimagexx.c:945
-#: util/grub-mkimagexx.c:1026 util/grub-mkimagexx.c:1120
-#: util/grub-mkimagexx.c:1222 util/grub-mkimagexx.c:1413
-#: util/grub-mkimagexx.c:1628 util/grub-mkimagexx.c:1665
-#: util/grub-mkimagexx.c:1697 util/grub-mkimagexx.c:1767
-#: util/grub-mkimagexx.c:1797
-#, c-format
-msgid "relocation 0x%x is not implemented yet"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/arm64/dl.c:192
-#: grub-core/efiemu/i386/loadcore64.c:130 grub-core/kern/arm64/dl.c:192
-#: grub-core/kern/ia64/dl.c:145 grub-core/kern/riscv/dl.c:339
-#: grub-core/kern/sparc64/dl.c:185 grub-core/kern/x86_64/dl.c:115
-#, c-format
-msgid "relocation 0x%s is not implemented yet"
-msgstr ""
-
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:2358
 #: grub-core/efiemu/loadcore.c:200 grub-core/efiemu/loadcore.c:237
-#: grub-core/loader/i386/bsdXX.c:317 util/grub-mkimagexx.c:2358
+#: grub-core/loader/i386/bsdXX.c:317 util/grub-mkimagexx.c:2360
 msgid "no symbol table"
 msgstr ""
 
@@ -6777,52 +6999,6 @@ msgstr ""
 
 #: grub-core/font/font_cmd.c:78
 msgid "List the loaded fonts."
-msgstr ""
-
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1835
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1835
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1890
-#: grub-core/fs/archelp.c:216 grub-core/fs/archelp.c:278
-#: grub-core/fs/btrfs.c:1914 grub-core/fs/fshelp.c:227 grub-core/fs/jfs.c:747
-#: grub-core/fs/minix.c:371 grub-core/fs/ufs.c:454
-msgid "too deep nesting of symlinks"
-msgstr ""
-
-#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:156
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:158
-#: grub-core/fs/bfs.c:228 grub-core/fs/fshelp.c:380 grub-core/fs/minix.c:272
-#: grub-core/kern/file.c:158
-msgid "attempt to read past the end of file"
-msgstr ""
-
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1718
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:1977
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1718
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:1978
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:1773
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2033
-#: grub-core/fs/btrfs.c:1797 grub-core/fs/btrfs.c:2057
-#: grub-core/fs/fshelp.c:189 grub-core/fs/fshelp.c:309 grub-core/fs/jfs.c:442
-#: grub-core/fs/minix.c:416 grub-core/fs/minix.c:578
-#: grub-core/fs/reiserfs.c:732 grub-core/fs/ufs.c:531 grub-core/fs/ufs.c:671
-#: grub-core/fs/zfs/zfs.c:2842 grub-core/fs/zfs/zfs.c:4275
-msgid "not a directory"
-msgstr ""
-
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:2083
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:2109
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2164
-#: grub-core/fs/btrfs.c:2188 grub-core/fs/fshelp.c:307 grub-core/fs/jfs.c:846
-#: grub-core/fs/zfs/zfs.c:3829
-msgid "not a regular file"
-msgstr ""
-
-#: .pc/0159-fs-btrfs-Fix-several-fuzz-issues-with-invalid-dir-it.patch/grub-core/fs/btrfs.c:2177
-#: .pc/0160-fs-btrfs-Fix-more-ASAN-and-SEGV-issues-found-with-fu.patch/grub-core/fs/btrfs.c:2203
-#: .pc/0161-fs-btrfs-Fix-more-fuzz-issues-related-to-chunks.patch/grub-core/fs/btrfs.c:2258
-#: grub-core/fs/btrfs.c:2282 grub-core/fs/zfs/zfs.c:4361
-#: grub-core/partmap/msdos.c:404
-msgid "your core.img is unusually large.  It won't fit in the embedding area"
 msgstr ""
 
 #: grub-core/fs/fshelp.c:281 grub-core/fs/minix.c:646 grub-core/fs/ufs.c:661
@@ -7126,12 +7302,6 @@ msgstr ""
 msgid "Say `Hello World'."
 msgstr ""
 
-#: .pc/0136-kern-file-Do-not-leak-device_name-on-error-in-grub_f.patch/grub-core/kern/file.c:210
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/file.c:212
-#: grub-core/io/gzio.c:409 grub-core/kern/file.c:212
-msgid "attempt to seek outside of the file"
-msgstr ""
-
 #. TRANSLATORS: It's about given file having some strange format, not
 #. complete lack of gzip support.
 #: grub-core/io/gzio.c:1264 grub-core/io/gzio.c:1273 grub-core/io/gzio.c:1280
@@ -7186,33 +7356,8 @@ msgstr ""
 msgid "attempt to read or write outside of partition"
 msgstr ""
 
-#: .pc/0135-kern-efi-sb-Reject-non-kernel-files-in-the-shim_lock.patch/grub-core/kern/efi/sb.c:147
-#: .pc/kern-efi-sb-Enforce-verification-of-font-files.patch/grub-core/kern/efi/sb.c:180
-#: grub-core/kern/efi/sb.c:179
-msgid "shim_lock protocol not found"
-msgstr ""
-
-#: .pc/0135-kern-efi-sb-Reject-non-kernel-files-in-the-shim_lock.patch/grub-core/kern/efi/sb.c:150
-#: .pc/kern-efi-sb-Enforce-verification-of-font-files.patch/grub-core/kern/efi/sb.c:183
-#: grub-core/kern/efi/sb.c:182
-msgid "bad shim signature"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:76
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/emu/hostfs.c:109
-#: grub-core/kern/emu/hostfs.c:76 grub-core/kern/emu/hostfs.c:109
-#, c-format
-msgid "can't open `%s': %s"
-msgstr ""
-
 #: grub-core/kern/fs.c:120
 msgid "unknown filesystem"
-msgstr ""
-
-#: .pc/2.12-mm/0198-kern-Remove-trailing-whitespaces.patch/grub-core/kern/partition.c:51
-#: grub-core/kern/partition.c:51 grub-core/partmap/bsdlabel.c:108
-#, c-format
-msgid "Discarding improperly nested partition (%s,%s,%s%d)"
 msgstr ""
 
 #: grub-core/kern/rescue_parser.c:73 util/grub-editenv.c:298
@@ -7395,94 +7540,6 @@ msgstr ""
 msgid "Remove any memory regions in specified range."
 msgstr ""
 
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:466
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:466
-#: grub-core/net/dns.c:479
-msgid "no DNS servers configured"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:529
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:529
-#: grub-core/net/dns.c:542
-msgid "domain name component is too long"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:625
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:673
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:625
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:675
-#: grub-core/net/dns.c:638 grub-core/net/dns.c:688
-msgid "no DNS record found"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:633
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:633
-#: grub-core/net/dns.c:646
-msgid "no DNS reply received"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:689
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:691
-#: grub-core/net/dns.c:704
-msgid "only ipv4"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:693
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:695
-#: grub-core/net/dns.c:708
-msgid "only ipv6"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:697
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:699
-#: grub-core/net/dns.c:712
-msgid "prefer ipv4"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:701
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:703
-#: grub-core/net/dns.c:716
-msgid "prefer ipv6"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:766
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:768
-#: grub-core/net/dns.c:781
-msgid "ADDRESS DNSSERVER"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:767
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:769
-#: grub-core/net/dns.c:782
-msgid "Perform a DNS lookup"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:769
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:772
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:771
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:774
-#: grub-core/net/dns.c:784 grub-core/net/dns.c:787
-msgid "DNSSERVER"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:770
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:772
-#: grub-core/net/dns.c:785
-msgid "Add a DNS server"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:773
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:775
-#: grub-core/net/dns.c:788
-msgid "Remove a DNS server"
-msgstr ""
-
-#: .pc/0149-net-dns-Fix-double-free-addresses-on-corrupt-DNS-res.patch/grub-core/net/dns.c:775
-#: .pc/0150-net-dns-Don-t-read-past-the-end-of-the-string-we-re-.patch/grub-core/net/dns.c:777
-#: grub-core/net/dns.c:790
-msgid "List DNS servers"
-msgstr ""
-
 #: grub-core/net/drivers/ieee1275/ofnet.c:326
 #: grub-core/net/drivers/ieee1275/ofnet.c:359
 msgid "interpret is not supported"
@@ -7508,6 +7565,10 @@ msgstr ""
 #: grub-core/net/efi/http.c:262
 #, c-format
 msgid "unsupported uefi http status code 0x%x"
+msgstr ""
+
+#: grub-core/net/http.c:76
+msgid "invalid HTTP header - LF without CR"
 msgstr ""
 
 #: grub-core/net/tcp.c:681
@@ -8660,7 +8721,8 @@ msgstr ""
 msgid "Prefix not specified (use the -p option)."
 msgstr ""
 
-#: util/grub-mkimagexx.c:2191
+#: .pc/upstream/riscv-handle-r-riscv-call-plt-reloc.patch/util/grub-mkimagexx.c:2191
+#: util/grub-mkimagexx.c:2193
 #, c-format
 msgid "`%s' is miscompiled: its start address is 0x%llx instead of 0x%llx: ld.gold bug?"
 msgstr ""
@@ -8907,19 +8969,4 @@ msgstr ""
 #, c-format
 msgid "invalid line format: %s"
 msgstr ""
-
-#~ msgid "%s, with Linux %s"
-#~ msgstr "%s, з Linux %s"
-
-#~ msgid "Loading Linux %s ..."
-#~ msgstr "Загружаецца Linux %s ..."
-
-#~ msgid "%s, with kFreeBSD %s"
-#~ msgstr "%s, з kFreeBSD %s"
-
-#~ msgid "Loading initial ramdisk ..."
-#~ msgstr "Загружаецца пачатковы ramdisk ..."
-
-#~ msgid "Loading kernel of FreeBSD %s ..."
-#~ msgstr "Загружаецца ядро FreeBSD %s ..."
 
