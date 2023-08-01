@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openvpn.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-13 00:20+0000\n"
-"PO-Revision-Date: 2023-05-27 12:37+0000\n"
+"PO-Revision-Date: 2023-07-29 17:33+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:22+0000\n"
+"X-Launchpad-Export-Date: 2023-08-01 06:36+0000\n"
 "X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
 "Language: be\n"
 
@@ -34,6 +34,7 @@ msgstr "Кліент для віртуальных прыватных сетак
 #: appdata/network-manager-openvpn.metainfo.xml.in:23
 msgid "Support for configuring OpenVPN virtual private network connections."
 msgstr ""
+"Падтрымка наладжвання злучэнняў з віртуальнымі прыватнымі сеткамі OpenVPN."
 
 #: appdata/network-manager-openvpn.metainfo.xml.in:24
 msgid "OpenVPN is a popular and flexible free-software VPN solution."
@@ -125,7 +126,7 @@ msgstr "аргумент «%s» павінен мець кадзіроўку UTF
 #: properties/import-export.c:263
 #, c-format
 msgid "invalid %uth argument to “%s” where number expected"
-msgstr ""
+msgstr "памылковы %u аргумент для «%s» (чакаецца лік)"
 
 #. we don't support these special destinations, as they currently cannot be expressed
 #. * in a connection.
@@ -233,19 +234,19 @@ msgstr "аргумент comp-lzo не падтрымліваецца"
 
 #: properties/import-export.c:1041
 msgid "unsupported compress argument"
-msgstr ""
+msgstr "аргумент compress не падтрымліваецца"
 
 #: properties/import-export.c:1142
 msgid "remote cannot contain space"
-msgstr ""
+msgstr "remote не можа змяшчаць прабелы"
 
 #: properties/import-export.c:1146
 msgid "remote cannot contain comma"
-msgstr ""
+msgstr "remote не можа змяшчаць коску"
 
 #: properties/import-export.c:1157
 msgid "remote expects protocol type like “udp” or “tcp”"
-msgstr ""
+msgstr "remote чакае тып пратакола, напрыклад «udp» або «tcp»"
 
 #: properties/import-export.c:1430
 msgid "invalid verify-x509-name type"
@@ -625,7 +626,7 @@ msgstr "Патрабуецца пароль проксі-сервера HTTP."
 
 #: src/nm-openvpn-service.c:965
 msgid "An HTTP Proxy username and password are required."
-msgstr ""
+msgstr "Патрабуецца імя карыстальніка і пароль проксі-сервера HTTP."
 
 #: src/nm-openvpn-service.c:1336 src/nm-openvpn-service.c:2186
 #: src/nm-openvpn-service.c:2221
@@ -714,7 +715,7 @@ msgstr "Памылковы памер фрагмента «%s»."
 #: src/nm-openvpn-service.c:1965
 #, c-format
 msgid "Unknown connection type “%s”."
-msgstr ""
+msgstr "Невядомы тып злучэння «%s»."
 
 #: src/nm-openvpn-service.c:1983
 #, c-format
@@ -810,6 +811,10 @@ msgid ""
 "commas or spaces as delimiters).\n"
 "config: remote"
 msgstr ""
+"Аддаленыя шлюзы з неабавязковымі партамі і пратаколамі (напрыклад, "
+"ovpn.corp.com:1234:tcp). Можна пазначыць некалькі вузлоў для надзейнасці "
+"(выкарыстоўвайце коскі або прабелы, каб адасобіць вузлы).\n"
+"config: remote"
 
 #: properties/nm-openvpn-dialog.ui:250
 msgid "Authentication"
@@ -864,6 +869,9 @@ msgid ""
 "Pre-shared file for Static Key encryption mode (non-TLS).\n"
 "config: static <file>"
 msgstr ""
+"Папярэдне абагулены файл для рэжыму шыфравання са статычным ключом (не "
+"TLS).\n"
+"config: static <file>"
 
 #: properties/nm-openvpn-dialog.ui:637
 msgid ""
@@ -889,6 +897,13 @@ msgid ""
 "you are unsure what value to use, contact your system administrator.\n"
 "config: static <file> [direction]"
 msgstr ""
+"Напрамак для рэжыму шыфравання са статычным ключом (не TLS).\n"
+"Калі выкарыстоўваецца напрамак ключа, то ён павінен быць супрацьлеглым таму, "
+"які выкарыстоўваецца на аднарангавым вузле VPN. Напрыклад, калі на "
+"аднарангавым вузле выкарыстоўваецца «1», то злучэнне павінна выкарыстоўваць "
+"«0». Калі вы не ўпэўнены, якое значэнне трэба выкарыстоўваць, звяжыцеся з "
+"вашым сістэмным адміністратарам.\n"
+"config: static <file> [direction]"
 
 #: properties/nm-openvpn-dialog.ui:709
 msgid "Type"
@@ -943,6 +958,8 @@ msgid ""
 "Renegotiate data channel key after the specified number of seconds.\n"
 "config: reneg-sec"
 msgstr ""
+"Паўторна ўзгадняць ключ канала даных пасля пазначанай колькасці секунд.\n"
+"config: reneg-sec"
 
 #: properties/nm-openvpn-dialog.ui:1079
 msgid "Data _compression"
@@ -958,7 +975,7 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:1146
 msgid "Use a _TCP connection"
-msgstr "Выкарыстоўваць TCP-_злучэнне"
+msgstr "Выкарыстоўваць злучэнне _TCP"
 
 #: properties/nm-openvpn-dialog.ui:1150
 msgid ""
@@ -967,24 +984,30 @@ msgid ""
 "gateway.)\n"
 "config: proto tcp-client | udp"
 msgstr ""
+"Выкарыстоўваць TCP для  сувязі з аддаленым вузлом.\n"
+"(Гэта прадвызначаная налада, якая выкарыстоўваецца толькі калі не пазначаны "
+"пратакол  для шлюза.)\n"
+"config: proto tcp-client | udp"
 
 #: properties/nm-openvpn-dialog.ui:1169
 msgid "Set virtual _device type"
-msgstr ""
+msgstr "Задае тып віртуальнай _прылады"
 
 #: properties/nm-openvpn-dialog.ui:1173
 msgid "Explicitly set virtual device type and name (TUN/TAP)."
-msgstr ""
+msgstr "Яўна задаваць тып і назву віртуальнай прылады (TUN/TAP)."
 
 #: properties/nm-openvpn-dialog.ui:1187
 msgid ""
 "Explicitly set virtual device type (TUN/TAP).\n"
 "config: dev-type tun | tap"
 msgstr ""
+"Яўна задаваць тып віртуальнай прылады (TUN/TAP).\n"
+"config: dev-type tun | tap"
 
 #: properties/nm-openvpn-dialog.ui:1207
 msgid " and _name"
-msgstr ""
+msgstr " і _назва"
 
 #: properties/nm-openvpn-dialog.ui:1222
 msgid ""
@@ -992,6 +1015,9 @@ msgid ""
 "“tap”).\n"
 "config: dev <name>"
 msgstr ""
+"Выкарыстоўваць карыстальніцкую назву для віртуальнай прылады TUN/TAP (замест "
+"прадвызначаных «tun» або «tap»).\n"
+"config: dev <name>"
 
 #: properties/nm-openvpn-dialog.ui:1246
 msgid "Use custom tunnel Maximum Transmission _Unit (MTU)"
@@ -1007,17 +1033,19 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:1291
 msgid "Use custom UDP _fragment size"
-msgstr "Выкарыстоўваць у_ласны памер UDP-фрагмента"
+msgstr "Выкарыстоўваць карыстальніцкі памер фрагмента UDP"
 
 #: properties/nm-openvpn-dialog.ui:1295 properties/nm-openvpn-dialog.ui:1310
 msgid ""
 "Enable internal datagram fragmentation with this maximum size.\n"
 "config: fragment"
 msgstr ""
+"Уключыць унутраную фрагментацыю датаграм з азначаным максімальным памерам.\n"
+"config: fragment"
 
 #: properties/nm-openvpn-dialog.ui:1331
 msgid "Restrict tunnel TCP Maximum _Segment Size (MSS)"
-msgstr "Абмежаваць максімальны памер TCP-сегмента тунэля (MSS)"
+msgstr "Абмежаваць максімальны памер сегмента (MSS) TCP тунэлю"
 
 #: properties/nm-openvpn-dialog.ui:1335
 msgid ""
@@ -1035,6 +1063,9 @@ msgid ""
 "balancing measure.\n"
 "config: remote-random"
 msgstr ""
+"Выкарыстоўваць спіс шлюзаў (аддаленых) у выпадковым парадку як свайго роду "
+"асноўную меру балансавання нагрузкі\n"
+"config: remote-random"
 
 #: properties/nm-openvpn-dialog.ui:1365
 msgid "Allow Pull FQDN"
@@ -1071,7 +1102,7 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:1421
 msgid "Specify pin_g interval"
-msgstr ""
+msgstr "Пазначаць _інтэрвал пакетаў праверкі"
 
 #: properties/nm-openvpn-dialog.ui:1425 properties/nm-openvpn-dialog.ui:1440
 msgid ""
@@ -1096,7 +1127,7 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:1526
 msgid "Accept authenticated packets from any address (F_loat)"
-msgstr ""
+msgstr "Прымаць пакеты аўтэнтыфікацыі з любога адраса (float)"
 
 #: properties/nm-openvpn-dialog.ui:1530
 msgid ""
@@ -1160,7 +1191,7 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:1684
 msgid "Ci_pher"
-msgstr "Шыфр"
+msgstr "_Шыфраванне"
 
 #: properties/nm-openvpn-dialog.ui:1699
 msgid "_HMAC Authentication"
@@ -1261,6 +1292,7 @@ msgstr ""
 #: properties/nm-openvpn-dialog.ui:1972
 msgid "_Verify peer (server) certificate usage signature"
 msgstr ""
+"_Спраўджваць подпіс прызначэння сертыфіката аднарангавага вузла (сервера)"
 
 #: properties/nm-openvpn-dialog.ui:1976
 msgid ""
@@ -1278,16 +1310,23 @@ msgid ""
 "extended key usage based on RFC3280 TLS rules.\n"
 "config: remote-cert-tls client|server"
 msgstr ""
+"Патрабаваць, каб сертыфікат аднарангавага вузла меў подпіс з яўным "
+"выкарыстаннем ключа і пашыраным выкарыстаннем ключа заснаваным на правілах "
+"RFC3280 TLS.\n"
+"config: remote-cert-tls client|server"
 
 #: properties/nm-openvpn-dialog.ui:2036
 msgid "_Verify peer (server) certificate nsCertType designation"
 msgstr ""
+"_Спраўджваць абазначэнне сертыфікату nsCertType аднарангавага вузла (сервера)"
 
 #: properties/nm-openvpn-dialog.ui:2040
 msgid ""
 "Require that peer certificate was signed with an explicit nsCertType "
 "designation."
 msgstr ""
+"Патрабаваць, каб сертыфікат аднарангавага вузла меў подпіс з яўным "
+"абазначэннем nsCertType."
 
 #: properties/nm-openvpn-dialog.ui:2056
 msgid "_Remote peer certificate nsCert designation"
@@ -1474,7 +1513,7 @@ msgstr ""
 
 #: properties/nm-openvpn-dialog.ui:2671
 msgid "_Show password"
-msgstr "Паказваць пароль"
+msgstr "_Паказаць пароль"
 
 #: properties/nm-openvpn-dialog.ui:2698
 msgid "Proxies"
