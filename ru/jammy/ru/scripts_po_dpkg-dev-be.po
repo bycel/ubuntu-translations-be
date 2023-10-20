@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-04-14 00:43+0200\n"
-"PO-Revision-Date: 2021-12-25 23:31\n"
+"POT-Creation-Date: 2021-12-06 21:04+0100\n"
+"PO-Revision-Date: 2023-08-11 10:00\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2021-12-22 05:30+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2023-03-22 21:31+0000\n"
+"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: ru\n"
@@ -210,8 +210,10 @@ msgid "Options:\n"
 "      --hook-<name>=<command> set <command> as the hook <name>, known hooks:\n"
 "                                init preclean source build binary buildinfo\n"
 "                                changes postclean check sign done\n"
+"      --buildinfo-file=<file> set the .buildinfo filename to generate.\n"
 "      --buildinfo-option=<opt>\n"
 "                              pass option <opt> to dpkg-genbuildinfo.\n"
+"      --changes-file=<file>   set the .changes filename to generate.\n"
 "  -p, --sign-command=<command>\n"
 "                              command to sign .dsc and/or .changes files\n"
 "                                (default is gpg).\n"
@@ -262,6 +264,19 @@ msgid "Options passed to dpkg-source:\n"
 msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
+msgid "missing .buildinfo filename"
+msgstr ""
+
+#: scripts/dpkg-buildpackage.pl
+#, perl-format
+msgid "passing %s via %s is not supported; please use %s instead"
+msgstr ""
+
+#: scripts/dpkg-buildpackage.pl
+msgid "missing .changes filename"
+msgstr ""
+
+#: scripts/dpkg-buildpackage.pl
 #, perl-format
 msgid "unknown hook name %s"
 msgstr ""
@@ -276,7 +291,7 @@ msgstr ""
 msgid "-s%s is deprecated; always using gpg style interface"
 msgstr ""
 
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-source.pl
+#: scripts/dpkg-source.pl
 msgid "-E and -W are deprecated, they are without effect"
 msgstr ""
 
@@ -334,14 +349,6 @@ msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
 msgid "building a source package without cleaning up as you asked; it might contain undesired files"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-msgid "parse changes file"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-msgid "dpkg-genchanges"
 msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
@@ -428,7 +435,7 @@ msgstr ""
 
 #: scripts/dpkg-buildpackage.pl scripts/dpkg-checkbuilddeps.pl
 #: scripts/dpkg-genbuildinfo.pl scripts/dpkg-name.pl scripts/Dpkg/Arch.pm
-#: scripts/Dpkg/IPC.pm scripts/Dpkg/OpenPGP.pm scripts/Dpkg/Shlibs.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Shlibs.pm
 #, perl-format
 msgid "cannot open %s"
 msgstr ""
@@ -441,7 +448,7 @@ msgstr ""
 msgid "cannot close %s"
 msgstr ""
 
-#: scripts/dpkg-buildpackage.pl
+#: scripts/dpkg-buildpackage.pl scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "cannot move %s to %s"
 msgstr ""
@@ -540,11 +547,10 @@ msgstr ""
 
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-gencontrol.pl scripts/dpkg-mergechangelogs.pl
-#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/IPC.pm
-#: scripts/Dpkg/Interface/Storable.pm scripts/Dpkg/Source/Functions.pm
+#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/File.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Source/BinaryFiles.pm scripts/Dpkg/Source/Package.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Package/V3/Quilt.pm
-#: scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot write %s"
 msgstr ""
@@ -880,7 +886,9 @@ msgstr ""
 msgid "Usage: %s [<option>...] <old> <new-a> <new-b> [<out>]\n\n"
 "Options:\n"
 "  -m, --merge-prereleases  merge pre-releases together, ignores everything\n"
-"                           after the last '~' in the version.\n"
+"                             after the last '~' in the version.\n"
+"      --merge-unreleased   merge UNRELEASED entries together, ignoring their\n"
+"                             version numbers.\n"
 "  -?, --help               show this help message.\n"
 "      --version            show the version.\n"
 msgstr ""
@@ -1383,7 +1391,6 @@ msgid "%s is not a supported compression"
 msgstr ""
 
 #: scripts/dpkg-source.pl scripts/Dpkg/Compression.pm
-#: scripts/Dpkg/Compression/Process.pm
 #, perl-format
 msgid "%s is not a compression level"
 msgstr ""
@@ -1597,7 +1604,7 @@ msgstr ""
 #: scripts/Dpkg/BuildFlags.pm scripts/Dpkg/Compression/FileHandle.pm
 #: scripts/Dpkg/File.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Shlibs/Objdump.pm scripts/Dpkg/Source/BinaryFiles.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot read %s"
 msgstr ""
@@ -1627,12 +1634,12 @@ msgstr ""
 msgid "incorrect value in %s option of %s variable: %s"
 msgstr ""
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "cannot combine %s and %s"
 msgstr ""
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "unknown build type %s"
 msgstr ""
@@ -1815,6 +1822,11 @@ msgstr ""
 #: scripts/Dpkg/Changelog/Parse.pm
 #, perl-format
 msgid "changelog format %s is unknown: %s"
+msgstr ""
+
+#: scripts/Dpkg/Changelog/Parse.pm
+#, perl-format
+msgid "changelog format %s is not a Dpkg::Changelog class"
 msgstr ""
 
 #: scripts/Dpkg/Changelog/Parse.pm
@@ -2154,7 +2166,7 @@ msgstr ""
 
 #: scripts/Dpkg/OpenPGP.pm
 #, perl-format
-msgid "failed to import key in %s"
+msgid "cannot import key %s into %s"
 msgstr ""
 
 #: scripts/Dpkg/OpenPGP.pm
@@ -2164,7 +2176,7 @@ msgstr ""
 
 #: scripts/Dpkg/OpenPGP.pm
 #, perl-format
-msgid "failed to verify signature on %s"
+msgid "cannot verify signature %s"
 msgstr ""
 
 #: scripts/Dpkg/Package.pm
@@ -2180,12 +2192,12 @@ msgstr ""
 msgid "must start with an alphanumeric character"
 msgstr ""
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' cannot be canonicalized"
 msgstr ""
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' points outside source root (to '%s')"
 msgstr ""
@@ -2194,7 +2206,7 @@ msgstr ""
 msgid "deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs.pm scripts/Dpkg/Shlibs/Objdump.pm
 #, perl-format
 msgid "unknown executable format in file '%s'"
 msgstr ""
@@ -2212,6 +2224,11 @@ msgstr ""
 #: scripts/Dpkg/Shlibs/Symbol.pm
 #, perl-format
 msgid "symbol name unspecified: %s"
+msgstr ""
+
+#: scripts/Dpkg/Shlibs/Symbol.pm
+#, perl-format
+msgid "symver tag with versioned symbol will not match: %s"
 msgstr ""
 
 #: scripts/Dpkg/Shlibs/Symbol.pm
@@ -2746,6 +2763,10 @@ msgid "add %s in debian/source/include-binaries if you want to store the modifie
 msgstr ""
 
 #: scripts/Dpkg/Source/Package/V2.pm
+msgid "Hint: make sure the version in debian/changelog matches the unpacked source tree"
+msgstr ""
+
+#: scripts/Dpkg/Source/Package/V2.pm
 #, perl-format
 msgid "you can integrate the local changes with %s"
 msgstr ""
@@ -3180,6 +3201,10 @@ msgstr ""
 #: scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "if patch '%s' is correctly applied by quilt, use '%s' to update it"
+msgstr ""
+
+#: scripts/Dpkg/Source/Quilt.pm
+msgid "if the file is present in the unpacked source, make sure it is also present in the orig tarball"
 msgstr ""
 
 #: scripts/Dpkg/Source/Quilt.pm
