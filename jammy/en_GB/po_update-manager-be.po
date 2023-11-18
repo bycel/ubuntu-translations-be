@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2023-02-03 17:35+0000\n"
-"PO-Revision-Date: 2023-07-29 17:33+0000\n"
+"POT-Creation-Date: 2023-10-06 12:41+0000\n"
+"PO-Revision-Date: 2023-10-20 11:12+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-08-01 06:36+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2023-11-18 12:12+0000\n"
+"X-Generator: Launchpad (build f1e537f62ee3967c2b3f24dd10eacf1696334fe6)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Language: be\n"
 "X-Crowdin-File: /master/rosetta-eoan/en_GB/LC_MESSAGES/update-manager.po\n"
@@ -119,7 +119,7 @@ msgstr[1] ""
 msgstr[2] ""
 "%d абнаўленняў Livepatch не ўдалося ўжыць з моманту апошняга перазапуску."
 
-#: ../UpdateManager/Dialogs.py:220 ../UpdateManager/UpdateManager.py:317
+#: ../UpdateManager/Dialogs.py:220 ../UpdateManager/UpdateManager.py:324
 msgid "You stopped the check for updates."
 msgstr "Вы спынілі праверку наяўнасці абнаўленняў."
 
@@ -240,23 +240,23 @@ msgstr "Пера_запусціць"
 msgid "Software Updater"
 msgstr "Абнаўленне праграм"
 
-#: ../UpdateManager/UpdateManager.py:315
+#: ../UpdateManager/UpdateManager.py:322
 msgid "Some software couldn’t be checked for updates."
 msgstr ""
 "Не ўдалося праверыць наяўнасць абнаўленняў для некаторага праграмнага "
 "забеспячэння."
 
-#: ../UpdateManager/UpdateManager.py:319
+#: ../UpdateManager/UpdateManager.py:326
 msgid "Updated software is available from a previous check."
 msgstr ""
 "З часу апошняй праверкі з'явіліся новыя абнаўленні праграмнага забеспячэння."
 
 #. we assert a clean cache
-#: ../UpdateManager/UpdateManager.py:430
+#: ../UpdateManager/UpdateManager.py:450
 msgid "Software index is broken"
 msgstr "Індэкс праграмнага забеспячэння пашкоджаны"
 
-#: ../UpdateManager/UpdateManager.py:432
+#: ../UpdateManager/UpdateManager.py:452
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -266,11 +266,11 @@ msgstr ""
 "гэтай праблемы вы можаце выкарыстоўваць пакетны менеджар Synaptic або "
 "выканаць каманду «sudo apt-get install -f» у тэрмінале."
 
-#: ../UpdateManager/UpdateManager.py:440
+#: ../UpdateManager/UpdateManager.py:460
 msgid "Could not initialize the package information"
 msgstr "Памылка ініцыялізацыі звестак аб пакеце"
 
-#: ../UpdateManager/UpdateManager.py:442
+#: ../UpdateManager/UpdateManager.py:462
 msgid ""
 "An unresolvable problem occurred while initializing the package "
 "information.\n"
@@ -283,11 +283,11 @@ msgstr ""
 "Калі ласка, паведаміце аб гэтай памылцы ў пакеце «update-manager», дадаўшы "
 "да тэксту справаздачы наступнае паведамленне:\n"
 
-#: ../UpdateManager/UpdateManager.py:477
+#: ../UpdateManager/UpdateManager.py:497
 msgid "Could not calculate the upgrade"
 msgstr "Не ўдалося вылічыць параметры абнаўлення"
 
-#: ../UpdateManager/UpdateManager.py:479
+#: ../UpdateManager/UpdateManager.py:499
 msgid ""
 "An unresolvable problem occurred while calculating the upgrade.\n"
 "\n"
@@ -300,65 +300,73 @@ msgstr ""
 "справаздачы наступнае паведамленне:\n"
 
 #: ../UpdateManager/UpdatesAvailable.py:263
+msgid "Enable Ubuntu Pro..."
+msgstr ""
+
+#: ../UpdateManager/UpdatesAvailable.py:266
 msgid "Install Now"
 msgstr "Усталяваць"
 
-#: ../UpdateManager/UpdatesAvailable.py:298
+#: ../UpdateManager/UpdatesAvailable.py:304
 msgid "Install or remove"
 msgstr "Усталяваць або выдаліць"
 
-#: ../UpdateManager/UpdatesAvailable.py:340
+#: ../UpdateManager/UpdatesAvailable.py:346
 msgid "Download"
 msgstr "Спампаваць"
 
-#: ../UpdateManager/UpdatesAvailable.py:406
+#: ../UpdateManager/UpdatesAvailable.py:422
 msgid "_Remind Me Later"
 msgstr "_Нагадаць пазней"
 
 #. upload_archive = version_match.group(2).strip()
-#: ../UpdateManager/UpdatesAvailable.py:559
+#: ../UpdateManager/UpdatesAvailable.py:586
 #, python-format
 msgid "Version %s: \n"
 msgstr "Версія %s: \n"
 
-#: ../UpdateManager/UpdatesAvailable.py:631
+#: ../UpdateManager/UpdatesAvailable.py:656
 msgid ""
 "No network connection detected, you can not download changelog information."
 msgstr "Немагчыма спампаваць спіс змен, адсутнічае злучэнне з сеткай."
 
-#: ../UpdateManager/UpdatesAvailable.py:644
+#: ../UpdateManager/UpdatesAvailable.py:669
 msgid "Downloading list of changes..."
 msgstr "Спампоўванне спіса змен..."
 
-#: ../UpdateManager/UpdatesAvailable.py:690
+#: ../UpdateManager/UpdatesAvailable.py:717
 msgid "_Deselect All"
 msgstr "С_касаваць выбар"
 
-#: ../UpdateManager/UpdatesAvailable.py:697
+#: ../UpdateManager/UpdatesAvailable.py:724
 msgid "Select _All"
 msgstr "_Выбраць усё"
 
-#: ../UpdateManager/UpdatesAvailable.py:797
+#: ../UpdateManager/UpdatesAvailable.py:829
 #, python-format
 msgid "%s will be downloaded."
 msgstr "%s будзе спампавана."
 
-#: ../UpdateManager/UpdatesAvailable.py:812
+#: ../UpdateManager/UpdatesAvailable.py:845
 msgid "The update has already been downloaded."
 msgid_plural "The updates have already been downloaded."
 msgstr[0] "Абнаўленне ўжо спампавана."
 msgstr[1] "Абнаўленні ўжо спампаваны."
 msgstr[2] "Абнаўленні ўжо спампаваны."
 
-#: ../UpdateManager/UpdatesAvailable.py:819
-msgid "There are no updates to install."
-msgstr "Няма абнаўленняў для ўсталявання."
+#: ../UpdateManager/UpdatesAvailable.py:854
+msgid "You need to enable Ubuntu Pro to install these updates."
+msgstr ""
 
-#: ../UpdateManager/UpdatesAvailable.py:828
+#: ../UpdateManager/UpdatesAvailable.py:858
+msgid "There are no updates to install."
+msgstr "Няма даступных абнаўленняў для ўсталявання."
+
+#: ../UpdateManager/UpdatesAvailable.py:868
 msgid "Unknown download size."
 msgstr "Невядомы памер спампоўкі."
 
-#: ../UpdateManager/UpdatesAvailable.py:856
+#: ../UpdateManager/UpdatesAvailable.py:896
 #, python-format
 msgid ""
 "Updated software has been issued since %s %s was released. Do you want to "
@@ -367,7 +375,7 @@ msgstr ""
 "З часу выпуску %s %s з'явіліся абнаўленні праграмнага забеспячэння. Хочаце "
 "ўсталяваць іх зараз?"
 
-#: ../UpdateManager/UpdatesAvailable.py:862
+#: ../UpdateManager/UpdatesAvailable.py:902
 msgid ""
 "Updated software is available for this computer. Do you want to install it "
 "now?"
@@ -375,7 +383,7 @@ msgstr ""
 "Абнаўленні праграмнага забеспячэння даступны для гэтага камп'ютара. Хочаце "
 "ўсталяваць іх зараз?"
 
-#: ../UpdateManager/UpdatesAvailable.py:867
+#: ../UpdateManager/UpdatesAvailable.py:907
 msgid ""
 "The computer also needs to restart to finish installing previous updates."
 msgstr ""
@@ -383,11 +391,11 @@ msgstr ""
 "камп'ютар."
 
 #. print("on_button_install_clicked")
-#: ../UpdateManager/UpdatesAvailable.py:898
+#: ../UpdateManager/UpdatesAvailable.py:939
 msgid "Not enough free disk space"
 msgstr "Недастаткова свабоднага месца на дыску"
 
-#: ../UpdateManager/UpdatesAvailable.py:900
+#: ../UpdateManager/UpdatesAvailable.py:941
 #, python-format
 msgid ""
 "The upgrade needs a total of %s free space on disk '%s'. Please free at "
@@ -396,13 +404,13 @@ msgstr ""
 "Усяго абнаўленню неабходна %s свабоднага месца на дыску '%s'. Вызваліце "
 "прынамсі %s дадатковага месца на %s. %s"
 
-#: ../UpdateManager/UpdatesAvailable.py:905
+#: ../UpdateManager/UpdatesAvailable.py:946
 msgid ""
 "Remove temporary packages of former installations using 'sudo apt clean'."
 msgstr ""
 "Выдаліць часовыя пакеты папярэдніх усталёвак з дапамогай «sudo apt clean»."
 
-#: ../UpdateManager/UpdatesAvailable.py:909
+#: ../UpdateManager/UpdatesAvailable.py:950
 msgid ""
 "You can remove old kernels using 'sudo apt autoremove', and you could also "
 "set COMPRESS=xz in /etc/initramfs-tools/initramfs.conf to reduce the size of "
@@ -412,7 +420,7 @@ msgstr ""
 "таксама, у /etc/initramfs-tools/initramfs.conf, задаць COMPRESS=xz для "
 "памяншэння памеру initramfs."
 
-#: ../UpdateManager/UpdatesAvailable.py:914
+#: ../UpdateManager/UpdatesAvailable.py:955
 msgid ""
 "Empty your trash and remove temporary packages of former installations using "
 "'sudo apt clean'."
@@ -420,56 +428,56 @@ msgstr ""
 "Ачысціце сметніцу і выдаліце часовыя пакеты папярэдніх усталёвак з дапамогай "
 "каманды «sudo apt clean»."
 
-#: ../UpdateManager/UpdatesAvailable.py:917
+#: ../UpdateManager/UpdatesAvailable.py:958
 msgid "Reboot to clean up files in /tmp."
 msgstr "Перазагрузіце камп'ютар для ачысткі файлаў у /tmp."
 
-#: ../UpdateManager/UpdatesAvailable.py:979
+#: ../UpdateManager/UpdatesAvailable.py:1020
 msgid "Connecting..."
 msgstr "Злучэнне..."
 
-#: ../UpdateManager/UpdatesAvailable.py:999
+#: ../UpdateManager/UpdatesAvailable.py:1040
 msgid "You may not be able to check for updates or download new updates."
 msgstr "Няма магчымасці праверыць наяўнасць абнаўленняў або спампаваць іх."
 
-#: ../UpdateManager/UpdatesAvailable.py:1164
+#: ../UpdateManager/UpdatesAvailable.py:1207
 msgid "Improved hardware support"
 msgstr "Палепшаная апаратная падтрымка"
 
-#: ../UpdateManager/UpdatesAvailable.py:1168
+#: ../UpdateManager/UpdatesAvailable.py:1211
 msgid "Security updates"
 msgstr "Абнаўленні бяспекі"
 
-#: ../UpdateManager/UpdatesAvailable.py:1173
+#: ../UpdateManager/UpdatesAvailable.py:1214
 msgid "Other updates"
 msgstr "Іншыя абнаўленні"
 
-#: ../UpdateManager/UpdatesAvailable.py:1177
-msgid "Updates"
-msgstr "Абнаўленні"
-
-#: ../UpdateManager/UpdatesAvailable.py:1182
+#: ../UpdateManager/UpdatesAvailable.py:1218
 msgid "Unused kernel updates to be removed"
 msgstr "Абнаўленні ядра, якія не выкарыстоўваюцца і будуць выдалены"
 
-#: ../UpdateManager/UpdatesAvailable.py:1188
+#: ../UpdateManager/UpdatesAvailable.py:1224
 msgid "Duplicate packages to be removed"
 msgstr "Дублікаты пакетаў, якія падлягаюць выдаленню"
 
-#: ../UpdateManager/UpdatesAvailable.py:1194
-msgid "Ubuntu Pro (enable in Settings…)"
-msgstr "Ubuntu Pro (уключыць у наладах…)"
+#: ../UpdateManager/UpdatesAvailable.py:1230
+msgid "Ubuntu Pro security updates"
+msgstr ""
+
+#: ../UpdateManager/UpdatesAvailable.py:1237
+msgid "Ubuntu Pro security updates (enable in Settings…)"
+msgstr ""
 
 #: ../UpdateManager/UnitySupport.py:73
 msgid "Install All Available Updates"
 msgstr "Усталяваць усе даступныя абнаўленні"
 
-#: ../UpdateManager/Core/MyCache.py:459
+#: ../UpdateManager/Core/MyCache.py:460
 msgid "This update does not come from a source that supports changelogs."
 msgstr ""
 "Гэтае абнаўленне пастаўляецца крыніцай, якая не падтрымлівае спісы змен."
 
-#: ../UpdateManager/Core/MyCache.py:466 ../UpdateManager/Core/MyCache.py:508
+#: ../UpdateManager/Core/MyCache.py:467 ../UpdateManager/Core/MyCache.py:518
 msgid ""
 "Failed to download the list of changes. \n"
 "Please check your Internet connection."
@@ -477,7 +485,7 @@ msgstr ""
 "Не ўдалося спампаваць спіс змен. \n"
 "Праверце ваша злучэнне з інтэрнэтам."
 
-#: ../UpdateManager/Core/MyCache.py:475
+#: ../UpdateManager/Core/MyCache.py:485
 #, python-format
 msgid ""
 "Changes for %s versions:\n"
@@ -490,7 +498,7 @@ msgstr ""
 "Даступная версія: %s\n"
 "\n"
 
-#: ../UpdateManager/Core/MyCache.py:493
+#: ../UpdateManager/Core/MyCache.py:503
 #, python-format
 msgid ""
 "The changelog does not contain any relevant changes.\n"
@@ -504,7 +512,7 @@ msgstr ""
 "http://launchpad.net/ubuntu/+source/%s/%s/+changelog,\n"
 "пакуль змены не стануць даступныя, або паспрабаваць яшчэ раз пазней."
 
-#: ../UpdateManager/Core/MyCache.py:500
+#: ../UpdateManager/Core/MyCache.py:510
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -526,7 +534,7 @@ msgid "%s base"
 msgstr "Асноўны кампанент %s"
 
 #. TRANSLATORS: download size of small updates, e.g. "250 kB"
-#: ../UpdateManager/Core/utils.py:487
+#: ../UpdateManager/Core/utils.py:497
 #, python-format
 msgid "%(size).0f kB"
 msgid_plural "%(size).0f kB"
@@ -535,7 +543,7 @@ msgstr[1] "%(size).0f КБ"
 msgstr[2] "%(size).0f КБ"
 
 #. TRANSLATORS: download size of updates, e.g. "2.3 MB"
-#: ../UpdateManager/Core/utils.py:492
+#: ../UpdateManager/Core/utils.py:502
 #, python-format
 msgid "%.1f MB"
 msgstr "%.1f МБ"
@@ -545,26 +553,14 @@ msgid "updates"
 msgstr "абнаўленні"
 
 #: ../data/gtkbuilder/UpdateManager.ui.h:2
-msgid "Changes"
-msgstr "Змены"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:3
-msgid "Description"
-msgstr "Апісанне"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:4
-msgid "Technical description"
-msgstr "Тэхнічнае апісанне"
-
-#: ../data/gtkbuilder/UpdateManager.ui.h:5
 msgid "Details of updates"
 msgstr "Падрабязнасці аб абнаўленнях"
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:6
+#: ../data/gtkbuilder/UpdateManager.ui.h:3
 msgid "The computer will need to restart."
 msgstr "Неабходна перазапусціць камп'ютар."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:7
+#: ../data/gtkbuilder/UpdateManager.ui.h:4
 msgid ""
 "You are connected via roaming and may be charged for the data consumed by "
 "this update."
@@ -572,14 +568,14 @@ msgstr ""
 "Вы знаходзіцеся ў роўмінгу і з вас можа спаганяцца плата за даныя, якія "
 "будуць зрасходаваны пры абнаўленні."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:8
+#: ../data/gtkbuilder/UpdateManager.ui.h:5
 msgid ""
 "You may want to wait until you’re not using a mobile broadband connection."
 msgstr ""
 "Прапануем пачакаць, пакуль вы не карыстаецеся мабільным шырокапалосным "
 "злучэннем."
 
-#: ../data/gtkbuilder/UpdateManager.ui.h:9
+#: ../data/gtkbuilder/UpdateManager.ui.h:6
 msgid "It’s safer to connect the computer to AC power before updating."
 msgstr ""
 "Будзе надзейней злучыць камп'ютар з крыніцай сілкавання, перш чым пачаць "
@@ -696,6 +692,18 @@ msgstr ""
 "Выдаліце lilo, паколькі таксама ўсталяваны grub. (Глядзіце bug #314004 для "
 "падрабязнасцей)"
 
+#~ msgid "Changes"
+#~ msgstr "Змены"
+
+#~ msgid "Description"
+#~ msgstr "Апісанне"
+
+#~ msgid "Updates"
+#~ msgstr "Абнаўленні"
+
+#~ msgid "Technical description"
+#~ msgstr "Тэхнічнае апісанне"
+
 #~ msgid "Settings & Livepatch…"
 #~ msgstr "Налады і Livepatch…"
 
@@ -705,3 +713,6 @@ msgstr ""
 #~ msgstr ""
 #~ "<b>Парада:</b> З дапамогай Livepatch вы можаце захоўваць камп'ютар у большай "
 #~ "бяспецы паміж перазапускамі."
+
+#~ msgid "Ubuntu Pro (enable in Settings…)"
+#~ msgstr "Ubuntu Pro (уключыць у наладах…)"
