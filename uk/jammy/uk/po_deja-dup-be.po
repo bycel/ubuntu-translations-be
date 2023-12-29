@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-25 14:05+0000\n"
-"PO-Revision-Date: 2023-07-29 11:57\n"
+"PO-Revision-Date: 2023-12-29 10:04\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:21+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2023-12-29 08:21+0000\n"
+"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: uk\n"
@@ -41,7 +41,7 @@ msgstr ""
 #. context is itself a reference to both the underlying command line tool
 #. "duplicity" and the act of duplicating data for backup.  As a whole, the
 #. phrase "Déjà Dup" may not be very translatable.
-#: app/main.vala:475 data/app.metainfo.xml.in:15
+#: app/main.vala:471 data/app.metainfo.xml.in:15
 msgid "Déjà Dup Backups"
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Déjà Dup focuses on ease of use and recovering from personal, accidental data loss. If you need a full system backup or an archival program, you may prefer other backup apps."
 msgstr ""
 
-#: data/app.desktop.in:6 data/ui/MainHeaderBar.ui:13 data/ui/MainWindow.ui:9
+#: data/app.desktop.in:6 data/ui/MainWindow.ui:9
 msgid "Backups"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "The unique filesystem identifier for the drive, used to recognize the drive when it is plugged in."
 msgstr ""
 
-#: data/app.gschema.xml.in:150 data/ui/Browser.ui:244
+#: data/app.gschema.xml.in:150 data/ui/Browser.ui:229
 msgid "Name"
 msgstr ""
 
@@ -305,7 +305,7 @@ msgctxt "shortcut window"
 msgid "Go back"
 msgstr ""
 
-#: data/ui/MainHeaderBar.ui:21 data/ui/MainHeaderBar.ui:23
+#: app/RestoreHeaderBar.vala:19 app/RestoreHeaderBar.vala:20
 msgid "Back"
 msgstr ""
 
@@ -313,8 +313,8 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: data/ui/Browser.ui:14 data/ui/MainHeaderBar.ui:43
-#: data/ui/MainHeaderBar.ui:45
+#: app/RestoreHeaderBar.vala:26 app/RestoreHeaderBar.vala:27
+#: data/ui/RestoreToolbarView.ui:19
 msgid "Search"
 msgstr ""
 
@@ -346,11 +346,11 @@ msgstr ""
 msgid "_Back Up Now"
 msgstr ""
 
-#: data/ui/MainWindow.ui:24
+#: data/ui/MainWindow.ui:27
 msgid "Overview"
 msgstr ""
 
-#: app/AssistantRestore.vala:63 data/ui/Browser.ui:356
+#: app/AssistantRestore.vala:63 data/ui/RestoreToolbarView.ui:35
 msgid "_Restore"
 msgstr ""
 
@@ -359,27 +359,27 @@ msgid "_Date"
 msgstr ""
 
 #. Translators: this means scanning the storage location data files, not the source folders
-#: data/ui/Browser.ui:82
+#: data/ui/Browser.ui:67
 msgid "Scanning backup files…"
 msgstr ""
 
-#: data/ui/Browser.ui:136
+#: data/ui/Browser.ui:121
 msgid "_Retry"
 msgstr ""
 
-#: data/ui/Browser.ui:171
+#: data/ui/Browser.ui:156
 msgid "_Connect"
 msgstr ""
 
-#: data/ui/Browser.ui:196
+#: data/ui/Browser.ui:181
 msgid "Encryption password needed"
 msgstr ""
 
-#: data/ui/Browser.ui:207
+#: data/ui/Browser.ui:192
 msgid "_Enter Password"
 msgstr ""
 
-#: app/AssistantRestore.vala:59 data/ui/MainWindow.ui:51
+#: app/AssistantRestore.vala:59 data/ui/MainWindow.ui:38
 msgid "Restore"
 msgstr ""
 
@@ -401,19 +401,19 @@ msgstr ""
 msgid "_Remember password"
 msgstr ""
 
-#: data/ui/MainHeaderBar.ui:65
+#: data/ui/PrimaryMenuButton.ui:29
 msgid "_Preferences"
 msgstr ""
 
-#: data/ui/MainHeaderBar.ui:69
+#: data/ui/PrimaryMenuButton.ui:33
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/MainHeaderBar.ui:73
+#: data/ui/PrimaryMenuButton.ui:37
 msgid "_Help"
 msgstr ""
 
-#: data/ui/MainHeaderBar.ui:77
+#: data/ui/PrimaryMenuButton.ui:41
 msgid "_About Backups"
 msgstr ""
 
@@ -633,7 +633,7 @@ msgstr ""
 #. In the unlikely event the user turned on automatic backups but never
 #. made a backup, we should tell them if we start up and need to be
 #. configured for first time.
-#: app/AssistantBackup.vala:128 app/AssistantOperation.vala:843
+#: app/AssistantBackup.vala:128 app/AssistantOperation.vala:844
 msgid "Backups needs your input to continue"
 msgstr ""
 
@@ -698,40 +698,40 @@ msgstr ""
 msgid "_Grant Access"
 msgstr ""
 
-#: app/AssistantOperation.vala:494
+#: app/AssistantOperation.vala:495
 msgid "Install Packages"
 msgstr ""
 
-#: app/AssistantOperation.vala:509
+#: app/AssistantOperation.vala:510
 msgid "Summary"
 msgstr ""
 
-#: app/AssistantOperation.vala:531
+#: app/AssistantOperation.vala:532
 msgid "Restore Test"
 msgstr ""
 
-#: app/AssistantOperation.vala:539
+#: app/AssistantOperation.vala:540
 msgid "Grant Access"
 msgstr ""
 
-#: app/AssistantOperation.vala:762
+#: app/AssistantOperation.vala:763
 msgid "Require Password?"
 msgstr ""
 
-#: app/AssistantOperation.vala:764
+#: app/AssistantOperation.vala:765
 msgid "Encryption Password Needed"
 msgstr ""
 
-#: app/AssistantOperation.vala:811
+#: app/AssistantOperation.vala:812
 msgid "Backups needs your encryption password to continue"
 msgstr ""
 
-#: app/AssistantOperation.vala:885
+#: app/AssistantOperation.vala:886
 msgctxt "verb"
 msgid "_Install"
 msgstr ""
 
-#: app/AssistantOperation.vala:890
+#: app/AssistantOperation.vala:891
 msgid "Backups needs to install packages to continue"
 msgstr ""
 
@@ -832,7 +832,7 @@ msgstr ""
 msgid "Restore in progress"
 msgstr ""
 
-#: app/Background.vala:73
+#: app/Background.vala:79
 msgid "Cannot back up automatically"
 msgstr ""
 
@@ -849,7 +849,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: app/Browser.vala:251
+#: app/Browser.vala:213
 msgid "Authentication needed"
 msgstr ""
 
@@ -886,7 +886,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: app/ConfigFolderGroup.vala:66 data/ui/ConfigFolderGroup.ui:16
+#: data/ui/ConfigFolderGroup.ui:16
 msgid "Add"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgstr ""
 msgid "Amazon S3"
 msgstr ""
 
-#: app/FolderChooserButton.vala:21 app/FolderChooserButton.vala:27
+#: app/FolderChooserButton.vala:21
 msgid "Choose Folder"
 msgstr ""
 
@@ -1110,7 +1110,7 @@ msgstr ""
 msgid "An operation is already in progress"
 msgstr ""
 
-#: app/main.vala:369
+#: app/main.vala:365
 msgid "translator-credits"
 msgstr ""
 
@@ -1126,7 +1126,7 @@ msgstr ""
 msgid "Backup will begin when %s is connected."
 msgstr ""
 
-#: libdeja/BackendDrive.vala:250 libdeja/BackendRemote.vala:157
+#: libdeja/BackendDrive.vala:250 libdeja/BackendRemote.vala:153
 msgid "Storage location not available"
 msgstr ""
 
@@ -1158,22 +1158,22 @@ msgstr ""
 msgid "You first need to allow Backups to access your Google account."
 msgstr ""
 
-#: libdeja/BackendRemote.vala:98
+#: libdeja/BackendRemote.vala:94
 msgid "The network server is not available"
 msgstr ""
 
-#: libdeja/BackendRemote.vala:158
+#: libdeja/BackendRemote.vala:154
 msgid "Waiting for a network connection…"
 msgstr ""
 
-#: libdeja/BackendRemote.vala:170
+#: libdeja/BackendRemote.vala:166
 msgid "Could not mount storage location."
 msgstr ""
 
 #. Special sanity check for some edge cases like smb:// where if the user
 #. just puts in smb://server/ as the root, GIO thinks it's a valid root,
 #. but the share never ends up mounted.
-#: libdeja/BackendRemote.vala:187
+#: libdeja/BackendRemote.vala:183
 msgid "Samba network locations must include both a hostname and a share name."
 msgstr ""
 
@@ -1345,7 +1345,7 @@ msgstr ""
 msgid "No space left in ‘%s’."
 msgstr ""
 
-#: app/Browser.vala:372 libdeja/duplicity/DuplicityJob.vala:1067
+#: app/Browser.vala:334 libdeja/duplicity/DuplicityJob.vala:1067
 msgid "No backup files found"
 msgstr ""
 

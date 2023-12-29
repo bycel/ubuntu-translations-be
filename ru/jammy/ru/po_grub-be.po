@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-02-02 17:02+0000\n"
-"PO-Revision-Date: 2023-11-18 12:38\n"
+"PO-Revision-Date: 2023-12-29 10:11\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-11-18 12:12+0000\n"
-"X-Generator: Launchpad (build f1e537f62ee3967c2b3f24dd10eacf1696334fe6)\n"
+"X-Launchpad-Export-Date: 2023-12-29 08:22+0000\n"
+"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -709,6 +709,9 @@ msgid "the size of `%s' is too large"
 msgstr ""
 
 #: .pc/core-in-fs.patch/util/setup.c:320
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1245
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1399
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1444
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1102
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1277
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1322
@@ -736,7 +739,7 @@ msgstr ""
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1102
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1277
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1322
-#: util/grub-install.c:1245 util/grub-install.c:1399 util/grub-install.c:1444
+#: util/grub-install.c:1245 util/grub-install.c:1399 util/grub-install.c:1437
 #: util/grub-macbless.c:76 util/grub-probe.c:329 util/setup.c:322
 #, c-format
 msgid "cannot find a device for %s (is /dev mounted?)"
@@ -1092,6 +1095,8 @@ msgid "pre-load specified modules MODULES"
 msgstr ""
 
 #. TRANSLATORS: "embed" is a verb (command description).  "
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:272
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:319
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:32
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:64
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:66
@@ -1226,6 +1231,10 @@ msgid "choose the compression to use for core image"
 msgstr ""
 
 #. TRANSLATORS: platform here isn't identifier. It can be translated.
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:268
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:270
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:315
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:317
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:50
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:53
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:56
@@ -1352,6 +1361,7 @@ msgstr ""
 msgid "print verbose messages."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:256
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:239
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:239
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:239
@@ -1365,6 +1375,7 @@ msgstr ""
 msgid "More than one install device?"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:269
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:252
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:252
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:252
@@ -1379,6 +1390,7 @@ msgstr ""
 msgid "install GRUB images under the directory DIR/%s instead of the %s directory"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:274
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:257
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:257
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:257
@@ -1393,6 +1405,7 @@ msgid "TARGET"
 msgstr ""
 
 #. TRANSLATORS: "TARGET" as in "target platform".
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:276
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:259
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:259
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:259
@@ -1411,6 +1424,7 @@ msgstr ""
 #. effect but that it will make the resulting install unbootable from HDD.
 #. TRANSLATORS: The potential breakage isn't limited to floppies but it's
 #. likely to make the install unbootable from HDD.
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:285
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:268
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:268
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:268
@@ -1424,6 +1438,7 @@ msgstr ""
 msgid "make the drive also bootable as floppy (default for fdX devices). May break on some BIOSes."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:288
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:271
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:271
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:271
@@ -1437,6 +1452,7 @@ msgstr ""
 msgid "delete device map if it already exists"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:290
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:273
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:273
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:273
@@ -1450,6 +1466,7 @@ msgstr ""
 msgid "install even if problems are detected"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:292
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:275
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:275
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:275
@@ -1463,6 +1480,7 @@ msgstr ""
 msgid "use identifier file even if UUID is available"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:293
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:276
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:276
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:276
@@ -1478,6 +1496,7 @@ msgstr ""
 msgid "MODULE"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:294
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:277
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:277
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:277
@@ -1491,6 +1510,7 @@ msgstr ""
 msgid "disk module to use (biosdisk or native). This option is only available on BIOS target."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:297
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:280
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:280
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:280
@@ -1504,6 +1524,7 @@ msgstr ""
 msgid "don't update the `boot-device'/`Boot*' NVRAM variables. This option is only available on EFI and IEEE1275 targets."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:300
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:283
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:283
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:283
@@ -1517,6 +1538,7 @@ msgstr ""
 msgid "do not probe for filesystems in DEVICE"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:302
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:285
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:285
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:285
@@ -1530,6 +1552,7 @@ msgstr ""
 msgid "do not install bootsector"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:304
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:287
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:287
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:287
@@ -1543,6 +1566,8 @@ msgstr ""
 msgid "Do not apply any reed-solomon codes when embedding core.img. This option is only available on x86 BIOS targets."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:309
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:322
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:292
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:305
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:520
@@ -1571,6 +1596,7 @@ msgstr ""
 msgid "STRING"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:311
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:294
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:294
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:294
@@ -1584,6 +1610,7 @@ msgstr ""
 msgid "the installation device is removable. This option is only available on EFI."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:313
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:296
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:296
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:296
@@ -1597,6 +1624,7 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:314
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:297
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:297
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:297
@@ -1610,6 +1638,7 @@ msgstr ""
 msgid "the ID of bootloader. This option is only available on EFI and Macs."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:316
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:299
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:299
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:299
@@ -1623,6 +1652,7 @@ msgstr ""
 msgid "use DIR as the EFI System Partition root."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:318
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:301
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:301
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:301
@@ -1636,6 +1666,7 @@ msgstr ""
 msgid "use DIR for PPC MAC install."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:319
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:302
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:302
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:302
@@ -1649,6 +1680,8 @@ msgstr ""
 msgid "use FILE as font for label"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:320
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:321
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:303
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:304
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:303
@@ -1673,6 +1706,7 @@ msgstr ""
 msgid "COLOR"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:320
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:303
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:303
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:303
@@ -1686,6 +1720,7 @@ msgstr ""
 msgid "use COLOR for label"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:321
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:304
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:304
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:304
@@ -1699,6 +1734,7 @@ msgstr ""
 msgid "use COLOR for label background"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:322
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:305
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:305
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:305
@@ -1712,23 +1748,27 @@ msgstr ""
 msgid "use STRING as product version"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:324
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:318
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:324
 #: util/grub-install.c:324
 msgid "install an image usable with UEFI Secure Boot. This option is only available on EFI and if the grub-efi-amd64-signed package is installed."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:328
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:322
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:328
 #: util/grub-install.c:328
 msgid "do not install an image usable with UEFI Secure Boot, even if the system was currently started using it. This option is only available on EFI."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:332
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:332
 #: util/grub-install.c:332
 msgid "Do not install bootloader code to the removable media path. This option is only available on EFI."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:400
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:372
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:372
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:372
@@ -1742,6 +1782,7 @@ msgstr ""
 msgid "[OPTION] [INSTALL_DEVICE]"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:401
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:373
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:373
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:373
@@ -1755,6 +1796,7 @@ msgstr ""
 msgid "Install GRUB on your drive."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:402
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:374
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:374
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:374
@@ -1770,6 +1812,7 @@ msgid "INSTALL_DEVICE must be system device filename.\n"
 "%s copies GRUB images into %s.  On some platforms, it may also install GRUB into the boot sector."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:610
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:582
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:582
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:582
@@ -1783,6 +1826,7 @@ msgstr ""
 msgid "couldn't retrieve random data"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:712
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:684
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:684
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:684
@@ -1798,6 +1842,7 @@ msgid "the drive %s is defined multiple times in the device map %s"
 msgstr ""
 
 #. TRANSLATORS: "stat" comes from the name of POSIX function.
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:814
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:786
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:786
 #: .pc/grub-legacy-0-based-partitions.patch/util/getroot.c:160
@@ -1818,6 +1863,7 @@ msgstr ""
 msgid "cannot stat `%s': %s"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:890
 #: .pc/install-locale-langpack.patch/util/grub-install-common.c:239
 #: .pc/install-locale-langpack.patch/util/grub-install-common.c:722
 #: .pc/install-locale-langpack.patch/util/grub-install-common.c:749
@@ -1830,21 +1876,25 @@ msgstr ""
 msgid "cannot open directory `%s': %s"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:922
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:922
 #: util/grub-install.c:922
 msgid "efi_suffix not set"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:924
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:924
 #: util/grub-install.c:924
 msgid "efi_suffix_upper not set"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1036
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:1036
 #: util/grub-install.c:1036
 msgid "Invalid to use both --removable and --no_extra_removable"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1046
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:903
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:903
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:903
@@ -1858,6 +1908,7 @@ msgstr ""
 msgid "Unable to determine your platform. Use --target."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1059
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:916
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:916
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:916
@@ -1872,6 +1923,7 @@ msgstr ""
 msgid "Installing for %s platform.\n"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1108
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:965
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:965
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:965
@@ -1885,6 +1937,8 @@ msgstr ""
 msgid "install device isn't specified"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1154
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1521
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1011
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1399
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1011
@@ -1907,11 +1961,12 @@ msgstr ""
 #: .pc/zpool-full-device-name.patch/grub-core/osdep/unix/getroot.c:525
 #: grub-core/osdep/linux/ofpath.c:222 grub-core/osdep/unix/getroot.c:502
 #: grub-core/osdep/unix/getroot.c:526 grub-core/osdep/unix/relpath.c:49
-#: util/grub-install.c:1154 util/grub-install.c:1521 util/grub-probe.c:323
+#: util/grub-install.c:1154 util/grub-install.c:1544 util/grub-probe.c:323
 #, c-format
 msgid "failed to get canonical path of `%s'"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1242
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1099
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1099
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1099
@@ -1925,6 +1980,10 @@ msgstr ""
 msgid "cannot find EFI directory"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1254
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1407
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1460
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1555
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1111
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1285
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1338
@@ -1961,12 +2020,13 @@ msgstr ""
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1285
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1338
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1433
-#: util/grub-install.c:1254 util/grub-install.c:1407 util/grub-install.c:1460
-#: util/grub-install.c:1555 util/grub-macbless.c:80 util/grub-probe.c:372
+#: util/grub-install.c:1254 util/grub-install.c:1407 util/grub-install.c:1453
+#: util/grub-install.c:1525 util/grub-macbless.c:80 util/grub-probe.c:372
 #, c-format
 msgid "cannot find a GRUB drive for %s.  Check your device.map"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1276
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1133
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1133
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1133
@@ -1981,6 +2041,8 @@ msgstr ""
 msgid "%s doesn't look like an EFI partition"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1335
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1850
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1183
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1701
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1183
@@ -1999,10 +2061,11 @@ msgstr ""
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:1850
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1183
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1684
-#: util/grub-install.c:1335 util/grub-install.c:1850
+#: util/grub-install.c:1335 util/grub-install.c:1852
 msgid "You've found a bug"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1421
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1299
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1299
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1284
@@ -2017,6 +2080,7 @@ msgstr ""
 msgid "filesystem on %s is neither HFS nor HFS+"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1489
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1367
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1367
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1352
@@ -2026,11 +2090,14 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1367
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:1489
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1367
-#: util/grub-install.c:1489
+#: util/grub-install.c:1482
 #, c-format
 msgid "attempt to install to encrypted disk without cryptodisk enabled. Set `%s' in file `%s'"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1644
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2033
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2138
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1495
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1884
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1989
@@ -2058,11 +2125,12 @@ msgstr ""
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1478
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1867
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1972
-#: util/grub-install.c:1644 util/grub-install.c:2033 util/grub-install.c:2138
+#: util/grub-install.c:1646 util/grub-install.c:2035 util/grub-install.c:2140
 #, c-format
 msgid "Can't create file: %s"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1726
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1577
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1560
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1545
@@ -2072,12 +2140,13 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1577
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:1726
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1560
-#: util/grub-install.c:1726
+#: util/grub-install.c:1728
 msgid "no hints available for your platform. Expect reduced performance"
 msgstr ""
 
 #. TRANSLATORS: This is a prefix in the log to indicate that usually
 #. a command would be executed but due to an option was skipped.
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:1939
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1790
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1773
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1758
@@ -2087,10 +2156,11 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1790
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:1939
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1773
-#: util/grub-install.c:1939
+#: util/grub-install.c:1941
 msgid "NOT RUNNING: "
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2069
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1920
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1903
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1888
@@ -2100,10 +2170,11 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1920
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2069
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1903
-#: util/grub-install.c:2069
+#: util/grub-install.c:2071
 msgid "the chosen partition is not a PReP partition"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2074
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1925
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1908
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1893
@@ -2113,10 +2184,11 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1925
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2074
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1908
-#: util/grub-install.c:2074
+#: util/grub-install.c:2076
 msgid "failed to copy Grub to the PReP partition"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2080
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:1931
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:1914
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:1899
@@ -2126,7 +2198,7 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:1931
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2080
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:1914
-#: util/grub-install.c:2080
+#: util/grub-install.c:2082
 #, c-format
 msgid "the PReP partition is not empty. If you are sure you want to use it, run dd to clear it: `%s'"
 msgstr ""
@@ -2147,6 +2219,7 @@ msgstr ""
 msgid "efibootmgr failed to register the boot entry: %s"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2261
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:2039
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:2022
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:2007
@@ -2156,10 +2229,11 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:2039
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2261
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:2022
-#: util/grub-install.c:2261
+#: util/grub-install.c:2263
 msgid "EFI bootloader id isn't specified."
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2315
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:2093
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:2056
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:2041
@@ -2169,10 +2243,11 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:2093
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2315
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:2076
-#: util/grub-install.c:2315
+#: util/grub-install.c:2317
 msgid "WARNING: no platform-specific install was performed"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2330
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:2108
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:2071
 #: .pc/install-efi-adjust-distributor.patch/util/grub-install.c:2056
@@ -2182,7 +2257,7 @@ msgstr ""
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:2108
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2330
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:2091
-#: util/grub-install.c:2330
+#: util/grub-install.c:2332
 msgid "Installation finished. No error reported."
 msgstr ""
 
@@ -3760,13 +3835,15 @@ msgstr ""
 msgid "GRUB was not built with efivar support; cannot register EFI boot entry"
 msgstr ""
 
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2156
+#: .pc/delay-copying-to-grubdir.patch/util/grub-install.c:2277
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:2031
 #: .pc/ubuntu-grub-install-extra-removable.patch/util/grub-install.c:2146
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:2007
 #: .pc/ubuntu-install-signed.patch/util/grub-install.c:2055
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2156
 #: .pc/ubuntu-resilient-boot-boot-order.patch/util/grub-install.c:2277
-#: util/grub-install.c:2156 util/grub-install.c:2277
+#: util/grub-install.c:2158 util/grub-install.c:2279
 #, c-format
 msgid "failed to register the EFI boot entry: %s"
 msgstr ""
