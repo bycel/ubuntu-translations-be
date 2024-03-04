@@ -13,15 +13,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 00:06+0000\n"
-"PO-Revision-Date: 2023-03-23 10:43+0000\n"
+"POT-Creation-Date: 2024-02-13 15:31+0000\n"
+"PO-Revision-Date: 2024-01-19 11:30+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-05-27 08:08+0000\n"
-"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
+"X-Launchpad-Export-Date: 2024-03-04 09:44+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be\n"
 
 #. ChangelogURI
@@ -45,7 +45,7 @@ msgstr ""
 #. CompDescription
 #: ../data/templates/Ubuntu.info.in:114
 msgid "Community-maintained"
-msgstr "Утрымоўваецца супольнасцю"
+msgstr "Падтрымліваецца супольнасцю"
 
 #. CompDescriptionLong
 #: ../data/templates/Ubuntu.info.in:115
@@ -190,7 +190,7 @@ msgid "Non-DFSG-compatible Software"
 msgstr "Праграмы, несумяшчальныя з DFSG"
 
 #. TRANSLATORS: %s is a country
-#: ../aptsources/distro.py:206 ../aptsources/distro.py:461
+#: ../aptsources/distro.py:206 ../aptsources/distro.py:474
 #, python-format
 msgid "Server for %s"
 msgstr "Сервер для %s"
@@ -207,22 +207,22 @@ msgstr "Галоўны сервер"
 msgid "Custom servers"
 msgstr "Іншыя серверы"
 
-#: ../apt/package.py:619
+#: ../apt/package.py:550
 #, python-format
 msgid "Missing description for '%s'.Please report."
 msgstr ""
 
-#: ../apt/package.py:629
+#: ../apt/package.py:560
 #, python-format
 msgid "Invalid unicode in description for '%s' (%s). Please report."
 msgstr "Памылковы unicode у апісанні для «%s» (%s). Паведаміце пра гэта."
 
-#: ../apt/package.py:1330 ../apt/package.py:1346 ../apt/package.py:1459
-#: ../apt/package.py:1475
+#: ../apt/package.py:1220 ../apt/package.py:1236 ../apt/package.py:1349
+#: ../apt/package.py:1365
 msgid "The list of changes is not available"
 msgstr "Недасяжны спіс зменаў"
 
-#: ../apt/package.py:1467
+#: ../apt/package.py:1357
 #, python-format
 msgid ""
 "The list of changes is not available yet.\n"
@@ -235,7 +235,7 @@ msgstr ""
 "Глядзіце, калі ласка, http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
 "пакуль змены не стануць дасяжныя, альбо паспрабуйце пазней."
 
-#: ../apt/package.py:1482
+#: ../apt/package.py:1372
 msgid ""
 "Failed to download the list of changes. \n"
 "Please check your Internet connection."
@@ -243,27 +243,27 @@ msgstr ""
 "Не ўдалося атрымаць спіс зменаў. \n"
 "Калі ласка, праверце вашае далучэнне да інтэрнэту."
 
-#: ../apt/debfile.py:96
+#: ../apt/debfile.py:91
 #, python-format
 msgid "List of files for '%s' could not be read"
 msgstr "Спіс файлаў да '%s' не атрымалася прачытаць"
 
-#: ../apt/debfile.py:108
+#: ../apt/debfile.py:102
 #, python-format
 msgid "List of control files for '%s' could not be read"
 msgstr "Спіс файлаў кіравання да '%s' не атрымалася прачытаць"
 
-#: ../apt/debfile.py:242
+#: ../apt/debfile.py:235
 #, python-format
 msgid "Dependency is not satisfiable: %s\n"
 msgstr "Залежнасць, якую не ўдаецца задаволіць: %s\n"
 
-#: ../apt/debfile.py:272
+#: ../apt/debfile.py:264
 #, python-format
 msgid "Conflicts with the installed package '%s'"
 msgstr "Канфліктуе з усталяваным пакетам '%s'"
 
-#: ../apt/debfile.py:434
+#: ../apt/debfile.py:418
 #, python-format
 msgid ""
 "Breaks existing package '%(pkgname)s' dependency %(depname)s "
@@ -272,7 +272,7 @@ msgstr ""
 "Парушае залежнасць %(depname)s (%(deprelation)s %(depversion)s) наяўнага "
 "пакета '%(pkgname)s'"
 
-#: ../apt/debfile.py:465
+#: ../apt/debfile.py:449
 #, python-format
 msgid ""
 "Breaks existing package '%(pkgname)s' conflict: %(targetpkg)s (%(comptype)s "
@@ -281,7 +281,7 @@ msgstr ""
 "Парушае канфлікт %(targetpkg)s (%(comptype)s %(targetver)s) наяўнага пакета "
 "'%(pkgname)s'"
 
-#: ../apt/debfile.py:482
+#: ../apt/debfile.py:466
 #, python-format
 msgid ""
 "Breaks existing package '%(pkgname)s' that conflict: '%(targetpkg)s'. But "
@@ -290,11 +290,11 @@ msgstr ""
 "Парушае наяўны пакет '%(pkgname)s', які канфліктуе з: '%(targetpkg)s'. Але "
 "'%(debfile)s' забяспечваецца праз: '%(provides)s'"
 
-#: ../apt/debfile.py:543
+#: ../apt/debfile.py:525
 msgid "No Architecture field in the package"
 msgstr "Гэты пакет не мае поля Architecture"
 
-#: ../apt/debfile.py:555
+#: ../apt/debfile.py:537
 #, python-format
 msgid ""
 "Wrong architecture '%s' -- Run dpkg --add-architecture to add it and update "
@@ -302,20 +302,20 @@ msgid ""
 msgstr ""
 
 #. the deb is older than the installed
-#: ../apt/debfile.py:570
+#: ../apt/debfile.py:552
 msgid "A later version is already installed"
 msgstr "Ужо ўсталяваная апошняя версія"
 
-#: ../apt/debfile.py:596
+#: ../apt/debfile.py:578
 msgid "Failed to satisfy all dependencies (broken cache)"
 msgstr "Не атрымалася задаволіць усе залежнасці (зламаны кэш)"
 
-#: ../apt/debfile.py:627
+#: ../apt/debfile.py:607
 #, python-format
 msgid "Cannot install '%s'"
 msgstr "Немагчыма ўсталяваць '%s'"
 
-#: ../apt/debfile.py:707
+#: ../apt/debfile.py:688
 msgid ""
 "Automatically decompressed:\n"
 "\n"
@@ -323,46 +323,46 @@ msgstr ""
 "Аўтаматычна распакаваны:\n"
 "\n"
 
-#: ../apt/debfile.py:713
+#: ../apt/debfile.py:694
 msgid "Automatically converted to printable ascii:\n"
 msgstr "Аўтаматычна ператвораны ў друкаваныя ASCII:\n"
 
-#: ../apt/debfile.py:824
+#: ../apt/debfile.py:800
 #, python-format
 msgid "Install Build-Dependencies for source package '%s' that builds %s\n"
 msgstr ""
 "Усталяваць Build-Dependencies для зыходнага пакета '%s', які збірае %s\n"
 
-#: ../apt/debfile.py:838
+#: ../apt/debfile.py:813
 msgid "An essential package would be removed"
 msgstr "Трэба было б выдаліць абавязковы пакет"
 
-#: ../apt/progress/text.py:97
+#: ../apt/progress/text.py:87
 #, python-format
 msgid "%c%s... Done"
 msgstr "%c%s... Скончана"
 
-#: ../apt/progress/text.py:143
+#: ../apt/progress/text.py:129
 msgid "Hit "
 msgstr "Hit "
 
-#: ../apt/progress/text.py:153
+#: ../apt/progress/text.py:138
 msgid "Ign "
 msgstr "Ign "
 
-#: ../apt/progress/text.py:155
+#: ../apt/progress/text.py:140
 msgid "Err "
 msgstr "Err "
 
-#: ../apt/progress/text.py:167
+#: ../apt/progress/text.py:151
 msgid "Get:"
 msgstr "Атрымаць:"
 
-#: ../apt/progress/text.py:238
+#: ../apt/progress/text.py:221
 msgid " [Working]"
 msgstr " [Апрацоўваецца]"
 
-#: ../apt/progress/text.py:252
+#: ../apt/progress/text.py:234
 #, python-format
 msgid ""
 "Media change: please insert the disc labeled\n"
@@ -373,15 +373,15 @@ msgstr ""
 " '%s'\n"
 "у прыладу '%s' і націсніце Enter\n"
 
-#: ../apt/progress/text.py:267
+#: ../apt/progress/text.py:248
 #, python-format
 msgid "Fetched %sB in %s (%sB/s)\n"
 msgstr "Атрымана %sB з %s (%sB/s)\n"
 
-#: ../apt/progress/text.py:291
+#: ../apt/progress/text.py:271
 msgid "Please provide a name for this medium, such as 'Debian 2.1r1 Disk 1'"
 msgstr ""
 
-#: ../apt/progress/text.py:312
+#: ../apt/progress/text.py:290
 msgid "Please insert an installation medium and press enter"
 msgstr ""
