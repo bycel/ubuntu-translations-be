@@ -3,27 +3,21 @@
 # This file is distributed under the same license as the apt package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: apt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-10-06 09:06+0000\n"
-"PO-Revision-Date: 2023-11-18 14:13+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2024-02-28 18:50+0000\n"
+"PO-Revision-Date: 2010-10-28 18:09+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-12-29 08:22+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:31+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: apt-pkg/acquire-item.cc
 msgid ""
@@ -1763,6 +1757,18 @@ msgstr "Зламаныя пакеты"
 
 #: apt-private/private-install.cc
 msgid ""
+"Unmerged usr is no longer supported, use usrmerge to convert to a merged-usr "
+"system."
+msgstr ""
+
+#. TRANSLATORS: %s is a url to a page describing merged-usr (bookworm release notes)
+#: apt-private/private-install.cc
+#, c-format
+msgid "See %s for more details."
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid ""
 "Unable to fetch some archives, maybe run apt-get update or try with --fix-"
 "missing?"
 msgstr ""
@@ -2088,6 +2094,10 @@ msgid "The following packages will be REMOVED:"
 msgstr "Наступныя пакеты будуць ВЫДАЛЕНЫ:"
 
 #: apt-private/private-output.cc
+msgid "The following upgrades have been deferred due to phasing:"
+msgstr ""
+
+#: apt-private/private-output.cc
 msgid "The following packages have been kept back:"
 msgstr "Пакеты, што будуць пакінутыя ў нязменным стане:"
 
@@ -2397,6 +2407,12 @@ msgstr "Камандзе update не патрэбныя аргументы"
 msgid ""
 "Usage of %s should be preferred over embedding login information directly in "
 "the %s entry for '%s'"
+msgstr ""
+
+#. TRANSLATOR: the first is manpage reference, the last the URI from a sources.list
+#: apt-private/private-update.cc
+#, c-format
+msgid "Missing Signed-By in the %s entry for '%s'"
 msgstr ""
 
 #: apt-private/private-update.cc
@@ -2940,6 +2956,10 @@ msgstr ""
 
 #: cmdline/apt.cc
 msgid "remove packages"
+msgstr ""
+
+#: cmdline/apt.cc
+msgid "automatically remove all unused packages"
 msgstr ""
 
 #. system wide stuff
@@ -3595,7 +3615,7 @@ msgstr ""
 #. TRANSLATORS: The second %s is the reason and is untranslated for repository owners.
 #: methods/gpgv.cc
 #, c-format
-msgid "Signature by key %s uses weak digest algorithm (%s)"
+msgid "Signature by key %s uses weak algorithm (%s)"
 msgstr ""
 
 #: methods/gpgv.cc
@@ -3639,20 +3659,3 @@ msgstr ""
 #: methods/store.cc
 msgid "Empty files can't be valid archives"
 msgstr ""
-
-#, c-format
-#~ msgid "%s was already not hold.\n"
-#~ msgstr "%s ужо быў незафіксаваны.\n"
-
-#, c-format
-#~ msgid ""
-#~ "You are about to do something potentially harmful.\n"
-#~ "To continue type in the phrase '%s'\n"
-#~ " ?] "
-#~ msgstr ""
-#~ "Тое, што вы хочаце зрабіць, можа мець непажаданыя наступствы.\n"
-#~ "Для працягу увядзіце фразу: '%s'\n"
-#~ " ?] "
-
-#~ msgid "Yes, do as I say!"
-#~ msgstr "Так, рабі, што я кажу!"

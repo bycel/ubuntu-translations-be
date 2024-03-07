@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tracker-miners\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-03-22 00:45+0000\n"
+"POT-Creation-Date: 2024-02-29 09:00+0000\n"
 "PO-Revision-Date: 2022-04-16 07:33+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 21:47+0000\n"
-"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:52+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: data/org.freedesktop.Tracker.Extract.gschema.xml:23
 msgid "Max bytes to extract"
@@ -306,19 +306,19 @@ msgstr ""
 msgid "Pause application and reason match an already existing pause request"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:81
+#: src/miners/fs/tracker-main.c:84
 msgid "Initial sleep time in seconds, 0->1000 (default=15)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:86
+#: src/miners/fs/tracker-main.c:89
 msgid "Runs until all configured locations are indexed and then exits"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:90 src/tracker/tracker-info.c:83
+#: src/miners/fs/tracker-main.c:93 src/tracker/tracker-info.c:83
 msgid "Checks if FILE is eligible for being mined based on configuration"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:91 src/tracker-extract/tracker-main.c:83
+#: src/miners/fs/tracker-main.c:94 src/tracker-extract/tracker-main.c:81
 #: src/tracker/tracker-extract.c:42 src/tracker/tracker-extract.c:43
 #: src/tracker/tracker-index.c:59 src/tracker/tracker-index.c:60
 #: src/tracker/tracker-info.c:86 src/tracker/tracker-info.c:87
@@ -326,77 +326,77 @@ msgstr ""
 msgid "FILE"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:94 src/miners/rss/tracker-main.c:63
-#: src/tracker-extract/tracker-main.c:97
+#: src/miners/fs/tracker-main.c:97 src/miners/rss/tracker-main.c:63
+#: src/tracker-extract/tracker-main.c:95
 msgid "Runs for a specific domain ontology"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:98
+#: src/miners/fs/tracker-main.c:101
 msgid "Avoids changes in the filesystem"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:102 src/tracker-control/tracker-main.c:61
-#: src/tracker-extract/tracker-main.c:101
+#: src/miners/fs/tracker-main.c:105 src/tracker-control/tracker-main.c:61
+#: src/tracker-extract/tracker-main.c:99
 #: src/tracker-writeback/tracker-main.c:50
 msgid "Displays version information"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:626
+#: src/miners/fs/tracker-main.c:629
 #, c-format
 msgid "Data object “%s” currently exists"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:627
+#: src/miners/fs/tracker-main.c:630
 #, c-format
 msgid "Data object “%s” currently does not exist"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:665
+#: src/miners/fs/tracker-main.c:668
 msgid "Directory is NOT eligible to be indexed (based on filters)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:669
+#: src/miners/fs/tracker-main.c:672
 msgid "File is NOT eligible to be indexed (based on filters)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:672
+#: src/miners/fs/tracker-main.c:675
 msgid "File is NOT eligible to be indexed (hidden file)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:674
+#: src/miners/fs/tracker-main.c:677
 msgid "File is NOT eligible to be indexed (not an indexed folder)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:698
+#: src/miners/fs/tracker-main.c:701
 #, c-format
 msgid ""
 "Parent directory “%s” is NOT eligible to be indexed (based on filters)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:704
+#: src/miners/fs/tracker-main.c:707
 #, c-format
 msgid "Parent directory “%s” is NOT eligible to be indexed (hidden file)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:712
+#: src/miners/fs/tracker-main.c:715
 #, c-format
 msgid ""
 "Parent directory “%s” is NOT eligible to be indexed (based on content "
 "filters)"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:733
+#: src/miners/fs/tracker-main.c:736
 msgid "Directory is eligible to be indexed"
 msgstr ""
 
-#: src/miners/fs/tracker-main.c:734
+#: src/miners/fs/tracker-main.c:737
 msgid "File is eligible to be indexed"
 msgstr ""
 
 #. Translators: this messagge will apper immediately after the
 #. * usage string - Usage: COMMAND <THIS_MESSAGE>
 #. 
-#: src/miners/fs/tracker-main.c:990
+#: src/miners/fs/tracker-main.c:999
 msgid "— start the tracker indexer"
 msgstr ""
 
@@ -413,11 +413,14 @@ msgstr ""
 msgid "Title to use (must be used with --add-feed)"
 msgstr ""
 
-#. Translators: this messagge will apper immediately after the
-#. * usage string - Usage: COMMAND <THIS_MESSAGE>
-#. 
-#: src/miners/rss/tracker-main.c:424
-msgid "— start the feeds indexer"
+#. Translators: this is a "feed" as in RSS
+#: src/miners/rss/tracker-main.c:54
+msgid "List feeds"
+msgstr ""
+
+#. Translators: this is a "feed" as in RSS
+#: src/miners/rss/tracker-main.c:59
+msgid "Delete feed"
 msgstr ""
 
 #: src/miners/rss/tracker-main.c:164 src/miners/rss/tracker-main.c:216
@@ -444,6 +447,21 @@ msgstr ""
 msgid "Could not add feed"
 msgstr ""
 
+#: src/miners/rss/tracker-main.c:228
+msgid "Could not remove feed"
+msgstr ""
+
+#: src/miners/rss/tracker-main.c:296
+msgid "Could not list feeds"
+msgstr ""
+
+#. Translators: this messagge will apper immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#. 
+#: src/miners/rss/tracker-main.c:424
+msgid "— start the feeds indexer"
+msgstr ""
+
 #. Translators: this messagge will apper immediately after the
 #. * usage string - Usage: COMMAND <THIS_MESSAGE>
 #. 
@@ -451,7 +469,7 @@ msgstr ""
 msgid "— start the tracker index proxy"
 msgstr ""
 
-#: src/tracker-extract/tracker-extract.c:697
+#: src/tracker-extract/tracker-extract.c:700
 msgid "Metadata extraction failed"
 msgstr ""
 
@@ -459,46 +477,46 @@ msgstr ""
 msgid "No metadata or extractor modules found to handle this file"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:82
+#: src/tracker-extract/tracker-main.c:80
 msgid "File to extract metadata for"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:86
+#: src/tracker-extract/tracker-main.c:84
 msgid "MIME type for file (if not provided, this will be guessed)"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:87
+#: src/tracker-extract/tracker-main.c:85
 msgid "MIME"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:90
+#: src/tracker-extract/tracker-main.c:88
 msgid "Force a module to be used for extraction (e.g. “foo” for “foo.so”)"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:91
+#: src/tracker-extract/tracker-main.c:89
 msgid "MODULE"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:93 src/tracker/tracker-extract.c:39
+#: src/tracker-extract/tracker-main.c:91 src/tracker/tracker-extract.c:39
 msgid "Output results format: “sparql”, “turtle” or “json-ld”"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:94 src/tracker/tracker-extract.c:40
+#: src/tracker-extract/tracker-main.c:92 src/tracker/tracker-extract.c:40
 msgid "FORMAT"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:212
+#: src/tracker-extract/tracker-main.c:149
 #, c-format
 msgid "Unsupported serialization format “%s”\n"
 msgstr ""
 
 #. Translators: this message will appear immediately after the
 #. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
-#: src/tracker-extract/tracker-main.c:342
+#: src/tracker-extract/tracker-main.c:278
 msgid "— Extract file meta data"
 msgstr ""
 
-#: src/tracker-extract/tracker-main.c:357
+#: src/tracker-extract/tracker-main.c:293
 msgid "Filename and mime type must be provided together"
 msgstr ""
 

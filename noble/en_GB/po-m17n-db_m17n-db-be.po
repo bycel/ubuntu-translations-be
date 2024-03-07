@@ -7,15 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m17n-db\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2017-12-09 00:35+0900\n"
+"POT-Creation-Date: 2023-11-07 15:08+0100\n"
 "PO-Revision-Date: 2020-05-03 16:51+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-03-22 21:44+0000\n"
-"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:37+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+
+#: MIM/bn-national-jatiya.mim:67
+msgid ""
+"If this variable is 1 (the default), automatic vowel forming is used.\n"
+"For example, a dependent vowel like া is automatically converted to\n"
+"the independent form আ if it is not typed after a consonant."
+msgstr ""
 
 #: MIM/bo-ewts.mim:36
 msgid ""
@@ -34,12 +41,29 @@ msgid ""
 "Backspace and Delete also work in the manner of visual order."
 msgstr ""
 
-#: MIM/eo-h-f.mim:29
+#: MIM/en-pn-eqf.mim:27
+msgid ""
+"Puthu Nira English Quick Fix\n"
+"\n"
+"This is a slightly modified version of the QWERTY English layout to be\n"
+"used along with the Puthunira Charutha (the ml-pn-c input method)\n"
+"because ml-pn-c changes some punctuation marks from their locations on\n"
+"the QWERTY layout.\n"
+"\n"
+"See the paper at "
+"http://languageinindia.com/july2023/drajithnewkeyboardsmalayalamfinal1.html\n"
+"Original Author : Ajith R <ajithramayyan at yahoo dot co dot in>\n"
+"See https://ajithramayyan.gitlab.io/puthunira/ for usage\n"
+"നിർദ്ദേശങ്ങള്‍ക്കായ് https://ajithramayyan.gitlab.io/puthunira/ എന്ന കണ്ണി "
+"കാണുക\n"
+msgstr ""
+
+#: MIM/eo-h-fundamente.mim:29
 msgid ""
 "Meant for writing Esperanto-letters using Zamenhof's fundamental system."
 msgstr ""
 
-#: MIM/eo-h.mim:29
+#: MIM/eo-h-sistemo.mim:29
 msgid "Meant for writing Esperanto-letters adding h's."
 msgstr ""
 
@@ -49,11 +73,11 @@ msgid ""
 "system, like the default of EK."
 msgstr ""
 
-#: MIM/eo-q.mim:29
+#: MIM/eo-q-sistemo.mim:29
 msgid "Meant for writing Esperanto-letters adding q's."
 msgstr ""
 
-#: MIM/eo-x.mim:29
+#: MIM/eo-x-sistemo.mim:29
 msgid "Meant for writing Esperanto-letters adding x's (the X-system)."
 msgstr ""
 
@@ -92,7 +116,7 @@ msgstr ""
 
 #: MIM/global.mim:32
 msgid ""
-"Maxmum number of candidates in a candidate group.\n"
+"Maximum number of candidates in a candidate group.\n"
 "Value must be an integer.\n"
 "If the value is not positive, number of candidates in a group is decided\n"
 "by how candiates are grouped in an input method source file."
@@ -318,11 +342,25 @@ msgid ""
 "should not be used in a map of an input method."
 msgstr ""
 
-#: MIM/hi-itrans.mim:53
+#: MIM/hi-brahmi-itrans.mim:47
+msgid ""
+"If this variable is 1 (the default), the last Halant in a syllable\n"
+"is removed if it is followed by non Brahmi letter. For instance,\n"
+"typing \"har..\" produces \"𑀳𑀭𑁇\", not \"𑀳𑀭𑁆𑁇\"."
+msgstr ""
+
+#: MIM/hi-itrans.mim:51 MIM/mr-gamabhana.mim:49
 msgid ""
 "If this variable is 1 (the default), the last Halant in a syllable\n"
 "is removed if it is followed by non Devanagari letter.  For instance,\n"
 "typing \"har..\" produces \"हर।\", not \"हर्।\"."
+msgstr ""
+
+#: MIM/ks-sharada-itrans.mim:47
+msgid ""
+"If this variable is 1 (the default), the last Halant in a syllable\n"
+"is removed if it is followed by non Devanagari letter. For instance,\n"
+"typing \"har..\" produces \"𑆲𑆫𑇅\", not \"𑆲𑆫𑇀𑇅\"."
 msgstr ""
 
 #: MIM/lsymbol.mim:23
@@ -331,14 +369,90 @@ msgid ""
 "It provides access to a broad category of symbols by using the\n"
 "technique of showing multiple alternatives based on the starter keys\n"
 "pressed.  For instance,\n"
-"   \"/->\" -> arrows (e.g. →↑)\n"
-"   \"/||\" -> hand genstures (e.g. 👍👎)\n"
-"   \"/:)\" -> happy faces (e.g. ☺😃)\n"
-"   \"/:(\" -> unhappy faces (e.g. 😢😡)\n"
-"   \"/<3\" -> hearts (e.g. ♥♡)\n"
-"   \"/*\"  -> flowers and stars (e.g. 🌹★)\n"
-"   \"&&\" -> spiritual (e.g. ☸☯)   \"/xx\" -> checks (e.g. ✔✘)\n"
-"   \"$\" -> currency (€£)          \"@\" -> legal/text signs (e.g "
+"   \"/->\" -> arrows (e.g.  →←↑↓ 👉👈👆👇✋ ►◄▲▾ ◤◥◣◢)\n"
+"   \"/||\" -> hand gestures (e.g. 👍👎👍👎👌✋👏🙆 🙏👋🙌✌✊👊 💁🙋💪✍💆💅)\n"
+"   \"/:)\" -> happy faces (e.g. ☺️ 😃😅😆😉😇 😂😏😛😜😝😋 😉💏💋😍😘😚 😽😻)\n"
+"   \"/:(\" -> unhappy faces (e.g. 😢😩😡😭😪 🙈🙊🙉)\n"
+"   \"/<3\" -> hearts (e.g. ♥️🤍️💔💖💘 💓💞💕💌💑😍😘)\n"
+"   \"/*\"  -> flowers and stars (e.g. 🌹💐❁✽ ★☆⭐🌟💫✨🌠✯🌃 ☀❂✷✸✹🌞⛅🌅🌇 💡☄⚡ϟ🔥🌈🎆 ❄❆❅)\n"
+"   \"/&&\" -> spiritual (e.g. 💀☠️👹👼😇 ☸️✡️☯️✝️☦️☪️ 🕉️🛐☮️🕎🪯 💒⛪🙈🙊🙉 卍卐☯☬✙)\n"
+"   \"/xx\" -> checks (e.g. ✔✘☐☑☒)\n"
+"   \"/$\" -> currency (e.g. €£¥﷼₱₹ 💰💵💶💴💷)\n"
+"   \"/@\" -> legal/text signs (e.g ©®™§¶†‡)\n"
+"   \"/^\" -> math symbols (e.g. √)\n"
+"   \"/z\" -> zodiac symbols (e.g. ♈♉♊♋♌♍ ♎♏♐♑♒♓)\n"
+"   \"/p\" -> astrological planet symbols (e.g. ☉☽☿♀⊕♂♃♄♅♆♇)\n"
+"   \"/ \" -> zero width joiners (currently only U+ZERO WIDTH NON-JOINER)\n"
+"\n"
+"The user can select the appropriate symbol using ↑,↓,→,←\n"
+"(or C-p, C-n, C-f, C-b) keys and/or the digits.\n"
+"\n"
+"Other miscellaneous keys are:\n"
+"   \"//\" -> \"/\"\n"
+"   \"/...\" -> \"…\"\n"
+"\n"
+"This input methods is registered as one of fallback input methods by "
+"default.\n"
+"See the documentation page of m17n input methods for more detail.\n"
+"  <http://www.nongnu.org/m17n/manual-en/m17nDBData.html#mim-list>"
+msgstr ""
+
+#: MIM/math-latex.mim:35
+msgid ""
+"If this variable is 1 (the default is 1), the latex commands are\n"
+"recognized only when you type them after backslash '\\'.  In other words,\n"
+"you don't have to turn off this input method to input normal ASCII "
+"characters."
+msgstr ""
+
+#: MIM/ml-pn-c.mim:27
+msgid ""
+"Puthu Nira Charutha\n"
+"See the paper at "
+"http://languageinindia.com/july2023/drajithnewkeyboardsmalayalamfinal1.html\n"
+"Original Author : Ajith R <ajithramayyan at yahoo dot co dot in>\n"
+"See https://ajithramayyan.gitlab.io/puthunira/ for usage\n"
+"നിർദ്ദേശങ്ങള്‍ക്കായ് https://ajithramayyan.gitlab.io/puthunira/ എന്ന കണ്ണി "
+"കാണുക\n"
+msgstr ""
+
+#: MIM/ml-pn-c.mim:38
+msgid "If this variable is 1 (the default), the geminate of nga ങ്ങ is used"
+msgstr ""
+
+#: MIM/ml-pn-c.mim:41
+msgid "If this variable is 1 (the default), the geminate of nja ഞ്ഞ is used"
+msgstr ""
+
+#: MIM/ml-pn-c.mim:44
+msgid ""
+"If this variable is 1, only atomic chillu are used; otherwise legacy "
+"encoding used when defined (the default)"
+msgstr ""
+
+#: MIM/ml-pn-c.mim:47
+msgid ""
+"If this variable is 1, archaic form of au ൌ is used; otherwise the common "
+"form ൗ is used (the default). The position of length mark ൗ is interchanged "
+"with that of ൌ"
+msgstr ""
+
+#: MIM/ml-swanalekha.mim:32
+msgid "Show lookup table"
+msgstr ""
+
+#: MIM/mr-modi-itrans.mim:47
+msgid ""
+"If this variable is 1 (the default), the last Halant in a syllable\n"
+"is removed if it is followed by non Devanagari letter. For instance,\n"
+"typing \"har..\" produces \"𑘮𑘨𑙁\", not \"𑘮𑘨𑘿𑙁\"."
+msgstr ""
+
+#: MIM/sa-grantha-itrans.mim:40
+msgid ""
+"If this variable is 1 (the default), the last Halant in a syllable\n"
+"is removed if it is followed by non Devanagari letter. For instance,\n"
+"typing \"har..\" produces \"𑌹𑌰।\", not \"𑌹𑌰𑍍।\"."
 msgstr ""
 
 #: MIM/si-wijesekera.mim:36
@@ -360,6 +474,15 @@ msgstr ""
 msgid ""
 "Surrounding text vs. preedit\n"
 "If 1, try to use surrounding text.  Otherwise, use preedit."
+msgstr ""
+
+#: MIM/ta-remington.mim:23
+msgid ""
+"Tamil Remington Layout\n"
+"Author: Mohan R <mohan43u@gmail.com>\n"
+"Derived From: "
+"https://github.com/thamizha/ekalappai/blob/master/installer/app/keyboards/Tam"
+"il-typewriter.txt.in\n"
 msgstr ""
 
 #: MIM/tai-sonla.mim:30
@@ -395,18 +518,22 @@ msgstr ""
 
 #: MIM/unicode.mim:26
 msgid ""
-"Input method for Unicode BMP characters using hexadigits.\n"
-"Type C-u followed by four hexadecimal numbers [0-9A-Fa-f]\n"
+"Input method for Unicode characters using hexadigits.\n"
+"Type C-u followed by hexadecimal numbers [0-9A-Fa-f]\n"
 "of a Unicode character code.\n"
+"To finish and insert the resulting character, type a space.\n"
+"\n"
+"If you type more than 5 hex digits and finish with space,\n"
+"the result is empty and nothing at all is inserted.\n"
 msgstr ""
 
-#: MIM/unicode.mim:34
+#: MIM/unicode.mim:38
 msgid ""
 "Preedit prompt\n"
 "Prompt string shown in the preedit area while typing hexadecimal numbers."
 msgstr ""
 
-#: MIM/unicode.mim:38
+#: MIM/unicode.mim:42
 msgid ""
 "Start Unicode\n"
 "Start typing hexadecimal numbers of Unicode character."

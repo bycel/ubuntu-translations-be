@@ -3,25 +3,19 @@
 # This file is distributed under the same license as the gawk package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gawk\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-04-14 14:48+0300\n"
-"PO-Revision-Date: 2023-05-27 12:38+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2022-11-17 19:56+0200\n"
+"PO-Revision-Date: 2020-05-03 16:56+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:25+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:41+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: array.c:249
 #, c-format
@@ -69,14 +63,25 @@ msgstr ""
 msgid "%s: second argument is not an array"
 msgstr ""
 
-#: array.c:835
+#: array.c:834 field.c:1006 field.c:1100
 #, c-format
-msgid "%s: first argument cannot be SYMTAB"
+msgid "%s: cannot use %s as second argument"
 msgstr ""
 
-#: array.c:838
+#: array.c:842
 #, c-format
-msgid "%s: first argument cannot be FUNCTAB"
+msgid "%s: first argument cannot be SYMTAB without a second argument"
+msgstr ""
+
+#: array.c:844
+#, c-format
+msgid "%s: first argument cannot be FUNCTAB without a second argument"
+msgstr ""
+
+#: array.c:851
+msgid ""
+"asort/asorti: using the same array as source and destination without a third "
+"argument is silly."
 msgstr ""
 
 #: array.c:856
@@ -457,8 +462,8 @@ msgstr ""
 msgid "shadow_funcs() called twice!"
 msgstr ""
 
-#: awkgram.y:4963
-msgid "there were shadowed variables."
+#: awkgram.y:4983
+msgid "there were shadowed variables"
 msgstr ""
 
 #: awkgram.y:5060
@@ -528,6 +533,10 @@ msgstr ""
 msgid "invalid target of assignment (opcode %s)"
 msgstr ""
 
+#: awkgram.y:6241
+msgid "statement has no effect"
+msgstr ""
+
 #: awkgram.y:6756
 #, c-format
 msgid ""
@@ -571,6 +580,11 @@ msgstr ""
 msgid "namespace name `%s' must meet identifier naming rules"
 msgstr ""
 
+#: builtin.c:98 builtin.c:105
+#, c-format
+msgid "%s: called with %d arguments"
+msgstr ""
+
 #: builtin.c:130
 #, c-format
 msgid "%s to \"%s\" failed: %s"
@@ -593,6 +607,12 @@ msgstr ""
 #: builtin.c:217
 #, c-format
 msgid "exp: argument %g is out of range"
+msgstr ""
+
+#: builtin.c:281 builtin.c:618 builtin.c:2201 builtin.c:2263 builtin.c:2517
+#: builtin.c:2550
+#, c-format
+msgid "%s: received non-string argument"
 msgstr ""
 
 #: builtin.c:298
@@ -637,12 +657,6 @@ msgstr ""
 
 #: builtin.c:595
 msgid "`length(array)' is a gawk extension"
-msgstr ""
-
-#: builtin.c:281 builtin.c:618 builtin.c:2201 builtin.c:2263 builtin.c:2517
-#: builtin.c:2550
-#, c-format
-msgid "%s: received non-string argument"
 msgstr ""
 
 #: builtin.c:652 builtin.c:1863
@@ -691,28 +705,14 @@ msgstr ""
 msgid "fatal: no `$' supplied for positional field width or precision"
 msgstr ""
 
-#: builtin.c:1024
-msgid "`l' is meaningless in awk formats; ignored"
+#: builtin.c:1104
+#, c-format
+msgid "`%c' is meaningless in awk formats; ignored"
 msgstr ""
 
-#: builtin.c:1028
-msgid "fatal: `l' is not permitted in POSIX awk formats"
-msgstr ""
-
-#: builtin.c:1041
-msgid "`L' is meaningless in awk formats; ignored"
-msgstr ""
-
-#: builtin.c:1045
-msgid "fatal: `L' is not permitted in POSIX awk formats"
-msgstr ""
-
-#: builtin.c:1058
-msgid "`h' is meaningless in awk formats; ignored"
-msgstr ""
-
-#: builtin.c:1062
-msgid "fatal: `h' is not permitted in POSIX awk formats"
+#: builtin.c:1108
+#, c-format
+msgid "fatal: `%c' is not permitted in POSIX awk formats"
 msgstr ""
 
 #: builtin.c:1139
@@ -762,6 +762,11 @@ msgstr ""
 msgid "too many arguments supplied for format string"
 msgstr ""
 
+#: builtin.c:1752
+#, c-format
+msgid "%s: received non-string format string argument"
+msgstr ""
+
 #: builtin.c:1767
 msgid "sprintf: no arguments"
 msgstr ""
@@ -772,6 +777,17 @@ msgstr ""
 
 #: builtin.c:1816
 msgid "printf: attempt to write to closed write end of two-way pipe"
+msgstr ""
+
+#: builtin.c:1884 builtin.c:4096
+#, c-format
+msgid "%s: received non-numeric third argument"
+msgstr ""
+
+#: builtin.c:1891 builtin.c:2081 builtin.c:2587 builtin.c:3586 builtin.c:3627
+#: builtin.c:4227
+#, c-format
+msgid "%s: received non-numeric second argument"
 msgstr ""
 
 #: builtin.c:1902
@@ -823,12 +839,6 @@ msgstr ""
 msgid "strftime: format value in PROCINFO[\"strftime\"] has numeric type"
 msgstr ""
 
-#: builtin.c:1891 builtin.c:2081 builtin.c:2587 builtin.c:3586 builtin.c:3627
-#: builtin.c:4227
-#, c-format
-msgid "%s: received non-numeric second argument"
-msgstr ""
-
 #: builtin.c:2091
 msgid "strftime: second argument less than 0 or too big for time_t"
 msgstr ""
@@ -867,6 +877,11 @@ msgstr ""
 msgid "match: third argument is not an array"
 msgstr ""
 
+#: builtin.c:2780
+#, c-format
+msgid "%s: cannot use %s as third argument"
+msgstr ""
+
 #: builtin.c:3027
 #, c-format
 msgid "gensub: third argument `%.*s' treated as 1"
@@ -877,9 +892,17 @@ msgstr ""
 msgid "%s: can be called indirectly only with two arguments"
 msgstr ""
 
-#: builtin.c:3369
+#: builtin.c:3409
+msgid "indirect call to gensub requires three or four arguments"
+msgstr ""
+
+#: builtin.c:3471
+msgid "indirect call to match requires two or three arguments"
+msgstr ""
+
+#: builtin.c:3515
 #, c-format
-msgid "indirect call to %s requires at least two arguments"
+msgid "indirect call to %s requires two to four arguments"
 msgstr ""
 
 #: builtin.c:3592
@@ -942,6 +965,21 @@ msgstr ""
 msgid "dcgettext: `%s' is not a valid locale category"
 msgstr ""
 
+#: builtin.c:3989 builtin.c:4007
+#, c-format
+msgid "%s: received non-string third argument"
+msgstr ""
+
+#: builtin.c:4062 builtin.c:4083
+#, c-format
+msgid "%s: received non-string fifth argument"
+msgstr ""
+
+#: builtin.c:4072 builtin.c:4089
+#, c-format
+msgid "%s: received non-string fourth argument"
+msgstr ""
+
 #: builtin.c:4217 mpfr.c:1337
 msgid "intdiv: third argument is not an array"
 msgstr ""
@@ -954,10 +992,10 @@ msgstr ""
 msgid "typeof: second argument is not an array"
 msgstr ""
 
-#: builtin.c:4152
+#: builtin.c:4352
 #, c-format
 msgid ""
-"typeof detected invalid flags combination `%s'; please file a bug report."
+"typeof detected invalid flags combination `%s'; please file a bug report"
 msgstr ""
 
 #: builtin.c:4394
@@ -990,14 +1028,14 @@ msgstr ""
 msgid "info: invalid option - `%s'"
 msgstr ""
 
-#: command.y:323
+#: command.y:324
 #, c-format
-msgid "source: `%s': already sourced."
+msgid "source: `%s': already sourced"
 msgstr ""
 
-#: command.y:328
+#: command.y:329
 #, c-format
-msgid "save: `%s': command not permitted."
+msgid "save: `%s': command not permitted"
 msgstr ""
 
 #: command.y:342
@@ -1075,191 +1113,190 @@ msgstr ""
 msgid "non-zero integer value"
 msgstr ""
 
-#: command.y:819
+#: command.y:820
 msgid ""
-"backtrace [N] - print trace of all or N innermost (outermost if N < 0) "
-"frames."
+"backtrace [N] - print trace of all or N innermost (outermost if N < 0) frames"
 msgstr ""
 
-#: command.y:821
+#: command.y:822
 msgid ""
-"break [[filename:]N|function] - set breakpoint at the specified location."
+"break [[filename:]N|function] - set breakpoint at the specified location"
 msgstr ""
 
-#: command.y:823
-msgid "clear [[filename:]N|function] - delete breakpoints previously set."
+#: command.y:824
+msgid "clear [[filename:]N|function] - delete breakpoints previously set"
 msgstr ""
 
-#: command.y:825
+#: command.y:826
 msgid ""
 "commands [num] - starts a list of commands to be executed at a "
-"breakpoint(watchpoint) hit."
+"breakpoint(watchpoint) hit"
 msgstr ""
 
-#: command.y:827
+#: command.y:828
 msgid ""
-"condition num [expr] - set or clear breakpoint or watchpoint condition."
+"condition num [expr] - set or clear breakpoint or watchpoint condition"
 msgstr ""
 
-#: command.y:829
-msgid "continue [COUNT] - continue program being debugged."
+#: command.y:830
+msgid "continue [COUNT] - continue program being debugged"
 msgstr ""
 
-#: command.y:831
-msgid "delete [breakpoints] [range] - delete specified breakpoints."
+#: command.y:832
+msgid "delete [breakpoints] [range] - delete specified breakpoints"
 msgstr ""
 
-#: command.y:833
-msgid "disable [breakpoints] [range] - disable specified breakpoints."
+#: command.y:834
+msgid "disable [breakpoints] [range] - disable specified breakpoints"
 msgstr ""
 
-#: command.y:835
-msgid "display [var] - print value of variable each time the program stops."
+#: command.y:836
+msgid "display [var] - print value of variable each time the program stops"
 msgstr ""
 
-#: command.y:837
-msgid "down [N] - move N frames down the stack."
+#: command.y:838
+msgid "down [N] - move N frames down the stack"
 msgstr ""
 
-#: command.y:839
-msgid "dump [filename] - dump instructions to file or stdout."
+#: command.y:840
+msgid "dump [filename] - dump instructions to file or stdout"
 msgstr ""
 
-#: command.y:841
+#: command.y:842
 msgid ""
-"enable [once|del] [breakpoints] [range] - enable specified breakpoints."
+"enable [once|del] [breakpoints] [range] - enable specified breakpoints"
 msgstr ""
 
-#: command.y:843
-msgid "end - end a list of commands or awk statements."
+#: command.y:844
+msgid "end - end a list of commands or awk statements"
 msgstr ""
 
-#: command.y:845
-msgid "eval stmt|[p1, p2, ...] - evaluate awk statement(s)."
+#: command.y:846
+msgid "eval stmt|[p1, p2, ...] - evaluate awk statement(s)"
 msgstr ""
 
-#: command.y:847
-msgid "exit - (same as quit) exit debugger."
+#: command.y:848
+msgid "exit - (same as quit) exit debugger"
 msgstr ""
 
-#: command.y:849
-msgid "finish - execute until selected stack frame returns."
+#: command.y:850
+msgid "finish - execute until selected stack frame returns"
 msgstr ""
 
-#: command.y:851
-msgid "frame [N] - select and print stack frame number N."
+#: command.y:852
+msgid "frame [N] - select and print stack frame number N"
 msgstr ""
 
-#: command.y:853
-msgid "help [command] - print list of commands or explanation of command."
+#: command.y:854
+msgid "help [command] - print list of commands or explanation of command"
 msgstr ""
 
-#: command.y:855
-msgid "ignore N COUNT - set ignore-count of breakpoint number N to COUNT."
+#: command.y:856
+msgid "ignore N COUNT - set ignore-count of breakpoint number N to COUNT"
 msgstr ""
 
-#: command.y:857
+#: command.y:858
 msgid ""
 "info topic - "
-"source|sources|variables|functions|break|frame|args|locals|display|watch."
+"source|sources|variables|functions|break|frame|args|locals|display|watch"
 msgstr ""
 
-#: command.y:859
-msgid "list [-|+|[filename:]lineno|function|range] - list specified line(s)."
+#: command.y:860
+msgid "list [-|+|[filename:]lineno|function|range] - list specified line(s)"
 msgstr ""
 
-#: command.y:861
-msgid "next [COUNT] - step program, proceeding through subroutine calls."
+#: command.y:862
+msgid "next [COUNT] - step program, proceeding through subroutine calls"
 msgstr ""
 
-#: command.y:863
+#: command.y:864
 msgid ""
-"nexti [COUNT] - step one instruction, but proceed through subroutine calls."
+"nexti [COUNT] - step one instruction, but proceed through subroutine calls"
 msgstr ""
 
-#: command.y:865
-msgid "option [name[=value]] - set or display debugger option(s)."
+#: command.y:866
+msgid "option [name[=value]] - set or display debugger option(s)"
 msgstr ""
 
-#: command.y:867
-msgid "print var [var] - print value of a variable or array."
+#: command.y:868
+msgid "print var [var] - print value of a variable or array"
 msgstr ""
 
-#: command.y:869
-msgid "printf format, [arg], ... - formatted output."
+#: command.y:870
+msgid "printf format, [arg], ... - formatted output"
 msgstr ""
 
-#: command.y:871
-msgid "quit - exit debugger."
+#: command.y:872
+msgid "quit - exit debugger"
 msgstr ""
 
-#: command.y:873
-msgid "return [value] - make selected stack frame return to its caller."
+#: command.y:874
+msgid "return [value] - make selected stack frame return to its caller"
 msgstr ""
 
-#: command.y:875
-msgid "run - start or restart executing program."
+#: command.y:876
+msgid "run - start or restart executing program"
 msgstr ""
 
-#: command.y:878
-msgid "save filename - save commands from the session to file."
+#: command.y:879
+msgid "save filename - save commands from the session to file"
 msgstr ""
 
-#: command.y:881
-msgid "set var = value - assign value to a scalar variable."
+#: command.y:882
+msgid "set var = value - assign value to a scalar variable"
 msgstr ""
 
-#: command.y:883
+#: command.y:884
 msgid ""
-"silent - suspends usual message when stopped at a breakpoint/watchpoint."
+"silent - suspends usual message when stopped at a breakpoint/watchpoint"
 msgstr ""
 
-#: command.y:885
-msgid "source file - execute commands from file."
+#: command.y:886
+msgid "source file - execute commands from file"
 msgstr ""
 
-#: command.y:887
-msgid "step [COUNT] - step program until it reaches a different source line."
+#: command.y:888
+msgid "step [COUNT] - step program until it reaches a different source line"
 msgstr ""
 
-#: command.y:889
-msgid "stepi [COUNT] - step one instruction exactly."
+#: command.y:890
+msgid "stepi [COUNT] - step one instruction exactly"
 msgstr ""
 
-#: command.y:891
-msgid "tbreak [[filename:]N|function] - set a temporary breakpoint."
+#: command.y:892
+msgid "tbreak [[filename:]N|function] - set a temporary breakpoint"
 msgstr ""
 
-#: command.y:893
-msgid "trace on|off - print instruction before executing."
+#: command.y:894
+msgid "trace on|off - print instruction before executing"
 msgstr ""
 
-#: command.y:895
-msgid "undisplay [N] - remove variable(s) from automatic display list."
+#: command.y:896
+msgid "undisplay [N] - remove variable(s) from automatic display list"
 msgstr ""
 
-#: command.y:897
+#: command.y:898
 msgid ""
 "until [[filename:]N|function] - execute until program reaches a different "
-"line or line N within current frame."
+"line or line N within current frame"
 msgstr ""
 
-#: command.y:899
-msgid "unwatch [N] - remove variable(s) from watch list."
+#: command.y:900
+msgid "unwatch [N] - remove variable(s) from watch list"
 msgstr ""
 
-#: command.y:901
-msgid "up [N] - move N frames up the stack."
+#: command.y:902
+msgid "up [N] - move N frames up the stack"
 msgstr ""
 
-#: command.y:903
-msgid "watch var - set a watchpoint for a variable."
+#: command.y:904
+msgid "watch var - set a watchpoint for a variable"
 msgstr ""
 
-#: command.y:905
+#: command.y:906
 msgid ""
 "where [N] - (same as backtrace) print trace of all or N innermost (outermost "
-"if N < 0) frames."
+"if N < 0) frames"
 msgstr ""
 
 #: command.y:1017 debug.c:423 gawkapi.c:260 msg.c:142
@@ -1301,35 +1338,35 @@ msgid "undefined command: %s\n"
 msgstr ""
 
 #: debug.c:257
-msgid "set or show the number of lines to keep in history file."
+msgid "set or show the number of lines to keep in history file"
 msgstr ""
 
 #: debug.c:259
-msgid "set or show the list command window size."
+msgid "set or show the list command window size"
 msgstr ""
 
 #: debug.c:261
-msgid "set or show gawk output file."
+msgid "set or show gawk output file"
 msgstr ""
 
 #: debug.c:263
-msgid "set or show debugger prompt."
+msgid "set or show debugger prompt"
 msgstr ""
 
 #: debug.c:265
-msgid "(un)set or show saving of command history (value=on|off)."
+msgid "(un)set or show saving of command history (value=on|off)"
 msgstr ""
 
 #: debug.c:267
-msgid "(un)set or show saving of options (value=on|off)."
+msgid "(un)set or show saving of options (value=on|off)"
 msgstr ""
 
 #: debug.c:269
-msgid "(un)set or show instruction tracing (value=on|off)."
+msgid "(un)set or show instruction tracing (value=on|off)"
 msgstr ""
 
 #: debug.c:358
-msgid "program not running."
+msgid "program not running"
 msgstr ""
 
 #: debug.c:475
@@ -1337,8 +1374,8 @@ msgstr ""
 msgid "source file `%s' is empty.\n"
 msgstr ""
 
-#: debug.c:493
-msgid "no current source file."
+#: debug.c:502
+msgid "no current source file"
 msgstr ""
 
 #: debug.c:527
@@ -1346,9 +1383,9 @@ msgstr ""
 msgid "cannot find source file named `%s': %s"
 msgstr ""
 
-#: debug.c:542
+#: debug.c:551
 #, c-format
-msgid "WARNING: source file `%s' modified since program compilation.\n"
+msgid "warning: source file `%s' modified since program compilation.\n"
 msgstr ""
 
 #: debug.c:573
@@ -1387,9 +1424,9 @@ msgid ""
 "\n"
 msgstr ""
 
-#: debug.c:778
+#: debug.c:787
 #, c-format
-msgid "\tno of hits = %ld\n"
+msgid "\tnumber of hits = %ld\n"
 msgstr ""
 
 #: debug.c:789
@@ -1478,9 +1515,9 @@ msgstr ""
 msgid "array `%s' is empty\n"
 msgstr ""
 
-#: debug.c:1132 debug.c:1184
+#: debug.c:1144 debug.c:1196
 #, c-format
-msgid "[\"%.*s\"] not in array `%s'\n"
+msgid "subscript \"%.*s\" is not in array `%s'\n"
 msgstr ""
 
 #: debug.c:1200
@@ -1513,19 +1550,19 @@ msgstr ""
 msgid "watchpoint %d is unconditional\n"
 msgstr ""
 
-#: debug.c:1514
+#: debug.c:1527
 #, c-format
-msgid "No display item numbered %ld"
+msgid "no display item numbered %ld"
 msgstr ""
 
-#: debug.c:1517
+#: debug.c:1530
 #, c-format
-msgid "No watch item numbered %ld"
+msgid "no watch item numbered %ld"
 msgstr ""
 
-#: debug.c:1543
+#: debug.c:1556
 #, c-format
-msgid "%d: [\"%.*s\"] not in array `%s'\n"
+msgid "%d: subscript \"%.*s\" is not in array `%s'\n"
 msgstr ""
 
 #: debug.c:1796
@@ -1598,9 +1635,9 @@ msgstr ""
 msgid "cannot set breakpoint in file `%s'\n"
 msgstr ""
 
-#: debug.c:2525 debug.c:3383
+#: debug.c:2400
 #, c-format
-msgid "line number %d in file `%s' out of range"
+msgid "line number %d in file `%s' is out of range"
 msgstr ""
 
 #: debug.c:2404
@@ -1621,6 +1658,11 @@ msgstr ""
 #: debug.c:2436
 #, c-format
 msgid "breakpoint %d set at file `%s', line %d is unconditional\n"
+msgstr ""
+
+#: debug.c:2525 debug.c:3383
+#, c-format
+msgid "line number %d in file `%s' out of range"
 msgstr ""
 
 #: debug.c:2541 debug.c:2563
@@ -1665,6 +1707,11 @@ msgstr ""
 msgid "Can only debug programs provided with the `-f' option.\n"
 msgstr ""
 
+#: debug.c:2836
+#, c-format
+msgid "Restarting ...\n"
+msgstr ""
+
 #: debug.c:2941
 #, c-format
 msgid "Failed to restart debugger"
@@ -1689,9 +1736,9 @@ msgstr ""
 msgid "error (%s): cannot restart, ignoring rest of the commands\n"
 msgstr ""
 
-#: debug.c:2967
+#: debug.c:2983
 #, c-format
-msgid "Starting program: \n"
+msgid "Starting program:\n"
 msgstr ""
 
 #: debug.c:2993
@@ -1713,9 +1760,9 @@ msgstr ""
 msgid "Not stopped at any breakpoint; argument ignored.\n"
 msgstr ""
 
-#: debug.c:3032
+#: debug.c:3048
 #, c-format
-msgid "invalid breakpoint number %d."
+msgid "invalid breakpoint number %d"
 msgstr ""
 
 #: debug.c:3053
@@ -1728,9 +1775,9 @@ msgstr ""
 msgid "'finish' not meaningful in the outermost frame main()\n"
 msgstr ""
 
-#: debug.c:3229
+#: debug.c:3245
 #, c-format
-msgid "Run till return from "
+msgid "Run until return from "
 msgstr ""
 
 #: debug.c:3288
@@ -1806,9 +1853,14 @@ msgstr ""
 msgid "`return' not allowed in current context; statement ignored"
 msgstr ""
 
-#: debug.c:5753
+#: debug.c:5597
 #, c-format
-msgid "No symbol `%s' in current context"
+msgid "fatal error during eval, need to restart.\n"
+msgstr ""
+
+#: debug.c:5787
+#, c-format
+msgid "no symbol `%s' in current context"
 msgstr ""
 
 #: eval.c:404
@@ -2208,12 +2260,17 @@ msgstr ""
 msgid "revoutput: could not initialize REVOUT variable"
 msgstr ""
 
-#: extension/rwarray.c:119
-msgid "do_writea: first argument is not a string"
+#: extension/rwarray.c:145 extension/rwarray.c:548
+#, c-format
+msgid "%s: first argument is not a string"
 msgstr ""
 
-#: extension/rwarray.c:125
-msgid "do_writea: second argument is not an array"
+#: extension/rwarray.c:189
+msgid "writea: second argument is not an array"
+msgstr ""
+
+#: extension/rwarray.c:206
+msgid "writeall: unable to find SYMTAB array"
 msgstr ""
 
 #: extension/rwarray.c:226
@@ -2229,16 +2286,38 @@ msgstr ""
 msgid "array value has unknown type %d"
 msgstr ""
 
-#: extension/rwarray.c:292
-msgid "do_reada: first argument is not a string"
+#: extension/rwarray.c:398
+msgid ""
+"rwarray extension: received GMP/MPFR value but compiled without GMP/MPFR "
+"support."
 msgstr ""
 
-#: extension/rwarray.c:298
-msgid "do_reada: second argument is not an array"
+#: extension/rwarray.c:437
+#, c-format
+msgid "cannot free number with unknown type %d"
 msgstr ""
 
-#: extension/rwarray.c:342 extension/rwarray0.c:317
-msgid "do_reada: clear_array failed"
+#: extension/rwarray.c:442
+#, c-format
+msgid "cannot free value with unhandled type %d"
+msgstr ""
+
+#: extension/rwarray.c:481
+#, c-format
+msgid "readall: unable to set %s::%s"
+msgstr ""
+
+#: extension/rwarray.c:483
+#, c-format
+msgid "readall: unable to set %s"
+msgstr ""
+
+#: extension/rwarray.c:525
+msgid "reada: clear_array failed"
+msgstr ""
+
+#: extension/rwarray.c:611
+msgid "reada: second argument is not an array"
 msgstr ""
 
 #: extension/rwarray.c:648
@@ -2250,20 +2329,16 @@ msgstr ""
 msgid "treating recovered value with unknown type code %d as a string"
 msgstr ""
 
-#: extension/rwarray0.c:114
-msgid "do_writea: argument 0 is not a string"
+#: extension/rwarray.c:827
+msgid ""
+"rwarray extension: GMP/MPFR value in file but compiled without GMP/MPFR "
+"support."
 msgstr ""
 
-#: extension/rwarray0.c:120
-msgid "do_writea: argument 1 is not an array"
-msgstr ""
-
-#: extension/rwarray0.c:267
-msgid "do_reada: argument 0 is not a string"
-msgstr ""
-
-#: extension/rwarray0.c:273
-msgid "do_reada: argument 1 is not an array"
+#: extension/time.c:107
+msgid ""
+"The time extension is obsolete. Use the timex extension from gawkextlib "
+"instead."
 msgstr ""
 
 #: extension/time.c:153
@@ -2304,6 +2379,11 @@ msgstr ""
 
 #: field.c:992
 msgid "split: fourth argument is not an array"
+msgstr ""
+
+#: field.c:994 field.c:1093
+#, c-format
+msgid "%s: cannot use %s as fourth argument"
 msgstr ""
 
 #: field.c:1004
@@ -2396,11 +2476,11 @@ msgstr ""
 msgid "add_ext_func: received NULL name_space parameter"
 msgstr ""
 
-#: gawkapi.c:523
+#: gawkapi.c:524
 #, c-format
 msgid ""
 "node_to_awk_value: detected invalid numeric flags combination `%s'; please "
-"file a bug report."
+"file a bug report"
 msgstr ""
 
 #: gawkapi.c:562
@@ -2411,11 +2491,11 @@ msgstr ""
 msgid "node_to_awk_value: received null val"
 msgstr ""
 
-#: gawkapi.c:610 gawkapi.c:644 gawkapi.c:671 gawkapi.c:704
+#: gawkapi.c:633 gawkapi.c:670 gawkapi.c:700 gawkapi.c:737
 #, c-format
 msgid ""
 "node_to_awk_value detected invalid flags combination `%s'; please file a bug "
-"report."
+"report"
 msgstr ""
 
 #: gawkapi.c:1129
@@ -2464,6 +2544,61 @@ msgstr ""
 msgid "close of fd %d (`%s') failed: %s"
 msgstr ""
 
+#: io.c:724
+#, c-format
+msgid "`%.*s' used for input file and for output file"
+msgstr ""
+
+#: io.c:726
+#, c-format
+msgid "`%.*s' used for input file and input pipe"
+msgstr ""
+
+#: io.c:728
+#, c-format
+msgid "`%.*s' used for input file and two-way pipe"
+msgstr ""
+
+#: io.c:730
+#, c-format
+msgid "`%.*s' used for input file and output pipe"
+msgstr ""
+
+#: io.c:732
+#, c-format
+msgid "unnecessary mixing of `>' and `>>' for file `%.*s'"
+msgstr ""
+
+#: io.c:734
+#, c-format
+msgid "`%.*s' used for input pipe and output file"
+msgstr ""
+
+#: io.c:736
+#, c-format
+msgid "`%.*s' used for output file and output pipe"
+msgstr ""
+
+#: io.c:738
+#, c-format
+msgid "`%.*s' used for output file and two-way pipe"
+msgstr ""
+
+#: io.c:740
+#, c-format
+msgid "`%.*s' used for input pipe and output pipe"
+msgstr ""
+
+#: io.c:742
+#, c-format
+msgid "`%.*s' used for input pipe and two-way pipe"
+msgstr ""
+
+#: io.c:744
+#, c-format
+msgid "`%.*s' used for output pipe and two-way pipe"
+msgstr ""
+
 #: io.c:793
 msgid "redirection not allowed in sandbox mode"
 msgstr ""
@@ -2482,11 +2617,6 @@ msgstr ""
 #, c-format
 msgid ""
 "filename `%.*s' for `%s' redirection may be result of logical expression"
-msgstr ""
-
-#: io.c:732
-#, c-format
-msgid "unnecessary mixing of `>' and `>>' for file `%.*s'"
 msgstr ""
 
 #: io.c:933 io.c:958
@@ -2530,9 +2660,9 @@ msgid ""
 "reached system limit for open files: starting to multiplex file descriptors"
 msgstr ""
 
-#: io.c:1169
+#: io.c:1206
 #, c-format
-msgid "close of `%s' failed: %s."
+msgid "close of `%s' failed: %s"
 msgstr ""
 
 #: io.c:1214
@@ -2560,6 +2690,11 @@ msgstr ""
 #: io.c:1382
 #, c-format
 msgid "failure status (%d) on pipe close of `%s': %s"
+msgstr ""
+
+#: io.c:1385
+#, c-format
+msgid "failure status (%d) on two-way pipe close of `%s': %s"
 msgstr ""
 
 #: io.c:1388
@@ -2607,19 +2742,19 @@ msgstr ""
 msgid "error writing standard error: %s"
 msgstr ""
 
-#: io.c:1457
+#: io.c:1498
 #, c-format
-msgid "pipe flush of `%s' failed: %s."
+msgid "pipe flush of `%s' failed: %s"
 msgstr ""
 
-#: io.c:1460
+#: io.c:1501
 #, c-format
-msgid "co-process flush of pipe to `%s' failed: %s."
+msgid "co-process flush of pipe to `%s' failed: %s"
 msgstr ""
 
-#: io.c:1463
+#: io.c:1504
 #, c-format
-msgid "file flush of `%s' failed: %s."
+msgid "file flush of `%s' failed: %s"
 msgstr ""
 
 #: io.c:1647
@@ -2789,6 +2924,17 @@ msgstr ""
 msgid "IPv6 communication is not supported"
 msgstr ""
 
+#: main.c:240
+#, c-format
+msgid ""
+"%s: fatal: persistent memory allocator failed to initialize: return value "
+"%d, pma.c line: %d.\n"
+msgstr ""
+
+#: main.c:248
+msgid "persistent memory is not supported"
+msgstr ""
+
 #: main.c:360
 msgid "environment variable `POSIXLY_CORRECT' set: turning on `--posix'"
 msgstr ""
@@ -2808,6 +2954,10 @@ msgstr ""
 #: main.c:394
 #, c-format
 msgid "running %s setuid root may be a security problem"
+msgstr ""
+
+#: main.c:396
+msgid "The -r/--re-interval options no longer have any effect"
 msgstr ""
 
 #: main.c:450
@@ -2899,6 +3049,10 @@ msgstr ""
 msgid "\t-i includefile\t\t--include=includefile\n"
 msgstr ""
 
+#: main.c:633
+msgid "\t-I\t\t\t--trace\n"
+msgstr ""
+
 #: main.c:634
 msgid "\t-l library\t\t--load=library\n"
 msgstr ""
@@ -2972,10 +3126,11 @@ msgstr ""
 
 #. TRANSLATORS: --help output (end)
 #. no-wrap
-#: main.c:635
+#: main.c:665
 msgid ""
 "\n"
-"To report bugs, see node `Bugs' in `gawk.info'\n"
+"To report bugs, use the `gawkbug' program.\n"
+"For full instructions, see the node `Bugs' in `gawk.info'\n"
 "which is section `Reporting Problems and Bugs' in the\n"
 "printed version.  This same information may be found at\n"
 "https://www.gnu.org/software/gawk/manual/html_node/Bugs.html.\n"
@@ -3095,6 +3250,15 @@ msgstr ""
 msgid "-M ignored: MPFR/GMP support not compiled in"
 msgstr ""
 
+#: main.c:1779
+#, c-format
+msgid "Use `GAWK_PERSIST_FILE=%s gawk ...' instead of --persist."
+msgstr ""
+
+#: main.c:1781
+msgid "Persistent memory is not supported."
+msgstr ""
+
 #: main.c:1790
 #, c-format
 msgid "%s: option `-W %s' unrecognized, ignored\n"
@@ -3110,9 +3274,9 @@ msgstr ""
 msgid "PREC value `%.*s' is invalid"
 msgstr ""
 
-#: mpfr.c:610
+#: mpfr.c:720
 #, c-format
-msgid "RNDMODE value `%.*s' is invalid"
+msgid "ROUNDMODE value `%.*s' is invalid"
 msgstr ""
 
 #: mpfr.c:786
@@ -3121,6 +3285,11 @@ msgstr ""
 
 #: mpfr.c:788
 msgid "atan2: received non-numeric second argument"
+msgstr ""
+
+#: mpfr.c:827
+#, c-format
+msgid "%s: received negative argument %.*s"
 msgstr ""
 
 #: mpfr.c:894
@@ -3224,10 +3393,10 @@ msgstr ""
 msgid "escape sequence `\\%c' treated as plain `%c'"
 msgstr ""
 
-#: node.c:784
+#: node.c:790
 msgid ""
 "Invalid multibyte data detected. There may be a mismatch between your data "
-"and your locale."
+"and your locale"
 msgstr ""
 
 #: posix/gawkmisc.c:179
@@ -3344,12 +3513,45 @@ msgstr ""
 msgid "unfinished \\ escape"
 msgstr ""
 
+#: support/dfa.c:1319
+msgid "? at start of expression"
+msgstr ""
+
+#: support/dfa.c:1331
+msgid "* at start of expression"
+msgstr ""
+
+#: support/dfa.c:1345
+msgid "+ at start of expression"
+msgstr ""
+
+#: support/dfa.c:1400
+msgid "{...} at start of expression"
+msgstr ""
+
 #: support/dfa.c:1403
 msgid "invalid content of \\{\\}"
 msgstr ""
 
 #: support/dfa.c:1405
 msgid "regular expression too big"
+msgstr ""
+
+#: support/dfa.c:1555
+msgid "stray \\ before unprintable character"
+msgstr ""
+
+#: support/dfa.c:1557
+msgid "stray \\ before white space"
+msgstr ""
+
+#: support/dfa.c:1561
+#, c-format
+msgid "stray \\ before %lc"
+msgstr ""
+
+#: support/dfa.c:1562
+msgid "stray \\"
 msgstr ""
 
 #: support/dfa.c:1917

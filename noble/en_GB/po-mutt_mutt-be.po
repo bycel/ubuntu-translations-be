@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mutt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-12-11 13:17-0800\n"
+"POT-Creation-Date: 2023-09-09 14:47+0800\n"
 "PO-Revision-Date: 2020-05-03 16:57+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-03-22 14:05+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:42+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: account.c:181
 #, c-format
@@ -141,8 +141,8 @@ msgid "Mailcap compose entry requires %%s"
 msgstr ""
 
 #: attach.c:141 attach.c:274 background.c:335 commands.c:343 compose.c:1852
-#: compress.c:414 curs_lib.c:305 curs_lib.c:1059 sendlib.c:1479 sendlib.c:1517
-#: sendlib.c:1581
+#: compress.c:414 curs_lib.c:305 curs_lib.c:1059 sendlib.c:1488 sendlib.c:1526
+#: sendlib.c:1590
 #, c-format
 msgid "Error running \"%s\"!"
 msgstr ""
@@ -271,7 +271,7 @@ msgstr ""
 #. they just entered.
 #. 
 #: autocrypt/autocrypt.c:187
-msgid "That email address already has an autocrypt account"
+msgid "That email address is already assigned to an autocrypt account"
 msgstr ""
 
 #. L10N:
@@ -1272,6 +1272,16 @@ msgstr ""
 msgid "You may not delete the only attachment."
 msgstr ""
 
+#. L10N:
+#. Prompt when trying to hit <detach-file> on the first entry in
+#. the compose menu.  This entry is most likely the message they just
+#. typed.  Hitting yes will remove the entry and unlink the file, so
+#. it's worth confirming they really meant to do it.
+#. 
+#: compose.c:645
+msgid "Really delete the main message?"
+msgstr ""
+
 #: compose.c:746 compose.c:756 menu.c:695
 msgid "You are on the last entry."
 msgstr ""
@@ -1345,7 +1355,7 @@ msgstr ""
 
 #. L10N:
 #. "stat" is a system call. Do "man 2 stat" for more information.
-#: compose.c:1629 editmsg.c:98 editmsg.c:122 editmsg.c:137 sendlib.c:909
+#: compose.c:1629 editmsg.c:98 editmsg.c:122 editmsg.c:137 sendlib.c:918
 #, c-format
 msgid "Can't stat %s: %s"
 msgstr ""
@@ -2194,6 +2204,23 @@ msgstr ""
 msgid "no"
 msgstr ""
 
+#. L10N:
+#. In the mutt_yesorno() prompt, some variables and all
+#. quadoptions provide a '?' choice to provide the name of the
+#. configuration variable this prompt is dependent on.
+#. 
+#. For example, the prompt "Quit Mutt?" is dependent on the
+#. quadoption $quit.
+#. 
+#. Typing '?' at those prompts will print this message above
+#. the prompt, where %s is the name of the configuration
+#. variable.
+#. 
+#: curs_lib.c:478
+#, c-format
+msgid "See $%s for more information."
+msgstr ""
+
 #: curs_lib.c:532
 msgid "Exit Mutt?"
 msgstr ""
@@ -2329,7 +2356,7 @@ msgid "Invalid message number."
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:1009 curs_main.c:2234 pager.c:2796
+#: curs_main.c:1009 curs_main.c:2253 pager.c:2796
 msgid "Cannot delete message(s)"
 msgstr ""
 
@@ -2364,7 +2391,7 @@ msgid "Tag messages matching: "
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:1202 curs_main.c:2590 pager.c:3049
+#: curs_main.c:1202 curs_main.c:2609 pager.c:3049
 msgid "Cannot undelete message(s)"
 msgstr ""
 
@@ -2401,8 +2428,8 @@ msgstr ""
 msgid "Exit Mutt without saving?"
 msgstr ""
 
-#: curs_main.c:1551 curs_main.c:1587 curs_main.c:2068 curs_main.c:2100
-#: flags.c:312 thread.c:1207 thread.c:1263 thread.c:1331
+#: curs_main.c:1551 curs_main.c:1587 curs_main.c:2068 curs_main.c:2119
+#: flags.c:306 thread.c:1207 thread.c:1263 thread.c:1331
 msgid "Threading is not enabled."
 msgstr ""
 
@@ -2489,23 +2516,23 @@ msgstr ""
 msgid "You are on the first thread."
 msgstr ""
 
-#: curs_main.c:2086
+#: curs_main.c:2105
 msgid "Thread contains unread messages."
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:2190 pager.c:2763
+#: curs_main.c:2209 pager.c:2763
 msgid "Cannot delete message"
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:2271
+#: curs_main.c:2290
 msgid "Cannot edit message"
 msgstr ""
 
 #. L10N: This is displayed when the x-label on one or more
 #. * messages is edited.
-#: curs_main.c:2308 pager.c:3100
+#: curs_main.c:2327 pager.c:3100
 #, c-format
 msgid "%d labels changed."
 msgstr ""
@@ -2513,52 +2540,52 @@ msgstr ""
 #. L10N: This is displayed when editing an x-label, but no messages
 #. * were updated.  Possibly due to canceling at the prompt or if the new
 #. * label is the same as the old label.
-#: curs_main.c:2315 pager.c:3104
+#: curs_main.c:2334 pager.c:3104
 msgid "No labels changed."
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:2408
+#: curs_main.c:2427
 msgid "Cannot mark message(s) as read"
 msgstr ""
 
 #. L10N: This is the prompt for <mark-message>.  Whatever they
 #. enter will be prefixed by $mark_macro_prefix and will become
 #. a macro hotkey to jump to the currently selected message.
-#: curs_main.c:2444
+#: curs_main.c:2463
 msgid "Enter macro stroke: "
 msgstr ""
 
 #. L10N: "message hotkey" is the key bindings menu description of a
 #. macro created by <mark-message>.
-#: curs_main.c:2452
+#: curs_main.c:2471
 msgid "message hotkey"
 msgstr ""
 
 #. L10N: This is echoed after <mark-message> creates a new hotkey
 #. macro.  %s is the hotkey string ($mark_macro_prefix followed
 #. by whatever they typed at the prompt.)
-#: curs_main.c:2457
+#: curs_main.c:2476
 #, c-format
 msgid "Message bound to %s."
 msgstr ""
 
 #. L10N: This error is printed if <mark-message> cannot find a
 #. Message-ID for the currently selected message in the index.
-#: curs_main.c:2465
+#: curs_main.c:2484
 msgid "No message ID to macro."
 msgstr ""
 
 #. L10N: CHECK_ACL
-#: curs_main.c:2560 pager.c:3032
+#: curs_main.c:2579 pager.c:3032
 msgid "Cannot undelete message"
 msgstr ""
 
 #: edit.c:42
 msgid ""
 "~~\t\tinsert a line beginning with a single ~\n"
-"~b users\tadd users to the Bcc: field\n"
-"~c users\tadd users to the Cc: field\n"
+"~b addresses\tadd addresses to the Bcc: field\n"
+"~c addresses\tadd addresses to the Cc: field\n"
 "~f messages\tinclude messages\n"
 "~F messages\tsame as ~f, except also include headers\n"
 "~h\t\tedit the message header\n"
@@ -2658,11 +2685,11 @@ msgstr ""
 msgid "Can't append to folder: %s"
 msgstr ""
 
-#: flags.c:368
+#: flags.c:362
 msgid "Set flag"
 msgstr ""
 
-#: flags.c:368
+#: flags.c:362
 msgid "Clear flag"
 msgstr ""
 
@@ -2895,7 +2922,7 @@ msgstr ""
 #. %s is the authentication type, such as XOAUTH2 or OAUTHBEARER
 #. 
 #: imap/auth_oauth.c:39 imap/auth_sasl.c:109 imap/auth_sasl_gnu.c:55
-#: pop_auth.c:223 pop_auth.c:430 smtp.c:674 smtp.c:770 smtp.c:861
+#: pop_auth.c:223 pop_auth.c:430 smtp.c:674 smtp.c:770 smtp.c:862
 #, c-format
 msgid "Authenticating (%s)..."
 msgstr ""
@@ -3033,7 +3060,7 @@ msgstr ""
 msgid "Error opening mailbox"
 msgstr ""
 
-#: imap/imap.c:1058 imap/imap.c:2573 imap/message.c:1584 muttlib.c:2044
+#: imap/imap.c:1058 imap/imap.c:2592 imap/message.c:1584 muttlib.c:2044
 #, c-format
 msgid "Create %s?"
 msgstr ""
@@ -3097,7 +3124,7 @@ msgstr ""
 msgid "Unsubscribed from %s"
 msgstr ""
 
-#: imap/imap.c:2558 imap/message.c:1548
+#: imap/imap.c:2577 imap/message.c:1548
 #, c-format
 msgid "Copying %d messages to %s..."
 msgstr ""
@@ -3335,6 +3362,21 @@ msgstr ""
 msgid "%s: unknown command"
 msgstr ""
 
+#. L10N:
+#. When tab completing the :cd path argument, the folder browser
+#. will be invoked upon the second tab.  This message will be
+#. printed below the folder browser, to instruct the user how to
+#. select a directory for completion.
+#. 
+#. %s will print the key bound to <view-file>, which is
+#. '<Space>' by default.  If no keys are bound to <view-file>
+#. then %s will print the function name: '<view-file>'.
+#. 
+#: init.c:3348
+#, c-format
+msgid "Use '%s' to select a directory"
+msgstr ""
+
 #: init.c:3680
 #, c-format
 msgid "Error in command line: %s\n"
@@ -3391,26 +3433,52 @@ msgid "----- End forwarded message -----"
 msgstr ""
 
 #. L10N:
+#. $reply_regexp default value.
+#. 
+#. This is a regular expression that matches reply subject lines.
+#. By default, it only matches an initial "Re: ", which is the
+#. standardized Latin prefix.
+#. 
+#. However, many locales have other prefixes that are commonly used
+#. too, such as Aw in Germany.  To add other prefixes, modify the first
+#. parenthesized expression, such as:
+#. "^(re|aw)
+#. you can add multiple values, for example:
+#. "^(re|aw|se)
+#. 
+#. Important:
+#. - Use all lower case letters.
+#. - Don't remove the 're' prefix from the list of choices.
+#. - Please test the value you use inside Mutt.  A mistake here
+#. will break Mutt's threading behavior.  Note: the header cache
+#. can interfere with testing, so be sure to test with $header_cache
+#. unset.
+#. 
+#: init.h:3290
+msgid "^(re)(\\[[0-9]+\\])*:[ \t]*"
+msgstr ""
+
+#. L10N:
 #. $status_format default value
 #. 
-#: init.h:4326
+#: init.h:4476
 msgid ""
 "-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? "
 "Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?B? Back:%B?%?l? %l?]---"
-"(%s/%S)-%>-(%P)---"
+"(%s/%?T?%T/?%S)-%>-(%P)---"
 msgstr ""
 
 #. L10N:
 #. $ts_icon_format default value
 #. 
-#: init.h:4683
+#: init.h:4680
 msgid "M%?n?AIL&ail?"
 msgstr ""
 
 #. L10N:
 #. $ts_status_format default value
 #. 
-#: init.h:4700
+#: init.h:4697
 msgid "Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?"
 msgstr ""
 
@@ -3531,9 +3599,9 @@ msgid ""
 "    https://gitlab.com/muttmua/mutt/issues\n"
 msgstr ""
 
-#: main.c:84
+#: main.c:88
 msgid ""
-"Copyright (C) 1996-2021 Michael R. Elkins and others.\n"
+"Copyright (C) 1996-2023 Michael R. Elkins and others.\n"
 "Mutt comes with ABSOLUTELY NO WARRANTY; for details type `mutt -vv'.\n"
 "Mutt is free software, and you are welcome to redistribute it\n"
 "under certain conditions; type `mutt -vv' for details.\n"
@@ -4002,6 +4070,10 @@ msgstr ""
 msgid "Certificate host check failed: %s"
 msgstr ""
 
+#: mutt_ssl.c:1263 mutt_ssl_gnutls.c:883
+msgid "Untrusted server certificate"
+msgstr ""
+
 #: mutt_ssl.c:1272 mutt_ssl_gnutls.c:938
 msgid "This certificate belongs to:"
 msgstr ""
@@ -4213,9 +4285,9 @@ msgstr ""
 msgid "Can't save message to POP mailbox."
 msgstr ""
 
-#: muttlib.c:1990
+#: muttlib.c:2016
 #, c-format
-msgid "Append messages to %s?"
+msgid "Append message(s) to %s?"
 msgstr ""
 
 #: muttlib.c:2030
@@ -4353,12 +4425,12 @@ msgstr ""
 msgid "Help is currently being shown."
 msgstr ""
 
-#: pager.c:2615
-msgid "No more quoted text."
-msgstr ""
-
 #: pager.c:2598 pager.c:2631
 msgid "No more unquoted text after quoted text."
+msgstr ""
+
+#: pager.c:2615
+msgid "No more quoted text."
 msgstr ""
 
 #. L10N:
@@ -5022,9 +5094,9 @@ msgstr ""
 msgid "Command UIDL is not supported by server."
 msgstr ""
 
-#: pop.c:324
+#: pop.c:325
 #, c-format
-msgid "%d messages have been lost. Try reopening the mailbox."
+msgid "%d message(s) have been lost. Try reopening the mailbox."
 msgstr ""
 
 #: pop.c:440 pop.c:902
@@ -5183,6 +5255,16 @@ msgstr ""
 
 #: recvattach.c:62
 msgid "Print"
+msgstr ""
+
+#. L10N:
+#. Prompt to convert text attachments from the sent charset
+#. to the local $charset when saving them in the receive
+#. attachment menu.
+#. 
+#: recvattach.c:476
+#, c-format
+msgid "Convert attachment from %s to %s?"
 msgstr ""
 
 #: recvattach.c:592
@@ -5420,6 +5502,10 @@ msgstr ""
 msgid "Error: score: invalid number"
 msgstr ""
 
+#: send.c:241 send.c:2444
+msgid "No recipients were specified."
+msgstr ""
+
 #: send.c:268
 msgid "No subject, abort?"
 msgstr ""
@@ -5495,19 +5581,14 @@ msgstr ""
 msgid "Saving Fcc to %s"
 msgstr ""
 
-#: send.c:1282
-msgid "Warning: Fcc to an IMAP mailbox is not supported in batch mode"
-msgstr ""
-
 #. L10N:
-#. Printed after the "Fcc to an IMAP mailbox is not supported" message.
-#. To make it clearer that the message doesn't mean Mutt is aborting
-#. sending the mail too.
-#. %s is the full mailbox URL, including imap(s)://
+#. Printed when a FCC in batch mode fails.  Batch mode will abort
+#. if $fcc_before_send is set.
+#. %s is the mailbox name.
 #. 
-#: send.c:1289
+#: send.c:1277
 #, c-format
-msgid "Skipping Fcc to %s"
+msgid "Warning: Fcc to %s failed"
 msgstr ""
 
 #. L10N:
@@ -5573,10 +5654,6 @@ msgstr ""
 msgid "No recipients are specified!"
 msgstr ""
 
-#: send.c:241 send.c:2444
-msgid "No recipients were specified."
-msgstr ""
-
 #: send.c:2460
 msgid "No subject, abort sending?"
 msgstr ""
@@ -5595,6 +5672,14 @@ msgstr ""
 
 #: send.c:2553 smtp.c:240
 msgid "Sending message..."
+msgstr ""
+
+#. L10N:
+#. In batch mode with $fcc_before_send set, Mutt will abort if any of
+#. the Fcc's fails.
+#. 
+#: send.c:2566
+msgid "Fcc failed.  Aborting sending."
 msgstr ""
 
 #: send.c:2607
@@ -5627,28 +5712,28 @@ msgstr ""
 msgid "Editing backgrounded."
 msgstr ""
 
-#: sendlib.c:459
+#: sendlib.c:468
 msgid "No boundary parameter found! [report this error]"
 msgstr ""
 
-#: sendlib.c:490
+#: sendlib.c:499
 #, c-format
 msgid "%s no longer exists!"
 msgstr ""
 
-#: sendlib.c:915
+#: sendlib.c:924
 #, c-format
 msgid "%s isn't a regular file."
 msgstr ""
 
-#: sendlib.c:1086
+#: sendlib.c:1095
 #, c-format
 msgid "Could not open %s"
 msgstr ""
 
 #. L10N: Prompt for $forward_decrypt when attaching or forwarding
 #. a message
-#: sendlib.c:1321
+#: sendlib.c:1330
 msgid "Decrypt message attachment?"
 msgstr ""
 
@@ -5657,7 +5742,7 @@ msgstr ""
 #. the message.  If they answer yes the message will be
 #. forwarded without decoding.
 #. 
-#: sendlib.c:1402
+#: sendlib.c:1411
 msgid ""
 "There was a problem decoding the message for attachment.  Try again with "
 "decoding turned off?"
@@ -5668,7 +5753,7 @@ msgstr ""
 #. the message.  If they answer yes the message will be attached
 #. without decrypting it.
 #. 
-#: sendlib.c:1410
+#: sendlib.c:1419
 msgid ""
 "There was a problem decrypting the message for attachment.  Try again with "
 "decryption turned off?"
@@ -5679,7 +5764,7 @@ msgstr ""
 #. should be a mime type, e.g. text/html.  This error is generated
 #. if that is missing.
 #. 
-#: sendlib.c:1495
+#: sendlib.c:1504
 #, c-format
 msgid "Missing mime type from output of \"%s\"!"
 msgstr ""
@@ -5689,7 +5774,7 @@ msgstr ""
 #. should be a blank line.  This error is generated if the blank line
 #. is missing.
 #. 
-#: sendlib.c:1507
+#: sendlib.c:1516
 #, c-format
 msgid "Missing blank line separator from output of \"%s\"!"
 msgstr ""
@@ -5702,26 +5787,26 @@ msgstr ""
 #. reports, this error is displayed, and the generation is blocked
 #. at the filter level.
 #. 
-#: sendlib.c:1541
+#: sendlib.c:1550
 msgid ""
 "$send_multipart_alternative_filter does not support multipart type "
 "generation."
 msgstr ""
 
-#: sendlib.c:2720
+#: sendlib.c:2729
 msgid "$sendmail must be set in order to send mail."
 msgstr ""
 
-#: sendlib.c:2821
+#: sendlib.c:2830
 #, c-format
 msgid "Error sending message, child exited %d (%s)."
 msgstr ""
 
-#: sendlib.c:2827
+#: sendlib.c:2836
 msgid "Output of the delivery process"
 msgstr ""
 
-#: sendlib.c:2999
+#: sendlib.c:3008
 #, c-format
 msgid "Bad IDN %s while preparing resent-from."
 msgstr ""
@@ -5966,12 +6051,12 @@ msgstr ""
 msgid "SASL authentication failed"
 msgstr ""
 
-#: sort.c:298
-msgid "Sorting mailbox..."
-msgstr ""
-
 #: sort.c:265
 msgid "Could not find sorting function! [report this bug]"
+msgstr ""
+
+#: sort.c:298
+msgid "Sorting mailbox..."
 msgstr ""
 
 #: status.c:128
@@ -6015,7 +6100,7 @@ msgstr ""
 #. compose menu: <view-pager>
 #. 
 #: OPS:33
-msgid "view attachment in pager using copiousoutput mailcap"
+msgid "view attachment in pager using copiousoutput mailcap entry"
 msgstr ""
 
 #. L10N: Help screen description for OP_ATTACH_VIEW_TEXT
@@ -6411,7 +6496,7 @@ msgstr ""
 #. compose menu: <view-alt-pager>
 #. 
 #: OPS:319
-msgid "view multipart/alternative in pager using copiousoutput mailcap"
+msgid "view multipart/alternative in pager using copiousoutput mailcap entry"
 msgstr ""
 
 #. L10N: Help screen description for OP_COMPOSE_WRITE_MESSAGE

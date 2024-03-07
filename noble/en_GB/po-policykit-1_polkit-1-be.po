@@ -7,55 +7,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: policykit-1\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-03-01 01:07+0000\n"
+"POT-Creation-Date: 2013-05-03 19:12+0200\n"
 "PO-Revision-Date: 2020-05-03 16:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:44+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:29+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
-#: ../actions/org.freedesktop.policykit.policy.in.h:1
-msgid "Run programs as another user"
+#: src/pkla-admin-identities.c:91
+msgid "Use configuration files in DIR"
 msgstr ""
 
-#: ../actions/org.freedesktop.policykit.policy.in.h:2
-msgid "Authentication is required to run a program as another user"
+#: src/pkla-admin-identities.c:91
+msgid "DIR"
 msgstr ""
 
-#: ../actions/org.freedesktop.policykit.policy.in.h:3
-msgid "Configure lock down for an action"
+#: src/pkla-admin-identities.c:109
+msgid "Interprets pklocalauthority(8) configuration files."
 msgstr ""
 
-#: ../actions/org.freedesktop.policykit.policy.in.h:4
-msgid "Authentication is required to configure lock down policy"
-msgstr ""
-
-#: ../src/examples/org.freedesktop.policykit.examples.pkexec.policy.in.h:1
-msgid "Run the PolicyKit example program Frobnicate"
-msgstr ""
-
-#: ../src/examples/org.freedesktop.policykit.examples.pkexec.policy.in.h:2
+#: src/pkla-admin-identities.c:115 src/pkla-check-authorization.c:383
+#, c-format
 msgid ""
-"Authentication is required to run the PolicyKit example program Frobnicate "
-"(user=$(user), program=$(program), command_line=$(command_line))"
+"%s: %s\n"
+"Run `%s --help' for more information.\n"
 msgstr ""
 
-#. Translators: message shown when trying to run a program as root. Do not
-#. * translate the $(program) fragment - it will be expanded to the path
-#. * of the program e.g.  /bin/bash.
-#. 
-#: ../src/programs/pkexec.c:768
-msgid "Authentication is needed to run `$(program)' as the super user"
+#: src/pkla-admin-identities.c:125
+#, c-format
+msgid ""
+"%s: unexpected argument\n"
+"Run `%s --help' for more information.\n"
 msgstr ""
 
-#. Translators: message shown when trying to run a program as another user.
-#. * Do not translate the $(program) or $(user) fragments - the former will
-#. * be expanded to the path of the program e.g. "/bin/bash" and the latter
-#. * to the user e.g. "John Doe (johndoe)" or "johndoe".
-#. 
-#: ../src/programs/pkexec.c:778
-msgid "Authentication is needed to run `$(program)' as user $(user)"
+#: src/pkla-check-authorization.c:346
+msgid "Invalid boolean value"
+msgstr ""
+
+#: src/pkla-check-authorization.c:357
+msgid "Use authorization 'top' directories in ;-separated PATH"
+msgstr ""
+
+#: src/pkla-check-authorization.c:357
+msgid "PATH"
+msgstr ""
+
+#: src/pkla-check-authorization.c:377
+msgid "Interprets pklocalauthority(8) authorization files."
+msgstr ""
+
+#: src/pkla-check-authorization.c:393
+#, c-format
+msgid ""
+"%s: unexpected number of arguments\n"
+"Run `%s --help' for more information.\n"
+msgstr ""
+
+#: src/pkla-check-authorization.c:414
+#, c-format
+msgid "%s: Invalid user `%s': %s\n"
+msgstr ""
+
+#: src/pkla-check-authorization.c:422 src/pkla-check-authorization.c:430
+#, c-format
+msgid "%s: Invalid boolean `%s': %s\n"
 msgstr ""

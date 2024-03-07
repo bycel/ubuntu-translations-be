@@ -3,27 +3,21 @@
 # This file is distributed under the same license as the nano package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: nano\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-02-18 10:55+0100\n"
-"PO-Revision-Date: 2023-05-27 13:07+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2023-01-18 09:49+0100\n"
+"PO-Revision-Date: 2020-05-03 16:46+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:22+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:31+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #. TRANSLATORS: Try to keep this at most 7 characters.
 #: src/browser.c:186 src/browser.c:193
@@ -323,6 +317,15 @@ msgstr ""
 msgid "Failed to open pipe: %s"
 msgstr ""
 
+#: src/files.c:1155
+#, c-format
+msgid "Error: %s"
+msgstr ""
+
+#: src/files.c:1160
+msgid "Piping failed"
+msgstr ""
+
 #. TRANSLATORS: The next six messages are prompts.
 #: src/files.c:1203
 msgid "Command to execute in new buffer"
@@ -427,6 +430,18 @@ msgstr ""
 #: src/files.c:1943 src/files.c:1951
 #, c-format
 msgid "Error reading temp file: %s"
+msgstr ""
+
+#. TRANSLATORS: This warns for data loss when the disk is full.
+#: src/files.c:1980
+msgid "File on disk has been truncated!"
+msgstr ""
+
+#. TRANSLATORS: This is a suggestion to the user,
+#. * where "resume" means resuming from suspension.
+#. * Try to keep this at most 76 characters.
+#: src/files.c:1985
+msgid "Maybe ^T^Z, make room on disk, resume, then ^S^X"
 msgstr ""
 
 #: src/files.c:2047
@@ -1152,10 +1167,6 @@ msgstr ""
 msgid "Verbatim"
 msgstr ""
 
-#: src/global.c:1034 src/global.c:1114
-msgid "Suspend"
-msgstr ""
-
 #: src/global.c:983
 msgid "Indent"
 msgstr ""
@@ -1180,6 +1191,11 @@ msgstr ""
 msgid "Run Macro"
 msgstr ""
 
+#. TRANSLATORS: This refers to deleting a line or marked region.
+#: src/global.c:1004
+msgid "Zap"
+msgstr ""
+
 #: src/global.c:1007
 msgid "Anchor"
 msgstr ""
@@ -1192,11 +1208,6 @@ msgstr ""
 msgid "Down to anchor"
 msgstr ""
 
-#. TRANSLATORS: This refers to deleting a line or marked region.
-#: src/global.c:1004
-msgid "Zap"
-msgstr ""
-
 #: src/global.c:1016 src/global.c:1060
 msgid "Spell Check"
 msgstr ""
@@ -1207,6 +1218,10 @@ msgstr ""
 
 #: src/global.c:1024 src/global.c:1072
 msgid "Formatter"
+msgstr ""
+
+#: src/global.c:1034 src/global.c:1114
+msgid "Suspend"
 msgstr ""
 
 #: src/global.c:1042
@@ -1939,6 +1954,10 @@ msgstr ""
 msgid "Make Ctrl+Right stop at word ends"
 msgstr ""
 
+#: src/nano.c:655
+msgid "Also try magic to determine syntax"
+msgstr ""
+
 #: src/nano.c:658
 msgid "Show some states on the title bar"
 msgstr ""
@@ -1951,18 +1970,15 @@ msgstr ""
 msgid "Hide all bars, use whole terminal"
 msgstr ""
 
-#: src/nano.c:655
-msgid "Also try magic to determine syntax"
-msgstr ""
-
 #: src/nano.c:671
 #, c-format
 msgid " GNU nano, version %s\n"
 msgstr ""
 
-#: src/nano.c:674
+#. TRANSLATORS: The %s is the year of the latest release.
+#: src/nano.c:675
 #, c-format
-msgid " (C) 2014-%s the contributors to nano\n"
+msgid " (C) %s the Free Software Foundation and various contributors\n"
 msgstr ""
 
 #: src/nano.c:677
@@ -2020,6 +2036,15 @@ msgstr ""
 msgid "Unknown sequence"
 msgstr ""
 
+#: src/nano.c:1285 src/rcfile.c:810
+#, c-format
+msgid "Unknown function: %s"
+msgstr ""
+
+#: src/nano.c:1287
+msgid "Missing }"
+msgstr ""
+
 #. TRANSLATORS: This refers to an unbound function key.
 #: src/nano.c:1292
 #, c-format
@@ -2035,28 +2060,13 @@ msgstr ""
 msgid "Unbindable key: M-^%c"
 msgstr ""
 
-#: src/nano.c:1285
+#: src/nano.c:1304 src/nano.c:1307 src/nano.c:1311 src/nano.c:1314
 #, c-format
-msgid "Unbound key: Sh-M-%c"
-msgstr ""
-
-#: src/nano.c:1288
-#, c-format
-msgid "Unbound key: M-%c"
+msgid "Unbound key: %s%c"
 msgstr ""
 
 #: src/nano.c:1309
 msgid "Unbindable key: ^["
-msgstr ""
-
-#: src/nano.c:1292
-#, c-format
-msgid "Unbound key: ^%c"
-msgstr ""
-
-#: src/nano.c:1295
-#, c-format
-msgid "Unbound key: %c"
 msgstr ""
 
 #: src/nano.c:1896 src/rcfile.c:1656
@@ -2095,6 +2105,10 @@ msgstr ""
 
 #: src/nano.c:2473 src/search.c:793
 msgid "Invalid line or column number"
+msgstr ""
+
+#: src/nano.c:2524
+msgid "Standard input is not a terminal\n"
 msgstr ""
 
 #: src/nano.c:2543
@@ -2203,14 +2217,9 @@ msgstr ""
 msgid "Must specify a menu (or \"all\") in which to bind/unbind the key"
 msgstr ""
 
-#: src/rcfile.c:802
+#: src/rcfile.c:792
 #, c-format
-msgid "Cannot map name \"%s\" to a function"
-msgstr ""
-
-#: src/rcfile.c:809
-#, c-format
-msgid "Cannot map name \"%s\" to a menu"
+msgid "Unknown menu: %s"
 msgstr ""
 
 #: src/rcfile.c:849
@@ -2304,9 +2313,9 @@ msgstr ""
 msgid "Missing option"
 msgstr ""
 
-#: src/rcfile.c:1533
+#: src/rcfile.c:1535
 #, c-format
-msgid "Unknown option \"%s\""
+msgid "Unknown option: %s"
 msgstr ""
 
 #: src/rcfile.c:1550
@@ -2535,6 +2544,10 @@ msgstr ""
 msgid "Buffer is empty"
 msgstr ""
 
+#: src/text.c:2131
+msgid "Invoking formatter..."
+msgstr ""
+
 #: src/text.c:2164 src/text.c:2744
 #, c-format
 msgid "Error invoking '%s'"
@@ -2708,6 +2721,10 @@ msgstr ""
 
 #: src/winio.c:127
 msgid "Macro is empty"
+msgstr ""
+
+#: src/winio.c:147
+msgid "Too much input at once\n"
 msgstr ""
 
 #: src/winio.c:258

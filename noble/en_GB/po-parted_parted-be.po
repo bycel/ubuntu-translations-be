@@ -3,25 +3,19 @@
 # This file is distributed under the same license as the parted package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: parted\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-01-27 16:00-0800\n"
-"PO-Revision-Date: 2023-05-27 13:09+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2023-04-10 15:50-0700\n"
+"PO-Revision-Date: 2020-05-03 16:52+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:24+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:38+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: lib/argmatch.c:145
 #, c-format
@@ -434,6 +428,27 @@ msgstr ""
 msgid "Unable to probe store."
 msgstr ""
 
+#: libparted/arch/gnu.c:235
+#, c-format
+msgid ""
+"WARNING: the kernel failed to re-read the partition table on %s (%s).  As a "
+"result, it may not reflect all of your changes until after reboot."
+msgstr ""
+
+#: libparted/arch/gnu.c:261
+#, c-format
+msgid ""
+"Warning: unable to open %s (%s). As a result, it may not reflect all of your "
+"changes until after reboot."
+msgstr ""
+
+#: libparted/arch/gnu.c:274
+#, c-format
+msgid ""
+"Warning: failed to make translator go away on %s (%s). As a result, it may "
+"not reflect all of your changes until after reboot."
+msgstr ""
+
 #: libparted/arch/gnu.c:820
 #, c-format
 msgid "%s trying to sync %s to disk"
@@ -819,6 +834,14 @@ msgstr ""
 msgid "bls_boot"
 msgstr ""
 
+#: libparted/disk.c:2584
+msgid "linux-home"
+msgstr ""
+
+#: libparted/disk.c:2586
+msgid "no_automount"
+msgstr ""
+
 #: libparted/disk.c:2592
 #, c-format
 msgid "Unknown partition flag, %d."
@@ -1036,15 +1059,6 @@ msgstr ""
 #: libparted/labels/dos.c:1187
 #, c-format
 msgid "Invalid partition table - recursive partition on %s."
-msgstr ""
-
-#: libparted/labels/dos.c:1567
-msgid "Extended partitions cannot be hidden on msdos disk labels."
-msgstr ""
-
-#: libparted/labels/dos.c:1579
-msgid ""
-"Extended partitions cannot be recovery partitions on msdos disk labels."
 msgstr ""
 
 #: libparted/labels/dos.c:2276
@@ -2110,8 +2124,16 @@ msgstr ""
 msgid "displays machine parseable output"
 msgstr ""
 
+#: parted/parted.c:141
+msgid "displays JSON output"
+msgstr ""
+
 #: parted/parted.c:142
 msgid "never prompts for user intervention"
+msgstr ""
+
+#: parted/parted.c:143
+msgid "in script mode, fix instead of abort when asked"
 msgstr ""
 
 #: parted/parted.c:144
@@ -2175,6 +2197,10 @@ msgstr ""
 
 #: parted/parted.c:177
 msgid "NAME is any word you want\n"
+msgstr ""
+
+#: parted/parted.c:178
+msgid "TYPE_ID is a value between 0x01 and 0xff, TYPE_UUID is a UUID\n"
 msgstr ""
 
 #: parted/parted.c:182
@@ -2266,6 +2292,27 @@ msgstr ""
 #: parted/parted.c:911 parted/parted.c:955 parted/parted.c:1880
 #: parted/parted.c:1946 parted/parted.c:2040 parted/parted.c:2115
 msgid "Partition number?"
+msgstr ""
+
+#: parted/parted.c:949
+#, c-format
+msgid "%s disk labels do not support partition type."
+msgstr ""
+
+#: parted/parted.c:965
+msgid "Partition type-id?"
+msgstr ""
+
+#: parted/parted.c:972
+msgid "Invalid type-id."
+msgstr ""
+
+#: parted/parted.c:986
+msgid "Partition type-uuid?"
+msgstr ""
+
+#: parted/parted.c:993
+msgid "Invalid type-uuid."
 msgstr ""
 
 #: parted/parted.c:1146
@@ -2445,11 +2492,10 @@ msgstr ""
 msgid "print"
 msgstr ""
 
-#: parted/parted.c:2039
+#: parted/parted.c:2357
 msgid ""
-"print [devices|free|list,all|NUMBER]     display the partition table, "
-"available devices, free space, all found partitions, or a particular "
-"partition"
+"print [devices|free|list,all]            display the partition table, or "
+"available devices, or free space, or all found partitions"
 msgstr ""
 
 #: parted/parted.c:2361
@@ -2471,12 +2517,6 @@ msgstr ""
 #: parted/parted.c:2366
 msgid ""
 "  list, all : display the partition tables of all active block devices\n"
-msgstr ""
-
-#: parted/parted.c:2050
-msgid ""
-"  NUMBER    : display more detailed information about this particular "
-"partition\n"
 msgstr ""
 
 #: parted/parted.c:2370
@@ -2567,6 +2607,16 @@ msgid ""
 "partition NUMBER"
 msgstr ""
 
+#: parted/parted.c:2452
+msgid "type"
+msgstr ""
+
+#: parted/parted.c:2455
+msgid ""
+"type NUMBER TYPE-ID or TYPE-UUID         type set TYPE-ID or TYPE-UUID of "
+"partition NUMBER"
+msgstr ""
+
 #: parted/parted.c:2460
 msgid "unit"
 msgstr ""
@@ -2591,9 +2641,9 @@ msgid ""
 "copy of GNU Parted\n"
 msgstr ""
 
-#: parted/parted.c:2220
+#: parted/parted.c:2545
 #, c-format
-msgid "Usage: %s [-hlmsv] [-a<align>] [DEVICE [COMMAND [PARAMETERS]]...]\n"
+msgid "Usage: %s [-hlmsfv] [-a<align>] [DEVICE [COMMAND [PARAMETERS]]...]\n"
 msgstr ""
 
 #: parted/parted.c:2589

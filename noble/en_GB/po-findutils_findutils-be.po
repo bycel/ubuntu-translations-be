@@ -2,27 +2,21 @@
 # Copyright (C) 2003 Free Software Foundation, Inc.
 # Ales Nyakhaychyk <nab@mail.by>, 2003.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: findutils 4.1.7\n"
 "Report-Msgid-Bugs-To: bug-findutils@gnu.org\n"
-"POT-Creation-Date: 2021-01-09 17:36+0100\n"
-"PO-Revision-Date: 2023-05-27 13:08+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2022-02-02 01:18+0100\n"
+"PO-Revision-Date: 2023-07-05 05:22+0000\n"
+"Last-Translator: Alex Nehaichik <mail@l0gin.net>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:23+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:33+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Language: be\n"
 
@@ -91,6 +85,50 @@ msgstr ""
 msgid "failed to restore working directory after searching %s"
 msgstr ""
 
+#: find/ftsfind.c:582
+#, c-format
+msgid "extra operand %s"
+msgstr ""
+
+#: find/ftsfind.c:584
+msgid "file operands cannot be combined with -files0-from"
+msgstr ""
+
+#: find/ftsfind.c:595
+msgid ""
+"option -files0-from reading from standard input cannot be combined with -ok, "
+"-okdir"
+msgstr ""
+
+#: find/ftsfind.c:598
+msgid "(standard input)"
+msgstr ""
+
+#: find/ftsfind.c:606
+#, c-format
+msgid "cannot open %s for reading"
+msgstr ""
+
+#: find/ftsfind.c:625
+msgid ""
+"option -files0-from: standard input must not refer to the same file when "
+"combined with -ok, -okdir"
+msgstr ""
+
+#: find/ftsfind.c:668
+#, c-format
+msgid "%s: read error"
+msgstr ""
+
+#: find/ftsfind.c:695
+msgid "invalid zero-length file name"
+msgstr ""
+
+#: find/ftsfind.c:719
+#, c-format
+msgid "error reading %s"
+msgstr ""
+
 #: find/ftsfind.c:754
 msgid "Failed to initialize shared-file hash table"
 msgstr ""
@@ -98,73 +136,6 @@ msgstr ""
 #: find/ftsfind.c:770 locate/frcode.c:222 locate/locate.c:1568
 #: xargs/xargs.c:434
 msgid "The atexit library function failed"
-msgstr ""
-
-#: find/oldfind.c:238
-msgid "cannot stat current directory"
-msgstr ""
-
-#: find/oldfind.c:331
-msgid "Cannot read list of mounted devices."
-msgstr ""
-
-#: find/oldfind.c:420
-#, c-format
-msgid "WARNING: file system %s has recently been unmounted."
-msgstr ""
-
-#: find/oldfind.c:430
-#, c-format
-msgid "WARNING: file system %s has recently been mounted."
-msgstr ""
-
-#: find/oldfind.c:527
-#, c-format
-msgid ""
-"%s%s changed during execution of %s (old device number %ld, new device "
-"number %ld, file system type is %s) [ref %ld]"
-msgstr ""
-
-#: find/oldfind.c:564
-#, c-format
-msgid ""
-"%s%s changed during execution of %s (old inode number %<PRIuMAX>, new inode "
-"number %<PRIuMAX>, file system type is %s) [ref %ld]"
-msgstr ""
-
-#: find/oldfind.c:729
-msgid "failed to return to parent directory"
-msgstr ""
-
-#: find/oldfind.c:1015
-#, c-format
-msgid "Failed to safely change directory into %s"
-msgstr ""
-
-#: find/oldfind.c:1134
-#, c-format
-msgid ""
-"Filesystem loop detected; %s has the same device number and inode as a "
-"directory which is %d level higher in the file system hierarchy"
-msgid_plural ""
-"Filesystem loop detected; %s has the same device number and inode as a "
-"directory which is %d levels higher in the file system hierarchy"
-msgstr[0] ""
-msgstr[1] ""
-
-#: find/oldfind.c:1386
-#, c-format
-msgid "warning: not following the symbolic link %s"
-msgstr ""
-
-#: find/oldfind.c:1458
-#, c-format
-msgid ""
-"WARNING: Hard link count is wrong for %s (saw only st_nlink=%<PRIuMAX> but "
-"we already saw %<PRIuMAX> subdirectories): this may be a bug in your file "
-"system driver.  Automatically turning on find's -noleaf option.  Earlier "
-"results may have failed to include directories that should have been "
-"searched."
 msgstr ""
 
 #: find/parser.c:451
@@ -484,6 +455,12 @@ msgid ""
 "it."
 msgstr ""
 
+#: find/tree.c:135 find/tree.c:194
+#, c-format
+msgid ""
+"invalid expression: expected expression before closing parentheses '%s'."
+msgstr ""
+
 #: find/tree.c:145
 #, c-format
 msgid "expected an expression between '%s' and ')'"
@@ -596,13 +573,14 @@ msgstr ""
 #: find/util.c:173
 msgid ""
 "\n"
-"default path is the current directory; default expression is -print\n"
-"expression may consist of: operators, options, tests, and actions:\n"
+"Default path is the current directory; default expression is -print.\n"
+"Expression may consist of: operators, options, tests, and actions.\n"
 msgstr ""
 
 #: find/util.c:176
 msgid ""
-"operators (decreasing precedence; -and is implicit where no others are "
+"\n"
+"Operators (decreasing precedence; -and is implicit where no others are "
 "given):\n"
 "      ( EXPR )   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2\n"
 "      EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2\n"
@@ -610,42 +588,57 @@ msgstr ""
 
 #: find/util.c:180
 msgid ""
-"positional options (always true): -daystart -follow -regextype\n"
 "\n"
-"normal options (always true, specified before other expressions):\n"
-"      -depth --help -maxdepth LEVELS -mindepth LEVELS -mount -noleaf\n"
-"      --version -xdev -ignore_readdir_race -noignore_readdir_race\n"
+"Positional options (always true):\n"
+"      -daystart -follow -nowarn -regextype -warn\n"
 msgstr ""
 
-#: find/util.c:185
+#: find/util.c:183
 msgid ""
-"tests (N can be +N or -N or N): -amin N -anewer FILE -atime N -cmin N\n"
-"      -cnewer FILE -ctime N -empty -false -fstype TYPE -gid N -group NAME\n"
-"      -ilname PATTERN -iname PATTERN -inum N -iwholename PATTERN -iregex "
+"\n"
+"Normal options (always true, specified before other expressions):\n"
+"      -depth -files0-from FILE -maxdepth LEVELS -mindepth LEVELS\n"
+"       -mount -noleaf -xdev -ignore_readdir_race -noignore_readdir_race\n"
+msgstr ""
+
+#: find/util.c:187
+msgid ""
+"\n"
+"Tests (N can be +N or -N or N):\n"
+"      -amin N -anewer FILE -atime N -cmin N -cnewer FILE -context CONTEXT\n"
+"      -ctime N -empty -false -fstype TYPE -gid N -group NAME -ilname "
 "PATTERN\n"
-"      -links N -lname PATTERN -mmin N -mtime N -name PATTERN -newer FILE"
-msgstr ""
-
-#: find/util.c:190
-msgid ""
-"\n"
+"      -iname PATTERN -inum N -iwholename PATTERN -iregex PATTERN\n"
+"      -links N -lname PATTERN -mmin N -mtime N -name PATTERN -newer FILE\n"
 "      -nouser -nogroup -path PATTERN -perm [-/]MODE -regex PATTERN\n"
 "      -readable -writable -executable\n"
 "      -wholename PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N\n"
-"      -used N -user NAME -xtype [bcdpfls]"
-msgstr ""
-
-#: find/util.c:195
-msgid "      -context CONTEXT\n"
+"      -used N -user NAME -xtype [bcdpfls]\n"
 msgstr ""
 
 #: find/util.c:197
 msgid ""
 "\n"
-"actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print \n"
+"Actions:\n"
+"      -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print \n"
 "      -fprint0 FILE -fprint FILE -ls -fls FILE -prune -quit\n"
 "      -exec COMMAND ; -exec COMMAND {} + -ok COMMAND ;\n"
 "      -execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;\n"
+msgstr ""
+
+#: find/util.c:204
+msgid ""
+"\n"
+"Other common options:\n"
+msgstr ""
+
+#: find/util.c:206 xargs/xargs.c:1751
+msgid "      --help                   display this help and exit\n"
+msgstr ""
+
+#: find/util.c:207 xargs/xargs.c:1752
+msgid ""
+"      --version                output version information and exit\n"
 "\n"
 msgstr ""
 
@@ -1369,14 +1362,4 @@ msgstr ""
 #: xargs/xargs.c:1749
 msgid ""
 "  -x, --exit                   exit if the size (see -s) is exceeded\n"
-msgstr ""
-
-#: find/util.c:206 xargs/xargs.c:1751
-msgid "      --help                   display this help and exit\n"
-msgstr ""
-
-#: find/util.c:207 xargs/xargs.c:1752
-msgid ""
-"      --version                output version information and exit\n"
-"\n"
 msgstr ""

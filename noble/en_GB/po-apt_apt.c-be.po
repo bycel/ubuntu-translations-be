@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-01-04 15:29+0000\n"
+"POT-Creation-Date: 2024-03-07 02:05+0000\n"
 "PO-Revision-Date: 2020-05-03 16:58+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 14:05+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:43+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
 #: cmdline/apt.cc:46
 msgid ""
@@ -56,8 +56,8 @@ msgstr ""
 msgid "remove packages"
 msgstr ""
 
-#: cmdline/apt-get.cc:414
-msgid "Remove automatically all unused packages"
+#: cmdline/apt.cc:69
+msgid "automatically remove all unused packages"
 msgstr ""
 
 #. system wide stuff
@@ -202,7 +202,7 @@ msgid "Couldn't find package %s"
 msgstr ""
 
 #: cmdline/apt-get.cc:121 cmdline/apt-mark.cc:95
-#: apt-private/private-install.cc:1053
+#: apt-private/private-install.cc:1111
 #, c-format
 msgid "%s set to manually installed.\n"
 msgstr ""
@@ -262,6 +262,10 @@ msgstr ""
 msgid "Remove packages and config files"
 msgstr ""
 
+#: cmdline/apt-get.cc:414
+msgid "Remove automatically all unused packages"
+msgstr ""
+
 #: cmdline/apt-get.cc:419
 msgid "Distribution upgrade, see apt-get(8)"
 msgstr ""
@@ -286,19 +290,19 @@ msgstr ""
 msgid "Erase old downloaded archive files"
 msgstr ""
 
-#: cmdline/apt-get.cc:427
+#: cmdline/apt-get.cc:429
 msgid "Verify that there are no broken dependencies"
 msgstr ""
 
-#: cmdline/apt-get.cc:428
+#: cmdline/apt-get.cc:430
 msgid "Download source archives"
 msgstr ""
 
-#: cmdline/apt-get.cc:429
+#: cmdline/apt-get.cc:431
 msgid "Download the binary package into the current directory"
 msgstr ""
 
-#: cmdline/apt-get.cc:430
+#: cmdline/apt-get.cc:432
 msgid "Download and display the changelog for the given package"
 msgstr ""
 
@@ -441,7 +445,7 @@ msgstr ""
 msgid "The following packages will be marked as automatically installed:"
 msgstr ""
 
-#: cmdline/apt-mark.cc:266 apt-private/private-install.cc:320
+#: cmdline/apt-mark.cc:266 apt-private/private-install.cc:371
 msgid "Do you want to continue?"
 msgstr ""
 
@@ -596,11 +600,11 @@ msgstr ""
 msgid " Done"
 msgstr ""
 
-#: apt-private/private-cachefile.cc:111 apt-private/private-install.cc:714
+#: apt-private/private-cachefile.cc:111 apt-private/private-install.cc:768
 msgid "You might want to run 'apt --fix-broken install' to correct these."
 msgstr ""
 
-#: apt-private/private-cachefile.cc:113 apt-private/private-install.cc:716
+#: apt-private/private-cachefile.cc:113 apt-private/private-install.cc:770
 msgid ""
 "Unmet dependencies. Try 'apt --fix-broken install' with no packages (or "
 "specify a solution)."
@@ -665,12 +669,12 @@ msgid "Virtual packages like '%s' can't be removed\n"
 msgstr ""
 
 #. TRANSLATORS: Note, this is not an interactive question
-#: apt-private/private-cacheset.cc:411 apt-private/private-install.cc:1133
+#: apt-private/private-cacheset.cc:411 apt-private/private-install.cc:1191
 #, c-format
 msgid "Package '%s' is not installed, so not removed. Did you mean '%s'?\n"
 msgstr ""
 
-#: apt-private/private-cacheset.cc:417 apt-private/private-install.cc:1139
+#: apt-private/private-cacheset.cc:417 apt-private/private-install.cc:1197
 #, c-format
 msgid "Package '%s' is not installed, so not removed\n"
 msgstr ""
@@ -680,16 +684,16 @@ msgstr ""
 msgid "Note, selecting '%s' instead of '%s'\n"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:419
+#: apt-private/private-cmndline.cc:425
 msgid "Most used commands:"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:459
+#: apt-private/private-cmndline.cc:465
 #, c-format
 msgid "See %s for more information about the available commands."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:463
+#: apt-private/private-cmndline.cc:469
 msgid ""
 "Configuration options and syntax is detailed in apt.conf(5).\n"
 "Information about how to configure sources can be found in sources.list(5).\n"
@@ -697,15 +701,15 @@ msgid ""
 "Security details are available in apt-secure(8).\n"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:468
+#: apt-private/private-cmndline.cc:474
 msgid "This APT has Super Cow Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:470
+#: apt-private/private-cmndline.cc:476
 msgid "This APT helper has Super Meep Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:568
+#: apt-private/private-cmndline.cc:574
 msgid ""
 "--force-yes is deprecated, use one of the options starting with --allow "
 "instead."
@@ -748,11 +752,11 @@ msgstr ""
 msgid "You don't have enough free space in %s."
 msgstr ""
 
-#: apt-private/private-download.cc:369
+#: apt-private/private-download.cc:380
 msgid "Unable to lock the download directory"
 msgstr ""
 
-#: apt-private/private-install.cc:55
+#: apt-private/private-install.cc:56
 msgid ""
 "Some packages could not be installed. This may mean that you have\n"
 "requested an impossible situation or if you are using the unstable\n"
@@ -770,115 +774,127 @@ msgstr ""
 #. "that package should be filed.") << std::endl;
 #. }
 #. 
-#: apt-private/private-install.cc:70 apt-private/private-install.cc:551
+#: apt-private/private-install.cc:71 apt-private/private-install.cc:602
 msgid "The following information may help to resolve the situation:"
 msgstr ""
 
-#: apt-private/private-install.cc:76
+#: apt-private/private-install.cc:77
 msgid "Broken packages"
 msgstr ""
 
-#: apt-private/private-install.cc:174 apt-private/private-install.cc:354
+#: apt-private/private-install.cc:127
+msgid ""
+"Unmerged usr is no longer supported, use usrmerge to convert to a merged-usr "
+"system."
+msgstr ""
+
+#. TRANSLATORS: %s is a url to a page describing merged-usr (bookworm release notes)
+#: apt-private/private-install.cc:132
+#, c-format
+msgid "See %s for more details."
+msgstr ""
+
+#: apt-private/private-install.cc:206 apt-private/private-install.cc:405
 msgid ""
 "Unable to fetch some archives, maybe run apt-get update or try with --fix-"
 "missing?"
 msgstr ""
 
-#: apt-private/private-install.cc:206
+#: apt-private/private-install.cc:253
 msgid "Internal error, InstallPackages was called with broken packages!"
 msgstr ""
 
-#: apt-private/private-install.cc:215
+#: apt-private/private-install.cc:262
 msgid "Packages need to be removed but remove is disabled."
 msgstr ""
 
-#: apt-private/private-install.cc:224
+#: apt-private/private-install.cc:275
 msgid ""
 "Essential packages were removed and -y was used without --allow-remove-"
 "essential."
 msgstr ""
 
-#: apt-private/private-install.cc:226
+#: apt-private/private-install.cc:277
 msgid "Packages were downgraded and -y was used without --allow-downgrades."
 msgstr ""
 
-#: apt-private/private-install.cc:228
+#: apt-private/private-install.cc:279
 msgid ""
 "Held packages were changed and -y was used without --allow-change-held-"
 "packages."
 msgstr ""
 
-#: apt-private/private-install.cc:244
+#: apt-private/private-install.cc:295
 msgid "Internal error, Ordering didn't finish"
 msgstr ""
 
-#: apt-private/private-install.cc:257
+#: apt-private/private-install.cc:308
 msgid "How odd... The sizes didn't match, email apt@packages.debian.org"
 msgstr ""
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement strings, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:264
+#: apt-private/private-install.cc:315
 #, c-format
 msgid "Need to get %sB/%sB of archives.\n"
 msgstr ""
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:269
+#: apt-private/private-install.cc:320
 #, c-format
 msgid "Need to get %sB of archives.\n"
 msgstr ""
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:277
+#: apt-private/private-install.cc:328
 #, c-format
 msgid "After this operation, %sB of additional disk space will be used.\n"
 msgstr ""
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:282
+#: apt-private/private-install.cc:333
 #, c-format
 msgid "After this operation, %sB disk space will be freed.\n"
 msgstr ""
 
-#: apt-private/private-install.cc:305 apt-private/private-install.cc:315
+#: apt-private/private-install.cc:356 apt-private/private-install.cc:366
 msgid "Trivial Only specified but this is not a trivial operation."
 msgstr ""
 
-#: apt-private/private-install.cc:307
+#: apt-private/private-install.cc:358
 msgid ""
 "Removing essential system-critical packages is not permitted. This might "
 "break the system."
 msgstr ""
 
-#: apt-private/private-install.cc:322
+#: apt-private/private-install.cc:373
 msgid "Abort."
 msgstr ""
 
-#: apt-private/private-install.cc:348
+#: apt-private/private-install.cc:399
 msgid "Some files failed to download"
 msgstr ""
 
-#: apt-private/private-install.cc:349 apt-private/private-source.cc:492
+#: apt-private/private-install.cc:400 apt-private/private-source.cc:492
 msgid "Download complete and in download only mode"
 msgstr ""
 
-#: apt-private/private-install.cc:357
+#: apt-private/private-install.cc:408
 msgid "--fix-missing and media swapping is not currently supported"
 msgstr ""
 
-#: apt-private/private-install.cc:362
+#: apt-private/private-install.cc:413
 msgid "Unable to correct missing packages."
 msgstr ""
 
-#: apt-private/private-install.cc:363
+#: apt-private/private-install.cc:414
 msgid "Aborting install."
 msgstr ""
 
-#: apt-private/private-install.cc:391
+#: apt-private/private-install.cc:442
 msgid ""
 "The following package disappeared from your system as\n"
 "all files have been overwritten by other packages:"
@@ -888,25 +904,25 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-install.cc:398
+#: apt-private/private-install.cc:449
 msgid "Note: This is done automatically and on purpose by dpkg."
 msgstr ""
 
-#: apt-private/private-install.cc:441
+#: apt-private/private-install.cc:492
 msgid "We are not supposed to delete stuff, can't start AutoRemover"
 msgstr ""
 
-#: apt-private/private-install.cc:548
+#: apt-private/private-install.cc:599
 msgid ""
 "Hmm, seems like the AutoRemover destroyed something which really\n"
 "shouldn't happen. Please file a bug report against apt."
 msgstr ""
 
-#: apt-private/private-install.cc:555
+#: apt-private/private-install.cc:606
 msgid "Internal Error, AutoRemover broke stuff"
 msgstr ""
 
-#: apt-private/private-install.cc:566
+#: apt-private/private-install.cc:617
 msgid ""
 "The following package was automatically installed and is no longer required:"
 msgid_plural ""
@@ -915,7 +931,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-install.cc:573
+#: apt-private/private-install.cc:624
 #, c-format
 msgid "%lu package was automatically installed and is no longer required.\n"
 msgid_plural ""
@@ -923,58 +939,58 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-install.cc:583
+#: apt-private/private-install.cc:634
 #, c-format
 msgid "Use '%s' to remove it."
 msgid_plural "Use '%s' to remove them."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-install.cc:795 apt-private/private-install.cc:802
-#: apt-private/private-install.cc:810
+#: apt-private/private-install.cc:849 apt-private/private-install.cc:856
+#: apt-private/private-install.cc:864
 #, c-format
 msgid "Unsupported file %s given on commandline"
 msgstr ""
 
-#: apt-private/private-install.cc:879
+#: apt-private/private-install.cc:937
 msgid "The following additional packages will be installed:"
 msgstr ""
 
-#: apt-private/private-install.cc:968
+#: apt-private/private-install.cc:1026
 msgid "Suggested packages:"
 msgstr ""
 
-#: apt-private/private-install.cc:970
+#: apt-private/private-install.cc:1028
 msgid "Recommended packages:"
 msgstr ""
 
-#: apt-private/private-install.cc:1012
+#: apt-private/private-install.cc:1070
 #, c-format
 msgid "Skipping %s, it is already installed and upgrade is not set.\n"
 msgstr ""
 
-#: apt-private/private-install.cc:1016
+#: apt-private/private-install.cc:1074
 #, c-format
 msgid "Skipping %s, it is not installed and only upgrades are requested.\n"
 msgstr ""
 
-#: apt-private/private-install.cc:1028
+#: apt-private/private-install.cc:1086
 #, c-format
 msgid "Reinstallation of %s is not possible, it cannot be downloaded.\n"
 msgstr ""
 
 #. TRANSLATORS: First string is package name, second is version
-#: apt-private/private-install.cc:1034
+#: apt-private/private-install.cc:1092
 #, c-format
 msgid "%s is already the newest version (%s).\n"
 msgstr ""
 
-#: apt-private/private-install.cc:1086
+#: apt-private/private-install.cc:1144
 #, c-format
 msgid "Selected version '%s' (%s) for '%s'\n"
 msgstr ""
 
-#: apt-private/private-install.cc:1095
+#: apt-private/private-install.cc:1153
 #, c-format
 msgid "Selected version '%s' (%s) for '%s' because of '%s'\n"
 msgstr ""
@@ -1079,53 +1095,57 @@ msgid "The following packages will be REMOVED:"
 msgstr ""
 
 #: apt-private/private-output.cc:497
-msgid "The following packages have been kept back:"
+msgid "The following upgrades have been deferred due to phasing:"
 msgstr ""
 
 #: apt-private/private-output.cc:507
+msgid "The following packages have been kept back:"
+msgstr ""
+
+#: apt-private/private-output.cc:517
 msgid "The following packages will be upgraded:"
 msgstr ""
 
-#: apt-private/private-output.cc:522
+#: apt-private/private-output.cc:532
 msgid "The following packages will be DOWNGRADED:"
 msgstr ""
 
-#: apt-private/private-output.cc:535
+#: apt-private/private-output.cc:545
 msgid "The following held packages will be changed:"
 msgstr ""
 
-#: apt-private/private-output.cc:562
+#: apt-private/private-output.cc:572
 #, c-format
 msgid "%s (due to %s)"
 msgstr ""
 
-#: apt-private/private-output.cc:612
+#: apt-private/private-output.cc:622
 msgid ""
 "WARNING: The following essential packages will be removed.\n"
 "This should NOT be done unless you know exactly what you are doing!"
 msgstr ""
 
-#: apt-private/private-output.cc:643
+#: apt-private/private-output.cc:653
 #, c-format
 msgid "%lu upgraded, %lu newly installed, "
 msgstr ""
 
-#: apt-private/private-output.cc:647
+#: apt-private/private-output.cc:657
 #, c-format
 msgid "%lu reinstalled, "
 msgstr ""
 
-#: apt-private/private-output.cc:649
+#: apt-private/private-output.cc:659
 #, c-format
 msgid "%lu downgraded, "
 msgstr ""
 
-#: apt-private/private-output.cc:651
+#: apt-private/private-output.cc:661
 #, c-format
 msgid "%lu to remove and %lu not upgraded.\n"
 msgstr ""
 
-#: apt-private/private-output.cc:655
+#: apt-private/private-output.cc:665
 #, c-format
 msgid "%lu not fully installed or removed.\n"
 msgstr ""
@@ -1134,7 +1154,7 @@ msgstr ""
 #. e.g. "Do you want to continue? [Y/n] "
 #. The user has to answer with an input matching the
 #. YESEXPR/NOEXPR defined in your l10n.
-#: apt-private/private-output.cc:690
+#: apt-private/private-output.cc:700
 msgid "[Y/n]"
 msgstr "[Т/н]"
 
@@ -1142,21 +1162,21 @@ msgstr "[Т/н]"
 #. e.g. "Should this file be removed? [y/N] "
 #. The user has to answer with an input matching the
 #. YESEXPR/NOEXPR defined in your l10n.
-#: apt-private/private-output.cc:696
+#: apt-private/private-output.cc:706
 msgid "[y/N]"
 msgstr "[т/Н]"
 
 #. TRANSLATOR: "Yes" answer printed for a yes/no question if --assume-yes is set
-#: apt-private/private-output.cc:707
+#: apt-private/private-output.cc:717
 msgid "Y"
 msgstr "Т"
 
 #. TRANSLATOR: "No" answer printed for a yes/no question if --assume-no is set
-#: apt-private/private-output.cc:713
+#: apt-private/private-output.cc:723
 msgid "N"
 msgstr "Н"
 
-#: apt-private/private-output.cc:735
+#: apt-private/private-output.cc:745
 #, c-format
 msgid "Regex compilation error - %s"
 msgstr ""
@@ -1379,19 +1399,37 @@ msgstr ""
 msgid "Package %s version %s has an unmet dep:\n"
 msgstr ""
 
+#. Both messages are reused from the ReleaseInfoChange feature in acquire-item.cc
+#: apt-private/private-update.cc:45
+#, c-format
+msgid "Repository '%s' changed its '%s' value from '%s' to '%s'"
+msgstr ""
+
+#: apt-private/private-update.cc:48
+#, c-format
+msgid ""
+"More information about this can be found online in the Release notes at: %s"
+msgstr ""
+
 #: apt-private/private-update.cc:53
 msgid "The update command takes no arguments"
 msgstr ""
 
 #. TRANSLATOR: the first two are manpage references, the last the URI from a sources.list
-#: apt-private/private-update.cc:119
+#: apt-private/private-update.cc:123
 #, c-format
 msgid ""
 "Usage of %s should be preferred over embedding login information directly in "
 "the %s entry for '%s'"
 msgstr ""
 
+#. TRANSLATOR: the first is manpage reference, the last the URI from a sources.list
 #: apt-private/private-update.cc:245
+#, c-format
+msgid "Missing Signed-By in the %s entry for '%s'"
+msgstr ""
+
+#: apt-private/private-update.cc:263
 #, c-format
 msgid "%i package can be upgraded. Run 'apt list --upgradable' to see it.\n"
 msgid_plural ""
@@ -1399,7 +1437,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-update.cc:249
+#: apt-private/private-update.cc:267
 msgid "All packages are up to date."
 msgstr ""
 
@@ -1502,7 +1540,7 @@ msgid "Empty files can't be valid archives"
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:390
+#: methods/gpgv.cc:428
 #, c-format
 msgid ""
 "Clearsigned file isn't valid, got '%s' (does the network require "
@@ -1510,30 +1548,30 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:398
+#: methods/gpgv.cc:436
 #, c-format
 msgid ""
 "Signed file isn't valid, got '%s' (does the network require authentication?)"
 msgstr ""
 
-#: methods/gpgv.cc:408 methods/gpgv.cc:418
+#: methods/gpgv.cc:446 methods/gpgv.cc:456
 msgid "At least one invalid signature was encountered."
 msgstr ""
 
-#: methods/gpgv.cc:413
+#: methods/gpgv.cc:451
 msgid ""
 "Internal error: Good signature, but could not determine key fingerprint?!"
 msgstr ""
 
-#: methods/gpgv.cc:420
+#: methods/gpgv.cc:458
 msgid "Could not execute 'apt-key' to verify signature (is gnupg installed?)"
 msgstr ""
 
-#: methods/gpgv.cc:422
+#: methods/gpgv.cc:460
 msgid "Unknown error executing apt-key"
 msgstr ""
 
-#: methods/gpgv.cc:457
+#: methods/gpgv.cc:495
 #, c-format
 msgid ""
 "Key is stored in legacy trusted.gpg keyring (%s), see the DEPRECATION "
@@ -1541,16 +1579,16 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: The second %s is the reason and is untranslated for repository owners.
-#: methods/gpgv.cc:520
+#: methods/gpgv.cc:558
 #, c-format
-msgid "Signature by key %s uses weak digest algorithm (%s)"
+msgid "Signature by key %s uses weak algorithm (%s)"
 msgstr ""
 
-#: methods/gpgv.cc:536 methods/gpgv.cc:542
+#: methods/gpgv.cc:574 methods/gpgv.cc:580
 msgid "The following signatures were invalid:\n"
 msgstr ""
 
-#: methods/gpgv.cc:548
+#: methods/gpgv.cc:590
 msgid ""
 "The following signatures couldn't be verified because the public key is not "
 "available:\n"

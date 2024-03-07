@@ -2,15 +2,16 @@
 # Copyright (C) 2016 PipeWire's COPYRIGHT HOLDER
 # This file is distributed under the same license as the PipeWire package.
 #
-# Viktar Vaŭčkievič <victorenator@gmail.com>, 2016.
+#
+# Viktar Vaŭčkievič <victorenator@gmail.com>, 2016, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PipeWire\n"
 "Report-Msgid-Bugs-To: "
 "https://gitlab.freedesktop.org/pipewire/pipewire/issues/new\n"
-"POT-Creation-Date: 2021-11-17 15:06+0100\n"
-"PO-Revision-Date: 2022-03-28 15:51+0000\n"
+"POT-Creation-Date: 2022-06-30 12:50+0200\n"
+"PO-Revision-Date: 2024-02-29 08:08+0000\n"
 "Last-Translator: Viktar Vaŭčkievič <Unknown>\n"
 "Language-Team: Belarusian <>\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +19,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 14:13+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:51+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be\n"
 
 #: src/daemon/pipewire.c:46
@@ -30,11 +31,20 @@ msgid ""
 "      --version                         Show version\n"
 "  -c, --config                          Load config (Default %s)\n"
 msgstr ""
+"%s [параметры]\n"
+"  -h, --help                            Паказаць гэту даведку\n"
+"      --version                         Паказаць версію\n"
+"  -c, --config                          Загрузіць канфігурацыю (Агаданая "
+"%s)\n"
 
 #: src/modules/module-protocol-pulse/modules/module-tunnel-sink.c:180
 #: src/modules/module-protocol-pulse/modules/module-tunnel-source.c:180
 #, c-format
 msgid "Tunnel to %s/%s"
+msgstr ""
+
+#: src/modules/module-fallback-sink.c:51
+msgid "Dummy Output"
 msgstr ""
 
 #: src/modules/module-pulse-tunnel.c:662
@@ -44,7 +54,7 @@ msgstr ""
 
 #: src/modules/module-zeroconf-discover.c:332
 msgid "Unknown device"
-msgstr ""
+msgstr "Невядомая прылада"
 
 #: src/modules/module-zeroconf-discover.c:344
 #, c-format
@@ -56,17 +66,17 @@ msgstr ""
 msgid "%s on %s"
 msgstr ""
 
-#: src/tools/pw-cat.c:1058
+#: src/tools/pw-cat.c:784
 #, c-format
 msgid ""
-"%s [options] <file>\n"
+"%s [options] [<file>|-]\n"
 "  -h, --help                            Show this help\n"
 "      --version                         Show version\n"
 "  -v, --verbose                         Enable verbose operations\n"
 "\n"
 msgstr ""
 
-#: src/tools/pw-cat.c:1065
+#: src/tools/pw-cat.c:791
 #, c-format
 msgid ""
 "  -R, --remote                          Remote daemon name\n"
@@ -80,7 +90,7 @@ msgid ""
 "                                          or direct samples (256)\n"
 "                                          the rate is the one of the source "
 "file\n"
-"      --list-targets                    List available targets for --target\n"
+"  -P  --properties                      Set node properties\n"
 "\n"
 msgstr ""
 
@@ -103,6 +113,22 @@ msgid ""
 "%d)\n"
 "\n"
 msgstr ""
+"      --rate                            Частата сэмплаў (для запісу) "
+"(агаданая %u)\n"
+"      --channels                        Колькасць каналаў (для запісу) "
+"(агаданая %u)\n"
+"      --channel-map                     Мапа каналаў\n"
+"                                            адзін з: «stereo», «surround-"
+"51»,... ці\n"
+"                                            назвы каналаў праз коску: пр. "
+"«FL,FR»\n"
+"      --format                          Фармат сэмплаў %s (req. for rec) "
+"(агаданы %s)\n"
+"      --volume                          Гучнасць патоку 0-1.0 (агаданая "
+"%.3f)\n"
+"  -q  --quality                         Якасць перадыскрэтызацыі (0 - 15) "
+"(агаданая %d)\n"
+"\n"
 
 #: src/tools/pw-cat.c:826
 msgid ""
@@ -123,10 +149,17 @@ msgid ""
 "  -r, --remote                          Remote daemon name\n"
 "\n"
 msgstr ""
+"%s [параметры] [каманда]\n"
+"  -h, --help                            Паказаць гэту даведку\n"
+"      --version                         Паказаць версію\n"
+"  -d, --daemon                          Запусціць як фонавы сэрвіс (Default "
+"false)\n"
+"  -r, --remote                          Назва адаленага сэрвіса\n"
+"\n"
 
 #: spa/plugins/alsa/acp/acp.c:321
 msgid "Pro Audio"
-msgstr ""
+msgstr "Pro Audio"
 
 #: spa/plugins/alsa/acp/acp.c:444 spa/plugins/alsa/acp/alsa-mixer.c:4648
 #: spa/plugins/bluez5/bluez5-device.c:1236
@@ -249,11 +282,11 @@ msgstr "Аналагавы выхад"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2752
 msgid "Headphones 2"
-msgstr ""
+msgstr "Навушнікі 2"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2753
 msgid "Headphones Mono Output"
-msgstr ""
+msgstr "Навушнікавы монавыхад"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2754
 msgid "Line Out"
@@ -289,20 +322,20 @@ msgstr "Шматканальны выхад"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2762
 msgid "Game Output"
-msgstr ""
+msgstr "Гульнявы выхад"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2763
 #: spa/plugins/alsa/acp/alsa-mixer.c:2764
 msgid "Chat Output"
-msgstr ""
+msgstr "Чатавы выхад"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2765
 msgid "Chat Input"
-msgstr ""
+msgstr "Чатавы уваход"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:2766
 msgid "Virtual Surround 7.1"
-msgstr ""
+msgstr "Віртуальны абʼёмны 7.1"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4471
 msgid "Analog Mono"
@@ -310,11 +343,11 @@ msgstr "Аналагавы мона"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4472
 msgid "Analog Mono (Left)"
-msgstr ""
+msgstr "Аналагавы мона (левы)"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4473
 msgid "Analog Mono (Right)"
-msgstr ""
+msgstr "Аналагавы мона (правы)"
 
 #. Note: Not translated to "Analog Stereo Input", because the source
 #. * name gets "Input" appended to it automatically, so adding "Input"
@@ -344,7 +377,7 @@ msgstr "Гарнітура"
 #: spa/plugins/alsa/acp/alsa-mixer.c:4485
 #: spa/plugins/alsa/acp/alsa-mixer.c:4643
 msgid "Speakerphone"
-msgstr ""
+msgstr "Дынамік"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4486
 #: spa/plugins/alsa/acp/alsa-mixer.c:4487
@@ -421,11 +454,11 @@ msgstr "Лічбавы абʼёмны 5.1 (HDMI)"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4505
 msgid "Chat"
-msgstr ""
+msgstr "Чат"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4506
 msgid "Game"
-msgstr ""
+msgstr "Гульня"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4640
 msgid "Analog Mono Duplex"
@@ -445,11 +478,11 @@ msgstr "Шматканальны дуплекс"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4646
 msgid "Stereo Duplex"
-msgstr ""
+msgstr "Стэрэа дуплекс"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4647
 msgid "Mono Chat + 7.1 Surround"
-msgstr ""
+msgstr "Чатавы мона + Аб'ёмны 7.1"
 
 #: spa/plugins/alsa/acp/alsa-mixer.c:4754
 #, c-format
@@ -475,7 +508,19 @@ msgid_plural ""
 "Most likely this is a bug in the ALSA driver '%s'. Please report this issue "
 "to the ALSA developers."
 msgstr[0] ""
+"Выклік snd_pcm_avail() вярнуў выключна вялікае значэнне: %lu байт (%lu мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 msgstr[1] ""
+"Выклік snd_pcm_avail() вярнуў выключна вялікае значэнне: %lu байта (%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
+msgstr[2] ""
+"Выклік snd_pcm_avail() вярнуў выключна вялікае значэнне: %lu байтаў (%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 
 #: spa/plugins/alsa/acp/alsa-util.c:1253
 #, c-format
@@ -490,7 +535,20 @@ msgid_plural ""
 "Most likely this is a bug in the ALSA driver '%s'. Please report this issue "
 "to the ALSA developers."
 msgstr[0] ""
+"Выклік snd_pcm_delay() вярнуў выключна вялікае значэнне: %li байт (%s%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 msgstr[1] ""
+"Выклік snd_pcm_delay() вярнуў выключна вялікае значэнне: %li байта (%s%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
+msgstr[2] ""
+"Выклік snd_pcm_delay() вярнуў выключна вялікае значэнне: %li байтаў (%s%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 
 #: spa/plugins/alsa/acp/alsa-util.c:1300
 #, c-format
@@ -518,7 +576,20 @@ msgid_plural ""
 "Most likely this is a bug in the ALSA driver '%s'. Please report this issue "
 "to the ALSA developers."
 msgstr[0] ""
+"Выклік snd_pcm_mmap_begin() вярнуў выключна вялікае значэнне: %lu байт (%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 msgstr[1] ""
+"Выклік snd_pcm_mmap_begin() вярнуў выключна вялікае значэнне: %lu байта (%lu "
+"мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
+msgstr[2] ""
+"Выклік snd_pcm_mmap_begin() вярнуў выключна вялікае значэнне: %lu байтаў "
+"(%lu мс).\n"
+"Хутчэй за ўсё, гэта памылка ў ALSA-драйверы «%s». Калі ласка, паведаміце аб "
+"гэтым распрацоўнікам ALSA."
 
 #: spa/plugins/alsa/acp/channelmap.h:457
 msgid "(invalid)"
@@ -534,34 +605,49 @@ msgstr "Мадэм"
 
 #: spa/plugins/bluez5/bluez5-device.c:1247
 msgid "Audio Gateway (A2DP Source & HSP/HFP AG)"
-msgstr ""
+msgstr "Аўдыяшлюз (A2DP-крыніца і HSP/HFP AG)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1272
 #, c-format
 msgid "High Fidelity Playback (A2DP Sink, codec %s)"
-msgstr ""
+msgstr "Высокадакладнае прайграванне (A2DP-прыёмнік, кодэк %s)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1275
 #, c-format
 msgid "High Fidelity Duplex (A2DP Source/Sink, codec %s)"
-msgstr ""
+msgstr "Высокадакладны дуплекс (A2DP-крыніца/прыёмнік, кодэк %s)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1283
 msgid "High Fidelity Playback (A2DP Sink)"
-msgstr ""
+msgstr "Высокадакладнае прайграванне (A2DP-прыёмнік)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1285
 msgid "High Fidelity Duplex (A2DP Source/Sink)"
+msgstr "Высокадакладны дуплекс (A2DP-крыніца/прыёмнік)"
+
+#: spa/plugins/bluez5/bluez5-device.c:1322
+#, c-format
+msgid "High Fidelity Playback (BAP Sink, codec %s)"
+msgstr ""
+
+#: spa/plugins/bluez5/bluez5-device.c:1326
+#, c-format
+msgid "High Fidelity Input (BAP Source, codec %s)"
+msgstr ""
+
+#: spa/plugins/bluez5/bluez5-device.c:1330
+#, c-format
+msgid "High Fidelity Duplex (BAP Source/Sink, codec %s)"
 msgstr ""
 
 #: spa/plugins/bluez5/bluez5-device.c:1359
 #, c-format
 msgid "Headset Head Unit (HSP/HFP, codec %s)"
-msgstr ""
+msgstr "Навушнікі гарнітуры (HSP/HFP, кодэк %s)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1364
 msgid "Headset Head Unit (HSP/HFP)"
-msgstr ""
+msgstr "Навушнікі гарнітуры (HSP/HFP)"
 
 #: spa/plugins/bluez5/bluez5-device.c:1443
 #: spa/plugins/bluez5/bluez5-device.c:1448
@@ -574,6 +660,10 @@ msgstr ""
 #: spa/plugins/bluez5/bluez5-device.c:1491
 msgid "Handsfree"
 msgstr "Хэндс-фры"
+
+#: spa/plugins/bluez5/bluez5-device.c:1449
+msgid "Handsfree (HFP)"
+msgstr ""
 
 #: spa/plugins/bluez5/bluez5-device.c:1466
 msgid "Headphone"
@@ -597,4 +687,8 @@ msgstr "Тэлефон"
 
 #: spa/plugins/bluez5/bluez5-device.c:1497
 msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: spa/plugins/bluez5/bluez5-device.c:1498
+msgid "Bluetooth (HFP)"
 msgstr ""

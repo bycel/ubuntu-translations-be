@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Uladzimir Manulenka <vlma@tut.by>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/rygel/issues\n"
-"POT-Creation-Date: 2022-02-01 02:44+0000\n"
-"PO-Revision-Date: 2019-08-23 20:12+0000\n"
-"Last-Translator: Jim <Unknown>\n"
+"POT-Creation-Date: 2024-01-09 21:47+0000\n"
+"PO-Revision-Date: 2022-12-01 16:49+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-03-22 21:46+0000\n"
-"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:51+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be_BY\n"
 
 #: data/rygel.desktop.in:3
@@ -247,19 +247,6 @@ msgstr "Выкарыстоўваць канфігурацыю з файла за
 #: src/librygel-core/rygel-cmdline-config.vala:74
 msgid "Shut down remote Rygel reference"
 msgstr "Адключыць аддалены Rygel"
-
-#: src/librygel-core/rygel-cmdline-config.vala:102
-msgid "Replace currently running instance of Rygel"
-msgstr "Замяніць цяперашні запушчаны экзэмпляр Rygel"
-
-#: src/librygel-core/rygel-cmdline-config.vala:139
-msgid "Shutting down remote Rygel instance\n"
-msgstr "Спыніць працу аддаленага экзэмпляра Rygel\n"
-
-#: src/librygel-core/rygel-cmdline-config.vala:147
-#, c-format
-msgid "Failed to shut down other Rygel instance: %s"
-msgstr "Не ўдалося спыніць працу іншага экзэмпляра Rygel: %s"
 
 #: src/librygel-core/rygel-cmdline-config.vala:98
 #: src/librygel-core/rygel-cmdline-config.vala:107
@@ -572,7 +559,7 @@ msgstr "Не ўдалося праглядзець даччыныя элемен
 msgid "Failed to browse “%s”: %s\n"
 msgstr "Не ўдалося праглядзець «%s»: %s\n"
 
-#: src/librygel-server/rygel-client-hacks.vala:147
+#: src/librygel-server/rygel-client-hacks.vala:151
 msgid "Not Applicable"
 msgstr "Непрыдатна"
 
@@ -584,6 +571,11 @@ msgstr "Няма такой перадачы файлаў"
 msgid "No D-Bus thumbnailer service available"
 msgstr "Няма даступнай службы мініяцюр D-Bus"
 
+#: src/librygel-server/rygel-http-byte-seek-request.vala:116
+#, c-format
+msgid "Range end value %lld is smaller than range start value %lld: '%s'"
+msgstr ""
+
 #: src/librygel-server/rygel-http-get.vala:53
 msgid "Invalid Request (only GET and HEAD supported)"
 msgstr "Няправільны запыт (падтрымліваюцца толькі GET і HEAD)"
@@ -591,6 +583,11 @@ msgstr "Няправільны запыт (падтрымліваюцца тол
 #: src/librygel-server/rygel-http-get.vala:61
 msgid " must be 1"
 msgstr " павінна быць 1"
+
+#: src/librygel-server/rygel-http-get.vala:91
+#, c-format
+msgid "%s transfer mode not supported for '%s'"
+msgstr ""
 
 #: src/librygel-server/rygel-http-item-uri.vala:152
 #, c-format
@@ -1307,7 +1304,7 @@ msgstr "Няправільная база даных, немагчыма зап�
 msgid "Failed to create database schema: %s"
 msgstr "Не ўдалося стварыць схему базы даных: %s"
 
-#: src/plugins/media-export/rygel-media-export-media-cache.vala:1233
+#: src/plugins/media-export/rygel-media-export-media-cache.vala:1234
 #, c-format
 msgid "Skipping unsupported sort field: %s"
 msgstr "Прапушчана поле сартавання, якое не падтрымліваецца: %s"
@@ -1542,6 +1539,34 @@ msgstr "Не ўдалося стварыць злучэнне Tracker: %s"
 msgid "Failed to get Tracker connection: %s"
 msgstr "Не ўдалося атрымаць злучэнне Tracker: %s"
 
+#: src/rygel/application.vala:88
+#, c-format
+msgid "Failed to load user configuration: %s"
+msgstr "Не ўдалося загрузіць карыстальніцкую канфігурацыю: %s"
+
+#: src/rygel/application.vala:125
+#, c-format
+msgid "No plugins found in %d second; giving up…"
+msgid_plural "No plugins found in %d seconds; giving up…"
+msgstr[0] "За %d секунду не знойдзена ніводнай убудовы; адмена…"
+msgstr[1] "За %d секунды не знойдзена ніводнай убудовы; адмена…"
+msgstr[2] "За %d секунд не знойдзена ніводнай убудовы; адмена…"
+
+#: src/rygel/application.vala:154
+#, c-format
+msgid "Rygel v%s starting…"
+msgstr "Запуск Rygel v%s…"
+
+#: src/rygel/application.vala:202
+#, c-format
+msgid "Failed to create RootDevice for %s. Reason: %s"
+msgstr "Не ўдалося стварыць RootDevice для %s. Прычына: %s"
+
+#: src/rygel/application.vala:283
+#, c-format
+msgid "Failed to create root device factory: %s"
+msgstr "Не ўдалося стварыць фабрыку каранёвай прылады: %s"
+
 #: src/rygel/rygel-acl.vala:110
 #, c-format
 msgid "Failed to query ACL: %s"
@@ -1559,38 +1584,6 @@ msgstr "Няма рэзервовай палітыкі ACL. Выкарыстоў
 #: src/rygel/rygel-acl.vala:147
 msgid "No ACL fallback policy found. Using “deny”"
 msgstr "Няма рэзервовай палітыкі ACL. Выкарыстоўваецца «deny»"
-
-#: src/rygel/rygel-dbus-service.vala:81
-msgid "Another instance of Rygel is already running. Not starting."
-msgstr "Ужо запушчаны іншы экзэмпляр Rygel. Запуск скасаваны."
-
-#: src/rygel/application.vala:154
-#, c-format
-msgid "Rygel v%s starting…"
-msgstr "Запуск Rygel v%s…"
-
-#: src/rygel/application.vala:125
-#, c-format
-msgid "No plugins found in %d second; giving up…"
-msgid_plural "No plugins found in %d seconds; giving up…"
-msgstr[0] "За %d секунду не знойдзена ніводнай убудовы; адмена…"
-msgstr[1] "За %d секунды не знойдзена ніводнай убудовы; адмена…"
-msgstr[2] "За %d секунд не знойдзена ніводнай убудовы; адмена…"
-
-#: src/rygel/application.vala:283
-#, c-format
-msgid "Failed to create root device factory: %s"
-msgstr "Не ўдалося стварыць фабрыку каранёвай прылады: %s"
-
-#: src/rygel/application.vala:202
-#, c-format
-msgid "Failed to create RootDevice for %s. Reason: %s"
-msgstr "Не ўдалося стварыць RootDevice для %s. Прычына: %s"
-
-#: src/rygel/application.vala:88
-#, c-format
-msgid "Failed to load user configuration: %s"
-msgstr "Не ўдалося загрузіць карыстальніцкую канфігурацыю: %s"
 
 #: src/ui/rygel-preferences-dialog.vala:109
 #, c-format
