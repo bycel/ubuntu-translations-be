@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 98e6872775a91bf27122ff608b6db605\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/glib-networking/issues\n"
-"POT-Creation-Date: 2024-02-27 17:15+0000\n"
+"POT-Creation-Date: 2024-03-07 11:26+0000\n"
 "PO-Revision-Date: 2021-06-30 09:58+0000\n"
 "Last-Translator: Zander Brown <Unknown>\n"
 "Language-Team: Belarusian\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || "
 "n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2024-03-07 08:39+0000\n"
+"X-Launchpad-Export-Date: 2024-03-07 13:49+0000\n"
 "X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be_BY\n"
 "X-Crowdin-Project: 98e6872775a91bf27122ff608b6db605\n"
@@ -44,7 +44,7 @@ msgstr ""
 "Немагчыма выканаць аперацыю блакіравання падчас пацвярджэння сувязі TLS"
 
 #: tls/base/gtlsconnection-base.c:755 tls/base/gtlsconnection-base.c:1303
-#: tls/openssl/gtlsconnection-openssl.c:358
+#: tls/openssl/gtlsconnection-openssl.c:373
 msgid "Socket I/O timed out"
 msgstr "Перабольшаны час чакання ўводу/вываду сокета"
 
@@ -65,7 +65,7 @@ msgstr "Вузел не падтрымлівае бяспечнае пераўз
 
 #: tls/base/gtlsconnection-base.c:1746 tls/gnutls/gtlsconnection-gnutls.c:490
 #: tls/openssl/gtlsconnection-openssl.c:209
-#: tls/openssl/gtlsconnection-openssl.c:835
+#: tls/openssl/gtlsconnection-openssl.c:850
 #, c-format
 msgid "Unacceptable TLS certificate"
 msgstr "Недапушчальны сертыфікат TLS"
@@ -149,6 +149,7 @@ msgstr ""
 "Аднарангаваму вузлу не ўдалося здзейсніць пацвярджэнне сувязі TLS: %s"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:467
+#: tls/openssl/gtlsconnection-openssl.c:246
 msgid "TLS connection closed unexpectedly"
 msgstr "Злучэнне TLS нечакана закрылася"
 
@@ -187,7 +188,7 @@ msgid "Error performing TLS handshake: %s"
 msgstr "Памылка пацвярджэння сувязі TLS: %s"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:981
-#: tls/openssl/gtlsconnection-openssl.c:614
+#: tls/openssl/gtlsconnection-openssl.c:629
 msgid "Error performing TLS handshake"
 msgstr "Памылка пацвярджэння сувязі TLS"
 
@@ -209,22 +210,22 @@ msgid "Channel binding data is not yet available"
 msgstr "Даныя канала прывязкі яшчэ недаступны"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1230
-#: tls/openssl/gtlsconnection-openssl.c:810
+#: tls/openssl/gtlsconnection-openssl.c:825
 #, c-format
 msgid "Requested channel binding type is not implemented"
 msgstr "Запытаны канал тыпу прывязкі не рэалізаваны"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1251
 #: tls/gnutls/gtlsconnection-gnutls.c:1311
-#: tls/openssl/gtlsconnection-openssl.c:828
-#: tls/openssl/gtlsconnection-openssl.c:924
+#: tls/openssl/gtlsconnection-openssl.c:843
+#: tls/openssl/gtlsconnection-openssl.c:939
 msgid "Error reading data from TLS socket"
 msgstr "Памылка чытання даных з сокета TLS"
 
 #. flags
 #: tls/gnutls/gtlsconnection-gnutls.c:1333
 #: tls/gnutls/gtlsconnection-gnutls.c:1396
-#: tls/openssl/gtlsconnection-openssl.c:1003
+#: tls/openssl/gtlsconnection-openssl.c:1018
 msgid "Error writing data to TLS socket"
 msgstr "Памылка запісу даных у сокет TLS"
 
@@ -275,6 +276,11 @@ msgid ""
 "GnuTLS configuration"
 msgstr ""
 
+#: tls/gnutls/gtlsdatabase-gnutls.c:621
+#, c-format
+msgid "Failed to initialize trust list: %s"
+msgstr ""
+
 #: tls/gnutls/gtlsfiledatabase-gnutls.c:153
 #: tls/openssl/gtlsfiledatabase-openssl.c:456
 #, c-format
@@ -318,33 +324,33 @@ msgstr "Занадта вялікі дайджэст для ключа RSA"
 msgid "Secure renegotiation is disabled"
 msgstr "Бяспечнае пераўзгадненне адключана"
 
-#: tls/openssl/gtlsconnection-openssl.c:253
+#: tls/openssl/gtlsconnection-openssl.c:268
 #, c-format
 #| msgid "Connection is closed"
 msgid "%s: The connection is broken"
 msgstr "%s: злучэнне пашкоджана"
 
-#: tls/openssl/gtlsconnection-openssl.c:660
+#: tls/openssl/gtlsconnection-openssl.c:675
 #, c-format
 msgid "The request is invalid."
 msgstr "Памылковы запыт."
 
-#: tls/openssl/gtlsconnection-openssl.c:683
+#: tls/openssl/gtlsconnection-openssl.c:698
 #, c-format
 msgid "Channel binding data tls-unique is not available"
 msgstr "Канал прывязкі даных tls-unique недаступны"
 
-#: tls/openssl/gtlsconnection-openssl.c:706
+#: tls/openssl/gtlsconnection-openssl.c:721
 #, c-format
 msgid "X.509 Certificate is not available on the connection"
 msgstr "Сертыфікат X.509 недаступны на злучэнні"
 
-#: tls/openssl/gtlsconnection-openssl.c:714
+#: tls/openssl/gtlsconnection-openssl.c:729
 #, c-format
 msgid "Unable to obtain certificate signature algorithm"
 msgstr "Немагчыма атрымаць сертыфікат подпісу алгарытму"
 
-#: tls/openssl/gtlsconnection-openssl.c:734
+#: tls/openssl/gtlsconnection-openssl.c:749
 #, c-format
 msgid ""
 "Current X.509 certificate uses unknown or unsupported signature algorithm"
@@ -352,22 +358,22 @@ msgstr ""
 "Бягучы сертыфікат X.509 выкарыстоўвае невядомы алгарытм подпісу, які не "
 "падтрымліваецца"
 
-#: tls/openssl/gtlsconnection-openssl.c:752
+#: tls/openssl/gtlsconnection-openssl.c:767
 #, c-format
 msgid "Failed to generate X.509 certificate digest"
 msgstr "Не ўдалося згенерыраваць дайджэст сертыфіката X.509"
 
-#: tls/openssl/gtlsconnection-openssl.c:783
+#: tls/openssl/gtlsconnection-openssl.c:798
 #, c-format
 msgid "TLS Connection does not support TLS-Exporter feature"
 msgstr "Злучэнне TLS не падтрымлівае функцыю TLS-Exporter"
 
-#: tls/openssl/gtlsconnection-openssl.c:786
+#: tls/openssl/gtlsconnection-openssl.c:801
 #, c-format
 msgid "Unexpected error while exporting keying data"
 msgstr "Нечаканая памылка пры экспартаванні ўводу даных"
 
-#: tls/openssl/gtlsconnection-openssl.c:1064
+#: tls/openssl/gtlsconnection-openssl.c:1079
 msgid "Error performing TLS close"
 msgstr "Памылка закрыцця TLS"
 

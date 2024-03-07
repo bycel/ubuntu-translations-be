@@ -2,22 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp 2.7\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp/issues\n"
-"POT-Creation-Date: 2023-11-28 15:21+0000\n"
-"PO-Revision-Date: 2024-01-19 11:30+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2023-11-16 05:19+0000\n"
+"PO-Revision-Date: 2023-11-16 08:17+0000\n"
+"Last-Translator: 375gnu <Unknown>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-03-04 09:49+0000\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:49+0000\n"
 "X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
-"Language: be\n"
 "X-Poedit-Language: Belarusian\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Country: BELARUS\n"
+"Language: be\n"
 "X-Poedit-Basepath: /tmp/gimp-2.7.1/po\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../plug-ins/common/align-layers.c:158
 msgid "Align all visible layers of the image"
@@ -1300,7 +1300,7 @@ msgstr "_Блакітны:"
 
 #: ../plug-ins/common/compose.c:167 ../plug-ins/common/compose.c:172
 msgid "_Magenta:"
-msgstr "_Пурпурны:"
+msgstr "_Пурпуровы:"
 
 #: ../plug-ins/common/compose.c:168 ../plug-ins/common/compose.c:173
 msgid "_Yellow:"
@@ -2283,7 +2283,7 @@ msgstr "_Выкарыстоўваць макрас замест структур
 
 #: ../plug-ins/common/file-csource.c:970
 msgid "Use _1 byte Run-Length-Encoding"
-msgstr "Выкарыстоўваць 1-_байтное RLE"
+msgstr "Выкарыстоўваць 1-_байтавае RLE"
 
 #: ../plug-ins/common/file-csource.c:983
 msgid "Sa_ve alpha channel (RGBA/RGB)"
@@ -2353,6 +2353,11 @@ msgstr "«%s» не з'яўляецца файлам DICOM"
 msgid "Transfer syntax %s is not supported by GIMP."
 msgstr "GIMP не падтрымлівае пераходны сінтаксіс %s."
 
+#: ../plug-ins/common/file-dicom.c:600
+#, c-format
+msgid "%s is not supported by GIMP in combination with samples per pixel: %d"
+msgstr ""
+
 #: ../plug-ins/common/file-dicom.c:1336
 msgid "Cannot save images with alpha channel."
 msgstr "Немагчыма захаваць відарыс з альфа-каналам."
@@ -2402,10 +2407,6 @@ msgstr "Відарыс GIF"
 #: ../plug-ins/common/file-gif-load.c:376
 msgid "This is not a GIF file"
 msgstr "Не з'яўляецца файлам GIF"
-
-#: ../plug-ins/common/file-gif-load.c:419
-msgid "Non-square pixels.  Image might look squashed."
-msgstr "Не квадратныя пікселі. Відарыс можа выглядаць сціснутым."
 
 #: ../plug-ins/common/file-gif-load.c:994
 #, c-format
@@ -2906,6 +2907,10 @@ msgstr "Не ўдалося пераўтварыць відарыс xvYCC JP2 «
 msgid "Unsupported color space in JP2 image '%s'."
 msgstr "Колеравая прастора ў відарысе JP2 «%s» не падтрымліваецца."
 
+#: ../plug-ins/common/file-jpegxl.c:82 ../plug-ins/common/file-jpegxl.c:99
+msgid "JPEG XL image"
+msgstr ""
+
 #. Inform the user that we couldn't losslessly save the
 #. * transparency & just use the full palette
 #: ../plug-ins/common/file-mng.c:533 ../plug-ins/common/file-png.c:2341
@@ -3200,6 +3205,11 @@ msgstr "_Раздзяляльнасць:"
 msgid "Use _Anti-aliasing"
 msgstr "_Выкарыстоўваць згладжванне"
 
+#. White Background
+#: ../plug-ins/common/file-pdf-load.c:1457
+msgid "_Fill transparent areas with white"
+msgstr ""
+
 #: ../plug-ins/common/file-pdf-load.c:1636
 #: ../plug-ins/common/file-pdf-load.c:1637 ../plug-ins/common/file-svg.c:852
 #: ../plug-ins/common/file-wmf.c:710 ../plug-ins/print/print-page-layout.c:305
@@ -3227,6 +3237,11 @@ msgstr ""
 "%s\n"
 "Пераканайцеся, што вы ўвялі сапраўднае імя файла і выбранае размяшчэнне "
 "даступна для запісу!"
+
+#: ../plug-ins/common/file-pdf-save.c:899
+#: ../plug-ins/common/file-pdf-save.c:1067
+msgid "_Fill transparent areas with background color"
+msgstr ""
 
 #: ../plug-ins/common/file-pdf-save.c:823
 #: ../plug-ins/common/file-pdf-save.c:983
@@ -3505,6 +3520,10 @@ msgstr "Відарыс Encapsulated PostScript"
 #, c-format
 msgid "Could not interpret PostScript file '%s'"
 msgstr "Не ўдалося інтэрпрэтаваць файл PostScript «%s»"
+
+#: ../plug-ins/common/file-ps.c:1173
+msgid "Rendered EPS"
+msgstr ""
 
 #: ../plug-ins/common/file-ps.c:1219
 #, c-format
@@ -5727,7 +5746,7 @@ msgstr "_Даўжыня промняў:"
 
 #: ../plug-ins/common/sparkle.c:397
 msgid "Adjust the spike length"
-msgstr "Рэгуляваць даўжыню промня"
+msgstr "Рэгуляваць даўжыню променя"
 
 #: ../plug-ins/common/sparkle.c:407
 msgid "Sp_ike points:"
@@ -5739,7 +5758,7 @@ msgstr "Рэгуляванне колькасці промняў"
 
 #: ../plug-ins/common/sparkle.c:420
 msgid "Spi_ke angle (-1: random):"
-msgstr "_Вугал промня (-1: выпадковы):"
+msgstr "_Вугал променя (-1: выпадковы):"
 
 #: ../plug-ins/common/sparkle.c:423
 msgid "Adjust the spike angle (-1 causes a random angle to be chosen)"
@@ -5747,7 +5766,7 @@ msgstr "Рэгуляванне вугла променя (пры -1 выбіра
 
 #: ../plug-ins/common/sparkle.c:434
 msgid "Spik_e density:"
-msgstr "_Шчыльнасць промня:"
+msgstr "_Шчыльнасць променя:"
 
 #: ../plug-ins/common/sparkle.c:437
 msgid "Adjust the spike density"
@@ -6752,6 +6771,10 @@ msgstr "Выкарыстоўваць _перцыпцыйную метрыку п
 msgid "_Save:"
 msgstr "_Захаваць:"
 
+#: ../plug-ins/file-dds/ddswrite.c:2062
+msgid "Flip the image _vertically on export"
+msgstr ""
+
 #: ../plug-ins/file-dds/ddswrite.c:2037
 msgid "_Mipmaps:"
 msgstr "_Міпмапы:"
@@ -7612,10 +7635,24 @@ msgstr ""
 "Папярэджанне: няма звестак раздзяляльнасці Y. Мяркуецца, што значэнне "
 "супадае з X"
 
+#: ../plug-ins/file-tiff/file-tiff-load.c:1368
+msgid "Invalid image resolution info, using default"
+msgstr ""
+
 #: ../plug-ins/file-tiff/file-tiff-load.c:1294
 #, c-format
 msgid "Could not get colormaps from '%s'"
 msgstr "Не ўдалося атрымаць колеравыя карты з «%s»"
+
+#. Validate number of channels to the same maximum as we use for
+#. * Photoshop. A higher number most likely means a corrupt image
+#. * and can cause GIMP to become unresponsive and/or stuck.
+#. * See m2-d0f86ab189cbe900ec389ca6d7464713.tif from imagetestsuite
+#. 
+#: ../plug-ins/file-tiff/file-tiff-load.c:1521
+#, c-format
+msgid "Suspicious number of extra channels: %d. Possibly corrupt image."
+msgstr ""
 
 #: ../plug-ins/file-tiff/file-tiff-load.c:1066
 msgid "TIFF Channel"
@@ -7650,6 +7687,10 @@ msgstr ""
 #: ../plug-ins/file-tiff/file-tiff-load.c:1846
 msgid "Import from TIFF"
 msgstr "Імпартаваць з TIFF"
+
+#: ../plug-ins/file-tiff/file-tiff-load.c:2681
+msgid "_Show reduced images"
+msgstr ""
 
 #. Option to shrink the loaded image to its bounding box
 #. or keep as much empty space as possible.
@@ -7708,6 +7749,12 @@ msgstr "Запіс старонак з рознай бітавай глыбін�
 #: ../plug-ins/file-tiff/file-tiff-save.c:1130
 msgid "TIFF"
 msgstr "TIFF"
+
+#: ../plug-ins/file-tiff/file-tiff-save.c:1188
+msgid ""
+"<i>Warning: maximum TIFF file size exceeded.\n"
+" Retry as BigTIFF or cancel.</i>"
+msgstr ""
 
 #: ../plug-ins/file-tiff/file-tiff-save.c:1156
 msgid "Compression"
@@ -7823,6 +7870,11 @@ msgstr "Выкарыстоўваць уведзеную вышэй затрым�
 msgid "_Save Exif data"
 msgstr "_Захаваць даныя Exif"
 
+#. IPTC metadata
+#: ../plug-ins/file-webp/file-webp-dialog.c:378
+msgid "Save _IPTC"
+msgstr ""
+
 #: ../plug-ins/file-webp/file-webp-load.c:107
 #, c-format
 msgid "Invalid WebP file '%s'"
@@ -7864,9 +7916,11 @@ msgstr "Параметр NULL"
 msgid "invalid configuration"
 msgstr "памылковая канфігурацыя"
 
-#: ../plug-ins/file-webp/file-webp-save.c:124
-msgid "bad image dimensions"
-msgstr "праблемныя памеры відарыса"
+#. TRANSLATORS: widthxheight with UTF-8 encoded multiply sign.
+#: ../plug-ins/file-webp/file-webp-save.c:125
+#, c-format
+msgid "bad image dimensions (maximum: %d×%d)"
+msgstr ""
 
 #: ../plug-ins/file-webp/file-webp-save.c:126
 msgid "partition is bigger than 512K"
@@ -9693,12 +9747,26 @@ msgid "_Planar (RRR,GGG,BBB)"
 msgstr "_Планарны (RRR,GGG,BBB)"
 
 #: ../plug-ins/ui/plug-in-file-raw.ui.h:4
+msgid "Palette Type"
+msgstr ""
+
+#: ../plug-ins/ui/plug-in-file-raw.ui.h:4
 msgid "_R, G, B (normal)"
 msgstr "_R, G, B (нармальны)"
 
 #: ../plug-ins/ui/plug-in-file-raw.ui.h:5
 msgid "_B, G, R, X (BMP style)"
 msgstr "_B, G, R, X (як у BMP)"
+
+#: ../plug-ins/ui/plug-in-file-tiff.ui.h:1
+msgid ""
+"Warning: maximum TIFF file size exceeded. Retry as BigTIFF or with a "
+"different compression algorithm, or cancel."
+msgstr ""
+
+#: ../plug-ins/ui/plug-in-file-tiff.ui.h:2
+msgid "Export in _BigTIFF variant file format"
+msgstr ""
 
 #: ../plug-ins/ui/plug-in-file-tiff.ui.h:1
 msgid "Save _layers"
@@ -10405,7 +10473,7 @@ msgstr "Колькасць промняў:"
 
 #: ../plug-ins/gradient-flare/gradient-flare.c:3827
 msgid "Spike thickness:"
-msgstr "Таўшчыня промня:"
+msgstr "Таўшчыня променя:"
 
 #: ../plug-ins/gradient-flare/gradient-flare.c:3841
 msgid "_Rays"
@@ -10560,6 +10628,11 @@ msgstr "Невядомы ідэнтыфікатар «%s» у сістэме д�
 #, c-format
 msgid "Loading index from '%s'"
 msgstr "Загрузка індэксу з «%s»"
+
+#: ../plug-ins/help/gimphelplocale.c:239
+#, c-format
+msgid "Could not load data from '%s': %s"
+msgstr ""
 
 #: ../plug-ins/help/gimphelplocale.c:266
 #, c-format
@@ -12192,6 +12265,42 @@ msgstr "Алічбавана з пазітыўнай плёнкі"
 msgid "Digitized from a print on non-transparent medium"
 msgstr "Алічбавана з адбітка на непразрыстым носьбіце"
 
+#: ../plug-ins/metadata/metadata-tags.c:185
+msgid "Original media with minor human edits"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:186
+msgid "Composite of captured elements"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:187
+msgid "Algorithmically-enhanced media"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:188
+msgid "Data-driven media"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:189
+msgid "Digital art"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:190
+msgid "Virtual recording"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:191
+msgid "Composite including synthetic elements"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:192
+msgid "Trained algorithmic media"
+msgstr ""
+
+#: ../plug-ins/metadata/metadata-tags.c:193
+msgid "Pure algorithmic media"
+msgstr ""
+
 #: ../plug-ins/metadata/metadata-tags.c:167
 msgid "Created by software"
 msgstr "Створана праграмным прадуктам"
@@ -12926,3 +13035,6 @@ msgstr "_Сканер/Камера..."
 #: ../plug-ins/twain/twain.c:506
 msgid "Transferring data from scanner/camera"
 msgstr "Перадача даных са сканера/камеры"
+
+#~ msgid "Non-square pixels.  Image might look squashed."
+#~ msgstr "Не квадратныя пікселі. Відарыс можа выглядаць сціснутым."
