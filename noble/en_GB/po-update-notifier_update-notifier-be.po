@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-notifier\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 18:40+0000\n"
-"PO-Revision-Date: 2023-05-27 12:36+0000\n"
+"POT-Creation-Date: 2024-02-16 19:20+0000\n"
+"PO-Revision-Date: 2022-01-12 09:18+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,23 +22,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:20+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-07 07:56+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be\n"
 
-#: ../data/apt_check.py:62
+#: ../data/apt_check.py:27
 #, python-format
 msgid "Unknown Error: '%s' (%s)"
 msgstr "Невядомая памылка: '%s' (%s)"
 
-#: ../data/apt_check.py:151
+#: ../data/apt_check.py:171
 #, python-format
 msgid "%d of these updates is an ESM %s security update."
 msgid_plural "%d of these updates are ESM %s security updates."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../data/apt_check.py:180
+#: ../data/apt_check.py:200
 #, python-format
 msgid ""
 "%i additional security update can be applied with ESM %s.\n"
@@ -49,66 +49,70 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../data/apt_check.py:196
+#: ../data/apt_check.py:216
 #, python-format
 msgid "Enable ESM %s to receive additional future security updates."
 msgstr ""
 
-#: ../data/apt_check.py:204
+#: ../data/apt_check.py:224
 msgid "See https://ubuntu.com/esm or run: sudo pro status"
 msgstr ""
 
-#: ../data/apt_check.py:212
+#: ../data/apt_check.py:232
 #, python-format
 msgid "Expanded Security Maintenance for %s is enabled."
 msgstr ""
 
-#: ../data/apt_check.py:216
+#: ../data/apt_check.py:236
 #, python-format
 msgid "Expanded Security Maintenance for %s is not enabled."
 msgstr ""
 
-#: ../data/apt_check.py:243
+#: ../data/apt_check.py:265
 #, python-format
 msgid "%i update can be applied immediately."
 msgid_plural "%i updates can be applied immediately."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../data/apt_check.py:256
+#: ../data/apt_check.py:279
 #, python-format
 msgid "%i of these updates is a standard security update."
 msgid_plural "%i of these updates are standard security updates."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../data/apt_check.py:266
+#: ../data/apt_check.py:117
 msgid "To see these additional updates run: apt list --upgradable"
 msgstr ""
 
-#: ../data/apt_check.py:373
+#: ../data/apt_check.py:182
 #, python-format
 msgid "Error: Opening the cache (%s)"
 msgstr "Памылка: адкрыцьцё кэша (%s)"
 
-#: ../data/apt_check.py:383
+#: ../data/apt_check.py:192
 msgid "Error: BrokenCount > 0"
 msgstr "Памылка: BrokenCount > 0"
 
-#: ../data/apt_check.py:390
+#: ../data/apt_check.py:199
 #, python-format
 msgid "Error: Marking the upgrade (%s)"
 msgstr "Памылка: адзначэньне абнаўленьня (%s)"
 
-#: ../data/apt_check.py:503
+#: ../data/apt_check.py:309
 msgid "Show the packages that are going to be installed/upgraded"
 msgstr "Пакункі, якія будуць усталяваны ці абноўлены"
 
-#: ../data/apt_check.py:509
+#: ../data/apt_check.py:315
 msgid "Show human readable output on stdout"
 msgstr "Выводзіць чытабельныя паведамленьні ў stdout"
 
-#: ../data/apt_check.py:513
+#: ../data/apt_check.py:546
+msgid "Do not show esm related messages in human readable output"
+msgstr ""
+
+#: ../data/apt_check.py:319
 msgid ""
 "Return the time in days when security updates are installed unattended (0 "
 "means disabled)"
@@ -116,15 +120,15 @@ msgstr ""
 "Вяртае колькасьць дзён, калі былі аўтаматычна ўсталяваныя абнаўленьні "
 "бясьпекі (0 - выключана)"
 
-#: ../src/crash.c:46 ../src/system-crash.c:20
+#: ../src/crash.c:46
 msgid "System program problem detected"
 msgstr "Знойдзена праблема ў сістэмнае праграме"
 
-#: ../src/crash.c:47 ../src/system-crash.c:21
+#: ../src/crash.c:47
 msgid "Do you want to report the problem now?"
 msgstr "Ці жадаеце зараз паведаміць пра памылку?"
 
-#: ../src/crash.c:57 ../src/system-crash.c:31
+#: ../src/crash.c:57
 msgid "Report problem…"
 msgstr "Справаздача пра памылку..."
 
@@ -200,15 +204,15 @@ msgstr ""
 msgid "Start package manager"
 msgstr "Запусьціць кіраўнік пакетаў"
 
-#: ../src/hooks.c:412 ../ui/hooks-dialog.ui.h:2
+#: ../src/hooks.c:362 ../ui/hooks-dialog.ui.h:2
 msgid "_Run this action now"
 msgstr "_Выканаць зараз"
 
-#: ../src/hooks.c:564 ../src/hooks.c:723
+#: ../src/hooks.c:514 ../src/hooks.c:664
 msgid "Information available"
 msgstr "У наяўнасьці ёсьць зьвесткі"
 
-#: ../src/hooks.c:724
+#: ../src/hooks.c:665
 msgid "Click on the notification icon to show the available information.\n"
 msgstr "Пстрыкніце па значцы інфармавальніка, каб убачыць наяўныя зьвесткі\n"
 
@@ -245,6 +249,45 @@ msgstr ""
 
 #: ../src/livepatch-tray.c:173
 msgid "An error occured when applying Livepatch updates."
+msgstr ""
+
+#: ../src/reboot.c:32 ../src/reboot.c:249
+msgid "System restart required"
+msgstr "Патрэбны перазапуск сыстэмы"
+
+#: ../src/reboot.c:33
+msgid ""
+"To finish updating your system, please restart it.\n"
+"\n"
+"Click on the notification icon for details."
+msgstr ""
+"Абнаўленьне сыстэмы скончылася. Калі ласка, перазапусьціце кампутар.\n"
+"\n"
+"Клікніце па іконцы апавяшчэньня для больш дэтальнай інфармацыі."
+
+#: ../src/reboot.c:109
+msgid "Reboot failed"
+msgstr "Перазагрузка схібіла"
+
+#: ../src/reboot.c:110
+msgid "Failed to request reboot, please shutdown manually"
+msgstr ""
+"Збой запыту перазагрузкі. Калі ласка, самастойна перазагрузіце сыстэму"
+
+#: ../src/ubuntu-advantage.c:87
+msgid "Ubuntu Pro is available for this computer."
+msgstr ""
+
+#: ../src/ubuntu-advantage.c:88
+msgid "Do you want to enable Ubuntu Pro?"
+msgstr ""
+
+#: ../src/ubuntu-advantage.c:91
+msgid "Don’t remind me again"
+msgstr ""
+
+#: ../src/ubuntu-advantage.c:93 ../src/ubuntu-advantage.c:95
+msgid "Enable Ubuntu Pro"
 msgstr ""
 
 #: ../src/update.c:28
@@ -306,7 +349,7 @@ msgid ""
 "failing repositories."
 msgstr ""
 
-#: ../src/update.c:594
+#: ../src/update.c:574
 #, c-format
 msgid ""
 "An error occurred, please run Package Manager from the right-click menu or "
@@ -317,7 +360,7 @@ msgstr ""
 "выканацйце у кансолі apt-get, каб даведацца больш.\n"
 "Тэкст паведамлення: \"%s\". "
 
-#: ../src/update.c:601
+#: ../src/update.c:581
 msgid ""
 "An error occurred, please run Package Manager from the right-click menu or "
 "apt-get in a terminal to see what is wrong."
@@ -325,30 +368,30 @@ msgstr ""
 "Узьнікла памылка. Калі ласка, запусьціце Кіраўнік пакетаў праз правую кнопку "
 "мышы альбо apt-get у тэрмінале, каб убачыць што здарылася."
 
-#: ../src/update.c:605
+#: ../src/update.c:585
 msgid ""
 "This usually means that your installed packages have unmet dependencies"
 msgstr ""
 "Звычайна, гэта азначае што вы ўсталявале пакеты, якія недарэчныя залежнасьці"
 
-#: ../src/update.c:618
+#: ../src/update.c:598
 msgid "A problem occurred when checking for the updates."
 msgstr "Узьнікла праблема ў час праверкі абнаўленьняў."
 
-#: ../src/update-notifier.c:609
+#: ../src/update-notifier.c:585
 msgid "- inform about updates"
 msgstr "- інфармуе пра абнаўленні"
 
-#: ../src/update-notifier.c:611
+#: ../src/update-notifier.c:587
 #, c-format
 msgid "Failed to init the UI: %s\n"
 msgstr "Немагчыма ініцыялізаваць UI: %s\n"
 
-#: ../src/update-notifier.c:612
+#: ../src/update-notifier.c:588
 msgid "unknown error"
 msgstr "невядомая памылка"
 
-#: ../src/update-notifier.c:639
+#: ../src/update-notifier.c:615
 msgid "update-notifier"
 msgstr "нагадвальнік-аб-абнаўленьнях"
 
@@ -356,6 +399,26 @@ msgstr "нагадвальнік-аб-абнаўленьнях"
 msgid "<span weight=\"bold\" size=\"larger\">Update information</span>"
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Зьвесткі пра абнаўленьне</span>"
+
+#: ../ui/reboot-dialog.ui.h:1
+msgid "Restart Required"
+msgstr "Патрабуецца перазапуск"
+
+#: ../ui/reboot-dialog.ui.h:2
+msgid "Restart _Later"
+msgstr "Перазагрузіць _потым"
+
+#: ../ui/reboot-dialog.ui.h:3
+msgid "_Restart Now"
+msgstr "Перазагрузіць _зараз"
+
+#: ../ui/reboot-dialog.ui.h:4
+msgid ""
+"The computer needs to restart to finish installing updates. Please save your "
+"work before continuing."
+msgstr ""
+"Кампутар неабходна перазапусьціць, каб скончыць устаноўку абнаўленьняў. Калі "
+"ласка, захавайце вашую працу, перш чым працягваць."
 
 #: ../data/com.ubuntu.update-notifier.policy.in.h:1
 msgid "Authentication is needed to upgrade"

@@ -14,16 +14,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: totem.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/totem/issues\n"
-"POT-Creation-Date: 2022-03-21 13:56+0000\n"
-"PO-Revision-Date: 2024-01-19 11:30+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2022-09-21 02:00+0000\n"
+"PO-Revision-Date: 2022-09-21 03:19+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-03-04 09:44+0000\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:05+0000\n"
 "X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be\n"
 
@@ -82,10 +82,6 @@ msgstr "Наперад"
 #: data/org.gnome.Totem.desktop.in.in:29 src/totem-options.c:53
 msgid "Previous"
 msgstr "Назад"
-
-#: data/org.gnome.Totem.desktop.in.in:38
-msgid "Mute"
-msgstr "Бязгучна"
 
 #: data/org.gnome.Totem.desktop.in.in:33
 msgid "Fullscreen"
@@ -169,11 +165,9 @@ msgstr "Прадвызначанае размяшчэнне для акна «З
 
 #: data/org.gnome.totem.gschema.xml.in:61
 msgid ""
-"Default location for the “Take Screenshot” dialogs. Default is the Pictures "
-"directory."
+"Default location for the “Take Screenshot” dialogs. Default is the "
+"Screenshots directory."
 msgstr ""
-"Прадвызначанае размяшчэнне для акна «Зрабіць здымак экрана». Прадвызначана "
-"гэта каталог Малюнкі."
 
 #: data/org.gnome.totem.gschema.xml.in:65
 msgid "Whether to disable the plugins in the user’s home directory"
@@ -652,6 +646,18 @@ msgstr "_Дадаць"
 msgid "Password requested for RTSP server"
 msgstr "Для RTSP-сервера патрабуецца пароль"
 
+#: src/backend/bacon-video-widget.c:3352
+msgid "Could not initialise OpenGL support"
+msgstr ""
+
+#: src/backend/bacon-video-widget.c:3362
+msgid "The DVD device you specified seems to be invalid."
+msgstr ""
+
+#: src/backend/bacon-video-widget.c:3366
+msgid "The VCD device you specified seems to be invalid."
+msgstr ""
+
 #: src/backend/bacon-video-widget.c:3382
 msgid ""
 "The source seems encrypted and can’t be read. Are you trying to play an "
@@ -905,15 +911,6 @@ msgstr "Вылучыць усе"
 msgid "Select None"
 msgstr "Зняць вылучэнне"
 
-#: src/totem.c:68
-msgid "Could not initialize the thread-safe libraries."
-msgstr "Не ўдалося ініцыяваць бібліятэкі шматпаточнасці."
-
-#: src/totem.c:68
-msgid "Verify your system installation. Totem will now exit."
-msgstr ""
-"Праверце правільнасць усталявання сістэмы. Зараз Totem спыніць працу."
-
 #: src/totem.c:52
 msgid "Videos Preview"
 msgstr ""
@@ -971,20 +968,6 @@ msgstr "На камп'ютары"
 #: src/totem-grilo.c:1932
 msgid "Channels"
 msgstr "Каналы"
-
-#: src/totem-interface.c:147 src/totem-interface.c:190
-#, c-format
-msgid "Couldn’t load the “%s” interface. %s"
-msgstr "Не ўдалося загрузіць інтэрфейс «%s». %s"
-
-#: src/totem-interface.c:147
-msgid "The file does not exist."
-msgstr "Файл не існуе."
-
-#: src/totem-interface.c:149 src/totem-interface.c:151
-#: src/totem-interface.c:192 src/totem-interface.c:194
-msgid "Make sure that Totem is properly installed."
-msgstr "Пераканайцея, што Totem усталяваны правільна."
 
 #: src/totem-main-toolbar.c:129 src/totemmaintoolbar.ui:121
 msgid "Click on items to select them"
@@ -1047,14 +1030,14 @@ msgstr "Прыпыніць"
 msgid "Play"
 msgstr "Прайграваць"
 
-#: src/totem-object.c:1522 src/totem-object.c:1550 src/totem-object.c:2136
+#: src/totem-object.c:1514 src/totem-object.c:1542 src/totem-object.c:2128
 #, c-format
-msgid "Totem could not play “%s”."
-msgstr "Totem не здолеў прайграць «%s»."
+msgid "Videos could not play “%s”."
+msgstr ""
 
-#: src/totem-object.c:2308
-msgid "Totem could not display the help contents."
-msgstr "Totem не здолеў паказаць змест даведкі."
+#: src/totem-object.c:2300
+msgid "Videos could not display the help contents."
+msgstr ""
 
 #: src/totem-object.c:2561
 msgid "An error occurred"
@@ -1072,9 +1055,9 @@ msgstr "Прайграваць/прыпыніць"
 msgid "Next Chapter/Movie"
 msgstr "Наступны раздзел ці фільм"
 
-#: src/totem-object.c:4238
-msgid "Totem could not startup."
-msgstr "Не ўдалося запусціць Totem."
+#: src/totem-object.c:4192
+msgid "Videos could not startup."
+msgstr ""
 
 #: src/totem-object.c:4193 src/plugins/screenshot/totem-screenshot-plugin.c:222
 msgid "No reason."
@@ -1758,19 +1741,16 @@ msgid "You can access the Totem.Object through “totem_object” :\\n%s"
 msgstr "Атрымаць доступ да Totem.Object можна праз \"totem_object\" :\\n%s"
 
 #: src/plugins/pythonconsole/pythonconsole.py:101
-msgid "Totem Python Console"
-msgstr "Кансоль Python для Totem"
+msgid "Videos Python Console"
+msgstr ""
 
 #. pylint: disable=W0613
 #: src/plugins/pythonconsole/pythonconsole.py:111
 msgid ""
-"After you press OK, Totem will wait until you connect to it with winpdb or "
+"After you press OK, Videos will wait until you connect to it with winpdb or "
 "rpdb2. If you have not set a debugger password in DConf, it will use the "
 "default password (“totem”)."
 msgstr ""
-"Пасля націскання кнопкі «OK», Totem будзе чакаць злучэння з winpdb або "
-"rpdb2. Калі вы не ўказалі пароль адладчыка ў DConf, будзе выкарыстоўвацца "
-"прадвызначаны пароль («totem»)."
 
 #: src/plugins/recent/recent.plugin.desktop.in:6
 msgid "Recent files"
@@ -1847,6 +1827,13 @@ msgstr "Лічыць колькасць здымкаў экрана"
 msgid "Number of screenshots:"
 msgstr "Колькасць здымкаў экрана:"
 
+#. Translators: "Screenshots" is the name of the folder under ~/Pictures for screenshots,
+#. * same as used in GNOME Shell:
+#. * https://gitlab.gnome.org/GNOME/gnome-shell/-/blob/gnome-42/js/ui/screenshot.js#L2072
+#: src/plugins/screenshot/screenshot-filename-builder.c:101
+msgid "Screenshots"
+msgstr ""
+
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
 #: src/plugins/screenshot/screenshot-filename-builder.c:154
@@ -1900,8 +1887,8 @@ msgstr "Захаванне галерэі «%s»"
 
 #: src/plugins/screenshot/totem-screenshot-plugin.c:222
 #: src/plugins/screenshot/totem-screenshot-plugin.c:231
-msgid "Totem could not get a screenshot of the video."
-msgstr "Totem не здолеў зрабіць здымак экрана гэтага відэа."
+msgid "Videos could not get a screenshot of the video."
+msgstr ""
 
 #: src/plugins/screenshot/totem-screenshot-plugin.c:231
 msgid "This is not supposed to happen; please file a bug report."
@@ -2004,38 +1991,3 @@ msgstr "Vimeo"
 #: src/plugins/vimeo/vimeo.plugin.desktop.in:7
 msgid "Sets the user agent for the Vimeo site"
 msgstr "Прызначае агента карыстальніка для пляцоўкі Vimeo"
-
-#~ msgid "_Languages"
-#~ msgstr "_Мовы"
-
-#~ msgid "S_ubtitles"
-#~ msgstr "_Субцітры"
-
-#~ msgid "Media Player Keys"
-#~ msgstr "Клавішы медыяпрайгравальніка"
-
-#~ msgid "Support additional media player keys"
-#~ msgstr "Падтрымка дадатковых клавіш медыяпрайгравальніка"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Zoom in"
-#~ msgstr "Павялічыць"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Zoom out"
-#~ msgstr "Паменшыць"
-
-#~ msgid "Zoom In"
-#~ msgstr "Павелічэнне"
-
-#, python-format
-#~ msgid "The MediaPlayer2 object does not implement the ‘%s’ interface"
-#~ msgstr "Аб'ект MediaPlayer2 не мае рэалізацыі для інтэрфейсу «%s»"
-
-#, python-format
-#~ msgid "The property ‘%s’ is not writeable."
-#~ msgstr "Уласцівасць «%s» не можа быць запісана."
-
-#, python-format
-#~ msgid "Unknown property ‘%s’ requested of a MediaPlayer 2 object"
-#~ msgstr "Для аб'екта MediaPlayer 2 запатрабавана невядомая ўласцівасць «%s»"

@@ -3,18 +3,12 @@
 # This file is distributed under the same license as the deja-dup package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: deja-dup\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-05-25 14:05+0000\n"
-"PO-Revision-Date: 2023-11-18 14:09+0000\n"
+"POT-Creation-Date: 2024-01-02 23:36+0000\n"
+"PO-Revision-Date: 2021-12-18 20:27+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,84 +16,647 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-12-29 08:21+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:05+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 
-#. Translators: Monitor in this sense means something akin to 'watcher', not
-#. a computer screen.  This program acts like a daemon that kicks off
-#. backups at scheduled times.
-#: data/monitor.desktop.in:6 monitor/monitor.vala:132
-msgid "Backup Monitor"
-msgstr "Мэнэджэр рэзервовага капіявання"
+#: app/Assistant.vala:285
+msgid "Co_ntinue"
+msgstr ""
 
-#: data/monitor.desktop.in:7
-msgid "Schedules backups at regular intervals"
-msgstr "Выконвае рэгулярнае рэзервовае капіяванне па раскладзе"
+#: app/Assistant.vala:291
+msgctxt "verb"
+msgid "_Test"
+msgstr ""
+
+#: app/Assistant.vala:326
+msgid "_Resume Later"
+msgstr ""
+
+#: app/Assistant.vala:332
+msgid "_Back"
+msgstr ""
+
+#: app/Assistant.vala:334
+msgid "_Close"
+msgstr ""
+
+#: app/Assistant.vala:340 data/ui/PassphraseDialog.ui:29
+msgid "_Cancel"
+msgstr "_Скасаваць"
+
+#: app/Assistant.vala:350
+msgid "_Forward"
+msgstr ""
+
+#: app/AssistantBackup.vala:21
+msgctxt "back up is verb"
+msgid "Back Up"
+msgstr ""
+
+#: app/AssistantBackup.vala:28
+msgctxt "back up is verb"
+msgid "_Back Up"
+msgstr ""
+
+#: app/AssistantBackup.vala:67
+msgid ""
+"The following folders cannot be backed up because Backups does not have "
+"access to them:"
+msgstr ""
+
+#: app/AssistantBackup.vala:83
+msgid "Creating the first backup.  This may take a while."
+msgstr ""
+
+#: app/AssistantBackup.vala:84
+msgid ""
+"Creating a fresh backup to protect against backup corruption.  This will "
+"take longer than normal."
+msgstr ""
+
+#. Translators:  This is the phrase 'Backing up' in the larger phrase
+#. "Backing up '%s'".  %s is a filename.
+#: app/AssistantBackup.vala:99
+msgid "Backing up:"
+msgstr ""
+
+#: app/AssistantBackup.vala:108
+msgid "Backup Failed"
+msgstr ""
+
+#: app/AssistantBackup.vala:111
+msgid "Backup Finished"
+msgstr ""
+
+#. Also leave ourselves up if we just finished a restore test.
+#: app/AssistantBackup.vala:115
+msgid "Your files were successfully backed up and tested."
+msgstr ""
+
+#: app/AssistantBackup.vala:122
+msgid "Backing Up…"
+msgstr ""
+
+#. In the unlikely event the user turned on automatic backups but never
+#. made a backup, we should tell them if we start up and need to be
+#. configured for first time.
+#: app/AssistantBackup.vala:128 app/AssistantOperation.vala:844
+msgid "Backups needs your input to continue"
+msgstr ""
+
+#: app/AssistantBackup.vala:149
+msgid "Backup in progress"
+msgstr ""
+
+#: app/AssistantLocation.vala:15
+msgid "Restore From Where?"
+msgstr ""
+
+#: app/AssistantLocation.vala:25
+msgid "_Search"
+msgstr ""
+
+#: app/AssistantOperation.vala:160
+msgid "Scanning:"
+msgstr ""
+
+#: app/AssistantOperation.vala:161
+msgid "Scanning…"
+msgstr ""
+
+#: app/AssistantOperation.vala:265
+msgid "_Details"
+msgstr ""
+
+#: app/AssistantOperation.vala:312 app/Browser.vala:274
+msgid "In order to continue, the following packages need to be installed:"
+msgstr ""
+
+#. always default to encrypted
+#: app/AssistantOperation.vala:346
+msgid ""
+"You will need your password to restore your files. You might want to write "
+"it down."
+msgstr ""
+
+#: app/AssistantOperation.vala:347
+msgid "_Password-protect your backup"
+msgstr ""
+
+#: app/AssistantOperation.vala:354 app/AssistantOperation.vala:398
+#: data/ui/PassphraseDialog.ui:16
+msgid "E_ncryption password"
+msgstr ""
+
+#: app/AssistantOperation.vala:363
+msgid "Confir_m password"
+msgstr ""
+
+#: app/AssistantOperation.vala:371 app/MountOperationAssistant.vala:25
+#: data/ui/PassphraseDialog.ui:23
+msgid "_Remember password"
+msgstr ""
+
+#: app/AssistantOperation.vala:386
+msgid ""
+"In order to check that you will be able to retrieve your files in the case "
+"of an emergency, please enter your encryption password again to perform a "
+"brief restore test."
+msgstr ""
+
+#: app/AssistantOperation.vala:405
+msgid "Test every two _months"
+msgstr ""
+
+#: app/AssistantOperation.vala:432
+msgid "_Grant Access"
+msgstr ""
+
+#: app/AssistantOperation.vala:495
+msgid "Install Packages"
+msgstr ""
+
+#: app/AssistantOperation.vala:510
+msgid "Summary"
+msgstr ""
+
+#: app/AssistantOperation.vala:532
+msgid "Restore Test"
+msgstr ""
+
+#: app/AssistantOperation.vala:540
+msgid "Grant Access"
+msgstr ""
+
+#: app/AssistantOperation.vala:761
+msgid "Set Encryption Password"
+msgstr ""
+
+#: app/AssistantOperation.vala:763
+msgid "Require Password?"
+msgstr ""
+
+#: app/AssistantOperation.vala:765
+msgid "Encryption Password Needed"
+msgstr ""
+
+#: app/AssistantOperation.vala:812
+msgid "Backups needs your encryption password to continue"
+msgstr ""
+
+#: app/AssistantOperation.vala:886 data/ui/Browser.ui:232
+msgctxt "verb"
+msgid "_Install"
+msgstr ""
+
+#: app/AssistantOperation.vala:891 app/Browser.vala:276
+msgid "Backups needs to install packages to continue"
+msgstr ""
+
+#: app/AssistantRestore.vala:59 data/ui/MainWindow.ui:38
+msgid "Restore"
+msgstr ""
+
+#: app/AssistantRestore.vala:63 data/ui/RestoreToolbarView.ui:35
+msgid "_Restore"
+msgstr ""
+
+#: app/AssistantRestore.vala:152
+msgid "Restore files to _original locations"
+msgstr ""
+
+#: app/AssistantRestore.vala:166
+msgid "Restore to _specific folder"
+msgstr ""
+
+#: app/AssistantRestore.vala:181 data/ui/ConfigLocationGroup.ui:19
+#: data/ui/ConfigLocationGroup.ui:42 data/ui/ConfigLocationGroup.ui:81
+#: data/ui/ConfigLocationGroup.ui:90 data/ui/ConfigLocationGroup.ui:99
+msgid "_Folder"
+msgstr ""
+
+#: app/AssistantRestore.vala:201
+msgid "Backups does not have permission to restore the following files:"
+msgstr ""
+
+#: app/AssistantRestore.vala:264
+msgid "Backup location"
+msgstr "Месцазнаходжанне рэзервовых копій"
+
+#. Translators: label for the date from which we are restoring
+#: app/AssistantRestore.vala:279
+msgid "Restore date"
+msgstr ""
+
+#. Translators: label for the folder into which we putting restored files
+#: app/AssistantRestore.vala:288
+msgid "Restore folder"
+msgstr ""
+
+#: app/AssistantRestore.vala:312
+msgid "Checking for Backups…"
+msgstr ""
+
+#: app/AssistantRestore.vala:320
+msgid "Restore From When?"
+msgstr ""
+
+#: app/AssistantRestore.vala:331
+msgid "Restore to Where?"
+msgstr ""
+
+#. Translators:  This is the word 'Restoring' in the phrase
+#. "Restoring '%s'".  %s is a filename.
+#: app/AssistantRestore.vala:364
+msgid "Restoring:"
+msgstr ""
+
+#: app/AssistantRestore.vala:376
+msgid "No backups to restore"
+msgstr ""
+
+#: app/AssistantRestore.vala:459
+msgid "Original location"
+msgstr ""
+
+#: app/AssistantRestore.vala:473
+msgid "File to restore"
+msgid_plural "Files to restore"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/AssistantRestore.vala:498
+msgid "Restore Failed"
+msgstr ""
+
+#: app/AssistantRestore.vala:500
+msgid "Restore Finished"
+msgstr ""
+
+#. if it *is* visible, a header will be set already
+#: app/AssistantRestore.vala:503
+msgid "Your files were successfully restored."
+msgstr ""
+
+#: app/AssistantRestore.vala:506
+msgid "Your file was successfully restored."
+msgid_plural "Your files were successfully restored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/AssistantRestore.vala:513 libdeja/Operation.vala:49
+msgid "Restoring…"
+msgstr ""
+
+#: app/AssistantRestore.vala:583
+msgid "Restore in progress"
+msgstr ""
+
+#: app/Background.vala:79
+msgid "Cannot back up automatically"
+msgstr ""
+
+#: app/Browser.vala:220
+msgid "Authentication needed"
+msgstr ""
+
+#: app/Browser.vala:384 libdeja/duplicity/DuplicityJob.vala:1067
+msgid "No backup files found"
+msgstr ""
+
+#: app/ConfigAutoBackupRow.vala:21
+msgid "Back Up _Automatically"
+msgstr ""
+
+#. Translators: this is used when automatic updates are enabled
+#: app/ConfigAutoBackupRow.vala:37
+msgid "Next backup is today."
+msgstr ""
+
+#. Translators: this is used when automatic updates are disabled
+#: app/ConfigAutoBackupRow.vala:39
+msgid "Next backup would be today."
+msgstr ""
+
+#. Translators: this is used when automatic updates are enabled
+#: app/ConfigAutoBackupRow.vala:46
+msgid "Next backup is tomorrow."
+msgstr ""
+
+#. Translators: this is used when automatic updates are disabled
+#: app/ConfigAutoBackupRow.vala:48
+msgid "Next backup would be tomorrow."
+msgstr ""
+
+#. Translators: this is used when automatic updates are enabled
+#: app/ConfigAutoBackupRow.vala:56
+#, c-format
+msgid "Next backup is %d day from now."
+msgid_plural "Next backup is %d days from now."
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: this is used when automatic updates are disabled
+#: app/ConfigAutoBackupRow.vala:61
+#, c-format
+msgid "Next backup would be %d day from now."
+msgid_plural "Next backup would be %d days from now."
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/ConfigDeleteRow.vala:12
+msgid "At least three months"
+msgstr ""
+
+#: app/ConfigDeleteRow.vala:13
+msgid "At least six months"
+msgstr ""
+
+#: app/ConfigDeleteRow.vala:14
+msgid "At least a year"
+msgstr ""
+
+#: app/ConfigDeleteRow.vala:15
+msgid "Forever"
+msgstr ""
+
+#: app/ConfigDeleteRow.vala:22
+#, c-format
+msgid "At least %d day"
+msgid_plural "At least %d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. *** Basic entries ***
+#: app/ConfigLocationRow.vala:52 libdeja/BackendGoogle.vala:74
+msgid "Google Drive"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:54 libdeja/BackendMicrosoft.vala:70
+msgid "Microsoft OneDrive"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:56
+msgid "Local Folder"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:58
+msgid "Network Server"
+msgstr ""
+
+#. *** Old deprecated cloud entries, kept just for a kinder migration ***
+#: app/ConfigLocationRow.vala:63
+msgid "Google Cloud Storage"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:65
+msgid "OpenStack Swift"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:67
+msgid "Rackspace Cloud Files"
+msgstr ""
+
+#: app/ConfigLocationRow.vala:69
+msgid "Amazon S3"
+msgstr ""
+
+#: app/ConfigPeriodRow.vala:19
+msgid "Daily"
+msgstr ""
+
+#: app/ConfigPeriodRow.vala:22
+msgid "Weekly"
+msgstr ""
+
+#: app/ConfigPeriodRow.vala:29
+#, c-format
+msgid "Every %d day"
+msgid_plural "Every %d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/ConfigResticRow.vala:12
+msgid "Use _Restic instead of Duplicity"
+msgstr ""
+
+#: app/FileStore.vala:196
+msgid "File"
+msgstr ""
+
+#: app/FileStore.vala:198
+msgid "Link"
+msgstr ""
+
+#: app/FileStore.vala:200
+msgid "Folder"
+msgstr ""
+
+#: app/FolderChooserButton.vala:21
+msgid "Choose Folder"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:23
+msgid "_Username"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:24
+msgid "_Password"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:62
+msgid "Location not available"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:77
+msgid "Backups needs your password to continue"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:143
+msgid "Connect _anonymously"
+msgstr ""
+
+#: app/MountOperationAssistant.vala:148
+msgid "Connect as u_ser"
+msgstr ""
+
+#. Translators: this is a Windows networking domain
+#: app/MountOperationAssistant.vala:192
+msgid "_Domain"
+msgstr ""
+
+#: app/Notifications.vala:13
+msgid "Starting scheduled backup"
+msgstr ""
+
+#: app/Notifications.vala:18
+msgid "Scheduled backup delayed"
+msgstr ""
+
+#: app/Notifications.vala:25
+msgid "Backup completed"
+msgstr ""
+
+#: app/Notifications.vala:30
+msgid "Backup finished"
+msgstr ""
+
+#: app/Notifications.vala:31
+msgid "But not all files were successfully backed up."
+msgstr ""
+
+#: app/Notifications.vala:38
+msgid "Backup failed"
+msgstr ""
+
+#: app/Notifications.vala:50
+msgid "Restore failed"
+msgstr ""
+
+#: app/Notifications.vala:76
+msgid "Keep your files safe by backing up regularly"
+msgstr ""
+
+#: app/Notifications.vala:77
+msgid ""
+"Important documents, data, and settings can be protected by storing them in "
+"a backup. In the case of a disaster, you would be able to recover them from "
+"that backup."
+msgstr ""
+
+#: app/Notifications.vala:82
+msgid "Don’t Show Again"
+msgstr ""
+
+#: app/Notifications.vala:83
+msgid "Open Backups"
+msgstr ""
+
+#: app/PreferencesWindow.vala:28
+msgid ""
+"Restic is a another backup tool that can be used under the hood instead of "
+"Duplicity."
+msgstr ""
+
+#: app/PreferencesWindow.vala:29
+msgid ""
+"It is hoped that Restic will enable new features more easily in the future."
+msgstr ""
+
+#: app/PreferencesWindow.vala:31
+msgid "This is an experimental feature and may be removed at any time."
+msgstr ""
+
+#: app/PreferencesWindow.vala:32
+msgid "Use caution, but any testing you can manage is appreciated."
+msgstr ""
+
+#. Translators: the %s formatting is a link start and end.
+#: app/PreferencesWindow.vala:35
+#, c-format
+msgid "Please %sreport%s successes or failures when enabled."
+msgstr ""
+
+#. Check for some really simple/common friendly names
+#: app/RecentBackupRow.vala:43
+msgid "Today"
+msgstr ""
+
+#: app/RecentBackupRow.vala:45
+msgid "Yesterday"
+msgstr ""
+
+#. Translators: sentence case
+#: app/RecentBackupRow.vala:54
+#, c-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: this is used like "Most Recent Backup: None"
+#: app/RecentBackupRow.vala:65
+msgctxt "backups"
+msgid "None"
+msgstr ""
+
+#: app/RestoreHeaderBar.vala:19 app/RestoreHeaderBar.vala:20
+msgid "Back"
+msgstr ""
+
+#: app/RestoreHeaderBar.vala:26 app/RestoreHeaderBar.vala:27
+#: data/ui/RestoreToolbarView.ui:22
+msgid "Search"
+msgstr ""
+
+#. Translators: %x is the current date, %X is the current time.
+#. This will be in a list with other strings that just have %x (the
+#. current date).  So make sure if you change this, it still makes
+#. sense in that context.
+#: app/TimeCombo.vala:82
+#, c-format
+msgid "%x %X"
+msgstr ""
+
+#: app/WidgetUtils.vala:15
+msgid "_OK"
+msgstr ""
+
+#: app/main.vala:22 monitor/monitor.vala:19
+msgid "Show version"
+msgstr ""
+
+#: app/main.vala:23
+msgid "Restore given files"
+msgstr ""
+
+#: app/main.vala:24
+msgid "Immediately start a backup"
+msgstr ""
+
+#: app/main.vala:90
+msgid "Please list files to restore"
+msgstr ""
+
+#: app/main.vala:96 app/main.vala:109
+msgid "An operation is already in progress"
+msgstr ""
+
+#: app/main.vala:369
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Define https://launchpad.net/~daylidaes\n"
+"  Michael Terry https://launchpad.net/~mterry\n"
+"  Ubuntu Belarusian Translators Team https://launchpad.net/~ubuntu-"
+"belarusian-translators\n"
+"  Wild_BLR https://launchpad.net/~khoyniki\n"
+"  Клюеў Аляксандр https://launchpad.net/~plaga-medicum"
 
 #. Translators: The name is a play on the French phrase "déjà vu" meaning
 #. "already seen", but with the "vu" replaced with "dup".  "Dup" in this
 #. context is itself a reference to both the underlying command line tool
 #. "duplicity" and the act of duplicating data for backup.  As a whole, the
 #. phrase "Déjà Dup" may not be very translatable.
-#: app/main.vala:471 data/app.metainfo.xml.in:15
+#: app/main.vala:475 data/app.metainfo.xml.in:15
 msgid "Déjà Dup Backups"
-msgstr ""
-
-#: data/org.gnome.DejaDup.appdata.xml.in:16
-msgid "Keep your important documents safe from disaster"
-msgstr "Захавайце вашы важныя дакументы ад знікнення"
-
-#: data/app.metainfo.xml.in:18
-msgid ""
-"Déjà Dup is a simple backup tool. It hides the complexity of backing up the "
-"Right Way (encrypted, off-site, and regular) and uses duplicity as the "
-"backend."
-msgstr ""
-
-#: data/app.metainfo.xml.in:20
-msgid ""
-"Support for local, remote, or cloud backup locations such as Google Drive"
-msgstr ""
-
-#: data/app.metainfo.xml.in:21
-msgid "Securely encrypts and compresses your data"
-msgstr ""
-
-#: data/app.metainfo.xml.in:22
-msgid ""
-"Incrementally backs up, letting you restore from any particular backup"
-msgstr ""
-
-#: data/app.metainfo.xml.in:23
-msgid "Schedules regular backups"
-msgstr ""
-
-#: data/app.metainfo.xml.in:24
-msgid "Integrates well into your GNOME desktop"
-msgstr ""
-
-#: data/app.metainfo.xml.in:26
-msgid ""
-"Déjà Dup focuses on ease of use and recovering from personal, accidental "
-"data loss. If you need a full system backup or an archival program, you may "
-"prefer other backup apps."
 msgstr ""
 
 #: data/app.desktop.in:6 data/ui/MainWindow.ui:9
 msgid "Backups"
 msgstr ""
 
-#: data/org.gnome.DejaDup.desktop.in:7
-msgid "Change your backup settings"
-msgstr "Змяніць параметры рэзервовага капіявання"
+#: data/app.desktop.in:7 data/app.metainfo.xml.in:16
+msgid "Protect yourself from data loss"
+msgstr ""
 
 #. Translators: Add whatever keywords you want in your language, separated by semicolons
 #. These keywords are used when searching for applications in dashes, etc.
-#: data/app.desktop.in:27
+#: data/app.desktop.in:29
 msgid "déjà;deja;dup;"
 msgstr ""
 
-#: data/app.desktop.in:35
+#: data/app.desktop.in:37
 msgid "Back Up"
 msgstr ""
 
@@ -233,6 +790,37 @@ msgid ""
 "connections (like 4G)."
 msgstr ""
 
+#: data/app.gschema.xml.in:85
+msgid "Command to run before the backup tool"
+msgstr ""
+
+#: data/app.gschema.xml.in:86
+msgid ""
+"Useful if you need to manually mount a folder, for example. If this command "
+"fails, the backup won't start."
+msgstr ""
+
+#: data/app.gschema.xml.in:90
+msgid "Command to run after the backup tool"
+msgstr ""
+
+#: data/app.gschema.xml.in:91
+msgid ""
+"Useful if you need to clean up after your setup command. Failures are "
+"ignored."
+msgstr ""
+
+#: data/app.gschema.xml.in:95
+msgid "Command to run around the backup tool"
+msgstr ""
+
+#: data/app.gschema.xml.in:96
+msgid ""
+"Useful if you need to limit resources or otherwise wrap the execution of the "
+"tool command. An example value might be 'trickle -u 500' which would result "
+"in deja-dup running 'trickle -u 500 duplicity …'."
+msgstr ""
+
 #: data/app.gschema.xml.in:124
 msgid "Type of location to store backup"
 msgstr ""
@@ -265,7 +853,7 @@ msgid ""
 "when it is plugged in."
 msgstr ""
 
-#: data/app.gschema.xml.in:150 data/ui/Browser.ui:229
+#: data/app.gschema.xml.in:150 data/ui/Browser.ui:305
 msgid "Name"
 msgstr ""
 
@@ -301,158 +889,212 @@ msgid ""
 "relative to the host."
 msgstr ""
 
-#: data/org.gnome.DejaDup.gschema.xml.in:192
+#: data/app.metainfo.xml.in:18
 msgid ""
-"The folder path where backups are stored. Paths can be absolute or relative "
-"to the host."
+"Déjà Dup is a simple backup tool. It hides the complexity of backing up the "
+"Right Way (encrypted, off-site, and regular) and uses duplicity as the "
+"backend."
 msgstr ""
 
-#: data/ui/debug.ui:11 deja-dup/main.vala:303
-msgid "Debug Information"
+#: data/app.metainfo.xml.in:20
+msgid ""
+"Support for local, remote, or cloud backup locations such as Google Drive"
 msgstr ""
 
-#: data/ui/debug.ui:35
-msgid "_Copy"
+#: data/app.metainfo.xml.in:21
+msgid "Securely encrypts and compresses your data"
 msgstr ""
 
-#: data/ui/debug.ui:68
-msgid "All identifying information has been obscured."
+#: data/app.metainfo.xml.in:22
+msgid ""
+"Incrementally backs up, letting you restore from any particular backup"
 msgstr ""
 
-#: data/ui/help-overlay.ui:16
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Агульныя"
-
-#: data/ui/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Show help"
+#: data/app.metainfo.xml.in:23
+msgid "Schedules regular backups"
 msgstr ""
 
-#: data/ui/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Open menu"
+#: data/app.metainfo.xml.in:24
+msgid "Integrates well into your GNOME desktop"
 msgstr ""
 
-#: data/ui/help-overlay.ui:32
-msgctxt "shortcut window"
-msgid "Quit"
+#: data/app.metainfo.xml.in:26
+msgid ""
+"Déjà Dup focuses on ease of use and recovering from personal, accidental "
+"data loss. If you need a full system backup or an archival program, you may "
+"prefer other backup apps."
 msgstr ""
 
-#: data/ui/help-overlay.ui:44
-msgctxt "shortcut window"
-msgid "Keyboard shortcuts"
+#: data/app.metainfo.xml.in:107
+msgid "Back up your files automatically — set it and forget it"
 msgstr ""
 
-#: data/ui/help-overlay.ui:51
-msgctxt "shortcut window"
-msgid "Browsing Backed Up Files"
+#: data/app.metainfo.xml.in:111
+msgid "Restoring is a breeze — browse your files and select which to restore"
 msgstr ""
 
-#: data/ui/help-overlay.ui:55
-msgctxt "shortcut window"
-msgid "Search"
+#: data/app.metainfo.xml.in:115
+msgid "Back up to the cloud, a network server, or a local drive"
 msgstr ""
 
-#: data/ui/help-overlay.ui:61
-msgctxt "shortcut window"
-msgid "Go back"
+#: data/app.metainfo.xml.in:119
+msgid ""
+"Take control of your backup by choosing exactly which folders to include"
 msgstr ""
 
-#: app/RestoreHeaderBar.vala:19 app/RestoreHeaderBar.vala:20
-msgid "Back"
+#. Translators: Monitor in this sense means something akin to 'watcher', not
+#. a computer screen.  This program acts like a daemon that kicks off
+#. backups at scheduled times.
+#: data/monitor.desktop.in:6 monitor/monitor.vala:132
+msgid "Backup Monitor"
+msgstr "Мэнэджэр рэзервовага капіявання"
+
+#: data/monitor.desktop.in:7
+msgid "Schedules backups at regular intervals"
+msgstr "Выконвае рэгулярнае рэзервовае капіяванне па раскладзе"
+
+#: data/ui/Browser.ui:27 data/ui/Browser.ui:298
+msgid "Files"
 msgstr ""
 
-#: data/ui/main.ui:87
-msgid "Select"
+#. Translators: this means scanning the storage location data files, not the source folders
+#: data/ui/Browser.ui:70
+msgid "Scanning backup files…"
 msgstr ""
 
-#: app/RestoreHeaderBar.vala:26 app/RestoreHeaderBar.vala:27
-#: data/ui/RestoreToolbarView.ui:19
-msgid "Search"
+#: data/ui/Browser.ui:87
+msgid "Folder is Empty"
 msgstr ""
 
-#: app/Assistant.vala:340 data/ui/PassphraseDialog.ui:29
-msgid "_Cancel"
-msgstr "_Скасаваць"
-
-#: data/ui/main.ui:252
-msgid "Keep your important files safe in a backup."
+#: data/ui/Browser.ui:98
+msgid "No Results Found"
 msgstr ""
 
-#: data/ui/main.ui:264
-msgid "Create My First _Backup"
+#: data/ui/Browser.ui:99
+msgid "Try a different search"
 msgstr ""
 
-#: data/ui/WelcomePage.ui:57
-msgid "_Restore From a Previous Backup"
+#: data/ui/Browser.ui:124
+msgid "_Retry"
 msgstr ""
 
-#: deja-dup/main.vala:186
-msgid "Automatic backup"
+#: data/ui/Browser.ui:159
+msgid "_Connect"
 msgstr ""
 
-#: data/ui/main.ui:328
-msgid "Back up _automatically"
+#: data/ui/Browser.ui:184
+msgid "Encryption password needed"
 msgstr ""
 
-#: data/ui/OverviewPage.ui:34
-msgid "_Back Up Now"
+#: data/ui/Browser.ui:196
+msgid "_Enter Password"
+msgstr ""
+
+#: data/ui/Browser.ui:269
+msgid "Installing packages…"
+msgstr ""
+
+#: data/ui/Browser.ui:384
+msgid "Location"
+msgstr ""
+
+#: data/ui/ConfigFolderGroup.ui:22
+msgid "Add"
+msgstr ""
+
+#: data/ui/ConfigFolderPage.ui:10
+msgid "Folders"
+msgstr ""
+
+#: data/ui/ConfigFolderPage.ui:13
+msgid "Folders to Back Up"
+msgstr ""
+
+#: data/ui/ConfigFolderPage.ui:24
+msgid "These folders are always ignored:"
+msgstr ""
+
+#: data/ui/ConfigFolderPage.ui:56
+msgid "Folders to Ignore"
+msgstr ""
+
+#: data/ui/ConfigFolderRow.ui:15
+msgid ""
+"This folder cannot be backed up because Backups does not have access to it."
+msgstr ""
+
+#: data/ui/ConfigFolderRow.ui:30
+msgid "Remove"
+msgstr ""
+
+#: data/ui/ConfigLocationGroup.ui:9
+msgid "Storage"
+msgstr ""
+
+#: data/ui/ConfigLocationGroup.ui:29 data/ui/ConfigLocationGroup.ui:52
+msgid "_Reset Account Access"
+msgstr ""
+
+#: data/ui/ConfigLocationGroup.ui:66
+msgid "Ser_ver Address"
+msgstr ""
+
+#: data/ui/ConfigLocationRow.ui:48
+msgid "_Location"
+msgstr ""
+
+#: data/ui/HelpButton.ui:28
+msgid "Help"
 msgstr ""
 
 #: data/ui/MainWindow.ui:27
 msgid "Overview"
 msgstr ""
 
-#: app/AssistantRestore.vala:63 data/ui/RestoreToolbarView.ui:35
-msgid "_Restore"
-msgstr ""
-
-#: data/ui/TimeCombo.ui:15
-msgid "_Date"
-msgstr ""
-
-#. Translators: this means scanning the storage location data files, not the source folders
-#: data/ui/Browser.ui:67
-msgid "Scanning backup files…"
-msgstr ""
-
-#: data/ui/Browser.ui:121
-msgid "_Retry"
-msgstr ""
-
-#: data/ui/Browser.ui:156
-msgid "_Connect"
-msgstr ""
-
-#: data/ui/Browser.ui:181
-msgid "Encryption password needed"
-msgstr ""
-
-#: data/ui/Browser.ui:192
-msgid "_Enter Password"
-msgstr ""
-
-#: app/AssistantRestore.vala:59 data/ui/MainWindow.ui:38
-msgid "Restore"
+#: data/ui/OverviewPage.ui:34
+msgid "_Back Up Now"
 msgstr ""
 
 #: data/ui/PassphraseDialog.ui:30
 msgid "Con_tinue"
 msgstr ""
 
-#: app/AssistantOperation.vala:354 app/AssistantOperation.vala:398
-#: data/ui/PassphraseDialog.ui:16
-msgid "E_ncryption password"
+#: data/ui/PreferencesWindow.ui:15
+msgid "General"
 msgstr ""
 
-#: deja-dup/AssistantOperation.vala:415 deja-dup/AssistantOperation.vala:465
-msgid "_Show password"
+#: data/ui/PreferencesWindow.ui:21
+msgid "Schedule"
 msgstr ""
 
-#: app/AssistantOperation.vala:371 app/MountOperationAssistant.vala:25
-#: data/ui/PassphraseDialog.ui:23
-msgid "_Remember password"
+#: data/ui/PreferencesWindow.ui:27
+msgid "Automatic Backup _Frequency"
+msgstr ""
+
+#: data/ui/PreferencesWindow.ui:33
+msgid "_Keep Backups"
+msgstr ""
+
+#: data/ui/PreferencesWindow.ui:40
+msgid ""
+"The oldest backups will still be deleted earlier if the location is low on "
+"space or kept up to three months longer to avoid deleting related backups."
+msgstr ""
+
+#: data/ui/PreferencesWindow.ui:61
+msgid "Labs"
+msgstr ""
+
+#: data/ui/PreferencesWindow.ui:65
+msgid "Restic"
+msgstr ""
+
+#: data/ui/PrimaryMenuButton.ui:15
+msgid "Main Menu"
+msgstr ""
+
+#: data/ui/PrimaryMenuButton.ui:22
+msgid "_Select All"
 msgstr ""
 
 #: data/ui/PrimaryMenuButton.ui:29
@@ -471,102 +1113,19 @@ msgstr ""
 msgid "_About Backups"
 msgstr ""
 
-#: data/ui/menus.ui:32
-msgid "Select _All"
+#: data/ui/RecentBackupRow.ui:9
+msgid "Most Recent Backup"
 msgstr ""
 
-#: data/ui/menus.ui:36
-msgid "Select _None"
-msgstr ""
-
-#: data/ui/ConfigLocationGroup.ui:9
-msgid "Storage"
-msgstr ""
-
-#: data/ui/ConfigLocationRow.ui:47
-msgid "_Location"
-msgstr ""
-
-#: data/ui/PreferencesWindow.ui:33
-msgid "_Keep Backups"
-msgstr ""
-
-#: data/ui/PreferencesWindow.ui:40
-msgid ""
-"The oldest backups will still be deleted earlier if the location is low on "
-"space or kept up to three months longer to avoid deleting related backups."
-msgstr ""
-
-#: data/ui/PreferencesWindow.ui:21
-msgid "Schedule"
-msgstr ""
-
-#: app/ConfigAutoBackupRow.vala:21
-msgid "Back Up _Automatically"
-msgstr ""
-
-#: data/ui/PreferencesWindow.ui:27
-msgid "Automatic Backup _Frequency"
-msgstr ""
-
-#: data/ui/ConfigFolderPage.ui:13
-msgid "Folders to Back Up"
-msgstr ""
-
-#: data/ui/preferences.ui:154
-msgid "Includes"
-msgstr ""
-
-#: data/ui/ConfigFolderPage.ui:56
-msgid "Folders to Ignore"
-msgstr ""
-
-#: data/ui/preferences.ui:169
-msgid "Excludes"
-msgstr ""
-
-#: data/ui/preferences.ui:178
-msgid "Preferences"
-msgstr ""
-
-#. Translators: storage as in "where to store the backup"
-#: data/ui/ConfigLocationGrid.ui:19
-msgid "_Storage Location"
-msgstr ""
-
-#: app/AssistantRestore.vala:191 data/ui/ConfigLocationGroup.ui:19
-#: data/ui/ConfigLocationGroup.ui:42 data/ui/ConfigLocationGroup.ui:81
-#: data/ui/ConfigLocationGroup.ui:90 data/ui/ConfigLocationGroup.ui:99
-msgid "_Folder"
-msgstr ""
-
-#: data/ui/ConfigLocationGroup.ui:29 data/ui/ConfigLocationGroup.ui:52
-msgid "_Reset Account Access"
-msgstr ""
-
-#: deja-dup/widgets/ConfigLocationCustom.vala:25
-msgid "_Network Location"
-msgstr ""
-
-#: libdeja/duplicity/DuplicityPlugin.vala:104
-msgid ""
-"This storage location is no longer supported. You can still use duplicity "
-"directly to back up or restore your files."
-msgstr ""
-
-#: deja-dup/widgets/ConfigLocationFile.vala:25
-msgid "_Choose Folder…"
-msgstr ""
-
-#: data/ui/server-hint.ui:21
-msgid "Network Locations"
+#: data/ui/ServerAddressHelp.ui:15
+msgid "Server Addresses"
 msgstr ""
 
 #. Translators: This is followed by a list of valid adresses (smb://gnome.org/deja-dup, ssh://192.168.0.1, ftp://[2001:db8::1])
-#: data/ui/server-hint.ui:34
+#: data/ui/ServerAddressHelp.ui:27
 msgid ""
-"Network locations are made up of a protocol prefix, an address, and "
-"sometimes a path depending on the protocol. Examples:"
+"Server addresses are made up of a protocol prefix, an address, and sometimes "
+"a path depending on the protocol. Examples:"
 msgstr ""
 
 #: data/ui/ServerAddressHelp.ui:53
@@ -620,565 +1179,71 @@ msgstr ""
 msgid "dav:// or davs://"
 msgstr ""
 
-#: app/Assistant.vala:285
-msgid "Co_ntinue"
+#: data/ui/TimeCombo.ui:15
+msgid "_Date"
 msgstr ""
 
-#: app/Assistant.vala:291
-msgctxt "verb"
-msgid "_Test"
+#: data/ui/WelcomePage.ui:12
+msgid "Welcome to Backups"
 msgstr ""
 
-#: app/Assistant.vala:326
-msgid "_Resume Later"
+#: data/ui/WelcomePage.ui:36
+msgid "Create Your First _Backup"
 msgstr ""
 
-#: app/Assistant.vala:332
-msgid "_Back"
+#: data/ui/WelcomePage.ui:57
+msgid "_Restore From a Previous Backup"
 msgstr ""
 
-#: app/Assistant.vala:334
-msgid "_Close"
-msgstr ""
-
-#: app/Assistant.vala:350
-msgid "_Forward"
-msgstr ""
-
-#: app/AssistantBackup.vala:21
-msgctxt "back up is verb"
-msgid "Back Up"
-msgstr ""
-
-#: app/AssistantBackup.vala:28
-msgctxt "back up is verb"
-msgid "_Back Up"
-msgstr ""
-
-#: app/AssistantBackup.vala:67
-msgid ""
-"The following folders cannot be backed up because Backups does not have "
-"access to them:"
-msgstr ""
-
-#: app/AssistantBackup.vala:83
-msgid "Creating the first backup.  This may take a while."
-msgstr ""
-
-#: app/AssistantBackup.vala:84
-msgid ""
-"Creating a fresh backup to protect against backup corruption.  This will "
-"take longer than normal."
-msgstr ""
-
-#. Translators:  This is the phrase 'Backing up' in the larger phrase
-#. "Backing up '%s'".  %s is a filename.
-#: app/AssistantBackup.vala:99
-msgid "Backing up:"
-msgstr ""
-
-#: app/AssistantBackup.vala:108
-msgid "Backup Failed"
-msgstr ""
-
-#: app/AssistantBackup.vala:111
-msgid "Backup Finished"
-msgstr ""
-
-#. Also leave ourselves up if we just finished a restore test.
-#: app/AssistantBackup.vala:115
-msgid "Your files were successfully backed up and tested."
-msgstr ""
-
-#: app/AssistantBackup.vala:122
-msgid "Backing Up…"
-msgstr ""
-
-#. In the unlikely event the user turned on automatic backups but never
-#. made a backup, we should tell them if we start up and need to be
-#. configured for first time.
-#: app/AssistantBackup.vala:128 app/AssistantOperation.vala:844
-msgid "Backups needs your input to continue"
-msgstr ""
-
-#: app/AssistantBackup.vala:149
-msgid "Backup in progress"
-msgstr ""
-
-#: app/AssistantLocation.vala:15
-msgid "Restore From Where?"
-msgstr ""
-
-#: deja-dup/AssistantRestore.vala:87
-msgid "_Backup location"
-msgstr ""
-
-#: app/AssistantLocation.vala:25
-msgid "_Search"
-msgstr ""
-
-#: app/AssistantOperation.vala:160
-msgid "Scanning:"
-msgstr ""
-
-#: app/AssistantOperation.vala:161
-msgid "Scanning…"
-msgstr ""
-
-#: app/AssistantOperation.vala:265
-msgid "_Details"
-msgstr ""
-
-#: app/AssistantOperation.vala:312
-msgid "In order to continue, the following packages need to be installed:"
-msgstr ""
-
-#: deja-dup/AssistantOperation.vala:352
-msgid "_Allow restoring without a password"
-msgstr ""
-
-#: app/AssistantOperation.vala:347
-msgid "_Password-protect your backup"
-msgstr ""
-
-#. always default to encrypted
-#: app/AssistantOperation.vala:346
-msgid ""
-"You will need your password to restore your files. You might want to write "
-"it down."
-msgstr ""
-
-#: app/AssistantOperation.vala:363
-msgid "Confir_m password"
-msgstr ""
-
-#: app/AssistantOperation.vala:386
-msgid ""
-"In order to check that you will be able to retrieve your files in the case "
-"of an emergency, please enter your encryption password again to perform a "
-"brief restore test."
-msgstr ""
-
-#: app/AssistantOperation.vala:405
-msgid "Test every two _months"
-msgstr ""
-
-#: app/AssistantOperation.vala:432
-msgid "_Grant Access"
-msgstr ""
-
-#: app/AssistantOperation.vala:495
-msgid "Install Packages"
-msgstr ""
-
-#: app/AssistantOperation.vala:510
-msgid "Summary"
-msgstr ""
-
-#: app/AssistantOperation.vala:532
-msgid "Restore Test"
-msgstr ""
-
-#: app/AssistantOperation.vala:540
-msgid "Grant Access"
-msgstr ""
-
-#: app/AssistantOperation.vala:763
-msgid "Require Password?"
-msgstr ""
-
-#: app/AssistantOperation.vala:765
-msgid "Encryption Password Needed"
-msgstr ""
-
-#: app/AssistantOperation.vala:812
-msgid "Backups needs your encryption password to continue"
-msgstr ""
-
-#: app/AssistantOperation.vala:886
-msgctxt "verb"
-msgid "_Install"
-msgstr ""
-
-#: app/AssistantOperation.vala:891
-msgid "Backups needs to install packages to continue"
-msgstr ""
-
-#: app/AssistantRestore.vala:162
-msgid "Restore files to _original locations"
-msgstr ""
-
-#: app/AssistantRestore.vala:176
-msgid "Restore to _specific folder"
-msgstr ""
-
-#: deja-dup/AssistantRestore.vala:180
-msgid "Choose destination for restored files"
-msgstr ""
-
-#: deja-dup/AssistantRestore.vala:184
-msgid "Restore _folder"
-msgstr ""
-
-#: app/AssistantRestore.vala:211
-msgid "Backups does not have permission to restore the following files:"
-msgstr ""
-
-#: app/AssistantRestore.vala:274
-msgid "Backup location"
-msgstr "Месцазнаходжанне рэзервовых копій"
-
-#. Translators: label for the date from which we are restoring
-#: app/AssistantRestore.vala:289
-msgid "Restore date"
-msgstr ""
-
-#. Translators: label for the folder into which we putting restored files
-#: app/AssistantRestore.vala:298
-msgid "Restore folder"
-msgstr ""
-
-#: app/AssistantRestore.vala:322
-msgid "Checking for Backups…"
-msgstr ""
-
-#: app/AssistantRestore.vala:330
-msgid "Restore From When?"
-msgstr ""
-
-#: app/AssistantRestore.vala:341
-msgid "Restore to Where?"
-msgstr ""
-
-#. Translators:  This is the word 'Restoring' in the phrase
-#. "Restoring '%s'".  %s is a filename.
-#: app/AssistantRestore.vala:374
-msgid "Restoring:"
-msgstr ""
-
-#: app/AssistantRestore.vala:386
-msgid "No backups to restore"
-msgstr ""
-
-#: app/AssistantRestore.vala:469
-msgid "Original location"
-msgstr ""
-
-#: app/AssistantRestore.vala:483
-msgid "File to restore"
-msgid_plural "Files to restore"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/AssistantRestore.vala:508
-msgid "Restore Failed"
-msgstr ""
-
-#: app/AssistantRestore.vala:510
-msgid "Restore Finished"
-msgstr ""
-
-#. if it *is* visible, a header will be set already
-#: app/AssistantRestore.vala:513
-msgid "Your files were successfully restored."
-msgstr ""
-
-#: app/AssistantRestore.vala:516
-msgid "Your file was successfully restored."
-msgid_plural "Your files were successfully restored."
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/AssistantRestore.vala:523 libdeja/Operation.vala:49
-msgid "Restoring…"
-msgstr ""
-
-#: app/AssistantRestore.vala:593
-msgid "Restore in progress"
-msgstr ""
-
-#: app/Background.vala:79
-msgid "Cannot back up automatically"
-msgstr ""
-
-#: deja-dup/Browser.vala:197
-msgid "Click on items to select them"
-msgstr ""
-
-#: deja-dup/Browser.vala:199
-#, c-format
-msgid "%u selected"
-msgid_plural "%u selected"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/Browser.vala:213
-msgid "Authentication needed"
-msgstr ""
-
-#: app/ConfigDeleteRow.vala:12
-msgid "At least three months"
-msgstr ""
-
-#: app/ConfigDeleteRow.vala:13
-msgid "At least six months"
-msgstr ""
-
-#: app/ConfigDeleteRow.vala:14
-msgid "At least a year"
-msgstr ""
-
-#: app/ConfigDeleteRow.vala:15
-msgid "Forever"
-msgstr ""
-
-#: app/ConfigDeleteRow.vala:22
-#, c-format
-msgid "At least %d day"
-msgid_plural "At least %d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: data/ui/ConfigFolderRow.ui:15
-msgid ""
-"This folder cannot be backed up because Backups does not have access to it."
-msgstr ""
-
-#: data/ui/ConfigFolderRow.ui:30
-msgid "Remove"
-msgstr ""
-
-#: data/ui/ConfigFolderGroup.ui:16
-msgid "Add"
-msgstr ""
-
-#: deja-dup/widgets/ConfigList.vala:239
-msgid "Choose folders"
-msgstr ""
-
-#: deja-dup/widgets/ConfigList.vala:165 deja-dup/widgets/ConfigList.vala:242
-msgid "_Add"
-msgstr ""
-
-#. *** Basic entries ***
-#: app/ConfigLocationRow.vala:52 libdeja/BackendGoogle.vala:74
-msgid "Google Drive"
-msgstr ""
-
-#: app/ConfigLocationRow.vala:56
-msgid "Local Folder"
-msgstr ""
-
-#: app/ConfigLocationRow.vala:58
-msgid "Network Server"
-msgstr ""
-
-#. *** Old deprecated cloud entries, kept just for a kinder migration ***
-#: app/ConfigLocationRow.vala:63
-msgid "Google Cloud Storage"
-msgstr ""
-
-#: app/ConfigLocationRow.vala:65
-msgid "OpenStack Swift"
-msgstr ""
-
-#: app/ConfigLocationRow.vala:67
-msgid "Rackspace Cloud Files"
-msgstr ""
-
-#: app/ConfigLocationRow.vala:69
-msgid "Amazon S3"
-msgstr ""
-
-#: app/FolderChooserButton.vala:21
-msgid "Choose Folder"
-msgstr ""
-
-#: app/WidgetUtils.vala:15
-msgid "_OK"
-msgstr ""
-
-#: app/ConfigPeriodRow.vala:19
-msgid "Daily"
-msgstr ""
-
-#: app/ConfigPeriodRow.vala:22
-msgid "Weekly"
-msgstr ""
-
-#: app/ConfigPeriodRow.vala:29
-#, c-format
-msgid "Every %d day"
-msgid_plural "Every %d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#. Translators: this is used when automatic updates are enabled
-#: app/ConfigAutoBackupRow.vala:37
-msgid "Next backup is today."
-msgstr ""
-
-#. Translators: this is used when automatic updates are enabled
-#: app/ConfigAutoBackupRow.vala:46
-msgid "Next backup is tomorrow."
-msgstr ""
-
-#. Translators: this is used when automatic updates are enabled
-#: app/ConfigAutoBackupRow.vala:56
-#, c-format
-msgid "Next backup is %d day from now."
-msgid_plural "Next backup is %d days from now."
-msgstr[0] ""
-msgstr[1] ""
-
-#. Check for some really simple/common friendly names
-#: deja-dup/widgets/ConfigLabelBackupDate.vala:81
-msgid "Last backup was today."
-msgstr ""
-
-#: deja-dup/widgets/ConfigLabelBackupDate.vala:83
-msgid "Last backup was yesterday."
-msgstr ""
-
-#: deja-dup/widgets/ConfigLabelBackupDate.vala:91
-#, c-format
-msgid "Last backup was %d day ago."
-msgid_plural "Last backup was %d days ago."
-msgstr[0] ""
-msgstr[1] ""
-
-#: deja-dup/widgets/ConfigLabelBackupDate.vala:101
-msgid "No recent backups."
-msgstr ""
-
-#: deja-dup/widgets/ConfigLabelBackupDate.vala:110
-msgid "No backup scheduled."
-msgstr ""
-
-#: app/MountOperationAssistant.vala:23
-msgid "_Username"
-msgstr ""
-
-#: app/MountOperationAssistant.vala:24
-msgid "_Password"
-msgstr ""
-
-#: deja-dup/MountOperationAssistant.vala:26
-msgid "S_how password"
-msgstr ""
-
-#: app/MountOperationAssistant.vala:62
-msgid "Location not available"
-msgstr ""
-
-#: app/MountOperationAssistant.vala:77
-msgid "Backups needs your password to continue"
-msgstr ""
-
-#: app/MountOperationAssistant.vala:143
-msgid "Connect _anonymously"
-msgstr ""
-
-#: app/MountOperationAssistant.vala:148
-msgid "Connect as u_ser"
-msgstr ""
-
-#. Translators: this is a Windows networking domain
-#: app/MountOperationAssistant.vala:192
-msgid "_Domain"
-msgstr ""
-
-#: app/Notifications.vala:13
-msgid "Starting scheduled backup"
-msgstr ""
-
-#: app/Notifications.vala:18
-msgid "Scheduled backup delayed"
-msgstr ""
-
-#: app/Notifications.vala:25
-msgid "Backup completed"
-msgstr ""
-
-#: app/Notifications.vala:30
-msgid "Backup finished"
-msgstr ""
-
-#: app/Notifications.vala:31
-msgid "But not all files were successfully backed up."
-msgstr ""
-
-#: app/Notifications.vala:38
-msgid "Backup failed"
-msgstr ""
-
-#: app/Notifications.vala:50
-msgid "Restore failed"
-msgstr ""
-
-#: app/Notifications.vala:76
-msgid "Keep your files safe by backing up regularly"
-msgstr ""
-
-#: app/Notifications.vala:77
-msgid ""
-"Important documents, data, and settings can be protected by storing them in "
-"a backup. In the case of a disaster, you would be able to recover them from "
-"that backup."
-msgstr ""
-
-#: app/Notifications.vala:82
-msgid "Don’t Show Again"
-msgstr ""
+#: data/ui/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Агульныя"
 
-#: app/Notifications.vala:83
-msgid "Open Backups"
+#: data/ui/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Show help"
 msgstr ""
 
-#. Translators: %x is the current date, %X is the current time.
-#. This will be in a list with other strings that just have %x (the
-#. current date).  So make sure if you change this, it still makes
-#. sense in that context.
-#: app/TimeCombo.vala:82
-#, c-format
-msgid "%x %X"
+#: data/ui/help-overlay.ui:26
+msgctxt "shortcut window"
+msgid "Open menu"
 msgstr ""
 
-#: deja-dup/widgets/WidgetUtils.vala:22
-#, c-format
-msgid "Could not display %s"
+#: data/ui/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
 msgstr ""
 
-#: app/main.vala:22 monitor/monitor.vala:19
-msgid "Show version"
+#: data/ui/help-overlay.ui:38
+msgctxt "shortcut window"
+msgid "Preferences"
 msgstr ""
 
-#: app/main.vala:23
-msgid "Restore given files"
+#: data/ui/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Keyboard shortcuts"
 msgstr ""
 
-#: app/main.vala:24
-msgid "Immediately start a backup"
+#: data/ui/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Browsing Backed Up Files"
 msgstr ""
 
-#: app/main.vala:90
-msgid "Please list files to restore"
+#: data/ui/help-overlay.ui:55
+msgctxt "shortcut window"
+msgid "Search"
 msgstr ""
 
-#: app/main.vala:96 app/main.vala:109
-msgid "An operation is already in progress"
+#: data/ui/help-overlay.ui:61
+msgctxt "shortcut window"
+msgid "Go back"
 msgstr ""
 
-#: app/main.vala:365
-msgid "translator-credits"
+#: data/ui/help-overlay.ui:67
+msgctxt "shortcut window"
+msgid "Select all"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Define https://launchpad.net/~daylidaes\n"
-"  Michael Terry https://launchpad.net/~mterry\n"
-"  Ubuntu Belarusian Translators Team https://launchpad.net/~ubuntu-"
-"belarusian-translators\n"
-"  Wild_BLR https://launchpad.net/~khoyniki\n"
-"  Клюеў Аляксандр https://launchpad.net/~plaga-medicum"
 
 #. Translators: %2$s is the name of a removable drive, %1$s is a folder
 #. on that removable drive.
@@ -1212,16 +1277,36 @@ msgstr ""
 msgid "%s on Google Drive"
 msgstr ""
 
-#: libdeja/BackendGoogle.vala:353
-msgid "Could not log into Google servers."
+#. Translators: %s is a folder.
+#: libdeja/BackendMicrosoft.vala:73
+#, c-format
+msgid "%s on Microsoft OneDrive"
 msgstr ""
 
-#: libdeja/BackendGoogle.vala:429
-msgid "Google credentials for Déjà Dup"
+#. Duplicity requires a folder, and this is a reasonable restriction.
+#: libdeja/BackendMicrosoft.vala:111
+msgid "You must provide a Microsoft OneDrive folder."
 msgstr ""
 
-#: libdeja/BackendGoogle.vala:282
-msgid "You first need to allow Backups to access your Google account."
+#. Translators: %s is a brand name like Microsoft or Google
+#: libdeja/BackendOAuth.vala:93
+#, c-format
+msgid "Could not log into %s servers."
+msgstr ""
+
+#. Translators: %s is a brand name like Google or Microsoft
+#: libdeja/BackendOAuth.vala:169
+#, c-format
+msgid "%s credentials for Déjà Dup"
+msgstr ""
+
+#. We need a random string between 43 and 128 chars. UUIDs are an easy way
+#. to get random strings, but they are only 37 chars long. So just add two.
+#. And show the oauth consent page finally
+#. Translators: %s is a brand name like Google or Microsoft
+#: libdeja/BackendOAuth.vala:228
+#, c-format
+msgid "You first need to allow Backups to access your %s account."
 msgstr ""
 
 #: libdeja/BackendRemote.vala:94
@@ -1236,20 +1321,24 @@ msgstr ""
 msgid "Could not mount storage location."
 msgstr ""
 
+#: libdeja/BackendRemote.vala:170
+msgid ""
+"The server’s network location needs to be specified in the storage location "
+"preferences."
+msgstr ""
+
+#: libdeja/BackendRemote.vala:175
+#, c-format
+msgid ""
+"The server’s network location ‘%s’ does not look like a network location."
+msgstr ""
+
 #. Special sanity check for some edge cases like smb:// where if the user
 #. just puts in smb://server/ as the root, GIO thinks it's a valid root,
 #. but the share never ends up mounted.
 #: libdeja/BackendRemote.vala:183
 msgid ""
 "Samba network locations must include both a hostname and a share name."
-msgstr ""
-
-#: libdeja/CommonUtils.vala:546
-msgid "Access Granted"
-msgstr ""
-
-#: libdeja/CommonUtils.vala:422
-msgid "Backups will now continue. You can close this page."
 msgstr ""
 
 #. Translators: this is the home folder and %s is the user's username
@@ -1272,10 +1361,16 @@ msgstr ""
 msgid "Backup encryption password"
 msgstr ""
 
-#: libdeja/InstallEnvFlatpak.vala:110
+#: libdeja/InstallEnvFlatpak.vala:111
 msgid ""
-"Make sure Backups has permission to run in the background in Settings → "
-"Applications → Backups and try again."
+"Make sure Backups has permission to run in the background in your desktop "
+"session’s settings and try again."
+msgstr ""
+
+#. no portal support :(
+#: libdeja/InstallEnvFlatpak.vala:176
+msgid ""
+"Your desktop session does not support automatically starting Flatpak apps."
 msgstr ""
 
 #: libdeja/Operation.vala:47
@@ -1297,12 +1392,28 @@ msgstr ""
 msgid "Preparing…"
 msgstr ""
 
+#: libdeja/Operation.vala:96
+msgid "Custom tool setup failed."
+msgstr ""
+
+#: libdeja/OperationBackup.vala:29
+msgid ""
+"Could not back up the following files.  Please make sure you are able to "
+"open them."
+msgstr ""
+
 #: libdeja/OperationBackup.vala:55 libdeja/OperationVerify.vala:42
 msgid "Verifying backup…"
 msgstr ""
 
 #: libdeja/OperationRestore.vala:35
 msgid "Restoring files…"
+msgstr ""
+
+#: libdeja/OperationRestore.vala:54
+msgid ""
+"Could not restore the following files.  Please make sure you are able to "
+"write to them."
 msgstr ""
 
 #: libdeja/OperationVerify.vala:81
@@ -1316,34 +1427,40 @@ msgstr ""
 msgid "Paused (no network)"
 msgstr ""
 
+#. Is the disk not even big enough to possibly hold what we need?
+#. Don't bother checking whether this is first or later backup.
+#. If the user adds folders to their backup and the target is just too small, let them know.
 #. Tiny backup location.  Suggest they get a larger one.
-#: libdeja/duplicity/DuplicityJob.vala:525 libdeja/restic/ResticJob.vala:318
-#, c-format
-msgid "Backup location is too small. Try using one with at least %s."
+#: libdeja/duplicity/DuplicityJob.vala:555 libdeja/restic/ResticJob.vala:319
+msgid "Backup location is too small."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:550
+#: libdeja/duplicity/DuplicityJob.vala:556 libdeja/restic/ResticJob.vala:320
+#, c-format
+msgid "Try using a location with at least %s."
+msgstr ""
+
+#: libdeja/duplicity/DuplicityJob.vala:557
+msgid "(Space for two full backups is required.)"
+msgstr ""
+
+#. Can't delete any more backup chains ourselves. Tell the user, so they can clear out space.
+#: libdeja/duplicity/DuplicityJob.vala:578
 #, c-format
 msgid ""
-"Backup location does not have enough free space. Try using one with at least "
-"%s."
+"Backup location does not have enough free space. Please free up at least %s."
+msgstr ""
+
+#: libdeja/duplicity/DuplicityJob.vala:580
+#, c-format
+msgid ""
+"Backup location does not have enough free space. Try using a location with "
+"at least %s free."
 msgstr ""
 
 #: libdeja/duplicity/DuplicityJob.vala:600
 #: libdeja/duplicity/DuplicityJob.vala:614
 msgid "Cleaning up…"
-msgstr ""
-
-#: libdeja/OperationBackup.vala:29
-msgid ""
-"Could not back up the following files.  Please make sure you are able to "
-"open them."
-msgstr ""
-
-#: libdeja/OperationRestore.vala:54
-msgid ""
-"Could not restore the following files.  Please make sure you are able to "
-"write to them."
 msgstr ""
 
 #. For most, don't do anything special.  Show generic 'unknown error'
@@ -1425,10 +1542,6 @@ msgstr ""
 msgid "No space left in ‘%s’."
 msgstr ""
 
-#: app/Browser.vala:334 libdeja/duplicity/DuplicityJob.vala:1067
-msgid "No backup files found"
-msgstr ""
-
 #: libdeja/duplicity/DuplicityJob.vala:1117
 msgid "Uploading…"
 msgstr "Запампоўка…"
@@ -1447,6 +1560,37 @@ msgstr ""
 msgid ""
 "Backups requires at least version %d.%d.%.2d of duplicity, but only found "
 "version %d.%d.%.2d"
+msgstr ""
+
+#: libdeja/duplicity/DuplicityPlugin.vala:99
+#: libdeja/restic/ResticPlugin.vala:91
+msgid "This storage location is not yet supported."
+msgstr ""
+
+#: libdeja/duplicity/DuplicityPlugin.vala:104
+msgid ""
+"This storage location is no longer supported. You can still use duplicity "
+"directly to back up or restore your files."
+msgstr ""
+
+#: libdeja/restic/ResticPlugin.vala:42
+msgid "Could not understand restic version."
+msgstr ""
+
+#: libdeja/restic/ResticPlugin.vala:49
+#, c-format
+msgid "Could not understand restic version ‘%s’."
+msgstr ""
+
+#: libdeja/restic/ResticPlugin.vala:52
+#, c-format
+msgid ""
+"Backups requires at least version %d.%d.%d of restic, but only found version "
+"%d.%d.%d"
+msgstr ""
+
+#: monitor/ReadyWatcher.vala:151
+msgid "Backup will begin when power saver mode is no longer active."
 msgstr ""
 
 #: monitor/ReadyWatcher.vala:165

@@ -3,20 +3,14 @@
 # This file is distributed under the same license as the NetworkManager package.
 # David Lodge <dave@cirt.net>, 2004.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2011, 2012, 2013.
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: 98e6872775a91bf27122ff608b6db605\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/network-manager-"
 "applet/\n"
-"POT-Creation-Date: 2022-03-07 15:59+0000\n"
-"PO-Revision-Date: 2023-03-23 10:43+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2023-11-03 10:02+0000\n"
+"PO-Revision-Date: 2021-09-04 09:50+0000\n"
+"Last-Translator: Bruce Cowan <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,19 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || "
 "n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2023-05-27 08:09+0000\n"
-"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
-"X-Crowdin-File: /Addition apps/network-manager-applet.master.be.po\n"
-"X-Crowdin-File-ID: 2172\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:05+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Crowdin-Project-ID: 2\n"
-"Language: be\n"
 "X-Crowdin-Language: be\n"
+"X-Crowdin-File: /Addition apps/network-manager-applet.master.be.po\n"
+"Language: be\n"
 "X-Crowdin-Project: 98e6872775a91bf27122ff608b6db605\n"
+"X-Crowdin-File-ID: 2172\n"
 
-#: nm-applet.desktop.in:3 src/applet-dialogs.c:724 src/applet.c:2173
-#: src/applet.c:2271 src/applet.c:3354
-msgid "Network"
-msgstr "Сетка"
+#: nm-applet.desktop.in:3 src/applet.c:3468
+msgid "NetworkManager Applet"
+msgstr "Аплет NetworkManager"
 
 #: nm-applet.desktop.in:4
 msgid "Manage your network connections"
@@ -77,6 +70,89 @@ msgstr "Пашыраная канфігурацыя сеткі"
 #: nm-connection-editor.desktop.in:4
 msgid "Manage and change your network connection settings"
 msgstr "Налады сеткавага злучэння"
+
+#: org.gnome.nm-applet.gschema.xml.in:6
+msgid "Disable connected notifications"
+msgstr "Disable connected notifications"
+
+#: org.gnome.nm-applet.gschema.xml.in:7
+msgid ""
+"Set this to true to disable notifications when connecting to a network."
+msgstr ""
+"Set this to true to disable notifications when connecting to a network."
+
+#: org.gnome.nm-applet.gschema.xml.in:11
+msgid "Disable disconnected notifications"
+msgstr "Disable disconnected notifications"
+
+#: org.gnome.nm-applet.gschema.xml.in:12
+msgid ""
+"Set this to true to disable notifications when disconnecting from a network."
+msgstr ""
+"Set this to true to disable notifications when disconnecting from a network."
+
+#: org.gnome.nm-applet.gschema.xml.in:16
+msgid "Disable VPN notifications"
+msgstr "Disable VPN notifications"
+
+#: org.gnome.nm-applet.gschema.xml.in:17
+msgid ""
+"Set this to true to disable notifications when connecting to or "
+"disconnecting from a VPN."
+msgstr ""
+"Set this to true to disable notifications when connecting to or "
+"disconnecting from a VPN."
+
+#: org.gnome.nm-applet.gschema.xml.in:21
+msgid "Suppress networks available notifications"
+msgstr "Suppress networks available notifications"
+
+#: org.gnome.nm-applet.gschema.xml.in:22
+msgid ""
+"Set this to true to disable notifications when Wi-Fi networks are available."
+msgstr ""
+"Set this to true to disable notifications when Wi-Fi networks are available."
+
+#: org.gnome.nm-applet.gschema.xml.in:26
+msgid "Stamp"
+msgstr "Stamp"
+
+#: org.gnome.nm-applet.gschema.xml.in:27
+msgid ""
+"Used to determine whether settings should be migrated to a new version."
+msgstr ""
+"Used to determine whether settings should be migrated to a new version."
+
+#: org.gnome.nm-applet.gschema.xml.in:31
+msgid "Disable WiFi Create"
+msgstr "Выключыць магчымасць стварэння WiFi-сеткі"
+
+#: org.gnome.nm-applet.gschema.xml.in:32
+msgid ""
+"Set to true to disable creation of adhoc networks when using the applet."
+msgstr ""
+"Set to true to disable creation of adhoc networks when using the applet."
+
+#: org.gnome.nm-applet.gschema.xml.in:36
+msgid "Suppress broadband device unlock prompt"
+msgstr ""
+
+#: org.gnome.nm-applet.gschema.xml.in:37
+msgid ""
+"Set to true to not prompt for PIN/PUK when providing it is required to "
+"unlock a broadband device."
+msgstr ""
+
+#: org.gnome.nm-applet.gschema.xml.in:41
+msgid "Show the applet in notification area"
+msgstr "Паказваць аплет у вобласці апавяшчэнняў"
+
+#: org.gnome.nm-applet.gschema.xml.in:42
+msgid ""
+"Set to FALSE to disable displaying the applet in the notification area."
+msgstr ""
+"Устанавіць значэнне НЯПРАЎДА, каб адключыць адлюстраванне аплетаў у вобласці "
+"апавяшчэнняў"
 
 #: shared/nm-utils/nm-shared-utils.c:793
 #, c-format
@@ -131,14 +207,14 @@ msgstr "Аўтэнтыфікацыя 802.1X"
 #: src/connection-editor/ce-page-dcb.ui:1019
 #: src/connection-editor/ce-page-wireguard.ui:41
 #: src/connection-editor/ce-ppp-auth-methods.ui:28
-#: src/connection-editor/connection-helpers.c:284
-#: src/connection-editor/connection-helpers.c:747
+#: src/connection-editor/connection-helpers.c:332
+#: src/connection-editor/connection-helpers.c:795
 #: src/connection-editor/nm-connection-editor.ui:197
 #: src/connection-editor/page-bluetooth.c:293
 #: src/connection-editor/page-mobile.c:530
 #: src/connection-editor/page-proxy.c:107
 #: src/connection-editor/page-team-port.c:192
-#: src/connection-editor/page-team.c:330
+#: src/connection-editor/page-team.c:329
 #: src/connection-editor/vpn-helpers.c:198 src/gsm-unlock.ui:28
 #: src/mobile-helpers.c:451
 msgid "_Cancel"
@@ -160,6 +236,10 @@ msgstr "ad-hoc"
 msgid "secure."
 msgstr "бяспечны."
 
+#: src/ap-menu-item.c:77
+msgid "insecure."
+msgstr ""
+
 #: src/applet-device-broadband.c:147
 msgid "Wrong PUK code; please contact your provider."
 msgstr "Хібны PUK. Звярніцеся да пастаўшчыка паслуг."
@@ -173,45 +253,45 @@ msgstr "Хібны PIN. Звярніцеся да пастаўшчыка пас�
 msgid "Sending unlock code…"
 msgstr "Адпраўленне коду разблакавання…"
 
-#: src/applet-device-broadband.c:725 src/applet-dialogs.c:521
+#: src/applet-device-broadband.c:729 src/applet-dialogs.c:521
 #, c-format
 msgid "Mobile Broadband (%s)"
 msgstr "Мабільная сувязь (%s)"
 
-#: src/applet-device-broadband.c:727
+#: src/applet-device-broadband.c:731
 #: src/connection-editor/connection-helpers.c:95
 #: src/connection-editor/page-mobile.c:295
 msgid "Mobile Broadband"
 msgstr "Мабільная сувязь"
 
-#: src/applet-device-broadband.c:780 src/applet-device-bt.c:61
+#: src/applet-device-broadband.c:784 src/applet-device-bt.c:61
 #: src/applet-device-ethernet.c:107
 msgid "Available"
 msgstr "Даступна"
 
 #. Default connection item
-#: src/applet-device-broadband.c:793
+#: src/applet-device-broadband.c:797
 msgid "New Mobile Broadband connection…"
 msgstr "Новае мабільнае злучэнне…"
 
-#: src/applet-device-broadband.c:809 src/applet-device-bt.c:75
+#: src/applet-device-broadband.c:813 src/applet-device-bt.c:75
 #: src/applet-device-ethernet.c:124 src/applet-device-wifi.c:1296
 msgid "Connection Established"
 msgstr "Злучэнне наладжана"
 
-#: src/applet-device-broadband.c:810
+#: src/applet-device-broadband.c:814
 msgid "You are now connected to the Mobile Broadband network."
 msgstr "Вы злучаныя з сеткай мабільнай сувязі."
 
-#: src/applet-device-broadband.c:950 src/applet-device-broadband.c:956
+#: src/applet-device-broadband.c:954 src/applet-device-broadband.c:960
 msgid "Mobile Broadband network."
 msgstr "Сетка мабільнай сувязі."
 
-#: src/applet-device-broadband.c:951
+#: src/applet-device-broadband.c:955
 msgid "You are now registered on the home network."
 msgstr "Вы зарэгістраваныя ў хатняй сетцы."
 
-#: src/applet-device-broadband.c:957
+#: src/applet-device-broadband.c:961
 msgid "You are now registered on a roaming network."
 msgstr "Вы зарэгістраваныя ў роўмінг-сетцы."
 
@@ -366,9 +446,9 @@ msgstr "Wi-Fi выключаны"
 msgid "Wi-Fi is disabled by hardware switch"
 msgstr "Wi-Fi выключаны апаратным пераключальнікам"
 
-#: src/applet-device-wifi.c:964
-msgid "More networks"
-msgstr "Яшчэ сеткі"
+#: src/applet-device-wifi.c:930
+msgid "_Available networks"
+msgstr ""
 
 #: src/applet-device-wifi.c:1109
 msgid "Wi-Fi Networks Available"
@@ -377,10 +457,6 @@ msgstr "Даступныя сеткі Wi-Fi"
 #: src/applet-device-wifi.c:1110
 msgid "Use the network menu to connect to a Wi-Fi network"
 msgstr "Выкарыстоўвайце меню са спісам сетак, каб падлучыцца да сеткі Wi-Fi"
-
-#: src/applet.c:745
-msgid "Don’t show this message again"
-msgstr "Больш не паказваць гэтае паведамленне"
 
 #: src/applet-device-wifi.c:1294
 #, c-format
@@ -450,6 +526,10 @@ msgstr "Яшчэ адрасы"
 #: src/applet-dialogs.c:224
 msgid "WEP"
 msgstr "WEP"
+
+#: src/applet-dialogs.c:228
+msgid "WPA/WPA2/WPA3"
+msgstr ""
 
 #: src/applet-dialogs.c:230
 msgid "WPA3"
@@ -574,6 +654,11 @@ msgstr "IPv6"
 #: src/applet-dialogs.c:717 src/connection-editor/ce-page-wifi.ui:52
 msgid "Hotspot"
 msgstr "Пункт доступу"
+
+#: src/applet-dialogs.c:724 src/applet.c:2173 src/applet.c:2271
+#: src/applet.c:3354
+msgid "Network"
+msgstr "Сетка"
 
 #: src/applet-dialogs.c:735
 msgid "Password"
@@ -763,6 +848,10 @@ msgstr "Не атрымалася адлучыцца"
 #: src/applet.c:508
 msgid "Connection activation failed"
 msgstr "Не атрымалася ўключыць злучэнне"
+
+#: src/applet.c:745
+msgid "Don’t show this message again"
+msgstr "Больш не паказваць гэтае паведамленне"
 
 #: src/applet.c:845
 #, c-format
@@ -990,10 +1079,6 @@ msgstr "Адключаны - вы зараз адлучаны"
 msgid "Disconnected"
 msgstr "Адлучана"
 
-#: src/applet.c:2295
-msgid "Don't show this message again"
-msgstr "Больш не паказваць гэта паведамленне"
-
 #: src/applet.c:2262
 msgid "Wireless network"
 msgstr "Безправадная сетка"
@@ -1050,10 +1135,6 @@ msgstr "VPN-злучэнне актыўна"
 msgid "No network connection"
 msgstr "Не падлучана да сеткі"
 
-#: src/applet.c:3468
-msgid "NetworkManager Applet"
-msgstr "Аплет NetworkManager"
-
 #: src/connection-editor/ce-ip4-routes.ui:88
 #: src/connection-editor/ce-ip6-routes.ui:88 src/connection-editor/ce-page.h:97
 msgid ""
@@ -1083,7 +1164,7 @@ msgstr "_Дадаць"
 #: src/connection-editor/ce-page-ip6.ui:199
 #: src/connection-editor/ce-page-team.ui:262
 #: src/connection-editor/ce-page-wireguard.ui:617
-#: src/connection-editor/connection-helpers.c:748
+#: src/connection-editor/connection-helpers.c:796
 #: src/connection-editor/nm-connection-list.ui:101
 msgid "_Delete"
 msgstr "_Выдаліць"
@@ -2315,8 +2396,8 @@ msgid "Ad_vanced…"
 msgstr "_Дадаткова…"
 
 #: src/connection-editor/ce-page-team-port.ui:108
-msgid "Set by master"
-msgstr "Прызначаецца памагатым"
+msgid "Set by controller"
+msgstr ""
 
 #: src/connection-editor/ce-page-team-port.ui:112
 #: src/connection-editor/ce-page-team.ui:85
@@ -2762,11 +2843,8 @@ msgstr "Сістэмны прыярытэт, значэнне можа быць 
 #: src/connection-editor/ce-page-team.ui:960
 msgid ""
 "Specifies the minimum number of ports that must be active before asserting "
-"carrier in the master interface, value can be 1 – 255."
+"carrier in the controller interface, value can be 1 – 255."
 msgstr ""
-"Вызначае мінімальную колькасць партоў, што павінныя быць актыўнымі перад "
-"тым, як зацвердзіць носьбіт у галоўным інтэрфейсе, значэнне можа быць 1 - "
-"255."
 
 #: src/connection-editor/ce-page-team.ui:972
 msgid "This selects the policy of how the aggregators will be selected."
@@ -2873,22 +2951,6 @@ msgstr "Кліент"
 #: src/connection-editor/ce-page-wifi.ui:55
 msgid "Ad-hoc"
 msgstr "Ad-hoc"
-
-#: src/connection-editor/ce-page-wifi.ui:203
-msgid "mW"
-msgstr "мВт"
-
-#: src/connection-editor/ce-page-wifi.ui:222
-msgid "Transmission po_wer"
-msgstr "_Магутнасць перадачы"
-
-#: src/connection-editor/ce-page-wifi.ui:256
-msgid "Mb/s"
-msgstr "Мбіт/с"
-
-#: src/connection-editor/ce-page-wifi.ui:275
-msgid "_Rate"
-msgstr "_Чашчыня"
 
 #: src/connection-editor/ce-page-wifi.ui:205
 msgid "_BSSID"
@@ -3247,7 +3309,7 @@ msgid "Bond"
 msgstr "Bond"
 
 #: src/connection-editor/connection-helpers.c:105
-#: src/connection-editor/page-team.c:1014
+#: src/connection-editor/page-team.c:1013
 msgid "Team"
 msgstr "Каманда"
 
@@ -3272,47 +3334,52 @@ msgid "WireGuard"
 msgstr "WireGuard"
 
 #: src/connection-editor/connection-helpers.c:112
-#: src/connection-editor/connection-helpers.c:374
+#: src/connection-editor/connection-helpers.c:422
 #: src/connection-editor/page-vpn.c:92
 msgid "VPN"
 msgstr "VPN"
 
-#: src/connection-editor/connection-helpers.c:192
+#: src/connection-editor/connection-helpers.c:202
+#, c-format
+msgid "VPN plugin “%s” not found"
+msgstr ""
+
+#: src/connection-editor/connection-helpers.c:227
 msgid "No VPN service type."
 msgstr "Тып сэрвісу VPN адсутнічае."
 
-#: src/connection-editor/connection-helpers.c:197
+#: src/connection-editor/connection-helpers.c:241
 msgid "The VPN plugin failed to import the VPN connection correctly: "
 msgstr "Убудова VPN не здолела карэктна імпартаваць VPN-злучэнне: "
 
-#: src/connection-editor/connection-helpers.c:281
+#: src/connection-editor/connection-helpers.c:329
 #: src/connection-editor/page-proxy.c:104
 #: src/connection-editor/page-team-port.c:189
-#: src/connection-editor/page-team.c:327
+#: src/connection-editor/page-team.c:326
 msgid "Select file to import"
 msgstr "Абраць файл для імпарту"
 
-#: src/connection-editor/connection-helpers.c:285
+#: src/connection-editor/connection-helpers.c:333
 #: src/connection-editor/page-proxy.c:108
 #: src/connection-editor/page-team-port.c:193
-#: src/connection-editor/page-team.c:331
+#: src/connection-editor/page-team.c:330
 msgid "_Open"
 msgstr "_Адкрыць"
 
-#: src/connection-editor/connection-helpers.c:316
+#: src/connection-editor/connection-helpers.c:364
 msgid "Hardware"
 msgstr "Апаратнае"
 
-#: src/connection-editor/connection-helpers.c:343
+#: src/connection-editor/connection-helpers.c:391
 msgid "Virtual"
 msgstr "Віртуальнае"
 
-#: src/connection-editor/connection-helpers.c:492
-#: src/connection-editor/connection-helpers.c:494
+#: src/connection-editor/connection-helpers.c:540
+#: src/connection-editor/connection-helpers.c:542
 msgid "Import a saved VPN configuration…"
 msgstr "Імпартаваць захаваную канфігурацыю VPN…"
 
-#: src/connection-editor/connection-helpers.c:524
+#: src/connection-editor/connection-helpers.c:572
 msgid ""
 "The connection editor dialog could not be initialized due to an unknown "
 "error."
@@ -3320,15 +3387,15 @@ msgstr ""
 "Не атрымалася ініцыялізаваць дыялогавае акно рэдактара злучэнняў праз "
 "невядомую памылку."
 
-#: src/connection-editor/connection-helpers.c:533
+#: src/connection-editor/connection-helpers.c:581
 msgid "Could not create new connection"
 msgstr "Не атрымалася стварыць новае злучэнне"
 
-#: src/connection-editor/connection-helpers.c:696
+#: src/connection-editor/connection-helpers.c:744
 msgid "Connection delete failed"
 msgstr "Не атрымалася выдаліць злучэнне"
 
-#: src/connection-editor/connection-helpers.c:744
+#: src/connection-editor/connection-helpers.c:792
 #, c-format
 msgid "Are you sure you wish to delete the connection %s?"
 msgstr "Сапраўды хочаце выдаліць злучэнне \"%s\"?"
@@ -3578,44 +3645,44 @@ msgstr "Выдаліць абранае злучэнне"
 msgid "Authenticate to delete the selected connection"
 msgstr "Для выдалення абранага злучэння патрабуецца аўтэнтыфікацыя"
 
-#: src/connection-editor/nm-connection-list.c:1053
+#: src/connection-editor/nm-connection-list.c:1051
 #, c-format
 msgid "Unrecognized connection type"
 msgstr "Нераспазнаны тып злучэння"
 
-#: src/connection-editor/nm-connection-list.c:1058
+#: src/connection-editor/nm-connection-list.c:1057
 #, c-format
 msgid "Don’t know how to import “%s” connections"
 msgstr "Невядома як імпартаваць злучэнні \"%s\""
 
-#: src/connection-editor/nm-connection-list.c:1062
+#: src/connection-editor/nm-connection-list.c:1061
 msgid "Error importing connection"
 msgstr "Не атрымалася імпартаваць злучэнне"
 
-#: src/connection-editor/nm-connection-list.c:1069
-#: src/connection-editor/nm-connection-list.c:1084
-#: src/connection-editor/nm-connection-list.c:1087
+#: src/connection-editor/nm-connection-list.c:1077
+#: src/connection-editor/nm-connection-list.c:1092
+#: src/connection-editor/nm-connection-list.c:1095
 msgid "Error creating connection"
 msgstr "Не атрымалася стварыць злучэнне"
 
-#: src/connection-editor/nm-connection-list.c:1069
+#: src/connection-editor/nm-connection-list.c:1077
 msgid "Connection type not specified."
 msgstr "Тып злучэння не вызначаны."
 
-#: src/connection-editor/nm-connection-list.c:1085
+#: src/connection-editor/nm-connection-list.c:1093
 msgid "No VPN plugins are installed."
 msgstr "Убудоў VPN не ўсталявана."
 
-#: src/connection-editor/nm-connection-list.c:1088
+#: src/connection-editor/nm-connection-list.c:1096
 #, c-format
 msgid "Don’t know how to create “%s” connections"
 msgstr "Невядома як ствараць злучэнні \"%s\""
 
-#: src/connection-editor/nm-connection-list.c:1122
+#: src/connection-editor/nm-connection-list.c:1130
 msgid "Error editing connection"
 msgstr "Не атрымалася адрэдагаваць злучэнне"
 
-#: src/connection-editor/nm-connection-list.c:1123
+#: src/connection-editor/nm-connection-list.c:1131
 #, c-format
 msgid "Did not find a connection with UUID “%s”"
 msgstr "Злучэнне з UUID \"%s\" не знойдзена"
@@ -3934,24 +4001,24 @@ msgstr "Не атрымалася загрузіць інтэрфейс кары
 msgid "MACSEC connection %d"
 msgstr "Злучэнне MACsec %d"
 
-#: src/connection-editor/page-master.c:221
-#: src/connection-editor/page-master.c:232
+#: src/connection-editor/page-controller.c:221
+#: src/connection-editor/page-controller.c:232
 msgid "Duplicate ports"
 msgstr ""
 
-#: src/connection-editor/page-master.c:222
+#: src/connection-editor/page-controller.c:222
 #, c-format
 msgid "Ports “%s” and “%s” both apply to device “%s”"
 msgstr ""
 
-#: src/connection-editor/page-master.c:233
+#: src/connection-editor/page-controller.c:233
 #, c-format
 msgid ""
 "Ports “%s” and “%s” apply to different virtual ports (“%s” and “%s”) of the "
 "same physical device."
 msgstr ""
 
-#: src/connection-editor/page-master.c:357
+#: src/connection-editor/page-controller.c:357
 #, c-format
 msgid "%s port %d"
 msgstr ""
@@ -4044,7 +4111,7 @@ msgid "Could not load proxy user interface."
 msgstr "Не атрымалася загрузіць інтэрфейс карыстальніка проксі."
 
 #: src/connection-editor/page-team-port.c:209
-#: src/connection-editor/page-team.c:347
+#: src/connection-editor/page-team.c:346
 msgid "Error: file doesn’t contain a valid JSON configuration"
 msgstr "Памылка: файл не змяшчае канфігурацыі JSON"
 
@@ -4060,12 +4127,12 @@ msgid "Could not load team port user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка порта агрэгацыі (team)."
 
-#: src/connection-editor/page-team.c:1017
+#: src/connection-editor/page-team.c:1016
 msgid "Could not load team user interface."
 msgstr ""
 "Не атрымалася загрузіць інтэрфейс карыстальніка агрэгаванага злучэння (team)."
 
-#: src/connection-editor/page-team.c:1114
+#: src/connection-editor/page-team.c:1113
 #, c-format
 msgid "Team connection %d"
 msgstr "Агрэгаванае злучэнне (team) %d"
@@ -4145,12 +4212,12 @@ msgid "Dynamic WEP (802.1X)"
 msgstr "Дынамічны WEP (802.1X)"
 
 #: src/connection-editor/page-wifi-security.c:410
-msgid "WPA & WPA2 Personal"
-msgstr "WPA & WPA2 Personal"
+msgid "WPA/WPA2/WPA3 Personal"
+msgstr ""
 
 #: src/connection-editor/page-wifi-security.c:423
-msgid "WPA & WPA2 Enterprise"
-msgstr "WPA & WPA2 Enterprise"
+msgid "WPA/WPA2 Enterprise"
+msgstr ""
 
 #: src/connection-editor/page-wifi-security.c:436
 msgid "WPA3 Personal"
@@ -4425,3 +4492,14 @@ msgstr "Сертыфікаты PEM (*.pem, *.crt, *.cer)"
 #: src/utils/utils.c:546
 msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
 msgstr "Прыватныя ключы DER-, PEM- ці PKCS#12 (*.der, *.pem, *.p12)"
+
+#~ msgid "Set by master"
+#~ msgstr "Прызначаецца памагатым"
+
+#~ msgid ""
+#~ "Specifies the minimum number of ports that must be active before asserting "
+#~ "carrier in the master interface, value can be 1 – 255."
+#~ msgstr ""
+#~ "Вызначае мінімальную колькасць партоў, што павінныя быць актыўнымі перад "
+#~ "тым, як зацвердзіць носьбіт у галоўным інтэрфейсе, значэнне можа быць 1 - "
+#~ "255."

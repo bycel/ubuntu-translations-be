@@ -3,27 +3,21 @@
 # Yuri Matsuk <yuri@matsuk.net>, 2011.
 # Yuras Shumovich <shumovichy@gmail.com>, 2017.
 #
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-keyring.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gcr/issues\n"
-"POT-Creation-Date: 2022-03-24 09:47+0000\n"
-"PO-Revision-Date: 2023-03-23 10:43+0000\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2024-02-28 05:17+0000\n"
+"PO-Revision-Date: 2022-05-25 00:42+0000\n"
+"Last-Translator: Ubuntu Archive Auto-Sync <archive@ubuntu.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-05-27 08:10+0000\n"
-"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
+"X-Launchpad-Export-Date: 2024-03-07 08:06+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: be\n"
 
 #: egg/egg-oid.c:40
@@ -415,6 +409,43 @@ msgstr "Працягнуць"
 #: gcr/gcr-prompt.c:231
 msgid "Cancel"
 msgstr "Скасаваць"
+
+#: gcr/gcr-ssh-agent-interaction.c:116
+#, c-format
+msgid "Unlock password for: %s"
+msgstr "Пароль для разблакіравання: %s"
+
+#: gcr/gcr-ssh-agent-interaction.c:152
+msgid "Unlock private key"
+msgstr "Разблакіраванне закрытага ключа"
+
+#: gcr/gcr-ssh-agent-interaction.c:153
+msgid "Enter password to unlock the private key"
+msgstr "Увядзіце пароль, каб разблакіраваць закрыты ключ"
+
+#. TRANSLATORS: The private key is locked
+#: gcr/gcr-ssh-agent-interaction.c:156
+#, c-format
+msgid "An application wants access to the private key “%s”, but it is locked"
+msgstr ""
+"Праграма патрабуе доступу да закрытага ключа «%s», але ён заблакіраваны"
+
+#: gcr/gcr-ssh-agent-interaction.c:161
+msgid "Automatically unlock this key whenever I’m logged in"
+msgstr "Аўтаматычна разблакіраваць гэты ключ, калі я ўвайшоў у сістэму"
+
+#: gcr/gcr-ssh-agent-interaction.c:163 ui/gcr-pkcs11-import-dialog.ui:143
+#: ui/gcr-unlock-renderer.c:70 ui/gcr-unlock-renderer.c:124
+msgid "Unlock"
+msgstr "Разблакіраваць"
+
+#: gcr/gcr-ssh-agent-interaction.c:166
+msgid "The unlock password was incorrect"
+msgstr "Няправільны пароль разблакіравання"
+
+#: gcr/gcr-ssh-agent-service.c:259
+msgid "Unnamed"
+msgstr "Неназваны"
 
 #: gcr/gcr-ssh-askpass.c:180
 msgid "Enter your OpenSSH passphrase"
@@ -1026,11 +1057,6 @@ msgstr "Пароль:"
 #: ui/gcr-pkcs11-import-dialog.ui:80
 msgid "Token:"
 msgstr "Токен:"
-
-#: gcr/gcr-ssh-agent-interaction.c:163 ui/gcr-pkcs11-import-dialog.ui:143
-#: ui/gcr-unlock-renderer.c:70 ui/gcr-unlock-renderer.c:124
-msgid "Unlock"
-msgstr "Разблакіраваць"
 
 #: ui/gcr-pkcs11-import-dialog.ui:178
 msgid "Label:"
