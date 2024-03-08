@@ -1,22 +1,16 @@
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-logs/issues\n"
-"POT-Creation-Date: 2022-03-28 22:08+0000\n"
-"PO-Revision-Date: 2024-03-07 15:36\n"
+"POT-Creation-Date: 2024-03-08 06:30+0000\n"
+"PO-Revision-Date: 2024-03-08 16:10\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-08 15:52+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -65,20 +59,24 @@ msgstr ""
 msgid "Usage"
 msgstr ""
 
-#: data/gl-eventtoolbar.ui:7
+#: data/gl-eventtoolbar.ui:6
 msgid "_New Window"
 msgstr ""
 
-#: data/gl-eventtoolbar.ui:13
-msgid "Keyboard Shortcuts"
+#: data/gl-eventtoolbar.ui:12
+msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: data/gl-eventtoolbar.ui:18
+#: data/gl-eventtoolbar.ui:16
 msgid "_Help"
 msgstr ""
 
-#: data/gl-eventtoolbar.ui:22
+#: data/gl-eventtoolbar.ui:20
 msgid "_About Logs"
+msgstr ""
+
+#: data/gl-eventtoolbar.ui:35
+msgid "Main Menu"
 msgstr ""
 
 #: data/gl-eventtoolbar.ui:41
@@ -89,7 +87,7 @@ msgstr ""
 msgid "Choose the boot from which to view logs"
 msgstr ""
 
-#: data/gl-eventtoolbar.ui:60
+#: data/gl-eventtoolbar.ui:59
 msgid "Search all the logs of the current category"
 msgstr ""
 
@@ -133,7 +131,11 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: data/gl-eventviewlist.ui:34
+#: data/gl-eventviewlist.ui:29
+msgid "Search logs"
+msgstr ""
+
+#: data/gl-eventviewlist.ui:35
 msgid "Select journal field and timestamp range filtering options"
 msgstr ""
 
@@ -357,7 +359,7 @@ msgid "Export logs to a file"
 msgstr ""
 
 #: data/org.gnome.Logs.appdata.xml.in:7 data/org.gnome.Logs.desktop.in:3
-#: src/gl-application.c:107 src/gl-eventtoolbar.c:144
+#: src/gl-application.c:132 src/gl-eventtoolbar.c:143
 msgid "Logs"
 msgstr ""
 
@@ -373,7 +375,7 @@ msgstr ""
 msgid "Using Logs you can search your logs by typing a search term, and view detailed information about each event by clicking on it."
 msgstr ""
 
-#: data/org.gnome.Logs.appdata.xml.in:38 src/gl-application.c:109
+#: data/org.gnome.Logs.appdata.xml.in:38 src/gl-application.c:134
 msgid "The GNOME Project"
 msgstr ""
 
@@ -402,26 +404,35 @@ msgstr ""
 msgid "Sort list rows in ascending or descending order for the selected type"
 msgstr ""
 
-#: src/gl-application.c:112
+#: src/gl-application.c:82 src/gl-window.c:285
+msgid "Failed To Open Help"
+msgstr ""
+
+#: src/gl-application.c:85 src/gl-window.c:288
+#, c-format
+msgid "Failed to open the given help URI: %s"
+msgstr ""
+
+#: src/gl-application.c:88 src/gl-window.c:175 src/gl-window.c:291
+msgid "_Close"
+msgstr ""
+
+#: src/gl-application.c:137
 msgid "translator-credits"
 msgstr ""
 
-#: src/gl-application.c:110
-msgid "View and search logs"
-msgstr ""
-
-#: src/gl-application.c:256
+#: src/gl-application.c:270
 msgid "Print version information and exit"
 msgstr ""
 
 #. Translators: Boot refers to a single run (or bootup) of the system
-#: src/gl-eventtoolbar.c:135
+#: src/gl-eventtoolbar.c:134
 msgid "Boot"
 msgstr ""
 
 #. Translators: Shown when there are no (zero) results in the current
 #. * view.
-#: src/gl-eventviewlist.c:448
+#: src/gl-eventviewlist.c:431
 msgid "No Results"
 msgstr ""
 
@@ -589,45 +600,27 @@ msgstr ""
 msgid "%s – %s"
 msgstr ""
 
-#: src/gl-window.c:195
-msgid "Save logs"
+#: src/gl-window.c:172
+msgid "Export Failed"
 msgstr ""
 
-#: src/gl-window.c:198
-msgid "_Save"
-msgstr ""
-
-#: src/gl-window.c:199
-msgid "_Cancel"
-msgstr ""
-
-#: src/gl-window.c:202
-msgid "log messages"
-msgstr ""
-
-#: src/gl-window.c:174
+#: src/gl-window.c:173
 msgid "Unable to export log messages to a file"
 msgstr ""
 
-#: src/gl-window.c:473 src/gl-window.c:490
+#: src/gl-window.c:194
+msgid "log messages"
+msgstr ""
+
+#: src/gl-window.c:471 src/gl-window.c:488
 msgid "Unable to read system logs"
 msgstr ""
 
-#: src/gl-window.c:480
+#: src/gl-window.c:478
 msgid "Unable to read user logs"
 msgstr ""
 
-#: src/gl-window.c:498
+#: src/gl-window.c:496
 msgid "No logs available"
 msgstr ""
-
-#~ msgctxt "shortcut window"
-#~ msgid "Search"
-#~ msgstr "Пошук"
-
-#~ msgid "GNOME Logs"
-#~ msgstr "Журналы GNOME"
-
-#~ msgid "No results"
-#~ msgstr "Нама вынікаў"
 
