@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-font-viewer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-02-15 05:27+0000\n"
-"PO-Revision-Date: 2024-03-07 15:36\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
+"POT-Creation-Date: 2024-03-08 06:19+0000\n"
+"PO-Revision-Date: 2024-03-09 16:14\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2023-03-22 13:37+0000\n"
-"X-Generator: Launchpad (build 431275c67be1a04ca69d5640ac4c54bedef137a4)\n"
+"X-Launchpad-Export-Date: 2024-03-08 15:52+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -19,25 +19,31 @@ msgstr ""
 "X-Crowdin-File: /main/noble/en_GB/po-gnome-font-viewer_gnome-font-viewer-be.po\n"
 "X-Crowdin-File-ID: 147\n"
 
-#: src/main.c:37
-msgid "GNOME Fonts"
+#: data/org.gnome.font-viewer.appdata.xml.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+msgid "Fonts"
 msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: src/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:4
 msgid "View fonts on your system"
 msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:9
-msgid "GNOME Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes."
+msgid "Fonts shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes."
 msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:15
-msgid "GNOME Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
+msgid "Fonts also supports installing new font files downloaded in the .ttf and other formats. Fonts may be installed only for your use or made available to all users on the computer."
 msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:21 src/font-view-application.c:126
 msgid "The GNOME Project"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.font-viewer.desktop.in.in:6
+msgid "fonts;fontface;"
 msgstr ""
 
 #: src/font-thumbnailer.c:181
@@ -60,12 +66,28 @@ msgstr ""
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr ""
 
-#: src/font-view-window.ui:54
-msgid "About Fonts"
+#: src/font-view-application.c:79 src/font-view-window.c:741
+msgid "Could Not Display Font"
 msgstr ""
 
-#: src/main.c:44
-msgid "Show the application's version"
+#: src/font-view-application.c:129
+msgid "translator-credits"
+msgstr ""
+
+#: src/font-view-window.c:120
+msgid "Failed"
+msgstr ""
+
+#: src/font-view-window.c:128
+msgid "Installed"
+msgstr ""
+
+#: src/font-view-window.c:133
+msgid "Installing"
+msgstr ""
+
+#: src/font-view-window.c:136
+msgid "Install"
 msgstr ""
 
 #. Translators, this string is used to display information about
@@ -158,54 +180,52 @@ msgstr ""
 msgid "Named Styles"
 msgstr ""
 
-#: src/font-view.c:740
-msgid "This font could not be installed."
+#: src/font-view-window.c:559 src/font-view-window.c:661
+msgid "Could Not Install Font"
 msgstr ""
 
-#: src/font-view.c:875
-msgid "This font could not be displayed."
-msgstr ""
-
-#: src/font-view-window.c:136
-msgid "Install"
-msgstr ""
-
-#: src/font-view.c:1150
-msgid "Installing…"
-msgstr ""
-
-#: src/font-view-window.c:128
-msgid "Installed"
-msgstr ""
-
-#: src/font-view-window.c:120
-msgid "Failed"
-msgstr ""
-
-#: src/font-view.c:993
-msgid "Info"
-msgstr ""
-
-#: src/font-view-window.ui:187
-msgid "Back"
-msgstr ""
-
-#: src/font-view-window.ui:40
+#: src/font-view-window.ui:31
 msgid "All Fonts"
 msgstr ""
 
-#: data/org.gnome.font-viewer.appdata.xml.in:6 src/font-view-application.c:124
-#: src/org.gnome.font-viewer.desktop.in.in:3
-msgid "Fonts"
+#: src/font-view-window.ui:39
+msgid "Search"
 msgstr ""
 
-#: src/font-view-application.c:129
-msgid "translator-credits"
+#: src/font-view-window.ui:47
+msgid "About Fonts"
 msgstr ""
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: src/org.gnome.font-viewer.desktop.in.in:6
-msgid "fonts;fontface;"
+#: src/font-view-window.ui:59
+msgid "Search fonts"
+msgstr ""
+
+#: src/font-view-window.ui:182
+msgid "_Install"
+msgstr ""
+
+#: src/font-view-window.ui:185
+msgid "Install Font"
+msgstr ""
+
+#: src/font-view-window.ui:190
+msgid "I_nfo"
+msgstr ""
+
+#: src/font-view-window.ui:192
+msgid "Font Details"
+msgstr ""
+
+#: src/font-view-window.ui:239
+msgid "_Close"
+msgstr ""
+
+#: src/main.c:37
+msgid "GNOME Fonts"
+msgstr ""
+
+#: src/main.c:44
+msgid "Show the application's version"
 msgstr ""
 
 #: src/open-type-layout.h:13
