@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/rygel/issues\n"
-"POT-Creation-Date: 2022-02-01 02:44+0000\n"
-"PO-Revision-Date: 2024-03-07 15:55\n"
-"Last-Translator: Jim <Unknown>\n"
+"POT-Creation-Date: 2024-03-08 08:12+0000\n"
+"PO-Revision-Date: 2024-03-09 16:15\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-03-22 21:46+0000\n"
-"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
+"X-Launchpad-Export-Date: 2024-03-08 16:01+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: ru_RU\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -241,19 +241,6 @@ msgstr ""
 
 #: src/librygel-core/rygel-cmdline-config.vala:74
 msgid "Shut down remote Rygel reference"
-msgstr ""
-
-#: src/librygel-core/rygel-cmdline-config.vala:102
-msgid "Replace currently running instance of Rygel"
-msgstr ""
-
-#: src/librygel-core/rygel-cmdline-config.vala:139
-msgid "Shutting down remote Rygel instance\n"
-msgstr ""
-
-#: src/librygel-core/rygel-cmdline-config.vala:147
-#, c-format
-msgid "Failed to shut down other Rygel instance: %s"
 msgstr ""
 
 #: src/librygel-core/rygel-cmdline-config.vala:98
@@ -563,7 +550,7 @@ msgstr ""
 msgid "Failed to browse “%s”: %s\n"
 msgstr ""
 
-#: src/librygel-server/rygel-client-hacks.vala:147
+#: src/librygel-server/rygel-client-hacks.vala:151
 msgid "Not Applicable"
 msgstr ""
 
@@ -575,12 +562,22 @@ msgstr ""
 msgid "No D-Bus thumbnailer service available"
 msgstr ""
 
+#: src/librygel-server/rygel-http-byte-seek-request.vala:116
+#, c-format
+msgid "Range end value %lld is smaller than range start value %lld: '%s'"
+msgstr ""
+
 #: src/librygel-server/rygel-http-get.vala:53
 msgid "Invalid Request (only GET and HEAD supported)"
 msgstr ""
 
 #: src/librygel-server/rygel-http-get.vala:61
 msgid " must be 1"
+msgstr ""
+
+#: src/librygel-server/rygel-http-get.vala:91
+#, c-format
+msgid "%s transfer mode not supported for '%s'"
 msgstr ""
 
 #: src/librygel-server/rygel-http-item-uri.vala:152
@@ -1280,7 +1277,7 @@ msgstr ""
 msgid "Failed to create database schema: %s"
 msgstr ""
 
-#: src/plugins/media-export/rygel-media-export-media-cache.vala:1233
+#: src/plugins/media-export/rygel-media-export-media-cache.vala:1234
 #, c-format
 msgid "Skipping unsupported sort field: %s"
 msgstr ""
@@ -1515,6 +1512,35 @@ msgstr ""
 msgid "Failed to get Tracker connection: %s"
 msgstr ""
 
+#: src/rygel/application.vala:88
+#, c-format
+msgid "Failed to load user configuration: %s"
+msgstr ""
+
+#: src/rygel/application.vala:125
+#, c-format
+msgid "No plugins found in %d second; giving up…"
+msgid_plural "No plugins found in %d seconds; giving up…"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/rygel/application.vala:154
+#, c-format
+msgid "Rygel v%s starting…"
+msgstr ""
+
+#: src/rygel/application.vala:202
+#, c-format
+msgid "Failed to create RootDevice for %s. Reason: %s"
+msgstr ""
+
+#: src/rygel/application.vala:283
+#, c-format
+msgid "Failed to create root device factory: %s"
+msgstr ""
+
 #: src/rygel/rygel-acl.vala:110
 #, c-format
 msgid "Failed to query ACL: %s"
@@ -1531,39 +1557,6 @@ msgstr ""
 
 #: src/rygel/rygel-acl.vala:147
 msgid "No ACL fallback policy found. Using “deny”"
-msgstr ""
-
-#: src/rygel/rygel-dbus-service.vala:81
-msgid "Another instance of Rygel is already running. Not starting."
-msgstr ""
-
-#: src/rygel/application.vala:154
-#, c-format
-msgid "Rygel v%s starting…"
-msgstr ""
-
-#: src/rygel/application.vala:125
-#, c-format
-msgid "No plugins found in %d second; giving up…"
-msgid_plural "No plugins found in %d seconds; giving up…"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: src/rygel/application.vala:283
-#, c-format
-msgid "Failed to create root device factory: %s"
-msgstr ""
-
-#: src/rygel/application.vala:202
-#, c-format
-msgid "Failed to create RootDevice for %s. Reason: %s"
-msgstr ""
-
-#: src/rygel/application.vala:88
-#, c-format
-msgid "Failed to load user configuration: %s"
 msgstr ""
 
 #: src/ui/rygel-preferences-dialog.vala:109
