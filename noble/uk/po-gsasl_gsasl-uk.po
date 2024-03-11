@@ -1,0 +1,576 @@
+# Translation of gsasl to Ukrainian
+#
+# Copyright (C) 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gsasl package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2019, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: gsasl 2.2.0\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2024-01-02 18:25+0100\n"
+"PO-Revision-Date: 2024-03-10 03:45+0000\n"
+"Last-Translator: yurchor <Unknown>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-03-10 12:50+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"Language: uk\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: lib/src/error.c:41
+msgid "Libgsasl success"
+msgstr "Libgsasl виконала завдання"
+
+#: lib/src/error.c:42
+msgid "SASL mechanism needs more data"
+msgstr "Механізмові SASL потрібні додаткові дані"
+
+#: lib/src/error.c:43
+msgid "Unknown SASL mechanism"
+msgstr "Невідомий механізм SASL"
+
+#: lib/src/error.c:45
+msgid "SASL mechanism called too many times"
+msgstr "Механізм SASL викликано занадто багато разів"
+
+#: lib/src/error.c:49
+msgid "Memory allocation error in SASL library"
+msgstr "Помилка під час спроби розміщення бібліотекою SASL даних у пам’яті"
+
+#: lib/src/error.c:50
+msgid "Base 64 coding error in SASL library"
+msgstr "Помилка під час кодування у форматі Base64 у бібліотеці SASL"
+
+#: lib/src/error.c:51
+msgid "Low-level crypto error in SASL library"
+msgstr "Помилка низькорівневого шифрування у бібліотеці SASL"
+
+#: lib/src/error.c:72
+msgid "Could not prepare internationalized (non-ASCII) string."
+msgstr "Не вдалося підготувати інтернаціоналізований (не-ASCII) рядок."
+
+#: lib/src/error.c:74
+msgid "SASL mechanism could not parse input"
+msgstr "Механізмові SASL не вдалося розібрати вхідні дані"
+
+#: lib/src/error.c:75
+msgid "Error authenticating user"
+msgstr "Помилка під час розпізнавання користувача"
+
+#: lib/src/error.c:77
+msgid "Integrity error in application payload"
+msgstr "Помилка цілісності у даних програми"
+
+#: lib/src/error.c:80
+msgid ""
+"Client-side functionality not available in library (application error)"
+msgstr ""
+"Функціональні можливості клієнта бібліотекою не надаються (помилка програми)"
+
+#: lib/src/error.c:83
+msgid ""
+"Server-side functionality not available in library (application error)"
+msgstr ""
+"Функціональні можливості сервера бібліотекою не надаються (помилка програми)"
+
+#: lib/src/error.c:86
+msgid ""
+"GSSAPI library could not deallocate memory in gss_release_buffer() in SASL "
+"library.  This is a serious internal error."
+msgstr ""
+"Бібліотеці GSSAPI не вдалося звільнити пам’ять у gss_release_buffer() у "
+"бібліотеці SASL. Це серйозна внутрішня помилка."
+
+#: lib/src/error.c:90
+msgid ""
+"GSSAPI library could not understand a peer name in gss_import_name() in SASL "
+"library.  This is most likely due to incorrect service and/or hostnames."
+msgstr ""
+"Бібліотеці GSSAPI не вдалося розібрати назву вузла у функції "
+"gss_import_name() бібліотеки SASL. Найімовірнішою причиною є помилкова назва "
+"служби або вузла."
+
+#: lib/src/error.c:94
+msgid ""
+"GSSAPI error in client while negotiating security context in "
+"gss_init_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"Помилка GSSAPI у клієнтській програмі під час узгодження контексту захисту у "
+"функції gss_init_sec_context() бібліотеки SASL. Найімовірнішою причиною є "
+"недостатні реєстраційні дані або зловмисне втручання у роботу."
+
+#: lib/src/error.c:98
+msgid ""
+"GSSAPI error in server while negotiating security context in "
+"gss_accept_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"Помилка GSSAPI у серверній програмі під час узгодження контексту захисту у "
+"функції gss_accept_sec_context() бібліотеки SASL. Найімовірнішою причиною є "
+"недостатні реєстраційні дані або зловмисне втручання у роботу."
+
+#: lib/src/error.c:102
+msgid ""
+"GSSAPI error while decrypting or decoding data in gss_unwrap() in SASL "
+"library.  This is most likely due to data corruption."
+msgstr ""
+"Помилка GSSAPI під час розшифрування або декодування даних у функції "
+"gss_unwrap() бібліотеки SASL. Найімовірнішою причиною є пошкодження даних."
+
+#: lib/src/error.c:105
+msgid ""
+"GSSAPI error while encrypting or encoding data in gss_wrap() in SASL library."
+msgstr ""
+"Помилка GSSAPI під час спроби шифрування або кодування даних у функції "
+"gss_wrap() бібліотеки SASL."
+
+#: lib/src/error.c:108
+msgid ""
+"GSSAPI error acquiring credentials in gss_acquire_cred() in SASL library.  "
+"This is most likely due to not having the proper Kerberos key available in "
+"/etc/krb5.keytab on the server."
+msgstr ""
+"Помилка GSSAPI під час спроби отримання реєстраційних даних у функції "
+"gss_acquire_cred() бібліотеки SASL. Найімовірнішою причиною є нестача "
+"належного ключа Kerberos у /etc/krb5.keytab на сервері."
+
+#: lib/src/error.c:112
+msgid ""
+"GSSAPI error creating a display name denoting the client in "
+"gss_display_name() in SASL library.  This is probably because the client "
+"supplied bad data."
+msgstr ""
+"Помилка GSSAPI під час спроби створення назви клієнта для показу у функції "
+"gss_display_name() бібліотеки SASL. Ймовірною причиною є надання клієнтською "
+"частиною помилкових даних."
+
+#: lib/src/error.c:116
+msgid ""
+"Other entity requested integrity or confidentiality protection in GSSAPI "
+"mechanism but this is currently not implemented."
+msgstr ""
+"Надійшов запит від іншого екземпляра програми щодо перевірки цілісності або "
+"захисту конфіденційності за допомогою механізмів GSSAPI. Можливість "
+"виконання декількох запитів одночасно ще не реалізовано."
+
+#: lib/src/error.c:121
+msgid "SecurID needs additional passcode."
+msgstr "SecurID потрібен додатковий код пароля."
+
+#: lib/src/error.c:123
+msgid "SecurID needs new pin."
+msgstr "SecurID потрібен новий ідентифікаційний код (PIN)."
+
+#: lib/src/error.c:126
+msgid "No callback specified by caller (application error)."
+msgstr "Функцією виклику не вказано зворотної адреси (помилка програми)."
+
+#: lib/src/error.c:128
+msgid "Authentication failed because the anonymous token was not provided."
+msgstr "Помилка розпізнавання через ненадання анонімної лексеми."
+
+#: lib/src/error.c:131
+msgid ""
+"Authentication failed because the authentication identity was not provided."
+msgstr "Помилка розпізнавання через ненадання назви профілю розпізнавання."
+
+#: lib/src/error.c:134
+msgid ""
+"Authentication failed because the authorization identity was not provided."
+msgstr "Помилка розпізнавання через ненадання назви профілю уповноваження."
+
+#: lib/src/error.c:137
+msgid "Authentication failed because the password was not provided."
+msgstr "Помилка розпізнавання через ненадання пароля."
+
+#: lib/src/error.c:139
+msgid "Authentication failed because the passcode was not provided."
+msgstr "Помилка розпізнавання через ненадання коду пароля."
+
+#: lib/src/error.c:141
+msgid "Authentication failed because the pin code was not provided."
+msgstr ""
+"Помилка розпізнавання через ненадання особистого ідентифікаційного коду "
+"(PIN)."
+
+#: lib/src/error.c:143
+msgid "Authentication failed because the service name was not provided."
+msgstr "Помилка розпізнавання через ненадання назви сервера."
+
+#: lib/src/error.c:145
+msgid "Authentication failed because the host name was not provided."
+msgstr "Помилка розпізнавання через ненадання назви вузла."
+
+#: lib/src/error.c:147
+msgid "GSSAPI error encapsulating token."
+msgstr "Помилка GSSAPI під час капсуляції лексеми."
+
+#: lib/src/error.c:149
+msgid "GSSAPI error decapsulating token."
+msgstr "Помилка GSSAPI під час декапсуляції лексеми."
+
+#: lib/src/error.c:151
+msgid "GSSAPI error getting OID for SASL mechanism name."
+msgstr "Помилка GSSAPI під час отримання OID для назви механізму SASL."
+
+#: lib/src/error.c:153
+msgid "GSSAPI error testing for OID in OID set."
+msgstr "Помилка тестування GSSAPI під час роботи з OID у наборі OID."
+
+#: lib/src/error.c:155
+msgid "GSSAPI error releasing OID set."
+msgstr "Помилка GSSAPI під час звільнення набору OID."
+
+#: lib/src/error.c:157
+msgid "Authentication failed because a tls-unique CB was not provided."
+msgstr ""
+"Помилка розпізнавання через ненадання унікальної для TLS прив’язки до каналу."
+
+#: lib/src/error.c:159
+msgid "Callback failed to provide SAML20 IdP identifier."
+msgstr ""
+"У відповідь на зворотний виклик не повернуто ідентифікатора IdP SAML20 IdP."
+
+#: lib/src/error.c:161
+msgid "Callback failed to provide SAML20 redirect URL."
+msgstr ""
+"У відповідь на зворотний виклик не отримано адреси переспрямування SAML20."
+
+#: lib/src/error.c:163
+msgid "Callback failed to provide OPENID20 redirect URL."
+msgstr ""
+"У відповідь на зворотний виклик не отримано адреси переспрямування OPENID20."
+
+#: lib/src/error.c:165
+msgid ""
+"Authentication failed because a tls-exporter channel binding was not "
+"provided."
+msgstr ""
+"Помилка розпізнавання через ненадання прив'язки до каналу засобу "
+"експортування TLS."
+
+#: lib/src/error.c:187
+msgid "Libgsasl unknown error"
+msgstr "Невідома помилка libgsasl"
+
+#: src/gsasl.c:257 src/imap.c:86 src/smtp.c:81
+#, c-format
+msgid "Input list of SASL mechanisms:\n"
+msgstr "Вхідний список механізмів SASL:\n"
+
+#: src/gsasl.c:266
+#, c-format
+msgid "Input list of SASL mechanisms supported by server:\n"
+msgstr "Вкажіть список механізмів SASL, які підтримуються сервером:\n"
+
+#: src/gsasl.c:285 src/imap.c:118 src/smtp.c:124
+#, c-format
+msgid "Using mechanism:\n"
+msgstr "Використаний механізм:\n"
+
+#: src/gsasl.c:302
+#, c-format
+msgid "Output from server:\n"
+msgstr "Дані, виведені сервером:\n"
+
+#: src/gsasl.c:304
+#, c-format
+msgid "Output from client:\n"
+msgstr "Дані, виведені клієнтом:\n"
+
+#: src/gsasl.c:351
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Щоб дізнатися більше, віддайте команду «%s --help».\n"
+
+#: src/gsasl.c:383
+#, c-format
+msgid "required --mechanism missing"
+msgstr "не вказано обов'язкового --mechanism"
+
+#: src/gsasl.c:396
+#, c-format
+msgid "unsupported --mechanism for --mkpasswd: %s"
+msgstr "непідтримуване значення --mechanism для --mkpasswd: %s"
+
+#: src/gsasl.c:400
+#, c-format
+msgid "iteration count must be positive: %d"
+msgstr "кількість ітерацій має бути додатною: %d"
+
+#: src/gsasl.c:426
+msgid "Enter password: "
+msgstr "Введіть пароль: "
+
+#: src/gsasl.c:511
+#, c-format
+msgid "missing argument"
+msgstr "не вистачає аргументу"
+
+#: src/gsasl.c:518
+#, c-format
+msgid "need both --x509-cert-file and --x509-key-file"
+msgstr "слід вказати два параметри: --x509-cert-file і --x509-key-file"
+
+#: src/gsasl.c:522
+#, c-format
+msgid "cannot use both --starttls and --no-starttls"
+msgstr "не можна використовувати одночасно --starttls і --no-starttls"
+
+#: src/gsasl.c:525
+#, c-format
+msgid "cannot use both --smtp and --imap"
+msgstr "не можна використовувати одночасно --smtp і --imap"
+
+#: src/gsasl.c:578
+#, c-format
+msgid "cannot guess SASL profile (try --smtp or --imap)"
+msgstr "не вдалося встановити профіль SASL (спробуйте --smtp або --imap)"
+
+#: src/gsasl.c:598
+#, c-format
+msgid "initialization failure: %s"
+msgstr "помилка ініціалізації: %s"
+
+#: src/gsasl.c:613
+#, c-format
+msgid "error listing mechanisms: %s"
+msgstr "помилка під час спроби побудови списку механізмів: %s"
+
+#: src/gsasl.c:620
+#, c-format
+msgid "This client supports the following mechanisms:\n"
+msgstr "Цим клієнтом підтримуються такі механізми:\n"
+
+#: src/gsasl.c:623
+#, c-format
+msgid "This server supports the following mechanisms:\n"
+msgstr "Цим сервером підтримуються такі механізми:\n"
+
+#: src/gsasl.c:691
+#, c-format
+msgid "GnuTLS global initialization failed: %s"
+msgstr "Помилка ініціалізації GnuTLS на загальному рівні: %s"
+
+#: src/gsasl.c:696
+#, c-format
+msgid "GnuTLS initialization failed: %s"
+msgstr "Помилка ініціалізації GnuTLS: %s"
+
+#: src/gsasl.c:701
+#, c-format
+msgid "setting GnuTLS defaults failed: %s"
+msgstr "помилка встановлення типових параметрів GnuTLS: %s"
+
+#: src/gsasl.c:708
+#, c-format
+msgid "setting GnuTLS server name failed: %s"
+msgstr "не вдалося встановити назву сервера GnuTLS: %s"
+
+#: src/gsasl.c:714
+#, c-format
+msgid "allocating anonymous GnuTLS credential: %s"
+msgstr "розміщення анонімних реєстраційних даних GnuTLS: %s"
+
+#: src/gsasl.c:719
+#, c-format
+msgid "setting anonymous GnuTLS credential: %s"
+msgstr "встановлення анонімних реєстраційних даних GnuTLS: %s"
+
+#: src/gsasl.c:724
+#, c-format
+msgid "allocating X.509 GnuTLS credential: %s"
+msgstr "розміщення реєстраційних даних GnuTLS для X.509: %s"
+
+#: src/gsasl.c:732
+#, c-format
+msgid "loading X.509 GnuTLS credential: %s"
+msgstr "завантаження реєстраційних даних GnuTLS для X.509: %s"
+
+#: src/gsasl.c:740
+#, c-format
+msgid "no X.509 CAs found: %s"
+msgstr "не знайдено CA X.509: %s"
+
+#: src/gsasl.c:743
+#, c-format
+msgid "no X.509 CAs found"
+msgstr "не знайдено CA X.509"
+
+#: src/gsasl.c:749
+#, c-format
+msgid "setting GnuTLS system trust: %s"
+msgstr "встановлення довіри до системи GnuTLS: %s"
+
+#: src/gsasl.c:756
+#, c-format
+msgid "setting X.509 GnuTLS credential: %s"
+msgstr "встановлення анонімних реєстраційних даних GnuTLS для X.509: %s"
+
+#: src/gsasl.c:770
+#, c-format
+msgid "setting GnuTLS cipher priority (%s): %s\n"
+msgstr "встановлення пріоритету шифрування GnuTLS (%s): %s\n"
+
+#: src/gsasl.c:796
+#, c-format
+msgid "TLS X.509 Verification: %s\n"
+msgstr "Перевірка TLS X.509: %s\n"
+
+#: src/gsasl.c:801
+#, c-format
+msgid "GnuTLS handshake failed: %s"
+msgstr "Помилка під час спроби встановлення зв’язку з GnuTLS: %s"
+
+#: src/gsasl.c:812
+#, c-format
+msgid "TLS session info: %s\n"
+msgstr "Відомості щодо сеансу TLS: %s\n"
+
+#: src/gsasl.c:833
+#, c-format
+msgid "TLS X.509 Certificate %u: %s\n"
+msgstr "Сертифікат TLS X.509 %u: %s\n"
+
+#: src/gsasl.c:848
+#, c-format
+msgid "verifying peer certificate: %s"
+msgstr "перевірка сертифіката вузла: %s"
+
+#: src/gsasl.c:852
+#, c-format
+msgid "server certificate is not trusted"
+msgstr "сертифікат сервера не є надійним"
+
+#: src/gsasl.c:856
+#, c-format
+msgid "server certificate hasn't got a known issuer"
+msgstr "сертифікат сервера не було створено відомим видавцем"
+
+#: src/gsasl.c:859
+#, c-format
+msgid "server certificate has been revoked"
+msgstr "сертифікат сервера було відкликано"
+
+#: src/gsasl.c:863
+#, c-format
+msgid "could not verify server certificate (rc=%u)"
+msgstr "не вдалося перевірити сертифікат сервера (rc=%u)"
+
+#: src/gsasl.c:879
+#, c-format
+msgid "getting tls-exporter channel binding failed: %s"
+msgstr ""
+"помилка під час спроби прив’язатися до каналу засобу експортування TLS: %s"
+
+#: src/gsasl.c:894
+#, c-format
+msgid "getting channel binding failed: %s"
+msgstr "помилка під час спроби прив’язатися до каналу: %s"
+
+#: src/gsasl.c:926
+#, c-format
+msgid "Cannot find mechanism...\n"
+msgstr "Не вдалося знайти механізм...\n"
+
+#: src/gsasl.c:943
+#, c-format
+msgid "mechanism unavailable: %s"
+msgstr "механізм недоступний: %s"
+
+#: src/gsasl.c:973
+#, c-format
+msgid "Enter base64 authentication data from client (press RET if none):\n"
+msgstr ""
+"Вкажіть дані розпізнавання у форматі base64 від клієнта (натисніть Enter, "
+"якщо таких даних немає):\n"
+
+#: src/gsasl.c:976
+#, c-format
+msgid "Enter base64 authentication data from server (press RET if none):\n"
+msgstr ""
+"Вкажіть дані розпізнавання у форматі base64 від сервера (натисніть Enter, "
+"якщо таких даних немає):\n"
+
+#: src/gsasl.c:986
+#, c-format
+msgid "server error"
+msgstr "помилка на сервері"
+
+#: src/gsasl.c:997
+#, c-format
+msgid "mechanism error: %s"
+msgstr "помилка механізму: %s"
+
+#: src/gsasl.c:1003
+#, c-format
+msgid "Server authentication finished (client trusted)...\n"
+msgstr "Розпізнавання на сервері завершено (клієнт визнано надійним)...\n"
+
+#: src/gsasl.c:1006
+#, c-format
+msgid "Client authentication finished (server trusted)...\n"
+msgstr "Розпізнавання на клієнті завершено (сервер визнано надійним)...\n"
+
+#: src/gsasl.c:1031
+#, c-format
+msgid "Enter application data (EOF to finish):\n"
+msgstr "Вкажіть дані заяви (дані мають завершуватися символом EOF):\n"
+
+#: src/gsasl.c:1097
+#, c-format
+msgid "Base64 encoded application data to send:\n"
+msgstr "Закодовані у форматі Base64 дані, які буде надіслано:\n"
+
+#: src/gsasl.c:1136
+#, c-format
+msgid "SASL record too large: %zu\n"
+msgstr "Запис SASL є занадто великим: %zu\n"
+
+#: src/gsasl.c:1160
+#, c-format
+msgid "encoding error: %s"
+msgstr "помилка кодування: %s"
+
+#: src/gsasl.c:1165
+#, c-format
+msgid "Session finished...\n"
+msgstr "Сеанс завершено...\n"
+
+#: src/gsasl.c:1181
+#, c-format
+msgid "terminating GnuTLS session failed: %s"
+msgstr "спроба переривання сеансу GnuTLS зазнала невдачі: %s"
+
+#: src/imap.c:199
+#, c-format
+msgid "warning: server did not return a token\n"
+msgstr "попередження: сервером не повернуто лексему\n"
+
+#: src/smtp.c:203
+#, c-format
+msgid ""
+"error: could not parse server data:\n"
+"%s\n"
+msgstr ""
+"помилка: не вдалося обробити дані сервера:\n"
+"%s\n"
+
+#~ msgid "Chose SASL mechanisms:\n"
+#~ msgstr "Виберіть механізми SASL:\n"
+
+#~ msgid "Choose SASL mechanism:\n"
+#~ msgstr "Виберіть механізм SASL:\n"
+
+#~ msgid ""
+#~ "error: Server did not return expected SASL data (it must begin with '334 "
+#~ "'):\n"
+#~ "%s\n"
+#~ msgstr ""
+#~ "помилка: сервером не повернуто очікувані дані SASL (відповідь мала "
+#~ "починатися з «334 »):\n"
+#~ "%s\n"

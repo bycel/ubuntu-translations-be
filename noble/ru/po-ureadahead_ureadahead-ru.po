@@ -1,0 +1,132 @@
+# Russian translation for ureadahead
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ureadahead package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ureadahead\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-29 15:05+0000\n"
+"PO-Revision-Date: 2010-03-19 08:05+0000\n"
+"Last-Translator: Dark Raven <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-03-11 06:45+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+
+#: src/ureadahead.c:111
+#, c-format
+msgid "%s: illegal argument: %s\n"
+msgstr "%s: неверный аргумент: %s\n"
+
+#: src/ureadahead.c:127
+msgid "detach and run in the background"
+msgstr "отсоединить и запустить в фоновом режиме"
+
+#: src/ureadahead.c:129
+msgid "ignore existing pack and force retracing"
+msgstr "не использовать файл результатов и повторить профилирование"
+
+#: src/ureadahead.c:131
+msgid "maximum time to trace [default: until terminated]"
+msgstr "максимальное время профилирования [по умолчанию: до завершения]"
+
+#: src/ureadahead.c:133
+msgid "dump the current pack file"
+msgstr "вывести текущий файл результатов"
+
+#: src/ureadahead.c:135
+msgid "how to sort the pack file when dumping [default: path]"
+msgstr "сортировка файла результатов при выводе [по умолчанию: path (путь)]"
+
+#: src/ureadahead.c:152
+msgid "[PATH]"
+msgstr "[ПУТЬ]"
+
+#: src/ureadahead.c:153
+msgid "Read required files in advance"
+msgstr "Заранее считывает требуемые файлы"
+
+#: src/ureadahead.c:155
+msgid ""
+"PATH should be the location of a mounted filesystem for which files should "
+"be read.  If not given, the root filesystem is assumed.\n"
+"\n"
+"If PATH is not given, and no readahead information exists for the root "
+"filesystem (or it is old), tracing is performed instead to generate the "
+"information for the next boot."
+msgstr ""
+"ПУТЬ должен указывать на смонтированную файловую систему из которой следует "
+"считывать файлы. Если не задан,  используется корневая файловая система.\n"
+"\n"
+"Если ПУТЬ не задан, и отсутствуют результаты readahead для корневой ФС (или "
+"они устарели), то выполняется профилирование при следующей загрузке для "
+"получения этих результатов."
+
+#: src/ureadahead.c:180
+msgid "Unable to determine pack file name"
+msgstr "Не удалось определить имя файла результатов"
+
+#: src/ureadahead.c:198
+msgid "Error while reading"
+msgstr "Ошибка при чтении"
+
+#: src/ureadahead.c:227
+msgid "Error while tracing"
+msgstr "Ошибка при профилировании"
+
+#: src/trace.c:425
+msgid "Ignored relative path"
+msgstr "Относительный путь пропущен"
+
+#: src/trace.c:440
+msgid "Ignored far too long path"
+msgstr "Слишком длинный путь пропущен"
+
+#: src/trace.c:476
+msgid "File vanished or error reading"
+msgstr "Файл исчез или ошибка при чтении"
+
+#: src/trace.c:483
+msgid "Error retrieving file stat"
+msgstr "Ошибка функции stat"
+
+#: src/trace.c:615
+#, c-format
+msgid "Unable to obtain rotationalness for device %u:%u: %s"
+msgstr "Невозможно получить скорость вращения для устройства %u:%u: %s"
+
+#: src/trace.c:666
+msgid "Error mapping into memory"
+msgstr "Ошибка при отображении в память"
+
+#: src/trace.c:678
+msgid "Error retrieving page cache info"
+msgstr "Ошибка получения сведений о кэше страниц"
+
+#: src/trace.c:687
+msgid "Error unmapping from memory"
+msgstr "Ошибка освобождения отображения в память"
+
+#: src/trace.c:815
+msgid "Error retrieving chunk extents"
+msgstr "Ошибка получения сведений о фрагментах"
+
+#: src/pack.c:701
+msgid "Failed to set CPU priority"
+msgstr "Не удалось задать приоритет ЦП"
+
+#: src/pack.c:706 src/pack.c:813
+msgid "Failed to set I/O priority"
+msgstr "Не удалось задать приоритет ввода-вывода"
+
+#: src/errors.h:35
+msgid "Pack data error"
+msgstr "Ошибка в файле результатов"
+
+#: src/errors.h:36
+msgid "Pack too old"
+msgstr "Файл результатов устарел"

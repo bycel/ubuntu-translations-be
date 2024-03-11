@@ -1,0 +1,132 @@
+# Ukrainian translation for ureadahead
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ureadahead package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ureadahead\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-29 15:05+0000\n"
+"PO-Revision-Date: 2010-09-20 10:15+0000\n"
+"Last-Translator: Andy Bukhansky <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-03-10 12:23+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+
+#: src/ureadahead.c:111
+#, c-format
+msgid "%s: illegal argument: %s\n"
+msgstr "%s: неприпустимий аргумент: %s\n"
+
+#: src/ureadahead.c:127
+msgid "detach and run in the background"
+msgstr "від'єднати та запустити у фоновому режимі"
+
+#: src/ureadahead.c:129
+msgid "ignore existing pack and force retracing"
+msgstr "не використовувати файл результатів та повторити профілювання"
+
+#: src/ureadahead.c:131
+msgid "maximum time to trace [default: until terminated]"
+msgstr "максимальний час профілювання [типово: до завершення]"
+
+#: src/ureadahead.c:133
+msgid "dump the current pack file"
+msgstr "вивести нинішній файл результатів"
+
+#: src/ureadahead.c:135
+msgid "how to sort the pack file when dumping [default: path]"
+msgstr "сортування файлу результатів при виведенні [типово: path (шлях)]"
+
+#: src/ureadahead.c:152
+msgid "[PATH]"
+msgstr "[ШЛЯХ]"
+
+#: src/ureadahead.c:153
+msgid "Read required files in advance"
+msgstr "Заздалегідь зчитує необхідні файли"
+
+#: src/ureadahead.c:155
+msgid ""
+"PATH should be the location of a mounted filesystem for which files should "
+"be read.  If not given, the root filesystem is assumed.\n"
+"\n"
+"If PATH is not given, and no readahead information exists for the root "
+"filesystem (or it is old), tracing is performed instead to generate the "
+"information for the next boot."
+msgstr ""
+"ШЛЯХ має вказувати на змонтовану файлову систему з якої варто зчитувати "
+"файли. Якщо він не вказаний, використовується коренева файлова система.\n"
+"\n"
+"Якщо ШЛЯХ не вказаний, і відсутні результати readahead для кореневої "
+"файлової системи (або вони застаріли), то виконується профілювання при "
+"наступному завантаженні цих результатів."
+
+#: src/ureadahead.c:180
+msgid "Unable to determine pack file name"
+msgstr "Не вдалося визначити назву файлу результатів"
+
+#: src/ureadahead.c:198
+msgid "Error while reading"
+msgstr "Помилка при зчитуванні"
+
+#: src/ureadahead.c:227
+msgid "Error while tracing"
+msgstr "Помилка під час профілювання"
+
+#: src/trace.c:425
+msgid "Ignored relative path"
+msgstr "Відносний шлях пропущений"
+
+#: src/trace.c:440
+msgid "Ignored far too long path"
+msgstr "Занадто довгий шлях пропущений"
+
+#: src/trace.c:476
+msgid "File vanished or error reading"
+msgstr "Файл зник або помилка при читанні"
+
+#: src/trace.c:483
+msgid "Error retrieving file stat"
+msgstr "Помилка функції stat"
+
+#: src/trace.c:615
+#, c-format
+msgid "Unable to obtain rotationalness for device %u:%u: %s"
+msgstr "Неможливо отримати швидкість обертання для пристрою %u:%u: %s"
+
+#: src/trace.c:666
+msgid "Error mapping into memory"
+msgstr "Помилка при зображенні у пам'ять"
+
+#: src/trace.c:678
+msgid "Error retrieving page cache info"
+msgstr "Помилка отримання даних про кеш сторінок"
+
+#: src/trace.c:687
+msgid "Error unmapping from memory"
+msgstr "Помилка звільнення зображення у пам'яті"
+
+#: src/trace.c:815
+msgid "Error retrieving chunk extents"
+msgstr "Помилка отримання даних про фрагменти"
+
+#: src/pack.c:701
+msgid "Failed to set CPU priority"
+msgstr "Не вдалося вказати приорітет ЦП"
+
+#: src/pack.c:706 src/pack.c:813
+msgid "Failed to set I/O priority"
+msgstr "Невдалося вказати пріоритет вводу-виводу"
+
+#: src/errors.h:35
+msgid "Pack data error"
+msgstr "Помилка у файлі результатів"
+
+#: src/errors.h:36
+msgid "Pack too old"
+msgstr "Файл результатів застарів"
