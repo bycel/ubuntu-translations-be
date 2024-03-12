@@ -1,23 +1,17 @@
-# Alyaksandr Koshal <alyaksandr.koshal@gmail.com>, 2021
-# Вася Пупкін, 2021
-# Black Beard (blackbeardboy), 2021
-# p k (pkuhto), 2021
-# Heorhi Puhachou <h.puhachou@gmail.com>, 2021
-# Aleh Gardzey, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-12-06 21:03+0100\n"
-"PO-Revision-Date: 2024-03-07 15:43\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2024-02-27 04:27+0100\n"
+"PO-Revision-Date: 2024-03-12 11:40\n"
+"Last-Translator: Mikola Tsekhan <mail@tsekhan.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-07-29 11:23+0000\n"
-"X-Generator: Launchpad (build d80dbb5bdc9110f3a64cc968928033472d5e0509)\n"
+"X-Launchpad-Export-Date: 2024-03-09 17:13+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: ru\n"
@@ -185,6 +179,10 @@ msgstr ""
 msgid "unable to execute %s (%s)"
 msgstr ""
 
+#: src/help.c
+msgid "PATH is not set"
+msgstr ""
+
 #: lib/dpkg/compress.c
 #, c-format
 msgid "%s: pass-through copy error: %s"
@@ -314,6 +312,41 @@ msgstr ""
 #: lib/dpkg/compress.c
 #, c-format
 msgid "%s: lzma error: %s"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: zstd error: %s"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: cannot create zstd decompression context"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: cannot create zstd compression context"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: zstd read error"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: zstd write error"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "%s: zstd close error"
+msgstr ""
+
+#: lib/dpkg/compress.c
+#, c-format
+msgid "invalid compression level %d"
 msgstr ""
 
 #: lib/dpkg/compress.c
@@ -639,6 +672,11 @@ msgstr ""
 msgid "format version followed by junk"
 msgstr ""
 
+#: lib/dpkg/debug.c
+#, c-format
+msgid "cannot parse debug mask from environment variable %s"
+msgstr ""
+
 #: lib/dpkg/dir.c
 #, c-format
 msgid "unable to get file descriptor for directory '%s'"
@@ -677,7 +715,7 @@ msgstr ""
 
 #: lib/dpkg/dump.c
 #, c-format
-msgid "failed to write %s database record about '%.50s' to '%.250s'"
+msgid "failed to write %s database stanza about '%s' to '%s'"
 msgstr ""
 
 #: lib/dpkg/ehandle.c utils/update-alternatives.c
@@ -786,6 +824,11 @@ msgstr ""
 
 #: lib/dpkg/fields.c
 #, c-format
+msgid "obsolete '%s' field used"
+msgstr ""
+
+#: lib/dpkg/fields.c
+#, c-format
 msgid "value for '%s' field not allowed in this context"
 msgstr ""
 
@@ -807,11 +850,6 @@ msgstr ""
 #: lib/dpkg/fields.c
 #, c-format
 msgid "'%s' field value '%.250s'"
-msgstr ""
-
-#: lib/dpkg/fields.c
-#, c-format
-msgid "obsolete '%s' field used"
 msgstr ""
 
 #: lib/dpkg/fields.c
@@ -974,8 +1012,8 @@ msgid "unable to lock %s"
 msgstr ""
 
 #: lib/dpkg/file.c
-msgid "Note: removing the lock file is always wrong, and can end up damaging the\n"
-"locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>."
+msgid "Note: removing the lock file is always wrong, can damage the locked area\n"
+"and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ#db-lock>."
 msgstr ""
 
 #: lib/dpkg/file.c
@@ -1109,6 +1147,10 @@ msgstr ""
 #: lib/dpkg/options.c
 #, c-format
 msgid "error opening configuration directory '%s'"
+msgstr ""
+
+#: lib/dpkg/options.c
+msgid "missing program name in argv[0]"
 msgstr ""
 
 #: lib/dpkg/options.c
@@ -1447,6 +1489,13 @@ msgstr ""
 msgid "illegal architecture name in specifier '%s:%s': %s"
 msgstr ""
 
+#. TRANSLATORS: This is part of the progress output, it is a decimal
+#. * percentage.
+#: lib/dpkg/progress.c
+#, c-format
+msgid "%d%%"
+msgstr ""
+
 #: lib/dpkg/report.c utils/update-alternatives.c
 msgid "warning"
 msgstr ""
@@ -1723,12 +1772,1768 @@ msgid "unexpected end of file reading '%.250s'"
 msgstr ""
 
 #: lib/dpkg/varbuf.c
-msgid "error formatting string into varbuf variable"
+#, c-format
+msgid "cannot grow varbuf to size %zu; it would overflow"
 msgstr ""
 
 #: lib/dpkg/varbuf.c
+msgid "error formatting string into varbuf variable"
+msgstr ""
+
+#: src/force.c
+msgid "Set all force options"
+msgstr ""
+
+#: src/force.c
+msgid "Use MAC based security if available"
+msgstr ""
+
+#: src/force.c
+msgid "Replace a package with a lower version"
+msgstr ""
+
+#: src/force.c
+msgid "Configure any package which may help this one"
+msgstr ""
+
+#: src/force.c
+msgid "Install or remove incidental packages even when on hold"
+msgstr ""
+
+#: src/force.c
+msgid "Try to (de)install things even when not root"
+msgstr ""
+
+#: src/force.c
+msgid "PATH is missing important programs, problems likely"
+msgstr ""
+
+#: src/force.c
+msgid "Install a package even if it fails authenticity check"
+msgstr ""
+
+#: src/force.c
+msgid "Process even packages with wrong versions"
+msgstr ""
+
+#: src/force.c
+msgid "Overwrite an existing stat override when adding it"
+msgstr ""
+
+#: src/force.c
+msgid "Ignore a missing stat override when removing it"
+msgstr ""
+
+#: src/force.c
+msgid "Overwrite a file from one package with another"
+msgstr ""
+
+#: src/force.c
+msgid "Overwrite a diverted file with an undiverted version"
+msgstr ""
+
+#: src/force.c
+msgid "Overwrite one package's directory with another's file"
+msgstr ""
+
+#: src/force.c
+msgid "Do not perform safe I/O operations when unpacking"
+msgstr ""
+
+#: src/force.c
+msgid "Do not chroot into maintainer script environment"
+msgstr ""
+
+#: src/force.c
+msgid "Always use the new config files, don't prompt"
+msgstr ""
+
+#: src/force.c
+msgid "Always use the old config files, don't prompt"
+msgstr ""
+
+#: src/force.c
+msgid "Use the default option for new config files if one\n"
+"is available, don't prompt. If no default can be found,\n"
+"you will be prompted unless one of the confold or\n"
+"confnew options is also given"
+msgstr ""
+
+#: src/force.c
+msgid "Always install missing config files"
+msgstr ""
+
+#: src/force.c
+msgid "Offer to replace config files with no new versions"
+msgstr ""
+
+#: src/force.c
+msgid "Process even packages with wrong or no architecture"
+msgstr ""
+
+#: src/force.c
+msgid "Install even if it would break another package"
+msgstr ""
+
+#: src/force.c
+msgid "Allow installation of conflicting packages"
+msgstr ""
+
+#: src/force.c
+msgid "Turn all dependency problems into warnings"
+msgstr ""
+
+#: src/force.c
+msgid "Turn dependency version problems into warnings"
+msgstr ""
+
+#: src/force.c
+msgid "Remove packages which require installation"
+msgstr ""
+
+#: src/force.c
+msgid "Remove a protected package"
+msgstr ""
+
+#: src/force.c
+msgid "Remove an essential package"
+msgstr ""
+
+#: src/common/force.c
 #, c-format
-msgid "cannot grow varbuf to size %zu; it would overflow"
+msgid "%s forcing options - control behavior when problems found:\n"
+"  warn but continue:  --force-<thing>,<thing>,...\n"
+"  stop with error:    --refuse-<thing>,<thing>,... | --no-force-<thing>,...\n"
+" Forcing things:\n"
+msgstr ""
+
+#: src/force.c
+#, c-format
+msgid "\n"
+"WARNING - use of options marked [!] can seriously damage your installation.\n"
+"Forcing options marked [*] are enabled by default.\n"
+msgstr ""
+
+#: src/archives.c src/divertcmd.c src/enquiry.c src/force.c src/main.c
+#: src/packages.c src/querycmd.c src/select.c src/statcmd.c src/trigcmd.c
+#: src/verify.c dpkg-deb/build.c dpkg-deb/extract.c dpkg-deb/info.c
+#: dpkg-deb/main.c dpkg-split/info.c dpkg-split/main.c dpkg-split/queue.c
+msgid "<standard output>"
+msgstr ""
+
+#: src/force.c
+#, c-format
+msgid "\n"
+"Currently enabled options:\n"
+" %s\n"
+msgstr ""
+
+#: src/force.c
+#, c-format
+msgid "unknown force/refuse option '%.*s'"
+msgstr ""
+
+#: src/force.c
+#, c-format
+msgid "obsolete force/refuse option '%s'"
+msgstr ""
+
+#: src/force.c
+msgid "overriding problem because --force enabled:"
+msgstr ""
+
+#: src/selinux.c
+msgid "cannot open security status notification channel"
+msgstr ""
+
+#: src/selinux.c
+msgid "cannot get security labeling handle"
+msgstr ""
+
+#: src/selinux.c
+#, c-format
+msgid "cannot set security context for file object '%s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "failed to write filename to tar pipe (%s)"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "control member"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "newline not allowed in pathname '%s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "data member"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "unable to stat control directory"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "control directory is not a directory"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "control directory has bad permissions %03lo (must be >=0755 and <=0775)"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "maintainer script '%.50s' is not a plain file or symlink"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "maintainer script '%.50s' has bad permissions %03lo (must be >=0555 and <=0775)"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "maintainer script '%.50s' is not stattable"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "error opening conffiles file"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "empty string from fgets reading conffiles"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/build.c
+#, c-format
+msgid "conffile name '%s' is too long, or missing final newline"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "empty and whitespace-only lines are not allowed in conffiles"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/build.c
+#, c-format
+msgid "line with conffile filename '%s' has leading white spaces"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/build.c
+#, c-format
+msgid "conffile name '%s' is not an absolute pathname"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/build.c
+#, c-format
+msgid "conffile name missing after flag '%s'"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/build.c
+#, c-format
+msgid "unknown flag '%s' for conffile '%s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile filename '%s' contains trailing white spaces"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile '%.250s' does not appear in package"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile '%.250s' is not stattable"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile '%s' is present but is requested to be removed"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile '%s' is not a plain file"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "conffile name '%s' is duplicated"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "error reading conffiles file"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "package name has characters that aren't lowercase alphanums or '-+.'"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "package architecture is missing or empty"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "'%s' contains user-defined Priority value '%s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "ignoring %d warning about the control file(s)"
+msgid_plural "ignoring %d warnings about the control file(s)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "unable to check for existence of archive '%.250s'"
+msgstr ""
+
+#: src/script.c dpkg-deb/build.c
+#, c-format
+msgid "failed to chdir to '%.255s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "compressing tar member"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "<compress> from tar -cf"
+msgstr ""
+
+#: dpkg-deb/build.c dpkg-split/split.c
+#, c-format
+msgid "unable to parse timestamp '%.255s'"
+msgstr ""
+
+#: dpkg-deb/build.c utils/update-alternatives.c
+#, c-format
+msgid "--%s needs a <directory> argument"
+msgstr ""
+
+#: src/querycmd.c dpkg-deb/build.c
+#, c-format
+msgid "--%s takes at most two arguments"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "target is directory - cannot skip control file check"
+msgstr ""
+
+#: dpkg-deb/build.c
+msgid "not checking contents of control area"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "building an unknown package in '%s'."
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "building package '%s' in '%s'."
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "failed to make temporary file (%s)"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "failed to unlink temporary file (%s), %s"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "failed to rewind temporary file (%s)"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "failed to stat temporary file (%s)"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "error writing '%s'"
+msgstr ""
+
+#: dpkg-deb/build.c
+#, c-format
+msgid "cannot copy '%s' into archive '%s': %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "shell command to move files"
+msgstr ""
+
+#: dpkg-deb/extract.c dpkg-split/main.c
+#, c-format
+msgid "unexpected end of file in %s in %.255s"
+msgstr ""
+
+#: dpkg-deb/extract.c dpkg-split/main.c
+#, c-format
+msgid "error reading %s from file %.255s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "archive magic version number"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "archive member header"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad archive header magic"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "file '%.250s' is not a Debian binary archive (try dpkg-split?)"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "archive information header member"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "archive has no newlines in header"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive has invalid format version: %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive is format version %d.%d; get a newer dpkg-deb"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "cannot skip archive member from '%s': %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive '%s' uses unknown compression for member '%.*s', giving up"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive '%.250s' contains two control members, giving up"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive '%s' has premature member '%.*s' before '%s', giving up"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid " new Debian package, version %d.%d.\n"
+" size %jd bytes: control archive=%jd bytes.\n"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "archive control member size"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "archive has malformed control member size '%s'"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "cannot skip archive control member from '%s': %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid " old Debian package, version %d.%d.\n"
+" size %jd bytes: control archive=%jd, main archive=%jd.\n"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "file looks like it might be an archive which has been\n"
+" corrupted by being downloaded in ASCII mode"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "'%.255s' is not a Debian format archive"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "cannot copy archive member from '%s' to decompressor pipe: %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "cannot close decompressor pipe"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "decompressing archive '%s' (size=%jd) member '%s'"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "failed to create directory"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "unexpected pre-existing pathname %s"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "failed to chdir to directory"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "<decompress>"
+msgstr ""
+
+#: dpkg-deb/extract.c
+msgid "paste"
+msgstr ""
+
+#: dpkg-deb/extract.c dpkg-deb/info.c
+#, c-format
+msgid "--%s needs a .deb filename argument"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "--%s takes only one argument (.deb filename)"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "--%s takes at most two arguments (.deb and directory)"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "--%s needs .deb filename and directory arguments"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "--%s needs a target directory.\n"
+"Perhaps you should be using dpkg --install ?"
+msgstr ""
+
+#: dpkg-deb/extract.c
+#, c-format
+msgid "--%s does not support (yet) reading the .deb from standard input"
+msgstr ""
+
+#: src/unpack.c dpkg-deb/info.c
+msgid "unable to create temporary directory"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "cannot extract control file '%s' from '%s': %s"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "'%.255s' contains no control component '%.255s'"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "open component '%.255s' (in %.255s) failed in an unexpected way"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "%d requested control component is missing"
+msgid_plural "%d requested control components are missing"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: dpkg-deb/info.c utils/update-alternatives.c
+#, c-format
+msgid "cannot scan directory '%.255s'"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "cannot stat '%.255s' (in '%.255s')"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "cannot open '%.255s' (in '%.255s')"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "failed to read '%.255s' (in '%.255s')"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid " %7jd bytes, %5d lines   %c  %-20.127s %.127s\n"
+msgstr ""
+
+#: src/deb/info.c
+#, c-format
+msgid " %7jd bytes, %5d lines   %c  %.127s\n"
+msgstr ""
+
+#: dpkg-deb/info.c
+#, c-format
+msgid "     not a plain file          %.255s\n"
+msgstr ""
+
+#: dpkg-deb/info.c
+msgid "no 'control' file in control archive!"
+msgstr ""
+
+#: src/querycmd.c dpkg-deb/info.c
+#, c-format
+msgid "error in show format: %s"
+msgstr ""
+
+#: src/main.c dpkg-deb/info.c
+#, c-format
+msgid "--%s takes exactly one argument"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "Debian '%s' package archive backend version %s.\n"
+msgstr ""
+
+#: src/divertcmd.c src/main.c src/querycmd.c src/statcmd.c src/trigcmd.c
+#: dpkg-deb/main.c dpkg-split/main.c utils/update-alternatives.c
+#, c-format
+msgid "This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+
+#: src/divertcmd.c src/main.c src/querycmd.c dpkg-deb/main.c
+#, c-format
+msgid "Usage: %s [<option>...] <command>\n\n"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "Commands:\n"
+"  -b|--build <directory> [<deb>]   Build an archive.\n"
+"  -c|--contents <deb>              List contents.\n"
+"  -I|--info <deb> [<cfile>...]     Show info to stdout.\n"
+"  -W|--show <deb>                  Show information on package(s)\n"
+"  -f|--field <deb> [<cfield>...]   Show field(s) to stdout.\n"
+"  -e|--control <deb> [<directory>] Extract control info.\n"
+"  -x|--extract <deb> <directory>   Extract files.\n"
+"  -X|--vextract <deb> <directory>  Extract & list files.\n"
+"  -R|--raw-extract <deb> <directory>\n"
+"                                   Extract control info and files.\n"
+"  --ctrl-tarfile <deb>             Output control tarfile.\n"
+"  --fsys-tarfile <deb>             Output filesystem tarfile.\n\n"
+msgstr ""
+
+#: src/main.c src/querycmd.c src/trigcmd.c dpkg-deb/main.c dpkg-split/main.c
+#, c-format
+msgid "  -?, --help                       Show this help message.\n"
+"      --version                    Show the version.\n\n"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "<deb> is the filename of a Debian format archive.\n"
+"<cfile> is the name of an administrative file component.\n"
+"<cfield> is the name of a field in the main 'control' file.\n\n"
+msgstr ""
+
+#: src/deb/main.c
+#, c-format
+msgid "Options:\n"
+"  -v, --verbose                    Enable verbose output.\n"
+"  -D, --debug                      Enable debugging output.\n"
+"      --showformat=<format>        Use alternative format for --show.\n"
+"      --deb-format=<format>        Select archive format.\n"
+"                                     Allowed values: 0.939000, 2.0 (default).\n"
+"      --nocheck                    Suppress control file check (build bad\n"
+"                                     packages).\n"
+"      --root-owner-group           Forces the owner and groups to root.\n"
+"      --threads-max=<threads>      Use at most <threads> with compressor.\n"
+"      --[no-]uniform-compression   Use the compression params on all members.\n"
+"  -z#                              Set the compression level when building.\n"
+"  -Z<type>                         Set the compression type used when building.\n"
+"                                     Allowed types: gzip, xz, zstd, none.\n"
+"  -S<strategy>                     Set the compression strategy when building.\n"
+"                                     Allowed values: none; extreme (xz);\n"
+"                                     filtered, huffman, rle, fixed (gzip).\n\n"
+msgstr ""
+
+#: src/querycmd.c dpkg-deb/main.c
+#, c-format
+msgid "Format syntax:\n"
+"  A format is a string that will be output for each package. The format\n"
+"  can include the standard escape sequences \\n (newline), \\r (carriage\n"
+"  return) or \\\\ (plain backslash). Package information can be included\n"
+"  by inserting variable references to package fields using the ${var[;width]}\n"
+"  syntax. Fields will be right-aligned unless the width is negative in which\n"
+"  case left alignment will be used.\n"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "\n"
+"Use 'dpkg' to install and remove packages from your system, or\n"
+"'apt' or 'aptitude' for user-friendly package management. Packages\n"
+"unpacked using 'dpkg-deb --extract' will be incorrectly installed !\n"
+msgstr ""
+
+#: dpkg-deb/main.c
+msgid "Type dpkg-deb --help for help about manipulating *.deb files;\n"
+"Type dpkg --help for help about installing and deinstalling packages."
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "invalid deb format version: %s"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "unknown deb format version: %s"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "unknown compression strategy '%s'!"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "unknown compression type '%s'!"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "obsolete compression type '%s'; use xz instead"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "obsolete compression type '%s'; use xz or gzip instead"
+msgstr ""
+
+#: src/main.c src/querycmd.c src/statcmd.c dpkg-deb/main.c dpkg-split/main.c
+msgid "need an action option"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "invalid compressor parameters: %s"
+msgstr ""
+
+#: src/deb/main.c
+#, c-format
+msgid "unsupported deb format '%d.%d' with non-uniform compression"
+msgstr ""
+
+#: dpkg-deb/main.c
+#, c-format
+msgid "unsupported compression type '%s' with uniform compression"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad digit (code %d) in %s"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%s' is corrupt; out of range integer in %s"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - %.250s missing"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - missing newline after %.250s"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "error reading %.250s"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad magic at end of first header"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad padding character (code %d)"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - nulls in info section"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "format version number"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' has invalid format version: %s"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is format version %d.%d; get a newer dpkg-split"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "package name"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "package version number"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "package file MD5 checksum"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad MD5 checksum '%.250s'"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "archive total size"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "archive part offset"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "archive part numbers"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - no slash between archive part numbers"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "number of archive parts"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad number of archive parts"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "archive parts number"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad archive part number"
+msgstr ""
+
+#: dpkg-split/info.c
+msgid "package architecture"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - bad magic at end of second header"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - second member is not data member"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - wrong number of parts for quoted sizes"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - size is wrong for quoted part number"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is corrupt - too short"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "cannot open archive part file '%.250s'"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%.250s' is not an archive part"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "%s:\n"
+"    Part format version:            %d.%d\n"
+"    Part of package:                %s\n"
+"        ... version:                %s\n"
+"        ... architecture:           %s\n"
+"        ... MD5 checksum:           %s\n"
+"        ... length:                 %jd bytes\n"
+"        ... split every:            %jd bytes\n"
+"    Part number:                    %d/%d\n"
+"    Part length:                    %jd bytes\n"
+"    Part offset:                    %jd bytes\n"
+"    Part file size (used portion):  %jd bytes\n\n"
+msgstr ""
+
+#: dpkg-split/info.c
+msgctxt "architecture"
+msgid "<unknown>"
+msgstr ""
+
+#: dpkg-split/info.c dpkg-split/join.c
+#, c-format
+msgid "--%s requires one or more part file arguments"
+msgstr ""
+
+#: dpkg-split/info.c
+#, c-format
+msgid "file '%s' is not an archive part\n"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "Putting package %s together from %d part: "
+msgid_plural "Putting package %s together from %d parts: "
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "unable to open output file '%.250s'"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "unable to (re)open input part file '%.250s'"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "cannot skip split package header for '%s': %s"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "cannot append split package part '%s' to '%s': %s"
+msgstr ""
+
+#: dpkg-split/join.c dpkg-split/split.c
+#, c-format
+msgid "done\n"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "files '%.250s' and '%.250s' are not parts of the same file"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "there are several versions of part %d - at least '%.250s' and '%.250s'"
+msgstr ""
+
+#: dpkg-split/join.c
+#, c-format
+msgid "part %d is missing"
+msgstr ""
+
+#: dpkg-split/main.c
+#, c-format
+msgid "Debian '%s' package split/join tool; version %s.\n"
+msgstr ""
+
+#: src/statcmd.c dpkg-split/main.c utils/update-alternatives.c
+#, c-format
+msgid "Usage: %s [<option> ...] <command>\n\n"
+msgstr ""
+
+#: dpkg-split/main.c
+#, c-format
+msgid "Commands:\n"
+"  -s|--split <file> [<prefix>]     Split an archive.\n"
+"  -j|--join <part> <part> ...      Join parts together.\n"
+"  -I|--info <part> ...             Display info about a part.\n"
+"  -a|--auto -o <complete> <part>   Auto-accumulate parts.\n"
+"  -l|--listq                       List unmatched pieces.\n"
+"  -d|--discard [<filename> ...]    Discard unmatched pieces.\n\n"
+msgstr ""
+
+#: src/split/main.c
+#, c-format
+msgid "Options:\n"
+"      --depotdir <directory>       Use <directory> instead of %s/%s.\n"
+"      --admindir <directory>       Use <directory> instead of %s.\n"
+"      --root <directory>           Use <directory> instead of %s.\n"
+"  -S, --partsize <size>            In KiB, for -s (default is 450).\n"
+"  -o, --output <file>              Filename, for -j (default is\n"
+"                                     <package>_<version>_<arch>.deb).\n"
+"  -Q, --npquiet                    Be quiet when -a is not a part.\n"
+"      --msdos                      Generate 8.3 filenames.\n\n"
+msgstr ""
+
+#: dpkg-split/main.c
+#, c-format
+msgid "Exit status:\n"
+"  0 = ok\n"
+"  1 = with --auto, file is not a part\n"
+"  2 = trouble\n"
+msgstr ""
+
+#: dpkg-split/main.c
+msgid "Type dpkg-split --help for help."
+msgstr ""
+
+#: dpkg-split/main.c
+msgid "part size is far too large or is not positive"
+msgstr ""
+
+#: dpkg-split/main.c
+#, c-format
+msgid "part size must be at least %d KiB (to allow for header)"
+msgstr ""
+
+#: src/archives.c src/packages.c src/querycmd.c src/select.c dpkg-split/main.c
+#: dpkg-split/queue.c
+msgid "<standard error>"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to read depot directory '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+msgid "--auto requires the use of the --output option"
+msgstr ""
+
+#: dpkg-split/queue.c
+msgid "--auto requires exactly one part file argument"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to read part file '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "File '%.250s' is not part of a multipart archive.\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "cannot create directory %s"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to reopen part file '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to open new depot file '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "cannot extract split package part '%s': %s"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to rename new depot file '%.250s' to '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "Part %d of package %s filed (still want "
+msgstr ""
+
+#: dpkg-split/queue.c
+msgid " and "
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to delete used-up depot file '%.250s'"
+msgstr ""
+
+#: src/enquiry.c src/select.c src/trigcmd.c src/update.c dpkg-split/queue.c
+#, c-format
+msgid "--%s takes no arguments"
+msgstr ""
+
+#: dpkg-split/queue.c
+msgid "Junk files left around in the depot directory:\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to stat '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid " %s (%jd bytes)\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid " %s (not a plain file)\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+msgid "Packages not yet reassembled:\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid " Package %s: part(s) "
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "part file '%.250s' is not a plain file"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "(total %jd bytes)\n"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "unable to discard '%.250s'"
+msgstr ""
+
+#: dpkg-split/queue.c
+#, c-format
+msgid "Deleted %s.\n"
+msgstr ""
+
+#: dpkg-split/split.c
+msgid "package field value extraction"
+msgstr ""
+
+#: dpkg-split/split.c
+msgid "<dpkg-deb --info pipe>"
+msgstr ""
+
+#: dpkg-split/split.c
+#, c-format
+msgid "unable to open source file '%.250s'"
+msgstr ""
+
+#: dpkg-split/split.c
+msgid "unable to fstat source file"
+msgstr ""
+
+#: dpkg-split/split.c
+#, c-format
+msgid "source file '%.250s' not a plain file"
+msgstr ""
+
+#: src/configure.c src/verify.c dpkg-split/split.c
+#, c-format
+msgid "cannot compute MD5 digest for file '%s': %s"
+msgstr ""
+
+#: dpkg-split/split.c
+#, c-format
+msgid "Splitting package %s into %d part: "
+msgid_plural "Splitting package %s into %d parts: "
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: dpkg-split/split.c
+msgid "header is too long, making part too long; the package name or version\n"
+"numbers must be extraordinarily long, or something; giving up"
+msgstr ""
+
+#: dpkg-split/split.c
+msgid "--split needs a source filename argument"
+msgstr ""
+
+#: dpkg-split/split.c
+msgid "--split takes at most a source filename and destination prefix"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "Use --help for help about diverting files."
+msgstr ""
+
+#: src/divertcmd.c src/statcmd.c utils/update-alternatives.c
+#, c-format
+msgid "Debian %s version %s.\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Commands:\n"
+"  [--add] <file>           add a diversion.\n"
+"  --remove <file>          remove the diversion.\n"
+"  --list [<glob-pattern>]  show file diversions.\n"
+"  --listpackage <file>     show what package diverts the file.\n"
+"  --truename <file>        return the diverted file.\n\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Options:\n"
+"  --package <package>      name of the package whose copy of <file> will not\n"
+"                             be diverted.\n"
+"  --local                  all packages' versions are diverted.\n"
+"  --divert <divert-to>     the name used by other packages' versions.\n"
+"  --rename                 actually move the file aside (or back).\n"
+"  --no-rename              do not move the file aside (or back) (default).\n"
+"  --admindir <directory>   set the directory with the diversions file.\n"
+"  --instdir <directory>    set the root directory, but not the admin dir.\n"
+"  --root <directory>       set the directory of the root filesystem.\n"
+"  --test                   don't do anything, just demonstrate.\n"
+"  --quiet                  quiet operation, minimal output.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "When adding, default is --local and --divert <original>.distrib.\n"
+"When removing, --package or --local and --divert must match if specified.\n"
+"Package preinst/postrm scripts should always specify --package and --divert.\n"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "please specify --no-rename explicitly, the default will change to --rename in 1.20.x"
+msgstr ""
+
+#: src/divertcmd.c utils/update-alternatives.c
+#, c-format
+msgid "cannot stat file '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "error checking '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "rename involves overwriting '%s' with\n"
+"  different file '%s', not allowed"
+msgstr ""
+
+#: src/divertcmd.c utils/update-alternatives.c
+#, c-format
+msgid "unable to create file '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "cannot copy '%s' to '%s': %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "cannot rename '%s' to '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "rename: remove duplicate old link '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "unable to remove copied source file '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "filename \"%s\" is not absolute"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "file may not contain newlines"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "local diversion of %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "local diversion of %s to %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "diversion of %s by %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "diversion of %s to %s by %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "any diversion of %s"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "any diversion of %s to %s"
+msgstr ""
+
+#: src/divertcmd.c src/statcmd.c
+#, c-format
+msgid "--%s needs a single argument"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "cannot divert directories"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "cannot divert file '%s' to itself"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Leaving '%s'\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "'%s' clashes with '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Adding '%s'\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Ignoring request to rename file '%s' owned by diverting package '%s'\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "diverting file '%s' from an Essential package with rename is dangerous, use --no-rename"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "No diversion '%s', none removed.\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "mismatch on divert-to\n"
+"  when removing '%s'\n"
+"  found '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "mismatch on package\n"
+"  when removing '%s'\n"
+"  found '%s'"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Ignoring request to remove shared diversion '%s'.\n"
+msgstr ""
+
+#: src/divertcmd.c
+#, c-format
+msgid "Removing '%s'\n"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "package may not contain newlines"
+msgstr ""
+
+#: src/divertcmd.c
+msgid "divert-to may not contain newlines"
+msgstr ""
+
+#: src/statcmd.c
+msgid "Use --help for help about overriding file stat information."
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "Commands:\n"
+"  --add <owner> <group> <mode> <path>\n"
+"                           add a new <path> entry into the database.\n"
+"  --remove <path>          remove <path> from the database.\n"
+"  --list [<glob-pattern>]  list current overrides in the database.\n\n"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "Options:\n"
+"  --admindir <directory>   set the directory with the statoverride file.\n"
+"  --instdir <directory>    set the root directory, but not the admin dir.\n"
+"  --root <directory>       set the directory of the root filesystem.\n"
+"  --update                 immediately update <path> permissions.\n"
+"  --force                  deprecated alias for --force-all.\n"
+"  --force-<thing>[,...]    override problems (see --force-help).\n"
+"  --no-force-<thing>[,...] stop when problems encountered.\n"
+"  --refuse-<thing>[,...]   ditto.\n"
+"  --quiet                  quiet operation, minimal output.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n\n"
+msgstr ""
+
+#: src/statcmd.c
+msgid "stripping trailing /"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "user '%s' does not exist"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "group '%s' does not exist"
+msgstr ""
+
+#: src/archives.c src/statcmd.c
+#, c-format
+msgid "error setting ownership of '%.255s'"
+msgstr ""
+
+#: src/archives.c src/statcmd.c
+#, c-format
+msgid "error setting permissions of '%.255s'"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "--%s needs four arguments"
+msgstr ""
+
+#: src/statcmd.c
+msgid "path may not contain newlines"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "an override for '%s' already exists, but --force specified so will be ignored"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "an override for '%s' already exists; aborting"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "--update given but %s does not exist"
+msgstr ""
+
+#: src/statcmd.c
+msgid "no override present"
+msgstr ""
+
+#: src/statcmd.c
+msgid "--update is useless for --remove"
+msgstr ""
+
+#: src/statcmd.c
+#, c-format
+msgid "deprecated --%s option; use --%s instead"
+msgstr ""
+
+#: src/trigcmd.c
+msgid "Type dpkg-trigger --help for help about this utility."
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "Debian %s package trigger utility version %s.\n"
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "Usage: %s [<option>...] <trigger-name>\n"
+"       %s [<option>...] <command>\n\n"
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "Commands:\n"
+"  --check-supported                Check if the running dpkg supports triggers.\n\n"
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "Options:\n"
+"  --admindir=<directory>           Use <directory> instead of %s.\n"
+"  --root=<directory>               Use <directory> instead of %s.\n"
+"  --by-package=<package>           Override trigger awaiter (normally set\n"
+"                                     by dpkg).\n"
+"  --await                          Package needs to await the processing.\n"
+"  --no-await                       No package needs to await the processing.\n"
+"  --no-act                         Just test - don't actually change anything.\n\n"
+msgstr ""
+
+#: src/trigcmd.c
+msgid "must be called from a maintainer script (or with a --by-package option)"
+msgstr ""
+
+#: src/trigcmd.c
+msgid "takes one argument, the trigger name"
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "illegal awaited package name '%.250s': %.250s"
+msgstr ""
+
+#: src/trigcmd.c
+#, c-format
+msgid "invalid trigger name '%.250s': %.250s"
+msgstr ""
+
+#: src/trigcmd.c
+msgid "triggers data directory not yet created"
+msgstr ""
+
+#: src/trigcmd.c
+msgid "trigger records not yet in existence"
+msgstr ""
+
+#: src/querycmd.c src/select.c
+#, c-format
+msgid "no packages found matching %s"
+msgstr ""
+
+#. TRANSLATORS: This is the header that appears on 'dpkg-query -l'. The
+#. * string should remain under 80 characters. The uppercase letters in
+#. * the state values denote the abbreviated letter that will appear on
+#. * the first three columns, which should ideally match the English one
+#. * (e.g. Remove → supRimeix), see dpkg-query(1) for further details. The
+#. * translated message can use additional lines if needed.
+#: src/querycmd.c
+msgid "Desired=Unknown/Install/Remove/Purge/Hold\n"
+"| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend\n"
+"|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)\n"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Name"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Version"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Architecture"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Description"
+msgstr ""
+
+#: src/querycmd.c
+msgid "showing package list on pager"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "diversion by %s from: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "diversion by %s to: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "local diversion from: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "local diversion to: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+msgid "--search needs at least one file name pattern argument"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "no path found matching pattern %s"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "package '%s' is not installed and no information is available"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Use dpkg --info (= dpkg-deb --info) to examine archive files.\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "package '%s' is not available"
+msgstr ""
+
+#: src/packages.c src/querycmd.c
+#, c-format
+msgid "--%s needs at least one package name argument"
+msgstr ""
+
+#: src/enquiry.c src/querycmd.c src/verify.c
+#, c-format
+msgid "package '%s' is not installed"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "Package '%s' does not contain any files (!)\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "locally diverted to: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "package diverts others to: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "diverted by %s to: %s\n"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Use dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "control file contains %c"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "--%s takes one package name argument"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "--%s takes exactly two arguments"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "control file '%s' does not exist"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "Debian %s package management program query tool version %s.\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "Commands:\n"
+"  -s, --status [<package>...]      Display package status details.\n"
+"  -p, --print-avail [<package>...] Display available version details.\n"
+"  -L, --listfiles <package>...     List files 'owned' by package(s).\n"
+"  -l, --list [<pattern>...]        List packages concisely.\n"
+"  -W, --show [<pattern>...]        Show information on package(s).\n"
+"  -S, --search <pattern>...        Find package(s) owning file(s).\n"
+"      --control-list <package>     Print the package control file list.\n"
+"      --control-show <package> <file>\n"
+"                                   Show the package control file.\n"
+"  -c, --control-path <package> [<file>]\n"
+"                                   Print path for package control file.\n\n"
+msgstr ""
+
+#: src/querycmd.c
+#, c-format
+msgid "Options:\n"
+"  --admindir=<directory>           Use <directory> instead of %s.\n"
+"  --root=<directory>               Use <directory> instead of %s.\n"
+"  --load-avail                     Use available file on --show and --list.\n"
+"  --no-pager                       Disables the use of any pager.\n"
+"  -f|--showformat=<format>         Use alternative format for --show.\n\n"
+msgstr ""
+
+#: src/querycmd.c
+msgid "Use --help for help about querying packages."
 msgstr ""
 
 #: src/archives.c
@@ -1753,16 +3558,6 @@ msgstr ""
 #: src/archives.c
 #, c-format
 msgid "cannot copy extracted data for '%.255s' to '%.255s': %s"
-msgstr ""
-
-#: src/archives.c src/statcmd.c
-#, c-format
-msgid "error setting ownership of '%.255s'"
-msgstr ""
-
-#: src/archives.c src/statcmd.c
-#, c-format
-msgid "error setting permissions of '%.255s'"
 msgstr ""
 
 #: src/archives.c
@@ -2065,18 +3860,6 @@ msgstr ""
 #: src/archives.c
 #, c-format
 msgid "archive '%s' is not a regular file"
-msgstr ""
-
-#: src/archives.c src/divertcmd.c src/enquiry.c src/force.c src/main.c
-#: src/packages.c src/querycmd.c src/select.c src/statcmd.c src/trigcmd.c
-#: src/verify.c dpkg-deb/build.c dpkg-deb/extract.c dpkg-deb/info.c
-#: dpkg-deb/main.c dpkg-split/info.c dpkg-split/main.c dpkg-split/queue.c
-msgid "<standard output>"
-msgstr ""
-
-#: src/archives.c src/packages.c src/querycmd.c src/select.c dpkg-split/main.c
-#: dpkg-split/queue.c
-msgid "<standard error>"
 msgstr ""
 
 #: src/archives.c
@@ -2387,11 +4170,6 @@ msgstr ""
 msgid "%s: conffile '%.250s' is not a plain file or symlink (= '%s')"
 msgstr ""
 
-#: src/configure.c src/verify.c dpkg-split/split.c
-#, c-format
-msgid "cannot compute MD5 digest for file '%s': %s"
-msgstr ""
-
 #: src/configure.c
 #, c-format
 msgid "%s: unable to open %s to compute its digest: %s"
@@ -2512,222 +4290,6 @@ msgstr ""
 msgid "  %.250s provides %.250s and is present and %s.\n"
 msgstr ""
 
-#: src/divertcmd.c
-msgid "Use --help for help about diverting files."
-msgstr ""
-
-#: src/divertcmd.c src/statcmd.c utils/update-alternatives.c
-#, c-format
-msgid "Debian %s version %s.\n"
-msgstr ""
-
-#: src/divertcmd.c src/main.c src/querycmd.c src/statcmd.c src/trigcmd.c
-#: dpkg-deb/main.c dpkg-split/main.c utils/update-alternatives.c
-#, c-format
-msgid "This is free software; see the GNU General Public License version 2 or\n"
-"later for copying conditions. There is NO warranty.\n"
-msgstr ""
-
-#: src/divertcmd.c src/main.c src/querycmd.c dpkg-deb/main.c
-#, c-format
-msgid "Usage: %s [<option>...] <command>\n\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Commands:\n"
-"  [--add] <file>           add a diversion.\n"
-"  --remove <file>          remove the diversion.\n"
-"  --list [<glob-pattern>]  show file diversions.\n"
-"  --listpackage <file>     show what package diverts the file.\n"
-"  --truename <file>        return the diverted file.\n\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Options:\n"
-"  --package <package>      name of the package whose copy of <file> will not\n"
-"                             be diverted.\n"
-"  --local                  all packages' versions are diverted.\n"
-"  --divert <divert-to>     the name used by other packages' versions.\n"
-"  --rename                 actually move the file aside (or back).\n"
-"  --no-rename              do not move the file aside (or back) (default).\n"
-"  --admindir <directory>   set the directory with the diversions file.\n"
-"  --instdir <directory>    set the root directory, but not the admin dir.\n"
-"  --root <directory>       set the directory of the root filesystem.\n"
-"  --test                   don't do anything, just demonstrate.\n"
-"  --quiet                  quiet operation, minimal output.\n"
-"  --help                   show this help message.\n"
-"  --version                show the version.\n\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "When adding, default is --local and --divert <original>.distrib.\n"
-"When removing, --package or --local and --divert must match if specified.\n"
-"Package preinst/postrm scripts should always specify --package and --divert.\n"
-msgstr ""
-
-#: src/divertcmd.c
-msgid "please specify --no-rename explicitly, the default will change to --rename in 1.20.x"
-msgstr ""
-
-#: src/divertcmd.c utils/update-alternatives.c
-#, c-format
-msgid "cannot stat file '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "error checking '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "rename involves overwriting '%s' with\n"
-"  different file '%s', not allowed"
-msgstr ""
-
-#: src/divertcmd.c utils/update-alternatives.c
-#, c-format
-msgid "unable to create file '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "cannot copy '%s' to '%s': %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "cannot rename '%s' to '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "rename: remove duplicate old link '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "unable to remove copied source file '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "filename \"%s\" is not absolute"
-msgstr ""
-
-#: src/divertcmd.c
-msgid "file may not contain newlines"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "local diversion of %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "local diversion of %s to %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "diversion of %s by %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "diversion of %s to %s by %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "any diversion of %s"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "any diversion of %s to %s"
-msgstr ""
-
-#: src/divertcmd.c src/statcmd.c
-#, c-format
-msgid "--%s needs a single argument"
-msgstr ""
-
-#: src/divertcmd.c
-msgid "cannot divert directories"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "cannot divert file '%s' to itself"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Leaving '%s'\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "'%s' clashes with '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Adding '%s'\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Ignoring request to rename file '%s' owned by diverting package '%s'\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "diverting file '%s' from an Essential package with rename is dangerous, use --no-rename"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "No diversion '%s', none removed.\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "mismatch on divert-to\n"
-"  when removing '%s'\n"
-"  found '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "mismatch on package\n"
-"  when removing '%s'\n"
-"  found '%s'"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Ignoring request to remove shared diversion '%s'.\n"
-msgstr ""
-
-#: src/divertcmd.c
-#, c-format
-msgid "Removing '%s'\n"
-msgstr ""
-
-#: src/divertcmd.c
-msgid "package may not contain newlines"
-msgstr ""
-
-#: src/divertcmd.c
-msgid "divert-to may not contain newlines"
-msgstr ""
-
 #: src/enquiry.c
 msgid "The following packages are in a mess due to serious problems during\n"
 "installation.  They must be reinstalled for them (and any packages\n"
@@ -2788,11 +4350,6 @@ msgid "The following packages have an unknown foreign architecture, which will\n
 "the foreign architecture with dpkg --add-architecture:\n"
 msgstr ""
 
-#: src/enquiry.c src/querycmd.c src/verify.c
-#, c-format
-msgid "package '%s' is not installed"
-msgstr ""
-
 #: src/enquiry.c
 msgid "Another process has locked the database for writing, and might currently be\n"
 "modifying it, some of the following problems might just be due to that.\n"
@@ -2801,11 +4358,6 @@ msgstr ""
 #: src/enquiry.c
 msgctxt "section"
 msgid "<unknown>"
-msgstr ""
-
-#: src/enquiry.c src/select.c src/trigcmd.c src/update.c dpkg-split/queue.c
-#, c-format
-msgid "--%s takes no arguments"
 msgstr ""
 
 #: src/enquiry.c
@@ -2974,161 +4526,6 @@ msgstr ""
 msgid "Package %s is on hold, not touching it.  Use --force-hold to override.\n"
 msgstr ""
 
-#: src/force.c
-msgid "Set all force options"
-msgstr ""
-
-#: src/force.c
-msgid "Use MAC based security if available"
-msgstr ""
-
-#: src/force.c
-msgid "Replace a package with a lower version"
-msgstr ""
-
-#: src/force.c
-msgid "Configure any package which may help this one"
-msgstr ""
-
-#: src/force.c
-msgid "Install or remove incidental packages even when on hold"
-msgstr ""
-
-#: src/force.c
-msgid "Try to (de)install things even when not root"
-msgstr ""
-
-#: src/force.c
-msgid "PATH is missing important programs, problems likely"
-msgstr ""
-
-#: src/force.c
-msgid "Install a package even if it fails authenticity check"
-msgstr ""
-
-#: src/force.c
-msgid "Process even packages with wrong versions"
-msgstr ""
-
-#: src/force.c
-msgid "Overwrite an existing stat override when adding it"
-msgstr ""
-
-#: src/force.c
-msgid "Ignore a missing stat override when removing it"
-msgstr ""
-
-#: src/force.c
-msgid "Overwrite a file from one package with another"
-msgstr ""
-
-#: src/force.c
-msgid "Overwrite a diverted file with an undiverted version"
-msgstr ""
-
-#: src/force.c
-msgid "Overwrite one package's directory with another's file"
-msgstr ""
-
-#: src/force.c
-msgid "Do not perform safe I/O operations when unpacking"
-msgstr ""
-
-#: src/force.c
-msgid "Do not chroot into maintainer script environment"
-msgstr ""
-
-#: src/force.c
-msgid "Always use the new config files, don't prompt"
-msgstr ""
-
-#: src/force.c
-msgid "Always use the old config files, don't prompt"
-msgstr ""
-
-#: src/force.c
-msgid "Use the default option for new config files if one\n"
-"is available, don't prompt. If no default can be found,\n"
-"you will be prompted unless one of the confold or\n"
-"confnew options is also given"
-msgstr ""
-
-#: src/force.c
-msgid "Always install missing config files"
-msgstr ""
-
-#: src/force.c
-msgid "Offer to replace config files with no new versions"
-msgstr ""
-
-#: src/force.c
-msgid "Process even packages with wrong or no architecture"
-msgstr ""
-
-#: src/force.c
-msgid "Install even if it would break another package"
-msgstr ""
-
-#: src/force.c
-msgid "Allow installation of conflicting packages"
-msgstr ""
-
-#: src/force.c
-msgid "Turn all dependency problems into warnings"
-msgstr ""
-
-#: src/force.c
-msgid "Turn dependency version problems into warnings"
-msgstr ""
-
-#: src/force.c
-msgid "Remove packages which require installation"
-msgstr ""
-
-#: src/force.c
-msgid "Remove a protected package"
-msgstr ""
-
-#: src/force.c
-msgid "Remove an essential package"
-msgstr ""
-
-#: src/force.c
-#, c-format
-msgid "%s forcing options - control behaviour when problems found:\n"
-"  warn but continue:  --force-<thing>,<thing>,...\n"
-"  stop with error:    --refuse-<thing>,<thing>,... | --no-force-<thing>,...\n"
-" Forcing things:\n"
-msgstr ""
-
-#: src/force.c
-#, c-format
-msgid "\n"
-"WARNING - use of options marked [!] can seriously damage your installation.\n"
-"Forcing options marked [*] are enabled by default.\n"
-msgstr ""
-
-#: src/force.c
-#, c-format
-msgid "\n"
-"Currently enabled options:\n"
-" %s\n"
-msgstr ""
-
-#: src/force.c
-#, c-format
-msgid "unknown force/refuse option '%.*s'"
-msgstr ""
-
-#: src/force.c
-#, c-format
-msgid "obsolete force/refuse option '%s'"
-msgstr ""
-
-#: src/force.c
-msgid "overriding problem because --force enabled:"
-msgstr ""
-
 #: src/help.c
 msgid "not installed"
 msgstr ""
@@ -3159,10 +4556,6 @@ msgstr ""
 
 #: src/help.c
 msgid "installed"
-msgstr ""
-
-#: src/help.c
-msgid "PATH is not set"
 msgstr ""
 
 #: src/help.c
@@ -3228,12 +4621,6 @@ msgid "Commands:\n"
 "  -Dh|--debug=help                 Show help on debugging.\n\n"
 msgstr ""
 
-#: src/main.c src/querycmd.c src/trigcmd.c dpkg-deb/main.c dpkg-split/main.c
-#, c-format
-msgid "  -?, --help                       Show this help message.\n"
-"      --version                    Show the version.\n\n"
-msgstr ""
-
 #: src/main.c
 #, c-format
 msgid "Validatable things: pkgname, archname, trigname, version.\n\n"
@@ -3246,7 +4633,7 @@ msgid "Use dpkg with -b, --build, -c, --contents, -e, --control, -I, --info,\n"
 "on archives (type %s --help).\n\n"
 msgstr ""
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "Options:\n"
 "  --admindir=<directory>     Use <directory> instead of %s.\n"
@@ -3257,7 +4644,7 @@ msgid "Options:\n"
 "  --path-exclude=<pattern>   Do not install paths which match a shell pattern.\n"
 "  --path-include=<pattern>   Re-include a pattern after a previous exclusion.\n"
 "  -O|--selected-only         Skip packages not selected for install/upgrade.\n"
-"  -E|--skip-same-version     Skip packages whose same version is installed.\n"
+"  -E|--skip-same-version     Skip packages with same installed version/arch.\n"
 "  -G|--refuse-downgrade      Skip packages with earlier version than installed.\n"
 "  -B|--auto-deconfigure      Install even if it would break some other package.\n"
 "  --[no-]triggers            Skip or force consequential trigger processing.\n"
@@ -3390,11 +4777,6 @@ msgstr ""
 msgid "status logger"
 msgstr ""
 
-#: src/main.c dpkg-deb/info.c
-#, c-format
-msgid "--%s takes exactly one argument"
-msgstr ""
-
 #: src/main.c
 #, c-format
 msgid "architecture '%s' is illegal: %s"
@@ -3430,10 +4812,6 @@ msgstr ""
 msgid "unexpected end of file before end of line %d"
 msgstr ""
 
-#: src/main.c src/querycmd.c src/statcmd.c dpkg-deb/main.c dpkg-split/main.c
-msgid "need an action option"
-msgstr ""
-
 #: src/main.c
 msgid "cannot set primary group ID to root"
 msgstr ""
@@ -3451,9 +4829,9 @@ msgstr ""
 msgid "--%s --pending does not take any non-option arguments"
 msgstr ""
 
-#: src/packages.c src/querycmd.c
+#: src/main/packages.c
 #, c-format
-msgid "--%s needs at least one package name argument"
+msgid "--%s (without --pending) needs at least one package name argument"
 msgstr ""
 
 #: src/packages.c
@@ -3549,186 +4927,6 @@ msgstr ""
 
 #: src/packages.c
 msgid "; however:\n"
-msgstr ""
-
-#: src/querycmd.c src/select.c
-#, c-format
-msgid "no packages found matching %s"
-msgstr ""
-
-#. TRANSLATORS: This is the header that appears on 'dpkg-query -l'. The
-#. * string should remain under 80 characters. The uppercase letters in
-#. * the state values denote the abbreviated letter that will appear on
-#. * the first three columns, which should ideally match the English one
-#. * (e.g. Remove → supRimeix), see dpkg-query(1) for further details. The
-#. * translated message can use additional lines if needed.
-#: src/querycmd.c
-msgid "Desired=Unknown/Install/Remove/Purge/Hold\n"
-"| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend\n"
-"|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)\n"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Name"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Version"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Architecture"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Description"
-msgstr ""
-
-#: src/querycmd.c
-msgid "showing package list on pager"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "diversion by %s from: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "diversion by %s to: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "local diversion from: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "local diversion to: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-msgid "--search needs at least one file name pattern argument"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "no path found matching pattern %s"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "package '%s' is not installed and no information is available"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Use dpkg --info (= dpkg-deb --info) to examine archive files.\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "package '%s' is not available"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "Package '%s' does not contain any files (!)\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "locally diverted to: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "package diverts others to: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "diverted by %s to: %s\n"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Use dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
-msgstr ""
-
-#: src/querycmd.c dpkg-deb/info.c
-#, c-format
-msgid "error in show format: %s"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "control file contains %c"
-msgstr ""
-
-#: src/querycmd.c dpkg-deb/build.c
-#, c-format
-msgid "--%s takes at most two arguments"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "--%s takes one package name argument"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "--%s takes exactly two arguments"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "control file '%s' does not exist"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "Debian %s package management program query tool version %s.\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "Commands:\n"
-"  -s, --status [<package>...]      Display package status details.\n"
-"  -p, --print-avail [<package>...] Display available version details.\n"
-"  -L, --listfiles <package>...     List files 'owned' by package(s).\n"
-"  -l, --list [<pattern>...]        List packages concisely.\n"
-"  -W, --show [<pattern>...]        Show information on package(s).\n"
-"  -S, --search <pattern>...        Find package(s) owning file(s).\n"
-"      --control-list <package>     Print the package control file list.\n"
-"      --control-show <package> <file>\n"
-"                                   Show the package control file.\n"
-"  -c, --control-path <package> [<file>]\n"
-"                                   Print path for package control file.\n\n"
-msgstr ""
-
-#: src/querycmd.c
-#, c-format
-msgid "Options:\n"
-"  --admindir=<directory>           Use <directory> instead of %s.\n"
-"  --root=<directory>               Use <directory> instead of %s.\n"
-"  --load-avail                     Use available file on --show and --list.\n"
-"  --no-pager                       Disables the use of any pager.\n"
-"  -f|--showformat=<format>         Use alternative format for --show.\n\n"
-msgstr ""
-
-#: src/querycmd.c dpkg-deb/main.c
-#, c-format
-msgid "Format syntax:\n"
-"  A format is a string that will be output for each package. The format\n"
-"  can include the standard escape sequences \\n (newline), \\r (carriage\n"
-"  return) or \\\\ (plain backslash). Package information can be included\n"
-"  by inserting variable references to package fields using the ${var[;width]}\n"
-"  syntax. Fields will be right-aligned unless the width is negative in which\n"
-"  case left alignment will be used.\n"
-msgstr ""
-
-#: src/querycmd.c
-msgid "Use --help for help about querying packages."
 msgstr ""
 
 #: src/remove.c
@@ -3847,11 +5045,6 @@ msgstr ""
 msgid "failed to chroot to '%.250s'"
 msgstr ""
 
-#: src/script.c dpkg-deb/build.c
-#, c-format
-msgid "failed to chdir to '%.255s'"
-msgstr ""
-
 #: src/script.c
 msgid "unable to setenv for maintainer script"
 msgstr ""
@@ -3941,167 +5134,10 @@ msgstr ""
 msgid "read error on standard input"
 msgstr ""
 
-#: src/select.c
+#: src/main/select.c
 msgid "found unknown packages; this might mean the available database\n"
 "is outdated, and needs to be updated through a frontend method;\n"
-"please see the FAQ <https://wiki.debian.org/Teams/Dpkg/FAQ>"
-msgstr ""
-
-#: src/selinux.c
-msgid "cannot open security status notification channel"
-msgstr ""
-
-#: src/selinux.c
-msgid "cannot get security labeling handle"
-msgstr ""
-
-#: src/selinux.c
-#, c-format
-msgid "cannot set security context for file object '%s'"
-msgstr ""
-
-#: src/statcmd.c
-msgid "Use --help for help about overriding file stat information."
-msgstr ""
-
-#: src/statcmd.c dpkg-split/main.c utils/update-alternatives.c
-#, c-format
-msgid "Usage: %s [<option> ...] <command>\n\n"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "Commands:\n"
-"  --add <owner> <group> <mode> <path>\n"
-"                           add a new <path> entry into the database.\n"
-"  --remove <path>          remove <path> from the database.\n"
-"  --list [<glob-pattern>]  list current overrides in the database.\n\n"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "Options:\n"
-"  --admindir <directory>   set the directory with the statoverride file.\n"
-"  --instdir <directory>    set the root directory, but not the admin dir.\n"
-"  --root <directory>       set the directory of the root filesystem.\n"
-"  --update                 immediately update <path> permissions.\n"
-"  --force                  deprecated alias for --force-all.\n"
-"  --force-<thing>[,...]    override problems (see --force-help).\n"
-"  --no-force-<thing>[,...] stop when problems encountered.\n"
-"  --refuse-<thing>[,...]   ditto.\n"
-"  --quiet                  quiet operation, minimal output.\n"
-"  --help                   show this help message.\n"
-"  --version                show the version.\n\n"
-msgstr ""
-
-#: src/statcmd.c
-msgid "stripping trailing /"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "user '%s' does not exist"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "group '%s' does not exist"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "--%s needs four arguments"
-msgstr ""
-
-#: src/statcmd.c
-msgid "path may not contain newlines"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "an override for '%s' already exists, but --force specified so will be ignored"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "an override for '%s' already exists; aborting"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "--update given but %s does not exist"
-msgstr ""
-
-#: src/statcmd.c
-msgid "no override present"
-msgstr ""
-
-#: src/statcmd.c
-msgid "--update is useless for --remove"
-msgstr ""
-
-#: src/statcmd.c
-#, c-format
-msgid "deprecated --%s option; use --%s instead"
-msgstr ""
-
-#: src/trigcmd.c
-msgid "Type dpkg-trigger --help for help about this utility."
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "Debian %s package trigger utility version %s.\n"
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "Usage: %s [<option>...] <trigger-name>\n"
-"       %s [<option>...] <command>\n\n"
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "Commands:\n"
-"  --check-supported                Check if the running dpkg supports triggers.\n\n"
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "Options:\n"
-"  --admindir=<directory>           Use <directory> instead of %s.\n"
-"  --root=<directory>               Use <directory> instead of %s.\n"
-"  --by-package=<package>           Override trigger awaiter (normally set\n"
-"                                     by dpkg).\n"
-"  --await                          Package needs to await the processing.\n"
-"  --no-await                       No package needs to await the processing.\n"
-"  --no-act                         Just test - don't actually change anything.\n\n"
-msgstr ""
-
-#: src/trigcmd.c
-msgid "must be called from a maintainer script (or with a --by-package option)"
-msgstr ""
-
-#: src/trigcmd.c
-msgid "triggers data directory not yet created"
-msgstr ""
-
-#: src/trigcmd.c
-msgid "trigger records not yet in existence"
-msgstr ""
-
-#: src/trigcmd.c
-msgid "takes one argument, the trigger name"
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "illegal awaited package name '%.250s': %.250s"
-msgstr ""
-
-#: src/trigcmd.c
-#, c-format
-msgid "invalid trigger name '%.250s': %.250s"
+"please see the FAQ <https://wiki.debian.org/Teams/Dpkg/FAQ#set-selections>"
 msgstr ""
 
 #: src/trigproc.c
@@ -4187,10 +5223,6 @@ msgstr ""
 msgid "passed\n"
 msgstr ""
 
-#: src/unpack.c dpkg-deb/info.c
-msgid "unable to create temporary directory"
-msgstr ""
-
 #: src/unpack.c
 #, c-format
 msgid "regarding %s containing %s, pre-dependency problem:\n"
@@ -4223,31 +5255,6 @@ msgstr ""
 
 #: src/unpack.c
 msgid "conffile file contains an empty line"
-msgstr ""
-
-#: src/unpack.c dpkg-deb/build.c
-#, c-format
-msgid "conffile name '%s' is too long, or missing final newline"
-msgstr ""
-
-#: src/unpack.c dpkg-deb/build.c
-#, c-format
-msgid "conffile name '%s' is not an absolute pathname"
-msgstr ""
-
-#: src/unpack.c dpkg-deb/build.c
-#, c-format
-msgid "conffile name missing after flag '%s'"
-msgstr ""
-
-#: src/unpack.c dpkg-deb/build.c
-#, c-format
-msgid "line with conffile filename '%s' has leading white spaces"
-msgstr ""
-
-#: src/unpack.c dpkg-deb/build.c
-#, c-format
-msgid "unknown flag '%s' for conffile '%s'"
 msgstr ""
 
 #: src/unpack.c utils/update-alternatives.c
@@ -4445,953 +5452,9 @@ msgstr[3] ""
 msgid "obsolete '--%s' option; unavailable packages are automatically cleaned up"
 msgstr ""
 
-#: dpkg-deb/build.c
+#: utils/update-alternatives.c
 #, c-format
-msgid "failed to write filename to tar pipe (%s)"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "control member"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "newline not allowed in pathname '%s'"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "data member"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "unable to stat control directory"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "control directory is not a directory"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "control directory has bad permissions %03lo (must be >=0755 and <=0775)"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "maintainer script '%.50s' is not a plain file or symlink"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "maintainer script '%.50s' has bad permissions %03lo (must be >=0555 and <=0775)"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "maintainer script '%.50s' is not stattable"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "error opening conffiles file"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "empty string from fgets reading conffiles"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "empty and whitespace-only lines are not allowed in conffiles"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile filename '%s' contains trailing white spaces"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile '%.250s' does not appear in package"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile '%.250s' is not stattable"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile '%s' is present but is requested to be removed"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile '%s' is not a plain file"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "conffile name '%s' is duplicated"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "error reading conffiles file"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "package name has characters that aren't lowercase alphanums or '-+.'"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "package architecture is missing or empty"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "'%s' contains user-defined Priority value '%s'"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "ignoring %d warning about the control file(s)"
-msgid_plural "ignoring %d warnings about the control file(s)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "unable to check for existence of archive '%.250s'"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "compressing tar member"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "<compress> from tar -cf"
-msgstr ""
-
-#: dpkg-deb/build.c dpkg-split/split.c
-#, c-format
-msgid "unable to parse timestamp '%.255s'"
-msgstr ""
-
-#: dpkg-deb/build.c utils/update-alternatives.c
-#, c-format
-msgid "--%s needs a <directory> argument"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "target is directory - cannot skip control file check"
-msgstr ""
-
-#: dpkg-deb/build.c
-msgid "not checking contents of control area"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "building an unknown package in '%s'."
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "building package '%s' in '%s'."
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "failed to make temporary file (%s)"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "failed to unlink temporary file (%s), %s"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "failed to rewind temporary file (%s)"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "failed to stat temporary file (%s)"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "error writing '%s'"
-msgstr ""
-
-#: dpkg-deb/build.c
-#, c-format
-msgid "cannot copy '%s' into archive '%s': %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "shell command to move files"
-msgstr ""
-
-#: dpkg-deb/extract.c dpkg-split/main.c
-#, c-format
-msgid "unexpected end of file in %s in %.255s"
-msgstr ""
-
-#: dpkg-deb/extract.c dpkg-split/main.c
-#, c-format
-msgid "error reading %s from file %.255s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "archive magic version number"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "archive member header"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad archive header magic"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "file '%.250s' is not a Debian binary archive (try dpkg-split?)"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "archive information header member"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "archive has no newlines in header"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive has invalid format version: %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive is format version %d.%d; get a newer dpkg-deb"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "cannot skip archive member from '%s': %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive '%s' uses unknown compression for member '%.*s', giving up"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive '%s' has premature member '%.*s' before '%s', giving up"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive '%.250s' contains two control members, giving up"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid " new Debian package, version %d.%d.\n"
-" size %jd bytes: control archive=%jd bytes.\n"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "archive control member size"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "archive has malformed control member size '%s'"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "cannot skip archive control member from '%s': %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid " old Debian package, version %d.%d.\n"
-" size %jd bytes: control archive=%jd, main archive=%jd.\n"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "file looks like it might be an archive which has been\n"
-" corrupted by being downloaded in ASCII mode"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "'%.255s' is not a Debian format archive"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "cannot copy archive member from '%s' to decompressor pipe: %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "cannot close decompressor pipe"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "decompressing archive '%s' (size=%jd) member '%s'"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "failed to create directory"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "unexpected pre-existing pathname %s"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "failed to chdir to directory"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "<decompress>"
-msgstr ""
-
-#: dpkg-deb/extract.c
-msgid "paste"
-msgstr ""
-
-#: dpkg-deb/extract.c dpkg-deb/info.c
-#, c-format
-msgid "--%s needs a .deb filename argument"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "--%s takes only one argument (.deb filename)"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "--%s takes at most two arguments (.deb and directory)"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "--%s needs .deb filename and directory arguments"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "--%s needs a target directory.\n"
-"Perhaps you should be using dpkg --install ?"
-msgstr ""
-
-#: dpkg-deb/extract.c
-#, c-format
-msgid "--%s does not support (yet) reading the .deb from standard input"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "cannot extract control file '%s' from '%s': %s"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "'%.255s' contains no control component '%.255s'"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "open component '%.255s' (in %.255s) failed in an unexpected way"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "%d requested control component is missing"
-msgid_plural "%d requested control components are missing"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: dpkg-deb/info.c utils/update-alternatives.c
-#, c-format
-msgid "cannot scan directory '%.255s'"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "cannot stat '%.255s' (in '%.255s')"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "cannot open '%.255s' (in '%.255s')"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "failed to read '%.255s' (in '%.255s')"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid " %7jd bytes, %5d lines   %c  %-20.127s %.127s\n"
-msgstr ""
-
-#: dpkg-deb/info.c
-#, c-format
-msgid "     not a plain file          %.255s\n"
-msgstr ""
-
-#: dpkg-deb/info.c
-msgid "no 'control' file in control archive!"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "Debian '%s' package archive backend version %s.\n"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "Commands:\n"
-"  -b|--build <directory> [<deb>]   Build an archive.\n"
-"  -c|--contents <deb>              List contents.\n"
-"  -I|--info <deb> [<cfile>...]     Show info to stdout.\n"
-"  -W|--show <deb>                  Show information on package(s)\n"
-"  -f|--field <deb> [<cfield>...]   Show field(s) to stdout.\n"
-"  -e|--control <deb> [<directory>] Extract control info.\n"
-"  -x|--extract <deb> <directory>   Extract files.\n"
-"  -X|--vextract <deb> <directory>  Extract & list files.\n"
-"  -R|--raw-extract <deb> <directory>\n"
-"                                   Extract control info and files.\n"
-"  --ctrl-tarfile <deb>             Output control tarfile.\n"
-"  --fsys-tarfile <deb>             Output filesystem tarfile.\n\n"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "<deb> is the filename of a Debian format archive.\n"
-"<cfile> is the name of an administrative file component.\n"
-"<cfield> is the name of a field in the main 'control' file.\n\n"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "Options:\n"
-"  -v, --verbose                    Enable verbose output.\n"
-"  -D, --debug                      Enable debugging output.\n"
-"      --showformat=<format>        Use alternative format for --show.\n"
-"      --deb-format=<format>        Select archive format.\n"
-"                                     Allowed values: 0.939000, 2.0 (default).\n"
-"      --nocheck                    Suppress control file check (build bad\n"
-"                                     packages).\n"
-"      --root-owner-group           Forces the owner and groups to root.\n"
-"      --[no-]uniform-compression   Use the compression params on all members.\n"
-"  -z#                              Set the compression level when building.\n"
-"  -Z<type>                         Set the compression type used when building.\n"
-"                                     Allowed types: gzip, xz, none.\n"
-"  -S<strategy>                     Set the compression strategy when building.\n"
-"                                     Allowed values: none; extreme (xz);\n"
-"                                     filtered, huffman, rle, fixed (gzip).\n\n"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "\n"
-"Use 'dpkg' to install and remove packages from your system, or\n"
-"'apt' or 'aptitude' for user-friendly package management. Packages\n"
-"unpacked using 'dpkg-deb --extract' will be incorrectly installed !\n"
-msgstr ""
-
-#: dpkg-deb/main.c
-msgid "Type dpkg-deb --help for help about manipulating *.deb files;\n"
-"Type dpkg --help for help about installing and deinstalling packages."
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "invalid deb format version: %s"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "unknown deb format version: %s"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "invalid compression level for -%c: %ld"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "unknown compression strategy '%s'!"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "unknown compression type '%s'!"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "obsolete compression type '%s'; use xz instead"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "obsolete compression type '%s'; use xz or gzip instead"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "invalid compressor parameters: %s"
-msgstr ""
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "unsupported compression type '%s' with uniform compression"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad digit (code %d) in %s"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%s' is corrupt; out of range integer in %s"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - %.250s missing"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - missing newline after %.250s"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "error reading %.250s"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad magic at end of first header"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad padding character (code %d)"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - nulls in info section"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "format version number"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' has invalid format version: %s"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is format version %d.%d; get a newer dpkg-split"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "package name"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "package version number"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "package file MD5 checksum"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad MD5 checksum '%.250s'"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "archive total size"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "archive part offset"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "archive part numbers"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - no slash between archive part numbers"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "number of archive parts"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad number of archive parts"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "archive parts number"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad archive part number"
-msgstr ""
-
-#: dpkg-split/info.c
-msgid "package architecture"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - bad magic at end of second header"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - second member is not data member"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - wrong number of parts for quoted sizes"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - size is wrong for quoted part number"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is corrupt - too short"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "cannot open archive part file '%.250s'"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%.250s' is not an archive part"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "%s:\n"
-"    Part format version:            %d.%d\n"
-"    Part of package:                %s\n"
-"        ... version:                %s\n"
-"        ... architecture:           %s\n"
-"        ... MD5 checksum:           %s\n"
-"        ... length:                 %jd bytes\n"
-"        ... split every:            %jd bytes\n"
-"    Part number:                    %d/%d\n"
-"    Part length:                    %jd bytes\n"
-"    Part offset:                    %jd bytes\n"
-"    Part file size (used portion):  %jd bytes\n\n"
-msgstr ""
-
-#: dpkg-split/info.c
-msgctxt "architecture"
-msgid "<unknown>"
-msgstr ""
-
-#: dpkg-split/info.c dpkg-split/join.c
-#, c-format
-msgid "--%s requires one or more part file arguments"
-msgstr ""
-
-#: dpkg-split/info.c
-#, c-format
-msgid "file '%s' is not an archive part\n"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "Putting package %s together from %d part: "
-msgid_plural "Putting package %s together from %d parts: "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "unable to open output file '%.250s'"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "unable to (re)open input part file '%.250s'"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "cannot skip split package header for '%s': %s"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "cannot append split package part '%s' to '%s': %s"
-msgstr ""
-
-#: dpkg-split/join.c dpkg-split/split.c
-#, c-format
-msgid "done\n"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "files '%.250s' and '%.250s' are not parts of the same file"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "there are several versions of part %d - at least '%.250s' and '%.250s'"
-msgstr ""
-
-#: dpkg-split/join.c
-#, c-format
-msgid "part %d is missing"
-msgstr ""
-
-#: dpkg-split/main.c
-#, c-format
-msgid "Debian '%s' package split/join tool; version %s.\n"
-msgstr ""
-
-#: dpkg-split/main.c
-#, c-format
-msgid "Commands:\n"
-"  -s|--split <file> [<prefix>]     Split an archive.\n"
-"  -j|--join <part> <part> ...      Join parts together.\n"
-"  -I|--info <part> ...             Display info about a part.\n"
-"  -a|--auto -o <complete> <part>   Auto-accumulate parts.\n"
-"  -l|--listq                       List unmatched pieces.\n"
-"  -d|--discard [<filename> ...]    Discard unmatched pieces.\n\n"
-msgstr ""
-
-#: dpkg-split/main.c
-#, c-format
-msgid "Options:\n"
-"  --depotdir <directory>           Use <directory> instead of %s/%s.\n"
-"  -S|--partsize <size>             In KiB, for -s (default is 450).\n"
-"  -o|--output <file>               Filename, for -j (default is\n"
-"                                     <package>_<version>_<arch>.deb).\n"
-"  -Q|--npquiet                     Be quiet when -a is not a part.\n"
-"  --msdos                          Generate 8.3 filenames.\n\n"
-msgstr ""
-
-#: dpkg-split/main.c
-#, c-format
-msgid "Exit status:\n"
-"  0 = ok\n"
-"  1 = with --auto, file is not a part\n"
-"  2 = trouble\n"
-msgstr ""
-
-#: dpkg-split/main.c
-msgid "Type dpkg-split --help for help."
-msgstr ""
-
-#: dpkg-split/main.c
-msgid "part size is far too large or is not positive"
-msgstr ""
-
-#: dpkg-split/main.c
-#, c-format
-msgid "part size must be at least %d KiB (to allow for header)"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to read depot directory '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-msgid "--auto requires the use of the --output option"
-msgstr ""
-
-#: dpkg-split/queue.c
-msgid "--auto requires exactly one part file argument"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to read part file '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "File '%.250s' is not part of a multipart archive.\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "cannot create directory %s"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to reopen part file '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to open new depot file '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "cannot extract split package part '%s': %s"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to rename new depot file '%.250s' to '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "Part %d of package %s filed (still want "
-msgstr ""
-
-#: dpkg-split/queue.c
-msgid " and "
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to delete used-up depot file '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-msgid "Junk files left around in the depot directory:\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to stat '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid " %s (%jd bytes)\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid " %s (not a plain file)\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-msgid "Packages not yet reassembled:\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid " Package %s: part(s) "
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "part file '%.250s' is not a plain file"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "(total %jd bytes)\n"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "unable to discard '%.250s'"
-msgstr ""
-
-#: dpkg-split/queue.c
-#, c-format
-msgid "Deleted %s.\n"
-msgstr ""
-
-#: dpkg-split/split.c
-msgid "package field value extraction"
-msgstr ""
-
-#: dpkg-split/split.c
-msgid "<dpkg-deb --info pipe>"
-msgstr ""
-
-#: dpkg-split/split.c
-#, c-format
-msgid "unable to open source file '%.250s'"
-msgstr ""
-
-#: dpkg-split/split.c
-msgid "unable to fstat source file"
-msgstr ""
-
-#: dpkg-split/split.c
-#, c-format
-msgid "source file '%.250s' not a plain file"
-msgstr ""
-
-#: dpkg-split/split.c
-#, c-format
-msgid "Splitting package %s into %d part: "
-msgid_plural "Splitting package %s into %d parts: "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: dpkg-split/split.c
-msgid "header is too long, making part too long; the package name or version\n"
-"numbers must be extraordinarily long, or something; giving up"
-msgstr ""
-
-#: dpkg-split/split.c
-msgid "--split needs a source filename argument"
-msgstr ""
-
-#: dpkg-split/split.c
-msgid "--split takes at most a source filename and destination prefix"
+msgid "%s version %s.\n"
 msgstr ""
 
 #: utils/update-alternatives.c
@@ -5484,6 +5547,16 @@ msgstr ""
 #: utils/update-alternatives.c
 #, c-format
 msgid "unable to read link '%s%.255s'"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "unable to get file '%s%s' metadata"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "cannot set symlink '%s' timestamp"
 msgstr ""
 
 #: utils/update-alternatives.c
@@ -5685,11 +5758,6 @@ msgstr ""
 
 #: utils/update-alternatives.c
 #, c-format
-msgid "There is only one alternative in link group %s (providing %s): %s"
-msgstr ""
-
-#: utils/update-alternatives.c
-#, c-format
 msgid "not replacing %s with a link"
 msgstr ""
 
@@ -5756,6 +5824,16 @@ msgstr ""
 #: utils/update-alternatives.c
 #, c-format
 msgid "renaming %s link from %s%s to %s%s"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "automatic updates of %s/%s are disabled; leaving it alone"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "to return to automatic updates use '%s --auto %s'"
 msgstr ""
 
 #: utils/update-alternatives.c
@@ -5874,15 +5952,18 @@ msgid "--%s needs <link> <name> <path> <priority>"
 msgstr ""
 
 #: utils/update-alternatives.c
-msgid "<link> and <path> can't be the same"
+#, c-format
+msgid "<link> '%s' is the same as <path>"
 msgstr ""
 
 #: utils/update-alternatives.c
-msgid "priority must be an integer"
+#, c-format
+msgid "priority '%s' must be an integer"
 msgstr ""
 
 #: utils/update-alternatives.c
-msgid "priority is out of range"
+#, c-format
+msgid "priority '%s' is out of range"
 msgstr ""
 
 #: utils/update-alternatives.c
@@ -5907,12 +5988,22 @@ msgstr ""
 
 #: utils/update-alternatives.c
 #, c-format
-msgid "name %s is both primary and slave"
+msgid "<name> '%s' is both primary and slave"
 msgstr ""
 
 #: utils/update-alternatives.c
 #, c-format
-msgid "link %s is both primary and slave"
+msgid "<link> '%s' is both primary and slave"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "duplicate slave <name> '%s'"
+msgstr ""
+
+#: utils/update-alternatives.c
+#, c-format
+msgid "duplicate slave <link> '%s'"
 msgstr ""
 
 #: utils/update-alternatives.c
@@ -5934,16 +6025,6 @@ msgstr ""
 msgid "<standard input>"
 msgstr ""
 
-#: utils/update-alternatives.c
-#, c-format
-msgid "automatic updates of %s/%s are disabled; leaving it alone"
-msgstr ""
-
-#: utils/update-alternatives.c
-#, c-format
-msgid "to return to automatic updates use '%s --auto %s'"
-msgstr ""
-
 #: utils/update-alternatives.polkit.in
 msgid "Run update-alternatives to modify system alternative selections"
 msgstr ""
@@ -5951,12 +6032,4 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
-
-#, c-format
-#~ msgid "installation of %.250s"
-#~ msgstr "інсталяваньне %.250s"
-
-#, c-format
-#~ msgid "removal of %.250s"
-#~ msgstr "выдаленьне %.250s"
 
