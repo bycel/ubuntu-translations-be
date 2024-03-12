@@ -2,23 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/seahorse/issues\n"
-"POT-Creation-Date: 2022-02-17 05:34+0000\n"
-"PO-Revision-Date: 2024-03-07 15:37\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2022-12-15 20:00+0000\n"
+"PO-Revision-Date: 2024-03-12 11:38\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-05-27 08:11+0000\n"
-"X-Generator: Launchpad (build 060234aa1273238f7880ac19de947f3512a7e11c)\n"
+"X-Launchpad-Export-Date: 2024-03-09 17:10+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Crowdin-File: /main/noble/en_GB/po-seahorse_seahorse-be.po\n"
-"X-Crowdin-File-ID: 225\n"
-"X-Crowdin-Project-ID: 485161\n"
-"Language: uk_UA\n"
+"X-Crowdin-Project: ubuntu-translations\n"
 "X-Project-Style: gnome\n"
 "X-Crowdin-Language: uk\n"
-"X-Crowdin-Project: ubuntu-translations\n"
+"X-Crowdin-Project-ID: 485161\n"
+"Language: uk_UA\n"
+"X-Crowdin-File-ID: 225\n"
 
 #: common/add-keyserver-dialog.vala:32
 msgid "Add Key Server"
@@ -403,7 +403,9 @@ msgid "Height (in pixels) of the window."
 msgstr ""
 
 #: data/org.gnome.seahorse.Application.appdata.xml.in:6
-msgid "Seahorse"
+#: data/org.gnome.seahorse.Application.desktop.in.in:3 src/application.vala:174
+#: src/seahorse-key-manager.ui:291
+msgid "Passwords and Keys"
 msgstr ""
 
 #: data/org.gnome.seahorse.Application.appdata.xml.in:7
@@ -412,26 +414,20 @@ msgid "Manage your passwords and encryption keys"
 msgstr ""
 
 #: data/org.gnome.seahorse.Application.appdata.xml.in:9
-msgid "Seahorse is a GNOME application for managing encryption keys."
+msgid "Passwords and Keys is a GNOME application for managing encryption keys."
 msgstr ""
 
 #: data/org.gnome.seahorse.Application.appdata.xml.in:12
-msgid "With seahorse you can create and manage PGP keys, create and manage SSH keys, publish and retrieve keys from key servers, cache your passphrase so you don’t have to keep typing it and backup your keys and keyring."
+msgid "With Passwords and Keys you can create and manage PGP keys, create and manage SSH keys, publish and retrieve keys from key servers, cache your passphrase so you don’t have to keep typing it and backup your keys and keyring."
 msgstr ""
 
 #: data/org.gnome.seahorse.Application.appdata.xml.in:241
 msgid "The GNOME Project"
 msgstr ""
 
-#: data/org.gnome.seahorse.Application.appdata.xml.in:6
-#: data/org.gnome.seahorse.Application.desktop.in.in:3 src/application.vala:174
-#: src/seahorse-key-manager.ui:291
-msgid "Passwords and Keys"
-msgstr ""
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.seahorse.Application.desktop.in.in:6
-msgid "keyring;encryption;security;sign;ssh;"
+msgid "keyring;encryption;security;sign;ssh;gpg;pgp;"
 msgstr ""
 
 #: gkr/gkr-backend.vala:43
@@ -1212,16 +1208,6 @@ msgstr ""
 
 #: pgp/seahorse-gpgme-subkey.c:86
 msgid "ElGamal"
-msgstr ""
-
-#: pgp/seahorse-hkp-source.c:499
-#, c-format
-msgid "Search was not specific enough. Server “%s” found too many keys."
-msgstr ""
-
-#: pgp/seahorse-hkp-source.c:503
-#, c-format
-msgid "Couldn’t communicate with server “%s”: %s"
 msgstr ""
 
 #: pgp/seahorse-keyserver-results.c:62
@@ -2039,6 +2025,10 @@ msgstr ""
 msgid "This collection seems to be empty"
 msgstr ""
 
+#: src/seahorse-key-manager.ui:521
+msgid "Add new items"
+msgstr ""
+
 #: src/seahorse-key-manager.ui:536
 msgid "Keyring is locked"
 msgstr ""
@@ -2120,16 +2110,16 @@ msgstr ""
 msgid "No public key file is available for this key."
 msgstr ""
 
+#: ssh/generate.vala:85
+msgid "Creating Secure Shell Key"
+msgstr ""
+
 #: ssh/generate.vala:93
 msgid "Couldn’t load newly generated Secure Shell key"
 msgstr ""
 
 #: ssh/generate.vala:96
 msgid "Couldn’t generate Secure Shell key"
-msgstr ""
-
-#: ssh/generate.vala:85
-msgid "Creating Secure Shell Key"
 msgstr ""
 
 #: ssh/key-length-chooser.vala:92
@@ -2264,12 +2254,8 @@ msgstr ""
 msgid "If there is a computer you want to use this key with, you can set up that computer to recognize your new key."
 msgstr ""
 
-#: ssh/seahorse-ssh-generate.ui:221
-msgid "_Just Create Key"
-msgstr ""
-
-#: ssh/seahorse-ssh-generate.ui:235
-msgid "_Create and Set Up"
+#: ssh/seahorse-ssh-generate.ui:201
+msgid "_Generate"
 msgstr ""
 
 #: ssh/seahorse-ssh-key-properties.ui:11
@@ -2371,164 +2357,4 @@ msgstr ""
 #: ssh/upload.vala:71
 msgid "Configuring Secure Shell Keys…"
 msgstr ""
-
-#~ msgid "Type:"
-#~ msgstr "Тып:"
-
-#~ msgid "ID"
-#~ msgstr "ID"
-
-#~ msgid "_Add Name"
-#~ msgstr "_Дадаць назву"
-
-#~ msgid "_Only display the signatures of people I trust"
-#~ msgstr "Паказваць _толькі подпісы людзей, якім я давяраю"
-
-#~ msgid "_Sign this Key"
-#~ msgstr "_Падпісаць гэты ключ"
-
-#~ msgid "Created:"
-#~ msgstr "Дата стварэння:"
-
-#~ msgid "Disabled"
-#~ msgstr "Выключана"
-
-#~ msgid "[Unknown]"
-#~ msgstr "[Невядома]"
-
-#~ msgid "Name/Email"
-#~ msgstr "Імя/Адрас электроннай пошты"
-
-#~ msgid "Signature ID"
-#~ msgstr "Ідэнтыфікатар подпісу"
-
-#, c-format
-#~ msgid "Are you sure you want to permanently delete subkey %d of %s?"
-#~ msgstr "Сапраўды незваротна выдаліць падключ %d з %s?"
-
-#~ msgid "Expired"
-#~ msgstr "Састарэлы"
-
-#~ msgid "Good"
-#~ msgstr "Добры"
-
-#~ msgid "The owner of the key revoked the key. It can no longer be used."
-#~ msgstr "Уласнік ключа адклікаў яго. Ім больш нельга карыстацца."
-
-#~ msgid "Owner"
-#~ msgstr "Уласнік"
-
-#~ msgid "Primary"
-#~ msgstr "Асноўны"
-
-#~ msgid "Names and Signatures"
-#~ msgstr "Назвы і подпісы"
-
-#~ msgid "Key ID:"
-#~ msgstr "ID ключа:"
-
-#~ msgid "Override Owner _Trust:"
-#~ msgstr "Змяніць узровень да_веру да ўласніка:"
-
-#~ msgid "_Revoke Signature"
-#~ msgstr "_Адклікаць подпіс"
-
-#~ msgid "Technical Details:"
-#~ msgstr "Тэхнічныя падрабязнасці:"
-
-#~ msgid "This key has been revoked"
-#~ msgstr "Гэты ключ быў адкліканы"
-
-#~ msgid "Key Names and Signatures"
-#~ msgstr "Назвы ключоў і подпісы"
-
-#~ msgid "Technical Details"
-#~ msgstr "Тэхнічныя падрабязнасці"
-
-#~ msgid "Dates"
-#~ msgstr "Даты"
-
-#~ msgid "Actions"
-#~ msgstr "Дзеянні"
-
-#~ msgid "_Subkeys"
-#~ msgstr "_Падключы"
-
-#~ msgid "_Other Names:"
-#~ msgstr "І_ншыя назвы:"
-
-#~ msgid "_People who have signed this key:"
-#~ msgstr "_Людзі, якія падпісалі гэты ключ:"
-
-#~ msgid "Fingerprint:"
-#~ msgstr "Адбітак:"
-
-#~ msgid "Dates:"
-#~ msgstr "Даты:"
-
-#~ msgid "Usage"
-#~ msgstr "Выкарыстанне"
-
-#, c-format
-#~ msgid "I trust signatures from “%s” on other keys"
-#~ msgstr "Я давяраю подпісам \"%s\" на іншых ключах"
-
-#, c-format
-#~ msgid ""
-#~ "If you believe that the person that owns this key is “%s”, <i>sign</i> this "
-#~ "key:"
-#~ msgstr ""
-#~ "Калі вы верыце, што ўласнік гэтага ключа - гэта \"%s\", <i>падпішыце</i> "
-#~ "гэты ключ:"
-
-#, c-format
-#~ msgid ""
-#~ "If you no longer trust that “%s” owns this key, <i>revoke</i> your signature:"
-#~ msgstr ""
-#~ "Калі вы больш не верыце, што гэтым ключом валодае \"%s\", <i>адклікайце</i> "
-#~ "свой подпіс:"
-
-#~ msgid "The file could not be loaded. It may be in an invalid format"
-#~ msgstr "Не атрымалася загрузіць файл. Магчыма, ў яго хібны фармат."
-
-#, c-format
-#~ msgid "This key expired on: %s"
-#~ msgstr "Тэрмін дзеяння ключа: %s"
-
-#~ msgid "Status"
-#~ msgstr "Статус"
-
-#~ msgid "Strength"
-#~ msgstr "Надзейнасць"
-
-#~ msgid "Revoked"
-#~ msgstr "Адкліканы"
-
-#~ msgid "This key has expired"
-#~ msgstr "Тэрмін дзеяння гэтага ключа сыйшоў"
-
-#~ msgid "Strength:"
-#~ msgstr "Надзейнасць:"
-
-#~ msgid "Expires:"
-#~ msgstr "Тэрмін дзеяння:"
-
-#~ msgid "_Export to file"
-#~ msgstr "_Экспарт у файл"
-
-#~ msgid "Expire"
-#~ msgstr "Тэрмін дзеяння"
-
-#~ msgid "Your trust is manually specified on the <i>Details</i> tab."
-#~ msgstr ""
-#~ "Ваш узровень даверу вызначаны ўласнаручна ва ўкладцы <i>Падрабязнасці</i>."
-
-#~ msgid "Indicate trust:"
-#~ msgstr "Узровень даверу:"
-
-#~ msgid "You _trust the owner:"
-#~ msgstr "_Вы давяраеце ўласніку:"
-
-#~ msgid "Remote Access"
-#~ msgstr "Адлеглы доступ"
 
