@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-12-30 00:46-0500\n"
-"PO-Revision-Date: 2024-03-07 15:41\n"
+"POT-Creation-Date: 2023-02-05 15:05-0500\n"
+"PO-Revision-Date: 2024-03-12 11:38\n"
 "Last-Translator: \n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2023-03-22 21:28+0000\n"
-"X-Generator: Launchpad (build c5a134908fde0a645e56f24c14f906bf278db3e0)\n"
+"X-Launchpad-Export-Date: 2024-03-09 17:12+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: be\n"
@@ -1168,6 +1168,31 @@ msgid "Resize_@i and meta_bg features are enabled. Those features are\n"
 "not compatible. Resize @i should be disabled.  "
 msgstr ""
 
+#. @-expanded: Orphan file (inode %i) contains hole at block %b. Terminating orphan file
+#. @-expanded: recovery.\n
+#: e2fsck/problem.c:531
+msgid "Orphan file (@i %i) contains hole at @b %b. Terminating orphan file recovery.\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) block %b contains wrong magic. Terminating orphan file
+#. @-expanded: recovery.\n
+#: e2fsck/problem.c:536
+msgid "Orphan file (@i %i) @b %b contains wrong magic. Terminating orphan file recovery.\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) block %b contains wrong checksum. Terminating orphan file
+#. @-expanded: recovery.\n
+#: e2fsck/problem.c:541
+msgid "Orphan file (@i %i) @b %b contains wrong checksum. Terminating orphan file recovery.\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) size is not multiple of block size. Terminating orphan
+#. @-expanded: file recovery.\n
+#: e2fsck/problem.c:546
+#, c-format
+msgid "Orphan file (@i %i) size is not multiple of block size. Terminating orphan file recovery.\n"
+msgstr ""
+
 #. @-expanded: Pass 1: Checking inodes, blocks, and sizes\n
 #: e2fsck/problem.c:553
 msgid "Pass 1: Checking @is, @bs, and sizes\n"
@@ -1931,6 +1956,18 @@ msgstr ""
 msgid "@h %i uses SipHash, but should not.  "
 msgstr ""
 
+#. @-expanded: Orphan file inode %i is not regular file.
+#: e2fsck/problem.c:1304
+#, c-format
+msgid "Orphan file @i %i is not regular file.  "
+msgstr ""
+
+#. @-expanded: Orphan file inode %i is not in use, but contains data.
+#: e2fsck/problem.c:1309
+#, c-format
+msgid "Orphan file @i %i is not in use, but contains data.  "
+msgstr ""
+
 #. @-expanded: \n
 #. @-expanded: Running additional passes to resolve blocks claimed by more than one inode...\n
 #. @-expanded: Pass 1B: Rescanning for multiply-claimed blocks\n
@@ -2462,10 +2499,10 @@ msgstr ""
 msgid "No room in @l @d.  "
 msgstr ""
 
-#. @-expanded: Unconnected directory inode %i (%p)\n
-#: e2fsck/problem.c:1855
+#. @-expanded: Unconnected directory inode %i (was in %q)\n
+#: e2fsck/problem.c:1884
 #, no-c-format
-msgid "Unconnected @d @i %i (%p)\n"
+msgid "Unconnected @d @i %i (was in %q)\n"
 msgstr ""
 
 #. @-expanded: /lost+found not found.
@@ -2596,6 +2633,12 @@ msgstr ""
 #. @-expanded: /lost+found is encrypted\n
 #: e2fsck/problem.c:2018
 msgid "/@l is encrypted\n"
+msgstr ""
+
+#. @-expanded: Recursively looped directory inode %i (%p)\n
+#: e2fsck/problem.c:2024
+#, no-c-format
+msgid "Recursively looped @d @i %i (%p)\n"
 msgstr ""
 
 #: e2fsck/problem.c:2031
@@ -2785,6 +2828,53 @@ msgstr ""
 msgid "Error writing quota info for quota type %N: %m\n"
 msgstr ""
 
+#. @-expanded: superblock has orphan file without journal.\n
+#: e2fsck/problem.c:2299
+msgid "@S has orphan file without @j.\n"
+msgstr ""
+
+#: e2fsck/problem.c:2304
+msgid "Failed to truncate orphan file.\n"
+msgstr ""
+
+#: e2fsck/problem.c:2309
+msgid "Failed to initialize orphan file.\n"
+msgstr ""
+
+#: e2fsck/problem.c:2314
+msgid "Cannot fix corrupted orphan file with invalid bitmaps.\n"
+msgstr ""
+
+#. @-expanded: Failed to truncate orphan file (inode %i).\n
+#: e2fsck/problem.c:2319
+#, c-format
+msgid "Failed to truncate orphan file (@i %i).\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) block %b is not clean.\n
+#: e2fsck/problem.c:2324
+msgid "Orphan file (@i %i) @b %b is not clean.\n"
+msgstr ""
+
+#: e2fsck/problem.c:2329
+msgid "Feature orphan_present is set but orphan file is clean.\n"
+msgstr ""
+
+#: e2fsck/problem.c:2334
+msgid "Feature orphan_present is set but feature orphan_file is not.\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) size is not multiple of block size.\n
+#: e2fsck/problem.c:2339
+#, c-format
+msgid "Orphan file (@i %i) size is not multiple of block size.\n"
+msgstr ""
+
+#. @-expanded: Orphan file (inode %i) contains hole at block %b.\n
+#: e2fsck/problem.c:2344
+msgid "Orphan file (@i %i) contains hole at @b %b.\n"
+msgstr ""
+
 #: e2fsck/problem.c:2509
 #, c-format
 msgid "Unhandled error code (0x%x)!\n"
@@ -2836,6 +2926,21 @@ msgstr ""
 
 #: e2fsck/super.c:329
 msgid "Clearing"
+msgstr ""
+
+#: e2fsck/super.c:453
+#, c-format
+msgid "while reading inode %d"
+msgstr ""
+
+#: e2fsck/super.c:473 e2fsck/super.c:677
+#, c-format
+msgid "while calling ext2fs_block_iterate for inode %d"
+msgstr ""
+
+#: e2fsck/super.c:481 e2fsck/super.c:685
+#, c-format
+msgid "while reading blocks of inode %d"
 msgstr ""
 
 #: e2fsck/unix.c:79
@@ -3422,6 +3527,11 @@ msgstr ""
 msgid "%s: e2fsck canceled.\n"
 msgstr ""
 
+#: e2fsck/unix.c:2012
+#, c-format
+msgid "Creating orphan file (%d blocks): "
+msgstr ""
+
 #: e2fsck/unix.c:2056
 msgid "Restarting e2fsck from the beginning...\n"
 msgstr ""
@@ -3711,6 +3821,11 @@ msgstr ""
 msgid "invalid %s - %s"
 msgstr ""
 
+#: misc/badblocks.c:1044
+#, c-format
+msgid "%s too large - %lu"
+msgstr ""
+
 #: misc/badblocks.c:1140
 #, c-format
 msgid "Too big max bad blocks count %u - maximum is %u"
@@ -3729,14 +3844,19 @@ msgstr ""
 msgid "Random test_pattern is not allowed in read-only mode"
 msgstr ""
 
-#: misc/badblocks.c:1207
+#: misc/badblocks.c:1210
 #, c-format
-msgid "Invalid block size: %d\n"
+msgid "Invalid block size: %u\n"
 msgstr ""
 
-#: misc/badblocks.c:1213
+#: misc/badblocks.c:1215
 #, c-format
-msgid "Invalid blocks_at_once: %d\n"
+msgid "Invalid number of blocks: %d\n"
+msgstr ""
+
+#: misc/badblocks.c:1220
+#, c-format
+msgid "For block size %d, number of blocks too large: %d\n"
 msgstr ""
 
 #: misc/badblocks.c:1234
@@ -3785,7 +3905,7 @@ msgstr ""
 
 #: misc/chattr.c:89
 #, c-format
-msgid "Usage: %s [-pRVf] [-+=aAcCdDeijPsStTuFx] [-v version] files...\n"
+msgid "Usage: %s [-RVf] [-+=aAcCdDeijPsStTuFx] [-p project] [-v version] files...\n"
 msgstr ""
 
 #: misc/chattr.c:162
@@ -5157,7 +5277,12 @@ msgstr ""
 msgid "Invalid encoding: %s"
 msgstr ""
 
-#: misc/mke2fs.c:1098
+#: misc/mke2fs.c:1109 misc/tune2fs.c:2417
+#, c-format
+msgid "Invalid size of orphan file %s\n"
+msgstr ""
+
+#: misc/mke2fs.c:1120
 #, c-format
 msgid "\n"
 "Bad option(s) specified: %s\n\n"
@@ -5179,7 +5304,8 @@ msgid "\n"
 "\tnodiscard\n"
 "\tencoding=<encoding>\n"
 "\tencoding_flags=<flags>\n"
-"\tquotatype=<quota type(s) to be enabled>\n\n"
+"\tquotatype=<quota type(s) to be enabled>\n"
+"\tassume_storage_prezeroed=<0 to disable, 1 to enable>\n\n"
 msgstr ""
 
 #: misc/mke2fs.c:1148
@@ -5637,6 +5763,10 @@ msgstr ""
 msgid "The metadata_csum_seed feature requires the metadata_csum feature.\n"
 msgstr ""
 
+#: misc/mke2fs.c:3145
+msgid "Assuming the storage device is prezeroed - skipping inode table and journal wipe\n"
+msgstr ""
+
 #: misc/mke2fs.c:3160
 msgid "Discard succeeded and will return 0s - skipping inode table wipe\n"
 msgstr ""
@@ -5723,6 +5853,14 @@ msgstr ""
 #: misc/mke2fs.c:3520
 #, c-format
 msgid "Multiple mount protection is enabled with update interval %d seconds.\n"
+msgstr ""
+
+#: misc/mke2fs.c:3535
+msgid "cannot set orphan_file feature without a journal."
+msgstr ""
+
+#: misc/mke2fs.c:3546 misc/tune2fs.c:3516
+msgid "while creating orphan file"
 msgstr ""
 
 #: misc/mke2fs.c:3557
@@ -5928,6 +6066,27 @@ msgid "The needs_recovery flag is set.  Please run e2fsck before clearing\n"
 "the has_journal flag.\n"
 msgstr ""
 
+#: misc/tune2fs.c:1221
+msgid "The orphan_file feature may only be cleared when the filesystem is unmounted.\n"
+msgstr ""
+
+#: misc/tune2fs.c:1226
+msgid "The orphan_present feature is set. Please run e2fsck before clearing orphan_file feature.\n"
+msgstr ""
+
+#: misc/tune2fs.c:1235 misc/tune2fs.c:3509
+msgid "while loading bitmaps"
+msgstr ""
+
+#: misc/tune2fs.c:1241
+msgid "\n"
+"\twhile trying to delete orphan file\n"
+msgstr ""
+
+#: misc/tune2fs.c:1254
+msgid "orphan_file feature can be set only for filesystems with journal.\n"
+msgstr ""
+
 #: misc/tune2fs.c:1270
 msgid "Setting filesystem feature 'sparse_super' not supported\n"
 "for filesystems with the meta_bg feature enabled.\n"
@@ -6034,6 +6193,14 @@ msgstr ""
 
 #: misc/tune2fs.c:1602 misc/tune2fs.c:2380
 msgid "The casefold feature may only be enabled when the filesystem is unmounted.\n"
+msgstr ""
+
+#: misc/tune2fs.c:1613
+msgid "The casefold feature may only be disabled when the filesystem is unmounted.\n"
+msgstr ""
+
+#: misc/tune2fs.c:1618
+msgid "The casefold feature can't be cleared when there are inodes with +F flag.\n"
 msgstr ""
 
 #: misc/tune2fs.c:1630
@@ -6270,6 +6437,27 @@ msgstr ""
 #: misc/tune2fs.c:2931
 msgid "Error in resizing the inode size.\n"
 "Run e2undo to undo the file system changes. \n"
+msgstr ""
+
+#: misc/tune2fs.c:3100
+msgid "while checking mount status"
+msgstr ""
+
+#: misc/tune2fs.c:3108
+#, c-format
+msgid "Unknown mount point for %s\n"
+msgstr ""
+
+#: misc/tune2fs.c:3114
+msgid "while opening mount point"
+msgstr ""
+
+#: misc/tune2fs.c:3124
+msgid "while trying to get fs label"
+msgstr ""
+
+#: misc/tune2fs.c:3146
+msgid "while trying to set fs label"
 msgstr ""
 
 #: misc/tune2fs.c:3236
@@ -6937,7 +7125,7 @@ msgid "Should never happen: resize inode corrupt!\n"
 msgstr ""
 
 #: lib/ext2fs/ext2_err.c:11
-msgid "EXT2FS Library version 1.46.5"
+msgid "EXT2FS Library version 1.47.0"
 msgstr ""
 
 #: lib/ext2fs/ext2_err.c:12
@@ -7658,6 +7846,14 @@ msgstr ""
 
 #: lib/ext2fs/ext2_err.c:191
 msgid "The internal ext2_filsys data structure appears to be corrupted"
+msgstr ""
+
+#: lib/ext2fs/ext2_err.c:192
+msgid "Found cyclic loop in extent tree"
+msgstr ""
+
+#: lib/ext2fs/ext2_err.c:193
+msgid "Operation not supported on an external journal"
 msgstr ""
 
 #: lib/support/prof_err.c:11
