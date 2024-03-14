@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=rhythmbox&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-02-17 18:47+0000\n"
-"PO-Revision-Date: 2024-03-07 15:37\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2024-03-09 16:58+0000\n"
+"PO-Revision-Date: 2024-03-12 11:38\n"
+"Last-Translator: Olya Matsuk <Unknown>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-12-29 08:22+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-03-09 18:56+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "Language: ru\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -143,28 +143,8 @@ msgstr ""
 msgid "Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;"
 msgstr ""
 
-#: ../data/org.gnome.Rhythmbox3.desktop.in.in.h:1
-msgid "Play/Pause"
-msgstr ""
-
-#: plugins/notification/rb-notification-plugin.c:236
-msgid "Next"
-msgstr ""
-
-#: plugins/notification/rb-notification-plugin.c:221
-msgid "Previous"
-msgstr ""
-
-#: ../data/org.gnome.Rhythmbox3.desktop.in.in.h:4
-msgid "Stop & Quit"
-msgstr ""
-
 #: data/ui/app-menu.ui:6
 msgid "_View"
-msgstr ""
-
-#: data/ui/app-menu.ui:9
-msgid "P_arty Mode"
 msgstr ""
 
 #: data/ui/app-menu.ui:9
@@ -615,8 +595,8 @@ msgstr ""
 msgid "Playlist"
 msgstr ""
 
-#: ../data/ui/podcast-add-dialog.ui.h:1
-msgid "Search for podcasts in the iTunes Store and on Miroguide.com, or enter a podcast feed URL.\n"
+#: data/ui/podcast-add-dialog.ui:13
+msgid "Search for podcasts in the iTunes Store, or enter a podcast feed URL.\n"
 "Subscribe to podcasts to download new episodes as they are published."
 msgstr ""
 
@@ -1135,11 +1115,6 @@ msgstr ""
 msgid "Error mounting Android device"
 msgstr ""
 
-#: sources/rb-library-source.c:1198 sources/rb-library-source.c:1202
-#: sources/rb-transfer-target.c:234
-msgid "Error transferring track"
-msgstr ""
-
 #: plugins/artsearch/artsearch.plugin.desktop.in:7
 msgid "Cover art search"
 msgstr ""
@@ -1250,12 +1225,12 @@ msgstr ""
 msgid "Track %u"
 msgstr ""
 
-#: plugins/audiocd/rb-musicbrainz-lookup.c:426
-msgid "Not found"
-msgstr ""
-
 #: plugins/audiocd/rb-musicbrainz-lookup.c:416
 msgid "Unable to connect to Musicbrainz server"
+msgstr ""
+
+#: plugins/audiocd/rb-musicbrainz-lookup.c:426
+msgid "Not found"
 msgstr ""
 
 #: plugins/audiocd/rb-musicbrainz-lookup.c:431
@@ -1334,10 +1309,6 @@ msgstr ""
 
 #: plugins/audioscrobbler/audioscrobbler-profile.ui:505
 msgid "Top Artists"
-msgstr ""
-
-#: plugins/audioscrobbler/audioscrobbler-profile.ui:549
-msgid "Recommendations"
 msgstr ""
 
 #: plugins/audioscrobbler/audioscrobbler-profile.ui:549
@@ -1879,7 +1850,7 @@ msgid "Genres"
 msgstr ""
 
 #: plugins/dbus-media-server/rb-dbus-media-server-plugin.c:2405
-#: shell/rb-playlist-manager.c:1072 sources/rb-display-page-group.c:92
+#: shell/rb-playlist-manager.c:1073 sources/rb-display-page-group.c:92
 msgid "Playlists"
 msgstr ""
 
@@ -2552,12 +2523,20 @@ msgstr ""
 msgid "Notification popups"
 msgstr ""
 
+#: plugins/notification/rb-notification-plugin.c:221
+msgid "Previous"
+msgstr ""
+
 #: plugins/notification/rb-notification-plugin.c:227
 msgid "Pause"
 msgstr ""
 
 #: plugins/notification/rb-notification-plugin.c:227
 msgid "Play"
+msgstr ""
+
+#: plugins/notification/rb-notification-plugin.c:236
+msgid "Next"
 msgstr ""
 
 #. Translators: by Artist
@@ -2599,8 +2578,12 @@ msgstr ""
 msgid "Interactive python console"
 msgstr ""
 
-#: plugins/pythonconsole/pythonconsole.py:82
-msgid "Python Debugger"
+#: plugins/pythonconsole/pythonconsole.py:90
+msgid "Python Debugger (winpdb)"
+msgstr ""
+
+#: plugins/pythonconsole/pythonconsole.py:99
+msgid "Python Debugger (debugpy)"
 msgstr ""
 
 #: plugins/pythonconsole/pythonconsole.py:130
@@ -2610,6 +2593,21 @@ msgstr ""
 #: plugins/pythonconsole/pythonconsole.py:150
 #, python-format
 msgid "After you press OK, Rhythmbox will wait until you connect to it with winpdb or rpdb2. If you have not set a debugger password in the file %s, it will use the default password ('rhythmbox')."
+msgstr ""
+
+#: plugins/pythonconsole/pythonconsole.py:176
+#, python-format
+msgid "Rhythmbox is now listening for Debug Adapter Protocol connections on port %d. You can now attach to it using a compatible debugger such as vimspector, nvim-dap or Visual Studio Code."
+msgstr ""
+
+#: plugins/pythonconsole/pythonconsole.py:180
+#, python-format
+msgid "Unable to start Debug Adapter Protocol listener: %s"
+msgstr ""
+
+#: plugins/pythonconsole/pythonconsole.py:186
+#, python-format
+msgid "The %s Python module is not available. Install the module and then restart Rhythmbox to enable debugging with %s."
 msgstr ""
 
 #: plugins/rbzeitgeist/rbzeitgeist.plugin.desktop.in:7
@@ -2675,70 +2673,6 @@ msgstr ""
 
 #: plugins/replaygain/replaygain-prefs.ui:139
 msgid "Learn more about ReplayGain"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.plugin.in.h:1
-#: ../plugins/soundcloud/soundcloud.py:72
-msgid "SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.plugin.in.h:2
-msgid "Browse and play sounds from SoundCloud®"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:96
-msgid "Search tracks"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:97
-msgid "Search tracks on SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:103
-msgid "Search sets"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:104
-msgid "Search sets on SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:105
-msgid "SoundCloud Sets"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:110
-msgid "Search users"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:111
-msgid "Search users on SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:112
-msgid "SoundCloud Users"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:117
-msgid "Search groups"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:118
-msgid "Search groups on SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:119
-msgid "SoundCloud Groups"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:442
-#: ../plugins/soundcloud/soundcloud.py:450
-#, python-format
-msgid "View '%(title)s' on SoundCloud"
-msgstr ""
-
-#: ../plugins/soundcloud/soundcloud.py:458
-#, python-format
-msgid "View '%(container)s' on SoundCloud"
 msgstr ""
 
 #: plugins/webremote/webremote-config.ui:18
@@ -2816,16 +2750,21 @@ msgstr ""
 msgid "Downloading podcast"
 msgstr ""
 
+#: podcast/rb-podcast-main-source.c:186
+msgid "Error downloading podcast"
+msgstr ""
+
 #: podcast/rb-podcast-main-source.c:189
 msgid "Finished downloading podcast"
 msgstr ""
 
-#: podcast/rb-podcast-main-source.c:267
-msgid "New updates available from"
-msgstr ""
-
 #: podcast/rb-podcast-main-source.c:242
 msgid "Error in podcast"
+msgstr ""
+
+#: podcast/rb-podcast-main-source.c:244
+#, c-format
+msgid "There was a problem adding this podcast: %s.  Please verify the URL: %s"
 msgstr ""
 
 #: podcast/rb-podcast-main-source.c:250
@@ -2833,22 +2772,13 @@ msgstr ""
 msgid "%s. Would you like to add the podcast feed anyway?"
 msgstr ""
 
-#: ../podcast/rb-podcast-manager.c:931
-msgid "Error creating podcast download directory"
+#: podcast/rb-podcast-main-source.c:267
+msgid "New updates available from"
 msgstr ""
 
-#: ../podcast/rb-podcast-manager.c:932
+#: podcast/rb-podcast-manager.c:802
 #, c-format
-msgid "Unable to create the download directory for %s: %s"
-msgstr ""
-
-#: ../podcast/rb-podcast-manager.c:1051
-msgid "Invalid URL"
-msgstr ""
-
-#: ../podcast/rb-podcast-manager.c:1052
-#, c-format
-msgid "The URL \"%s\" is not valid, please check it."
+msgid "The URL '%s' does not appear to be a podcast feed. It may be the wrong URL, or the feed may be broken. Would you like Rhythmbox to attempt to use it anyway?"
 msgstr ""
 
 #. added as something else, probably iradio
@@ -2861,28 +2791,8 @@ msgstr ""
 msgid "The URL \"%s\" has already been added as a radio station. If this is a podcast feed, please remove the radio station."
 msgstr ""
 
-#: podcast/rb-podcast-manager.c:802
-#, c-format
-msgid "The URL '%s' does not appear to be a podcast feed. It may be the wrong URL, or the feed may be broken. Would you like Rhythmbox to attempt to use it anyway?"
-msgstr ""
-
 #: podcast/rb-podcast-manager.c:940
 msgid "Podcast"
-msgstr ""
-
-#: podcast/rb-podcast-main-source.c:244
-#, c-format
-msgid "There was a problem adding this podcast: %s.  Please verify the URL: %s"
-msgstr ""
-
-#: ../podcast/rb-podcast-parse.c:181
-#, c-format
-msgid "Unable to check file type: %s"
-msgstr ""
-
-#: ../podcast/rb-podcast-parse.c:200
-#, c-format
-msgid "Unexpected file type: %s"
 msgstr ""
 
 #: podcast/rb-podcast-parse.c:197
@@ -2968,7 +2878,7 @@ msgstr ""
 #. ensure search instances exist
 #: podcast/rb-podcast-source.c:1555 sources/rb-auto-playlist-source.c:253
 #: sources/rb-browser-source.c:314 sources/rb-browser-source.c:332
-#: sources/rb-static-playlist-source.c:295
+#: sources/rb-static-playlist-source.c:296
 msgid "Search all fields"
 msgstr ""
 
@@ -3439,66 +3349,62 @@ msgid "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:166
+#: shell/rb-playlist-manager.c:167
 msgid "MPEG Version 3.0 URL"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:167
+#: shell/rb-playlist-manager.c:168
 msgid "Shoutcast playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:168
+#: shell/rb-playlist-manager.c:169
 msgid "XML Shareable Playlist Format"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:265
-msgid "Unnamed playlist"
-msgstr ""
-
-#: shell/rb-playlist-manager.c:305
+#: shell/rb-playlist-manager.c:306
 msgid "The playlist file may be in an unknown format or corrupted."
 msgstr ""
 
-#: shell/rb-playlist-manager.c:764
+#: shell/rb-playlist-manager.c:765
 msgid "Untitled Playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:808 shell/rb-playlist-manager.c:851
+#: shell/rb-playlist-manager.c:809 shell/rb-playlist-manager.c:852
 msgid "New Playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1052
+#: shell/rb-playlist-manager.c:1053
 msgid "Couldn't read playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1078
+#: shell/rb-playlist-manager.c:1079
 msgid "All Files"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1083
+#: shell/rb-playlist-manager.c:1084
 msgid "Load Playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1139 sources/rb-playlist-source.c:665
+#: shell/rb-playlist-manager.c:1140 sources/rb-playlist-source.c:665
 msgid "Couldn't save playlist"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1139
+#: shell/rb-playlist-manager.c:1140
 msgid "Unsupported file extension given."
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1472
+#: shell/rb-playlist-manager.c:1473
 #, c-format
 msgid "Playlist %s already exists"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1502 shell/rb-playlist-manager.c:1535
-#: shell/rb-playlist-manager.c:1575 shell/rb-playlist-manager.c:1618
+#: shell/rb-playlist-manager.c:1503 shell/rb-playlist-manager.c:1536
+#: shell/rb-playlist-manager.c:1576 shell/rb-playlist-manager.c:1619
 #, c-format
 msgid "Unknown playlist: %s"
 msgstr ""
 
-#: shell/rb-playlist-manager.c:1543 shell/rb-playlist-manager.c:1583
+#: shell/rb-playlist-manager.c:1544 shell/rb-playlist-manager.c:1584
 #, c-format
 msgid "Playlist %s is an automatic playlist"
 msgstr ""
@@ -3706,27 +3612,27 @@ msgid "_Install"
 msgstr ""
 
 #: sources/rb-auto-playlist-source.c:254 sources/rb-browser-source.c:315
-#: sources/rb-static-playlist-source.c:296
+#: sources/rb-static-playlist-source.c:297
 msgid "Search artists"
 msgstr ""
 
 #: sources/rb-auto-playlist-source.c:255 sources/rb-browser-source.c:316
-#: sources/rb-static-playlist-source.c:297
+#: sources/rb-static-playlist-source.c:298
 msgid "Search composers"
 msgstr ""
 
 #: sources/rb-auto-playlist-source.c:256 sources/rb-browser-source.c:317
-#: sources/rb-static-playlist-source.c:298
+#: sources/rb-static-playlist-source.c:299
 msgid "Search albums"
 msgstr ""
 
 #: sources/rb-auto-playlist-source.c:257 sources/rb-browser-source.c:318
-#: sources/rb-static-playlist-source.c:299
+#: sources/rb-static-playlist-source.c:300
 msgid "Search titles"
 msgstr ""
 
 #: sources/rb-auto-playlist-source.c:258 sources/rb-browser-source.c:319
-#: sources/rb-static-playlist-source.c:300
+#: sources/rb-static-playlist-source.c:301
 msgid "Search genres"
 msgstr ""
 
@@ -3828,6 +3734,11 @@ msgstr ""
 
 #: sources/rb-library-source.c:1044
 msgid "Example Path:"
+msgstr ""
+
+#: sources/rb-library-source.c:1198 sources/rb-library-source.c:1202
+#: sources/rb-transfer-target.c:234
+msgid "Error transferring track"
 msgstr ""
 
 #: sources/rb-library-source.c:1284
@@ -3979,6 +3890,10 @@ msgstr ""
 
 #: widgets/rb-encoding-settings.c:56
 msgid "Variable bit rate"
+msgstr ""
+
+#: widgets/rb-encoding-settings.c:57
+msgid "Constrained Variable bit rate"
 msgstr ""
 
 #: widgets/rb-encoding-settings.c:404
@@ -4510,10 +4425,4 @@ msgstr ""
 #: widgets/rb-song-info.c:1339
 msgid "Unknown location"
 msgstr ""
-
-#~ msgid "Media Player Keys"
-#~ msgstr "Клавішы медыяпрайгравальніка"
-
-#~ msgid "Control Rhythmbox using key shortcuts"
-#~ msgstr "Кіраванне Rhythmbox клавіятурнымі скаротамі"
 

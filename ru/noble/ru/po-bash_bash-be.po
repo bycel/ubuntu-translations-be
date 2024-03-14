@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-11-28 12:51-0500\n"
-"PO-Revision-Date: 2024-03-07 15:42\n"
+"POT-Creation-Date: 2022-01-11 14:50-0500\n"
+"PO-Revision-Date: 2024-03-12 11:39\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2023-12-29 08:22+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-03-09 17:12+0000\n"
+"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: ru\n"
@@ -38,11 +38,6 @@ msgstr ""
 #: arrayfunc.c:496 builtins/declare.def:868
 #, c-format
 msgid "%s: cannot convert indexed to associative array"
-msgstr ""
-
-#: arrayfunc.c:578
-#, c-format
-msgid "%s: invalid associative array key"
 msgstr ""
 
 #: arrayfunc.c:777
@@ -245,6 +240,11 @@ msgstr ""
 msgid "%s: readonly variable"
 msgstr ""
 
+#: builtins/common.c:273
+#, c-format
+msgid "%s: cannot assign"
+msgstr ""
+
 #: builtins/common.c:281
 #, c-format
 msgid "%s: %s out of range"
@@ -353,6 +353,15 @@ msgstr ""
 msgid "can only be used in a function"
 msgstr ""
 
+#: builtins/declare.def:437
+msgid "cannot use `-f' to make functions"
+msgstr ""
+
+#: builtins/declare.def:464 execute_cmd.c:6132
+#, c-format
+msgid "%s: readonly function"
+msgstr ""
+
 #: builtins/declare.def:521 builtins/declare.def:804
 #, c-format
 msgid "%s: reference variable cannot be an array"
@@ -374,20 +383,6 @@ msgstr ""
 msgid "`%s': invalid variable name for name reference"
 msgstr ""
 
-#: builtins/declare.def:437
-msgid "cannot use `-f' to make functions"
-msgstr ""
-
-#: builtins/declare.def:464 execute_cmd.c:6132
-#, c-format
-msgid "%s: readonly function"
-msgstr ""
-
-#: builtins/declare.def:891
-#, c-format
-msgid "%s: quoted compound array assignment deprecated"
-msgstr ""
-
 #: builtins/declare.def:856
 #, c-format
 msgid "%s: cannot destroy array variables in this way"
@@ -396,6 +391,11 @@ msgstr ""
 #: builtins/declare.def:862 builtins/read.def:887
 #, c-format
 msgid "%s: cannot convert associative to indexed array"
+msgstr ""
+
+#: builtins/declare.def:891
+#, c-format
+msgid "%s: quoted compound array assignment deprecated"
 msgstr ""
 
 #: builtins/enable.def:145 builtins/enable.def:153
@@ -909,6 +909,11 @@ msgstr ""
 msgid "INFORM: "
 msgstr ""
 
+#: error.c:310
+#, c-format
+msgid "DEBUG warning: "
+msgstr ""
+
 #: error.c:488
 msgid "unknown command error"
 msgstr ""
@@ -981,6 +986,11 @@ msgstr ""
 #: execute_cmd.c:5957
 #, c-format
 msgid "%s: %s"
+msgstr ""
+
+#: execute_cmd.c:5975
+#, c-format
+msgid "%s: cannot execute: required file not found"
 msgstr ""
 
 #: execute_cmd.c:6000
@@ -2036,6 +2046,11 @@ msgstr ""
 msgid "%s: variable may not be assigned value"
 msgstr ""
 
+#: variables.c:2818 variables.c:2874
+#, c-format
+msgid "%s: cannot inherit value from incompatible type"
+msgstr ""
+
 #: variables.c:3459
 #, c-format
 msgid "%s: assigning integer to name reference"
@@ -2088,7 +2103,7 @@ msgid "%s: %s: compatibility value out of range"
 msgstr ""
 
 #: version.c:46 version2.c:46
-msgid "Copyright (C) 2020 Free Software Foundation, Inc."
+msgid "Copyright (C) 2022 Free Software Foundation, Inc."
 msgstr ""
 
 #: version.c:47 version2.c:47
@@ -2169,11 +2184,11 @@ msgid "command [-pVv] command [arg ...]"
 msgstr ""
 
 #: builtins.c:78
-msgid "declare [-aAfFgiIlnrtux] [-p] [name[=value] ...]"
+msgid "declare [-aAfFgiIlnrtux] [name[=value] ...] or declare -p [-aAfFilnrtux] [name ...]"
 msgstr ""
 
 #: builtins.c:80
-msgid "typeset [-aAfFgiIlnrtux] [-p] name[=value] ..."
+msgid "typeset [-aAfFgiIlnrtux] name[=value] ... or typeset -p [-aAfFilnrtux] [name ...]"
 msgstr ""
 
 #: builtins.c:82
@@ -2261,7 +2276,7 @@ msgid "return [n]"
 msgstr ""
 
 #: builtins.c:142
-msgid "set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]"
+msgid "set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]"
 msgstr ""
 
 #: builtins.c:144
@@ -2309,7 +2324,7 @@ msgid "type [-afptP] name [name ...]"
 msgstr ""
 
 #: builtins.c:171
-msgid "ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]"
+msgid "ulimit [-SHabcdefiklmnpqrstuvxPRT] [limit]"
 msgstr ""
 
 #: builtins.c:174
@@ -2349,11 +2364,11 @@ msgid "if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else C
 msgstr ""
 
 #: builtins.c:196
-msgid "while COMMANDS; do COMMANDS; done"
+msgid "while COMMANDS; do COMMANDS-2; done"
 msgstr ""
 
 #: builtins.c:198
-msgid "until COMMANDS; do COMMANDS; done"
+msgid "until COMMANDS; do COMMANDS-2; done"
 msgstr ""
 
 #: builtins.c:200
@@ -3069,7 +3084,7 @@ msgid "Evaluate arithmetic expressions.\n"
 "    If the last ARG evaluates to 0, let returns 1; let returns 0 otherwise."
 msgstr ""
 
-#: builtins.c:992
+#: builtins.c:994
 msgid "Read a line from the standard input and split it into fields.\n"
 "    \n"
 "    Reads a single line from the standard input, or from file descriptor FD\n"
@@ -3077,7 +3092,8 @@ msgid "Read a line from the standard input and split it into fields.\n"
 "    splitting, and the first word is assigned to the first NAME, the second\n"
 "    word to the second NAME, and so on, with any leftover words assigned to\n"
 "    the last NAME.  Only the characters found in $IFS are recognized as word\n"
-"    delimiters.\n"
+"    delimiters. By default, the backslash character escapes delimiter characters\n"
+"    and newline.\n"
 "    \n"
 "    If no NAMEs are supplied, the line read is stored in the REPLY variable.\n"
 "    \n"
@@ -3651,21 +3667,21 @@ msgid "Execute commands based on conditional.\n"
 "    Returns the status of the last command executed."
 msgstr ""
 
-#: builtins.c:1629
+#: builtins.c:1648
 msgid "Execute commands as long as a test succeeds.\n"
 "    \n"
-"    Expand and execute COMMANDS as long as the final command in the\n"
-"    `while' COMMANDS has an exit status of zero.\n"
+"    Expand and execute COMMANDS-2 as long as the final command in COMMANDS has\n"
+"    an exit status of zero.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns the status of the last command executed."
 msgstr ""
 
-#: builtins.c:1641
+#: builtins.c:1660
 msgid "Execute commands as long as a test does not succeed.\n"
 "    \n"
-"    Expand and execute COMMANDS as long as the final command in the\n"
-"    `until' COMMANDS has an exit status which is not zero.\n"
+"    Expand and execute COMMANDS-2 as long as the final command in COMMANDS has\n"
+"    an exit status which is not zero.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns the status of the last command executed."
@@ -3908,7 +3924,7 @@ msgid "Set and unset shell options.\n"
 "    given or OPTNAME is disabled."
 msgstr ""
 
-#: builtins.c:1919
+#: builtins.c:1938
 msgid "Formats and prints ARGUMENTS under control of the FORMAT.\n"
 "    \n"
 "    Options:\n"
@@ -3926,6 +3942,8 @@ msgid "Formats and prints ARGUMENTS under control of the FORMAT.\n"
 "    \n"
 "      %b\texpand backslash escape sequences in the corresponding argument\n"
 "      %q\tquote the argument in a way that can be reused as shell input\n"
+"      %Q\tlike %q, but apply any precision to the unquoted argument before\n"
+"    \t\tquoting\n"
 "      %(fmt)T\toutput the date-time string resulting from using FMT as a format\n"
 "    \t        string for strftime(3)\n"
 "    \n"
