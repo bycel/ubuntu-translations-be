@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-02-27 04:27+0100\n"
-"PO-Revision-Date: 2024-03-12 11:40\n"
+"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"PO-Revision-Date: 2024-03-26 06:52\n"
 "Last-Translator: \n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2024-03-09 17:13+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-03-24 14:20+0000\n"
+"X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: be\n"
@@ -19,8 +19,9 @@ msgstr ""
 "X-Crowdin-File-ID: 499\n"
 "Language: be_BY\n"
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-checkbuilddeps.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildpackage.pl
+#: scripts/dpkg-buildtree.pl scripts/dpkg-checkbuilddeps.pl
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
 #: scripts/dpkg-gensymbols.pl scripts/dpkg-mergechangelogs.pl
@@ -32,17 +33,17 @@ msgid "Debian %s version %s.\n"
 msgstr ""
 
 #: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-distaddfile.pl
-#: scripts/dpkg-genbuildinfo.pl scripts/dpkg-genchanges.pl
-#: scripts/dpkg-gencontrol.pl scripts/dpkg-gensymbols.pl
-#: scripts/dpkg-parsechangelog.pl scripts/dpkg-shlibdeps.pl
-#: scripts/dpkg-source.pl scripts/dpkg-vendor.pl
+#: scripts/dpkg-buildpackage.pl scripts/dpkg-buildtree.pl
+#: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
+#: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
+#: scripts/dpkg-gensymbols.pl scripts/dpkg-parsechangelog.pl
+#: scripts/dpkg-shlibdeps.pl scripts/dpkg-source.pl scripts/dpkg-vendor.pl
 msgid "\n"
 "This is free software; see the GNU General Public License version 2 or\n"
 "later for copying conditions. There is NO warranty.\n"
 msgstr ""
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-vendor.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl scripts/dpkg-vendor.pl
 #, perl-format
 msgid "Usage: %s [<option>...] [<command>]"
 msgstr ""
@@ -109,7 +110,8 @@ msgstr ""
 msgid "%s is not a supported variable name"
 msgstr ""
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildtree.pl
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
 #: scripts/dpkg-gensymbols.pl scripts/dpkg-name.pl
@@ -124,7 +126,7 @@ msgstr ""
 msgid "specified GNU system type %s does not match CC system type %s, try setting a correct CC environment variable"
 msgstr ""
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-shlibdeps.pl scripts/Dpkg/IPC.pm
+#: scripts/dpkg-architecture.pl scripts/Dpkg/IPC.pm
 #: scripts/Dpkg/Shlibs/Cppfilt.pm
 #, perl-format
 msgid "unable to execute %s"
@@ -145,7 +147,7 @@ msgstr ""
 msgid "no arguments accepted"
 msgstr ""
 
-#: scripts/dpkg-buildflags.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildtree.pl
 #, perl-format
 msgid "Usage: %s [<command>]"
 msgstr ""
@@ -456,7 +458,7 @@ msgstr ""
 
 #: scripts/dpkg-buildpackage.pl scripts/dpkg-checkbuilddeps.pl
 #: scripts/dpkg-genbuildinfo.pl scripts/dpkg-name.pl scripts/Dpkg/Arch.pm
-#: scripts/Dpkg/IPC.pm scripts/Dpkg/OpenPGP.pm scripts/Dpkg/Shlibs.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Shlibs.pm
 #, perl-format
 msgid "cannot open %s"
 msgstr ""
@@ -469,7 +471,7 @@ msgstr ""
 msgid "cannot close %s"
 msgstr ""
 
-#: scripts/dpkg-buildpackage.pl
+#: scripts/dpkg-buildpackage.pl scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "cannot move %s to %s"
 msgstr ""
@@ -589,11 +591,10 @@ msgstr ""
 
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-gencontrol.pl scripts/dpkg-mergechangelogs.pl
-#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/IPC.pm
-#: scripts/Dpkg/Interface/Storable.pm scripts/Dpkg/Source/Functions.pm
+#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/File.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Source/BinaryFiles.pm scripts/Dpkg/Source/Package.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Package/V3/Quilt.pm
-#: scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot write %s"
 msgstr ""
@@ -1095,8 +1096,8 @@ msgstr ""
 msgid "unconditional maintainer override for %s"
 msgstr ""
 
-#: scripts/dpkg-scanpackages.pl scripts/dpkg-shlibdeps.pl scripts/Dpkg/IPC.pm
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/dpkg-scanpackages.pl scripts/Dpkg/IPC.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "cannot fork for %s"
 msgstr ""
@@ -1429,12 +1430,11 @@ msgid "%s is not a supported compression"
 msgstr ""
 
 #: scripts/dpkg-source.pl scripts/Dpkg/Compression.pm
-#: scripts/Dpkg/Compression/Process.pm
 #, perl-format
 msgid "%s is not a compression level"
 msgstr ""
 
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-source.pl
+#: scripts/dpkg-source.pl
 msgid "-E and -W are deprecated, they are without effect"
 msgstr ""
 
@@ -1668,7 +1668,7 @@ msgstr ""
 #: scripts/Dpkg/BuildFlags.pm scripts/Dpkg/Compression/FileHandle.pm
 #: scripts/Dpkg/File.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Shlibs/Objdump.pm scripts/Dpkg/Source/BinaryFiles.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot read %s"
 msgstr ""
@@ -1698,12 +1698,12 @@ msgstr ""
 msgid "incorrect value in %s option of %s variable: %s"
 msgstr ""
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "cannot combine %s and %s"
 msgstr ""
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "unknown build type %s"
 msgstr ""
@@ -2303,22 +2303,22 @@ msgstr ""
 msgid "must start with an alphanumeric character"
 msgstr ""
 
-#: scripts/Dpkg/Vars.pm
+#: scripts/Dpkg/Package.pm
 #, perl-format
 msgid "source package name '%s' is illegal: %s"
 msgstr ""
 
-#: scripts/Dpkg/Vars.pm
+#: scripts/Dpkg/Package.pm
 #, perl-format
 msgid "source package has two conflicting values - %s and %s"
 msgstr ""
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' cannot be canonicalized"
 msgstr ""
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' points outside source root (to '%s')"
 msgstr ""
@@ -2331,17 +2331,17 @@ msgstr ""
 msgid "deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs.pm scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "unknown executable format in file '%s'"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "couldn't parse dynamic relocation record: %s"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "couldn't parse dynamic symbol definition: %s"
 msgstr ""
