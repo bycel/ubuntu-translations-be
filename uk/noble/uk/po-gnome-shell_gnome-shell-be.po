@@ -5,16 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell/issues/\n"
-"POT-Creation-Date: 2024-03-08 02:38+0000\n"
-"PO-Revision-Date: 2024-03-14 21:14\n"
-"Last-Translator: Yuras <shumovichy@gmail.com>\n"
+"POT-Creation-Date: 2024-03-22 10:18+0000\n"
+"PO-Revision-Date: 2024-03-25 09:03\n"
+"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2024-03-09 17:10+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-03-24 14:17+0000\n"
+"X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
 "Language: uk\n"
 "X-Project-Style: gnome\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Record a screencast interactively"
 msgstr ""
 
-#: data/50-gnome-shell-system.xml:6 js/ui/messageTray.js:1290
+#: data/50-gnome-shell-system.xml:6 js/ui/messageTray.js:1293
 msgid "System"
 msgstr ""
 
@@ -464,7 +464,7 @@ msgstr ""
 msgid "Visit extension homepage"
 msgstr ""
 
-#: js/gdm/authPrompt.js:151 js/gdm/loginDialog.js:466
+#: js/gdm/authPrompt.js:176 js/gdm/loginDialog.js:466
 #: js/ui/audioDeviceSelection.js:66 js/ui/components/networkAgent.js:114
 #: js/ui/components/polkitAgent.js:146 js/ui/endSessionDialog.js:438
 #: js/ui/extensionDownloader.js:289 js/ui/shellMountOperation.js:384
@@ -472,12 +472,20 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: js/gdm/authPrompt.js:317 js/ui/components/networkAgent.js:214
-#: js/ui/components/networkAgent.js:234 js/ui/components/networkAgent.js:266
-#: js/ui/components/networkAgent.js:299 js/ui/components/networkAgent.js:338
-#: js/ui/components/networkAgent.js:351 js/ui/components/polkitAgent.js:288
-#: js/ui/shellMountOperation.js:334
+#: js/gdm/authPrompt.js:352 js/gdm/util.js:69
+#: js/ui/components/networkAgent.js:214 js/ui/components/networkAgent.js:234
+#: js/ui/components/networkAgent.js:266 js/ui/components/networkAgent.js:299
+#: js/ui/components/networkAgent.js:338 js/ui/components/networkAgent.js:351
+#: js/ui/components/polkitAgent.js:288 js/ui/shellMountOperation.js:334
 msgid "Password"
+msgstr ""
+
+#: js/gdm/authPrompt.js:789
+msgid "Login Failed"
+msgstr ""
+
+#: js/gdm/authPrompt.js:790
+msgid "Please try again"
 msgstr ""
 
 #: js/gdm/loginDialog.js:327
@@ -520,48 +528,64 @@ msgstr ""
 msgid "Force Stop"
 msgstr ""
 
-#: js/gdm/loginDialog.js:542
+#: js/gdm/loginDialog.js:548
 msgid "Not listed?"
+msgstr ""
+
+#: js/gdm/loginDialog.js:639 js/ui/unlockDialog.js:595
+msgid "Login Options"
+msgstr ""
+
+#: js/gdm/loginDialog.js:655
+msgid "Session"
 msgstr ""
 
 #. Translators: this message is shown below the username entry field
 #. to clue the user in on how to login to the local network realm
-#: js/gdm/loginDialog.js:1010
+#: js/gdm/loginDialog.js:1102
 #, javascript-format
 msgid "(e.g., user or %s)"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1015 js/ui/components/networkAgent.js:258
+#: js/gdm/loginDialog.js:1107 js/ui/components/networkAgent.js:258
 #: js/ui/components/networkAgent.js:293 js/ui/components/networkAgent.js:327
 msgid "Username"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1081
+#: js/gdm/loginDialog.js:1171
 msgid "Stop conflicting session dialog closed"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1082
+#: js/gdm/loginDialog.js:1172
 #, javascript-format
 msgid "Try to login again to start a session for user %s."
 msgstr ""
 
-#: js/gdm/loginDialog.js:1426
+#: js/gdm/loginDialog.js:1558
 msgid "Login Window"
 msgstr ""
 
-#: js/gdm/util.js:497
+#: js/gdm/util.js:79
+msgid "Smartcard"
+msgstr ""
+
+#: js/gdm/util.js:89
+msgid "Fingerprint"
+msgstr ""
+
+#: js/gdm/util.js:652
 msgid "Authentication error"
 msgstr ""
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can swipe their finger on the fingerprint reader
-#: js/gdm/util.js:728
+#: js/gdm/util.js:1207
 msgid "(or swipe finger across reader)"
 msgstr ""
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can place their finger on the fingerprint reader instead
-#: js/gdm/util.js:733
+#: js/gdm/util.js:1212
 msgid "(or place finger on reader)"
 msgstr ""
 
@@ -2350,23 +2374,23 @@ msgstr ""
 
 #. Translators: This is a time format for a date in
 #. long format
-#: js/ui/unlockDialog.js:374
+#: js/ui/unlockDialog.js:375
 msgid "%A %B %-d"
 msgstr ""
 
-#: js/ui/unlockDialog.js:380
+#: js/ui/unlockDialog.js:381
 msgid "Swipe up to unlock"
 msgstr ""
 
-#: js/ui/unlockDialog.js:381
+#: js/ui/unlockDialog.js:382
 msgid "Click or press a key to unlock"
 msgstr ""
 
-#: js/ui/unlockDialog.js:564
+#: js/ui/unlockDialog.js:566
 msgid "Unlock Window"
 msgstr ""
 
-#: js/ui/unlockDialog.js:573
+#: js/ui/unlockDialog.js:582
 msgid "Log in as another user"
 msgstr ""
 
@@ -2555,7 +2579,7 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr ""
 
-#: subprojects/extensions-app/data/metainfo/org.gnome.Extensions.metainfo.xml.in:46
+#: subprojects/extensions-app/data/metainfo/org.gnome.Extensions.metainfo.xml.in:51
 msgid "GNOME Extensions handles updating extensions, configuring extension preferences and removing or disabling unwanted extensions."
 msgstr ""
 
@@ -3178,13 +3202,13 @@ msgstr ""
 
 #. translators:
 #. * The device has been disabled
-#: subprojects/gvc/gvc-mixer-control.c:1908
+#: subprojects/gvc/gvc-mixer-control.c:1872
 msgid "Disabled"
 msgstr ""
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1915
+#: subprojects/gvc/gvc-mixer-control.c:1879
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
@@ -3195,7 +3219,7 @@ msgstr[3] ""
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1925
+#: subprojects/gvc/gvc-mixer-control.c:1889
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
@@ -3204,7 +3228,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: subprojects/gvc/gvc-mixer-control.c:2876
+#: subprojects/gvc/gvc-mixer-control.c:2872
 msgid "System Sounds"
 msgstr ""
 
