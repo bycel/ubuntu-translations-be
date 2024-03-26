@@ -5,16 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-maps main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-maps/issues\n"
-"POT-Creation-Date: 2024-03-14 07:48+0000\n"
-"PO-Revision-Date: 2023-11-02 21:28+0000\n"
-"Last-Translator: Клюеў Аляксандр <Unknown>\n"
+"POT-Creation-Date: 2024-03-19 11:40+0000\n"
+"PO-Revision-Date: 2024-03-19 12:24+0000\n"
+"Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-03-17 14:46+0000\n"
+"X-Launchpad-Export-Date: 2024-03-24 14:30+0000\n"
 "X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
 "Language: be_BY\n"
 
@@ -55,7 +55,7 @@ msgstr ""
 "сотнямі тысяч людзей па ўсім свеце."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Maps.appdata.xml.in.in:444 src/mainWindow.js:644
+#: data/org.gnome.Maps.appdata.xml.in.in:468 src/mainWindow.js:644
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
@@ -153,7 +153,7 @@ msgid "Number of recently visited routes to store."
 msgstr "Колькасць нядаўна выкарыстаных маршрутаў, якую варта захоўваць."
 
 #: data/org.gnome.Maps.gschema.xml:61
-msgid "OpenStreetMap username or e-mail address"
+msgid "OpenStreetMap username or email address"
 msgstr "Імя карыстальніка або адрас электроннай пошты OpenStreetMap"
 
 #: data/org.gnome.Maps.gschema.xml:62
@@ -214,18 +214,18 @@ msgstr "_Экспартаваць"
 #. Translators: This is a tooltip
 #: data/ui/favorite-list-row.ui:72
 msgid "Remove Favorite"
-msgstr ""
+msgstr "Выдаліць з абраных"
 
 #: data/ui/favorites-popover.ui:11
-msgid "No favorites"
-msgstr ""
+msgid "No Favorites"
+msgstr "Няма абраных"
 
 #: data/ui/favorites-popover.ui:12
 msgid "Add places to your favorites to get them listed here"
-msgstr ""
+msgstr "Дадайце месцазнаходжанні ў абраныя і яны будуць паказвацца тут"
 
 #. Translators: This is a tooltip
-#: data/ui/headerbar-left.ui:11 src/geoclue.js:106
+#: data/ui/headerbar-left.ui:11 src/geoclue.js:106 src/placeBar.js:91
 msgid "Current Location"
 msgstr "Бягучае месцазнаходжанне"
 
@@ -388,11 +388,11 @@ msgstr "Уліковы запіс OpenStreetMap"
 
 #: data/ui/osm-account-dialog.ui:31
 msgid "Sign In To Edit Maps"
-msgstr ""
+msgstr "Увайдзіце, каб рэдагаваць карты"
 
 #: data/ui/osm-account-dialog.ui:32
 msgid "Help to improve the map, using an OpenStreetMap account."
-msgstr ""
+msgstr "Дапамажыце палепшыць карту праз уліковы запіс OpenStreetMap."
 
 #: data/ui/osm-account-dialog.ui:36
 msgid "Sign In"
@@ -400,16 +400,18 @@ msgstr "Увайсці"
 
 #: data/ui/osm-account-dialog.ui:59
 msgid "Verification"
-msgstr ""
+msgstr "Праверка"
 
 #: data/ui/osm-account-dialog.ui:60
 msgid ""
 "Copy the verification code shown when authorizing access in the browser."
 msgstr ""
+"Скапіруйце праверачны код, які паказваецца ў браўзеры падчас уваходу "
+"(Authorization code)"
 
 #: data/ui/osm-account-dialog.ui:69
 msgid "Verification Code"
-msgstr ""
+msgstr "Праверачны код"
 
 #: data/ui/osm-account-dialog.ui:75
 msgid "Verify"
@@ -417,7 +419,7 @@ msgstr "Пацвердзіць"
 
 #: data/ui/osm-account-dialog.ui:110
 msgid "Signed In"
-msgstr ""
+msgstr "Вы ўвайшлі"
 
 #: data/ui/osm-account-dialog.ui:111
 msgid "Your OpenStreetMap account is active."
@@ -477,7 +479,7 @@ msgstr ""
 msgid "Recently Used"
 msgstr "Нядаўна выкарыстаныя"
 
-#: data/ui/osm-edit-dialog.ui:225 src/mapView.js:663
+#: data/ui/osm-edit-dialog.ui:225 src/mapView.js:671
 msgid "Cancel"
 msgstr "Скасаваць"
 
@@ -671,7 +673,7 @@ msgid "Zoom Out"
 msgstr "Паменшыць"
 
 #. Translators: This is a tooltip
-#: data/ui/zoom-and-rotate-controls.ui:43 src/mapView.js:1238
+#: data/ui/zoom-and-rotate-controls.ui:43 src/mapView.js:1246
 msgid "Zoom In"
 msgstr "Павялічыць"
 
@@ -736,11 +738,11 @@ msgstr "Немагчыма экспартаваць вобласць прагл�
 
 #: src/favoriteListRow.js:42
 msgid "Favorite removed"
-msgstr ""
+msgstr "Выдалена з абраных"
 
 #: src/favoriteListRow.js:43
 msgid "Undo"
-msgstr ""
+msgstr "Адрабіць"
 
 #: src/geoJSONSource.js:73
 msgid "invalid coordinate"
@@ -831,15 +833,15 @@ msgstr "Пастаўшчык пошукавай сістэмы"
 msgid "Search provided by %s using %s"
 msgstr "Пошук забяспечваецца %s з дапамогай %s"
 
-#: src/mapView.js:637 src/mapView.js:702
+#: src/mapView.js:645 src/mapView.js:710
 msgid "Failed to open layer"
 msgstr "Не ўдалося адкрыць слой"
 
-#: src/mapView.js:656
+#: src/mapView.js:664
 msgid "Do you want to continue?"
 msgstr "Хочаце працягнуць?"
 
-#: src/mapView.js:657
+#: src/mapView.js:665
 #, javascript-format
 msgid ""
 "You are about to open files with a total size of %s MB. This could take some "
@@ -848,28 +850,28 @@ msgstr ""
 "Вы маеце намер адкрыць файлы агульным памерам %s МБ. На загрузку іх можа "
 "спатрэбіцца некаторы час"
 
-#: src/mapView.js:664 src/transitplugins/openTripPlanner.js:1239
+#: src/mapView.js:672 src/transitplugins/openTripPlanner.js:1239
 #: src/transitplugins/openTripPlanner2.js:267
 msgid "Continue"
 msgstr "Працягвайце рух"
 
-#: src/mapView.js:696
+#: src/mapView.js:704
 msgid "File type is not supported"
 msgstr "Тып файла не падтрымліваецца"
 
-#: src/mapView.js:733
+#: src/mapView.js:741
 msgid "Failed to open GeoURI"
 msgstr "Не ўдалося адкрыць GeoURI"
 
-#: src/mapView.js:1197
+#: src/mapView.js:1205
 msgid "Nothing found here!"
 msgstr "Тут нічога не знойдзена!"
 
-#: src/mapView.js:1237
+#: src/mapView.js:1245
 msgid "Zoom in to add location"
 msgstr "Павялічце, каб дадаць месцазнаходжанне"
 
-#: src/mapView.js:1258
+#: src/mapView.js:1266
 msgid "Location was added in OpenStreetMap"
 msgstr "Месца дададзена на OpenStreetMap"
 
@@ -953,20 +955,20 @@ msgstr ""
 "прыватнасці нумароў тэлефонаў."
 
 #: src/osmEditDialog.js:139 src/placeView.js:308
-msgid "E-mail"
+msgid "Email"
 msgstr "Электронная пошта"
 
 #: src/osmEditDialog.js:144
 msgid ""
-"This is not a valid e-mail address. Make sure to not include the mailto: "
+"This is not a valid email address. Make sure to not include the mailto: "
 "protocol prefix."
 msgstr ""
 "Гэта няправільны адрас электроннай пошты. Пераканайцеся, што ён не змяшчае "
-"прэфікс пратакола mailto:."
+"прэфікс пратакола mailto:"
 
 #: src/osmEditDialog.js:145
 msgid ""
-"Contact e-mail address for inquiries. Add only email addresses that are "
+"Contact email address for inquiries. Add only email addresses that are "
 "intended to be publicly used."
 msgstr ""
 "Адрас электроннай пошты для запытаў. Дадавайце толькі адрасы электроннай "
@@ -1001,7 +1003,7 @@ msgid "Altitude"
 msgstr "Вышыня над узроўнем мора"
 
 #: src/osmEditDialog.js:172
-msgid "Elevation (height above sea level) of a point in metres."
+msgid "Elevation (height above sea level) of a point in meters."
 msgstr "Вышыня пункта (над узроўнем мора) у метрах."
 
 #: src/osmEditDialog.js:175
@@ -1255,16 +1257,16 @@ msgstr "Нумар тэлефона"
 #. 
 #: src/placeView.js:323 src/placeView.js:362
 msgid "Floor"
-msgstr ""
+msgstr "Паверх"
 
 #: src/placeView.js:325
 #, javascript-format
 msgid "Floor %s"
-msgstr ""
+msgstr "%s паверх"
 
 #: src/placeView.js:337
 msgid "At ground level"
-msgstr ""
+msgstr "На ўзроўні зямлі"
 
 #. Translators:
 #. * This is a reference to a number of floors above
@@ -1275,8 +1277,9 @@ msgstr ""
 #, javascript-format
 msgid "%s floor above ground level"
 msgid_plural "%s floors above ground level"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s паверх вышэй за ўзровень зямлі"
+msgstr[1] "%s паверхі вышэй за ўзровень зямлі"
+msgstr[2] "%s паверхаў вышэй за ўзровень зямлі"
 
 #. Translators:
 #. * This is a reference to a number of floors below
@@ -1287,8 +1290,9 @@ msgstr[1] ""
 #, javascript-format
 msgid "%s floor below ground level"
 msgid_plural "%s floors below ground level"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s паверх ніжэй за ўзровень зямлі"
+msgstr[1] "%s паверхі ніжэй за ўзровень зямлі"
+msgstr[2] "%s паверхаў ніжэй за ўзровень зямлі"
 
 #. Translators:
 #. * The establishment offers customers to purchase meals
@@ -1421,15 +1425,15 @@ msgstr "На ўзроўні мора"
 msgid "Religion:"
 msgstr "Рэлігія:"
 
-#: src/place.js:568
+#: src/place.js:576
 msgid "Place not found in OpenStreetMap"
 msgstr "Месца не знойдзена на OpenStreetMap"
 
-#: src/place.js:575
+#: src/place.js:583
 msgid "Coordinates in URL are not valid"
 msgstr "Каардынаты ў URL несапраўдныя"
 
-#: src/place.js:584
+#: src/place.js:592
 msgid "URL is not supported"
 msgstr "URL не падтрымліваецца"
 
@@ -2197,6 +2201,9 @@ msgstr "Выканайце правы разварот на «%s»"
 msgid "Make a right u-turn"
 msgstr "Выканайце правы разварот"
 
+#~ msgid "OpenStreetMap username or e-mail address"
+#~ msgstr "Імя карыстальніка або адрас электроннай пошты OpenStreetMap"
+
 #~ msgid "<span weight=\"bold\" size=\"x-large\">Sign in to edit maps</span>"
 #~ msgstr ""
 #~ "<span weight=\"bold\" size=\"x-large\">Увайдзіце, каб рэдагаваць карты</span>"
@@ -2213,6 +2220,26 @@ msgstr "Выканайце правы разварот"
 
 #~ msgid "Verification code"
 #~ msgstr "Праверачны код"
+
+#~ msgid "E-mail"
+#~ msgstr "Электронная пошта"
+
+#~ msgid ""
+#~ "This is not a valid e-mail address. Make sure to not include the mailto: "
+#~ "protocol prefix."
+#~ msgstr ""
+#~ "Гэта няправільны адрас электроннай пошты. Пераканайцеся, што ён не змяшчае "
+#~ "прэфікс пратакола mailto:."
+
+#~ msgid ""
+#~ "Contact e-mail address for inquiries. Add only email addresses that are "
+#~ "intended to be publicly used."
+#~ msgstr ""
+#~ "Адрас электроннай пошты для запытаў. Дадавайце толькі адрасы электроннай "
+#~ "пошты, прызначаныя для публічнага выкарыстання."
+
+#~ msgid "Elevation (height above sea level) of a point in metres."
+#~ msgstr "Вышыня пункта (над узроўнем мора) у метрах."
 
 #~ msgid ""
 #~ "Sign in to authorize access in a web browser.\n"

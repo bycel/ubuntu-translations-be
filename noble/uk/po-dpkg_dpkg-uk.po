@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-02-27 04:27+0100\n"
+"POT-Creation-Date: 2024-03-10 20:20+0100\n"
 "PO-Revision-Date: 2020-12-04 05:44+0000\n"
 "Last-Translator: Mykola Tkach <chistomov@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-03-10 12:42+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-03-25 09:34+0000\n"
+"X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
 
 #: lib/dpkg/ar.c
 msgid "failed to fstat archive"
@@ -33,8 +33,8 @@ msgstr "не вдалося прочитати архів «%.255s»"
 msgid "unable to create '%.255s'"
 msgstr "не вдалося створити «%.255s»"
 
-#: lib/dpkg/ar.c lib/dpkg/dir.c src/divertcmd.c dpkg-split/join.c
-#: dpkg-split/queue.c utils/update-alternatives.c
+#: lib/dpkg/ar.c lib/dpkg/dir.c src/split/join.c src/split/queue.c
+#: src/divert/main.c utils/update-alternatives.c
 #, c-format
 msgid "unable to close file '%s'"
 msgstr "не можу закрити файл '%s'"
@@ -149,7 +149,7 @@ msgid "error creating new backup file '%s'"
 msgstr "помилка створення нового резервного файлу '%s'"
 
 #: lib/dpkg/atomic-file.c lib/dpkg/db-ctrl-upgrade.c lib/dpkg/triglib.c
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "cannot remove '%.250s'"
 msgstr "не вдалося вилучити «%.250s»"
@@ -175,13 +175,13 @@ msgstr "неочікуваний кінець файлу чи потоку"
 msgid "failed to seek"
 msgstr "не вдалося знайти"
 
-#: lib/dpkg/command.c lib/dpkg/path-remove.c src/unpack.c dpkg-split/split.c
-#: utils/update-alternatives.c
+#: lib/dpkg/command.c lib/dpkg/path-remove.c src/split/split.c
+#: src/main/unpack.c utils/update-alternatives.c
 #, c-format
 msgid "unable to execute %s (%s)"
 msgstr "неможливо виконати %s (%s)"
 
-#: src/help.c
+#: lib/dpkg/command.c
 msgid "PATH is not set"
 msgstr "не задана змінна оточення PATH"
 
@@ -493,7 +493,7 @@ msgstr "не вдалося перевірити існування файлу �
 msgid "cannot read info directory"
 msgstr "помилка читання інформаційного каталогу"
 
-#: lib/dpkg/db-ctrl-format.c src/unpack.c
+#: lib/dpkg/db-ctrl-format.c src/main/unpack.c
 #, c-format
 msgid "error trying to open %.250s"
 msgstr "помилка при спробі відкрити файл %.250s"
@@ -516,7 +516,7 @@ msgstr ""
 msgid "info file %s/%s not associated to any package"
 msgstr "інформаційний файл %s/%s не пов’язаний з жодним пакунком"
 
-#: lib/dpkg/db-ctrl-upgrade.c src/archives.c
+#: lib/dpkg/db-ctrl-upgrade.c src/main/archives.c
 #, c-format
 msgid "error creating hard link '%.255s'"
 msgstr "помилка створення жорсткого посилання «%.255s»"
@@ -712,13 +712,13 @@ msgstr "не можу синхронізувати директорію '%s'"
 msgid "unable to open directory '%s'"
 msgstr "не можу відкрити директорію '%s'"
 
-#: lib/dpkg/dir.c src/divertcmd.c utils/update-alternatives.c
+#: lib/dpkg/dir.c src/divert/main.c utils/update-alternatives.c
 #, c-format
 msgid "unable to open file '%s'"
 msgstr "не можу відкрити файл '%s'"
 
-#: lib/dpkg/dir.c src/divertcmd.c dpkg-deb/build.c dpkg-split/join.c
-#: dpkg-split/queue.c utils/update-alternatives.c
+#: lib/dpkg/dir.c src/deb/build.c src/split/join.c src/split/queue.c
+#: src/divert/main.c utils/update-alternatives.c
 #, c-format
 msgid "unable to sync file '%s'"
 msgstr "не можу синхронізувати файл '%s'"
@@ -1116,35 +1116,35 @@ msgstr "<стан пакунку та дескриптор файлу-індик
 msgid "unable to write to status fd %d"
 msgstr "не вдається записати у статусі fd %d"
 
-#: lib/dpkg/mlib.c utils/update-alternatives.c
+#: lib/dpkg/mustlib.c utils/update-alternatives.c
 msgid "failed to allocate memory"
 msgstr "виділення памяті зазнало невдачі"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 #, c-format
 msgid "failed to dup for fd %d"
 msgstr "виконання функції dup для fd %d зазнало невдачі"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 #, c-format
 msgid "failed to dup for std%s"
 msgstr "виконання функції dup для std%s зазнало невдачі"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 msgid "failed to create pipe"
 msgstr "створення пайпи зазнало невдачі"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 #, c-format
 msgid "error writing to '%s'"
 msgstr "помилка запису до '%s'"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 #, c-format
 msgid "unable to read filedescriptor flags for %.250s"
 msgstr "неможливо прочитати прапорці дескриптора файлу для %.250s"
 
-#: lib/dpkg/mlib.c
+#: lib/dpkg/mustlib.c
 #, c-format
 msgid "unable to set close-on-exec flag for %.250s"
 msgstr "невдалося встановити прапорець close-on-exec для %.250s"
@@ -1233,7 +1233,7 @@ msgstr "-%c опція приймає значення"
 msgid "-%c option does not take a value"
 msgstr "-%c опція не може приймати значення"
 
-#: lib/dpkg/options.c dpkg-split/main.c
+#: lib/dpkg/options.c src/split/main.c
 #, c-format
 msgid "invalid integer for --%s: '%.250s'"
 msgstr "некоректне ціле значення аргументу --%s: «%.250s»"
@@ -1874,82 +1874,82 @@ msgstr ""
 msgid "error formatting string into varbuf variable"
 msgstr "помилка при форматуванні рядка у змінну varbuf"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Set all force options"
 msgstr "Встановити усі параметри ігнорування"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Use MAC based security if available"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 msgid "Replace a package with a lower version"
 msgstr "Замінити пакунок на пакунки з меншою версією"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Configure any package which may help this one"
 msgstr "Налаштувати будь-який пакунок, який може допомогти цьому"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Install or remove incidental packages even when on hold"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 msgid "Try to (de)install things even when not root"
 msgstr ""
 "Спробувати виконати встановлення/вилучення навіть не маючи прав "
 "суперкористувача"
 
-#: src/force.c
+#: src/common/force.c
 msgid "PATH is missing important programs, problems likely"
 msgstr "У PATH відсутні важливі програми, можливі проблеми"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Install a package even if it fails authenticity check"
 msgstr "Встановити пакунок, навіть якщо він не пройде автентифікацію"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Process even packages with wrong versions"
 msgstr "Обробляти пакунки навіть з помилковими версіями"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Overwrite an existing stat override when adding it"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 msgid "Ignore a missing stat override when removing it"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 msgid "Overwrite a file from one package with another"
 msgstr "Перезаписувати файл з одного пакунку файлом іншого пакунку"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Overwrite a diverted file with an undiverted version"
 msgstr "Перезаписувати відхилений файл його невідхиленою версією"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Overwrite one package's directory with another's file"
 msgstr "Перезаписувати каталог з одного пакунку файлом іншого пакунку"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Do not perform safe I/O operations when unpacking"
 msgstr "Не виконувати безпечні операції вводу-виводу при розпакуванні"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Do not chroot into maintainer script environment"
 msgstr ""
 "Не змінювати кореневий каталогу на середовище сценарію супроводжувача"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Always use the new config files, don't prompt"
 msgstr "Завжди використовувати нові файли налаштувань нічого не пропонуючи"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Always use the old config files, don't prompt"
 msgstr "Завжди використовувати старі файли налаштувань нічого не пропонуючи"
 
-#: src/force.c
+#: src/common/force.c
 msgid ""
 "Use the default option for new config files if one\n"
 "is available, don't prompt. If no default can be found,\n"
@@ -1961,43 +1961,43 @@ msgstr ""
 "Якщо він не знайдений, то видається запит, якщо лише\n"
 "не вказані параметри confold та"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Always install missing config files"
 msgstr "Завжди встановлювати відсутні файли налаштування"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Offer to replace config files with no new versions"
 msgstr "Пропонувати заміну файлів налаштування на старі версії"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Process even packages with wrong or no architecture"
 msgstr "Обробляти навіть пакунки з неправильною або зовсім без архітектури"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Install even if it would break another package"
 msgstr "Встановлювати, навіть якщо це поламає інший пакунок"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Allow installation of conflicting packages"
 msgstr "Дозволити встановлення конфліктуючих пакунків"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Turn all dependency problems into warnings"
 msgstr "Перетворити усі проблеми з залежностями у попередження"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Turn dependency version problems into warnings"
 msgstr "Перетворити усі проблеми з залежностями з-за версій у попередження"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Remove packages which require installation"
 msgstr "Вилучити пакунки, що потребують встановлення"
 
-#: src/force.c
+#: src/common/force.c
 msgid "Remove a protected package"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 msgid "Remove an essential package"
 msgstr "Вилучити пакунок першої необхідності"
 
@@ -2010,7 +2010,7 @@ msgid ""
 " Forcing things:\n"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 #, c-format
 msgid ""
 "\n"
@@ -2021,14 +2021,15 @@ msgstr ""
 "ПОПЕРЕДЖЕННЯ: Використання параметрів, позначених [!], може серйозно\n"
 "пошкодити систему. Параметри, позначені [*], залучені типово.\n"
 
-#: src/archives.c src/divertcmd.c src/enquiry.c src/force.c src/main.c
-#: src/packages.c src/querycmd.c src/select.c src/statcmd.c src/trigcmd.c
-#: src/verify.c dpkg-deb/build.c dpkg-deb/extract.c dpkg-deb/info.c
-#: dpkg-deb/main.c dpkg-split/info.c dpkg-split/main.c dpkg-split/queue.c
+#: src/common/force.c src/deb/build.c src/deb/extract.c src/deb/info.c
+#: src/deb/main.c src/split/info.c src/split/main.c src/split/queue.c
+#: src/divert/main.c src/statoverride/main.c src/trigger/main.c
+#: src/query/main.c src/main/archives.c src/main/enquiry.c src/main/main.c
+#: src/main/packages.c src/main/select.c src/main/verify.c
 msgid "<standard output>"
 msgstr "<стандартний вивід>"
 
-#: src/force.c
+#: src/common/force.c
 #, c-format
 msgid ""
 "\n"
@@ -2036,60 +2037,60 @@ msgid ""
 " %s\n"
 msgstr ""
 
-#: src/force.c
+#: src/common/force.c
 #, c-format
 msgid "unknown force/refuse option '%.*s'"
 msgstr "неприпустимий параметр нехтування/обробки проблем «%.*s»"
 
-#: src/force.c
+#: src/common/force.c
 #, c-format
 msgid "obsolete force/refuse option '%s'"
 msgstr "застарілий параметр примусу/відмови «%s»"
 
-#: src/force.c
+#: src/common/force.c
 msgid "overriding problem because --force enabled:"
 msgstr "проблема ігнорується, оскільки задано параметр --force:"
 
-#: src/selinux.c
+#: src/common/selinux.c
 msgid "cannot open security status notification channel"
 msgstr "неможливо відкрити канал сповіщень про стан безпеки"
 
-#: src/selinux.c
+#: src/common/selinux.c
 msgid "cannot get security labeling handle"
 msgstr "неможливо отримати опитувач маркувальника безпеки"
 
-#: src/selinux.c
+#: src/common/selinux.c
 #, c-format
 msgid "cannot set security context for file object '%s'"
 msgstr "неможливо вказати контекст безпеки для файлового об’єкту «%s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "failed to write filename to tar pipe (%s)"
 msgstr "не вдалося записати ім’я файлу у канал програми tar (%s)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "control member"
 msgstr "керуючий елемент"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "newline not allowed in pathname '%s'"
 msgstr "новий рядок, не допускається в імені шляху '%s'"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "data member"
 msgstr "елемент даних"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "unable to stat control directory"
 msgstr "не вдалося виконати stat для каталогу control"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "control directory is not a directory"
 msgstr "каталог control не є каталогом"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid ""
 "control directory has bad permissions %03lo (must be >=0755 and <=0775)"
@@ -2097,14 +2098,14 @@ msgstr ""
 "каталог control має неприпустимі права доступу %03lo (має бути >=0755 и "
 "<=0775)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "maintainer script '%.50s' is not a plain file or symlink"
 msgstr ""
 "сценарій супроводжувача «%.50s» не є звичайним файлом або символьним "
 "посиланням"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid ""
 "maintainer script '%.50s' has bad permissions %03lo (must be >=0555 and "
@@ -2113,100 +2114,100 @@ msgstr ""
 "у сценарію супроводжувача «%.50s» встановлено неприпустимі права доступу "
 "%03lo (має бути >=0755 і <=0775)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "maintainer script '%.50s' is not stattable"
 msgstr "отримати інформацію про сценарії супроводжувача «%.50s» неможливо"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "error opening conffiles file"
 msgstr "помилка при відкритті списку conffiles-файлів"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "empty string from fgets reading conffiles"
 msgstr ""
 "при читанні списку файлів налаштування функція fgets повернула порожній рядок"
 
-#: src/unpack.c dpkg-deb/build.c
+#: src/deb/build.c src/main/unpack.c
 #, c-format
 msgid "conffile name '%s' is too long, or missing final newline"
 msgstr ""
 "ім’я conffile-файлу «%s» задовге або у кінці немає символу нового рядка"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "empty and whitespace-only lines are not allowed in conffiles"
 msgstr ""
 
-#: src/unpack.c dpkg-deb/build.c
+#: src/deb/build.c src/main/unpack.c
 #, c-format
 msgid "line with conffile filename '%s' has leading white spaces"
 msgstr ""
 
-#: src/unpack.c dpkg-deb/build.c
+#: src/deb/build.c src/main/unpack.c
 #, c-format
 msgid "conffile name '%s' is not an absolute pathname"
 msgstr ""
 
-#: src/unpack.c dpkg-deb/build.c
+#: src/deb/build.c src/main/unpack.c
 #, c-format
 msgid "conffile name missing after flag '%s'"
 msgstr ""
 
-#: src/unpack.c dpkg-deb/build.c
+#: src/deb/build.c src/main/unpack.c
 #, c-format
 msgid "unknown flag '%s' for conffile '%s'"
 msgstr ""
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile filename '%s' contains trailing white spaces"
 msgstr "ім’я conffile-файлу «%s» містить у кінці пробільні символи"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile '%.250s' does not appear in package"
 msgstr "у пакунку відсутній conffile «%.250s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile '%.250s' is not stattable"
 msgstr "неможливо отримати інформацію про conffile-файл «%.250s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile '%s' is present but is requested to be removed"
 msgstr ""
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile '%s' is not a plain file"
 msgstr "conffile-файл «%s» не є звичайним файлом"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "conffile name '%s' is duplicated"
 msgstr "повторюване ім’я conffile «%s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "error reading conffiles file"
 msgstr "помилка читання списку conffiles-файлів"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "package name has characters that aren't lowercase alphanums or '-+.'"
 msgstr ""
 "ім’я пакунку містить символи, що відрізняються від рядкових латинських "
 "літер, цифр або «-+»."
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "package architecture is missing or empty"
 msgstr "архітектура пакунку відсутня або порожня"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "'%s' contains user-defined Priority value '%s'"
 msgstr "«%s» містить визначене користувачем значення пріоритету «%s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "ignoring %d warning about the control file(s)"
 msgid_plural "ignoring %d warnings about the control file(s)"
@@ -2214,164 +2215,164 @@ msgstr[0] "проігноровано %d попередження про кер�
 msgstr[1] "проігноровано %d попередження про керуючі файли"
 msgstr[2] "проігноровано %d попереджень про керуючі файли"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "unable to check for existence of archive '%.250s'"
 msgstr "не вдалося перевірити існування архіву «%.250s»"
 
-#: src/script.c dpkg-deb/build.c
+#: src/deb/build.c src/main/script.c
 #, c-format
 msgid "failed to chdir to '%.255s'"
 msgstr "не вдалося перейти у каталог «%.255s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "compressing tar member"
 msgstr "стиснення складової tar"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "<compress> from tar -cf"
 msgstr "<compress> з tar -cf"
 
-#: dpkg-deb/build.c dpkg-split/split.c
+#: src/deb/build.c src/split/split.c
 #, c-format
 msgid "unable to parse timestamp '%.255s'"
 msgstr "неможливо розібрати мітку часу «%.255s»"
 
-#: dpkg-deb/build.c utils/update-alternatives.c
+#: src/deb/build.c utils/update-alternatives.c
 #, c-format
 msgid "--%s needs a <directory> argument"
 msgstr "--%s вимагається аргумент <каталог>"
 
-#: src/querycmd.c dpkg-deb/build.c
+#: src/deb/build.c src/query/main.c
 #, c-format
 msgid "--%s takes at most two arguments"
 msgstr "--%s може мати не більше двох аргументів"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "target is directory - cannot skip control file check"
 msgstr ""
 "у якості місця призначення вказано каталог, пропустити перевірку керуючого "
 "файлу неможливо"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 msgid "not checking contents of control area"
 msgstr "не перевіряється вміст керуючої області"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "building an unknown package in '%s'."
 msgstr "побудова невідомого пакунку в «%s»."
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "building package '%s' in '%s'."
 msgstr "побудова пакунку «%s» в «%s»."
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "failed to make temporary file (%s)"
 msgstr "не вдалося створити тимчасовий файл (%s)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "failed to unlink temporary file (%s), %s"
 msgstr "не вдалося вилучити тимчасовий файл (%s), %s"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "failed to rewind temporary file (%s)"
 msgstr "не вдалося перейти до початку тимчасового файлу (%s)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "failed to stat temporary file (%s)"
 msgstr "не вдалося виконати stat для тимчасового файлу (%s)"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "error writing '%s'"
 msgstr "помилка запису «%s»"
 
-#: dpkg-deb/build.c
+#: src/deb/build.c
 #, c-format
 msgid "cannot copy '%s' into archive '%s': %s"
 msgstr "не вдалося скопіювати «%s» у архів «%s»: %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "shell command to move files"
 msgstr "команда оболонки для переміщення файлів"
 
-#: dpkg-deb/extract.c dpkg-split/main.c
+#: src/deb/extract.c src/split/main.c
 #, c-format
 msgid "unexpected end of file in %s in %.255s"
 msgstr "неочікуваний кінець файлу, не вдалося прочитати %s з файлу %.255s"
 
-#: dpkg-deb/extract.c dpkg-split/main.c
+#: src/deb/extract.c src/split/main.c
 #, c-format
 msgid "error reading %s from file %.255s"
 msgstr "не вдалося прочитати %s з файлу %.255s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "archive magic version number"
 msgstr "відмітний номер версії архіву"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "archive member header"
 msgstr "заголовок елементу архіву"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad archive header magic"
 msgstr ""
 "файл «%.250s» пошкоджено — неправильний відмітний номер заголовку архіву"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "file '%.250s' is not a Debian binary archive (try dpkg-split?)"
 msgstr "файл «%.250s» не є двійковим архівом Debian (спробуйте dpkg-split?)"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "archive information header member"
 msgstr "елемент інформаційного заголовку архіву"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "archive has no newlines in header"
 msgstr "у заголовку архіву немає символів кінця рядка"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive has invalid format version: %s"
 msgstr "архів з некоректним форматом версії: %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive is format version %d.%d; get a newer dpkg-deb"
 msgstr "архів має формат версії %d.%d; використовуйте новіший dpkg-deb"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "cannot skip archive member from '%s': %s"
 msgstr "неможливо пропустити елемент архіву з «%s»: %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive '%s' uses unknown compression for member '%.*s', giving up"
 msgstr ""
 "у архіві «%s» використовується невідомий метод стиснення для «%.*s», "
 "припиняємо"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive '%.250s' contains two control members, giving up"
 msgstr "архів «%.250s» містить два керуючих элементи, здаємося"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive '%s' has premature member '%.*s' before '%s', giving up"
 msgstr ""
 "у архіві «%s» міститься передчасний елемент «%.*s», до «%s», припиняємо"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid ""
 " new Debian package, version %d.%d.\n"
@@ -2380,22 +2381,22 @@ msgstr ""
 " новий пакунок Debian, версія %d.%d.\n"
 " розмір %jd Б: керуючий архів=%jd Б.\n"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "archive control member size"
 msgstr "розмір керуючого елементу архіву"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "archive has malformed control member size '%s'"
 msgstr ""
 "запис про довжину керівної інформації архіву «%s» має неприпустимий формат"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "cannot skip archive control member from '%s': %s"
 msgstr "неможливо пропустити керуючий елемент архіву з «%s»: %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid ""
 " old Debian package, version %d.%d.\n"
@@ -2404,7 +2405,7 @@ msgstr ""
 " старий пакунок Debian, версія %d.%d.\n"
 " розмір %jd Б: керуючий архів=%jd, основний архів=%jd..\n"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid ""
 "file looks like it might be an archive which has been\n"
 " corrupted by being downloaded in ASCII mode"
@@ -2412,69 +2413,69 @@ msgstr ""
 "файл виглядає так ніби він був\n"
 " пошкоджений шляхом завантаження у ASCII режимі"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "'%.255s' is not a Debian format archive"
 msgstr "«%.255s» не є форматом архіву Debian"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "cannot copy archive member from '%s' to decompressor pipe: %s"
 msgstr ""
 "неможливо скопіювати елемент архіву з «%s» у канал розтискаючого процесу: %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "cannot close decompressor pipe"
 msgstr "неможливо закрити канал розтискаючого процесу"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "decompressing archive '%s' (size=%jd) member '%s'"
 msgstr ""
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "failed to create directory"
 msgstr "не вдалося створити каталог"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "unexpected pre-existing pathname %s"
 msgstr "несподіваний раніше наявний шлях %s"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "failed to chdir to directory"
 msgstr "не вдалося перейти у каталог"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "<decompress>"
 msgstr "<decompress>"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 msgid "paste"
 msgstr "вставити"
 
-#: dpkg-deb/extract.c dpkg-deb/info.c
+#: src/deb/extract.c src/deb/info.c
 #, c-format
 msgid "--%s needs a .deb filename argument"
 msgstr "--%s вимагає вказування у якості аргументу ім’я файлу .deb"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "--%s takes only one argument (.deb filename)"
 msgstr "--%s приймає лише один аргумент (ім’я файлу .deb)"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "--%s takes at most two arguments (.deb and directory)"
 msgstr "--%s приймає не більше двох аргументів (ім’я файлу .deb та каталог)"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "--%s needs .deb filename and directory arguments"
 msgstr ""
 "--%s потребує вказування у якості аргументу ім’я файлу .deb або каталог"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid ""
 "--%s needs a target directory.\n"
@@ -2483,33 +2484,33 @@ msgstr ""
 "--%s вимагає вказування каталогу призначення.\n"
 "Ймовірно, вам потрібно використовувати dpkg --install"
 
-#: dpkg-deb/extract.c
+#: src/deb/extract.c
 #, c-format
 msgid "--%s does not support (yet) reading the .deb from standard input"
 msgstr "--%s не підтримує (поки що), прочитання . deb зі стандартного вводу"
 
-#: src/unpack.c dpkg-deb/info.c
+#: src/deb/info.c src/main/unpack.c
 msgid "unable to create temporary directory"
 msgstr "не вдалося створити тимчасовий каталог"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "cannot extract control file '%s' from '%s': %s"
 msgstr "не вдалося витягти керуючий файл «%s» з «%s»: %s"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "'%.255s' contains no control component '%.255s'"
 msgstr "«%.255s» не містить керуючого компоненту «%.255s»"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "open component '%.255s' (in %.255s) failed in an unexpected way"
 msgstr ""
 "з незрозумілої причини не вдалося відкрити компонент «%.255s» (каталог "
 "%.255s)"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "%d requested control component is missing"
 msgid_plural "%d requested control components are missing"
@@ -2517,27 +2518,27 @@ msgstr[0] "відсутній %d запитуваний керуючий ком�
 msgstr[1] "відсутньо %d запитуваних керуючих компоненти"
 msgstr[2] "відсутньо %d запитуваних керуючих компонентів"
 
-#: dpkg-deb/info.c utils/update-alternatives.c
+#: src/deb/info.c utils/update-alternatives.c
 #, c-format
 msgid "cannot scan directory '%.255s'"
 msgstr "не вдалося продивитися каталог «%.255s»"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "cannot stat '%.255s' (in '%.255s')"
 msgstr "не вдалося отримати інформацію про файл «%.255s» (в «%.255s»)"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "cannot open '%.255s' (in '%.255s')"
 msgstr "не вдалося відкрити файл «%.255s» (в «%.255s»)"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "failed to read '%.255s' (in '%.255s')"
 msgstr "помилка читання файлу «%.255s» (в «%.255s»)"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid " %7jd bytes, %5d lines   %c  %-20.127s %.127s\n"
 msgstr " %7jd байт(и), %5d рядків %c %-20.127s %.127s\n"
@@ -2547,32 +2548,33 @@ msgstr " %7jd байт(и), %5d рядків %c %-20.127s %.127s\n"
 msgid " %7jd bytes, %5d lines   %c  %.127s\n"
 msgstr ""
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 #, c-format
 msgid "     not a plain file          %.255s\n"
 msgstr "     не є звичайним файлом %.255s\n"
 
-#: dpkg-deb/info.c
+#: src/deb/info.c
 msgid "no 'control' file in control archive!"
 msgstr "немає керуючого файла в керуючому архіві!"
 
-#: src/querycmd.c dpkg-deb/info.c
+#: src/deb/info.c src/query/main.c
 #, c-format
 msgid "error in show format: %s"
 msgstr "помилка у форматі показу: %s"
 
-#: src/main.c dpkg-deb/info.c
+#: src/deb/info.c src/main/main.c
 #, c-format
 msgid "--%s takes exactly one argument"
 msgstr "параметр --%s приймає рівно один аргумент"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "Debian '%s' package archive backend version %s.\n"
 msgstr "Проґрама роботи з архівами пакунків Debian «%s», версія %s.\n"
 
-#: src/divertcmd.c src/main.c src/querycmd.c src/statcmd.c src/trigcmd.c
-#: dpkg-deb/main.c dpkg-split/main.c utils/update-alternatives.c
+#: src/deb/main.c src/split/main.c src/divert/main.c src/statoverride/main.c
+#: src/trigger/main.c src/query/main.c src/main/main.c
+#: utils/update-alternatives.c
 #, c-format
 msgid ""
 "This is free software; see the GNU General Public License version 2 or\n"
@@ -2582,14 +2584,14 @@ msgstr ""
 "Універсальній суспільній ліцензії GNU версії 2 або пізнішої.\n"
 "НІЯКІ гарантії не надаються.\n"
 
-#: src/divertcmd.c src/main.c src/querycmd.c dpkg-deb/main.c
+#: src/deb/main.c src/divert/main.c src/query/main.c src/main/main.c
 #, c-format
 msgid ""
 "Usage: %s [<option>...] <command>\n"
 "\n"
 msgstr ""
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -2608,7 +2610,8 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/main.c src/querycmd.c src/trigcmd.c dpkg-deb/main.c dpkg-split/main.c
+#: src/deb/main.c src/split/main.c src/trigger/main.c src/query/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "  -?, --help                       Show this help message.\n"
@@ -2619,7 +2622,7 @@ msgstr ""
 "      --version Вивести номер версії\n"
 "\n"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid ""
 "<deb> is the filename of a Debian format archive.\n"
@@ -2659,7 +2662,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/querycmd.c dpkg-deb/main.c
+#: src/deb/main.c src/query/main.c
 #, c-format
 msgid ""
 "Format syntax:\n"
@@ -2681,7 +2684,7 @@ msgstr ""
 "  ${поле[;ширина]}. Поля вирівнюються по правому краю, якщо ширина\n"
 "  не негативна й по лівому у протилежному випадку.\n"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid ""
 "\n"
@@ -2695,7 +2698,7 @@ msgstr ""
 "«aptitude». Пакунки, розпаковані за допомогою «dpkg-deb --extract»,\n"
 "будуть встановлені неправильно!\n"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 msgid ""
 "Type dpkg-deb --help for help about manipulating *.deb files;\n"
 "Type dpkg --help for help about installing and deinstalling packages."
@@ -2704,209 +2707,210 @@ msgstr ""
 "Щоб отримати інформацію про встановлення та вилучення пакунків, уведіть dpkg "
 "--help."
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "invalid deb format version: %s"
 msgstr "невірний формат версії deb: %s"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "unknown deb format version: %s"
 msgstr "невідомий формат версії deb: %s"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "unknown compression strategy '%s'!"
 msgstr "невідома стратегія стиснення «%s»!"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "unknown compression type '%s'!"
 msgstr "невідомий тип стиснення «%s»!"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "obsolete compression type '%s'; use xz instead"
 msgstr "застарілий тип стистення «%s»; натомість використовуйте xz"
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
 #, c-format
 msgid "obsolete compression type '%s'; use xz or gzip instead"
 msgstr "застарілий тип стистення «%s»; натомість використовуйте xz або gzip"
 
-#: src/main.c src/querycmd.c src/statcmd.c dpkg-deb/main.c dpkg-split/main.c
+#: src/deb/main.c src/split/main.c src/statoverride/main.c src/query/main.c
+#: src/main/main.c
 msgid "need an action option"
 msgstr "вкажіть потрібну дію"
-
-#: dpkg-deb/main.c
-#, c-format
-msgid "invalid compressor parameters: %s"
-msgstr "некоректні параметри компресору: %s"
 
 #: src/deb/main.c
 #, c-format
 msgid "unsupported deb format '%d.%d' with non-uniform compression"
 msgstr ""
 
-#: dpkg-deb/main.c
+#: src/deb/main.c
+#, c-format
+msgid "invalid compressor parameters: %s"
+msgstr "некоректні параметри компресору: %s"
+
+#: src/deb/main.c
 #, c-format
 msgid "unsupported compression type '%s' with uniform compression"
 msgstr "непідтримуваний тип стиснення '%s' з однорідним стисненням"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad digit (code %d) in %s"
 msgstr "файл «%.250s» пошкоджений — не цифра (код символу %d) в %s"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%s' is corrupt; out of range integer in %s"
 msgstr "файл «%s» пошкоджено — у %s вказано ціле поза діапазоном"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - %.250s missing"
 msgstr "файл «%.250s» пошкоджений — відсутній %.250s"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - missing newline after %.250s"
 msgstr ""
 "файл «%.250s» пошкоджений — відсутній символ кінця рядка після %.250s"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "error reading %.250s"
 msgstr "помилка читання %.250s"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad magic at end of first header"
 msgstr ""
 "файл «%.250s» пошкоджений — неприпустимий ідентифікатор типу у кінці першого "
 "заголовку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad padding character (code %d)"
 msgstr "файл «%.250s» пошкоджений — неприпустимі символи заповнення (код %d)"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - nulls in info section"
 msgstr "файл «%.250s» пошкоджений — нульові символи в інформаційному розділі"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "format version number"
 msgstr "формат номеру версії"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' has invalid format version: %s"
 msgstr "файл %.250s має некоректний формат версії: %s"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is format version %d.%d; get a newer dpkg-split"
 msgstr "файл «%.250s» має формат версії %d.%d; вам потрібен новий dpkg-split"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "package name"
 msgstr "ім’я пакунку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "package version number"
 msgstr "номер версії пакунку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "package file MD5 checksum"
 msgstr "контрольна сума MD5 файлу пакунку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad MD5 checksum '%.250s'"
 msgstr "файл «%.250s» пошкоджений — невірна сума MD5 «%.250s»"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "archive total size"
 msgstr "загальний розмір архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "archive part offset"
 msgstr "зміщення частини архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "archive part numbers"
 msgstr "номери частин архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - no slash between archive part numbers"
 msgstr ""
 "файл «%.250s» пошкоджено — відсутня коса риска між номерами частин архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "number of archive parts"
 msgstr "кількість частин архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad number of archive parts"
 msgstr "файл «%.250s» пошкоджено — неправильна кількість частин архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "archive parts number"
 msgstr "номер частин архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad archive part number"
 msgstr "файл «%.250s» пошкоджено — неправильний номер частини архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgid "package architecture"
 msgstr "архітектура пакунку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - bad magic at end of second header"
 msgstr ""
 "файл «%.250s» пошкоджений — неприпустимий ідентифікатор типу у кінці другого "
 "заголовку"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - second member is not data member"
 msgstr "файл «%.250s» пошкоджений — другий компонент не є компонентом даних"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - wrong number of parts for quoted sizes"
 msgstr ""
 "файл «%.250s» пошкоджений — невірне число частин при вказаному розмірі "
 "частини"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - size is wrong for quoted part number"
 msgstr "файл «%.250s» пошкоджений — неправильний розмір вказаної частини"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is corrupt - too short"
 msgstr "файл «%.250s» пошкоджений — надто короткий"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "cannot open archive part file '%.250s'"
 msgstr "не вдалося відкрити частину архіву «%.250s»"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%.250s' is not an archive part"
 msgstr "файл «%.250s» не є частиною архіву"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid ""
 "%s:\n"
@@ -2938,23 +2942,23 @@ msgstr ""
 "      (використано) %jd байт\n"
 "\n"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 msgctxt "architecture"
 msgid "<unknown>"
 msgstr "<невідомий>"
 
-#: dpkg-split/info.c dpkg-split/join.c
+#: src/split/info.c src/split/join.c
 #, c-format
 msgid "--%s requires one or more part file arguments"
 msgstr ""
 "для --%s потрібно вказати один або більше файлів частин у якості аргументів"
 
-#: dpkg-split/info.c
+#: src/split/info.c
 #, c-format
 msgid "file '%s' is not an archive part\n"
 msgstr "файл «%s» не є частиною архіву\n"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "Putting package %s together from %d part: "
 msgid_plural "Putting package %s together from %d parts: "
@@ -2962,54 +2966,54 @@ msgstr[0] "Склеювання пакунку %s з %d частини: "
 msgstr[1] "Склеювання пакунку %s з %d частин: "
 msgstr[2] "Склеювання пакунку %s з %d частин: "
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "unable to open output file '%.250s'"
 msgstr "не вдалося відкрити результуючий файл «%.250s»"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "unable to (re)open input part file '%.250s'"
 msgstr "не вдалося (пере)відкрити початкову частину архіву «%.250s»"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "cannot skip split package header for '%s': %s"
 msgstr "неможливо пропустити заголовок розбитого пакунку «%s»: %s"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "cannot append split package part '%s' to '%s': %s"
 msgstr "неможливо додати частину розбитого пакунку «%s» у «%s»: %s"
 
-#: dpkg-split/join.c dpkg-split/split.c
+#: src/split/join.c src/split/split.c
 #, c-format
 msgid "done\n"
 msgstr "виконано\n"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "files '%.250s' and '%.250s' are not parts of the same file"
 msgstr "файли «%.250s» і «%.250s» не є частинами одного й того самого файлу"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid ""
 "there are several versions of part %d - at least '%.250s' and '%.250s'"
 msgstr ""
 "присутстні декілька версій частини %d — принаймні, «%.250s» і «%.250s»"
 
-#: dpkg-split/join.c
+#: src/split/join.c
 #, c-format
 msgid "part %d is missing"
 msgstr "відсутня %d частина"
 
-#: dpkg-split/main.c
+#: src/split/main.c
 #, c-format
 msgid "Debian '%s' package split/join tool; version %s.\n"
 msgstr "Проґрама розбиття/об’єднання пакунків Debian «%s», версія %s.\n"
 
-#: src/statcmd.c dpkg-split/main.c utils/update-alternatives.c
+#: src/split/main.c src/statoverride/main.c utils/update-alternatives.c
 #, c-format
 msgid ""
 "Usage: %s [<option> ...] <command>\n"
@@ -3018,7 +3022,7 @@ msgstr ""
 "Використання: %s [<опції> ...] <команди>\n"
 "\n"
 
-#: dpkg-split/main.c
+#: src/split/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -3054,7 +3058,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: dpkg-split/main.c
+#: src/split/main.c
 #, c-format
 msgid ""
 "Exit status:\n"
@@ -3067,168 +3071,171 @@ msgstr ""
 "1 = с --auto, файл не є частиною\n"
 "2 = проблема\n"
 
-#: dpkg-split/main.c
+#: src/split/main.c
 msgid "Type dpkg-split --help for help."
 msgstr "Щоб отримати довідку, уведіть dpkg-split --help."
 
-#: dpkg-split/main.c
+#: src/split/main.c
 msgid "part size is far too large or is not positive"
 msgstr "розмір частини завеликий або не позитивний"
 
-#: dpkg-split/main.c
+#: src/split/main.c
 #, c-format
 msgid "part size must be at least %d KiB (to allow for header)"
 msgstr "розмір частини має бути, принаймні, %d КіБ (розмір заголовку)"
 
-#: src/archives.c src/packages.c src/querycmd.c src/select.c dpkg-split/main.c
-#: dpkg-split/queue.c
+#: src/split/main.c src/split/queue.c src/query/main.c src/main/archives.c
+#: src/main/packages.c src/main/select.c
 msgid "<standard error>"
 msgstr "<стандартна помилка>"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to read depot directory '%.250s'"
 msgstr "помилка читання робочого каталогу «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 msgid "--auto requires the use of the --output option"
 msgstr "параметр --auto потребує наявності параметру --output"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 msgid "--auto requires exactly one part file argument"
 msgstr ""
 "параметр --auto приймає в точності один аргумент (ім’я частини файлу)"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to read part file '%.250s'"
 msgstr "не вдалося прочитати частину архіву «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "File '%.250s' is not part of a multipart archive.\n"
 msgstr "Файл «%.250s» не є частиною архіву.\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "cannot create directory %s"
 msgstr ""
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to reopen part file '%.250s'"
 msgstr "не вдалося поновій відкрити частину архіву «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to open new depot file '%.250s'"
 msgstr "не вдалося відкрити новий робочий файл «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "cannot extract split package part '%s': %s"
 msgstr "неможливо витягти частину розбитого пакунку «%s»: %s"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to rename new depot file '%.250s' to '%.250s'"
 msgstr "не вдалося перейменувати новий робочий файл «%.250s» в «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "Part %d of package %s filed (still want "
 msgstr "Частину %d пакунку %s збережено у файл (залишилося створити "
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 msgid " and "
 msgstr " і "
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to delete used-up depot file '%.250s'"
 msgstr "не вдалося вилучити вже не потрібний робочий файл «%.250s»"
 
-#: src/enquiry.c src/select.c src/trigcmd.c src/update.c dpkg-split/queue.c
+#: src/split/queue.c src/trigger/main.c src/main/enquiry.c src/main/select.c
+#: src/main/update.c
 #, c-format
 msgid "--%s takes no arguments"
 msgstr "--%s не потребує наявності аргументів"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
+#, c-format
 msgid "Junk files left around in the depot directory:\n"
 msgstr "У робочому каталозі залишилися сторонні файли:\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to stat '%.250s'"
 msgstr "не вдалося отримати інформацію про файл «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid " %s (%jd bytes)\n"
 msgstr " %s (%jd байт(и))\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid " %s (not a plain file)\n"
 msgstr " %s (не є звичайним файлом)\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
+#, c-format
 msgid "Packages not yet reassembled:\n"
 msgstr "Ще не перезібрані пакунки:\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid " Package %s: part(s) "
 msgstr " Пакунок %s: частина(ин) "
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "part file '%.250s' is not a plain file"
 msgstr "частина архіву «%.250s» не є звичайним файлом"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "(total %jd bytes)\n"
 msgstr "(всього %jd байт(и))\n"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "unable to discard '%.250s'"
 msgstr "не вдалося вилучити файл «%.250s»"
 
-#: dpkg-split/queue.c
+#: src/split/queue.c
 #, c-format
 msgid "Deleted %s.\n"
 msgstr "Вилучено %s.\n"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid "package field value extraction"
 msgstr "витягнення значення поля пакунку"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid "<dpkg-deb --info pipe>"
 msgstr "<dpkg-deb --info pipe>"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 #, c-format
 msgid "unable to open source file '%.250s'"
 msgstr "не вдалося відкрити джерельний файл «%.250s»"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid "unable to fstat source file"
 msgstr "не вдалося отримати інформацію про джерельний файл"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 #, c-format
 msgid "source file '%.250s' not a plain file"
 msgstr "джерельний файл '%.250s' не звичайний файл"
 
-#: src/configure.c src/verify.c dpkg-split/split.c
+#: src/split/split.c src/main/configure.c src/main/verify.c
 #, c-format
 msgid "cannot compute MD5 digest for file '%s': %s"
 msgstr ""
 
-#: dpkg-split/split.c
+#: src/split/split.c
 #, c-format
 msgid "Splitting package %s into %d part: "
 msgid_plural "Splitting package %s into %d parts: "
@@ -3236,7 +3243,7 @@ msgstr[0] "Розділення пакунку %s на %d частину: "
 msgstr[1] "Розділення пакунку %s на %d частини: "
 msgstr[2] "Розділення пакунку %s на %d частин: "
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid ""
 "header is too long, making part too long; the package name or version\n"
 "numbers must be extraordinarily long, or something; giving up"
@@ -3245,28 +3252,28 @@ msgstr ""
 "або номер версії повинні бути надзвичайно довгі або щось подібне;\n"
 "нічого неможна зробити"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid "--split needs a source filename argument"
 msgstr "дія --split потребує вказування ім’я джерельного файлу"
 
-#: dpkg-split/split.c
+#: src/split/split.c
 msgid "--split takes at most a source filename and destination prefix"
 msgstr ""
 "дія --split не приймає аргументів, крім ім’я джерельного файлу та префіксу "
 "місця призначення"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid "Use --help for help about diverting files."
 msgstr ""
 "Використовуйте параметр --help для виводу довідки по відхилених (diverting) "
 "файлах."
 
-#: src/divertcmd.c src/statcmd.c utils/update-alternatives.c
+#: src/divert/main.c src/statoverride/main.c
 #, c-format
 msgid "Debian %s version %s.\n"
 msgstr "Debian %s версія %s.\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -3285,7 +3292,7 @@ msgstr ""
 "  --truename <файл> повернути відхилений файл.\n"
 "\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "Options:\n"
@@ -3306,7 +3313,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "When adding, default is --local and --divert <original>.distrib.\n"
@@ -3319,23 +3326,23 @@ msgstr ""
 "збігатися з --divert. У сценаріях пакунків preinst/postrm завжди потрібно\n"
 "вказувати --package та --divert.\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid ""
 "please specify --no-rename explicitly, the default will change to --rename "
 "in 1.20.x"
 msgstr ""
 
-#: src/divertcmd.c utils/update-alternatives.c
+#: src/divert/main.c utils/update-alternatives.c
 #, c-format
 msgid "cannot stat file '%s'"
 msgstr "не вдалося виконати stat для файлу «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "error checking '%s'"
 msgstr "помилка при перевірці '%s'"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "rename involves overwriting '%s' with\n"
@@ -3344,100 +3351,100 @@ msgstr ""
 "перейменування викличе перезапис «%s»\n"
 "  іншим файлом «%s», що не дозволено"
 
-#: src/divertcmd.c utils/update-alternatives.c
+#: src/divert/main.c utils/update-alternatives.c
 #, c-format
 msgid "unable to create file '%s'"
 msgstr "не вдалося створити файл '%s'"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "cannot copy '%s' to '%s': %s"
 msgstr "не вдалося скопіювати «%s» у «%s»: %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "cannot rename '%s' to '%s'"
 msgstr "не вдалося змінити назву '%s' на '%s'"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "rename: remove duplicate old link '%s'"
 msgstr "rename: вилучення дублюючого старого посилання «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "unable to remove copied source file '%s'"
 msgstr "не вдалося вилучити скопійований джерельний файл «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "filename \"%s\" is not absolute"
 msgstr "ім’я файлу «%s» вказано не з повним шляхом"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid "file may not contain newlines"
 msgstr "файл не може містити символів нового рядка"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "local diversion of %s"
 msgstr "локальне відхилення %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "local diversion of %s to %s"
 msgstr "локальне відхилення %s у %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "diversion of %s by %s"
 msgstr "відхилення %s з-за %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "diversion of %s to %s by %s"
 msgstr "відхилення %s у %s з-за %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "any diversion of %s"
 msgstr "будь-яке відхилення %s"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "any diversion of %s to %s"
 msgstr "будь-яке відхилення %s у %s"
 
-#: src/divertcmd.c src/statcmd.c
+#: src/divert/main.c src/statoverride/main.c
 #, c-format
 msgid "--%s needs a single argument"
 msgstr "--%s потрібен один аргумент"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid "cannot divert directories"
 msgstr "неможливо відхилити каталоги"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "cannot divert file '%s' to itself"
 msgstr "неможливо відхилити файл «%s» в самого себе"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "Leaving '%s'\n"
 msgstr "Залишається '%s'\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "'%s' clashes with '%s'"
 msgstr "«%s» розходиться з «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "Adding '%s'\n"
 msgstr "Додається '%s'\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "Ignoring request to rename file '%s' owned by diverting package '%s'\n"
@@ -3445,19 +3452,19 @@ msgstr ""
 "Ігнорується запит на зміну назви файлу «%s», що належить відхиляючому "
 "пакунку «%s»\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "diverting file '%s' from an Essential package with rename is dangerous, use -"
 "-no-rename"
 msgstr ""
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "No diversion '%s', none removed.\n"
 msgstr "Немає відхилення «%s», нічого не вилучено.\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "mismatch on divert-to\n"
@@ -3468,7 +3475,7 @@ msgstr ""
 "  при вилученні «%s»\n"
 "  знайдено «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid ""
 "mismatch on package\n"
@@ -3479,30 +3486,30 @@ msgstr ""
 "  при вилученні «%s»\n"
 "  знайдено «%s»"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "Ignoring request to remove shared diversion '%s'.\n"
 msgstr "Ігнорується запит на вилучення загального відхилення «%s».\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 #, c-format
 msgid "Removing '%s'\n"
 msgstr "Вилучається '%s'\n"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid "package may not contain newlines"
 msgstr "пакунок не може містити символів нового рядка"
 
-#: src/divertcmd.c
+#: src/divert/main.c
 msgid "divert-to may not contain newlines"
 msgstr "divert-to не може містити символів нового рядка"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 msgid "Use --help for help about overriding file stat information."
 msgstr ""
 "Використовуйте параметр --help для виводу довідки про стан замінюючих файлів."
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -3519,7 +3526,7 @@ msgstr ""
 "--list [<шаблон-glob>] перелік поточних замін у базі даних.\n"
 "\n"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid ""
 "Options:\n"
@@ -3537,40 +3544,40 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 msgid "stripping trailing /"
 msgstr "вилучаються кінцеві /"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "user '%s' does not exist"
 msgstr "користувач «%s» не існує"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "group '%s' does not exist"
 msgstr "група «%s» не існує"
 
-#: src/archives.c src/statcmd.c
+#: src/statoverride/main.c src/main/archives.c
 #, c-format
 msgid "error setting ownership of '%.255s'"
 msgstr "помилка при встановленні власника «%.255s»"
 
-#: src/archives.c src/statcmd.c
+#: src/statoverride/main.c src/main/archives.c
 #, c-format
 msgid "error setting permissions of '%.255s'"
 msgstr "помилка при встановленні прав доступу до «%.255s»"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "--%s needs four arguments"
 msgstr "для --%s потрібні чотири параметри"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 msgid "path may not contain newlines"
 msgstr "шлях не може містити символи нового рядка"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid ""
 "an override for '%s' already exists, but --force specified so will be ignored"
@@ -3578,39 +3585,39 @@ msgstr ""
 "заміщення для «%s» вже існує, але вказано параметр --force, тому помилка "
 "ігнорується"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "an override for '%s' already exists; aborting"
 msgstr "заміщення для «%s» вже існує, зупинка"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "--update given but %s does not exist"
 msgstr "вказано --update, але %s не існує"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 msgid "no override present"
 msgstr "немає заміщень"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 msgid "--update is useless for --remove"
 msgstr "--update безкорисний разом з --remove"
 
-#: src/statcmd.c
+#: src/statoverride/main.c
 #, c-format
 msgid "deprecated --%s option; use --%s instead"
 msgstr ""
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 msgid "Type dpkg-trigger --help for help about this utility."
 msgstr "Щоб отримати довідку, уведіть dpkg-trigger --help."
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid "Debian %s package trigger utility version %s.\n"
 msgstr "Утиліта роботи з тригерами пакунків Debian %s, версія %s.\n"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid ""
 "Usage: %s [<option>...] <trigger-name>\n"
@@ -3618,7 +3625,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -3631,7 +3638,7 @@ msgstr ""
 "                                      наявний dpkg.\n"
 "\n"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid ""
 "Options:\n"
@@ -3647,35 +3654,35 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 msgid ""
 "must be called from a maintainer script (or with a --by-package option)"
 msgstr ""
 "має викликатися з сценарію супроводжувача(або з параметром --by-package)"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 msgid "takes one argument, the trigger name"
 msgstr "приймає лише один аргумент, ім’я тригеру"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid "illegal awaited package name '%.250s': %.250s"
 msgstr "неправильне ім’я очікуваного пакунку «%.250s»: %.250s"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 #, c-format
 msgid "invalid trigger name '%.250s': %.250s"
 msgstr "невірне ім’я тригера '%.250s': %.250s"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 msgid "triggers data directory not yet created"
 msgstr "каталог з даними тригерів ще не створено"
 
-#: src/trigcmd.c
+#: src/trigger/main.c
 msgid "trigger records not yet in existence"
 msgstr "записи тригеру поки не існують"
 
-#: src/querycmd.c src/select.c
+#: src/query/main.c src/main/select.c
 #, c-format
 msgid "no packages found matching %s"
 msgstr "шаблону %s не відповідає жодний пакунок"
@@ -3686,7 +3693,7 @@ msgstr "шаблону %s не відповідає жодний пакунок"
 #. * the first three columns, which should ideally match the English one
 #. * (e.g. Remove → supRimeix), see dpkg-query(1) for further details. The
 #. * translated message can use additional lines if needed.
-#: src/querycmd.c
+#: src/query/main.c
 msgid ""
 "Desired=Unknown/Install/Remove/Purge/Hold\n"
 "| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-"
@@ -3700,132 +3707,132 @@ msgstr ""
 "|/ Помилка?=(ні)/вимагається перевстановлення[R] (верхній регістр\n"
 "у полях стану й помилки вказує на ненормальну ситуацію)\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Name"
 msgstr "Ім’я"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Version"
 msgstr "Версія"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Architecture"
 msgstr "Архітектура"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Description"
 msgstr "Опис"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "showing package list on pager"
 msgstr ""
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "diversion by %s from: %s\n"
 msgstr "відхилено %s з: %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "diversion by %s to: %s\n"
 msgstr "відхилено %s у: %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "local diversion from: %s\n"
 msgstr "локальне відхилення з: %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "local diversion to: %s\n"
 msgstr "локальне відхилення у: %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "--search needs at least one file name pattern argument"
 msgstr ""
 "--search вимагає встановити у якості аргументу хоча б один шаблон імен файлів"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "no path found matching pattern %s"
 msgstr "не знайдено шлях, що підходить під шаблон %s"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "package '%s' is not installed and no information is available"
 msgstr "пакунок «%s» не встановлено, інформація про нього недоступна"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Use dpkg --info (= dpkg-deb --info) to examine archive files.\n"
 msgstr ""
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "package '%s' is not available"
 msgstr "пакунок '%s' недоступний"
 
-#: src/packages.c src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "--%s needs at least one package name argument"
 msgstr "--%s вимагає вказування хоча б одного ім’я пакунку"
 
-#: src/enquiry.c src/querycmd.c src/verify.c
+#: src/query/main.c src/main/enquiry.c src/main/verify.c
 #, c-format
 msgid "package '%s' is not installed"
 msgstr "пакунок '%s' не встановлено"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "Package '%s' does not contain any files (!)\n"
 msgstr "Пакунок «%s» не містить файлів (!)\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "locally diverted to: %s\n"
 msgstr "локально відхилений у: %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "package diverts others to: %s\n"
 msgstr "пакунок відхиляє файл іншого пакунку у %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "diverted by %s to: %s\n"
 msgstr "відхилено %s у %s\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid ""
 "Use dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
 msgstr ""
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "control file contains %c"
 msgstr "керуючий файл містить %c"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "--%s takes one package name argument"
 msgstr "для --%s вимагається одне ім’я пакунку"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "--%s takes exactly two arguments"
 msgstr "параметр --%s приймає рівно два аргументи"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "control file '%s' does not exist"
 msgstr "керуючий файл «%s» не існує"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid "Debian %s package management program query tool version %s.\n"
 msgstr ""
 "Система керування пакунками Debian %s, версія інструменту опиту %s.\n"
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -3843,7 +3850,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/querycmd.c
+#: src/query/main.c
 #, c-format
 msgid ""
 "Options:\n"
@@ -3855,87 +3862,87 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/querycmd.c
+#: src/query/main.c
 msgid "Use --help for help about querying packages."
 msgstr ""
 "Використовуйте параметр --help для виводу довідки по запитам пакунків."
 
-#: src/archives.c
+#: src/main/archives.c
 msgid "error reading from dpkg-deb pipe"
 msgstr "Помилка при читанні з dpkg-deb пакунку"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "cannot skip padding for file '%.255s': %s"
 msgstr "не вдалося пропустити заповнення (padding) у файлі «%.255s»: %s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "cannot skip file '%.255s' (replaced or excluded?) from pipe: %s"
 msgstr ""
 "не вдалося пропустити файл «%.255s» (замінений чи виключений?) з каналу: %s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to create '%.255s' (while processing '%.255s')"
 msgstr "не вдалося створити «%.255s» (при обробці «%.255s»)"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "cannot copy extracted data for '%.255s' to '%.255s': %s"
 msgstr "не вдалося скопіювати витягнуті дані «%.255s» у «%.255s»: %s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error closing/writing '%.255s'"
 msgstr "помилка при закритті/запису «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error creating pipe '%.255s'"
 msgstr "помилка створення каналу «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error creating device '%.255s'"
 msgstr "помилка створення пристрою «%.255s»"
 
-#: src/archives.c utils/update-alternatives.c
+#: src/main/archives.c utils/update-alternatives.c
 #, c-format
 msgid "error creating symbolic link '%.255s'"
 msgstr "помилка створення символьного посилання «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error creating directory '%.255s'"
 msgstr "помилка створення каталогу «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "cannot compute MD5 digest for file '%.255s' in tar archive: %s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error setting timestamps of '%.255s'"
 msgstr "помилка при встановленні часу модифікації «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "error setting ownership of symlink '%.255s'"
 msgstr "помилка при встановленні власника символьного посилання «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to read link '%.255s'"
 msgstr "не вдалося прочитати символьне посилання «%.255s»"
 
-#: src/archives.c src/configure.c
+#: src/main/archives.c src/main/configure.c
 #, c-format
 msgid "symbolic link '%.250s' size has changed from %jd to %zd"
 msgstr "розмір символьного посилання «%.250s» змінено з %jd на %zd"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "trying to overwrite shared '%.250s', which is different from other instances "
@@ -3944,13 +3951,13 @@ msgstr ""
 "спроба перезаписати загальний «%.250s», який відрізняється від інших "
 "екземплярів пакунку %.250s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "failed to stat (dereference) existing symlink '%.250s'"
 msgstr ""
 "не вдалося виконати stat для існуючого символьного посилання «%.250s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "failed to stat (dereference) proposed new symlink target '%.250s' for "
@@ -3959,19 +3966,19 @@ msgstr ""
 "не вдалося виконати stat для передбачуваного нового символьного посилання "
 "мети «%.250s» для символьного посилання «%.250s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "newline not allowed in archive object name '%.255s'"
 msgstr ""
 "в назві об'єкту архіва недозволено використовувати символ нового рядка "
 "«%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "conffile '%s' marked for removal on upgrade, shipped in package"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "trying to overwrite '%.250s', which is the diverted version of '%.250s' "
@@ -3980,47 +3987,47 @@ msgstr ""
 "спроба переписати «%.250s», що є відхиленою версією «%.250s» (пакунок: "
 "%.100s)"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "trying to overwrite '%.250s', which is the diverted version of '%.250s'"
 msgstr "спроба переписати «%.250s», що є відхиленою версією «%.250s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to stat '%.255s' (which was about to be installed)"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "unable to clean up mess surrounding '%.255s' before installing another "
 "version"
 msgstr "при встановленні іншої версії не вдалося очистити оточення «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to stat restored '%.255s' before installing another version"
 msgstr ""
 "перед встановленням нової версії не вдалося отримати інформацію про "
 "відновлений файл «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "archive contained object '%.255s' of unknown type 0x%x"
 msgstr "архів містить об’єкт «%.255s» невідомого типу 0x%x"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "Replacing files in old package %s (%s) ...\n"
 msgstr "Заміна файлів у старому пакунку %s (%s)...\n"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "Replaced by files in installed package %s (%s) ...\n"
 msgstr "Замінений файлами у встановленому пакунку %s (%s)...\n"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "trying to overwrite directory '%.250s' in package %.250s %.250s with "
@@ -4029,119 +4036,119 @@ msgstr ""
 "спроба переписати каталог «%.250s» у пакунку %.250s %.250s файлом, що не є "
 "каталогом"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "trying to overwrite '%.250s', which is also in package %.250s %.250s"
 msgstr "спроба перезаписати «%.250s», який вже є у пакунку %.250s %.250s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to move aside '%.255s' to install new version"
 msgstr ""
 "не вдалося перемістити у інше місце «%.255s», що необхідно для встановлення "
 "нової версії"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to make backup symlink for '%.255s'"
 msgstr "не вдалося створити резервне посилання на «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to chown backup symlink for '%.255s'"
 msgstr "не вдалося змінити власника резервного посилання на «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to make backup link of '%.255s' before installing new version"
 msgstr ""
 "не вдалося створити резервне посилання на «%.255s» перед встановленням нової "
 "версії"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to install new version of '%.255s'"
 msgstr "не вдалося встановити нову версію «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to open '%.255s'"
 msgstr "не вдалося відкрити «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "unable to sync file '%.255s'"
 msgstr "не вдалося синхронізувати файл «%.255s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "ignoring dependency problem with installation of %s:\n"
 "%s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "no, cannot proceed with installation of %s (--auto-deconfigure will help):\n"
 "%s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "ignoring dependency problem with removal of %s:\n"
 "%s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "considering deconfiguration of essential\n"
 " package %s, to enable removal of %s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "no, %s is essential, will not deconfigure\n"
 " it in order to enable removal of %s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "considering deconfiguration of protected\n"
 " package %s, to enable removal of %s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "no, %s is protected, will not deconfigure\n"
 " it in order to enable removal of %s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "no, cannot proceed with removal of %s (--auto-deconfigure will help):\n"
 "%s"
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "considering deconfiguration of %s, which would be broken by installation of "
 "%s ..."
 msgstr ""
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "yes, will deconfigure %s (broken by %s)"
 msgstr "так, %s буде переведений у неналаштований стан (поломаний з-за %s)"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "regarding %s containing %s:\n"
@@ -4150,11 +4157,11 @@ msgstr ""
 "відносно %s, що містить %s:\n"
 "%s"
 
-#: src/archives.c
+#: src/main/archives.c
 msgid "ignoring breakage, may proceed anyway!"
 msgstr "поломка ігнорується, можна продовжувати!"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "installing %.250s would break %.250s, and\n"
@@ -4163,27 +4170,27 @@ msgstr ""
 "встановлення %.250s поламає %.250s, й\n"
 "деконфігурацію не дозволено (--auto-deconfigure може допомогти)"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "installing %.250s would break existing software"
 msgstr "встановлення %.250s може пошкодити програми що існують"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "considering removing %s in favour of %s ..."
 msgstr "розглядується вилучення %s, замість якого буде використано %s …"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "%s is not properly installed; ignoring any dependencies on it"
 msgstr "%s не встановлений коректно, усі залежності від нього ігноруються"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "may have trouble removing %s, as it provides %s ..."
 msgstr "можливі проблеми з вилученням %s, оскільки він надає %s …"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid ""
 "package %s requires reinstallation, but will remove anyway as you requested"
@@ -4191,77 +4198,77 @@ msgstr ""
 "пакунок %s вимагає перевстановлення, але за вашою вказівкою все одно буде "
 "вилучено"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "package %s requires reinstallation, will not remove"
 msgstr "пакунок %s вимагає перевстановлення й не буде вилучено"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "yes, will remove %s in favour of %s"
 msgstr "так, пакунок %s буде вилучено, щоб можна було встановити %s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "conflicting packages - not installing %.250s"
 msgstr "конфлікт пакунків — %.250s не буде встановлено"
 
-#: src/archives.c
+#: src/main/archives.c
 msgid "ignoring conflict, may proceed anyway!"
 msgstr "конфлікт ігнорується, можна продовжувати!"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "--%s --recursive needs at least one path argument"
 msgstr "--%s --recursive вимагає хоча б одного імені каталогу"
 
-#: src/archives.c
+#: src/main/archives.c
 msgid "searched, but found no packages (files matching *.deb)"
 msgstr ""
 "пошук закінчено, пакунки (файли з іменами, задовольняючими шаблону *.deb) "
 "знайти не вдалося"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "--%s needs at least one package archive file argument"
 msgstr "--%s необхідно вказати щонайменш один файл у якості аргументу"
 
-#: src/archives.c src/unpack.c
+#: src/main/archives.c src/main/unpack.c
 #, c-format
 msgid "cannot access archive '%s'"
 msgstr "неможливо отримати доступ до архіву «%s»"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "archive '%s' is not a regular file"
 msgstr "архів «%s» не є звичайним файлом"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "Selecting previously unselected package %s.\n"
 msgstr "Вибір раніше не обраного пакунку %s.\n"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "Skipping unselected package %s.\n"
 msgstr "Пропуск не обраного пакунку %s.\n"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "version %.250s of %.250s already installed, skipping"
 msgstr "версію %.250s пакунку %.250s вже встановлено, пропускаємо"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "downgrading %.250s from %.250s to %.250s"
 msgstr "зниження версії %.250s з %.250s до %.250s"
 
-#: src/archives.c
+#: src/main/archives.c
 #, c-format
 msgid "will not downgrade %.250s from %.250s to %.250s, skipping"
 msgstr "версію %.250s не буде понижено з %.250s до %.250s, пропускаємо"
 
-#: src/cleanup.c
+#: src/main/cleanup.c
 #, c-format
 msgid ""
 "unable to remove newly-installed version of '%.250s' to allow reinstallation "
@@ -4270,37 +4277,37 @@ msgstr ""
 "не вдалося вилучити нову версію «%.250s», що необхідно для повернення до "
 "старої версії"
 
-#: src/cleanup.c
+#: src/main/cleanup.c
 #, c-format
 msgid "unable to restore backup version of '%.250s'"
 msgstr "неможливо відновити збережену копію старої версії «%.250s»"
 
-#: src/cleanup.c
+#: src/main/cleanup.c
 #, c-format
 msgid "unable to remove backup copy of '%.250s'"
 msgstr "не вдалося вилучити збережену копію «%.250s»"
 
-#: src/cleanup.c
+#: src/main/cleanup.c
 #, c-format
 msgid "unable to remove newly-installed version of '%.250s'"
 msgstr "неможливо вилучити тільки що встановлену версію «%.250s»"
 
-#: src/cleanup.c
+#: src/main/cleanup.c
 #, c-format
 msgid "unable to remove newly-extracted version of '%.250s'"
 msgstr "не вдалося встановити тільки що розпаковану нову версію «%.250s»"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "Configuration file '%s'\n"
 msgstr "Файл конфігурації «%s»\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "Configuration file '%s' (actually '%s')\n"
 msgstr "Файл конфігурації «%s» (фактично «%s»)\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 " ==> File on system created by you or by a script.\n"
@@ -4309,52 +4316,52 @@ msgstr ""
 " ==> Файл у системі створено вами або сценарієм.\n"
 "==> Файл також у пакунку, що постачається його супроводжувачем.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "     Not modified since installation.\n"
 msgstr "     Протягом встановлення не змінювався.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Modified (by you or by a script) since installation.\n"
 msgstr " ==> Змінений (вами або скриптом) під час встановлення.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Deleted (by you or by a script) since installation.\n"
 msgstr " ==> Вилучений (вами або скриптом) під час встановлення.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Package distributor has shipped an updated version.\n"
 msgstr " ==> Автор пакунку надав оновлену версію.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "     Version in package is the same as at last installation.\n"
 msgstr "     Версія у пакунку та сама, що й при останньому встановленні.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Using new file as you requested.\n"
 msgstr " ==> За вашою вказівкою використовується новий файл.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Using current old file as you requested.\n"
 msgstr " ==> За вашою вказівкою використовується старий файл.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Keeping old config file as default.\n"
 msgstr " ==> Типово зберігається старий файл налаштування.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " ==> Using new config file as default.\n"
 msgstr " ==> Типово використовується новий файл налаштування.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "   What would you like to do about it ?  Your options are:\n"
@@ -4369,74 +4376,74 @@ msgstr ""
 "      D : показати відмінності між версіями\n"
 "      Z : запустити оболонку командного рядка для перевірки ситуації\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " The default action is to keep your current version.\n"
 msgstr " Типово зберігається поточна версія файлу налаштування.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid " The default action is to install the new version.\n"
 msgstr " Типово встановлюється нова версія файлу.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "[default=N]"
 msgstr "[типово=N]"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "[default=Y]"
 msgstr "[типово=Y]"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "[no default]"
 msgstr "[типового значення немає]"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "error writing to stderr, discovered before conffile prompt"
 msgstr ""
 "помилка запису виведення помилок, знайдена перед появою діалогу "
 "конфігураційного файлу"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "read error on stdin at conffile prompt"
 msgstr ""
 "помилка читання з стандартного введення у діалогу конфігураційного файлу"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "end of file on stdin at conffile prompt"
 msgstr ""
 "кінець файлу у стандартному введенні у діалогу конфігураційного файлу"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "conffile difference visualizer"
 msgstr "візуалізатор відмінностей conffile"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "Useful environment variables:\n"
 msgstr ""
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "Type 'exit' when you're done.\n"
 msgstr "Коли закінчите, наберіть «exit».\n"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "conffile shell"
 msgstr "оболонка conffile"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "unable to stat new distributed conffile '%.250s'"
 msgstr ""
 "не вдалося отримати інформацію про новий розповсюджуваний conffile-файл "
 "«%.250s»"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "unable to stat current installed conffile '%.250s'"
 msgstr ""
 "не вдалося отримати інформацію про вже встановлений conffile-файл «%.250s»"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "\n"
@@ -4447,57 +4454,57 @@ msgstr ""
 "Файл налаштування «%s» відсутній.\n"
 "За Вашою вказівкою встановлюється новий файл налаштування.\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: failed to remove old backup '%.250s': %s"
 msgstr "%s: не вдалося вилучити резервну копію «%.250s»: %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: failed to rename '%.250s' to '%.250s': %s"
 msgstr "%s: не вдалося змінити назву «%.250s» на «%.250s»: %s"
 
-#: src/configure.c src/unpack.c
+#: src/main/configure.c src/main/unpack.c
 #, c-format
 msgid "%s: failed to remove '%.250s': %s"
 msgstr "%s: не вдалося вилучити «%.250s»: %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: failed to remove old distributed version '%.250s': %s"
 msgstr "%s: не вдалося вилучити стару розповсюджувану версію «%.250s»: %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: failed to remove '%.250s' (before overwrite): %s"
 msgstr "%s: не вдалося вилучити «%.250s» (перед перезаписом): %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: failed to link '%.250s' to '%.250s': %s"
 msgstr "%s: не вдалося створити посилання «%.250s» на «%.250s»: %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "Installing new version of config file %s ...\n"
 msgstr "Встановлення нової версії файлу налаштувань %s ...\n"
 
-#: src/configure.c utils/update-alternatives.c
+#: src/main/configure.c utils/update-alternatives.c
 #, c-format
 msgid "unable to install '%.250s' as '%.250s'"
 msgstr "не вдалося встановити «%.250s» у якості «%.250s»"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "no package named '%s' is installed, cannot configure"
 msgstr "пакунок з іменем «%s» не встановлений, налаштування неможливе"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "package %.250s is already installed and configured"
 msgstr "пакунок %.250s вже встановлено та налаштовано"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "package %.250s is not ready for configuration\n"
@@ -4506,7 +4513,7 @@ msgstr ""
 "пакунок %.250s не готовий до налаштування\n"
 " налаштування неможливе (поточний стан: «%.250s»)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "package %s cannot be configured because %s is not ready (current status '%s')"
@@ -4514,14 +4521,14 @@ msgstr ""
 "пакунок %s не може бути налаштовано, оскільки не готовий %s (поточний стан: "
 "«%s»)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "package %s %s cannot be configured because %s is at a different version (%s)"
 msgstr ""
 "пакунок %s %s не може бути налаштовано, оскільки %s іншої версії (%s)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "dependency problems prevent configuration of %s:\n"
@@ -4530,11 +4537,11 @@ msgstr ""
 "залежності пакунків не дозволяють налаштувати пакунок %s:\n"
 "%s"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid "dependency problems - leaving unconfigured"
 msgstr "проблеми з залежностями - залишається неналаштованим"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "%s: dependency problems, but configuring anyway as you requested:\n"
@@ -4544,7 +4551,7 @@ msgstr ""
 "налаштування:\n"
 "%s"
 
-#: src/configure.c
+#: src/main/configure.c
 msgid ""
 "package is in a very bad inconsistent state; you should\n"
 " reinstall it before attempting configuration"
@@ -4552,12 +4559,12 @@ msgstr ""
 "пакунок знаходиться у поганому стані; потрібно\n"
 "перевстановити його до початку налаштування"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "Setting up %s (%s) ...\n"
 msgstr "Налаштовування %s (%s) ...\n"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "%s: unable to stat config file '%s'\n"
@@ -4566,7 +4573,7 @@ msgstr ""
 "%s: не вдалося отримати інформацію про файл налаштування «%s»\n"
 " (= «%s»): %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "%s: config file '%s' is a circular link\n"
@@ -4575,7 +4582,7 @@ msgstr ""
 "%s: файл налаштування «%s» є циклічним посиланням\n"
 " (= «%s»)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "%s: unable to readlink conffile '%s'\n"
@@ -4584,7 +4591,7 @@ msgstr ""
 "%s: не вдалося виконати readlink для conffile-файлу «%s»\n"
 " (= «%s»): %s"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid ""
 "%s: conffile '%.250s' resolves to degenerate filename\n"
@@ -4593,135 +4600,135 @@ msgstr ""
 "%s: запис про conffile-файл «%.250s» дозволяється у вироджене ім’я файлу\n"
 " («%s» є символьним посиланням на «%s»)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: conffile '%.250s' is not a plain file or symlink (= '%s')"
 msgstr ""
 "%s: conffile-файл «%.250s» не є звичайним файлом або символьним посиланням "
 "(= «%s»)"
 
-#: src/configure.c
+#: src/main/configure.c
 #, c-format
 msgid "%s: unable to open %s to compute its digest: %s"
 msgstr ""
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s depends on %s"
 msgstr "%s залежить від %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s pre-depends on %s"
 msgstr "%s попередньо залежить від %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s recommends %s"
 msgstr "%s рекомендує %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s suggests %s"
 msgstr "%s пропонує %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s breaks %s"
 msgstr "%s ламає %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s conflicts with %s"
 msgstr "%s конфліктує з %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "%s enhances %s"
 msgstr "%s підсилює %s"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is to be removed.\n"
 msgstr "  %.250s буде вилучено.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is to be deconfigured.\n"
 msgstr "  %.250s буде деконфігурований.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is to be installed, but is version %.250s.\n"
 msgstr "  %.250s буде встановлено, але це версія %.250s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is installed, but is version %.250s.\n"
 msgstr "  %.250s встановлено, але це версія %.250s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is unpacked, but has never been configured.\n"
 msgstr "  %.250s розпакований, але не був налаштований.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is unpacked, but is version %.250s.\n"
 msgstr "  %.250s розпакований, але це версія %.250s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s latest configured version is %.250s.\n"
 msgstr "  %.250s остання налаштована версія є %.250s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is %s.\n"
 msgstr "  %.250s є %s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s provides %.250s but is to be removed.\n"
 msgstr "  %.250s забезпечує %.250s, проте він буде вилучений.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s provides %.250s but is to be deconfigured.\n"
 msgstr ""
 "  %.250s забезпечує %.250s, проте для нього буде вилучено налаштування.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s provides %.250s but is %s.\n"
 msgstr "  %.250s забезпечує %.250s, проте є %s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s is not installed.\n"
 msgstr "  %.250s не встановлений.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s (version %.250s) is to be installed.\n"
 msgstr "  %.250s (версія %.250s) буде встановлений.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s (version %.250s) is present and %s.\n"
 msgstr "  %.250s (версія %.250s) присутній і %s.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s provides %.250s and is to be installed.\n"
 msgstr "  %.250s забезпечує %.250s і буде встановлений.\n"
 
-#: src/depcon.c
+#: src/main/depcon.c
 #, c-format
 msgid "  %.250s provides %.250s and is present and %s.\n"
 msgstr "  %.250s забезпечує %.250s і присутній і %s.\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are in a mess due to serious problems during\n"
 "installation.  They must be reinstalled for them (and any packages\n"
@@ -4731,7 +4738,7 @@ msgstr ""
 "зовсім непрацездатні. Щоб ці (та інші, залежні від них)\n"
 "пакунки коректно функціонували, їх необхідно перевстановити:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages have been unpacked but not yet configured.\n"
 "They must be configured using dpkg --configure or the configure\n"
@@ -4741,7 +4748,7 @@ msgstr ""
 "Щоб вони запрацювали, їх необхідно налаштувати з допомогою команди\n"
 "dpkg --configure або обравши пункт \"Налаштувати\" у меню програми dselect:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are only half configured, probably due to problems\n"
 "configuring them the first time.  The configuration should be retried using\n"
@@ -4753,7 +4760,7 @@ msgstr ""
 "<package>\n"
 "або пункту \"Налаштувати\" меню програми dselect:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are only half installed, due to problems during\n"
 "installation.  The installation can probably be completed by retrying it;\n"
@@ -4765,7 +4772,7 @@ msgstr ""
 "його. Вилучити пакунки можна за допомогою програми dselect або команди\n"
 "dpkg --remove:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are awaiting processing of triggers that they\n"
 "have activated in other packages.  This processing can be requested using\n"
@@ -4776,7 +4783,7 @@ msgstr ""
 "dselect або за допомогою dpkg --configure --pending (або dpkg --triggers-"
 "only):\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages have been triggered, but the trigger processing\n"
 "has not yet been done.  Trigger processing can be requested using\n"
@@ -4787,7 +4794,7 @@ msgstr ""
 "dselect або за допомогою dpkg --configure --pending (або dpkg --triggers-"
 "only):\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are missing the list control file in the\n"
 "database, they need to be reinstalled:\n"
@@ -4795,7 +4802,7 @@ msgstr ""
 "У наступних пакунків відсутні керуючі файли у базі даних,\n"
 "їх потрібно перевстановити:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages are missing the md5sums control file in the\n"
 "database, they need to be reinstalled:\n"
@@ -4803,15 +4810,15 @@ msgstr ""
 "У наступних пакунків відсутні керуючі файли md5sums у базі даних,\n"
 "їх потрібно перевстановити:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "The following packages do not have an architecture:\n"
 msgstr "У наступних пакунків не вказано архітектуру:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "The following packages have an illegal architecture:\n"
 msgstr "У наступних пакунків вказано некоректну архітектуру:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "The following packages have an unknown foreign architecture, which will\n"
 "cause dependency issues on front-ends. This can be fixed by registering\n"
@@ -4822,7 +4829,7 @@ msgstr ""
 "виправити зареєструвавши нерідну архітектуру виконавши\n"
 "dpkg --add-architecture:\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "Another process has locked the database for writing, and might currently be\n"
 "modifying it, some of the following problems might just be due to that.\n"
@@ -4830,17 +4837,17 @@ msgstr ""
 "Інший процес заблокував базу на запис, й, можливо, змінює\n"
 "її, з-за цього можуть виникнути проблеми.\n"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgctxt "section"
 msgid "<unknown>"
 msgstr "<невідомий>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid " %d in %s: "
 msgstr " %d пакунків з розділу %s: "
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid " %d package, from the following section:"
 msgid_plural " %d packages, from the following sections:"
@@ -4848,57 +4855,57 @@ msgstr[0] " %d пакунок з наступного розділу:"
 msgstr[1] " %d пакунки з наступних розділів:"
 msgstr[2] " %d пакунків з наступних розділів:"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "the Pre-Depends field"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "epochs in versions"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "long filenames in .deb archives"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "multiple Conflicts and Replaces"
 msgstr "декілька Conflicts та Replaces"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "multi-arch fields and semantics"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "versioned relationships in the Provides field"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "the Protected field"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "cannot parse dpkg running version '%s': %s"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid ""
 "Running version of dpkg does not support %s.\n"
 " Please upgrade to at least dpkg %s, and then try again.\n"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "%s assert options - assert whether features are supported:\n"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "unknown --%s-<feature>"
 msgstr ""
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid ""
 "cannot see how to satisfy pre-dependency:\n"
@@ -4907,71 +4914,71 @@ msgstr ""
 "незрозуміло як задовольнити залежності від попереднього встановлення:\n"
 "%s"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "cannot satisfy pre-dependencies for %.250s (wanted due to %.250s)"
 msgstr ""
 "встановити пакунок %.250s неможливо, однак це необхідно зробити до "
 "встановлення %.250s"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "--%s takes one <pkgname> argument"
 msgstr "--%s потребує наявності одного аргументу <назвапакунку>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "package name '%s' is invalid: %s"
 msgstr "назва пакунку «%s» є неприпустимою: %s"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "--%s takes one <trigname> argument"
 msgstr "--%s потребує наявності одного аргументу <назватригера>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "trigger name '%s' is invalid: %s"
 msgstr "назва тригера «%s» є неприпустимою: %s"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "--%s takes one <archname> argument"
 msgstr "--%s потребує наявності одного аргументу <назваархіву>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "architecture name '%s' is invalid: %s"
 msgstr "назва архітектури «%s» є неприпустимою: %s"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "--%s takes one <version> argument"
 msgstr "--%s потребує наявності одного аргументу <версія>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "version '%s' has bad syntax"
 msgstr "версія '%s' має поганий синтаксис"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid ""
 "--compare-versions takes three arguments: <version> <relation> <version>"
 msgstr ""
 "параметр --compare-versions потребує наявності трьох аргументів: <версія> "
 "<відношення> <версія>"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 msgid "--compare-versions bad relation"
 msgstr ""
 "у якості аргументу --compare-versions вказано неприпустиме відношення"
 
-#: src/enquiry.c
+#: src/main/enquiry.c
 #, c-format
 msgid "--%s used with obsolete relation operator '%s'"
 msgstr "--%s використаний із застарілим оператором відношення «%s»"
 
-#: src/errors.c
+#: src/main/errors.c
 #, c-format
 msgid ""
 "failed to allocate memory for new entry in list of failed packages: %s"
@@ -4979,11 +4986,11 @@ msgstr ""
 "не вдалося виділити пам’ять для нового елементу списку невдало встановлених "
 "пакунків: %s"
 
-#: src/errors.c
+#: src/main/errors.c
 msgid "too many errors, stopping"
 msgstr "надто багато помилок — зупиняємося"
 
-#: src/errors.c
+#: src/main/errors.c
 #, c-format
 msgid ""
 "error processing package %s (--%s):\n"
@@ -4992,7 +4999,7 @@ msgstr ""
 "помилка обробки пакунку %s (--%s):\n"
 " %s"
 
-#: src/errors.c
+#: src/main/errors.c
 #, c-format
 msgid ""
 "error processing archive %s (--%s):\n"
@@ -5001,20 +5008,20 @@ msgstr ""
 "помилка обробки архіву %s (--%s):\n"
 " %s"
 
-#: src/errors.c
+#: src/main/errors.c
 msgid "Errors were encountered while processing:\n"
 msgstr "При обробці таких пакунків сталися помилки:\n"
 
-#: src/errors.c
+#: src/main/errors.c
 msgid "Processing was halted because there were too many errors.\n"
 msgstr "Обробку зупинено з-за надто великої кількості помилок.\n"
 
-#: src/errors.c
+#: src/main/errors.c
 #, c-format
 msgid "package %s was on hold, processing it anyway as you requested"
 msgstr "пакунок %s зафіксовано, але за вашою вказівкою все одно обробляється"
 
-#: src/errors.c
+#: src/main/errors.c
 #, c-format
 msgid ""
 "Package %s is on hold, not touching it.  Use --force-hold to override.\n"
@@ -5022,45 +5029,45 @@ msgstr ""
 "Пакунок %s зафіксовано й не буде оброблено. Якщо вас це не влаштовує, "
 "використовуйте --force-hold.\n"
 
-#: src/help.c
+#: src/main/help.c
 msgid "not installed"
 msgstr "не встановлений"
 
-#: src/help.c
+#: src/main/help.c
 msgid "not installed but configs remain"
 msgstr "не встановлений, але залишилися файли налаштування"
 
-#: src/help.c
+#: src/main/help.c
 msgid "broken due to failed removal or installation"
 msgstr "непрацездатний у результаті невдалого вилучення або встановлення"
 
-#: src/help.c
+#: src/main/help.c
 msgid "unpacked but not configured"
 msgstr "розпакований, але не налаштований"
 
-#: src/help.c
+#: src/main/help.c
 msgid "broken due to postinst failure"
 msgstr "непрацездатний у результаті помилки в postinst"
 
-#: src/help.c
+#: src/main/help.c
 msgid "awaiting trigger processing by another package"
 msgstr "чекає обробки тригеру іншим пакунком"
 
-#: src/help.c
+#: src/main/help.c
 msgid "triggered"
 msgstr "з тригером"
 
-#: src/help.c
+#: src/main/help.c
 msgid "installed"
 msgstr "встановлено"
 
-#: src/help.c
+#: src/main/help.c
 #, c-format
 msgid "'%s' not found in PATH or not executable"
 msgstr ""
 "«%s» відсутній у каталогах, перерахованих в PATH, або не є виконуваним"
 
-#: src/help.c
+#: src/main/help.c
 #, c-format
 msgid ""
 "%d expected program not found in PATH or not executable\n"
@@ -5078,19 +5085,19 @@ msgstr[2] ""
 "у каталогах PATH не знайдено %d очікуваних програм або виконуваних файлів\n"
 "%s"
 
-#: src/help.c
+#: src/main/help.c
 msgid ""
 "Note: root's PATH should usually contain /usr/local/sbin, /usr/sbin and /sbin"
 msgstr ""
 "Зауваження: В PATH суперкористувача зазвичай мають бути присутніми "
 "/usr/local/sbin, /usr/sbin та /sbin"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "Debian '%s' package management program version %s.\n"
 msgstr "Система керування пакунками Debian «%s», версія %s.\n"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "Commands:\n"
@@ -5133,7 +5140,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "Validatable things: pkgname, archname, trigname, version.\n"
@@ -5143,7 +5150,7 @@ msgstr ""
 "версія.\n"
 "\n"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "Use dpkg with -b, --build, -c, --contents, -e, --control, -I, --info,\n"
@@ -5203,7 +5210,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "Comparison operators for --compare-versions are:\n"
@@ -5223,13 +5230,13 @@ msgstr ""
 "файлу).\n"
 "\n"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "Use 'apt' or 'aptitude' for user-friendly package management.\n"
 msgstr ""
 "Скористайтеся 'apt' або 'aptitude' для полегшення керування пакунками.\n"
 
-#: src/main.c
+#: src/main/main.c
 msgid ""
 "Type dpkg --help for help about installing and deinstalling packages [*];\n"
 "Use 'apt' or 'aptitude' for user-friendly package management;\n"
@@ -5252,59 +5259,59 @@ msgstr ""
 "Команди, позначені [*], виводять велику кількість інформації.\n"
 "Об’єднайте їх у конвеєр з програмами «less» або «more»!"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Generally helpful progress information"
 msgstr "Загальна корисна інформація про події що відбуваються"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Invocation and status of maintainer scripts"
 msgstr "Виклик та стан сценаріїв супроводжувача"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Output for each file processed"
 msgstr "Інформація про кожен оброблений файл"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Lots of output for each file processed"
 msgstr "Подробиці про кожен оброблений файл"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Output for each configuration file"
 msgstr "Інформація про кожен файл налаштування"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Lots of output for each configuration file"
 msgstr "Подробиці про кожен файл налаштування"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Dependencies and conflicts"
 msgstr "Залежності та конфлікти"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Lots of dependencies/conflicts output"
 msgstr "Подробиці про залежності та конфлікти"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Trigger activation and processing"
 msgstr "Спрацьовування тригерів та їх обробка"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Lots of output regarding triggers"
 msgstr "Подробиці по тригерам"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Silly amounts of output regarding triggers"
 msgstr "Купа другорядної інформації по тригерам"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Lots of drivel about eg the dpkg/info directory"
 msgstr "Різна маячня про, наприклад, каталог dpkg/info"
 
-#: src/main.c
+#: src/main/main.c
 msgid "Insane amounts of drivel"
 msgstr "Шалено велика кількість беззмістовного тексту"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "%s debugging option, --debug=<octal> or -D<octal>:\n"
@@ -5315,7 +5322,7 @@ msgstr ""
 "\n"
 "Число У джерельному коді Опис\n"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid ""
 "\n"
@@ -5326,77 +5333,77 @@ msgstr ""
 "Параметри налагодження об’єднуються побітовою операцією «або».\n"
 "Зауважимо, що значення та їх змістове навантаження може бути змінено.\n"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "--%s requires a positive octal argument"
 msgstr "--%s приймає у якості аргументу позитивне вісімкове число"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "unknown verify output format '%s'"
 msgstr "невідомий вихідний формат перевірки «%s»"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "null package name in --%s comma-separated list '%.250s'"
 msgstr "порожнє ім’я пакунку у --%s розділеному комами списку «%.250s»"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "error executing hook '%s', exit code %d"
 msgstr "помилка виконання пастки «%s», код повернення %d"
 
-#: src/main.c
+#: src/main/main.c
 msgid "status logger"
 msgstr "протоколювальник стану"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "architecture '%s' is illegal: %s"
 msgstr "архітектура «%s» некоректна: %s"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "architecture '%s' is reserved and cannot be added"
 msgstr "архітектура «%s» зарезервована й не може бути додана"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "cannot remove non-foreign architecture '%s'"
 msgstr "неможна вилучити рідну архітектуру «%s»"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "removing architecture '%s' currently in use by database"
 msgstr ""
 "архітектура що вилучається «%s» на дану мить використовується у базі даних"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "cannot remove architecture '%s' currently in use by the database"
 msgstr ""
 "неможливо вилучити архітектуру «%s», яка на дану мить використовується у "
 "базі даних"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "couldn't open '%i' for stream"
 msgstr "не вдалося відкрити потік дескриптора «%i»"
 
-#: src/main.c
+#: src/main/main.c
 #, c-format
 msgid "unexpected end of file before end of line %d"
 msgstr "несподіваний кінець файлу перед кінцем рядка %d"
 
-#: src/main.c
+#: src/main/main.c
 msgid "cannot set primary group ID to root"
 msgstr "неможливо встановити ідентифікатор первинної групи для root"
 
-#: src/main.c src/script.c
+#: src/main/main.c src/main/script.c
 msgid "unable to setenv for subprocesses"
 msgstr "не вдалося виконати setenv для підпроцесу"
 
-#: src/packages.c
+#: src/main/packages.c
 msgid ""
 "you must specify packages by their own names, not by quoting the names of "
 "the files they come in"
@@ -5404,7 +5411,7 @@ msgstr ""
 "пакунки задаються їх власнимии іменами, а не іменами файлів, з яких вони "
 "встановлені"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "--%s --pending does not take any non-option arguments"
 msgstr "--%s --pending не приймає аргументів, крім параметрів"
@@ -5414,12 +5421,12 @@ msgstr "--%s --pending не приймає аргументів, крім пар
 msgid "--%s (without --pending) needs at least one package name argument"
 msgstr ""
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "Package %s listed more than once, only processing once.\n"
 msgstr "Пакунок %s перерахований декілька разів, обробляється лише раз.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid ""
 "More than one copy of package %s has been unpacked\n"
@@ -5428,7 +5435,7 @@ msgstr ""
 "На поточному проході розпаковано декілька копій пакунку %s!\n"
 " Налаштовується лише одна з них.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid ""
 "package %.250s is not ready for trigger processing\n"
@@ -5437,90 +5444,90 @@ msgstr ""
 "пакунок %.250s не готовий для обробки тригерів\n"
 " (поточний стан «%.250s» без тригерів розгляду)"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s which provides %s is to be removed.\n"
 msgstr "  Пакунок %s надає %s, але має бути вилученим.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s is to be removed.\n"
 msgstr "  Пакунок %s буде вилучено.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Version of %s on system, provided by %s, is %s.\n"
 msgstr "  Версія %s в системі, що надається %s — %s.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Version of %s on system is %s.\n"
 msgstr "  Версія %s у системі %s.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s which provides %s awaits trigger processing.\n"
 msgstr "  Пакунок %s, що надає %s, очікує обробки тригерів очікування.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s awaits trigger processing.\n"
 msgstr "  Пакунок %s очікує обробки тригерів очікування.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "also configuring '%s' (required by '%s')"
 msgstr "також налаштовується пакунок «%s» (необхідний для «%s»)"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s which provides %s is not configured yet.\n"
 msgstr "  Пакунок %s, що надає %s, поки не налаштований.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s is not configured yet.\n"
 msgstr "  Пакунок %s поки не налаштований.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s which provides %s is not installed.\n"
 msgstr "  Пакунок %s, що надає %s, не встановлено.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Package %s is not installed.\n"
 msgstr "  Пакунок %s не встановлено.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid " %s (%s) breaks %s and is %s.\n"
 msgstr " %s (%s) ламає %s та %s.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  %s (%s) provides %s.\n"
 msgstr "  %s (%s) надає %s.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 #, c-format
 msgid "  Version of %s to be configured is %s.\n"
 msgstr "  Версія %s, яку буде налаштовано: %s.\n"
 
-#: src/packages.c
+#: src/main/packages.c
 msgid " depends on "
 msgstr " залежить від "
 
-#: src/packages.c
+#: src/main/packages.c
 msgid "; however:\n"
 msgstr "; однак:\n"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "ignoring request to remove %.250s which isn't installed"
 msgstr "ігнорується запит на вилучення невстановленого пакунку %.250s"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid ""
 "ignoring request to remove %.250s, only the config\n"
@@ -5530,15 +5537,15 @@ msgstr ""
 "  збереглися лише файли налаштування; щоб вилучити й файли\n"
 "  налаштування, використовуйте --purge"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid "this is an essential package; it should not be removed"
 msgstr "це є важливий пакунок; він не повинен бути вилучений"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid "this is a protected package; it should not be removed"
 msgstr ""
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid ""
 "dependency problems prevent removal of %s:\n"
@@ -5547,11 +5554,11 @@ msgstr ""
 "проблеми з залежностями не дозволяють вилучити пакунок %s:\n"
 "%s"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid "dependency problems - not removing"
 msgstr "проблеми з залежностямии — не вилучається"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid ""
 "%s: dependency problems, but removing anyway as you requested:\n"
@@ -5561,7 +5568,7 @@ msgstr ""
 "його все одно буде вилучено:\n"
 "%s"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid ""
 "package is in a very bad inconsistent state; you should\n"
 " reinstall it before attempting a removal"
@@ -5569,22 +5576,22 @@ msgstr ""
 "пакунок зовсім непрацездатний; перед спробою вилучення\n"
 " його потрібно перевстановити"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "Would remove or purge %s (%s) ...\n"
 msgstr "Пакунок %s (%s) буде вилучено або вичищено …\n"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "Removing %s (%s) ...\n"
 msgstr "Вилучення %s (%s) ...\n"
 
-#: src/remove.c src/unpack.c
+#: src/main/remove.c src/main/unpack.c
 #, c-format
 msgid "unable to delete control info file '%.250s'"
 msgstr "не вдалося вилучити файл керуючої інформації «%.250s»"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid ""
 "while removing %.250s, unable to remove directory '%.250s': %s - directory "
@@ -5593,153 +5600,153 @@ msgstr ""
 "при вилученні пакунку %.250s не вдалося вилучити каталог «%.250s»: %s — "
 "можливо, він є точкою монтування файлової системи?"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "unable to securely remove '%.250s'"
 msgstr "не вдалося безпечно вилучити «%.250s»"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "while removing %.250s, directory '%.250s' not empty so not removed"
 msgstr "при вилученні %.250s каталог «%.250s» не порожній, тому не вилучений"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "Purging configuration files for %s (%s) ...\n"
 msgstr "Вилучення файлів конфігурації %s (%s)...\n"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "cannot remove old config file '%.250s' (= '%.250s')"
 msgstr "не вдалося вилучити старий файл налаштування «%.250s» (= «%.250s»)"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "cannot read config file directory '%.250s' (from '%.250s')"
 msgstr ""
 "не вдалося прочитати конфігураційний файл каталогу '%.250s' (від '%.250s')"
 
-#: src/remove.c
+#: src/main/remove.c
 #, c-format
 msgid "cannot remove old backup config file '%.250s' (of '%.250s')"
 msgstr ""
 "не вдалося вилучити «%.250s», резервну копію файлу налаштування «%.250s»"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid "cannot remove old files list"
 msgstr "не вдалося вилучити старий список файлів"
 
-#: src/remove.c
+#: src/main/remove.c
 msgid "can't remove old postrm script"
 msgstr "не вдалося вилучити старий скрипт, що виконується після вилучення"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "unable to set execute permissions on '%.250s'"
 msgstr "не вдалося зробити файл «%.250s» виконуваним"
 
-#: src/script.c
+#: src/main/script.c
 msgid "admindir must be inside instdir for dpkg to work properly"
 msgstr "щоб dpkg працював правильно, admindir має бути всередині instdir"
 
-#: src/script.c
+#: src/main/script.c
 msgid ""
 "not enough privileges to change root directory with --force-not-root, "
 "consider using --force-script-chrootless?"
 msgstr ""
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "failed to chroot to '%.250s'"
 msgstr "не вдалося виконати chroot в «%.250s»"
 
-#: src/script.c
+#: src/main/script.c
 msgid "unable to setenv for maintainer script"
 msgstr "не вдалося виконати setenv для сценарію супроводжувача"
 
-#: src/script.c
+#: src/main/script.c
 msgid "cannot set security execution context for maintainer script"
 msgstr ""
 "неможливо вказати контекст безпечного виконання для сценарія супроводжувача"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "installed %s package %s script"
 msgstr "встановлено пакунок %s сценарій %s"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "unable to stat %s '%.250s'"
 msgstr "не вдалося отримати інформацію про %s в «%.250s»"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "new %s package %s script"
 msgstr "новий пакунок %s сценарій %s"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "old %s package %s script"
 msgstr "старий пакунок %s сценарій %s"
 
-#: src/script.c
+#: src/main/script.c
 #, c-format
 msgid "unable to stat %s '%.250s': %s"
 msgstr "не вдалося отримати інформацію про %s у «%.250s»: %s"
 
-#: src/script.c
+#: src/main/script.c
 msgid "trying script from the new package instead ..."
 msgstr "спроба використовувати сценарій з нового пакунку …"
 
-#: src/script.c
+#: src/main/script.c
 msgid "there is no script in the new version of the package - giving up"
 msgstr "у новій версії пакунку немає цього сценарію, відмова"
 
-#: src/script.c
+#: src/main/script.c
 msgid "... it looks like that went OK"
 msgstr "… схоже, що пройшло добре"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unexpected end of file in package name at line %d"
 msgstr "несподіваний кінець файлу в назві пакунку на рядку %d"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unexpected end of line in package name at line %d"
 msgstr "неочікуваний кінець рядка у імені пакунку у рядку %d"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unexpected end of file after package name at line %d"
 msgstr "несподіваний кінець файлу після імені пакунку у рядку %d"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unexpected end of line after package name at line %d"
 msgstr "неочікуваний кінець рядка після імені пакунку у рядку %d"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unexpected data after package and selection at line %d"
 msgstr "зайві символи після імені пакунку й бажаного стану у рядку %d"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "illegal package name at line %d: %.250s"
 msgstr "неприпустиме ім’я пакунку у рядку %d: %.250s"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "package not in status nor available database at line %d: %.250s"
 msgstr "пакунок ані в стані ані доступний у базі даних на рядку %d: %.250s"
 
-#: src/select.c
+#: src/main/select.c
 #, c-format
 msgid "unknown wanted status at line %d: %.250s"
 msgstr "некоректний бажаний стан у рядку %d: %.250s"
 
-#: src/select.c
+#: src/main/select.c
 msgid "read error on standard input"
 msgstr "помилка читання стандартного потоку вводу"
 
@@ -5750,7 +5757,7 @@ msgid ""
 "please see the FAQ <https://wiki.debian.org/Teams/Dpkg/FAQ#set-selections>"
 msgstr ""
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 msgid ""
 "cycle found while processing triggers:\n"
 " chain of packages whose triggers are or may be responsible:"
@@ -5758,7 +5765,7 @@ msgstr ""
 "при обробці тригерів виявлено зациклювання:\n"
 " ланцюжок пакунків з такими тригерами може не відповідати:"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 #, c-format
 msgid ""
 "\n"
@@ -5767,11 +5774,11 @@ msgstr ""
 "\n"
 " пакункові очікуючі тригери може бути не визначено:\n"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 msgid "triggers looping, abandoned"
 msgstr "зациклювання тригерів, скасування роботи"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 #, c-format
 msgid ""
 "dependency problems prevent processing triggers for %s:\n"
@@ -5780,11 +5787,11 @@ msgstr ""
 "проблеми залежностей не дозволяють виконати обробку тригерів %s:\n"
 "%s"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 msgid "dependency problems - leaving triggers unprocessed"
 msgstr "проблеми залежностей — залишаємо тригери не обробленими"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 #, c-format
 msgid ""
 "%s: dependency problems, but processing triggers anyway as you requested:\n"
@@ -5794,49 +5801,49 @@ msgstr ""
 "обробка тригерів все одно буде виконана:\n"
 "%s"
 
-#: src/trigproc.c
+#: src/main/trigproc.c
 #, c-format
 msgid "Processing triggers for %s (%s) ...\n"
 msgstr "Обробка тригерів %s (%s)...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ".../%s"
 msgstr ".../%s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "error ensuring '%.250s' doesn't exist"
 msgstr "не вдалося переконатися у тому, що «%.250s» не існує"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "split package reassembly"
 msgstr "розділення пакункової перезбірки"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "reassembled package file"
 msgstr "перезібраний файл пакунку"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "subprocess %s returned error exit status %d"
 msgstr "підпроцес %s повернув помилковий код завершення %d"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Authenticating %s ...\n"
 msgstr "Перевірка справжності файлу %s ...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "package signature verification"
 msgstr "перевірка підпису пакунку"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "verification on package %s failed!"
 msgstr "пакунок не пройшов %s перевірку!"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "verification on package %s failed; but installing anyway as you requested"
@@ -5844,12 +5851,12 @@ msgstr ""
 "пакунок %s не пройшов перевірку, але за вашою вказівкою все одно буде "
 "встановлений"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "passed\n"
 msgstr "пройдено\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "regarding %s containing %s, pre-dependency problem:\n"
@@ -5858,45 +5865,45 @@ msgstr ""
 "з-за %s, вмісту у %s, виникла проблема попередніх залежностей:\n"
 "%s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "pre-dependency problem - not installing %.250s"
 msgstr "проблема попередніх залежностей — пакунок %.250s не буде встановлено"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "ignoring pre-dependency problem!"
 msgstr "ігнорується проблема попередніх залежностей!"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "De-configuring %s (%s), to allow removal of %s (%s) ...\n"
 msgstr "Деконфігурування %s (%s) для вилучення %s (%s)...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "De-configuring %s (%s), to allow installation of %s (%s) ...\n"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "De-configuring %s (%s), to allow configuration of %s (%s) ...\n"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "conffile file contains an empty line"
 msgstr ""
 
-#: src/unpack.c utils/update-alternatives.c
+#: src/main/unpack.c utils/update-alternatives.c
 #, c-format
 msgid "read error in %.250s"
 msgstr "помилка читання файлу %.250s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "error closing %.250s"
 msgstr "помилка при закритті файлу %.250s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "old version of package has overly-long info file name starting '%.250s'"
@@ -5904,22 +5911,22 @@ msgstr ""
 "стара версія пакунку містить інформаційний файл з дуже довгим іменем, що "
 "починається з «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to remove obsolete info file '%.250s'"
 msgstr "не вдалося вилучити застарілий інформаційний файл «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to install (supposed) new info file '%.250s'"
 msgstr ""
 "не вдалося встановити(передбачувано) новий інформаційний файл «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "unable to open temp control directory"
 msgstr "не вдалося відкрити тимчасовий каталог керуючої інформації"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "package contains overly-long control info file name (starting '%.50s')"
@@ -5927,73 +5934,73 @@ msgstr ""
 "пакунок містить дуже довге ім’я файлу керуючої інформації (починається з "
 "«%.50s»)"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "package control info contained directory '%.250s'"
 msgstr "керуюча інформація пакунку містить каталог «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "package control info rmdir of '%.250s' didn't say not a dir"
 msgstr ""
 "rmdir при спробі вилучити керуючу інформацію пакунку «%.250s» не стверджує, "
 "що це не було каталогом"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "package %s contained list as info file"
 msgstr "пакунок %s містить у якості інформаційного файлу список"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to install new info file '%.250s' as '%.250s'"
 msgstr ""
 "не вдалося перейменувати новий інформаційний файл «%.250s» в «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Removing obsolete conffile %s ...\n"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Obsolete conffile '%s' has been modified by you.\n"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Saving as %s ...\n"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "%s: cannot rename obsolete conffile '%s' to '%s': %s"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "could not stat old file '%.250s' so not deleting it: %s"
 msgstr ""
 "не вдалося отримати інформацію про старий файл «%.250s», тому не вилучаємо "
 "його: %s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to delete old directory '%.250s': %s"
 msgstr "не вдалося вилучити старий каталог «%.250s»: %s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "old conffile '%.250s' was an empty directory (and has now been deleted)"
 msgstr "старий conffile «%.250s» є порожнім каталогом (й був вилучений)"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to stat other new file '%.250s'"
 msgstr "не вдалося отримати інформацію про інший новий файл «%.250s»"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid ""
 "old file '%.250s' is the same as several new files! (both '%.250s' and "
@@ -6002,92 +6009,92 @@ msgstr ""
 "старий файл «%.250s» такий самий як декілька нових файлів! («%.250s» та "
 "«%.250s»)"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "unable to securely remove old file '%.250s': %s"
 msgstr "не вдалося безпечно вилучити старий файл «%.250s»: %s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "(Noting disappearance of %s, which has been completely replaced.)\n"
 msgstr "(Пакунок %s повністю замінений й фактично зник.)\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "package control information extraction"
 msgstr "витягнення керуючої інформації пакунку"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Recorded info about %s from %s.\n"
 msgstr "Записана інформація про пакунок %s з файлу %s.\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "package architecture (%s) does not match system (%s)"
 msgstr "архітектура пакунку (%s) не відповідає архітектурі системи (%s)"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Preparing to unpack %s ...\n"
 msgstr "Приготування до розпакування %s ...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Unpacking %s (%s) ...\n"
 msgstr "Розпакування %s (%s)...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Unpacking %s (%s) over (%s) ...\n"
 msgstr "Розпакування %s (%s) над (%s)...\n"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "package filesystem archive extraction"
 msgstr "витягнення архіву файлової системи пакунку"
 
-#: src/unpack.c
+#: src/main/unpack.c
 msgid "corrupted filesystem tarfile in package archive"
 msgstr ""
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "cannot zap possible trailing zeros from dpkg-deb: %s"
 msgstr "неможливо вилучити можливі завершуючі нулі з dpkg-deb: %s"
 
-#: src/unpack.c
+#: src/main/unpack.c
 #, c-format
 msgid "Removing %s (%s), to allow configuration of %s (%s) ...\n"
 msgstr ""
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid "--%s takes at most one Packages-file argument"
 msgstr "--%s може бути лише один аргумент (файл Packages)"
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid ""
 "unable to access dpkg database directory '%s' for bulk available update"
 msgstr ""
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid ""
 "required write access to dpkg database directory '%s' for bulk available "
 "update"
 msgstr ""
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid "Replacing available packages info, using %s.\n"
 msgstr "Інформація про доступні пакунки замінюється вмістом файлу %s.\n"
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid "Updating available packages info, using %s.\n"
 msgstr "Інформація про доступні пакунки зливається з вмістом файлу %s.\n"
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid "Information about %d package was updated.\n"
 msgid_plural "Information about %d packages was updated.\n"
@@ -6095,7 +6102,7 @@ msgstr[0] "Оновлена інформація про %d пакунок.\n"
 msgstr[1] "Оновлена інформація про %d пакунки.\n"
 msgstr[2] "Оновлена інформація про %d пакунки.\n"
 
-#: src/update.c
+#: src/main/update.c
 #, c-format
 msgid ""
 "obsolete '--%s' option; unavailable packages are automatically cleaned up"

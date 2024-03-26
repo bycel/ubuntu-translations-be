@@ -7,31 +7,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdb\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-03-12 01:51+0000\n"
+"POT-Creation-Date: 2024-03-20 01:51+0000\n"
 "PO-Revision-Date: 2020-03-11 22:02+0000\n"
 "Last-Translator: Roman Pavlyshyn <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-03-15 07:18+0000\n"
+"X-Launchpad-Export-Date: 2024-03-25 09:36+0000\n"
 "X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
 
-#: aarch64-fbsd-nat.c:231 nat/aarch64-linux-hw-point.c:282
+#: aarch64-fbsd-nat.c:229 nat/aarch64-linux-hw-point.c:282
 #, possible-c-format
 msgid ""
 "Unexpected number of hardware breakpoint registers reported by ptrace, got "
 "%d, expected %d."
 msgstr ""
 
-#: aarch64-fbsd-nat.c:239 nat/aarch64-linux-hw-point.c:262
+#: aarch64-fbsd-nat.c:237 nat/aarch64-linux-hw-point.c:262
 #, possible-c-format
 msgid ""
 "Unexpected number of hardware watchpoint registers reported by ptrace, got "
 "%d, expected %d."
 msgstr ""
 
-#: aarch64-fbsd-nat.c:342
+#: aarch64-fbsd-nat.c:340
 msgid "Failed to set hardware debug registers"
 msgstr ""
 
@@ -217,21 +217,21 @@ msgstr ""
 msgid "Couldn't read contents from memtag section."
 msgstr ""
 
-#: aarch64-nat.c:284
+#: aarch64-nat.c:351
 msgid ""
 "Set whether to show variables that mirror the AArch64 debug registers."
 msgstr ""
 "Вкажіть, чи показувати змінні, які відзеркалюють зневаджувальні регістри "
 "AArch64."
 
-#: aarch64-nat.c:285
+#: aarch64-nat.c:352
 msgid ""
 "Show whether to show variables that mirror the AArch64 debug registers."
 msgstr ""
 "Показує, чи слід відображати змінні, що відзеркалюють зневаджувальні "
 "регістри AArch64."
 
-#: aarch64-nat.c:286 mips-linux-nat.c:795 x86-nat.c:222
+#: aarch64-nat.c:353 mips-linux-nat.c:795 x86-nat.c:222
 msgid ""
 "Use \"on\" to enable, \"off\" to disable.\n"
 "If enabled, the debug registers values are shown when GDB inserts\n"
@@ -505,7 +505,7 @@ msgid "No definition of \"%s\" found."
 msgstr "Визначення \"%s\" не знайдено"
 
 #: ada-exp.y:1778 c-exp.y:1218 cli/cli-cmds.c:1313 go-exp.y:583 linespec.c:1568
-#: linespec.c:3737 parse.c:153 p-exp.y:729 source.c:265 symtab.c:4653
+#: linespec.c:3737 parse.c:153 p-exp.y:729 source.c:265 symtab.c:4655
 msgid "No symbol table is loaded.  Use the \"file\" command."
 msgstr "Не завантажено таблиці символів. Використайте команду \"file\"."
 
@@ -528,12 +528,12 @@ msgstr "Неможливо знайти перейменований симво�
 msgid "Invalid use of type."
 msgstr "Невірне використання типу."
 
-#: ada-exp.h:609
+#: ada-exp.h:582
 #, possible-c-format
 msgid "%*sAda target symbol '@'\n"
 msgstr ""
 
-#: ada-exp.h:673
+#: ada-exp.h:646
 msgid "Aggregates only allowed on the right of an assignment"
 msgstr "Агрегації дозволено лише з правого боку операції привласнення"
 
@@ -628,7 +628,7 @@ msgstr "індекс упакованого масиву %ld виходить з
 msgid "Cannot unpack %d bits into buffer of %d bytes"
 msgstr "Не вдається розпакувати %d біт в буфер з %d байт"
 
-#: ada-lang.c:2887 ada-lang.c:9403 valops.c:1088
+#: ada-lang.c:2887 ada-lang.c:9405 valops.c:1088
 msgid "Left operand of assignment is not a modifiable lvalue."
 msgstr "Лівий операнд в операції призначення - незмінюване значення lvalue."
 
@@ -760,200 +760,200 @@ msgstr "Спроба витягнення значення поля об’єк�
 
 #. PNH: Do we ever get here?  See ada_search_struct_field,
 #. find_struct_field.
-#: ada-lang.c:7197
+#: ada-lang.c:7199
 msgid "Cannot assign this kind of variant record"
 msgstr "Неможливо призначити даний тип варіантного запису."
 
-#: ada-lang.c:7259
+#: ada-lang.c:7261
 #, possible-c-format
 msgid "Type %s is not a structure or union type"
 msgstr "Тип %s не є структурою або об'єднанням"
 
-#: ada-lang.c:7260
+#: ada-lang.c:7262
 msgid "(null)"
 msgstr "(нуль)"
 
-#: ada-lang.c:7274 inferior.c:514
+#: ada-lang.c:7276 inferior.c:514
 msgid "<null>"
 msgstr "<нуль>"
 
-#: ada-lang.c:7276
+#: ada-lang.c:7278
 #, possible-c-format
 msgid "Type %s has no component named %s"
 msgstr "Тип %s не має компонента з іменем %s"
 
-#: ada-lang.c:7540
+#: ada-lang.c:7542
 msgid "unexpected null name on descriptive type"
 msgstr "несподіване ім’я або опис типу"
 
-#: ada-lang.c:7910
+#: ada-lang.c:7912
 #, possible-c-format
 msgid "Invalid type size for `%s' detected: %s."
 msgstr ""
 
-#: ada-lang.c:7913
+#: ada-lang.c:7915
 #, possible-c-format
 msgid "Invalid type size for <unnamed> detected: %s."
 msgstr ""
 
-#: ada-lang.c:8257
+#: ada-lang.c:8259
 msgid "could not decode constrained packed array type"
 msgstr ""
 
-#: ada-lang.c:8465
+#: ada-lang.c:8467
 #, possible-c-format
 msgid "unable to read value of %s (%s)"
 msgstr "неможливо прочитати значення %s (%s)"
 
-#: ada-lang.c:8724
+#: ada-lang.c:8726
 msgid "'POS only defined on discrete types"
 msgstr "'POS визначено лише для цілочисельних типів"
 
-#: ada-lang.c:8728
+#: ada-lang.c:8730
 msgid "enumeration value is invalid: can't find 'POS"
 msgstr "невірне значення перелічування: неможливо визначити 'POS"
 
-#: ada-lang.c:8756
+#: ada-lang.c:8758
 msgid "argument to 'VAL out of range"
 msgstr "аргумент для 'VAL виходить за припустиму межу"
 
-#: ada-lang.c:8770
+#: ada-lang.c:8772
 msgid "'VAL only defined on discrete types"
 msgstr "'VAL визначено лише для цілочисельних типів"
 
-#: ada-lang.c:8772
+#: ada-lang.c:8774
 msgid "'VAL requires integral argument"
 msgstr "'VAL вимагає інтегральний аргумент"
 
-#: ada-lang.c:8789
+#: ada-lang.c:8791
 msgid "'Enum_Rep only defined on enum types"
 msgstr ""
 
-#: ada-lang.c:8791
+#: ada-lang.c:8793
 msgid "'Enum_Rep requires argument to have same type as enum"
 msgstr ""
 
-#: ada-lang.c:8808
+#: ada-lang.c:8810
 msgid "'Enum_Val only defined on enum types"
 msgstr ""
 
-#: ada-lang.c:8810
+#: ada-lang.c:8812
 msgid "'Enum_Val requires integral argument"
 msgstr ""
 
-#: ada-lang.c:8819
+#: ada-lang.c:8821
 #, possible-c-format
 msgid "value %s not found in enum"
 msgstr ""
 
-#: ada-lang.c:9120 ada-lang.c:9157
+#: ada-lang.c:9122 ada-lang.c:9159
 msgid "unable to determine array bounds"
 msgstr "не вдалося визначити межі масиву"
 
-#: ada-lang.c:9199
+#: ada-lang.c:9201
 msgid "cannot assign arrays of different length"
 msgstr "неможливо призначати масиви різної довжини"
 
-#: ada-lang.c:9211
+#: ada-lang.c:9213
 msgid "Incompatible types in assignment"
 msgstr "Несумісні типи у привласненні"
 
-#: ada-lang.c:9255
+#: ada-lang.c:9257
 #, possible-c-format
 msgid "second operand of %s must not be zero."
 msgstr "другий операнд %s повинен бути ненульовим."
 
-#: ada-lang.c:9302
+#: ada-lang.c:9304
 msgid "Attempt to compare array with non-array"
 msgstr "Спроба порівняння масиву з об’єктом, що не є масивом"
 
-#: ada-lang.c:9373
+#: ada-lang.c:9375
 #, possible-c-format
 msgid "%*sAggregate\n"
 msgstr ""
 
-#: ada-lang.c:9419
+#: ada-lang.c:9421
 msgid "Left-hand side must be array or record."
 msgstr "Ліва частина повинна бути масивом або структурою"
 
-#: ada-lang.c:9440
+#: ada-lang.c:9442
 #, possible-c-format
 msgid "%*sPositional, index = %d\n"
 msgstr ""
 
-#: ada-lang.c:9458
+#: ada-lang.c:9460
 msgid "Extra components in aggregate ignored."
 msgstr "Додаткові компоненти в агрегації ігноруються."
 
-#: ada-lang.c:9475
+#: ada-lang.c:9477
 #, possible-c-format
 msgid "%*sDiscrete range:\n"
 msgstr ""
 
-#: ada-lang.c:9492
+#: ada-lang.c:9494
 msgid "Index in component association out of bounds."
 msgstr "Індекс у асоціації компонентів виходить за припустимі межі."
 
-#: ada-lang.c:9511
+#: ada-lang.c:9513
 #, possible-c-format
 msgid "%*sName:\n"
 msgstr ""
 
-#: ada-lang.c:9541
+#: ada-lang.c:9543
 msgid "Invalid record component association."
 msgstr "Невірний запис асоціяції компоненту."
 
-#: ada-lang.c:9555
+#: ada-lang.c:9557
 #, possible-c-format
 msgid "Unknown component name: %s."
 msgstr "Невідоме ім’я компонента: %s."
 
-#: ada-lang.c:9576
+#: ada-lang.c:9578
 #, possible-c-format
 msgid "%*sChoices:\n"
 msgstr ""
 
-#: ada-lang.c:9605
+#: ada-lang.c:9607
 #, possible-c-format
 msgid "%*sOthers:\n"
 msgstr ""
 
-#: ada-lang.c:10012
+#: ada-lang.c:10014
 msgid "Membership test incompletely implemented; always returns true"
 msgstr ""
 "Невірна імплементація тестів на членство; завжди повертається значення "
 "\"істина\""
 
-#: ada-lang.c:10152 ada-lang.c:11239
+#: ada-lang.c:10154 ada-lang.c:11247
 msgid "cannot slice a packed array"
 msgstr "не вдається поділити упакований масив"
 
-#: ada-lang.c:10181 valops.c:4031
+#: ada-lang.c:10183 valops.c:4031
 msgid "cannot take slice of non-array"
 msgstr "не може прийняти не-масив"
 
 #. Should never happen.
-#: ada-lang.c:10264 ada-lang.c:10299 ada-lang.c:10324 ada-lang.c:10357
+#: ada-lang.c:10266 ada-lang.c:10301 ada-lang.c:10326 ada-lang.c:10359
 msgid "unexpected attribute encountered"
 msgstr "виявлений несподіваний атрибут"
 
-#: ada-lang.c:10332
+#: ada-lang.c:10334
 msgid "the 'length attribute applies only to array types"
 msgstr "атрибут 'length' застосовуваний лише для масивів"
 
-#: ada-lang.c:10336
+#: ada-lang.c:10338
 msgid "unimplemented type attribute"
 msgstr "нереалізований тип атрибуту"
 
-#: ada-lang.c:10540
+#: ada-lang.c:10542
 msgid "Aligner types cannot be handled in agent expressions"
 msgstr ""
 
-#: ada-lang.c:10542 ada-lang.c:10917
+#: ada-lang.c:10544 ada-lang.c:10919
 msgid "Dynamic types cannot be handled in agent expressions"
 msgstr ""
 
-#: ada-lang.c:10588
+#: ada-lang.c:10590
 #, possible-c-format
 msgid "unexpected character type size %s"
 msgstr ""
@@ -961,56 +961,56 @@ msgstr ""
 #. Only encountered when an unresolved symbol occurs in a
 #. context other than a function call, in which case, it is
 #. invalid.
-#: ada-lang.c:10792 ada-lang.c:10904 ada-lang.c:11062
+#: ada-lang.c:10794 ada-lang.c:10906 ada-lang.c:11070
 #, possible-c-format
 msgid "Unexpected unresolved symbol, %s, during evaluation"
 msgstr "Несподівані невирішені символ, %s, під час обчислення"
 
-#: ada-lang.c:10911
+#: ada-lang.c:10913
 msgid "Tagged types cannot be handled in agent expressions"
 msgstr ""
 
-#: ada-lang.c:10938
+#: ada-lang.c:10944
 msgid "Attempt to dereference null array pointer."
 msgstr "Спроба розіменування нульового вказівника на масив"
 
-#: ada-lang.c:10981 eval.c:1678 eval.c:2790 valops.c:1666
+#: ada-lang.c:10989 eval.c:1678 eval.c:2790 valops.c:1666
 msgid "Attempt to take contents of a non-pointer value."
 msgstr "Спроба звернення до вмісту об’єкту, що не є вказівником"
 
-#: ada-lang.c:11113
+#: ada-lang.c:11121
 #, possible-c-format
 msgid "cannot subscript or call something of type `%s'"
 msgstr "неможливо індексувати або викликати об’єкт типу `%s'"
 
-#: ada-lang.c:11148
+#: ada-lang.c:11156
 msgid "cannot subscript or call a record"
 msgstr "неможливо індексувати або звернутися до запису"
 
-#: ada-lang.c:11150
+#: ada-lang.c:11158
 #, possible-c-format
 msgid "wrong number of subscripts; expecting %d"
 msgstr "невірний індекс; очікується %d"
 
-#: ada-lang.c:11162 ada-lang.c:11176
+#: ada-lang.c:11170 ada-lang.c:11184
 msgid "element type of array unknown"
 msgstr "невідомий тип елемента масиву"
 
-#: ada-lang.c:11185
+#: ada-lang.c:11193
 msgid "Attempt to index or call something other than an array or function"
 msgstr ""
 "Спроба індексування або виклику об’єкту, що не є ні масивом, ні функцією"
 
-#: ada-lang.c:11414
+#: ada-lang.c:11422
 msgid "Unknown lower bound, using 1."
 msgstr "Невідома нижня межа, використовується 1."
 
-#: ada-lang.c:11430
+#: ada-lang.c:11438
 #, possible-c-format
 msgid "Unknown upper bound, using %ld."
 msgstr "Невідома верхня межа, використовується %ld."
 
-#: ada-lang.c:11641 ada-lang.c:11661
+#: ada-lang.c:11649 ada-lang.c:11669
 msgid ""
 "Your Ada runtime appears to be missing some debugging information.\n"
 "Cannot insert Ada exception catchpoint in this configuration."
@@ -1019,25 +1019,25 @@ msgstr ""
 "зневадження.\n"
 "Неможливо вставити  перехоплення для винятків Ada в поточній конфігурації."
 
-#: ada-lang.c:11651 ada-lang.c:11671
+#: ada-lang.c:11659 ada-lang.c:11679
 #, possible-c-format
 msgid "Symbol \"%s\" is not a function (class = %d)"
 msgstr "Символ \"%s\" не є функцією (клас = %d)"
 
-#: ada-lang.c:11714
+#: ada-lang.c:11722
 msgid "Could not find Ada runtime exception support"
 msgstr ""
 
-#: ada-lang.c:11883 ada-lang.c:12340 ada-lang.c:12394 ada-lang.c:12426
+#: ada-lang.c:11891 ada-lang.c:12348 ada-lang.c:12402 ada-lang.c:12434
 msgid "unexpected catchpoint type"
 msgstr "невідомий тип точки перехоплення."
 
-#: ada-lang.c:11968
+#: ada-lang.c:11976
 #, possible-c-format
 msgid "failed to get exception name: %s"
 msgstr "Невідома назва винятку: %s"
 
-#: ada-lang.c:12114
+#: ada-lang.c:12122
 #, possible-c-format
 msgid ""
 "failed to reevaluate internal exception condition for catchpoint %d: %s"
@@ -1045,108 +1045,108 @@ msgstr ""
 "не вдалося перевірити умову внутрішнього винятку для точки перехоплення %d: "
 "%s"
 
-#: ada-lang.c:12187
+#: ada-lang.c:12195
 msgid "Error in testing exception condition:\n"
 msgstr "Помилка при перевірці умови виняткового стану:\n"
 
-#: ada-lang.c:12310 ada-lang.c:12365
+#: ada-lang.c:12318 ada-lang.c:12373
 #, possible-c-format
 msgid "`%s' Ada exception"
 msgstr "`%s' виняток Ada"
 
-#: ada-lang.c:12328 ada-lang.c:12381
+#: ada-lang.c:12336 ada-lang.c:12389
 #, possible-c-format
 msgid "`%s' Ada exception handlers"
 msgstr "`%s' обробники винятків Ada"
 
-#: ada-lang.c:12355 break-catch-throw.c:318
+#: ada-lang.c:12363 break-catch-throw.c:318
 msgid "Temporary catchpoint "
 msgstr "Тимчасова точка перехоплення "
 
-#: ada-lang.c:12356
+#: ada-lang.c:12364
 msgid "Catchpoint "
 msgstr "Точка перехоплення "
 
-#: ada-lang.c:12370
+#: ada-lang.c:12378
 msgid "all Ada exceptions"
 msgstr "Усі винятки Ада"
 
-#: ada-lang.c:12374
+#: ada-lang.c:12382
 msgid "unhandled Ada exceptions"
 msgstr "необроблені винятки Ада"
 
-#: ada-lang.c:12386
+#: ada-lang.c:12394
 msgid "all Ada exceptions handlers"
 msgstr "всі обробники винятків Ада"
 
-#: ada-lang.c:12390
+#: ada-lang.c:12398
 msgid "failed Ada assertions"
 msgstr "невдалі твердження Ada"
 
-#: ada-lang.c:12478
+#: ada-lang.c:12486
 msgid "Condition missing after `if' keyword"
 msgstr "Після ключового слова `if' відсутня умова"
 
-#: ada-lang.c:12488 breakpoint.c:1129 breakpoint.c:1152
+#: ada-lang.c:12496 breakpoint.c:1129 breakpoint.c:1152
 msgid "Junk at end of expression"
 msgstr "Невірний вміст кінця виразу"
 
-#: ada-lang.c:12541
+#: ada-lang.c:12549
 #, possible-c-format
 msgid "unexpected catchpoint kind (%d)"
 msgstr "Несподіваний вид точки перехоплення (%d)"
 
-#: ada-lang.c:12624
+#: ada-lang.c:12632
 #, possible-c-format
 msgid "Catchpoint symbol not found: %s"
 msgstr ""
 
-#: ada-lang.c:12628
+#: ada-lang.c:12636
 #, possible-c-format
 msgid "Unable to insert catchpoint. %s is not a function."
 msgstr ""
 
-#: ada-lang.c:12750
+#: ada-lang.c:12758
 msgid "condition missing after `if' keyword"
 msgstr "відсутня умова після ключового слова `if'"
 
-#: ada-lang.c:12757 break-catch-exec.c:209 break-catch-fork.c:226
+#: ada-lang.c:12765 break-catch-exec.c:209 break-catch-fork.c:226
 #: break-catch-throw.c:429 breakpoint.c:9070 breakpoint.c:10906
 #: breakpoint.c:14304
 msgid "Junk at end of arguments."
 msgstr "Невірний вміст у кінці аргументів."
 
-#: ada-lang.c:13080
+#: ada-lang.c:13088
 msgid "invalid regular expression"
 msgstr "неприпустимий регулярний вираз"
 
-#: ada-lang.c:13095
+#: ada-lang.c:13103
 #, possible-c-format
 msgid "All Ada exceptions matching regular expression \"%s\":\n"
 msgstr "Всі винятки Ада, що відповідають регулярному виразу \"%s\":\n"
 
-#: ada-lang.c:13097
+#: ada-lang.c:13105
 msgid "All defined Ada exceptions:\n"
 msgstr "Всі визначені винятки Ада:\n"
 
-#: ada-lang.c:13856
+#: ada-lang.c:13864
 msgid "Prefix command for changing Ada-specific settings."
 msgstr ""
 
-#: ada-lang.c:13857
+#: ada-lang.c:13865
 msgid "Generic command for showing Ada-specific settings."
 msgstr "Загальна команда для зміни налаштувань, що стосуються Ada"
 
-#: ada-lang.c:13862
+#: ada-lang.c:13870
 msgid "Enable or disable an optimization trusting PAD types over XVS types."
 msgstr ""
 
-#: ada-lang.c:13863
+#: ada-lang.c:13871
 msgid ""
 "Show whether an optimization trusting PAD types over XVS types is activated."
 msgstr ""
 
-#: ada-lang.c:13865
+#: ada-lang.c:13873
 msgid ""
 "This is related to the encoding used by the GNAT compiler.  The debugger\n"
 "should normally trust the contents of PAD types, but certain older versions\n"
@@ -1169,33 +1169,33 @@ msgstr ""
 "змінювати\n"
 "цей параметр на \"off\", якщо в цьому немає потреби."
 
-#: ada-lang.c:13876
+#: ada-lang.c:13884
 msgid ""
 "Enable or disable the output of formal and return types for functions in the "
 "overloads selection menu."
 msgstr ""
 
-#: ada-lang.c:13878
+#: ada-lang.c:13886
 msgid ""
 "Show whether the output of formal and return types for functions in the "
 "overloads selection menu is activated."
 msgstr ""
 
-#: ada-lang.c:13886
+#: ada-lang.c:13894
 msgid "Set the Ada source character set."
 msgstr ""
 
-#: ada-lang.c:13887
+#: ada-lang.c:13895
 msgid "Show the Ada source character set."
 msgstr ""
 
-#: ada-lang.c:13888
+#: ada-lang.c:13896
 msgid ""
 "The character set used for Ada source files.\n"
 "This must correspond to the '-gnati' or '-gnatW' option passed to GNAT."
 msgstr ""
 
-#: ada-lang.c:13894
+#: ada-lang.c:13902
 msgid ""
 "Catch Ada exceptions, when raised.\n"
 "Usage: catch exception [ARG] [if CONDITION]\n"
@@ -1209,7 +1209,7 @@ msgid ""
 "exception should cause a stop."
 msgstr ""
 
-#: ada-lang.c:13910
+#: ada-lang.c:13918
 msgid ""
 "Catch Ada exceptions, when handled.\n"
 "Usage: catch handlers [ARG] [if CONDITION]\n"
@@ -1219,7 +1219,7 @@ msgid ""
 "exception should cause a stop."
 msgstr ""
 
-#: ada-lang.c:13921
+#: ada-lang.c:13929
 msgid ""
 "Catch failed Ada assertions, when raised.\n"
 "Usage: catch assert [if CONDITION]\n"
@@ -1227,7 +1227,7 @@ msgid ""
 "exception should cause a stop."
 msgstr ""
 
-#: ada-lang.c:13932
+#: ada-lang.c:13940
 msgid ""
 "List all Ada exception names.\n"
 "Usage: info exceptions [REGEXP]\n"
@@ -1235,23 +1235,23 @@ msgid ""
 "the regular expression are listed."
 msgstr ""
 
-#: ada-lang.c:13939
+#: ada-lang.c:13947
 msgid "Set Ada maintenance-related variables."
 msgstr "Задати Ada-змінні, пов'язані з технічним обслуговуванням."
 
-#: ada-lang.c:13940
+#: ada-lang.c:13948
 msgid "Show Ada maintenance-related variables."
 msgstr ""
 
-#: ada-lang.c:13947
+#: ada-lang.c:13955
 msgid "Set whether descriptive types generated by GNAT should be ignored."
 msgstr "Вкажіть, чи слід ігнорувати описові типи, створені GNAT."
 
-#: ada-lang.c:13948
+#: ada-lang.c:13956
 msgid "Show whether descriptive types generated by GNAT should be ignored."
 msgstr "Покажіть, чи слід ігнорувати описові типи, згенеровані GNAT."
 
-#: ada-lang.c:13949
+#: ada-lang.c:13957
 msgid ""
 "When enabled, the debugger will stop using the DW_AT_GNAT_descriptive_type\n"
 "DWARF attribute."
@@ -4257,7 +4257,7 @@ msgstr ""
 msgid "Catch calls to vfork."
 msgstr ""
 
-#: break-catch-load.c:46 stack.c:2325 symtab.c:4363 symtab.c:5032 symtab.c:5040
+#: break-catch-load.c:46 stack.c:2325 symtab.c:4365 symtab.c:5034 symtab.c:5042
 msgid "Invalid regexp"
 msgstr ""
 
@@ -4520,7 +4520,7 @@ msgstr ""
 msgid "Breakpoint %d now unconditional.\n"
 msgstr ""
 
-#: breakpoint.c:1201 guile/scm-breakpoint.c:981 python/py-breakpoint.c:1445
+#: breakpoint.c:1201 guile/scm-breakpoint.c:981 python/py-breakpoint.c:1439
 #, possible-c-format
 msgid ""
 "Only one stop condition allowed.  There is currently a %s stop condition "
@@ -8523,15 +8523,15 @@ msgstr ""
 msgid "variably-sized vector type is not supported"
 msgstr ""
 
-#: compile/compile-c-types.c:168 compile/compile-cplus-types.c:974
+#: compile/compile-c-types.c:172 compile/compile-cplus-types.c:974
 msgid "function has unknown return type; assuming int"
 msgstr ""
 
-#: compile/compile-c-types.c:323
+#: compile/compile-c-types.c:327
 msgid "variable has unknown type; assuming int"
 msgstr ""
 
-#: compile/compile-c-types.c:328
+#: compile/compile-c-types.c:332
 msgid "cannot convert gdb type to gcc type"
 msgstr ""
 
@@ -15029,12 +15029,12 @@ msgstr ""
 msgid "Cannot find the caller frame."
 msgstr ""
 
-#: frame.c:1232 frame.c:1357 frame.c:1390
+#: frame.c:1232 frame.c:1359 frame.c:1392
 #, possible-c-format
 msgid "Register %d was not saved"
 msgstr ""
 
-#: frame.c:1235 frame.c:1362 frame.c:1395 regcache.c:710
+#: frame.c:1235 frame.c:1364 frame.c:1397 regcache.c:710
 #, possible-c-format
 msgid "Register %d is not available"
 msgstr ""
@@ -15044,34 +15044,34 @@ msgstr ""
 msgid "Can't unwind value of register %d (%s)"
 msgstr ""
 
-#: frame.c:1449
+#: frame.c:1451
 msgid "Attempt to assign to a register that was not saved."
 msgstr ""
 
-#: frame.c:1468
+#: frame.c:1470
 msgid "Attempt to assign to an unmodifiable value."
 msgstr ""
 
-#: frame.c:1525
+#: frame.c:1527
 #, possible-c-format
 msgid ""
 "Bad debug information detected: Attempt to read %zu bytes from registers."
 msgstr ""
 
-#: frame.c:1677 ia64-libunwind-tdep.c:330 ia64-tdep.c:1922 ia64-tdep.c:2294
+#: frame.c:1679 ia64-libunwind-tdep.c:330 ia64-tdep.c:1922 ia64-tdep.c:2294
 msgid "No registers."
 msgstr ""
 
-#: frame.c:1679 stack.c:1964 stack.c:1992 stack.c:3118 stack.c:3166
+#: frame.c:1681 stack.c:1964 stack.c:1992 stack.c:3118 stack.c:3166
 #: stack.c:3181 thread.c:1943
 msgid "No stack."
 msgstr ""
 
-#: frame.c:1681
+#: frame.c:1683
 msgid "No memory."
 msgstr ""
 
-#: frame.c:1847
+#: frame.c:1849
 #, possible-c-format
 msgid ""
 "Couldn't restore frame #%d in current thread.  Bottom (innermost) frame "
@@ -15079,15 +15079,15 @@ msgid ""
 msgstr ""
 
 #. show_cmd_cb
-#: frame.c:3317
+#: frame.c:3319
 msgid "Set whether backtraces should continue past \"main\"."
 msgstr ""
 
-#: frame.c:3318
+#: frame.c:3320
 msgid "Show whether backtraces should continue past \"main\"."
 msgstr ""
 
-#: frame.c:3319
+#: frame.c:3321
 msgid ""
 "Normally the caller of \"main\" is not of interest, so GDB will terminate\n"
 "the backtrace at \"main\".  Set this if you need to see the rest\n"
@@ -15095,63 +15095,63 @@ msgid ""
 msgstr ""
 
 #. show_cmd_cb
-#: frame.c:3328
+#: frame.c:3330
 msgid ""
 "Set whether backtraces should continue past the entry point of a program."
 msgstr ""
 
-#: frame.c:3329
+#: frame.c:3331
 msgid ""
 "Show whether backtraces should continue past the entry point of a program."
 msgstr ""
 
-#: frame.c:3330
+#: frame.c:3332
 msgid ""
 "Normally there are no callers beyond the entry point of a program, so GDB\n"
 "will terminate the backtrace there.  Set this if you need to see\n"
 "the rest of the stack trace."
 msgstr ""
 
-#: frame.c:3424
+#: frame.c:3426
 msgid ""
 "Set backtrace specific variables.\n"
 "Configure backtrace variables such as the backtrace limit"
 msgstr ""
 
-#: frame.c:3427
+#: frame.c:3429
 msgid ""
 "Show backtrace specific variables.\n"
 "Show backtrace variables such as the backtrace limit."
 msgstr ""
 
-#: frame.c:3434
+#: frame.c:3436
 msgid "Set an upper bound on the number of backtrace levels."
 msgstr ""
 
-#: frame.c:3435
+#: frame.c:3437
 msgid "Show the upper bound on the number of backtrace levels."
 msgstr ""
 
-#: frame.c:3436
+#: frame.c:3438
 msgid ""
 "No more than the specified number of frames can be displayed or examined.\n"
 "Literal \"unlimited\" or zero means no limit."
 msgstr ""
 
 #. Debug this files internals.
-#: frame.c:3449
+#: frame.c:3451
 msgid "Set frame debugging."
 msgstr ""
 
-#: frame.c:3450
+#: frame.c:3452
 msgid "Show frame debugging."
 msgstr ""
 
-#: frame.c:3451
+#: frame.c:3453
 msgid "When non-zero, frame specific internal debugging is enabled."
 msgstr ""
 
-#: frame.c:3458
+#: frame.c:3460
 msgid "Print the current frame-id."
 msgstr ""
 
@@ -16357,7 +16357,7 @@ msgstr ""
 msgid "Show the mode of Guile exception printing on error."
 msgstr ""
 
-#: guile/guile.c:822 python/python.c:2437
+#: guile/guile.c:822 python/python.c:2490
 msgid ""
 "none  == no stack or message will be printed.\n"
 "full == a message and a stack will be printed.\n"
@@ -23229,7 +23229,7 @@ msgstr ""
 msgid "Unexpected hardware watchpoint length register value 0x%x"
 msgstr ""
 
-#: nat/aarch64-hw-point.c:104
+#: nat/aarch64-hw-point.c:129
 msgid "Unrecognized breakpoint/watchpoint type"
 msgstr "Нерозпізнаний тип точки зупинки/спостереження"
 
@@ -25427,65 +25427,65 @@ msgstr ""
 msgid "The value of `hit_count' must be zero."
 msgstr ""
 
-#: python/py-breakpoint.c:599
+#: python/py-breakpoint.c:598
 msgid "Cannot delete `condition' attribute."
 msgstr ""
 
-#: python/py-breakpoint.c:878
+#: python/py-breakpoint.c:872
 msgid ""
 "Breakpoints specified with spec cannot have source, function, label or line "
 "defined."
 msgstr ""
 
-#: python/py-breakpoint.c:890
+#: python/py-breakpoint.c:884
 msgid "Watchpoints cannot be set by explicit location parameters."
 msgstr ""
 
-#: python/py-breakpoint.c:901
+#: python/py-breakpoint.c:895
 msgid "Neither spec nor explicit location set."
 msgstr ""
 
-#: python/py-breakpoint.c:910
+#: python/py-breakpoint.c:904
 msgid "Specifying a source must also include a line, label or function."
 msgstr ""
 
-#: python/py-breakpoint.c:958
+#: python/py-breakpoint.c:952
 msgid "Line keyword should be an integer or a string. "
 msgstr ""
 
-#: python/py-breakpoint.c:1053
+#: python/py-breakpoint.c:1047
 msgid "Cannot understand watchpoint access type."
 msgstr ""
 
-#: python/py-breakpoint.c:1057
+#: python/py-breakpoint.c:1051
 msgid "BP_CATCHPOINT not supported"
 msgstr ""
 
-#: python/py-breakpoint.c:1059
+#: python/py-breakpoint.c:1053
 msgid "Do not understand breakpoint type to set."
 msgstr ""
 
-#: python/py-breakpoint.c:1286
+#: python/py-breakpoint.c:1280
 msgid "Error while creating breakpoint from GDB."
 msgstr ""
 
-#: python/py-breakpoint.c:1564
+#: python/py-breakpoint.c:1558
 msgid "Set Python breakpoint debugging."
 msgstr ""
 
-#: python/py-breakpoint.c:1565
+#: python/py-breakpoint.c:1559
 msgid "Show Python breakpoint debugging."
 msgstr ""
 
-#: python/py-breakpoint.c:1566
+#: python/py-breakpoint.c:1560
 msgid "When on, Python breakpoint debugging is enabled."
 msgstr ""
 
-#: python/py-breakpoint.c:1587
+#: python/py-breakpoint.c:1581
 msgid "Cannot delete 'enabled' attribute."
 msgstr ""
 
-#: python/py-breakpoint.c:1593
+#: python/py-breakpoint.c:1587
 msgid "The value of 'enabled' must be a boolean."
 msgstr ""
 
@@ -25703,7 +25703,7 @@ msgid "This function is not documented."
 msgstr ""
 
 #. Require that INFERIOR be a valid inferior ID.
-#: python/py-inferior.c:84 python/py-inferior.c:890
+#: python/py-inferior.c:84 python/py-inferior.c:884
 msgid "Inferior no longer exists."
 msgstr ""
 
@@ -25711,23 +25711,23 @@ msgstr ""
 msgid "could not find gdb thread object"
 msgstr ""
 
-#: python/py-inferior.c:678
+#: python/py-inferior.c:674
 msgid "Search range is empty."
 msgstr ""
 
-#: python/py-inferior.c:686
+#: python/py-inferior.c:682
 msgid "The search range is too large."
 msgstr ""
 
-#: python/py-inferior.c:766
+#: python/py-inferior.c:760
 msgid "Argument 'handle' must be a thread handle object."
 msgstr ""
 
-#: python/py-inferior.c:897
+#: python/py-inferior.c:891
 msgid "Cannot delete 'arguments' attribute."
 msgstr ""
 
-#: python/py-inferior.c:934
+#: python/py-inferior.c:928
 msgid "string or sequence required for 'arguments'"
 msgstr ""
 
@@ -25744,7 +25744,7 @@ msgstr ""
 msgid "The value of `name' must be a string."
 msgstr ""
 
-#: python/py-infthread.c:340
+#: python/py-infthread.c:339
 msgid "Thread handle not found."
 msgstr ""
 
@@ -26231,7 +26231,7 @@ msgstr ""
 msgid "Argument must be a type."
 msgstr ""
 
-#: python/py-value.c:958 python/py-value.c:1812 python/py-value.c:1843
+#: python/py-value.c:958 python/py-value.c:1806 python/py-value.c:1837
 msgid "Invalid operation on gdb.Value."
 msgstr ""
 
@@ -26243,39 +26243,39 @@ msgstr ""
 msgid "'type' attribute of gdb.Field object is not a gdb.Type object."
 msgstr ""
 
-#: python/py-value.c:1072
+#: python/py-value.c:1071
 msgid "Invalid lookup for a field not contained in the value."
 msgstr ""
 
-#: python/py-value.c:1105
+#: python/py-value.c:1104
 msgid "gdb.Field object has no name and no 'bitpos' attribute."
 msgstr ""
 
-#: python/py-value.c:1168
+#: python/py-value.c:1167
 msgid "Cannot subscript requested type."
 msgstr ""
 
-#: python/py-value.c:1193
+#: python/py-value.c:1190
 msgid "Setting of struct elements is not currently supported."
 msgstr ""
 
-#: python/py-value.c:1220
+#: python/py-value.c:1217
 msgid "Value is not callable (not TYPE_CODE_FUNC or TYPE_CODE_METHOD)."
 msgstr ""
 
-#: python/py-value.c:1228
+#: python/py-value.c:1225
 msgid "Inferior arguments must be provided in a tuple."
 msgstr ""
 
-#: python/py-value.c:1886
+#: python/py-value.c:1880
 msgid "Cannot convert value to long."
 msgstr ""
 
-#: python/py-value.c:1923
+#: python/py-value.c:1917
 msgid "Cannot convert value to float."
 msgstr ""
 
-#: python/py-value.c:2049
+#: python/py-value.c:2043
 #, possible-c-format
 msgid "Could not convert Python object: %S."
 msgstr ""
@@ -26323,94 +26323,94 @@ msgstr ""
 msgid "Python not initialized"
 msgstr ""
 
-#: python/python.c:242 python/python.c:2574
+#: python/python.c:242 python/python.c:2627
 msgid "internal error: Unhandled Python exception"
 msgstr ""
 
-#: python/python.c:396
+#: python/python.c:449
 msgid "Invalid \"python\" block structure."
 msgstr ""
 
-#: python/python.c:518
+#: python/python.c:571
 msgid "Programmer error: unhandled type."
 msgstr ""
 
-#: python/python.c:547
+#: python/python.c:600
 #, possible-c-format
 msgid "Parameter `%s' is ambiguous."
 msgstr ""
 
-#: python/python.c:550
+#: python/python.c:603
 #, possible-c-format
 msgid "Could not find parameter `%s'."
 msgstr ""
 
-#: python/python.c:554
+#: python/python.c:607
 #, possible-c-format
 msgid "`%s' is not a parameter."
 msgstr ""
 
-#: python/python.c:832
+#: python/python.c:885
 msgid "Number of breakpoints exceeds throttled maximum."
 msgstr ""
 
-#: python/python.c:1103
+#: python/python.c:1156
 msgid "Posted event is not callable"
 msgstr ""
 
-#: python/python.c:1183
+#: python/python.c:1236
 msgid "Return from prompt_hook must be either a Python string, or None"
 msgstr ""
 
-#: python/python.c:1278
+#: python/python.c:1331
 msgid "Return value from gdb.colorize should be a bytes object or None."
 msgstr ""
 
-#: python/python.c:1347
+#: python/python.c:1400
 msgid ""
 "Return value from gdb.colorize_disasm should be a bytes object or None."
 msgstr ""
 
-#: python/python.c:1405
+#: python/python.c:1458
 msgid "The architecture and progspace arguments must both be supplied"
 msgstr ""
 
-#: python/python.c:1415
+#: python/python.c:1468
 msgid "The progspace argument is not a gdb.Progspace object"
 msgstr ""
 
-#: python/python.c:1423
+#: python/python.c:1476
 msgid "The progspace argument is not valid"
 msgstr ""
 
-#: python/python.c:1430
+#: python/python.c:1483
 msgid "The architecture argument is not a gdb.Architecture object"
 msgstr ""
 
-#: python/python.c:1589
+#: python/python.c:1642
 msgid "Error occurred computing Python error message.\n"
 msgstr ""
 
-#: python/python.c:1923
+#: python/python.c:1976
 msgid "Python scripting is not supported in this copy of GDB."
 msgstr ""
 
-#: python/python.c:1951
+#: python/python.c:2004
 #, possible-c-format
 msgid "Python's ignore-environment setting is %s.\n"
 msgstr ""
 
-#: python/python.c:1992
+#: python/python.c:2045
 #, possible-c-format
 msgid "Python's dont-write-bytecode setting is %s (currently %s).\n"
 msgstr ""
 
-#: python/python.c:1996
+#: python/python.c:2049
 #, possible-c-format
 msgid "Python's dont-write-bytecode setting is %s.\n"
 msgstr ""
 
-#: python/python.c:2383
+#: python/python.c:2436
 msgid ""
 "Start an interactive Python prompt.\n"
 "\n"
@@ -26425,7 +26425,7 @@ msgid ""
 "    5"
 msgstr ""
 
-#: python/python.c:2396
+#: python/python.c:2449
 msgid ""
 "Start a Python interactive prompt.\n"
 "\n"
@@ -26433,7 +26433,7 @@ msgid ""
 "This command is only a placeholder."
 msgstr ""
 
-#: python/python.c:2407
+#: python/python.c:2460
 msgid ""
 "Evaluate a Python command.\n"
 "\n"
@@ -26446,7 +26446,7 @@ msgid ""
 "the end of the command."
 msgstr ""
 
-#: python/python.c:2418
+#: python/python.c:2471
 msgid ""
 "Evaluate a Python command.\n"
 "\n"
@@ -26454,48 +26454,48 @@ msgid ""
 "This command is only a placeholder."
 msgstr ""
 
-#: python/python.c:2429 python/python.c:2430
+#: python/python.c:2482 python/python.c:2483
 msgid "Prefix command for python preference settings."
 msgstr ""
 
-#: python/python.c:2435
+#: python/python.c:2488
 msgid "Set mode for Python stack dump on error."
 msgstr ""
 
-#: python/python.c:2436
+#: python/python.c:2489
 msgid "Show the mode of Python stack printing on error."
 msgstr ""
 
-#: python/python.c:2446
+#: python/python.c:2499
 msgid ""
 "Set whether the Python interpreter should ignore environment variables."
 msgstr ""
 
-#: python/python.c:2447
+#: python/python.c:2500
 msgid ""
 "Show whether the Python interpreter showlist ignore environment variables."
 msgstr ""
 
-#: python/python.c:2448
+#: python/python.c:2501
 msgid ""
 "When enabled GDB's Python interpreter will ignore any Python related\n"
 "flags in the environment.  This is equivalent to passing `-E' to a\n"
 "python executable."
 msgstr ""
 
-#: python/python.c:2458
+#: python/python.c:2511
 msgid ""
 "Set whether the Python interpreter should avoid byte-compiling python "
 "modules."
 msgstr ""
 
-#: python/python.c:2459
+#: python/python.c:2512
 msgid ""
 "Show whether the Python interpreter should avoid byte-compiling python "
 "modules."
 msgstr ""
 
-#: python/python.c:2460
+#: python/python.c:2513
 msgid ""
 "When enabled, GDB's embedded Python interpreter won't byte-compile python\n"
 "modules.  In order to take effect, this setting must be enabled in an early\n"
@@ -26515,7 +26515,7 @@ msgstr ""
 
 #. This is passed in one call to warning so that blank lines aren't
 #. inserted between each line of text.
-#: python/python.c:2546
+#: python/python.c:2599
 #, possible-c-format
 msgid ""
 "\n"
@@ -32762,175 +32762,175 @@ msgid ""
 "\t (if a template, try specifying an instantiation: %s<type>)."
 msgstr ""
 
-#: symtab.c:3175
+#: symtab.c:3177
 msgid ""
 "Infinite recursion detected in find_pc_sect_line;please file a bug report"
 msgstr ""
 
-#: symtab.c:4257
+#: symtab.c:4259
 msgid "mismatched quoting on brackets, try 'operator\\[\\]'"
 msgstr ""
 
-#: symtab.c:4265
+#: symtab.c:4267
 msgid "nothing is allowed between '[' and ']'"
 msgstr ""
 
-#: symtab.c:4321
+#: symtab.c:4323
 msgid "`operator ()' must be specified without whitespace in `()'"
 msgstr ""
 
-#: symtab.c:4327
+#: symtab.c:4329
 msgid "`operator ?:' must be specified without whitespace in `?:'"
 msgstr ""
 
-#: symtab.c:4333
+#: symtab.c:4335
 msgid "`operator []' must be specified without whitespace in `[]'"
 msgstr ""
 
-#: symtab.c:4338
+#: symtab.c:4340
 #, possible-c-format
 msgid "`operator %s' not supported"
 msgstr ""
 
-#: symtab.c:4536
+#: symtab.c:4538
 msgid "Show only the files having a dirname matching REGEXP."
 msgstr ""
 
-#: symtab.c:4542
+#: symtab.c:4544
 msgid "Show only the files having a basename matching REGEXP."
 msgstr ""
 
-#: symtab.c:4661
+#: symtab.c:4663
 msgid "You cannot give both -basename and -dirname to 'info sources'."
 msgstr ""
 
-#: symtab.c:4668
+#: symtab.c:4670
 msgid "Missing REGEXP for 'info sources'."
 msgstr ""
 
-#: symtab.c:5157
+#: symtab.c:5159
 #, possible-c-format
 msgid ""
 "\n"
 "File %ps:\n"
 msgstr ""
 
-#: symtab.c:5193
+#: symtab.c:5195
 #, possible-c-format
 msgid "%ps  %ps\n"
 msgstr ""
 
-#: symtab.c:5248
+#: symtab.c:5250
 #, possible-c-format
 msgid ""
 "All %ss matching regular expression \"%s\" with type matching regular "
 "expression \"%s\":\n"
 msgstr ""
 
-#: symtab.c:5252
+#: symtab.c:5254
 #, possible-c-format
 msgid "All %ss matching regular expression \"%s\":\n"
 msgstr ""
 
-#: symtab.c:5259
+#: symtab.c:5261
 #, possible-c-format
 msgid "All defined %ss with type matching regular expression \"%s\" :\n"
 msgstr ""
 
-#: symtab.c:5263
+#: symtab.c:5265
 #, possible-c-format
 msgid "All defined %ss:\n"
 msgstr ""
 
-#: symtab.c:5276
+#: symtab.c:5278
 msgid ""
 "\n"
 "Non-debugging symbols:\n"
 msgstr ""
 
-#: symtab.c:6766
+#: symtab.c:6768
 msgid "All variables in all modules:"
 msgstr ""
 
-#: symtab.c:6767
+#: symtab.c:6769
 msgid "All functions in all modules:"
-msgstr ""
-
-#: symtab.c:6771
-#, possible-c-format
-msgid "All variables matching regular expression \"%s\" in all modules:"
 msgstr ""
 
 #: symtab.c:6773
 #, possible-c-format
-msgid "All functions matching regular expression \"%s\" in all modules:"
+msgid "All variables matching regular expression \"%s\" in all modules:"
 msgstr ""
 
-#: symtab.c:6782
+#: symtab.c:6775
 #, possible-c-format
-msgid ""
-"All variables with type matching regular expression \"%s\" in all modules:"
+msgid "All functions matching regular expression \"%s\" in all modules:"
 msgstr ""
 
 #: symtab.c:6784
 #, possible-c-format
 msgid ""
+"All variables with type matching regular expression \"%s\" in all modules:"
+msgstr ""
+
+#: symtab.c:6786
+#, possible-c-format
+msgid ""
 "All functions with type matching regular expression \"%s\" in all modules:"
 msgstr ""
 
-#: symtab.c:6790
+#: symtab.c:6792
 #, possible-c-format
 msgid ""
 "All variables matching regular expression \"%s\",\n"
 "\twith type matching regular expression \"%s\" in all modules:"
 msgstr ""
 
-#: symtab.c:6793
+#: symtab.c:6795
 #, possible-c-format
 msgid ""
 "All functions matching regular expression \"%s\",\n"
 "\twith type matching regular expression \"%s\" in all modules:"
-msgstr ""
-
-#: symtab.c:6806
-#, possible-c-format
-msgid "All variables in all modules matching regular expression \"%s\":"
 msgstr ""
 
 #: symtab.c:6808
 #, possible-c-format
+msgid "All variables in all modules matching regular expression \"%s\":"
+msgstr ""
+
+#: symtab.c:6810
+#, possible-c-format
 msgid "All functions in all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6814
+#: symtab.c:6816
 #, possible-c-format
 msgid ""
 "All variables matching regular expression \"%s\",\n"
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6817
+#: symtab.c:6819
 #, possible-c-format
 msgid ""
 "All functions matching regular expression \"%s\",\n"
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6827
+#: symtab.c:6829
 #, possible-c-format
 msgid ""
 "All variables with type matching regular expression \"%s\"\n"
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6830
+#: symtab.c:6832
 #, possible-c-format
 msgid ""
 "All functions with type matching regular expression \"%s\"\n"
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6837
+#: symtab.c:6839
 #, possible-c-format
 msgid ""
 "All variables matching regular expression \"%s\",\n"
@@ -32938,7 +32938,7 @@ msgid ""
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6841
+#: symtab.c:6843
 #, possible-c-format
 msgid ""
 "All functions matching regular expression \"%s\",\n"
@@ -32946,34 +32946,34 @@ msgid ""
 "\tin all modules matching regular expression \"%s\":"
 msgstr ""
 
-#: symtab.c:6880
+#: symtab.c:6882
 #, possible-c-format
 msgid "Module \"%s\":\n"
 msgstr ""
 
-#: symtab.c:7002
+#: symtab.c:7004
 msgid ""
 "All global and static variable names or those matching REGEXPs.\n"
 "Usage: info variables [-q] [-n] [-t TYPEREGEXP] [NAMEREGEXP]\n"
 "Prints the global and static variables.\n"
 msgstr ""
 
-#: symtab.c:7006
+#: symtab.c:7008
 msgid "global and static variables"
 msgstr ""
 
-#: symtab.c:7011
+#: symtab.c:7013
 msgid ""
 "All function names or those matching REGEXPs.\n"
 "Usage: info functions [-q] [-n] [-t TYPEREGEXP] [NAMEREGEXP]\n"
 "Prints the functions.\n"
 msgstr ""
 
-#: symtab.c:7015
+#: symtab.c:7017
 msgid "functions"
 msgstr ""
 
-#: symtab.c:7019
+#: symtab.c:7021
 msgid ""
 "All type names, or those matching REGEXP.\n"
 "Usage: info types [-q] [REGEXP]\n"
@@ -32981,7 +32981,7 @@ msgid ""
 "REGEXP is given.  The optional flag -q disables printing of headers."
 msgstr ""
 
-#: symtab.c:7030
+#: symtab.c:7032
 msgid ""
 "All source files in the program or those matching REGEXP.\n"
 "Usage: info sources [OPTION]... [REGEXP]\n"
@@ -32991,19 +32991,19 @@ msgid ""
 "%OPTIONS%"
 msgstr ""
 
-#: symtab.c:7043
+#: symtab.c:7045
 msgid "All module names, or those matching REGEXP."
 msgstr ""
 
-#: symtab.c:7047
+#: symtab.c:7049
 msgid "Get main symbol to identify entry point into program."
 msgstr ""
 
-#: symtab.c:7049
+#: symtab.c:7051
 msgid "Print information about modules."
 msgstr ""
 
-#: symtab.c:7053
+#: symtab.c:7055
 msgid ""
 "Display functions arranged by modules.\n"
 "Usage: info module functions [-q] [-m MODREGEXP] [-t TYPEREGEXP] [REGEXP]\n"
@@ -33019,7 +33019,7 @@ msgid ""
 "The -q flag suppresses printing some header information."
 msgstr ""
 
-#: symtab.c:7070
+#: symtab.c:7072
 msgid ""
 "Display variables arranged by modules.\n"
 "Usage: info module variables [-q] [-m MODREGEXP] [-t TYPEREGEXP] [REGEXP]\n"
@@ -33035,32 +33035,32 @@ msgid ""
 "The -q flag suppresses printing some header information."
 msgstr ""
 
-#: symtab.c:7088
+#: symtab.c:7090
 msgid "Set a breakpoint for all functions matching REGEXP."
 msgstr ""
 
-#: symtab.c:7092
+#: symtab.c:7094
 msgid "Set how the debugger handles ambiguities in expressions."
 msgstr ""
 
-#: symtab.c:7093
+#: symtab.c:7095
 msgid "Show how the debugger handles ambiguities in expressions."
 msgstr ""
 
-#: symtab.c:7094
+#: symtab.c:7096
 msgid ""
 "Valid values are \"ask\", \"all\", \"cancel\", and the default is \"all\"."
 msgstr ""
 
-#: symtab.c:7099
+#: symtab.c:7101
 msgid "Set whether a source file may have multiple base names."
 msgstr ""
 
-#: symtab.c:7100
+#: symtab.c:7102
 msgid "Show whether a source file may have multiple base names."
 msgstr ""
 
-#: symtab.c:7101
+#: symtab.c:7103
 msgid ""
 "(A \"base name\" is the name of a file with the directory part removed.\n"
 "Example: The base name of \"/home/user/hello.c\" is \"hello.c\".)\n"
@@ -33071,71 +33071,71 @@ msgid ""
 "one base name, and gdb will do file name comparisons more efficiently."
 msgstr ""
 
-#: symtab.c:7113
+#: symtab.c:7115
 msgid "Set debugging of symbol table creation."
 msgstr ""
 
-#: symtab.c:7114
+#: symtab.c:7116
 msgid "Show debugging of symbol table creation."
 msgstr ""
 
-#: symtab.c:7114
+#: symtab.c:7116
 msgid ""
 "When enabled (non-zero), debugging messages are printed when building\n"
 "symbol tables.  A value of 1 (one) normally provides enough information.\n"
 "A value greater than 1 provides more verbose information."
 msgstr ""
 
-#: symtab.c:7123
+#: symtab.c:7125
 msgid "Set debugging of symbol lookup."
 msgstr ""
 
-#: symtab.c:7124
+#: symtab.c:7126
 msgid "Show debugging of symbol lookup."
 msgstr ""
 
-#: symtab.c:7125
+#: symtab.c:7127
 msgid "When enabled (non-zero), symbol lookups are logged."
 msgstr ""
 
-#: symtab.c:7132
+#: symtab.c:7134
 msgid "Set the size of the symbol cache."
 msgstr ""
 
-#: symtab.c:7133
+#: symtab.c:7135
 msgid "Show the size of the symbol cache."
 msgstr ""
 
-#: symtab.c:7133
+#: symtab.c:7135
 msgid ""
 "The size of the symbol cache.\n"
 "If zero then the symbol cache is disabled."
 msgstr ""
 
-#: symtab.c:7142
+#: symtab.c:7144
 msgid "Set if the PROLOGUE-END flag is ignored."
 msgstr ""
 
-#: symtab.c:7143
+#: symtab.c:7145
 msgid "Show if the PROLOGUE-END flag is ignored."
 msgstr ""
 
-#: symtab.c:7144
+#: symtab.c:7146
 msgid ""
 "The PROLOGUE-END flag from the line-table entries is used to place "
 "breakpoints past the prologue of functions.  Disabling its use forces the "
 "use of prologue scanners."
 msgstr ""
 
-#: symtab.c:7154
+#: symtab.c:7156
 msgid "Dump the symbol cache for each program space."
 msgstr ""
 
-#: symtab.c:7159
+#: symtab.c:7161
 msgid "Print symbol cache statistics for each program space."
 msgstr ""
 
-#: symtab.c:7165
+#: symtab.c:7167
 msgid "Flush the symbol cache for each program space."
 msgstr ""
 
@@ -37518,27 +37518,27 @@ msgstr ""
 msgid "infinite loop while fetching a register"
 msgstr ""
 
-#: value.c:4066
+#: value.c:4073
 msgid "Unexpected lazy value type."
 msgstr ""
 
-#: value.c:4219
+#: value.c:4226
 msgid "You must provide one argument for $_isvoid."
 msgstr ""
 
-#: value.c:4235
+#: value.c:4242
 msgid "You must provide one argument for $_creal."
 msgstr ""
 
-#: value.c:4240 value.c:4259
+#: value.c:4247 value.c:4266
 msgid "expected a complex number"
 msgstr ""
 
-#: value.c:4254
+#: value.c:4261
 msgid "You must provide one argument for $_cimag."
 msgstr ""
 
-#: value.c:4424
+#: value.c:4431
 msgid ""
 "Debugger convenience (\"$foo\") variables and functions.\n"
 "Convenience variables are created when you assign them values;\n"
@@ -37551,11 +37551,11 @@ msgid ""
 "Convenience functions are defined via the Python API."
 msgstr ""
 
-#: value.c:4439
+#: value.c:4446
 msgid "Elements of value history around item number IDX (or last ten)."
 msgstr ""
 
-#: value.c:4443
+#: value.c:4450
 msgid ""
 "Initialize a convenience variable if necessary.\n"
 "init-if-undefined VARIABLE = EXPRESSION\n"
@@ -37564,18 +37564,18 @@ msgid ""
 "VARIABLE is already initialized."
 msgstr ""
 
-#: value.c:4450
+#: value.c:4457
 msgid "Placeholder command for showing help on convenience functions."
 msgstr ""
 
-#: value.c:4454
+#: value.c:4461
 msgid ""
 "Check whether an expression is void.\n"
 "Usage: $_isvoid (expression)\n"
 "Return 1 if the expression is void, zero otherwise."
 msgstr ""
 
-#: value.c:4460
+#: value.c:4467
 msgid ""
 "Extract the real part of a complex number.\n"
 "Usage: $_creal (expression)\n"
@@ -37583,7 +37583,7 @@ msgid ""
 "type of a complex number."
 msgstr ""
 
-#: value.c:4467
+#: value.c:4474
 msgid ""
 "Extract the imaginary part of a complex number.\n"
 "Usage: $_cimag (expression)\n"
@@ -37591,15 +37591,15 @@ msgid ""
 "type of a complex number."
 msgstr ""
 
-#: value.c:4475
+#: value.c:4482
 msgid "Set maximum sized value gdb will load from the inferior."
 msgstr ""
 
-#: value.c:4476
+#: value.c:4483
 msgid "Show maximum sized value gdb will load from the inferior."
 msgstr ""
 
-#: value.c:4477
+#: value.c:4484
 msgid ""
 "Use this to control the maximum size, in bytes, of a value that gdb\n"
 "will load from the inferior.  Setting this value to 'unlimited'\n"
@@ -37608,18 +37608,18 @@ msgid ""
 "prevents future values, larger than this size, from being allocated."
 msgstr ""
 
-#: value.c:4488
+#: value.c:4495
 msgid "Set the maximum number of bytes allowed in a variable-size object."
 msgstr ""
 "Встановити максимальну кількість байтів, дозволених в об'єкті змінного "
 "розміру."
 
-#: value.c:4489
+#: value.c:4496
 msgid "Show the maximum number of bytes allowed in a variable-size object."
 msgstr ""
 "Показати максимальну кількість байтів, дозволених в об'єкті змінного розміру."
 
-#: value.c:4490
+#: value.c:4497
 msgid ""
 "Attempts to access an object whose size is not a compile-time constant\n"
 "and exceeds this limit will cause an error."
