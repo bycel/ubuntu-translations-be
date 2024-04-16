@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apt 2.2.0\n"
 "Report-Msgid-Bugs-To: APT Development Team <deity@lists.debian.org>\n"
-"POT-Creation-Date: 2024-03-07 10:33+0000\n"
-"PO-Revision-Date: 2024-03-07 03:59+0000\n"
+"POT-Creation-Date: 2024-03-31 19:11+0000\n"
+"PO-Revision-Date: 2024-04-04 19:48+0000\n"
 "Last-Translator: Rootlexx <Unknown>\n"
 "Language-Team: русский <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-03-11 06:44+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-04-16 03:28+0000\n"
+"X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
 "Language: ru\n"
 
 #. TRANSLATOR: Very short word to be displayed before unchanged files in 'apt-get update'
@@ -1682,8 +1682,8 @@ msgstr "Неверные данные заголовка"
 msgid "Connection failed"
 msgstr "Соединение разорвано"
 
-#: methods/basehttp.cc:760 methods/ftp.cc:970 methods/http.cc:622
-#: methods/http.cc:860
+#: methods/basehttp.cc:760 methods/ftp.cc:970 methods/http.cc:637
+#: methods/http.cc:875
 #, c-format
 msgid "File has unexpected size (%llu != %llu). Mirror sync in progress?"
 msgstr ""
@@ -1735,53 +1735,53 @@ msgid "File not found"
 msgstr "Файл не найден"
 
 #. TRANSLATOR: %s is e.g. Tor's ".onion" which would likely fail or leak info (RFC7686)
-#: methods/connect.cc:76
+#: methods/connect.cc:78
 #, c-format
 msgid "Direct connection to %s domains is blocked by default."
 msgstr "Прямое подключение к домену %s по умолчанию заблокировано."
 
-#: methods/connect.cc:78
+#: methods/connect.cc:80
 #, c-format
 msgid "If you meant to use Tor remember to use %s instead of %s."
 msgstr ""
 "Если вы намеревались использовать Tor, помните, что нужно использовать %s "
 "вместо %s."
 
-#: methods/connect.cc:148
+#: methods/connect.cc:150
 #, c-format
 msgid "[IP: %s %s]"
 msgstr "[IP: %s %s]"
 
-#: methods/connect.cc:150
+#: methods/connect.cc:152
 #, c-format
 msgid "Connected to %s (%s)"
 msgstr "Соединено с %s (%s)"
 
-#: methods/connect.cc:167 methods/connect.cc:576 methods/http.cc:322
+#: methods/connect.cc:169 methods/connect.cc:578 methods/http.cc:322
 #, c-format
 msgid "Connecting to %s (%s)"
 msgstr "Соединение с %s (%s)"
 
-#: methods/connect.cc:177
+#: methods/connect.cc:179
 #, c-format
 msgid "Could not create a socket for %s (f=%u t=%u p=%u)"
 msgstr "Не удалось создать сокет для %s (f=%u t=%u p=%u)"
 
-#: methods/connect.cc:186
+#: methods/connect.cc:188
 #, c-format
 msgid "Cannot initiate the connection to %s:%s (%s)."
 msgstr "Невозможно инициализировать соединение с %s:%s (%s)."
 
-#: methods/connect.cc:202 methods/ftp.cc:756 methods/rsh.cc:113
+#: methods/connect.cc:204 methods/ftp.cc:756 methods/rsh.cc:113
 msgid "Failed"
 msgstr "Неудачно"
 
-#: methods/connect.cc:214
+#: methods/connect.cc:216
 #, c-format
 msgid "Could not connect to %s:%s (%s)."
 msgstr "Не удалось соединиться с %s:%s (%s)."
 
-#: methods/connect.cc:311
+#: methods/connect.cc:313
 #, c-format
 msgid "Could not connect to %s:%s (%s), connection timed out"
 msgstr ""
@@ -1789,32 +1789,32 @@ msgstr ""
 
 #. We say this mainly because the pause here is for the
 #. ssh connection that is still going
-#: methods/connect.cc:361 methods/rsh.cc:471
+#: methods/connect.cc:363 methods/rsh.cc:471
 #, c-format
 msgid "Connecting to %s"
 msgstr "Соединение с %s"
 
-#: methods/connect.cc:397 methods/connect.cc:418
+#: methods/connect.cc:399 methods/connect.cc:420
 #, c-format
 msgid "Could not resolve '%s'"
 msgstr "Не удалось разрешить «%s»"
 
-#: methods/connect.cc:425
+#: methods/connect.cc:427
 #, c-format
 msgid "Temporary failure resolving '%s'"
 msgstr "Временная ошибка при разрешении «%s»"
 
-#: methods/connect.cc:430
+#: methods/connect.cc:432
 #, c-format
 msgid "System error resolving '%s:%s'"
 msgstr "Системная ошибка при разрешении «%s:%s»"
 
-#: methods/connect.cc:433
+#: methods/connect.cc:435
 #, c-format
 msgid "Something wicked happened resolving '%s:%s' (%i - %s)"
 msgstr "Что-то странное произошло при разрешении «%s:%s» (%i - %s)"
 
-#: methods/connect.cc:469
+#: methods/connect.cc:471
 #, c-format
 msgid "Unable to connect to %s:%s:"
 msgstr "Невозможно соединиться с %s:%s:"
@@ -1950,7 +1950,7 @@ msgstr "Время на установление соединения для с�
 msgid "Unable to accept connection"
 msgstr "Невозможно принять соединение"
 
-#: methods/ftp.cc:918 methods/http.cc:1017 methods/rsh.cc:348
+#: methods/ftp.cc:918 methods/http.cc:1032 methods/rsh.cc:348
 msgid "Problem hashing file"
 msgstr "Проблема при хешировании файла"
 
@@ -2044,23 +2044,23 @@ msgstr ""
 "Следующие подписи не могут быть проверены, так как недоступен открытый "
 "ключ:\n"
 
-#: methods/http.cc:726
+#: methods/http.cc:741
 msgid "Error reading from server. Remote end closed connection"
 msgstr "Ошибка чтения: удалённый сервер прервал соединение"
 
-#: methods/http.cc:730
+#: methods/http.cc:745
 msgid "Error reading from server"
 msgstr "Ошибка чтения с сервера"
 
-#: methods/http.cc:749
+#: methods/http.cc:764
 msgid "Error writing to file"
 msgstr "Ошибка записи в файл"
 
-#: methods/http.cc:817
+#: methods/http.cc:832
 msgid "Select failed"
 msgstr "Ошибка в select"
 
-#: methods/http.cc:823
+#: methods/http.cc:838
 msgid "Connection timed out"
 msgstr "Время ожидания для соединения истекло"
 

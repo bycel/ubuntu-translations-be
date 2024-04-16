@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.17.23\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-02-27 04:27+0100\n"
-"PO-Revision-Date: 2024-03-03 16:59+0000\n"
+"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"PO-Revision-Date: 2024-04-04 04:27+0000\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-03-11 06:46+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-04-16 03:29+0000\n"
+"X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
 "Language: ru\n"
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-checkbuilddeps.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildpackage.pl
+#: scripts/dpkg-buildtree.pl scripts/dpkg-checkbuilddeps.pl
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
 #: scripts/dpkg-gensymbols.pl scripts/dpkg-mergechangelogs.pl
@@ -33,11 +34,11 @@ msgid "Debian %s version %s.\n"
 msgstr "Debian %s, версия %s.\n"
 
 #: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-distaddfile.pl
-#: scripts/dpkg-genbuildinfo.pl scripts/dpkg-genchanges.pl
-#: scripts/dpkg-gencontrol.pl scripts/dpkg-gensymbols.pl
-#: scripts/dpkg-parsechangelog.pl scripts/dpkg-shlibdeps.pl
-#: scripts/dpkg-source.pl scripts/dpkg-vendor.pl
+#: scripts/dpkg-buildpackage.pl scripts/dpkg-buildtree.pl
+#: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
+#: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
+#: scripts/dpkg-gensymbols.pl scripts/dpkg-parsechangelog.pl
+#: scripts/dpkg-shlibdeps.pl scripts/dpkg-source.pl scripts/dpkg-vendor.pl
 msgid ""
 "\n"
 "This is free software; see the GNU General Public License version 2 or\n"
@@ -48,7 +49,7 @@ msgstr ""
 "Универсальной общественной лицензии GNU версии 2 или более поздней.\n"
 "НИКАКИЕ гарантии не предоставляются.\n"
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-vendor.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl scripts/dpkg-vendor.pl
 #, perl-format
 msgid "Usage: %s [<option>...] [<command>]"
 msgstr "Использование: %s [<параметр>...] <команда>"
@@ -144,7 +145,8 @@ msgstr ""
 msgid "%s is not a supported variable name"
 msgstr "%s не является поддерживаемым именем переменной"
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-buildflags.pl
+#: scripts/dpkg-architecture.pl scripts/dpkg-buildapi.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildtree.pl
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-genchanges.pl scripts/dpkg-gencontrol.pl
 #: scripts/dpkg-gensymbols.pl scripts/dpkg-name.pl
@@ -161,7 +163,7 @@ msgid ""
 "correct CC environment variable"
 msgstr ""
 
-#: scripts/dpkg-architecture.pl scripts/dpkg-shlibdeps.pl scripts/Dpkg/IPC.pm
+#: scripts/dpkg-architecture.pl scripts/Dpkg/IPC.pm
 #: scripts/Dpkg/Shlibs/Cppfilt.pm
 #, perl-format
 msgid "unable to execute %s"
@@ -184,7 +186,7 @@ msgstr ""
 msgid "no arguments accepted"
 msgstr ""
 
-#: scripts/dpkg-buildflags.pl
+#: scripts/dpkg-buildflags.pl scripts/dpkg-buildtree.pl
 #, perl-format
 msgid "Usage: %s [<command>]"
 msgstr "Использование: %s [<команда>]"
@@ -531,7 +533,7 @@ msgstr ""
 
 #: scripts/dpkg-buildpackage.pl scripts/dpkg-checkbuilddeps.pl
 #: scripts/dpkg-genbuildinfo.pl scripts/dpkg-name.pl scripts/Dpkg/Arch.pm
-#: scripts/Dpkg/IPC.pm scripts/Dpkg/OpenPGP.pm scripts/Dpkg/Shlibs.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Shlibs.pm
 #, perl-format
 msgid "cannot open %s"
 msgstr "не удалось открыть %s"
@@ -544,7 +546,7 @@ msgstr "не удалось открыть %s"
 msgid "cannot close %s"
 msgstr "не удалось закрыть %s"
 
-#: scripts/dpkg-buildpackage.pl
+#: scripts/dpkg-buildpackage.pl scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "cannot move %s to %s"
 msgstr ""
@@ -687,11 +689,10 @@ msgstr "имя файла, секция и приоритет не могут с
 
 #: scripts/dpkg-distaddfile.pl scripts/dpkg-genbuildinfo.pl
 #: scripts/dpkg-gencontrol.pl scripts/dpkg-mergechangelogs.pl
-#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/IPC.pm
-#: scripts/Dpkg/Interface/Storable.pm scripts/Dpkg/Source/Functions.pm
+#: scripts/Dpkg/Compression/FileHandle.pm scripts/Dpkg/File.pm
+#: scripts/Dpkg/IPC.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Source/BinaryFiles.pm scripts/Dpkg/Source/Package.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Package/V3/Quilt.pm
-#: scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot write %s"
 msgstr "не удалось записать %s"
@@ -1242,8 +1243,8 @@ msgstr "  %s (в пакете указано %s, а не %s)"
 msgid "unconditional maintainer override for %s"
 msgstr "безусловное переназначение сопровождающего для %s"
 
-#: scripts/dpkg-scanpackages.pl scripts/dpkg-shlibdeps.pl scripts/Dpkg/IPC.pm
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/dpkg-scanpackages.pl scripts/Dpkg/IPC.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "cannot fork for %s"
 msgstr "не удалось выполнить fork для %s"
@@ -1654,12 +1655,11 @@ msgid "%s is not a supported compression"
 msgstr "неподдерживаемый метод сжатия %s"
 
 #: scripts/dpkg-source.pl scripts/Dpkg/Compression.pm
-#: scripts/Dpkg/Compression/Process.pm
 #, perl-format
 msgid "%s is not a compression level"
 msgstr "%s не является степенью сжатия"
 
-#: scripts/dpkg-buildpackage.pl scripts/dpkg-source.pl
+#: scripts/dpkg-source.pl
 msgid "-E and -W are deprecated, they are without effect"
 msgstr "-E и -W устарели, они ничего не изменят"
 
@@ -1927,7 +1927,7 @@ msgstr ""
 #: scripts/Dpkg/BuildFlags.pm scripts/Dpkg/Compression/FileHandle.pm
 #: scripts/Dpkg/File.pm scripts/Dpkg/Interface/Storable.pm
 #: scripts/Dpkg/Shlibs/Objdump.pm scripts/Dpkg/Source/BinaryFiles.pm
-#: scripts/Dpkg/Source/Package/V2.pm scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot read %s"
 msgstr "не удалось прочитать %s"
@@ -1957,12 +1957,12 @@ msgstr "неизвестное свойство %s в переменной %s: %
 msgid "incorrect value in %s option of %s variable: %s"
 msgstr "некорректное значение в параметре %s переменной %s: %s"
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "cannot combine %s and %s"
 msgstr "не удалось объединить %s и %s"
 
-#: scripts/Dpkg/Build/Types.pm
+#: scripts/Dpkg/BuildTypes.pm
 #, perl-format
 msgid "unknown build type %s"
 msgstr ""
@@ -2572,22 +2572,22 @@ msgstr "символ «%s» запрещён"
 msgid "must start with an alphanumeric character"
 msgstr "должно начинаться с латинской буквы или цифры"
 
-#: scripts/Dpkg/Vars.pm
+#: scripts/Dpkg/Package.pm
 #, perl-format
 msgid "source package name '%s' is illegal: %s"
 msgstr "имя пакета с исходным кодом «%s» некорректно: %s"
 
-#: scripts/Dpkg/Vars.pm
+#: scripts/Dpkg/Package.pm
 #, perl-format
 msgid "source package has two conflicting values - %s and %s"
 msgstr "пакет с исходным кодом содержит два конфликтующих значения: %s и %s"
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' cannot be canonicalized"
 msgstr ""
 
-#: scripts/Dpkg/Path.pm
+#: scripts/Dpkg/Path.pm scripts/Dpkg/Source/Archive.pm
 #, perl-format
 msgid "pathname '%s' points outside source root (to '%s')"
 msgstr ""
@@ -2602,18 +2602,18 @@ msgid ""
 "interferes with cross-building, please use -l option instead"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs.pm scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "unknown executable format in file '%s'"
 msgstr ""
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "couldn't parse dynamic relocation record: %s"
 msgstr ""
 "не удалось проанализировать запись динамического перераспределения: %s"
 
-#: scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Shlibs/Objdump/Object.pm
 #, perl-format
 msgid "couldn't parse dynamic symbol definition: %s"
 msgstr "не удалось проанализировать определение динамического символа: %s"

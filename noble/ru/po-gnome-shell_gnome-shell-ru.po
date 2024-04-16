@@ -21,17 +21,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell/issues/\n"
-"POT-Creation-Date: 2024-03-08 02:38+0000\n"
-"PO-Revision-Date: 2024-03-08 02:53+0000\n"
-"Last-Translator: Artur So <Unknown>\n"
+"POT-Creation-Date: 2024-04-08 10:48+0000\n"
+"PO-Revision-Date: 2024-04-08 18:49+0000\n"
+"Last-Translator: Alexey Fedorov <Unknown>\n"
 "Language-Team: RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-03-11 06:42+0000\n"
-"X-Generator: Launchpad (build 2e4955e3d556e61e2eb54acf7a827d17e9e46822)\n"
+"X-Launchpad-Export-Date: 2024-04-16 03:26+0000\n"
+"X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
 "Language: ru\n"
 
 # Запуск приложений, как другой вариант
@@ -136,7 +136,7 @@ msgstr "Сделать снимок окна"
 msgid "Record a screencast interactively"
 msgstr "Сделать запись экрана интерактивно"
 
-#: data/50-gnome-shell-system.xml:6 js/ui/messageTray.js:1290
+#: data/50-gnome-shell-system.xml:6 js/ui/messageTray.js:1293
 msgid "System"
 msgstr "Система"
 
@@ -593,21 +593,29 @@ msgstr "Домашняя страница"
 msgid "Visit extension homepage"
 msgstr "Посетить домашнюю страницу расширения"
 
-#: js/gdm/authPrompt.js:151 js/gdm/loginDialog.js:466
+#: js/gdm/authPrompt.js:177 js/gdm/loginDialog.js:466
 #: js/ui/audioDeviceSelection.js:66 js/ui/components/networkAgent.js:114
 #: js/ui/components/polkitAgent.js:146 js/ui/endSessionDialog.js:438
 #: js/ui/extensionDownloader.js:289 js/ui/shellMountOperation.js:384
 #: js/ui/shellMountOperation.js:394
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "Отменить"
 
-#: js/gdm/authPrompt.js:317 js/ui/components/networkAgent.js:214
-#: js/ui/components/networkAgent.js:234 js/ui/components/networkAgent.js:266
-#: js/ui/components/networkAgent.js:299 js/ui/components/networkAgent.js:338
-#: js/ui/components/networkAgent.js:351 js/ui/components/polkitAgent.js:288
-#: js/ui/shellMountOperation.js:334
+#: js/gdm/authPrompt.js:353 js/gdm/util.js:69
+#: js/ui/components/networkAgent.js:214 js/ui/components/networkAgent.js:234
+#: js/ui/components/networkAgent.js:266 js/ui/components/networkAgent.js:299
+#: js/ui/components/networkAgent.js:338 js/ui/components/networkAgent.js:351
+#: js/ui/components/polkitAgent.js:288 js/ui/shellMountOperation.js:334
 msgid "Password"
 msgstr "Пароль"
+
+#: js/gdm/authPrompt.js:807
+msgid "Login Failed"
+msgstr "Ошибка входа"
+
+#: js/gdm/authPrompt.js:808
+msgid "Please try again"
+msgstr "Пожалуйста, попробуйте еще раз"
 
 #: js/gdm/loginDialog.js:327
 msgid "Choose Session"
@@ -621,6 +629,9 @@ msgid ""
 "%s. To login remotely, you must log out from the remote session or force "
 "stop it."
 msgstr ""
+"Удаленный вход невозможен, поскольку для пользователя %s уже запущен "
+"удаленный сеанс. Чтобы войти в систему удаленно, необходимо выйти из "
+"удаленного сеанса или принудительно остановить его."
 
 #. Translators: is running for <username>
 #: js/gdm/loginDialog.js:427
@@ -629,6 +640,9 @@ msgid ""
 "Login is not possible because a remote session is already running for %s. To "
 "login, you must log out from the remote session or force stop it."
 msgstr ""
+"Вход в систему невозможен, так как для пользователя %s уже запущен удаленный "
+"сеанс. Чтобы войти в систему, необходимо выйти из удаленного сеанса или "
+"принудительно остановить его."
 
 #. Translators: is running for <username>
 #: js/gdm/loginDialog.js:430
@@ -638,6 +652,9 @@ msgid ""
 "%s. To login remotely, you must log out from the local session or force stop "
 "it."
 msgstr ""
+"Удаленный вход невозможен, потому что локальный сеанс уже запущен для "
+"пользователя %s. Чтобы войти в систему удаленно, необходимо выйти из "
+"локального сеанса или принудительно остановить его."
 
 #. Translators: is running for <username>
 #: js/gdm/loginDialog.js:433
@@ -646,63 +663,85 @@ msgid ""
 "Login is not possible because a session is already running for %s. To login, "
 "you must log out from the session or force stop it."
 msgstr ""
+"Вход в систему невозможен, так как для пользователя %s уже запущен сеанс. "
+"Чтобы войти в систему, необходимо выйти из сеанса или принудительно "
+"остановить его."
 
 #: js/gdm/loginDialog.js:442
 msgid "Session Already Running"
-msgstr ""
+msgstr "Сеанс уже запущен"
 
 #: js/gdm/loginDialog.js:454
 msgid ""
 "Force stopping will quit any running apps and processes, and could result in "
 "data loss."
 msgstr ""
+"Принудительная остановка приведет к завершению всех запущенных приложений и "
+"процессов и может привести к потере данных."
 
 #: js/gdm/loginDialog.js:474
 msgid "Force Stop"
-msgstr ""
+msgstr "Принудительно остановить"
 
-#: js/gdm/loginDialog.js:542
+#: js/gdm/loginDialog.js:548
 msgid "Not listed?"
 msgstr "Нет в списке?"
 
+#: js/gdm/loginDialog.js:639 js/ui/unlockDialog.js:595
+msgid "Login Options"
+msgstr "Параметры входа"
+
+#: js/gdm/loginDialog.js:655
+msgid "Session"
+msgstr "Сеанс"
+
 #. Translators: this message is shown below the username entry field
 #. to clue the user in on how to login to the local network realm
-#: js/gdm/loginDialog.js:1010
+#: js/gdm/loginDialog.js:1103
 #, javascript-format
 msgid "(e.g., user or %s)"
 msgstr "(например, пользователь или %s)"
 
-#: js/gdm/loginDialog.js:1015 js/ui/components/networkAgent.js:258
+#: js/gdm/loginDialog.js:1108 js/ui/components/networkAgent.js:258
 #: js/ui/components/networkAgent.js:293 js/ui/components/networkAgent.js:327
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: js/gdm/loginDialog.js:1081
+#: js/gdm/loginDialog.js:1172
 msgid "Stop conflicting session dialog closed"
-msgstr ""
+msgstr "Диалог остановки конфликтующего сеанса закрыт"
 
-#: js/gdm/loginDialog.js:1082
+#: js/gdm/loginDialog.js:1173
 #, javascript-format
 msgid "Try to login again to start a session for user %s."
 msgstr ""
+"Попробуйте войти в систему еще раз, чтобы начать сеанс для пользователя %s."
 
-#: js/gdm/loginDialog.js:1426
+#: js/gdm/loginDialog.js:1559
 msgid "Login Window"
 msgstr "Окно входа в систему"
 
-#: js/gdm/util.js:497
+#: js/gdm/util.js:79
+msgid "Smartcard"
+msgstr "Смарт-карта"
+
+#: js/gdm/util.js:89
+msgid "Fingerprint"
+msgstr "Отпечаток пальца"
+
+#: js/gdm/util.js:664
 msgid "Authentication error"
 msgstr "Ошибка проверки подлинности"
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can swipe their finger on the fingerprint reader
-#: js/gdm/util.js:728
+#: js/gdm/util.js:1235
 msgid "(or swipe finger across reader)"
 msgstr "(или проведите пальцем по считывающему устройству)"
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can place their finger on the fingerprint reader instead
-#: js/gdm/util.js:733
+#: js/gdm/util.js:1240
 msgid "(or place finger on reader)"
 msgstr "(или поместите палец на считывающее устройство)"
 
@@ -1776,7 +1815,7 @@ msgstr "Неизвестное приложение"
 
 #: js/ui/messageTray.js:328 js/ui/messageTray.js:330
 msgid "Notification sound"
-msgstr ""
+msgstr "Звук уведомления"
 
 #: js/ui/mpris.js:198
 msgid "Unknown artist"
@@ -1950,7 +1989,7 @@ msgstr "Записи экрана"
 #: js/ui/screenshot.js:2003
 #, no-c-format
 msgid "Screencast from %d %t"
-msgstr ""
+msgstr "Запись экрана от %d %t"
 
 #. Translators: notification title.
 #: js/ui/screenshot.js:2049
@@ -2550,23 +2589,23 @@ msgstr "Только встроенный"
 
 #. Translators: This is a time format for a date in
 #. long format
-#: js/ui/unlockDialog.js:374
+#: js/ui/unlockDialog.js:375
 msgid "%A %B %-d"
 msgstr "%A, %-d %B"
 
-#: js/ui/unlockDialog.js:380
+#: js/ui/unlockDialog.js:381
 msgid "Swipe up to unlock"
 msgstr "Проведите вверх, чтобы разблокировать"
 
-#: js/ui/unlockDialog.js:381
+#: js/ui/unlockDialog.js:382
 msgid "Click or press a key to unlock"
 msgstr "Нажмите клавишу или кнопку мыши, чтобы разблокировать"
 
-#: js/ui/unlockDialog.js:564
+#: js/ui/unlockDialog.js:566
 msgid "Unlock Window"
 msgstr "Разблокировать окно"
 
-#: js/ui/unlockDialog.js:573
+#: js/ui/unlockDialog.js:582
 msgid "Log in as another user"
 msgstr "Войти от имени другого пользователя"
 
@@ -2754,7 +2793,7 @@ msgstr "Управление расширениями GNOME Shell"
 msgid "The GNOME Project"
 msgstr "Проект GNOME"
 
-#: subprojects/extensions-app/data/metainfo/org.gnome.Extensions.metainfo.xml.in:46
+#: subprojects/extensions-app/data/metainfo/org.gnome.Extensions.metainfo.xml.in:51
 msgid ""
 "GNOME Extensions handles updating extensions, configuring extension "
 "preferences and removing or disabling unwanted extensions."
@@ -3446,13 +3485,13 @@ msgstr "Добавить пункт в быстрые настройки"
 
 #. translators:
 #. * The device has been disabled
-#: subprojects/gvc/gvc-mixer-control.c:1908
+#: subprojects/gvc/gvc-mixer-control.c:1872
 msgid "Disabled"
 msgstr "Выключено"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1915
+#: subprojects/gvc/gvc-mixer-control.c:1879
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
@@ -3462,7 +3501,7 @@ msgstr[2] "%u выходов"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1925
+#: subprojects/gvc/gvc-mixer-control.c:1889
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
@@ -3470,19 +3509,9 @@ msgstr[0] "%u вход"
 msgstr[1] "%u входа"
 msgstr[2] "%u входов"
 
-#: subprojects/gvc/gvc-mixer-control.c:2876
+#: subprojects/gvc/gvc-mixer-control.c:2872
 msgid "System Sounds"
 msgstr "Системные звуки"
-
-#~ msgid "Always show the “Log out” menu item in the user menu."
-#~ msgstr "Всегда показывать в пользовательском меню пункт «Завершить сеанс»."
-
-#~ msgid ""
-#~ "This key overrides the automatic hiding of the “Log out” menu item in single-"
-#~ "user, single-session situations."
-#~ msgstr ""
-#~ "Этот ключ переопределяет автоматическое скрытие пункта «Завершить сеанс» при "
-#~ "использовании системы с одной учётной записью пользователя."
 
 #~ msgid "Network Manager"
 #~ msgstr "Диспетчер сети"
@@ -3592,3 +3621,13 @@ msgstr "Системные звуки"
 
 #~ msgid "Activate favorite app 9"
 #~ msgstr "Переключиться на избранное приложение 9"
+
+#~ msgid "Always show the “Log out” menu item in the user menu."
+#~ msgstr "Всегда показывать в пользовательском меню пункт \"Выйти\"."
+
+#~ msgid ""
+#~ "This key overrides the automatic hiding of the “Log out” menu item in single-"
+#~ "user, single-session situations."
+#~ msgstr ""
+#~ "Этот ключ переопределяет автоматическое скрытие пункта \"Выйти\" при "
+#~ "использовании системы с одной учётной записью пользователя."

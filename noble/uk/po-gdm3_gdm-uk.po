@@ -11,15 +11,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm 2.5.90.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gdm/issues/\n"
-"POT-Creation-Date: 2024-03-24 15:57+0000\n"
-"PO-Revision-Date: 2024-03-24 16:24+0000\n"
+"POT-Creation-Date: 2024-04-04 05:44+0000\n"
+"PO-Revision-Date: 2024-04-05 05:51+0000\n"
 "Last-Translator: yurchor <Unknown>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-03-25 09:30+0000\n"
-"X-Generator: Launchpad (build aec24aef7a9042c99ef3e238d8b0ca01df9e1a9f)\n"
+"X-Launchpad-Export-Date: 2024-04-15 10:07+0000\n"
+"X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
 "Language: uk\n"
 
 #: chooser/gdm-host-chooser-dialog.c:139
@@ -119,12 +119,12 @@ msgstr "Неможливо відкрити закритий канал зв'я�
 msgid "Server was to be spawned by user %s but that user doesn’t exist"
 msgstr "Сервер запущено користувачем %s, але цього користувача не існує"
 
-#: daemon/gdm-server.c:397 daemon/gdm-server.c:417 utils/gdm-config.c:504
+#: daemon/gdm-server.c:397 daemon/gdm-server.c:417 utils/gdm-config.c:505
 #, c-format
 msgid "Couldn’t set groupid to %d"
 msgstr "Не вдалось встановити groupid для %d"
 
-#: daemon/gdm-server.c:403 utils/gdm-config.c:510
+#: daemon/gdm-server.c:403 utils/gdm-config.c:511
 #, c-format
 msgid "initgroups () failed for %s"
 msgstr "Помилка initgroups() для %s"
@@ -178,7 +178,7 @@ msgstr "Пристрій показу"
 msgid "The display device"
 msgstr "Пристрій показу"
 
-#: daemon/gdm-session.c:1444
+#: daemon/gdm-session.c:1451
 msgid "Could not create authentication helper process"
 msgstr "Неможливо створити допоміжний процес автентифікації"
 
@@ -255,12 +255,12 @@ msgstr "Ваш обліковий запис має часове обмежен�
 msgid "Username:"
 msgstr "Користувач:"
 
-#: daemon/gdm-session-worker.c:1663 daemon/gdm-session-worker.c:1680
+#: daemon/gdm-session-worker.c:1671 daemon/gdm-session-worker.c:1688
 #, c-format
 msgid "no user account available"
 msgstr "недоступний обліковий запис користувача"
 
-#: daemon/gdm-session-worker.c:1707
+#: daemon/gdm-session-worker.c:1715
 msgid "Unable to change to user"
 msgstr "Неможливо змінити користувача"
 
@@ -557,48 +557,50 @@ msgstr "Немає модуля PAM для розпізнавання за ві�
 msgid "“%s” needs at least one parameter"
 msgstr "«%s» потребує принаймні одного параметра"
 
-#: utils/gdm-config.c:362
+#. TRANSLATORS: “command” can't be enabled...
+#: utils/gdm-config.c:363
 #, c-format
 msgid "“%s” can't be enabled and disabled at the same time"
 msgstr "«%s» не можна одночасно вмикати і вимикати"
 
-#: utils/gdm-config.c:385
+#. TRANSLATORS: option is not a valid command “option-key” value
+#: utils/gdm-config.c:386
 #, c-format
 msgid "“%s” is not a valid %s “%s” value"
 msgstr "«%s» не є коректним значенням %s «%s»"
 
-#: utils/gdm-config.c:495
+#: utils/gdm-config.c:496
 #, c-format
 #| msgid "Failed to swith to %s user"
 msgid "Failed to switch to %s user"
 msgstr "Не вдалося перемкнутися на користувача %s"
 
-#: utils/gdm-config.c:516
+#: utils/gdm-config.c:517
 #, c-format
 msgid "Couldn’t set userid to %u"
 msgstr "Не вдалось встановити userid для %u"
 
-#: utils/gdm-config.c:679
+#: utils/gdm-config.c:680
 #, c-format
 msgid "No distro detected, no hook to run"
 msgstr "Не виявлено дистрибутива, немає скрипту для запуску"
 
-#: utils/gdm-config.c:697
+#: utils/gdm-config.c:698
 #, c-format
 msgid "No valid args found to run hook “%s”"
 msgstr "Не знайдено коректних аргументів для запуску скрипту «%s»"
 
-#: utils/gdm-config.c:702
+#: utils/gdm-config.c:703
 #, c-format
 msgid "Running distro hook “%s”\n"
 msgstr "Запущено скрипт для дистрибутива «%s»\n"
 
-#: utils/gdm-config.c:716
+#: utils/gdm-config.c:717
 #, c-format
 msgid "Distro hook “%s” requested stopping"
 msgstr "Скрипт дистрибутива «%s» надіслав запит щодо зупинення"
 
-#: utils/gdm-config.c:729
+#: utils/gdm-config.c:730
 #, c-format
 msgid ""
 "Distro hook failed with exit status %d and error %s:\n"
@@ -613,55 +615,56 @@ msgstr ""
 "Виведення помилок:\n"
 "%s"
 
-#: utils/gdm-config.c:779
+#. TRANSLATORS: Failed to set command “command” option key “option-key” via distro hook
+#: utils/gdm-config.c:780
 #, c-format
 msgid "Failed to set command “%s” option key “%s” via distro hook: "
 msgstr ""
 "Не вдалося встановити параметр команди «%s», ключ «%s» за допомогою скрипта "
 "дистрибутива: "
 
-#: utils/gdm-config.c:819
+#: utils/gdm-config.c:820
 #, c-format
 msgid "Failed to create directory %s"
 msgstr "Не вдалося створити каталог %s"
 
-#: utils/gdm-config.c:890
+#: utils/gdm-config.c:891
 #, c-format
 msgid "dconf profile not found"
 msgstr "Не знайдено профіль dconf"
 
-#: utils/gdm-config.c:980
+#: utils/gdm-config.c:981
 #, c-format
 msgid "dconf has no system-db configured"
 msgstr "У dconf не налаштовано system-db"
 
 #. TRANSLATORS: First value is a file path, second is an error message
-#: utils/gdm-config.c:1129
+#: utils/gdm-config.c:1130
 #, c-format
 msgid "Failed to get the “%s” header comment: %s, was it modified?"
 msgstr "Не вдалося отримати коментар у заголовку «%s»: %s, внесено зміни?"
 
-#: utils/gdm-config.c:1132
+#: utils/gdm-config.c:1133
 #, c-format
 msgid "File “%s” header comment does not match, was it modified?"
 msgstr "Коментар у заголовку файла «%s» є невідповідним. Його було змінено?"
 
 #. XXX: Fail with an error instead?
-#: utils/gdm-config.c:1260
+#: utils/gdm-config.c:1261
 #, c-format
 msgid "No expected header found on lock file “%s”, was it modified?"
 msgstr ""
 "Не знайдено очікуваного заголовка у файлі блокування «%s». Його було змінено?"
 
-#: utils/gdm-config.c:1545
+#: utils/gdm-config.c:1546
 msgid "Failed to run a required distro hook: "
 msgstr "Не вдалося запустити потрібний скрипт дистрибутива: "
 
-#: utils/gdm-config.c:1561 utils/gdmflexiserver.c:45
+#: utils/gdm-config.c:1562 utils/gdmflexiserver.c:45
 msgid "COMMAND"
 msgstr "КОМАНДА"
 
-#: utils/gdm-config.c:1565
+#: utils/gdm-config.c:1566
 #, c-format
 msgid ""
 "Commands:\n"
@@ -685,46 +688,46 @@ msgstr ""
 "Скористайтеся командою «%s КОМАНДА --help», щоб отримати довідку щодо будь-"
 "якої з команд.\n"
 
-#: utils/gdm-config.c:1627
+#: utils/gdm-config.c:1628
 msgid "Command options"
 msgstr "Параметри команди"
 
 #. TRANSLATORS: You need to be root to use PROGRAM-NAME “command” command
-#: utils/gdm-config.c:1662
+#: utils/gdm-config.c:1663
 #, c-format
 msgid "You need to be root to use %s “%s” command"
 msgstr "Щоб скористатися командою %s «%s», вам потрібні права доступу root"
 
-#: utils/gdm-config.c:1712
+#: utils/gdm-config.c:1713
 #, c-format
 msgid "Failed to set %s setting: "
 msgstr "Не вдалося встановити значення параметра %s: "
 
-#: utils/gdm-config.c:1804
+#: utils/gdm-config.c:1805
 msgid "Failed to set smartcard setting"
 msgstr "Не вдалося встановити варіант зі смарт-карткою"
 
-#: utils/gdm-config.c:1810
+#: utils/gdm-config.c:1811
 msgid "Failed to set password setting"
 msgstr "Не вдалося встановити варіант із паролем"
 
-#: utils/gdm-config.c:1824
+#: utils/gdm-config.c:1825
 msgid "Enabled"
 msgstr "Увімкнено"
 
-#: utils/gdm-config.c:1824
+#: utils/gdm-config.c:1825
 msgid "Disabled"
 msgstr "Вимкнено"
 
-#: utils/gdm-config.c:1833
+#: utils/gdm-config.c:1834
 msgid "Not supported"
 msgstr "Немає підтримки"
 
-#: utils/gdm-config.c:1849
+#: utils/gdm-config.c:1850
 msgid "Required"
 msgstr "Обов'язковий"
 
-#: utils/gdm-config.c:1910
+#: utils/gdm-config.c:1911
 #, c-format
 msgid ""
 "GDM Authorization configuration\n"
@@ -741,38 +744,38 @@ msgstr ""
 "  Розпізнавання за смарт-карткою: %s\n"
 "  Дія при вилученні смарт-картки: %s\n"
 
-#: utils/gdm-config.c:1938
+#: utils/gdm-config.c:1939
 msgctxt "Interactive question"
 msgid "Y"
 msgstr "Y"
 
-#: utils/gdm-config.c:1939
+#: utils/gdm-config.c:1940
 msgctxt "Interactive question"
 msgid "y"
 msgstr "y"
 
-#: utils/gdm-config.c:1940
+#: utils/gdm-config.c:1941
 msgctxt "Interactive question"
 msgid "N"
 msgstr "N"
 
-#: utils/gdm-config.c:1941
+#: utils/gdm-config.c:1942
 msgctxt "Interactive question"
 msgid "n"
 msgstr "n"
 
-#: utils/gdm-config.c:1945
+#: utils/gdm-config.c:1946
 #, c-format
 msgctxt "Interactive question"
 msgid "Do you want to continue? [Y/n]? "
 msgstr "Хочете продовжити? [Y - так/n - ні]? "
 
-#: utils/gdm-config.c:1963
+#: utils/gdm-config.c:1964
 #, c-format
 msgid "User cancelled the request"
 msgstr "Запит скасовано користувачем"
 
-#: utils/gdm-config.c:1994
+#: utils/gdm-config.c:1995
 #, c-format
 msgid "Failed to reset %s setting: "
 msgstr "Не вдалося відновити початкове значення параметра %s: "
