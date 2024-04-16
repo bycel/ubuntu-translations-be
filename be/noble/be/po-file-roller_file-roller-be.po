@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/file-roller/issues\n"
-"POT-Creation-Date: 2024-04-01 08:18+0000\n"
-"PO-Revision-Date: 2024-04-15 14:58\n"
-"Last-Translator: Ubuntu Archive Auto-Sync <archive@ubuntu.com>\n"
+"POT-Creation-Date: 2024-04-14 08:50+0000\n"
+"PO-Revision-Date: 2024-04-16 10:15\n"
+"Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2024-04-13 15:22+0000\n"
+"X-Launchpad-Export-Date: 2024-04-16 08:36+0000\n"
 "X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
 "Language: be\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -24,6 +24,8 @@ msgstr ""
 "X-Crowdin-File-ID: 135\n"
 
 #: data/org.gnome.FileRoller.appdata.xml.in:9
+#: data/org.gnome.FileRoller.desktop.in.in:3 src/fr-application-menu.c:131
+#: src/fr-application.c:473 src/fr-window.c:1868 src/fr-window.c:4588
 msgid "File Roller"
 msgstr ""
 
@@ -32,11 +34,11 @@ msgid "Open, modify and create compressed archive files"
 msgstr ""
 
 #: data/org.gnome.FileRoller.appdata.xml.in:12
-msgid "Archive Manager (also known as File Roller) is the default GNOME application for opening, creating, and modifying archive and compressed archive files."
+msgid "File Roller is a GNOME application for opening, creating, and modifying archive and compressed archive files."
 msgstr ""
 
 #: data/org.gnome.FileRoller.appdata.xml.in:16
-msgid "Archive Manager supports a wide range of different archive files, including:"
+msgid "File Roller supports a wide range of different archive files, including:"
 msgstr ""
 
 #: data/org.gnome.FileRoller.appdata.xml.in:20
@@ -55,17 +57,16 @@ msgstr ""
 msgid "xz archives (.tar.xz)"
 msgstr ""
 
-#: data/org.gnome.FileRoller.desktop.in.in:3 src/fr-application.c:479
-#: src/fr-window.c:2002 src/fr-window.c:5564
+#: data/org.gnome.FileRoller.desktop.in.in:4
 msgid "Archive Manager"
 msgstr ""
 
-#: data/org.gnome.FileRoller.desktop.in.in:4
+#: data/org.gnome.FileRoller.desktop.in.in:5
 msgid "Create and modify an archive"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.FileRoller.desktop.in.in:6
+#: data/org.gnome.FileRoller.desktop.in.in:7
 msgid "zip;tar;extract;unpack;"
 msgstr ""
 
@@ -158,12 +159,12 @@ msgid "Compression level used when adding files to an archive. Possible values: 
 msgstr ""
 
 #: data/org.gnome.FileRoller.gschema.xml:140
-#: data/org.gnome.FileRoller.gschema.xml:172
+#: data/org.gnome.FileRoller.gschema.xml:178
 msgid "Encrypt the archive header"
 msgstr ""
 
 #: data/org.gnome.FileRoller.gschema.xml:141
-#: data/org.gnome.FileRoller.gschema.xml:173
+#: data/org.gnome.FileRoller.gschema.xml:179
 msgid "Whether to encrypt the archive header. If the header is encrypted the password will be required to list the archive content as well."
 msgstr ""
 
@@ -175,19 +176,19 @@ msgstr ""
 msgid "Recreate the folders stored in the archive"
 msgstr ""
 
-#: data/org.gnome.FileRoller.gschema.xml:177
+#: data/org.gnome.FileRoller.gschema.xml:183
 msgid "Show/hide the extra options"
 msgstr ""
 
-#: data/org.gnome.FileRoller.gschema.xml:178
+#: data/org.gnome.FileRoller.gschema.xml:184
 msgid "Whether to show other options. If set the extra options will be shown."
 msgstr ""
 
-#: data/org.gnome.FileRoller.gschema.xml:182
+#: data/org.gnome.FileRoller.gschema.xml:188
 msgid "Default volume size"
 msgstr ""
 
-#: data/org.gnome.FileRoller.gschema.xml:183
+#: data/org.gnome.FileRoller.gschema.xml:189
 msgid "The default size for volumes."
 msgstr ""
 
@@ -208,136 +209,147 @@ msgstr ""
 msgid "Extract the selected archive"
 msgstr ""
 
-#: src/dlg-add.c:101
+#: src/dlg-add.c:103
 msgid "Could not add the files to the archive"
 msgstr ""
 
-#: src/dlg-add.c:102
+#: src/dlg-add.c:104
 #, c-format
 msgid "You don’t have the right permissions to read files from folder “%s”"
 msgstr ""
 
-#: src/dlg-add.c:185
+#: src/dlg-add.c:187
 msgctxt "Window title"
-msgid "Add Files"
+msgid "Add"
 msgstr ""
 
-#: src/dlg-add.c:196
-msgid "_Options"
+#: src/dlg-add.c:748
+msgctxt "Window title"
+msgid "Options"
 msgstr ""
 
-#: src/dlg-add.c:749
-msgctxt "Window title"
-msgid "Load Options"
-msgstr "Загрузка параметраў"
-
-#: src/dlg-add.c:758
+#: src/dlg-add.c:759
 msgid "_Apply"
 msgstr ""
 
-#: src/dlg-add.c:759 src/dlg-delete.c:132
-msgid "_Delete"
-msgstr ""
-
-#: src/dlg-add.c:843
+#: src/dlg-add.c:882
 msgctxt "Window title"
 msgid "Save Options"
 msgstr "Захаванне параметраў"
 
-#: src/dlg-add.c:844
+#: src/dlg-add.c:883
 msgid "_Options Name:"
 msgstr ""
 
-#: src/dlg-ask-password.c:122
+#: src/dlg-ask-password.c:117
+msgctxt "Window title"
+msgid "Password"
+msgstr ""
+
+#: src/dlg-ask-password.c:123
 msgid "_OK"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/dlg-ask-password.c:145
+#: src/dlg-ask-password.c:146
 #, c-format
 msgid "Password required for “%s”"
 msgstr ""
 
-#: src/dlg-ask-password.c:154
+#: src/dlg-ask-password.c:155
 msgid "Wrong password."
 msgstr ""
 
-#: src/dlg-batch-add.c:88 src/fr-application.c:250 src/fr-application.c:288
-#: src/fr-application.c:610
+#: src/dlg-batch-add.c:98 src/fr-application.c:248 src/fr-application.c:286
+#: src/fr-application.c:582
 msgid "Compress"
 msgstr ""
 
-#: src/dlg-extract.c:91 src/fr-window.c:6907
+#: src/dlg-delete.c:127 src/ui/menus.ui:44 src/ui/menus.ui:80
+#: src/ui/menus.ui:116
+msgid "Delete"
+msgstr ""
+
+#: src/dlg-delete.c:133
+msgid "_Delete"
+msgstr ""
+
+#: src/dlg-extract.c:92 src/fr-window.c:5955
 #, c-format
 msgid "Destination folder “%s” does not exist.\n\n"
 "Do you want to create it?"
 msgstr ""
 
-#: src/dlg-extract.c:98 src/fr-window.c:6915
+#: src/dlg-extract.c:99 src/fr-window.c:5962
 msgid "Create _Folder"
 msgstr ""
 
-#: src/dlg-extract.c:138 src/dlg-extract.c:170 src/dlg-extract.c:199
-#: src/fr-window.c:4437 src/fr-window.c:6832 src/fr-window.c:6837
-#: src/fr-window.c:6936 src/fr-window.c:6955 src/fr-window.c:6960
+#: src/dlg-extract.c:139 src/dlg-extract.c:171 src/dlg-extract.c:200
+#: src/fr-window.c:5860 src/fr-window.c:5865 src/fr-window.c:5985
+#: src/fr-window.c:6003 src/fr-window.c:6008
 msgid "Extraction not performed"
 msgstr ""
 
-#: src/dlg-extract.c:139 src/fr-window.c:6932
+#: src/dlg-extract.c:140 src/fr-window.c:5980
 #, c-format
 msgid "Could not create the destination folder: %s."
 msgstr ""
 
-#: src/dlg-extract.c:200 src/fr-window.c:4668 src/fr-window.c:4771
+#: src/dlg-extract.c:201
 #, c-format
 msgid "You don’t have the right permissions to extract archives in the folder “%s”"
 msgstr ""
 
-#: src/dlg-extract.c:319
+#: src/dlg-extract.c:324 src/fr-application.c:322 src/fr-application.c:348
+#: src/fr-application.c:605
 msgctxt "Window title"
 msgid "Extract"
 msgstr ""
 
-#: src/dlg-open-with.c:57 src/fr-window.c:4227 src/fr-window.c:9034
-#: src/fr-window.c:9069 src/fr-window.c:9315 src/fr-window.c:9388
+#: src/dlg-open-with.c:57 src/fr-new-archive-dialog.c:309 src/fr-window.c:7926
+#: src/fr-window.c:8088 src/fr-window.c:8122 src/fr-window.c:8433
 msgid "Could not perform the operation"
 msgstr ""
 
-#: src/dlg-package-installer.c:111 src/dlg-package-installer.c:223
+#: src/dlg-package-installer.c:107 src/dlg-package-installer.c:210
 msgid "There was an internal error trying to search for applications:"
 msgstr ""
 
-#: src/dlg-package-installer.c:292 src/dlg-package-installer.c:301
-#: src/dlg-package-installer.c:330 src/fr-archive.c:756 src/fr-window.c:4100
-#: src/fr-window.c:7663 src/fr-window.c:8025 src/fr-window.c:9611
+#: src/dlg-package-installer.c:279 src/dlg-package-installer.c:288
+#: src/dlg-package-installer.c:317 src/fr-archive.c:756
+#: src/fr-new-archive-dialog.c:255 src/fr-window.c:3547 src/fr-window.c:6717
+#: src/fr-window.c:7083 src/fr-window.c:8656
 msgid "Archive type not supported."
 msgstr ""
 
-#: src/dlg-package-installer.c:313
+#: src/dlg-package-installer.c:300
 #, c-format
 msgid "There is no command installed for %s files.\n"
 "Do you want to search for a command to open this file?"
 msgstr ""
 
-#: src/dlg-package-installer.c:317
+#: src/dlg-package-installer.c:304
 msgid "Could not open this file type"
 msgstr ""
 
-#: src/dlg-package-installer.c:320
+#: src/dlg-package-installer.c:307
 msgid "_Search Command"
 msgstr ""
 
-#: src/dlg-password.c:106
+#: src/dlg-password.c:92 src/ui/new-archive-dialog.ui:82
+msgid "Password"
+msgstr ""
+
+#: src/dlg-password.c:104
 #, c-format
 msgid "Enter a password for “%s”"
 msgstr ""
 
-#: src/dlg-prop.c:104
-#, c-format
-msgid "%s Properties"
+#: src/dlg-prop.c:72
+msgid "Properties"
 msgstr ""
 
-#: src/dlg-prop.c:122 src/fr-window.c:1604 src/fr-window.c:1632
+#: src/dlg-prop.c:110 src/fr-window.c:1479 src/fr-window.c:1507
 msgid "%d %B %Y, %H:%M"
 msgstr ""
 
@@ -361,80 +373,76 @@ msgstr[3] ""
 msgid "Update the files in the archive “%s”?"
 msgstr ""
 
-#: src/dlg-update.c:315 src/dlg-update.c:328
+#: src/dlg-update.c:315 src/dlg-update.c:329
 msgid "_Update"
 msgstr ""
 
 #: src/dlg-update.c:319
-msgid "Update Files"
-msgstr ""
-
-#: src/fr-application-menu.c:130
-msgid "Copyright © 2001–2014 Free Software Foundation, Inc."
-msgstr ""
-
-#: src/fr-application-menu.c:131
-msgid "An archive manager for GNOME."
+msgctxt "Window title"
+msgid "Update"
 msgstr ""
 
 #: src/fr-application-menu.c:134
+msgid "Copyright © 2001–2023 Free Software Foundation, Inc."
+msgstr ""
+
+#: src/fr-application-menu.c:135
+msgid "An archive manager for GNOME."
+msgstr ""
+
+#: src/fr-application-menu.c:141
 msgid "translator-credits"
 msgstr ""
 
-#: src/fr-application.c:59
+#: src/fr-application.c:58
 msgid "Add files to the specified archive and quit the program"
 msgstr ""
 
-#: src/fr-application.c:60
+#: src/fr-application.c:59
 msgid "ARCHIVE"
 msgstr ""
 
-#: src/fr-application.c:63
+#: src/fr-application.c:62
 msgid "Add files asking the name of the archive and quit the program"
 msgstr ""
 
-#: src/fr-application.c:67
+#: src/fr-application.c:66
 msgid "Extract archives to the specified folder and quit the program"
 msgstr ""
 
-#: src/fr-application.c:68 src/fr-application.c:80
+#: src/fr-application.c:67 src/fr-application.c:79
 msgid "FOLDER"
 msgstr ""
 
-#: src/fr-application.c:71
+#: src/fr-application.c:70
 msgid "Extract archives asking the destination folder and quit the program"
 msgstr ""
 
-#: src/fr-application.c:75
+#: src/fr-application.c:74
 msgid "Extract the contents of the archives in the archive folder and quit the program"
 msgstr ""
 
-#: src/fr-application.c:79
+#: src/fr-application.c:78
 msgid "Default folder to use for the “--add” and “--extract” commands"
 msgstr ""
 
-#: src/fr-application.c:83
+#: src/fr-application.c:82
 msgid "Create destination folder without asking confirmation"
 msgstr ""
 
-#: src/fr-application.c:87
+#: src/fr-application.c:86
 msgid "Use the notification system to notify the operation completion"
 msgstr ""
 
-#: src/fr-application.c:90
+#: src/fr-application.c:89
 msgid "Start as a service"
 msgstr ""
 
-#: src/fr-application.c:93
+#: src/fr-application.c:92
 msgid "Show version"
 msgstr ""
 
-#: src/fr-application.c:324 src/fr-application.c:350 src/fr-application.c:633
-msgctxt "Window title"
-msgid "Extract archive"
-msgstr ""
-
-#: src/fr-application.c:513
+#: src/fr-application.c:493
 msgid "— Create and modify an archive"
 msgstr ""
 
@@ -446,7 +454,7 @@ msgstr ""
 msgid "This archive type cannot be modified"
 msgstr ""
 
-#: src/fr-archive.c:1880 src/fr-new-archive-dialog.c:479
+#: src/fr-archive.c:1880 src/fr-new-archive-dialog.c:780
 msgid "You can’t add an archive to itself."
 msgstr ""
 
@@ -490,153 +498,191 @@ msgstr ""
 msgid "Archive not found"
 msgstr ""
 
-#: src/fr-file-selector-dialog.c:813 src/fr-file-selector-dialog.c:858
+#: src/fr-file-selector-dialog.c:597 src/fr-file-selector-dialog.c:610
+msgid "Could not create the folder"
+msgstr ""
+
+#: src/fr-file-selector-dialog.c:635
+msgctxt "Window title"
+msgid "New Folder"
+msgstr ""
+
+#: src/fr-file-selector-dialog.c:636
+msgid "_Name:"
+msgstr ""
+
+#: src/fr-file-selector-dialog.c:797
+msgid "New Folder"
+msgstr ""
+
+#: src/fr-file-selector-dialog.c:915 src/fr-file-selector-dialog.c:960
 msgid "Could not load the location"
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:353 src/fr-new-archive-dialog.c:372
-#: src/fr-new-archive-dialog.c:388 src/fr-new-archive-dialog.c:437
-#: src/fr-new-archive-dialog.c:455 src/fr-new-archive-dialog.c:477
-#: src/fr-window.c:3036
+#: src/fr-location-bar.c:210
+msgid "Previous visited location"
+msgstr ""
+
+#: src/fr-location-bar.c:218
+msgid "Next visited location"
+msgstr ""
+
+#: src/fr-location-bar.c:226
+msgid "Parent location"
+msgstr ""
+
+#. Translators: after the colon there is a folder name.
+#: src/fr-location-bar.c:236 src/fr-window.c:4928
+msgid "_Location:"
+msgstr ""
+
+#: src/fr-new-archive-dialog.c:337 src/fr-new-archive-dialog.c:386
+msgctxt "Window title"
+msgid "New Archive"
+msgstr ""
+
+#: src/fr-new-archive-dialog.c:632
+msgid "Could not delete the old archive."
+msgstr ""
+
+#: src/fr-new-archive-dialog.c:680 src/fr-new-archive-dialog.c:696
+#: src/fr-new-archive-dialog.c:736 src/fr-new-archive-dialog.c:755
+#: src/fr-new-archive-dialog.c:778 src/fr-window.c:2720
 msgid "Could not create the archive"
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:355 src/fr-new-archive-dialog.c:374
+#: src/fr-new-archive-dialog.c:682
 msgid "You have to specify an archive name."
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:439
+#: src/fr-new-archive-dialog.c:738
 msgid "You don’t have permission to create an archive in this folder"
 msgstr ""
 
 #. Translators: the name references to a filename.  This message can appear when renaming a file.
-#: src/fr-new-archive-dialog.c:457 src/fr-window.c:8340
+#: src/fr-new-archive-dialog.c:757 src/glib-utils.c:1182
 msgid "New name is the same as old one, please type other name."
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:500
+#: src/fr-new-archive-dialog.c:801
 #, c-format
 msgid "A file named “%s” already exists.  Do you want to replace it?"
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:501
+#: src/fr-new-archive-dialog.c:802
 #, c-format
 msgid "The file already exists in “%s”.  Replacing it will overwrite its contents."
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:507 src/fr-window.c:6751
+#: src/fr-new-archive-dialog.c:809 src/fr-window.c:5779
 msgid "_Replace"
 msgstr ""
 
-#: src/fr-new-archive-dialog.c:522
-msgid "Could not delete the old archive."
+#. Translators: this is the name of the home directory.
+#: src/fr-places-sidebar.c:274 src/fr-window.c:4922
+msgid "Home"
 msgstr ""
 
-#: src/fr-window-actions-callbacks.c:314
+#: src/fr-window-actions-callbacks.c:330
 msgctxt "Window title"
 msgid "Open"
 msgstr ""
 
-#: src/fr-window-actions-callbacks.c:327
+#: src/fr-window-actions-callbacks.c:342
 msgid "All archives"
 msgstr ""
 
-#: src/fr-window-actions-callbacks.c:334
+#: src/fr-window-actions-callbacks.c:349
 msgid "All files"
 msgstr ""
 
-#: src/fr-window.c:1193
+#: src/fr-window.c:1108
 msgid "Operation completed"
 msgstr ""
 
-#: src/fr-window.c:1612
+#: src/fr-window.c:1487
 msgid "Folder"
 msgstr ""
 
-#: src/fr-window.c:2009
+#: src/fr-window.c:1875
 msgid "[read only]"
 msgstr ""
 
-#: src/fr-window.c:2152
-#, c-format
-msgid "Could not display the folder “%s”"
-msgstr ""
-
 #. Translators: %s is a filename
-#: src/fr-window.c:2328 src/fr-window.c:2366
+#: src/fr-window.c:2034 src/fr-window.c:2072
 #, c-format
 msgid "Creating “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2332
+#: src/fr-window.c:2038
 #, c-format
 msgid "Loading “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2336
+#: src/fr-window.c:2042
 #, c-format
 msgid "Reading “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2340
+#: src/fr-window.c:2046
 #, c-format
 msgid "Deleting the files from “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2344
+#: src/fr-window.c:2050
 #, c-format
 msgid "Testing “%s”"
 msgstr ""
 
-#: src/fr-window.c:2347
+#: src/fr-window.c:2053
 msgid "Getting the file list"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2351
+#: src/fr-window.c:2057
 #, c-format
 msgid "Copying the files to add to “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2355
+#: src/fr-window.c:2061
 #, c-format
 msgid "Adding the files to “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2359
+#: src/fr-window.c:2065
 #, c-format
 msgid "Extracting the files from “%s”"
 msgstr ""
 
-#: src/fr-window.c:2362
+#: src/fr-window.c:2068
 msgid "Copying the extracted files to the destination"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2371
+#: src/fr-window.c:2077
 #, c-format
 msgid "Saving “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2378
+#: src/fr-window.c:2084
 #, c-format
 msgid "Renaming the files in “%s”"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2382
+#: src/fr-window.c:2088
 #, c-format
 msgid "Updating the files in “%s”"
 msgstr ""
 
-#: src/fr-window.c:2679
+#: src/fr-window.c:2379
 #, c-format
 msgid "%d file remaining"
 msgid_plural "%'d files remaining"
@@ -645,282 +691,292 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: src/fr-window.c:2683 src/fr-window.c:3310
+#: src/fr-window.c:2383 src/fr-window.c:3006
 msgid "Please wait…"
 msgstr "Пачакайце…"
 
-#: src/fr-window.c:2801
+#: src/fr-window.c:2485
 msgid "Extraction completed successfully"
 msgstr ""
 
-#: src/fr-window.c:2804
+#: src/fr-window.c:2488
 msgid "_Show the Files"
 msgstr ""
 
 #. Translators: %s is a filename
-#: src/fr-window.c:2822 src/fr-window.c:6255
+#: src/fr-window.c:2506 src/fr-window.c:5283
 #, c-format
 msgid "“%s” created successfully"
 msgstr ""
 
-#: src/fr-window.c:2829
+#: src/fr-window.c:2513
 msgid "_Open the Archive"
 msgstr ""
 
-#: src/fr-window.c:2919 src/fr-window.c:3092
+#: src/fr-window.c:2603 src/fr-window.c:2777
 msgid "Command exited abnormally."
 msgstr ""
 
-#: src/fr-window.c:3041
+#: src/fr-window.c:2725
 msgid "An error occurred while extracting files."
 msgstr ""
 
-#: src/fr-window.c:3047
+#: src/fr-window.c:2731
 #, c-format
 msgid "Could not open “%s”"
 msgstr ""
 
-#: src/fr-window.c:3052
+#: src/fr-window.c:2736
 msgid "An error occurred while loading the archive."
 msgstr ""
 
-#: src/fr-window.c:3056
+#: src/fr-window.c:2740
 msgid "An error occurred while deleting files from the archive."
 msgstr ""
 
-#: src/fr-window.c:3062
+#: src/fr-window.c:2746
 msgid "An error occurred while adding files to the archive."
 msgstr ""
 
-#: src/fr-window.c:3066
+#: src/fr-window.c:2750
 msgid "An error occurred while testing archive."
 msgstr ""
 
-#: src/fr-window.c:3071
+#: src/fr-window.c:2755
 msgid "An error occurred while saving the archive."
 msgstr ""
 
-#: src/fr-window.c:3075
+#: src/fr-window.c:2759
 msgid "An error occurred while renaming the files."
 msgstr ""
 
-#: src/fr-window.c:3079
+#: src/fr-window.c:2763
 msgid "An error occurred while updating the files."
 msgstr ""
 
-#: src/fr-window.c:3083
+#: src/fr-window.c:2767
 msgid "An error occurred."
 msgstr ""
 
-#: src/fr-window.c:3089
+#: src/fr-window.c:2773
 msgid "Command not found."
 msgstr ""
 
-#: src/fr-window.c:3246
+#: src/fr-window.c:2942
 msgid "Test Result"
 msgstr ""
 
-#: src/fr-window.c:4252
-msgid "Do you want to add this file to the current archive or open it as a new archive?"
-msgstr ""
-
-#: src/fr-window.c:4281
-msgid "Do you want to create a new archive with these files?"
-msgstr ""
-
-#: src/fr-window.c:4284
-msgid "Create _Archive"
-msgstr ""
-
-#: src/fr-window.c:4313 src/fr-window.c:7468
+#: src/fr-window.c:3698 src/fr-window.c:6522
 msgid "New Archive"
 msgstr ""
 
-#: src/fr-window.c:5036
+#: src/fr-window.c:3736
+msgid "Do you want to add this file to the current archive or open it as a new archive?"
+msgstr ""
+
+#: src/fr-window.c:3760
+msgid "Do you want to create a new archive with these files?"
+msgstr ""
+
+#: src/fr-window.c:3763
+msgid "Create _Archive"
+msgstr ""
+
+#: src/fr-window.c:4035
 msgid "Folders"
 msgstr ""
 
-#: src/fr-window.c:5075 src/ui/file-selector.ui:206
+#: src/fr-window.c:4085 src/ui/file-selector.ui:116
 msgctxt "File"
 msgid "Size"
 msgstr "Памер"
 
-#: src/fr-window.c:5076
+#: src/fr-window.c:4086
 msgctxt "File"
 msgid "Type"
 msgstr ""
 
-#: src/fr-window.c:5077 src/ui/file-selector.ui:222
+#: src/fr-window.c:4087 src/ui/file-selector.ui:135
 msgctxt "File"
 msgid "Modified"
 msgstr ""
 
-#: src/fr-window.c:5078
+#: src/fr-window.c:4088
 msgctxt "File"
 msgid "Location"
 msgstr ""
 
-#: src/fr-window.c:5087 src/ui/file-selector.ui:175
+#: src/fr-window.c:4097 src/ui/file-selector.ui:80
 msgctxt "File"
 msgid "Name"
 msgstr "Назва"
 
-#: src/fr-window.c:5840
-msgctxt "Action"
-msgid "_Extract"
+#: src/fr-window.c:4824
+msgid "No Archive Opened"
 msgstr ""
 
-#: src/fr-window.c:5844
+#: src/fr-window.c:4825
+msgid "Open an archive or create a new one."
+msgstr ""
+
+#: src/fr-window.c:4867
+msgctxt "Action"
+msgid "_Extract…"
+msgstr ""
+
+#: src/fr-window.c:4872
+msgid "Extract Files"
+msgstr ""
+
+#: src/fr-window.c:4876
 msgctxt "Action"
 msgid "Add Files"
 msgstr ""
 
-#: src/fr-window.c:5868
-msgid "Find files by name"
+#: src/fr-window.c:4893
+msgid "Main Menu"
 msgstr ""
 
-#: src/fr-window.c:5884
-msgid "Go to the previous visited location"
+#: src/fr-window.c:4901
+msgid "Search"
 msgstr ""
 
-#: src/fr-window.c:5889
-msgid "Go to the next visited location"
+#: src/fr-window.c:4916
+msgid "Back"
 msgstr ""
 
-#: src/fr-window.c:5899
-msgid "Go to the home location"
+#: src/fr-window.c:4918
+msgid "Forward"
 msgstr ""
 
-#. Translators: after the colon there is a folder name.
-#: src/fr-window.c:5908 src/ui/file-selector.ui:83
-#: src/ui/new-archive-dialog.ui:93
-msgid "_Location:"
+#: src/fr-window.c:4920
+msgid "Up"
 msgstr ""
 
-#: src/fr-window.c:6260 src/ui/menus.ui:7 src/ui/menus.ui:52 src/ui/menus.ui:88
+#: src/fr-window.c:5288 src/ui/menus.ui:7 src/ui/menus.ui:52 src/ui/menus.ui:88
 msgctxt "Action"
 msgid "Open"
 msgstr ""
 
-#: src/fr-window.c:6739
+#: src/fr-window.c:5767
 #, c-format
 msgid "Replace file “%s”?"
 msgstr ""
 
-#: src/fr-window.c:6742
+#: src/fr-window.c:5770
 #, c-format
 msgid "Another file with the same name already exists in “%s”."
 msgstr ""
 
-#: src/fr-window.c:6748
+#: src/fr-window.c:5776
 msgid "Replace _All"
 msgstr ""
 
-#: src/fr-window.c:6749
+#: src/fr-window.c:5777
 msgid "Replace _Nothing"
 msgstr ""
 
-#: src/fr-window.c:6750
+#: src/fr-window.c:5778
 msgid "_Skip"
 msgstr ""
 
-#: src/fr-window.c:7655 src/fr-window.c:8017
+#: src/fr-window.c:6709 src/fr-window.c:7075
 #, c-format
 msgid "Could not save the archive “%s”"
 msgstr ""
 
-#: src/fr-window.c:7783
+#: src/fr-window.c:6841
 msgid "Save"
 msgstr ""
 
-#: src/fr-window.c:8111
+#: src/fr-window.c:7168
 msgid "Last Output"
 msgstr ""
 
-#. Translators: the name references to a filename.  This message can appear when renaming a file.
-#: src/fr-window.c:8335
-msgid "New name is void, please type a name."
-msgstr ""
-
-#. Translators: the %s references to a filename.  This message can appear when renaming a file.
-#: src/fr-window.c:8345
-#, c-format
-msgid "Name “%s” is not valid because it contains at least one of the following characters: %s, please type other name."
-msgstr ""
-
-#: src/fr-window.c:8380
+#: src/fr-window.c:7403
 #, c-format
 msgid "A folder named “%s” already exists.\n\n"
 "%s"
 msgstr ""
 
-#: src/fr-window.c:8380 src/fr-window.c:8382
+#: src/fr-window.c:7403 src/fr-window.c:7405
 msgid "Please use a different name."
 msgstr ""
 
-#: src/fr-window.c:8382
+#: src/fr-window.c:7405
 #, c-format
 msgid "A file named “%s” already exists.\n\n"
 "%s"
 msgstr ""
 
-#: src/fr-window.c:8452
-msgid "Rename"
-msgstr ""
-
-#: src/fr-window.c:8453
-msgid "_New folder name:"
-msgstr ""
-
-#: src/fr-window.c:8453
-msgid "_New file name:"
-msgstr ""
-
-#: src/fr-window.c:8457
-msgid "_Rename"
-msgstr ""
-
-#: src/fr-window.c:8474 src/fr-window.c:8492
+#: src/fr-window.c:7477 src/fr-window.c:7492
 msgid "Could not rename the folder"
 msgstr ""
 
-#: src/fr-window.c:8474 src/fr-window.c:8492
+#: src/fr-window.c:7477 src/fr-window.c:7492
 msgid "Could not rename the file"
 msgstr ""
 
+#: src/fr-window.c:7580
+msgid "Rename"
+msgstr ""
+
+#: src/fr-window.c:7581
+msgid "_New folder name:"
+msgstr ""
+
+#: src/fr-window.c:7581
+msgid "_New file name:"
+msgstr ""
+
+#: src/fr-window.c:7585
+msgid "_Rename"
+msgstr ""
+
+#: src/fr-window.c:7928
+msgid "Source and destination are the same."
+msgstr ""
+
 #. Translators: %s are archive filenames
-#: src/fr-window.c:8940
+#: src/fr-window.c:7977
 #, c-format
 msgid "Moving the files from “%s” to “%s”"
 msgstr "Перамяшчэнне файлаў з «%s» у «%s»"
 
 #. Translators: %s are archive filenames
-#: src/fr-window.c:8943
+#: src/fr-window.c:7980
 #, c-format
 msgid "Copying the files from “%s” to “%s”"
 msgstr "Капіяванне файлаў з «%s» у «%s»"
 
-#: src/fr-window.c:8995
+#: src/fr-window.c:8058
 msgid "Paste Selection"
 msgstr ""
 
-#: src/fr-window.c:8996
+#: src/fr-window.c:8059
 msgid "_Destination folder:"
 msgstr ""
 
-#: src/fr-window.c:9000 src/ui/app-menubar.ui:61
+#: src/fr-window.c:8063
 msgid "_Paste"
 msgstr ""
 
-#: src/gtk-utils.c:208
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: src/glib-utils.c:1177
+msgid "New name is void, please type a name."
+msgstr ""
+
+#. Translators: the %s references to a filename.  This message can appear when renaming a file.
+#: src/glib-utils.c:1187
+#, c-format
+msgid "Name “%s” is not valid because it contains at least one of the following characters: %s, please type other name."
+msgstr ""
+
+#: src/gtk-utils.c:211
 msgid "C_ommand Line Output:"
 msgstr ""
 
-#: src/gtk-utils.c:369
-msgid "Could not display help"
-msgstr ""
-
-#: src/gtk-utils.c:432
+#: src/gtk-utils.c:366
 msgid "Change password visibility"
 msgstr ""
 
@@ -932,7 +988,7 @@ msgstr "_Дадаць"
 msgid "_Cancel"
 msgstr "_Скасаваць"
 
-#: src/gtk-utils.h:31 src/ui/app-menubar.ui:41
+#: src/gtk-utils.h:31
 msgid "_Close"
 msgstr "_Закрыць"
 
@@ -964,171 +1020,52 @@ msgstr ""
 msgid "Reset Options"
 msgstr ""
 
-#: src/ui/add-dialog-options.ui:35
-msgid "Add"
-msgstr "Дадаць"
-
-#: src/ui/add-dialog-options.ui:58
+#: src/ui/add-dialog-options.ui:38
 msgid "Include _files:"
 msgstr ""
 
-#: src/ui/add-dialog-options.ui:74
+#: src/ui/add-dialog-options.ui:50
 msgid "E_xclude files:"
 msgstr ""
 
-#: src/ui/add-dialog-options.ui:90
+#: src/ui/add-dialog-options.ui:62
 msgid "_Exclude folders:"
 msgstr ""
 
-#: src/ui/add-dialog-options.ui:105 src/ui/add-dialog-options.ui:120
-#: src/ui/add-dialog-options.ui:134 src/ui/extract-dialog-options.ui:104
-msgid "example: *.o; *.bak"
-msgstr ""
-
-#: src/ui/add-dialog-options.ui:169 src/ui/extract-dialog-options.ui:144
-msgid "Actions"
-msgstr ""
-
-#: src/ui/add-dialog-options.ui:189
+#: src/ui/add-dialog-options.ui:110
 msgid "Add only if _newer"
 msgstr ""
 
-#: src/ui/add-dialog-options.ui:206
+#: src/ui/add-dialog-options.ui:117
 msgid "_Follow symbolic links"
 msgstr ""
 
-#: src/ui/app-menubar.ui:4
-msgid "_File"
-msgstr ""
-
-#: src/ui/app-menubar.ui:8 src/ui/gears-menu.ui:8
-msgid "_New Archive…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:13 src/ui/gears-menu.ui:13
-msgid "_Open…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:18
-msgid "_Extract Files…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:25
-msgid "Save _As…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:30 src/ui/gears-menu.ui:27
-msgid "_Test Integrity"
-msgstr ""
-
-#: src/ui/app-menubar.ui:34
-msgid "Properties"
-msgstr ""
-
-#: src/ui/app-menubar.ui:47
-msgid "_Edit"
-msgstr ""
-
-#: src/ui/app-menubar.ui:51
-msgid "Cu_t"
-msgstr ""
-
-#: src/ui/app-menubar.ui:56
-msgid "_Copy"
-msgstr ""
-
-#: src/ui/app-menubar.ui:68
-msgid "_Add Files…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:72 src/ui/menus.ui:40 src/ui/menus.ui:76
-#: src/ui/menus.ui:112
-msgid "_Rename…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:77
-msgid "_Delete Files…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:84 src/ui/file-selector.ui:7
-msgid "_Select All"
-msgstr ""
-
-#: src/ui/app-menubar.ui:89
-msgid "D_eselect All"
-msgstr ""
-
-#: src/ui/app-menubar.ui:94
-msgid "_Find"
-msgstr ""
-
-#: src/ui/app-menubar.ui:101
-msgid "Set Pass_word…"
-msgstr ""
-
-#: src/ui/app-menubar.ui:106
-msgid "_View"
-msgstr ""
-
-#: src/ui/app-menubar.ui:110
-msgid "Sidebar"
-msgstr "Бакавая панэль"
-
-#: src/ui/app-menubar.ui:116 src/ui/gears-menu.ui:38
-msgid "View All _Files"
-msgstr ""
-
-#: src/ui/app-menubar.ui:122 src/ui/gears-menu.ui:43
-msgid "View as a F_older"
-msgstr ""
-
-#: src/ui/app-menubar.ui:130 src/ui/gears-menu.ui:59
-msgid "_Help"
-msgstr "_Даведка"
-
-#: src/ui/app-menubar.ui:133
-msgid "Contents"
-msgstr ""
-
-#: src/ui/app-menubar.ui:138
-msgid "Keyboard Shortcuts"
-msgstr ""
-
-#: src/ui/app-menubar.ui:143
-msgid "_About"
-msgstr ""
-
-#: src/ui/ask-password.ui:53 src/ui/new-archive-dialog.ui:156
+#: src/ui/ask-password.ui:29
 msgid "_Password:"
 msgstr ""
 
-#: src/ui/delete.ui:13 src/ui/extract-dialog-options.ui:41
+#: src/ui/delete.ui:12 src/ui/extract-dialog-options.ui:16
 msgid "_All files"
 msgstr ""
 
-#: src/ui/delete.ui:31 src/ui/extract-dialog-options.ui:59
+#: src/ui/delete.ui:20 src/ui/extract-dialog-options.ui:23
 msgid "_Selected files"
 msgstr ""
 
-#: src/ui/delete.ui:54 src/ui/extract-dialog-options.ui:83
+#: src/ui/delete.ui:31 src/ui/extract-dialog-options.ui:34
 msgid "_Files:"
 msgstr ""
 
-#: src/ui/delete.ui:74
-msgid "example: *.txt; *.doc"
-msgstr ""
-
-#: src/ui/extract-dialog-options.ui:20
-msgctxt "Action"
-msgid "Extract"
-msgstr ""
-
-#: src/ui/extract-dialog-options.ui:165
+#: src/ui/extract-dialog-options.ui:58
 msgid "_Keep directory structure"
 msgstr ""
 
-#: src/ui/extract-dialog-options.ui:182
+#: src/ui/extract-dialog-options.ui:65
 msgid "Do not _overwrite newer files"
+msgstr ""
+
+#: src/ui/file-selector.ui:7
+msgid "_Select All"
 msgstr ""
 
 #: src/ui/file-selector.ui:11
@@ -1139,145 +1076,175 @@ msgstr ""
 msgid "Show Hidden Files"
 msgstr ""
 
-#: src/ui/file-selector.ui:112 src/ui/file-selector.ui:113
-msgid "Go up one level"
+#: src/ui/gears-menu.ui:8
+msgid "_New Archive…"
 msgstr ""
 
-#: src/ui/gears-menu.ui:19
+#: src/ui/gears-menu.ui:12
+msgid "_Open…"
+msgstr ""
+
+#: src/ui/gears-menu.ui:17
 msgid "_Save As…"
 msgstr ""
 
-#: src/ui/gears-menu.ui:23
+#: src/ui/gears-menu.ui:21
 msgid "Pass_word…"
 msgstr ""
 
-#: src/ui/gears-menu.ui:31
+#: src/ui/gears-menu.ui:25
+msgid "_Test Integrity"
+msgstr ""
+
+#: src/ui/gears-menu.ui:29
 msgid "_Properties"
 msgstr ""
 
-#: src/ui/gears-menu.ui:49
+#: src/ui/gears-menu.ui:35
+msgid "View All _Files"
+msgstr ""
+
+#: src/ui/gears-menu.ui:40
+msgid "View as a F_older"
+msgstr ""
+
+#: src/ui/gears-menu.ui:46
 msgid "Side_bar"
 msgstr ""
 
-#: src/ui/gears-menu.ui:55
+#: src/ui/gears-menu.ui:53
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/ui/gears-menu.ui:64
-msgid "_About Archive Manager"
+#: src/ui/gears-menu.ui:57
+msgid "_Help"
+msgstr "_Даведка"
+
+#: src/ui/gears-menu.ui:61
+msgid "_About File Roller"
 msgstr ""
 
-#: src/ui/help-overlay.ui:13
+#: src/ui/help-overlay.ui:12
 msgctxt "shortcut window"
 msgid "General"
 msgstr ""
 
-#: src/ui/help-overlay.ui:18
+#: src/ui/help-overlay.ui:16
 msgctxt "shortcut window"
 msgid "Show help"
 msgstr ""
 
-#: src/ui/help-overlay.ui:24
+#: src/ui/help-overlay.ui:22
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr ""
 
-#: src/ui/help-overlay.ui:31
+#: src/ui/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "Close window"
 msgstr ""
 
-#: src/ui/help-overlay.ui:38
+#: src/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
 
-#: src/ui/help-overlay.ui:47
+#: src/ui/help-overlay.ui:41
 msgctxt "shortcut window"
 msgid "Archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:52
+#: src/ui/help-overlay.ui:45
 msgctxt "shortcut window"
 msgid "Create new archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:59
+#: src/ui/help-overlay.ui:51
 msgctxt "shortcut window"
 msgid "Open an archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:66
+#: src/ui/help-overlay.ui:57
 msgctxt "shortcut window"
-msgid "Extract an archive"
+msgid "Extract files from the archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:73
+#: src/ui/help-overlay.ui:63
+msgctxt "shortcut window"
+msgid "Add files to the archive"
+msgstr ""
+
+#: src/ui/help-overlay.ui:69
 msgctxt "shortcut window"
 msgid "Save with another name"
 msgstr ""
 
-#: src/ui/help-overlay.ui:80
+#: src/ui/help-overlay.ui:75
 msgctxt "shortcut window"
 msgid "View archive properties"
 msgstr ""
 
-#: src/ui/help-overlay.ui:87
+#: src/ui/help-overlay.ui:81
 msgctxt "shortcut window"
 msgid "Rename file or folder in an archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:95
+#: src/ui/help-overlay.ui:88
 msgctxt "shortcut window"
 msgid "View"
 msgstr ""
 
-#: src/ui/help-overlay.ui:100
+#: src/ui/help-overlay.ui:92
 msgctxt "shortcut window"
 msgid "Display the tree view of the folders in the side pane"
 msgstr ""
 
-#: src/ui/help-overlay.ui:107
+#: src/ui/help-overlay.ui:98
 msgctxt "shortcut window"
 msgid "View the content of an archive as a list of files"
 msgstr ""
 
-#: src/ui/help-overlay.ui:114
+#: src/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "View the content of an archive as a folder structure"
 msgstr ""
 
-#: src/ui/help-overlay.ui:121
+#: src/ui/help-overlay.ui:110
 msgctxt "shortcut window"
 msgid "Refresh"
 msgstr ""
 
-#: src/ui/help-overlay.ui:129
+#: src/ui/help-overlay.ui:116
+msgctxt "shortcut window"
+msgid "Focus the location"
+msgstr ""
+
+#: src/ui/help-overlay.ui:123
 msgctxt "shortcut window"
 msgid "Common"
 msgstr ""
 
-#: src/ui/help-overlay.ui:134
+#: src/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Find"
 msgstr ""
 
-#: src/ui/help-overlay.ui:141
+#: src/ui/help-overlay.ui:133
 msgctxt "shortcut window"
 msgid "Select all"
 msgstr ""
 
-#: src/ui/help-overlay.ui:148
+#: src/ui/help-overlay.ui:139
 msgctxt "shortcut window"
 msgid "Deselect all"
 msgstr ""
 
-#: src/ui/help-overlay.ui:155
+#: src/ui/help-overlay.ui:145
 msgctxt "shortcut window"
 msgid "Delete files or folders from an archive"
 msgstr ""
 
-#: src/ui/help-overlay.ui:162
+#: src/ui/help-overlay.ui:151
 msgctxt "shortcut window"
 msgid "Stop the operation"
 msgstr ""
@@ -1306,80 +1273,260 @@ msgstr ""
 msgid "Paste"
 msgstr ""
 
-#: src/ui/menus.ui:44 src/ui/menus.ui:80 src/ui/menus.ui:116
-msgid "Delete"
+#: src/ui/menus.ui:40 src/ui/menus.ui:76 src/ui/menus.ui:112
+msgid "_Rename…"
 msgstr ""
 
-#: src/ui/new-archive-dialog.ui:27
-msgid "_Filename:"
+#: src/ui/new-archive-dialog.ui:15
+msgid "File"
 msgstr ""
 
-#: src/ui/new-archive-dialog.ui:110
+#: src/ui/new-archive-dialog.ui:31
+msgid "Extension"
+msgstr ""
+
+#: src/ui/new-archive-dialog.ui:40 src/ui/properties.ui:46
 msgid "Location"
 msgstr ""
 
-#: src/ui/new-archive-dialog.ui:190
-msgid "_Encrypt the file list too"
+#: src/ui/new-archive-dialog.ui:78
+msgid "Encrypt"
 msgstr ""
 
-#. this is part of a sentence, for example "split into volumes of 10.0 MB", where MB stands for megabyte.
-#: src/ui/new-archive-dialog.ui:212
-msgid "Split into _volumes of"
+#: src/ui/new-archive-dialog.ui:79
+msgid "Ask a password to extract the files"
 msgstr ""
 
-#: src/ui/new-archive-dialog.ui:233
-msgid "10,0"
+#: src/ui/new-archive-dialog.ui:87
+msgid "Encrypt File List"
 msgstr ""
 
-#. MB means megabytes
-#: src/ui/new-archive-dialog.ui:250
+#: src/ui/new-archive-dialog.ui:88
+msgid "Ask the password to see the file list"
+msgstr ""
+
+#: src/ui/new-archive-dialog.ui:108
+msgid "Split in Volumes"
+msgstr ""
+
+#: src/ui/new-archive-dialog.ui:109
+msgid "Split the archive in smaller files"
+msgstr ""
+
+#. File size
+#: src/ui/new-archive-dialog.ui:112
+msgid "Size"
+msgstr ""
+
+#. Short for Megabytes
+#: src/ui/new-archive-dialog.ui:130
 msgid "MB"
 msgstr ""
 
-#: src/ui/new-archive-dialog.ui:271
-msgid "_Other Options"
-msgstr "Іншыя _параметры"
-
-#: src/ui/password.ui:51
+#: src/ui/password.ui:30
 msgid "_Encrypt the file list"
 msgstr ""
 
-#: src/ui/properties.ui:15
-msgctxt "File"
-msgid "Name:"
+#: src/ui/properties.ui:92
+msgid "Last Modified"
 msgstr ""
 
-#. after the colon there is a folder name.
-#: src/ui/properties.ui:45
-msgid "Location:"
+#: src/ui/properties.ui:120
+msgid "Type"
 msgstr ""
 
-#. after the colon there is a file type.
-#: src/ui/properties.ui:74
-msgid "Type:"
+#: src/ui/properties.ui:152
+msgid "Compressed Size"
 msgstr ""
 
-#: src/ui/properties.ui:103
-msgid "Last modified:"
+#: src/ui/properties.ui:180
+msgid "Uncompressed Size"
 msgstr ""
 
-#: src/ui/properties.ui:131
-msgid "Archive size:"
+#: src/ui/properties.ui:208
+msgid "Compression Ratio"
 msgstr ""
 
-#: src/ui/properties.ui:159
-msgid "Content size:"
+#: src/ui/properties.ui:236
+msgctxt "properties dialog"
+msgid "Number of Files"
 msgstr ""
 
-#: src/ui/properties.ui:186
-msgid "Compression ratio:"
-msgstr ""
-
-#: src/ui/properties.ui:213
-msgid "Number of files:"
-msgstr ""
-
-#: src/ui/update.ui:48
+#: src/ui/update.ui:33
 msgid "S_elect the files you want to update:"
 msgstr ""
+
+#~ msgid "Add"
+#~ msgstr "Дадаць"
+
+#~ msgid "_View"
+#~ msgstr "_Выгляд"
+
+#~ msgid "example: *.txt; *.doc"
+#~ msgstr "напрыклад: *.txt; *.doc"
+
+#~ msgid "Archive size:"
+#~ msgstr "Памер архіва:"
+
+#~ msgid "Split into _volumes of"
+#~ msgstr "Падзяліць на _тамы памерам"
+
+#~ msgid "_Encrypt the file list too"
+#~ msgstr "_Таксама зашыфраваць спіс файлаў"
+
+#~ msgid "_Filename:"
+#~ msgstr "_Назва файла:"
+
+#~ msgid "example: *.o; *.bak"
+#~ msgstr "напрыклад: *.o; *.bak"
+
+#~ msgid "Actions"
+#~ msgstr "Дзеянні"
+
+#~ msgctxt "File"
+#~ msgid "Name:"
+#~ msgstr "Назва:"
+
+#~ msgid "Content size:"
+#~ msgstr "Памер змесціва:"
+
+#~ msgid "Compression ratio:"
+#~ msgstr "Узровень сціскання:"
+
+#~ msgid "Number of files:"
+#~ msgstr "Колькасць файлаў:"
+
+#~ msgid "Could not display help"
+#~ msgstr "Не ўдалося паказаць даведку"
+
+#~ msgid "_Edit"
+#~ msgstr "_Праўка"
+
+#~ msgid "Contents"
+#~ msgstr "Змест"
+
+#~ msgid "Go to the previous visited location"
+#~ msgstr "Перайсці да папярэдняга наведанага месца"
+
+#~ msgid "Go to the next visited location"
+#~ msgstr "Перайсці да наступнага наведанага месца"
+
+#~ msgid "Go up one level"
+#~ msgstr "Перайсці вышэй на адзін узровень"
+
+#~ msgid "Go to the home location"
+#~ msgstr "Перайсці дадому"
+
+#~ msgid "Type:"
+#~ msgstr "Тып:"
+
+#~ msgid "Copyright © 2001–2014 Free Software Foundation, Inc."
+#~ msgstr "Аўтарскія правы © 2001–2014 Free Software Foundation, Inc."
+
+#~ msgid "_File"
+#~ msgstr "_Файл"
+
+#~ msgid "Cu_t"
+#~ msgstr "_Выразаць"
+
+#~ msgid "_Copy"
+#~ msgstr "_Скапіраваць"
+
+#~ msgid "D_eselect All"
+#~ msgstr "Зняць _вылучэнне з усяго"
+
+#~ msgid "_About"
+#~ msgstr "_Аб праграме"
+
+#~ msgid ""
+#~ "Archive Manager (also known as File Roller) is the default GNOME application "
+#~ "for opening, creating, and modifying archive and compressed archive files."
+#~ msgstr ""
+#~ "Кіраўнік архіваў (таксама вядомы як File Roller) - гэта стандартная праграма "
+#~ "асяроддзя GNOME для адкрыцця, стварэння і змянення архіваў."
+
+#~ msgid ""
+#~ "Archive Manager supports a wide range of different archive files, including:"
+#~ msgstr ""
+#~ "Кіраўнік архіваў падтрымлівае шырокае кола файлаў архіваў, у тым ліку:"
+
+#~ msgid "Update Files"
+#~ msgstr "Абнавіць файлы"
+
+#~ msgctxt "Window title"
+#~ msgid "Extract archive"
+#~ msgstr "Выняць змесціва архіва"
+
+#~ msgctxt "Action"
+#~ msgid "Extract"
+#~ msgstr "Выняць змесціва"
+
+#~ msgid "10,0"
+#~ msgstr "10,0"
+
+#~ msgctxt "Window title"
+#~ msgid "Load Options"
+#~ msgstr "Загрузка параметраў"
+
+#~ msgid "Sidebar"
+#~ msgstr "Бакавая панэль"
+
+#~ msgid "_Other Options"
+#~ msgstr "Іншыя _параметры"
+
+#~ msgctxt "Window title"
+#~ msgid "Add Files"
+#~ msgstr "Дадаванне файлаў"
+
+#~ msgid "_Options"
+#~ msgstr "_Параметры"
+
+#, c-format
+#~ msgid "%s Properties"
+#~ msgstr "Уласцівасці «%s»"
+
+#, c-format
+#~ msgid "Could not display the folder “%s”"
+#~ msgstr "Не ўдалося паказаць папку «%s»"
+
+#~ msgctxt "Action"
+#~ msgid "_Extract"
+#~ msgstr "Выняць"
+
+#~ msgid "Find files by name"
+#~ msgstr "Пошук файлаў па назве"
+
+#~ msgid "_Extract Files…"
+#~ msgstr "_Выняць файлы…"
+
+#~ msgid "Save _As…"
+#~ msgstr "Захаваць _як…"
+
+#~ msgid "_Add Files…"
+#~ msgstr "_Дадаць файлы…"
+
+#~ msgid "_Delete Files…"
+#~ msgstr "_Выдаліць файлы…"
+
+#~ msgid "_Find"
+#~ msgstr "_Пошук"
+
+#~ msgid "Set Pass_word…"
+#~ msgstr "_Задаць пароль…"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Спалучэнні клавіш"
+
+#~ msgid "_About Archive Manager"
+#~ msgstr "_Пра Кіраўнік архіваў"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Extract an archive"
+#~ msgstr "Выняць змесціва архіва"
+
+#~ msgid "Location:"
+#~ msgstr "Размяшчэнне:"
+
+#~ msgid "Last modified:"
+#~ msgstr "Апошняе змяненне:"
 
