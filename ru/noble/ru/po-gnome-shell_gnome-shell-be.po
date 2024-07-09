@@ -5,16 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell/issues/\n"
-"POT-Creation-Date: 2024-04-08 10:48+0000\n"
-"PO-Revision-Date: 2024-04-15 12:51\n"
-"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
+"POT-Creation-Date: 2024-07-08 09:42+0000\n"
+"PO-Revision-Date: 2024-07-08 21:10\n"
+"Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2024-04-13 15:22+0000\n"
-"X-Generator: Launchpad (build 67d34a19aaa1df7be4dd8bf498cbc5bbd785067b)\n"
+"X-Launchpad-Export-Date: 2024-07-08 18:04+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "Language: ru\n"
 "X-Project-Style: gnome\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -464,15 +464,31 @@ msgstr ""
 msgid "Visit extension homepage"
 msgstr ""
 
-#: js/gdm/authPrompt.js:177 js/gdm/loginDialog.js:466
-#: js/ui/audioDeviceSelection.js:66 js/ui/components/networkAgent.js:114
-#: js/ui/components/polkitAgent.js:146 js/ui/endSessionDialog.js:438
-#: js/ui/extensionDownloader.js:289 js/ui/shellMountOperation.js:384
-#: js/ui/shellMountOperation.js:394
-msgid "Cancel"
+#: js/gdm/authd.js:216
+msgid "Please, type the new passphrase again"
 msgstr ""
 
-#: js/gdm/authPrompt.js:353 js/gdm/util.js:69
+#: js/gdm/authd.js:218
+msgid "Please, type the new PIN again"
+msgstr ""
+
+#: js/gdm/authd.js:222
+msgid "The provided passphrases do not match, please try again"
+msgstr ""
+
+#: js/gdm/authd.js:224
+msgid "The provided PIN numbers do not match, please try again"
+msgstr ""
+
+#: js/gdm/authd.js:310
+msgid "Select the broker"
+msgstr ""
+
+#: js/gdm/authd.js:324
+msgid "Select the authentication mode"
+msgstr ""
+
+#: js/gdm/authd.js:562 js/gdm/authPrompt.js:353 js/gdm/util.js:69
 #: js/ui/components/networkAgent.js:214 js/ui/components/networkAgent.js:234
 #: js/ui/components/networkAgent.js:266 js/ui/components/networkAgent.js:299
 #: js/ui/components/networkAgent.js:338 js/ui/components/networkAgent.js:351
@@ -480,11 +496,36 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: js/gdm/authPrompt.js:807
+#: js/gdm/authd.js:565
+msgid "Input value"
+msgstr ""
+
+#. FIXME: Add another role for validating them
+#: js/gdm/authd.js:569 js/gdm/authd.js:573
+msgid "Input numbers"
+msgstr ""
+
+#: js/gdm/authd.js:613
+msgid "Use the qr code to log-in"
+msgstr ""
+
+#: js/gdm/authd.js:661
+msgid "Authentication was cancelled, try again!"
+msgstr ""
+
+#: js/gdm/authNotification.js:28 js/gdm/authPrompt.js:809
 msgid "Login Failed"
 msgstr ""
 
-#: js/gdm/authPrompt.js:808
+#: js/gdm/authPrompt.js:177 js/gdm/loginDialog.js:466 js/gdm/webLogin.js:246
+#: js/ui/audioDeviceSelection.js:66 js/ui/components/networkAgent.js:114
+#: js/ui/components/polkitAgent.js:146 js/ui/endSessionDialog.js:438
+#: js/ui/extensionDownloader.js:289 js/ui/shellMountOperation.js:384
+#: js/ui/shellMountOperation.js:394
+msgid "Cancel"
+msgstr ""
+
+#: js/gdm/authPrompt.js:810
 msgid "Please try again"
 msgstr ""
 
@@ -532,36 +573,36 @@ msgstr ""
 msgid "Not listed?"
 msgstr ""
 
-#: js/gdm/loginDialog.js:639 js/ui/unlockDialog.js:595
+#: js/gdm/loginDialog.js:624 js/ui/unlockDialog.js:595
 msgid "Login Options"
 msgstr ""
 
-#: js/gdm/loginDialog.js:655
+#: js/gdm/loginDialog.js:640
 msgid "Session"
 msgstr ""
 
 #. Translators: this message is shown below the username entry field
 #. to clue the user in on how to login to the local network realm
-#: js/gdm/loginDialog.js:1103
+#: js/gdm/loginDialog.js:1088
 #, javascript-format
 msgid "(e.g., user or %s)"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1108 js/ui/components/networkAgent.js:258
+#: js/gdm/loginDialog.js:1093 js/ui/components/networkAgent.js:258
 #: js/ui/components/networkAgent.js:293 js/ui/components/networkAgent.js:327
 msgid "Username"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1172
+#: js/gdm/loginDialog.js:1157
 msgid "Stop conflicting session dialog closed"
 msgstr ""
 
-#: js/gdm/loginDialog.js:1173
+#: js/gdm/loginDialog.js:1158
 #, javascript-format
 msgid "Try to login again to start a session for user %s."
 msgstr ""
 
-#: js/gdm/loginDialog.js:1559
+#: js/gdm/loginDialog.js:1517
 msgid "Login Window"
 msgstr ""
 
@@ -579,14 +620,22 @@ msgstr ""
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can swipe their finger on the fingerprint reader
-#: js/gdm/util.js:1235
+#: js/gdm/util.js:1253
 msgid "(or swipe finger across reader)"
 msgstr ""
 
 #. Translators: this message is shown below the password entry field
 #. to indicate the user can place their finger on the fingerprint reader instead
-#: js/gdm/util.js:1240
+#: js/gdm/util.js:1258
 msgid "(or place finger on reader)"
+msgstr ""
+
+#: js/gdm/webLogin.js:148
+msgid "Login code: "
+msgstr ""
+
+#: js/gdm/webLogin.js:253 js/ui/padOsd.js:225
+msgid "Done"
 msgstr ""
 
 #. Translators: The name of the power-off action in search
@@ -681,17 +730,17 @@ msgctxt "search-result"
 msgid "Lock Screen Rotation"
 msgstr ""
 
-#: js/misc/util.js:129 js/misc/util.js:153
+#: js/misc/util.js:129 js/misc/util.js:146
 msgid "Command not found"
 msgstr ""
 
 #. Replace "Error invoking GLib.shell_parse_argv: " with
 #. something nicer
-#: js/misc/util.js:195
+#: js/misc/util.js:188
 msgid "Could not parse command:"
 msgstr ""
 
-#: js/misc/util.js:203
+#: js/misc/util.js:196
 #, javascript-format
 msgid "Execution of “%s” failed:"
 msgstr ""
@@ -1106,16 +1155,16 @@ msgid "Service"
 msgstr ""
 
 #: js/ui/components/networkAgent.js:371 js/ui/components/networkAgent.js:407
-#: js/ui/components/networkAgent.js:750 js/ui/components/networkAgent.js:771
+#: js/ui/components/networkAgent.js:744 js/ui/components/networkAgent.js:765
 msgid "Authentication required"
 msgstr ""
 
-#: js/ui/components/networkAgent.js:372 js/ui/components/networkAgent.js:751
+#: js/ui/components/networkAgent.js:372 js/ui/components/networkAgent.js:745
 #, javascript-format
 msgid "Passwords or encryption keys are required to access the wireless network “%s”."
 msgstr ""
 
-#: js/ui/components/networkAgent.js:376 js/ui/components/networkAgent.js:755
+#: js/ui/components/networkAgent.js:376 js/ui/components/networkAgent.js:749
 msgid "Wired 802.1X authentication"
 msgstr ""
 
@@ -1123,15 +1172,15 @@ msgstr ""
 msgid "Network name"
 msgstr ""
 
-#: js/ui/components/networkAgent.js:387 js/ui/components/networkAgent.js:759
+#: js/ui/components/networkAgent.js:387 js/ui/components/networkAgent.js:753
 msgid "DSL authentication"
 msgstr ""
 
-#: js/ui/components/networkAgent.js:394 js/ui/components/networkAgent.js:764
+#: js/ui/components/networkAgent.js:394 js/ui/components/networkAgent.js:758
 msgid "PIN code required"
 msgstr ""
 
-#: js/ui/components/networkAgent.js:395 js/ui/components/networkAgent.js:765
+#: js/ui/components/networkAgent.js:395 js/ui/components/networkAgent.js:759
 msgid "PIN code is needed for the mobile broadband device"
 msgstr ""
 
@@ -1139,14 +1188,14 @@ msgstr ""
 msgid "PIN"
 msgstr ""
 
-#: js/ui/components/networkAgent.js:408 js/ui/components/networkAgent.js:756
-#: js/ui/components/networkAgent.js:760 js/ui/components/networkAgent.js:772
-#: js/ui/components/networkAgent.js:776
+#: js/ui/components/networkAgent.js:408 js/ui/components/networkAgent.js:750
+#: js/ui/components/networkAgent.js:754 js/ui/components/networkAgent.js:766
+#: js/ui/components/networkAgent.js:770
 #, javascript-format
 msgid "A password is required to connect to “%s”."
 msgstr ""
 
-#: js/ui/components/networkAgent.js:775
+#: js/ui/components/networkAgent.js:769
 msgid "VPN password"
 msgstr ""
 
@@ -1660,10 +1709,6 @@ msgstr ""
 
 #: js/ui/padOsd.js:156
 msgid "Assign keystroke"
-msgstr ""
-
-#: js/ui/padOsd.js:225
-msgid "Done"
 msgstr ""
 
 #: js/ui/padOsd.js:728
