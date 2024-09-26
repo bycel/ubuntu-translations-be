@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-05-24 06:52+0000\n"
-"X-Generator: Launchpad (build 0e1f616671af724398db43b36ddfb3ed1f2682ec)\n"
+"X-Launchpad-Export-Date: 2024-09-25 22:51+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: be\n"
 
 #: data/org.freedesktop.Tracker.Extract.gschema.xml:24
@@ -54,11 +54,11 @@ msgstr "Максімальная колькасць байтаў для выма
 
 #: data/org.freedesktop.Tracker.Extract.gschema.xml:40
 msgid "Maximum number of UTF-8 bytes to extract."
-msgstr "Максімальная колькасць байтаў у кадыроўцы UTF-8 для вымання."
+msgstr "Максімальная колькасць байтаў у кадаванні UTF-8 для вымання."
 
 #: data/org.freedesktop.Tracker.Extract.gschema.xml:46
 msgid "Wait for FS miner to be done before extracting"
-msgstr "Пачакайце сканчэння працы індэксатара FS перад выняццем"
+msgstr "Чакаць завяршэння працы індэксатара FS перад выманнем"
 
 #: data/org.freedesktop.Tracker.Extract.gschema.xml:47
 msgid ""
@@ -67,41 +67,41 @@ msgid ""
 "environment where it is important to list files as fast as possible and can "
 "wait to get meta-data later."
 msgstr ""
-"Калі праўда, tracker-extract будзе чакаць пакуль tracker-miner-fs скончыць "
-"працу перад выманнем метазвестак. Гэта магчымасць карысная ў асяродздзях, у "
-"якіх неабходна выводзіць спіс файлаў з максімальнай хуткасцю, а метазвесткі "
-"можна атрымаць пазней."
+"Калі «true», tracker-extract перад выманнем метаданых будзе чакаць, пакуль "
+"tracker-miner-fs не завершыць сканаванне. Гэты параметр карысны ў "
+"абмежаваным асяроддзі, дзе важна як мага хутчэй выводзіць спіс файлаў, а "
+"метаданыя можна атрымліваць пазней."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:29
 msgid "Initial sleep"
-msgstr "Рэжым сна"
+msgstr "Сон пры запуску"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:30
 msgid "Initial sleep time, in seconds."
-msgstr "Пачатак рэжыма сна, у секундах."
+msgstr "Час сна пры запуску, у секундах."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:46
 msgid "Throttle"
-msgstr "Дросель"
+msgstr "Рэгулятар"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:47
 msgid "Indexing speed, the higher the slower."
-msgstr "Хуткасць індэксавання, большая і меньшая."
+msgstr "Хуткасць індэксавання, найбольшая і найменшая."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:53
 msgid "Low disk space limit"
-msgstr "Абмежаанне на дыскавую прастору"
+msgstr "Парог свабоднай дыскавай прасторы"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:54
 msgid ""
 "Disk space threshold in percent at which to pause indexing, or -1 to disable."
 msgstr ""
-"Максімальнае значэнне дыскавай прасторы ў адсотках, пасьля якога трэба "
-"спыніць індэксацыю, ці \"-1\"каб адключыць."
+"Парог свабоднай дыскавай прасторы ў працэнтах, на якім трэба прыпыніць "
+"індэксаванне (-1, каб адключыць)."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:60
 msgid "Crawling interval"
-msgstr "Інтэрвал сканаання"
+msgstr "Інтэрвал сканавання"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:61
 msgid ""
@@ -109,30 +109,30 @@ msgid ""
 "database. 0 forces crawling anytime, -1 forces it only after unclean "
 "shutdowns, and -2 disables it entirely."
 msgstr ""
-"Перыяд у днях для праверкі актуальнасці файлавай сістэмы ў базе звестак. "
-"\"0\" - сканіраваць заўсёды, \"-1\" - сканіраваць толькі пасля няслушнага "
-"выключэння і \"-2\" - адключыць сканіраванне."
+"Перыяд у днях для праверкі актуальнасці файлавай сістэмы ў базе даных («0» - "
+"бесперапыннае сканаванне, «-1» - толькі пасля некарэктнага выключэння, «-2» -"
+" цалкам адключыць сканаванне)."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:71
 msgid "Removable devices’ data permanence threshold"
-msgstr "Парог актуальнасці звестак на здымных прыладах"
+msgstr "Парог захавання даных для здымных прылад"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:72
 msgid ""
 "Threshold in days after which files from removables devices will be removed "
 "from database if not mounted. 0 means never, maximum is 365."
 msgstr ""
-"Парогавае значэнне ў днях, дасля якога файлы на здымных прыладах будуць "
-"выдалены з базы звестак калі прылады не далучаныю. \"0\" азначае ніколі, "
-"максімальнае значэнне - \"365\"."
+"Колькасць дзён, пасля якой файлы са здымных прылад выдаляюцца з базы даных, "
+"калі прылада не мантавалася (0 азначае ніколі, максімальнае значэнне - 365)."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:82
 msgid "Enable monitors"
-msgstr "Уключыць маніторынг"
+msgstr "Уключыць назіранне"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:83
 msgid "Set to false to completely disable any file monitoring"
-msgstr "Усталюйце значэнне «false», каб адключыць сачэнне за любымі файламі"
+msgstr ""
+"Задайце значэнне «false», каб цалкам адключыць назіранне за любымі файламі"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:88
 msgid "Enable writeback"
@@ -150,8 +150,8 @@ msgstr "Індэксаваць здымныя прылады"
 msgid ""
 "Set to true to enable indexing mounted directories for removable devices."
 msgstr ""
-"Усталюйце значэнне «true», каб уключыць індэксацыю далучаных каталогаў на "
-"здымных прыладах."
+"Задайце значэнне «true», каб уключыць індэксаванне прымантаваных каталогаў "
+"на здымных прыладах."
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:100
 msgid "Index optical discs"
@@ -162,28 +162,28 @@ msgid ""
 "Set to true to enable indexing CDs, DVDs, and generally optical media (if "
 "removable devices are not indexed, optical discs won’t be either)"
 msgstr ""
-"Усталюйце значэнне «true», каб адключыць індэксаванне CD, DVD іншых аптычных "
-"прыладаў (калі здымныя прылады не індэксуюцца, аптычныя дыскі так сама ня "
+"Задайце значэнне «true», каб адключыць індэксаванне CD, DVD і іншых аптычных "
+"носьбітаў (калі здымныя прылады не індэксуюцца, аптычныя дыскі так сама не "
 "будуць)"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:109
 msgid "Index when running on battery"
-msgstr "Індэксаваць пад час працы ад батарэі"
+msgstr "Індэксаваць падчас працы ад батарэі"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:110
 msgid "Set to true to index while running on battery"
 msgstr ""
-"Усталюйце значэнне «true», каб уключыць індэксаванне пад час працы ад батарэі"
+"Задайце значэнне «true», каб дазволіць індэксаванне падчас працы ад батарэі"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:115
 msgid "Perform initial indexing when running on battery"
-msgstr "Выканаць пачатковае індэксаванне пад час працы ад батарэі"
+msgstr "Выканаць першапачатковае індэксаванне падчас працы ад батарэі"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:116
 msgid "Set to true to index while running on battery for the first time only"
 msgstr ""
-"Усталюйце значэнне «true», каб уключыць індэксаванне пад час працы ад "
-"батарэі толькі пасля першага запуску"
+"Задайце значэнне «true», каб дазволіць індэксаванне падчас працы ад батарэі "
+"толькі пры першым запуску"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:121
 msgid "Directories to index recursively"
@@ -210,23 +210,23 @@ msgstr ""
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:145
 msgid "Ignored files"
-msgstr "Ігнаруемыя файлы"
+msgstr "Файлы для ігнаравання"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:146
 msgid "List of file patterns to avoid"
-msgstr "Спіс ігнаруемых файлавых шаблонаў"
+msgstr "Спіс шаблонаў для файлаў, якія трэба ігнараваць"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:151
 msgid "Ignored directories"
-msgstr "Ігнаруемыя каталогі"
+msgstr "Каталогі для ігнаравання"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:152
 msgid "List of directories to avoid"
-msgstr "Спіс ігнаруемых каталогаў"
+msgstr "Спіс каталогаў, якія трэба ігнараваць"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:157
 msgid "Ignored directories with content"
-msgstr "Ігнаруемыя каталогі са зьместам"
+msgstr "Каталогі са змесцівам, якое ігнаруецца"
 
 #: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:158
 msgid "Avoid any directory containing a file blacklisted here"
@@ -239,7 +239,7 @@ msgstr "час невядомы"
 #: src/libtracker-miners-common/tracker-utils.c:104
 #: src/libtracker-miners-common/tracker-utils.c:155
 msgid "less than one second"
-msgstr "менш чым адна секунда"
+msgstr "менш за адну секунду"
 
 #. Translators: this is %d days
 #: src/libtracker-miners-common/tracker-utils.c:119
@@ -251,7 +251,7 @@ msgstr " %dдз"
 #: src/libtracker-miners-common/tracker-utils.c:123
 #, c-format
 msgid " %2.2dh"
-msgstr " %2.2dгдз"
+msgstr " %2.2dгадз"
 
 #. Translators: this is %2.2d minutes
 #: src/libtracker-miners-common/tracker-utils.c:127
@@ -279,7 +279,7 @@ msgid " %2.2d hour"
 msgid_plural " %2.2d hours"
 msgstr[0] " %2.2d гадзіна"
 msgstr[1] " %2.2d гадзіны"
-msgstr[2] " %2.2d гадзінаў"
+msgstr[2] " %2.2d гадзін"
 
 #: src/libtracker-miners-common/tracker-utils.c:143
 #, c-format
@@ -287,7 +287,7 @@ msgid " %2.2d minute"
 msgid_plural " %2.2d minutes"
 msgstr[0] " %2.2d хвіліна"
 msgstr[1] " %2.2d хвіліны"
-msgstr[2] " %2.2d хвіліна\\аў"
+msgstr[2] " %2.2d хвілін"
 
 #: src/libtracker-miners-common/tracker-utils.c:147
 #, c-format
@@ -295,28 +295,29 @@ msgid " %2.2d second"
 msgid_plural " %2.2d seconds"
 msgstr[0] " %2.2d секунда"
 msgstr[1] " %2.2d секунды"
-msgstr[2] " %2.2d секундаў"
+msgstr[2] " %2.2d секунд"
 
 #: src/miners/fs/tracker-main.c:73 src/miners/rss/tracker-main.c:43
 #: src/tracker-writeback/tracker-main.c:55
 msgid ""
 "Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug (default=0)"
 msgstr ""
-"Запіс у часопіс, 0 = толькі памылкі, 1 = мінімальна, 2 = падрабязна і 3 = "
-"наладка (па змаўчанні=0)"
+"Вядзенне журнала, 0 = толькі памылкі, 1 = мінімальна, 2 = падрабязна, 3 = "
+"адладка (прадвызначана=0)"
 
 #: src/miners/fs/tracker-main.c:78
 msgid "Initial sleep time in seconds, 0->1000 (default=15)"
-msgstr "Пачатак сна ў секундаў, 0->1000 (па змаўчанні=15)"
+msgstr "Час сна пры запуску, у секундах, 0->1000 (прадвызначана=15)"
 
 #: src/miners/fs/tracker-main.c:83
 msgid "Runs until all configured locations are indexed and then exits"
 msgstr ""
-"Працуе, пакуль індэксуюцца ўсе наладжаныя знаходжанні, а потым завяршаецца"
+"Запушчаны, пакуль не праіндэксуюцца ўсе размяшчэнні з налад, а потым "
+"выходзіць"
 
 #: src/miners/fs/tracker-main.c:87
 msgid "Checks if FILE is eligible for being mined based on configuration"
-msgstr "Правярае ці можа ФАЙЛ індэксавацца на аснове наладаў"
+msgstr "Правярае ці прымальны ФАЙЛ для індэксаванння на аснове налад"
 
 #: src/miners/fs/tracker-main.c:88 src/tracker-extract/tracker-main.c:88
 msgid "FILE"
@@ -325,7 +326,7 @@ msgstr "ФАЙЛ"
 #: src/miners/fs/tracker-main.c:91 src/miners/rss/tracker-main.c:57
 #: src/tracker-extract/tracker-main.c:102
 msgid "Runs for a specific domain ontology"
-msgstr "Выконваецца для асобная анталогіі дамена"
+msgstr "Выконваецца для асобнай анталогіі дамена"
 
 #: src/miners/fs/tracker-main.c:95 src/tracker-extract/tracker-main.c:106
 #: src/tracker-writeback/tracker-main.c:51
@@ -335,12 +336,12 @@ msgstr "Паказвае інфармацыю пра версію"
 #: src/miners/fs/tracker-main.c:536
 #, c-format
 msgid "Data object “%s” currently exists"
-msgstr "Аб'ект звестак “%s” ужо існуе"
+msgstr "Аб'ект даных «%s» ужо існуе"
 
 #: src/miners/fs/tracker-main.c:537
 #, c-format
 msgid "Data object “%s” currently does not exist"
-msgstr "Аб'ект звестак “%s” не існуе"
+msgstr "Аб'ект даных «%s» зараз не існуе"
 
 #: src/miners/fs/tracker-main.c:552
 msgid "Directory is eligible to be mined (based on rules)"
@@ -411,12 +412,12 @@ msgstr "Будзе адсочвацца"
 #. 
 #: src/miners/fs/tracker-main.c:789
 msgid "— start the tracker indexer"
-msgstr "— пачаць  індэксацыю"
+msgstr "— запусціць індэксатар tracker"
 
 #. Translators: this is a "feed" as in RSS
 #: src/miners/rss/tracker-main.c:49
 msgid "Add feed"
-msgstr "Дадаць стужку"
+msgstr "Дадаць канал"
 
 #: src/miners/rss/tracker-main.c:50
 msgid "URL"
@@ -424,36 +425,36 @@ msgstr "URL"
 
 #: src/miners/rss/tracker-main.c:53
 msgid "Title to use (must be used with --add-feed)"
-msgstr "Назва для выкарыстання (павінна выкарыстоўвацца з --add-feed)"
+msgstr ""
+"Назва, якую трэба выкарыстоўваць (павінна выкарыстоўвацца з --add-feed)"
 
 #. Translators: this messagge will apper immediately after the
 #. * usage string - Usage: COMMAND <THIS_MESSAGE>
 #. 
 #: src/miners/rss/tracker-main.c:93
 msgid "— start the feeds indexer"
-msgstr "— запусціць індэксатар стужак"
+msgstr "— запусціць індэксатар каналаў"
 
 #: src/miners/rss/tracker-main.c:127
 msgid "Could not establish a connection to Tracker"
-msgstr "Немагчыма ўсталяваць злучэньне з Tracker"
+msgstr "Не ўдалося ўсталяваць злучэнне з Tracker"
 
 #: src/miners/rss/tracker-main.c:128
 msgid "No error given"
-msgstr "Няма паведамленняў пра памылку"
+msgstr "Памылка не ўказана"
 
 #: src/miners/rss/tracker-main.c:155
 msgid "Could not add feed"
-msgstr "Не атрымалася дадаць стужку"
+msgstr "Не ўдалося дадаць канал"
 
 #: src/tracker-extract/tracker-extract.c:683
 msgid "Metadata extraction failed"
-msgstr "Памылка здабычы метазвестак"
+msgstr "Не ўдалося выняць метаданыя"
 
 #: src/tracker-extract/tracker-extract.c:763
 msgid "No metadata or extractor modules found to handle this file"
 msgstr ""
-"Для гэтага файла не атрымалася знайсці адпаведны модуль метазвестак ці "
-"здабычы"
+"Не знойдзены модуль метаданых або модуль вымання, каб апрацаваць гэты файл"
 
 #: src/tracker-extract/tracker-main.c:82
 msgid ""
@@ -465,11 +466,11 @@ msgstr ""
 
 #: src/tracker-extract/tracker-main.c:87
 msgid "File to extract metadata for"
-msgstr "Памылка здабычы метазвестак для"
+msgstr "Файл для вымання метаданых"
 
 #: src/tracker-extract/tracker-main.c:91
 msgid "MIME type for file (if not provided, this will be guessed)"
-msgstr "Тып MIME для файла (калі не будзе пададзены, будзе вызначаны)"
+msgstr "MIME-тып для файла (калі не ўказана, будзе падабраны)"
 
 #: src/tracker-extract/tracker-main.c:92
 msgid "MIME"
@@ -478,7 +479,8 @@ msgstr "MIME"
 #: src/tracker-extract/tracker-main.c:95
 msgid "Force a module to be used for extraction (e.g. “foo” for “foo.so”)"
 msgstr ""
-"Прымусова выкарыстоўваць модуль для атрымання (напр. “foo” для “foo.so”)"
+"Модуль, які будзе прымусова выкарыстоўвацца для вымання (напрыклад, «foo» "
+"для «foo.so»)"
 
 #: src/tracker-extract/tracker-main.c:96
 msgid "MODULE"
@@ -486,7 +488,7 @@ msgstr "МОДУЛЬ"
 
 #: src/tracker-extract/tracker-main.c:98
 msgid "Output results format: “sparql”, “turtle” or “json-ld”"
-msgstr "Фармат вываду вынікаў: “sparql”, “turtle” ці “json-ld”"
+msgstr "Фармат вываду вынікаў: «sparql», «turtle» або «json-ld»"
 
 #: src/tracker-extract/tracker-main.c:99
 msgid "FORMAT"
@@ -495,25 +497,25 @@ msgstr "ФАРМАТ"
 #: src/tracker-extract/tracker-main.c:237
 #, c-format
 msgid "Unsupported serialization format “%s”\n"
-msgstr "Непадтрымліваемы фармат спецыялізацыі “%s”\n"
+msgstr "Фармат серыялізацыі «%s» не падтрымліваецца\n"
 
 #. Translators: this message will appear immediately after the
 #. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
 #: src/tracker-extract/tracker-main.c:323
 msgid "— Extract file meta data"
-msgstr "— Выняць метазвесткі файла"
+msgstr "— Выняць метаданыя файла"
 
 #: src/tracker-extract/tracker-main.c:338
 msgid "Filename and mime type must be provided together"
-msgstr "Назва файла і тып MIME павінны быць пададзены разам"
+msgstr "Назва файла і MIME-тып павінны быць пададзены разам"
 
 #: src/tracker-writeback/tracker-main.c:62
 msgid "Disable shutting down after 30 seconds of inactivity"
-msgstr "Не выключаць пасля 30 секундаў бяздзейнасці"
+msgstr "Не выключаць пасля 30 секунд бяздзейнасці"
 
 #. Translators: this message will appear immediately after the
 #. * usage string - Usage: COMMAND <THIS_MESSAGE>
 #. 
 #: src/tracker-writeback/tracker-main.c:98
 msgid "— start the tracker writeback service"
-msgstr "— запусціць сэрвіс заротнай сувязі Tracker"
+msgstr "— запусціць сэрвіс зваротнага запісу"

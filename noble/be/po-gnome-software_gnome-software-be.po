@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-05-24 06:26+0000\n"
-"X-Generator: Launchpad (build 0e1f616671af724398db43b36ddfb3ed1f2682ec)\n"
+"X-Launchpad-Export-Date: 2024-09-25 22:22+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: be\n"
 
 #: data/metainfo/org.gnome.Software.metainfo.xml.in:7 src/gs-shell.ui:27
@@ -72,8 +72,8 @@ msgid "The update details"
 msgstr "Падрабязнасці абнаўлення"
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/metainfo/org.gnome.Software.metainfo.xml.in:2506
-#: src/gs-application.c:264
+#: data/metainfo/org.gnome.Software.metainfo.xml.in:2625
+#: src/gs-application.c:263
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
@@ -810,7 +810,7 @@ msgstr "%s прыдатна для %s"
 
 #. Translators: This is the title of the dialog which contains information about the suitability of an app for different ages.
 #. this one’s not a placeholder
-#: src/gs-age-rating-context-dialog.ui:5 src/gs-app-context-bar.ui:217
+#: src/gs-age-rating-context-dialog.ui:6 src/gs-app-context-bar.ui:217
 msgid "Age Rating"
 msgstr "Узроставы рэйтынг"
 
@@ -820,7 +820,7 @@ msgstr "Узроставы рэйтынг"
 msgid "How to contribute missing information"
 msgstr "Як дадаць адсутныя звесткі"
 
-#: lib/gs-app.c:6339
+#: lib/gs-app.c:6365
 msgid "Local file"
 msgstr "Лакальны файл"
 
@@ -829,14 +829,14 @@ msgstr "Лакальны файл"
 #. Example string: "Local file (RPM)"
 #. Translators: The first placeholder is an app runtime
 #. * name, the second is its version number.
-#: lib/gs-app.c:6358 src/gs-safety-context-dialog.c:539
+#: lib/gs-app.c:6384 src/gs-safety-context-dialog.c:536
 #, c-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
 #. Translators: This is a heading for a row showing the package name of an app (such as ‘gnome-software-46.0-1’).
-#: lib/gs-app.c:6435 src/gs-safety-context-dialog.c:776
-#: src/gs-safety-context-dialog.ui:180
+#: lib/gs-app.c:6461 src/gs-safety-context-dialog.c:773
+#: src/gs-safety-context-dialog.ui:90
 msgid "Package"
 msgstr "Пакет"
 
@@ -844,17 +844,17 @@ msgstr "Пакет"
 msgid "Pending"
 msgstr "У чаканні"
 
-#: src/gs-app-addon-row.c:99 src/gs-app-row.c:532 src/gs-details-page.c:402
+#: src/gs-app-addon-row.c:99 src/gs-app-row.c:532 src/gs-details-page.c:407
 msgid "Pending install"
 msgstr "Чакае ўсталявання"
 
-#: src/gs-app-addon-row.c:103 src/gs-app-row.c:536 src/gs-details-page.c:409
+#: src/gs-app-addon-row.c:103 src/gs-app-row.c:536 src/gs-details-page.c:414
 msgid "Pending remove"
 msgstr "Чакае выдалення"
 
 #. TRANSLATORS: this is a button next to the search results that
 #. * shows the status of an app being installed
-#: src/gs-app-addon-row.c:107 src/gs-app-row.c:215 src/gs-details-page.c:390
+#: src/gs-app-addon-row.c:107 src/gs-app-row.c:215 src/gs-details-page.c:395
 msgid "Installing"
 msgstr "Усталяванне"
 
@@ -864,7 +864,7 @@ msgstr "Выдаленне"
 
 #. TRANSLATORS: this is a button next to the search results that
 #. * shows the status of an app being downloaded
-#: src/gs-app-addon-row.c:115 src/gs-app-row.c:229 src/gs-details-page.c:395
+#: src/gs-app-addon-row.c:115 src/gs-app-row.c:229 src/gs-details-page.c:400
 #: src/gs-details-page.ui:356
 msgid "Downloading"
 msgstr "Спампоўванне"
@@ -875,13 +875,13 @@ msgstr "Спампоўванне"
 #. TRANSLATORS: button text in the header when firmware
 #. * can be live-installed
 #. TRANSLATORS: update the fw
-#: src/gs-app-addon-row.ui:66 src/gs-common.c:303 src/gs-details-page.c:1044
-#: src/gs-details-page.c:1071 src/gs-details-page.ui:243 src/gs-page.c:437
+#: src/gs-app-addon-row.ui:66 src/gs-common.c:307 src/gs-details-page.c:1060
+#: src/gs-details-page.c:1095 src/gs-details-page.ui:243 src/gs-page.c:425
 #: plugins/packagekit/gs-packagekit-task.c:149
 msgid "_Install"
 msgstr "_Усталяваць"
 
-#: src/gs-app-addon-row.ui:73 src/gs-details-page.c:1153
+#: src/gs-app-addon-row.ui:73 src/gs-details-page.c:1180
 msgid "_Uninstall…"
 msgstr "_Выдаліць…"
 
@@ -921,7 +921,7 @@ msgstr "Мае доступ да адвольна выбраных прылад 
 #. Translators: This indicates an app can access input devices.
 #. * It’s used in a context tile, so should be short.
 #: src/gs-app-details-page.c:64 src/gs-app-context-bar.c:339
-#: src/gs-safety-context-dialog.c:231
+#: src/gs-safety-context-dialog.c:228
 msgid "Can access input devices"
 msgstr "Мае доступ да прылад уводу"
 
@@ -1004,24 +1004,24 @@ msgstr "Апісанне абнаўлення адсутнічае."
 msgid "Update Details"
 msgstr "Падрабязнасці абнаўлення"
 
-#: src/gs-app-details-page.ui:26 src/gs-app-row.c:592
+#: src/gs-app-details-page.ui:27 src/gs-app-row.c:592
 msgid "Requires additional permissions"
 msgstr "Патрабуюцца дадатковыя дазволы"
 
 #. Translators: Header of the section with other users' opinions about the app.
-#: src/gs-app-reviews-dialog.ui:6 src/gs-details-page.ui:1111
+#: src/gs-app-reviews-dialog.ui:6 src/gs-details-page.ui:1085
 msgid "Reviews"
 msgstr "Водгукі"
 
-#: src/gs-app-reviews-dialog.ui:23
+#: src/gs-app-reviews-dialog.ui:21
 msgid "No reviews were found for this app."
 msgstr "Не знойдзена водгукаў для гэтай праграмы."
 
-#: src/gs-app-reviews-dialog.ui:25
+#: src/gs-app-reviews-dialog.ui:23
 msgid "No Reviews"
 msgstr "Няма водгукаў"
 
-#: src/gs-app-version-history-dialog.ui:6 src/gs-details-page.ui:563
+#: src/gs-app-version-history-dialog.ui:6 src/gs-details-page.ui:552
 msgid "Version History"
 msgstr "Гісторыя версій"
 
@@ -1041,7 +1041,7 @@ msgstr "Пра гэта выданне няма звестак"
 
 #. TRANSLATORS: This is the date string with: day number, month name, year.
 #. i.e. "25 May 2012"
-#: src/gs-app-version-history-row.c:158 src/gs-review-row.c:67
+#: src/gs-app-version-history-row.c:158 src/gs-review-row.c:66
 msgid "%e %B %Y"
 msgstr "%e %B %Y"
 
@@ -1140,11 +1140,11 @@ msgstr "Аддаваць перавагу лакальным файлавым к
 msgid "Show version number"
 msgstr "Паказаць нумар версіі"
 
-#: src/gs-application.c:271 src/gs-application.c:279
+#: src/gs-application.c:270
 msgid "Copyright © 2016–2023 GNOME Software contributors"
 msgstr "Аўтарскае права © 2016–2023 удзельнікі праекта GNOME Software"
 
-#: src/gs-application.c:273 src/gs-application.c:282
+#: src/gs-application.c:272
 msgid "translator-credits"
 msgstr ""
 "Юрась Шумовіч <shumovichy@gmail.com>\n"
@@ -1156,9 +1156,8 @@ msgstr ""
 "  Yuras https://launchpad.net/~shumovichy\n"
 "  Клюеў Аляксандр https://launchpad.net/~plaga-medicum"
 
-#. TRANSLATORS: this is the title of the about window
 #. TRANSLATORS: this is the menu item that opens the about window
-#: src/gs-application.c:287 src/gs-shell.c:1977
+#: src/gs-shell.c:2154
 msgid "About Software"
 msgstr "Пра Software"
 
@@ -1168,7 +1167,7 @@ msgid "A nice way to manage the software on your system."
 msgstr "Зручны спосаб кіравання праграмным забеспячэннем вашай сістэмы."
 
 #. TRANSLATORS: we tried to show an app that did not exist
-#: src/gs-application.c:531
+#: src/gs-application.c:508
 msgid "Sorry! There are no details for that application."
 msgstr "Для гэтай праграмы няма падрабязнасцей."
 
@@ -1293,19 +1292,19 @@ msgstr "Мае доступ да азначаных файлаў"
 
 #. Translators: This indicates an app can access or change user settings.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-app-context-bar.c:412 src/gs-safety-context-dialog.c:279
+#: src/gs-app-context-bar.c:412 src/gs-safety-context-dialog.c:276
 msgid "Can access and change user settings"
 msgstr "Можа праглядаць і змяняць налады карыстальніка"
 
 #. Translators: This indicates an app uses the X11 windowing system.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-app-context-bar.c:419 src/gs-safety-context-dialog.c:263
+#: src/gs-app-context-bar.c:419 src/gs-safety-context-dialog.c:260
 msgid "Uses a legacy windowing system"
 msgstr "Выкарыстоўвае састарэлы аконны інтэрфейс"
 
 #. Translators: This indicates an app can escape its sandbox.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-app-context-bar.c:426 src/gs-safety-context-dialog.c:271
+#: src/gs-app-context-bar.c:426 src/gs-safety-context-dialog.c:268
 msgid "Can acquire arbitrary permissions"
 msgstr "Можа атрымліваць адвольныя дазволы"
 
@@ -1318,7 +1317,7 @@ msgstr "Распрацоўшчык праграмнага забеспячэнн
 #. Translators: This indicates that an app has been packaged
 #. * by the user’s distribution and is probably safe.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-app-context-bar.c:456 src/gs-safety-context-dialog.c:147
+#: src/gs-app-context-bar.c:456 src/gs-safety-context-dialog.c:144
 msgid "Reviewed by OS distributor"
 msgstr "Праверана стваральнікамі дыстрыбутыву"
 
@@ -1327,7 +1326,7 @@ msgstr "Праверана стваральнікамі дыстрыбутыву
 #. * It’s used in a context tile, so should be short.
 #. * The '%s' is replaced by the distribution name.
 #. Translators: The '%s' is replaced by the distribution name.
-#: src/gs-app-context-bar.c:462 src/gs-safety-context-dialog.c:150
+#: src/gs-app-context-bar.c:462 src/gs-safety-context-dialog.c:147
 #, c-format
 msgid "Reviewed by %s"
 msgstr "Праверана стваральнікамі %s"
@@ -1335,7 +1334,7 @@ msgstr "Праверана стваральнікамі %s"
 #. Translators: This indicates that an app has been packaged
 #. * by someone other than the user’s distribution, so might not be safe.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-app-context-bar.c:478 src/gs-safety-context-dialog.c:164
+#: src/gs-app-context-bar.c:478 src/gs-safety-context-dialog.c:161
 msgid "Provided by a third party"
 msgstr "Старонні пастаўшчык"
 
@@ -1375,14 +1374,14 @@ msgstr "Спецыяльная ліцэнзія"
 #. * “App comes from a trusted source; Auditable code; No permissions”
 #. * If concatenating strings as a list using a separator like this is not
 #. * possible in your language, please file an issue against gnome-software:
-#. * https://gitlab.gnome.org/GNOME/gnome-software/-/issues/new
+#. * https://gitlab.gnome.org/GNOME/gnome-software/-/issues/
 #. Translators: This string is used to join various other translated
 #. * strings into an inline list of reasons why an app has been given a
 #. * certain content rating. For example:
 #. * “References to alcoholic beverages; Moderated chat functionality between users”
 #. * If concatenating strings as a list using a separator like this is not
 #. * possible in your language, please file an issue against gnome-software:
-#. * https://gitlab.gnome.org/GNOME/gnome-software/-/issues/new
+#. * https://gitlab.gnome.org/GNOME/gnome-software/-/issues/
 #: src/gs-app-context-bar.c:534 src/gs-app-context-bar.c:817
 msgid "; "
 msgstr "; "
@@ -1418,7 +1417,7 @@ msgid "Unsafe"
 msgstr "Небяспечная"
 
 #: src/gs-app-context-bar.c:648 src/gs-app-context-bar.c:680
-#: src/gs-hardware-support-context-dialog.c:608
+#: src/gs-hardware-support-context-dialog.c:615
 msgid "Mobile Only"
 msgstr "Толькі для мабільных прылад"
 
@@ -1428,7 +1427,7 @@ msgstr "Працуе толькі на малых экранах"
 
 #: src/gs-app-context-bar.c:654 src/gs-app-context-bar.c:687
 #: src/gs-app-context-bar.c:694 src/gs-app-context-bar.c:744
-#: src/gs-app-context-bar.c:749 src/gs-hardware-support-context-dialog.c:588
+#: src/gs-app-context-bar.c:749 src/gs-hardware-support-context-dialog.c:595
 msgid "Desktop Only"
 msgstr "Толькі для настольных камп’ютараў"
 
@@ -1436,21 +1435,21 @@ msgstr "Толькі для настольных камп’ютараў"
 msgid "Only works on a large screen"
 msgstr "Працуе толькі на вялікіх экранах"
 
-#: src/gs-app-context-bar.c:659 src/gs-hardware-support-context-dialog.c:626
+#: src/gs-app-context-bar.c:659 src/gs-hardware-support-context-dialog.c:633
 msgid "Screen Size Mismatch"
 msgstr "Памер экрана не пасуе"
 
-#: src/gs-app-context-bar.c:660 src/gs-hardware-support-context-dialog.c:627
+#: src/gs-app-context-bar.c:660 src/gs-hardware-support-context-dialog.c:634
 msgid "Doesn’t support your current screen size"
 msgstr "Ваш цяперашні памер экрана не падтрымліваецца"
 
-#: src/gs-app-context-bar.c:681 src/gs-hardware-support-context-dialog.c:679
-#: src/gs-hardware-support-context-dialog.c:685
+#: src/gs-app-context-bar.c:681 src/gs-hardware-support-context-dialog.c:686
+#: src/gs-hardware-support-context-dialog.c:692
 msgid "Requires a touchscreen"
 msgstr "Патрабуецца сэнсарны экран"
 
-#: src/gs-app-context-bar.c:688 src/gs-hardware-support-context-dialog.c:639
-#: src/gs-hardware-support-context-dialog.c:645
+#: src/gs-app-context-bar.c:688 src/gs-hardware-support-context-dialog.c:646
+#: src/gs-hardware-support-context-dialog.c:652
 msgid "Requires a keyboard"
 msgstr "Патрабуецца клавіятура"
 
@@ -1544,8 +1543,8 @@ msgstr "Выдаліць…"
 msgid "Uninstalling"
 msgstr "Выдаленне"
 
-#: src/gs-app-row.c:323 src/gs-app-row.ui:60 src/gs-os-update-page.c:152
-#: src/gs-os-update-page.c:155 src/gs-os-update-page.c:182
+#: src/gs-app-row.c:323 src/gs-app-row.ui:60 src/gs-os-update-page.c:153
+#: src/gs-os-update-page.c:156 src/gs-os-update-page.c:183
 msgid "Critical update"
 msgstr "Крытычнае абнаўленне"
 
@@ -1568,7 +1567,7 @@ msgid "Renamed from %s"
 msgstr "Перайменавана з %s"
 
 #. Replace user-provided non-localized string with a localized text
-#: src/gs-app-row.c:636 src/gs-details-page.ui:595
+#: src/gs-app-row.c:636 src/gs-details-page.ui:575
 msgid "Stopped Receiving Updates"
 msgstr "Спынена атрыманне абнаўленняў"
 
@@ -1576,7 +1575,7 @@ msgstr "Спынена атрыманне абнаўленняў"
 msgid "Critical Update"
 msgstr "Крытычнае абнаўленне"
 
-#: src/gs-app-row.ui:227 src/gs-feature-tile.c:574
+#: src/gs-app-row.ui:227 src/gs-feature-tile.c:621
 msgctxt "Single app"
 msgid "Installed"
 msgstr "Усталявана"
@@ -1603,11 +1602,11 @@ msgstr ""
 "Гэта азначае, што калі нешта недаступна на вашай мове, вы можаце самі "
 "прыняць удзел у перакладзе."
 
-#: src/gs-app-translation-dialog.ui:5
+#: src/gs-app-translation-dialog.ui:6
 msgid "Translations"
 msgstr "Пераклады"
 
-#: src/gs-app-translation-dialog.ui:92
+#: src/gs-app-translation-dialog.ui:87
 msgid "_Translation Website"
 msgstr "Сайт _перакладу"
 
@@ -1617,32 +1616,33 @@ msgstr "Сайт _перакладу"
 msgid "Login required remote %s (realm %s)"
 msgstr "Патрабуецца аддалены ўваход у %s (дамен %s)"
 
-#: src/gs-basic-auth-dialog.ui:6
+#: src/gs-basic-auth-dialog.ui:8
 msgid "Login Required"
 msgstr "Патрабуецца ўваход"
 
 #. TRANSLATORS: button text
-#: src/gs-basic-auth-dialog.ui:14 src/gs-common.c:296 src/gs-common.c:748
-#: src/gs-details-page.ui:331 src/gs-page.c:435 src/gs-page.c:658
-#: src/gs-removal-dialog.ui:26 src/gs-repos-dialog.c:175
-#: src/gs-repos-dialog.c:253 src/gs-review-dialog.ui:27 src/gs-review-row.c:241
-#: src/gs-updates-page.c:854 src/gs-updates-page.c:871
-#: src/gs-upgrade-banner.ui:201
+#: src/gs-basic-auth-dialog.ui:17 src/gs-common.c:300 src/gs-common.c:752
+#: src/gs-details-page.ui:331 src/gs-dkms-dialog.ui:28
+#: src/gs-dkms-dialog.ui:120 src/gs-page.c:423 src/gs-page.c:708
+#: src/gs-removal-dialog.ui:24 src/gs-repos-dialog.c:175
+#: src/gs-repos-dialog.c:251 src/gs-review-dialog.ui:24 src/gs-review-row.c:239
+#: src/gs-review-row.c:263 src/gs-updates-page.c:852
+#: src/gs-upgrade-banner.ui:202
 msgid "_Cancel"
 msgstr "_Скасаваць"
 
-#: src/gs-basic-auth-dialog.ui:26
+#: src/gs-basic-auth-dialog.ui:29
 msgid "_Login"
 msgstr "_Уваход"
 
 #. Translators: Placeholder text for a login entry.
 #. Translators: It's an origin scope, 'User' or 'System' installation
-#: src/gs-basic-auth-dialog.ui:62 src/gs-origin-popover-row.ui:138
+#: src/gs-basic-auth-dialog.ui:65 src/gs-origin-popover-row.ui:131
 msgid "User"
 msgstr "Карыстальнік"
 
 #. Translators: Placeholder text for a login entry.
-#: src/gs-basic-auth-dialog.ui:75
+#: src/gs-basic-auth-dialog.ui:78
 msgid "Password"
 msgstr "Пароль"
 
@@ -2096,36 +2096,39 @@ msgstr "Абнаўленні сістэмы ўсталяваны"
 
 #. TRANSLATORS: this is the body of a notification that OS updates
 #. * have been successfully installed
-#: src/gs-common.c:88
+#: src/gs-common.c:84
 msgid "Recently installed updates are available to review"
 msgstr "Нядаўна ўсталяваныя абнаўленні даступны для прагляду"
 
 #. TRANSLATORS: button text
-#: src/gs-common.c:107 src/gs-common.c:911
+#: src/gs-common.c:103 src/gs-common.c:915
 msgid "Restart"
 msgstr "Перазапусціць"
 
-#: src/gs-common.c:113
+#: src/gs-common.c:109
 msgid "Launch"
 msgstr "Запусціць"
 
 #. TRANSLATORS: window title
-#: src/gs-common.c:230
+#: src/gs-common.c:234
 msgid "Install Software?"
 msgstr "Усталяваць праграмнае забеспячэнне?"
 
 #. TRANSLATORS: window title
-#: src/gs-common.c:232
+#: src/gs-common.c:236
 msgid "Install Third-Party Software?"
 msgstr "Усталяваць старонняе праграмнае забеспячэнне?"
 
 #. TRANSLATORS: window title
-#: src/gs-common.c:236
+#: src/gs-common.c:240
 msgid "Enable Software Repository?"
 msgstr "Уключыць сховішча праграмнага забеспячэння?"
 
 #. TRANSLATORS: window title
-#: src/gs-common.c:238 src/gs-repos-dialog.c:172
+#. ask for confirmation
+#. TRANSLATORS: "Enable Third-Party Software Repository?" is
+#. * the confirmation dialog title
+#: src/gs-common.c:242 src/gs-repos-dialog.c:172
 msgid "Enable Third-Party Software Repository?"
 msgstr "Уключыць сховішча старонняга праграмнага забеспячэння?"
 
@@ -2133,7 +2136,7 @@ msgstr "Уключыць сховішча старонняга праграмн�
 #. * 1. App name, e.g. "Firefox"
 #. * 2. Software repository name, e.g. fedora-optional
 #. 
-#: src/gs-common.c:250
+#: src/gs-common.c:254
 #, c-format
 msgid ""
 "%s is not <a href=\"https://en.wikipedia.org/wiki/Free_and_open-"
@@ -2146,65 +2149,65 @@ msgstr ""
 #. TRANSLATORS: the replacements are as follows:
 #. * 1. App name, e.g. "Firefox"
 #. * 2. Software repository name, e.g. fedora-optional
-#: src/gs-common.c:260
+#: src/gs-common.c:264
 #, c-format
 msgid "%s is provided by “%s”."
 msgstr "%s пастаўляецца «%s»."
 
-#: src/gs-common.c:269
+#: src/gs-common.c:273
 msgid "This software repository must be enabled to continue installation."
 msgstr ""
 "Каб працягнуць усталяванне, неабходна ўключыць гэтае сховішча праграмнага "
 "забеспячэння."
 
 #. TRANSLATORS: Laws are geographical, urgh...
-#: src/gs-common.c:279
+#: src/gs-common.c:283
 #, c-format
 msgid "It may be illegal to install or use %s in some countries."
 msgstr ""
 "Усталяванне або выкарыстанне %s можа быць незаконным у некаторых краінах."
 
 #. TRANSLATORS: Laws are geographical, urgh...
-#: src/gs-common.c:285
+#: src/gs-common.c:289
 msgid "It may be illegal to install or use this codec in some countries."
 msgstr ""
 "Усталяванне або выкарыстанне гэтага кодэка можа быць незаконным у некаторых "
 "краінах."
 
 #. TRANSLATORS: this is button text to not ask about non-free content again
-#: src/gs-common.c:299
+#: src/gs-common.c:303
 msgid "Don’t _Warn Again"
 msgstr "Больш не _папярэджваць"
 
 #. TRANSLATORS: button text
-#: src/gs-common.c:308
+#: src/gs-common.c:312
 msgid "Enable and _Install"
 msgstr "_Уключыць і ўсталяваць"
 
 #. TRANSLATORS: these are show_detailed_error messages from the
 #. * package manager no mortal is supposed to understand,
 #. * but google might know what they mean
-#: src/gs-common.c:515
+#: src/gs-common.c:519
 msgid "Detailed errors from the package manager follow:"
 msgstr "Дэталізацыя памылак ад менеджара пакетаў:"
 
-#: src/gs-common.c:522 src/gs-common.c:659 src/gs-safety-context-dialog.ui:71
-#: src/gs-toast.c:74 src/gs-updates-paused-banner.c:78
+#: src/gs-common.c:526 src/gs-common.c:663 src/gs-safety-context-dialog.ui:67
+#: src/gs-updates-paused-banner.c:77
 msgid "Details"
 msgstr "Падрабязнасці"
 
 #. TRANSLATORS: button text
-#: src/gs-common.c:571 src/gs-updates-paused-banner.c:65
+#: src/gs-common.c:575 src/gs-updates-paused-banner.c:64
 msgid "_Close"
 msgstr "_Закрыць"
 
 #. Translators: an accept button label, in a Cancel/Accept dialog
-#: src/gs-common.c:740
+#: src/gs-common.c:744
 msgid "_Accept"
 msgstr "_Прыняць"
 
 #. TRANSLATORS: we've just live-updated some apps
-#: src/gs-common.c:886
+#: src/gs-common.c:890
 msgid "An update has been installed"
 msgid_plural "Updates have been installed"
 msgstr[0] "Абнаўленне ўсталявана"
@@ -2228,16 +2231,16 @@ msgstr[1] "Каб змены ўступілі ў сілу, перазапусц�
 msgstr[2] "Каб змены ўступілі ў сілу, перазапусціце сістэму."
 
 #. TRANSLATORS: button text
-#: src/gs-common.c:909
+#: src/gs-common.c:913
 msgid "Not Now"
 msgstr "Не зараз"
 
 #. TRANSLATORS: something happened less than 5 minutes ago
-#: src/gs-common.c:1005
+#: src/gs-common.c:1009
 msgid "Just now"
 msgstr "толькі што"
 
-#: src/gs-common.c:1007
+#: src/gs-common.c:1011
 #, c-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -2245,7 +2248,7 @@ msgstr[0] "%d хвіліну таму"
 msgstr[1] "%d хвіліны таму"
 msgstr[2] "%d хвілін таму"
 
-#: src/gs-common.c:1011
+#: src/gs-common.c:1015
 #, c-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
@@ -2253,7 +2256,7 @@ msgstr[0] "%d гадзіну таму"
 msgstr[1] "%d гадзіны таму"
 msgstr[2] "%d гадзін таму"
 
-#: src/gs-common.c:1015
+#: src/gs-common.c:1019
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2261,7 +2264,7 @@ msgstr[0] "%d дзень таму"
 msgstr[1] "%d дні таму"
 msgstr[2] "%d дзён таму"
 
-#: src/gs-common.c:1019
+#: src/gs-common.c:1023
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -2269,7 +2272,7 @@ msgstr[0] "%d тыдзень таму"
 msgstr[1] "%d тыдні таму"
 msgstr[2] "%d тыдняў таму"
 
-#: src/gs-common.c:1023
+#: src/gs-common.c:1027
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -2277,7 +2280,7 @@ msgstr[0] "%d месяц таму"
 msgstr[1] "%d месяцы таму"
 msgstr[2] "%d месяцаў таму"
 
-#: src/gs-common.c:1027
+#: src/gs-common.c:1031
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -2289,7 +2292,7 @@ msgstr[2] "%d гадоў таму"
 #. * the unit is drawn with a smaller font. If you need to flip the order, then you can use "%2$s %1$s".
 #. * Make sure you'll preserve the no break space between the values.
 #. * Example result: "13.0 MB"
-#: src/gs-common.c:1390
+#: src/gs-common.c:1394
 #, c-format
 msgctxt "format-size"
 msgid "%s %s"
@@ -2368,52 +2371,52 @@ msgstr "Паказаць _больш"
 msgid "_Show Less"
 msgstr "Паказаць _менш"
 
-#: src/gs-details-page.c:385
+#: src/gs-details-page.c:390
 msgid "Removing…"
 msgstr "Выдаленне…"
 
-#: src/gs-details-page.c:400
+#: src/gs-details-page.c:405
 msgid "Requires restart to finish install"
 msgstr "Каб завяршыць усталяванне, патрабуецца перазапуск"
 
-#: src/gs-details-page.c:407
+#: src/gs-details-page.c:412
 msgid "Requires restart to finish remove"
 msgstr "Каб завяршыць выдаленне, патрабуецца перазапуск"
 
 #. TRANSLATORS: This is a label on top of the app's progress
 #. * bar to inform the user that the app should be installed soon
-#: src/gs-details-page.c:424
+#: src/gs-details-page.c:428
 msgid "Pending installation…"
 msgstr "Чакаецца ўсталяванне…"
 
 #. TRANSLATORS: This is a label on top of the app's progress
 #. * bar to inform the user that the app should be updated soon
-#: src/gs-details-page.c:430
+#: src/gs-details-page.c:434
 msgid "Pending update…"
 msgstr "Чакаецца абнаўленне…"
 
 #. Translators: This string is shown when downloading an app before install.
-#: src/gs-details-page.c:445 src/gs-upgrade-banner.c:180
+#: src/gs-details-page.c:449 src/gs-upgrade-banner.c:180
 msgid "Downloading…"
 msgstr "Спампоўванне…"
 
 #. Translators: This string is shown when preparing to download and install an app.
-#: src/gs-details-page.c:448
+#: src/gs-details-page.c:452
 msgid "Preparing…"
 msgstr "Падрыхтоўка…"
 
 #. Translators: This string is shown when uninstalling an app.
-#: src/gs-details-page.c:451
+#: src/gs-details-page.c:455
 msgid "Uninstalling…"
 msgstr "Выдаленне…"
 
 #. Translators: the "%s" is replaced with an app name
-#: src/gs-details-page.c:578
+#: src/gs-details-page.c:582
 #, c-format
 msgid "%s is not installed, but it still has data present."
 msgstr "Праграма «%s» не ўсталявана, але яе даныя працягваюць захоўвацца."
 
-#: src/gs-details-page.c:1061
+#: src/gs-details-page.c:1077 src/gs-toast.c:65
 msgid "_Restart"
 msgstr "_Перазапусціць"
 
@@ -2421,63 +2424,63 @@ msgstr "_Перазапусціць"
 #. * be installed.
 #. * The ellipsis indicates that further steps are required,
 #. * e.g. enabling software repositories or the like
-#: src/gs-details-page.c:1085
+#: src/gs-details-page.c:1109
 msgid "_Install…"
 msgstr "_Усталяваць…"
 
 #. Translators: %s is the user-visible app name
-#: src/gs-details-page.c:1298
+#: src/gs-details-page.c:1325
 #, c-format
 msgid "%s will appear in US English"
 msgstr "%s будзе паказвацца на англійскай мове"
 
-#: src/gs-details-page.c:1306
+#: src/gs-details-page.c:1333
 msgid "This app will appear in US English"
 msgstr "Гэтая праграма будзе паказвацца на англійскай мове"
 
-#: src/gs-details-page.c:1308
+#: src/gs-details-page.c:1335
 msgid "This software will appear in US English"
 msgstr "Гэта праграмнае забеспячэнне будзе паказвацца на англійскай мове"
 
-#: src/gs-details-page.c:1343 src/gs-details-page.ui:76
+#: src/gs-details-page.c:1370 src/gs-details-page.ui:76
 msgid "Help _Translate"
 msgstr "Дапамагчы з _перакладам"
 
 #. Translators: the '%s' is replaced with a developer name or a project group
-#: src/gs-details-page.c:1408
+#: src/gs-details-page.c:1435
 #, c-format
 msgid "Other Apps by %s"
 msgstr "Іншыя праграмы ад %s"
 
 #. Translators: the first %s is replaced with the developer name, the second %s is replaced with the app id
-#: src/gs-details-page.c:1444
+#: src/gs-details-page.c:1471
 #, c-format
 msgid "Developer %s has proven the ownership of %s"
 msgstr "Распрацоўшчык %s пацвердзіў, што з'яўляецца ўладальнікам %s"
 
 #. Translators: the %s is replaced with the app id
-#: src/gs-details-page.c:1447
+#: src/gs-details-page.c:1474
 #, c-format
 msgid "Developer has proven the ownership of %s"
 msgstr "Распрацоўшчык пацвердзіў, што з'яўляецца ўладальнікам %s"
 
 #. TRANSLATORS: we need a remote server to process
-#: src/gs-details-page.c:1815
+#: src/gs-details-page.c:1837
 msgid "You need internet access to write a review"
 msgstr "Каб напісаць водгук, патрабуецца доступ да інтэрнэту"
 
-#: src/gs-details-page.c:1916
+#: src/gs-details-page.c:1938
 msgid "This app is no longer receiving updates, including security fixes"
 msgstr ""
 "Гэта праграма больш не атрымлівае абнаўленні, у тым ліку і абнаўленні бяспекі"
 
-#: src/gs-details-page.c:1917
+#: src/gs-details-page.c:1939
 msgid ""
 "This app is already provided by your distribution and should not be replaced."
 msgstr ""
 "Гэтае праграма ўжо пастаўляецца з дыстрыбутывам, яе непатрэбна замяняць."
 
-#: src/gs-details-page.c:1918
+#: src/gs-details-page.c:1940
 msgid ""
 "This app doesn’t provide any links to a website, code repository or issue "
 "tracker."
@@ -2485,14 +2488,14 @@ msgstr ""
 "Гэта праграма пастаўляецца без спасылак на яе сайт, рэпазіторый або трэкер "
 "памылак."
 
-#: src/gs-details-page.c:1920
+#: src/gs-details-page.c:1942
 msgid ""
 "This software is no longer receiving updates, including security fixes"
 msgstr ""
 "Гэта праграмнае забеспячэнне больш не атрымлівае абнаўленні, у тым ліку і "
 "абнаўленні бяспекі"
 
-#: src/gs-details-page.c:1921
+#: src/gs-details-page.c:1943
 msgid ""
 "This software is already provided by your distribution and should not be "
 "replaced."
@@ -2500,7 +2503,7 @@ msgstr ""
 "Гэтае праграмнае забеспячэнне ўжо пастаўляецца з дыстрыбутывам, яго "
 "непатрэбна замяняць."
 
-#: src/gs-details-page.c:1922
+#: src/gs-details-page.c:1944
 msgid ""
 "This software doesn’t provide any links to a website, code repository or "
 "issue tracker."
@@ -2508,12 +2511,12 @@ msgstr ""
 "Гэта праграмнае забеспячэнне пастаўляецца без спасылак на яго сайт, "
 "рэпазіторый або трэкер памылак."
 
-#: src/gs-details-page.c:2012 src/gs-details-page.c:2028
+#: src/gs-details-page.c:2023 src/gs-details-page.c:2039
 #, c-format
 msgid "Unable to find “%s”"
 msgstr "Немагчыма знайсці «%s»"
 
-#: src/gs-details-page.c:2376
+#: src/gs-details-page.c:2406
 #, c-format
 msgid "Failed to submit review for “%s”: %s"
 msgstr "Не ўдалося пакінуць водгук да «%s»: %s"
@@ -2544,22 +2547,22 @@ msgstr "_Абнавіць"
 msgid "Uninstall"
 msgstr "Выдаліць"
 
-#: src/gs-details-page.ui:493 src/gs-installed-page.ui:135
+#: src/gs-details-page.ui:493 src/gs-installed-page.ui:136
 msgid "Add-ons"
 msgstr "Дадатковыя кампаненты"
 
-#: src/gs-details-page.ui:666
+#: src/gs-details-page.ui:646
 msgid ""
 "This app can only be used when there is an active internet connection."
 msgstr ""
 "Гэту праграму можна выкарыстоўваць толькі пры наяўнасці злучэння з "
 "інтэрнэтам."
 
-#: src/gs-details-page.ui:689
+#: src/gs-details-page.ui:669
 msgid "Software Repository Included"
 msgstr "Сховішча праграмнага забеспячэння падключана"
 
-#: src/gs-details-page.ui:699
+#: src/gs-details-page.ui:679
 msgid ""
 "This app includes a software repository which provides updates, as well as "
 "access to other software."
@@ -2567,11 +2570,11 @@ msgstr ""
 "Гэтая праграма змяшчае сховішча праграмнага забеспячэння, праз якое "
 "адбываецца абнаўленне, а таксама доступ да іншага праграмнага забеспячэння."
 
-#: src/gs-details-page.ui:727
+#: src/gs-details-page.ui:707
 msgid "No Software Repository Included"
 msgstr "Сховішча праграмнага забеспячэння не падключана"
 
-#: src/gs-details-page.ui:737
+#: src/gs-details-page.ui:717
 msgid ""
 "This app does not include a software repository. It will not be updated with "
 "new versions."
@@ -2580,11 +2583,11 @@ msgstr ""
 "абнаўляцца са з'яўленнем новых версій."
 
 #. Translators: a repository file used for installing software has been discovered.
-#: src/gs-details-page.ui:796
+#: src/gs-details-page.ui:776
 msgid "Software Repository Identified"
 msgstr "Выяўлена сховішча праграмнага забеспячэння"
 
-#: src/gs-details-page.ui:806
+#: src/gs-details-page.ui:786
 msgid ""
 "Adding this software repository will give you access to additional software "
 "and upgrades."
@@ -2592,57 +2595,57 @@ msgstr ""
 "Дадаванне гэтага сховішча праграмнага забеспячэння, дасць доступ да "
 "дадатковага праграмнага забеспячэння і абнаўленняў."
 
-#: src/gs-details-page.ui:813
+#: src/gs-details-page.ui:793
 msgid "Only use software repositories that you trust."
 msgstr ""
 "Выкарыстоўвайце толькі тыя сховішчы праграмнага забеспячэння, якім вы "
 "давяраеце."
 
-#: src/gs-details-page.ui:854
+#: src/gs-details-page.ui:834
 msgid "Clear app data"
 msgstr "Ачысціць даныя праграмы"
 
-#: src/gs-details-page.ui:871
+#: src/gs-details-page.ui:851
 msgid "D_elete Data"
 msgstr "_Выдаліць даныя"
 
-#: src/gs-details-page.ui:947
+#: src/gs-details-page.ui:927
 msgid "No Metadata"
 msgstr "Няма метаданых"
 
-#: src/gs-details-page.ui:984
+#: src/gs-details-page.ui:964
 msgid "Project _Website"
 msgstr "_Вэб-сайт праекта"
 
-#: src/gs-details-page.ui:1001
+#: src/gs-details-page.ui:980
 msgid "_Donate"
 msgstr "_Ахвяраваць"
 
-#: src/gs-details-page.ui:1018
+#: src/gs-details-page.ui:996
 msgid "Contribute _Translations"
 msgstr "_Зрабіць унёсак у пераклад"
 
-#: src/gs-details-page.ui:1035
+#: src/gs-details-page.ui:1012
 msgid "_Report an Issue"
 msgstr "Паведаміць пра _памылку"
 
-#: src/gs-details-page.ui:1052
+#: src/gs-details-page.ui:1028
 msgid "_Help"
 msgstr "_Даведка"
 
 #. Translators: This is a verb, used on a button to ‘contact the developer’
-#: src/gs-details-page.ui:1069
+#: src/gs-details-page.ui:1044
 msgctxt "verb"
 msgid "_Contact"
 msgstr "_Звязацца"
 
 #. Translators: Button opening a dialog where the users can write and publish their opinions about the apps.
-#: src/gs-details-page.ui:1163
+#: src/gs-details-page.ui:1125
 msgid "Write R_eview"
 msgstr "_Напісаць водгук"
 
 #. Translators: Button opening a dialog showing all reviews for an app.
-#: src/gs-details-page.ui:1200
+#: src/gs-details-page.ui:1142
 msgid "All Reviews"
 msgstr "Усе водгукі"
 
@@ -2690,26 +2693,26 @@ msgid "Failed to find requested software"
 msgstr "Не ўдалося знайсці запатрабаванае праграмнае забеспячэнне"
 
 #. TRANSLATORS: This string is used for codecs that weren't found
-#: src/gs-extras-page.c:418
+#: src/gs-extras-page.c:425
 #, c-format
 msgid "%s not found"
 msgstr "%s не знойдзена"
 
 #. TRANSLATORS: hyperlink title
-#: src/gs-extras-page.c:422
+#: src/gs-extras-page.c:429
 msgid "on the website"
 msgstr "на вэб-сайце"
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:429
+#: src/gs-extras-page.c:436
 #, c-format
 msgid "No apps are available that provide the file %s."
 msgstr "Няма даступных праграм, якія б пастаўлялі файл %s."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:433 src/gs-extras-page.c:444 src/gs-extras-page.c:455
+#: src/gs-extras-page.c:440 src/gs-extras-page.c:451 src/gs-extras-page.c:462
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get missing apps might "
@@ -2720,21 +2723,21 @@ msgstr ""
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:440 src/gs-extras-page.c:462
+#: src/gs-extras-page.c:447 src/gs-extras-page.c:469
 #, c-format
 msgid "No apps are available for %s support."
 msgstr "Няма праграм, якія падтрымліваюць %s."
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:451
+#: src/gs-extras-page.c:458
 #, c-format
 msgid "%s is not available."
 msgstr "%s — недаступна."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:466
+#: src/gs-extras-page.c:473
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get an app that can "
@@ -2745,14 +2748,14 @@ msgstr ""
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:473
+#: src/gs-extras-page.c:480
 #, c-format
 msgid "No fonts are available for the %s script support."
 msgstr "Няма даступных шрыфтоў з падтрымкай сістэмы пісьма %s."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:477
+#: src/gs-extras-page.c:484
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get additional fonts "
@@ -2763,14 +2766,14 @@ msgstr ""
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:484
+#: src/gs-extras-page.c:491
 #, c-format
 msgid "No addon codecs are available for the %s format."
 msgstr "Няма даступных кодэкаў для фармату %s."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:488
+#: src/gs-extras-page.c:495
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get a codec that can "
@@ -2781,14 +2784,14 @@ msgstr ""
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:495
+#: src/gs-extras-page.c:502
 #, c-format
 msgid "No Plasma resources are available for %s support."
 msgstr "Няма даступных рэсурсаў Plasma, якія падтрымліваюць %s."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:499
+#: src/gs-extras-page.c:506
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get additional Plasma "
@@ -2799,14 +2802,14 @@ msgstr ""
 
 #. TRANSLATORS: this is when we know about an app or
 #. * addon, but it can't be listed for some reason
-#: src/gs-extras-page.c:506
+#: src/gs-extras-page.c:513
 #, c-format
 msgid "No printer drivers are available for %s."
 msgstr "Няма даступных драйвераў прынтара для %s."
 
 #. TRANSLATORS: first %s is the codec name, and second %s is a
 #. * hyperlink with the "on the website" text
-#: src/gs-extras-page.c:510
+#: src/gs-extras-page.c:517
 #, c-format
 msgid ""
 "Information about %s, as well as options for how to get a driver that "
@@ -2816,13 +2819,13 @@ msgstr ""
 "прынтар, можна знайсці %s."
 
 #. TRANSLATORS: hyperlink title
-#: src/gs-extras-page.c:556
+#: src/gs-extras-page.c:563
 msgid "the documentation"
 msgstr "дакументацыяй"
 
 #. TRANSLATORS: no codecs were found. The first %s will be replaced by actual codec name(s),
 #. the second %s is the app name, which requested the codecs, the third %s is a link titled "the documentation"
-#: src/gs-extras-page.c:562
+#: src/gs-extras-page.c:569
 #, c-format
 msgid ""
 "Unable to find the %s requested by %s. Please see %s for more information."
@@ -2839,7 +2842,7 @@ msgstr[2] ""
 "звесткі, азнаёмцеся з %s."
 
 #. TRANSLATORS: no codecs were found. First %s will be replaced by actual codec name(s), second %s is a link titled "the documentation"
-#: src/gs-extras-page.c:571
+#: src/gs-extras-page.c:578
 #, c-format
 msgid ""
 "Unable to find the %s you were searching for. Please see %s for more "
@@ -2854,25 +2857,25 @@ msgstr[1] ""
 msgstr[2] ""
 "Не ўдалося знайсці %s. Каб атрымаць дадатковы звесткі, азнаёмцеся з %s."
 
-#: src/gs-extras-page.c:649 src/gs-extras-page.c:706 src/gs-extras-page.c:746
+#: src/gs-extras-page.c:656 src/gs-extras-page.c:713 src/gs-extras-page.c:753
 #, c-format
 msgid "Failed to find any search results: %s"
 msgstr "Не ўдалося знайсці: %s"
 
-#: src/gs-extras-page.c:965
+#: src/gs-extras-page.c:970
 #, c-format
 msgid "%s file format"
 msgstr "Фармат файла %s"
 
-#: src/gs-extras-page.c:1326
+#: src/gs-extras-page.c:1328
 msgid "Install _All"
 msgstr "Усталяваць _усе"
 
-#: src/gs-extras-page.c:1356
+#: src/gs-extras-page.c:1358
 msgid "Unable to Find Requested Software"
 msgstr "Немагчыма знайсці запатрабаванае праграмнае забеспячэнне"
 
-#: src/gs-extras-page.ui:6
+#: src/gs-extras-page.ui:7
 msgid "Codecs page"
 msgstr "Старонка з кодэкамі"
 
@@ -2888,280 +2891,280 @@ msgstr "Далей"
 msgid "Featured Apps List"
 msgstr "Спіс вартых увагі праграм"
 
-#: src/gs-hardware-support-context-dialog.c:582
-#: src/gs-hardware-support-context-dialog.c:591
+#: src/gs-hardware-support-context-dialog.c:589
+#: src/gs-hardware-support-context-dialog.c:598
 msgid "Desktop Support"
 msgstr "Падтрымка стацыянарных прылад"
 
-#: src/gs-hardware-support-context-dialog.c:583
-#: src/gs-hardware-support-context-dialog.c:592
+#: src/gs-hardware-support-context-dialog.c:590
+#: src/gs-hardware-support-context-dialog.c:599
 msgid "Supports being used on a large screen"
 msgstr "Падтрымліваецца выкарыстанне на вялікіх экранах"
 
-#: src/gs-hardware-support-context-dialog.c:585
+#: src/gs-hardware-support-context-dialog.c:592
 msgid "Desktop Support Unknown"
 msgstr "Падтрымка стацыянарных прылад невядома"
 
-#: src/gs-hardware-support-context-dialog.c:586
+#: src/gs-hardware-support-context-dialog.c:593
 msgid "Not enough information to know if large screens are supported"
 msgstr "Няма звестак ці падтрымліваюцца вялікія экраны"
 
-#: src/gs-hardware-support-context-dialog.c:589
+#: src/gs-hardware-support-context-dialog.c:596
 msgid "Requires a large screen"
 msgstr "Патрабуецца вялікі экран"
 
-#: src/gs-hardware-support-context-dialog.c:594
+#: src/gs-hardware-support-context-dialog.c:601
 msgid "Desktop Not Supported"
 msgstr "Стацыянарныя прылады не падтрымліваюцца"
 
-#: src/gs-hardware-support-context-dialog.c:595
+#: src/gs-hardware-support-context-dialog.c:602
 msgid "Cannot be used on a large screen"
 msgstr "Не можа выкарыстоўвацца на вялікіх экранах"
 
-#: src/gs-hardware-support-context-dialog.c:602
-#: src/gs-hardware-support-context-dialog.c:611
+#: src/gs-hardware-support-context-dialog.c:609
+#: src/gs-hardware-support-context-dialog.c:618
 msgid "Mobile Support"
 msgstr "Падтрымка мабільных прылад"
 
-#: src/gs-hardware-support-context-dialog.c:603
-#: src/gs-hardware-support-context-dialog.c:612
+#: src/gs-hardware-support-context-dialog.c:610
+#: src/gs-hardware-support-context-dialog.c:619
 msgid "Supports being used on a small screen"
 msgstr "Падтрымліваецца выкарыстанне на малых экранах"
 
-#: src/gs-hardware-support-context-dialog.c:605
+#: src/gs-hardware-support-context-dialog.c:612
 msgid "Mobile Support Unknown"
 msgstr "Падтрымка мабільных прылад невядома"
 
-#: src/gs-hardware-support-context-dialog.c:606
+#: src/gs-hardware-support-context-dialog.c:613
 msgid "Not enough information to know if small screens are supported"
 msgstr "Няма звестак ці падтрымліваюцца малыя экраны"
 
-#: src/gs-hardware-support-context-dialog.c:609
+#: src/gs-hardware-support-context-dialog.c:616
 msgid "Requires a small screen"
 msgstr "Патрабуецца малы экран"
 
-#: src/gs-hardware-support-context-dialog.c:614
+#: src/gs-hardware-support-context-dialog.c:621
 msgid "Mobile Not Supported"
 msgstr "Мабільныя прылады не падтрымліваюцца"
 
-#: src/gs-hardware-support-context-dialog.c:615
+#: src/gs-hardware-support-context-dialog.c:622
 msgid "Cannot be used on a small screen"
 msgstr "Не можа выкарыстоўвацца на малых экранах"
 
-#: src/gs-hardware-support-context-dialog.c:638
-#: src/gs-hardware-support-context-dialog.c:647
+#: src/gs-hardware-support-context-dialog.c:645
+#: src/gs-hardware-support-context-dialog.c:654
 msgid "Keyboard Support"
 msgstr "Падтрымка клавіятуры"
 
-#: src/gs-hardware-support-context-dialog.c:641
+#: src/gs-hardware-support-context-dialog.c:648
 msgid "Keyboard Support Unknown"
 msgstr "Падтрымка клавіятуры невядомая"
 
-#: src/gs-hardware-support-context-dialog.c:642
+#: src/gs-hardware-support-context-dialog.c:649
 msgid "Not enough information to know if keyboards are supported"
 msgstr "Няма звестак ці падтрымліваюцца клавіятуры"
 
-#: src/gs-hardware-support-context-dialog.c:644
+#: src/gs-hardware-support-context-dialog.c:651
 msgid "Keyboard Required"
 msgstr "Патрабуецца клавіятура"
 
-#: src/gs-hardware-support-context-dialog.c:648
+#: src/gs-hardware-support-context-dialog.c:655
 msgid "Supports keyboards"
 msgstr "Клавіятура падтрымліваецца"
 
-#: src/gs-hardware-support-context-dialog.c:650
+#: src/gs-hardware-support-context-dialog.c:657
 msgid "Keyboard Not Supported"
 msgstr "Клавіятура не падтрымліваецца"
 
-#: src/gs-hardware-support-context-dialog.c:651
+#: src/gs-hardware-support-context-dialog.c:658
 msgid "Cannot be used with a keyboard"
 msgstr "Не можа выкарыстоўвацца з клавіятурай"
 
-#: src/gs-hardware-support-context-dialog.c:658
-#: src/gs-hardware-support-context-dialog.c:667
+#: src/gs-hardware-support-context-dialog.c:665
+#: src/gs-hardware-support-context-dialog.c:674
 msgid "Mouse Support"
 msgstr "Падтрымка мышы"
 
-#: src/gs-hardware-support-context-dialog.c:659
-#: src/gs-hardware-support-context-dialog.c:665
+#: src/gs-hardware-support-context-dialog.c:666
+#: src/gs-hardware-support-context-dialog.c:672
 msgid "Requires a mouse or pointing device"
 msgstr "Патрабуецца мыш або ўказальная прылада"
 
-#: src/gs-hardware-support-context-dialog.c:661
+#: src/gs-hardware-support-context-dialog.c:668
 msgid "Mouse Support Unknown"
 msgstr "Падтрымка мышы невядомая"
 
-#: src/gs-hardware-support-context-dialog.c:662
+#: src/gs-hardware-support-context-dialog.c:669
 msgid ""
 "Not enough information to know if mice or pointing devices are supported"
 msgstr "Няма звестак ці падтрымліваюцца мышы і ўказальныя прылады"
 
-#: src/gs-hardware-support-context-dialog.c:664
+#: src/gs-hardware-support-context-dialog.c:671
 msgid "Mouse Required"
 msgstr "Патрабуецца мыш"
 
-#: src/gs-hardware-support-context-dialog.c:668
+#: src/gs-hardware-support-context-dialog.c:675
 msgid "Supports mice and pointing devices"
 msgstr "Мыш і ўказальныя прылады падтрымліваюцца"
 
-#: src/gs-hardware-support-context-dialog.c:670
+#: src/gs-hardware-support-context-dialog.c:677
 msgid "Mouse Not Supported"
 msgstr "Мыш не падтрымліваецца"
 
-#: src/gs-hardware-support-context-dialog.c:671
+#: src/gs-hardware-support-context-dialog.c:678
 msgid "Cannot be used with a mouse or pointing device"
 msgstr "Не можа выкарыстоўвацца з мышшу або ўказальнай прыладай"
 
-#: src/gs-hardware-support-context-dialog.c:678
-#: src/gs-hardware-support-context-dialog.c:687
+#: src/gs-hardware-support-context-dialog.c:685
+#: src/gs-hardware-support-context-dialog.c:694
 msgid "Touchscreen Support"
 msgstr "Падтрымка сэнсарнага экрана"
 
-#: src/gs-hardware-support-context-dialog.c:681
+#: src/gs-hardware-support-context-dialog.c:688
 msgid "Touchscreen Support Unknown"
 msgstr "Падтрымка сэнсарнага экрана невядома"
 
-#: src/gs-hardware-support-context-dialog.c:682
+#: src/gs-hardware-support-context-dialog.c:689
 msgid "Not enough information to know if touchscreens are supported"
 msgstr "Няма звестак ці падтрымліваюцца сэнсарныя экраны"
 
-#: src/gs-hardware-support-context-dialog.c:684
+#: src/gs-hardware-support-context-dialog.c:691
 msgid "Touchscreen Required"
 msgstr "Патрабуецца сэнсарны экран"
 
-#: src/gs-hardware-support-context-dialog.c:688
+#: src/gs-hardware-support-context-dialog.c:695
 msgid "Supports touchscreens"
 msgstr "Сэнсарны экран падтрымліваецца"
 
-#: src/gs-hardware-support-context-dialog.c:690
+#: src/gs-hardware-support-context-dialog.c:697
 msgid "Touchscreen Not Supported"
 msgstr "Сэнсарны экран не падтрымліваецца"
 
-#: src/gs-hardware-support-context-dialog.c:691
+#: src/gs-hardware-support-context-dialog.c:698
 msgid "Cannot be used with a touchscreen"
 msgstr "Не можа выкарыстоўвацца з сэнсарным экранам"
 
-#: src/gs-hardware-support-context-dialog.c:704
+#: src/gs-hardware-support-context-dialog.c:711
 msgid "Gamepad Required"
 msgstr "Патрабуецца геймпад"
 
-#: src/gs-hardware-support-context-dialog.c:705
+#: src/gs-hardware-support-context-dialog.c:712
 msgid "Requires a gamepad"
 msgstr "Патрабуецца геймпад"
 
-#: src/gs-hardware-support-context-dialog.c:707
+#: src/gs-hardware-support-context-dialog.c:714
 msgid "Gamepad Support"
 msgstr "Падтрымка геймпада"
 
-#: src/gs-hardware-support-context-dialog.c:708
+#: src/gs-hardware-support-context-dialog.c:715
 msgid "Supports gamepads"
 msgstr "Геймпады падтрымліваюцца"
 
 #. Translators: It’s unknown whether this app is supported on
 #. * the current hardware. The placeholder is the app name.
-#: src/gs-hardware-support-context-dialog.c:717
+#: src/gs-hardware-support-context-dialog.c:724
 #, c-format
 msgid "%s probably works on this device"
 msgstr "%s павінна працаваць на гэтай прыладзе"
 
 #. Translators: The app will work on the current hardware.
 #. * The placeholder is the app name.
-#: src/gs-hardware-support-context-dialog.c:724
+#: src/gs-hardware-support-context-dialog.c:731
 #, c-format
 msgid "%s works on this device"
 msgstr "%s працуе на гэтай прыладзе"
 
 #. Translators: The app will possbily work on the current hardware.
 #. * The placeholder is the app name.
-#: src/gs-hardware-support-context-dialog.c:731
+#: src/gs-hardware-support-context-dialog.c:738
 #, c-format
 msgid "%s possibly works on this device"
 msgstr "%s, магчыма, працуе на гэтай прыладзе"
 
 #. Translators: The app may not work fully on the current hardware.
 #. * The placeholder is the app name.
-#: src/gs-hardware-support-context-dialog.c:738
+#: src/gs-hardware-support-context-dialog.c:745
 #, c-format
 msgid "%s will not work properly on this device"
 msgstr "%s можа працаваць на гэтай прыладзе неналежным чынам"
 
 #. Translators: The app will not work properly on the current hardware.
 #. * The placeholder is the app name.
-#: src/gs-hardware-support-context-dialog.c:745
+#: src/gs-hardware-support-context-dialog.c:752
 #, c-format
 msgid "%s will not work on this device"
 msgstr "%s можа не працаваць на гэтай прыладзе"
 
 #. Translators: This is the title of the dialog which contains information about the hardware support/requirements of an app
-#: src/gs-hardware-support-context-dialog.ui:5
+#: src/gs-hardware-support-context-dialog.ui:6
 msgid "Hardware Support"
 msgstr "Падтрымка абсталявання"
 
-#: src/gs-help-overlay.ui:12
+#: src/gs-help-overlay.ui:13
 msgid "Navigation"
 msgstr "Навігацыя"
 
-#: src/gs-help-overlay.ui:17
+#: src/gs-help-overlay.ui:18
 msgid "Navigate to Explore Page"
 msgstr "Перайсці на старонку «Агляд»"
 
-#: src/gs-help-overlay.ui:23
+#: src/gs-help-overlay.ui:24
 msgid "Navigate to Installed Page"
 msgstr "Перайсці на старонку «Усталяваныя»"
 
-#: src/gs-help-overlay.ui:29
+#: src/gs-help-overlay.ui:30
 msgid "Navigate to Updates Page"
 msgstr "Перайсці на старонку «Абнаўленні»"
 
-#: src/gs-help-overlay.ui:35
+#: src/gs-help-overlay.ui:36
 msgid "Open Search Bar"
 msgstr "Адкрыць панэль пошуку"
 
-#: src/gs-help-overlay.ui:43
+#: src/gs-help-overlay.ui:44
 msgid "Windows"
 msgstr "Вокны"
 
-#: src/gs-help-overlay.ui:48
+#: src/gs-help-overlay.ui:49
 msgid "Open Preferences"
 msgstr "Налады"
 
-#: src/gs-help-overlay.ui:54
+#: src/gs-help-overlay.ui:55
 msgid "Open Software Repositories"
 msgstr "Сховішчы праграмнага забеспячэння"
 
-#: src/gs-help-overlay.ui:62
+#: src/gs-help-overlay.ui:63
 msgid "Help"
 msgstr "Даведка"
 
-#: src/gs-help-overlay.ui:67
+#: src/gs-help-overlay.ui:68
 msgid "Open Keyboard Shortcuts"
 msgstr "Спалучэнні клавіш"
 
 #. Translators: This is in the context of a list of apps which are installed on the system.
-#: src/gs-installed-page.c:818
+#: src/gs-installed-page.c:823
 msgctxt "List of installed apps"
 msgid "Installed"
 msgstr "Усталяваныя"
 
-#: src/gs-installed-page.ui:6
+#: src/gs-installed-page.ui:7
 msgid "Installed page"
 msgstr "Старонка ўсталяванага"
 
-#: src/gs-installed-page.ui:55
+#: src/gs-installed-page.ui:56
 msgid "In Progress"
 msgstr "Выконваецца"
 
 #. origin_ui on a remote is the repo dialogue section name,
 #. * not the remote title
-#: src/gs-installed-page.ui:75 plugins/flatpak/gs-flatpak-utils.c:107
+#: src/gs-installed-page.ui:76 plugins/flatpak/gs-flatpak-utils.c:107
 msgid "Apps"
 msgstr "Праграмы"
 
-#: src/gs-installed-page.ui:95
+#: src/gs-installed-page.ui:96
 msgid "Web Apps"
 msgstr "Вэб-праграмы"
 
-#: src/gs-installed-page.ui:115
+#: src/gs-installed-page.ui:116
 msgid "System Apps"
 msgstr "Сістэмныя праграмы"
 
@@ -3169,7 +3172,7 @@ msgstr "Сістэмныя праграмы"
 msgid "Community Built"
 msgstr "Зборка ад супольнасці"
 
-#: src/gs-license-tile.c:113 src/gs-license-tile.ui:98
+#: src/gs-license-tile.c:113 src/gs-license-tile.ui:87
 msgid "_Get Involved"
 msgstr "_Прыняць удзел"
 
@@ -3232,7 +3235,7 @@ msgstr ""
 "Вы маеце магчымасць зрабіць свой унёсак, каб палепшыць ПЗ."
 
 #. Translators: This indicates an app does not specify which license it's developed under.
-#: src/gs-license-tile.c:148 src/gs-safety-context-dialog.c:413
+#: src/gs-license-tile.c:148 src/gs-safety-context-dialog.c:410
 msgid "Unknown License"
 msgstr "Невядомая ліцэнзія"
 
@@ -3272,7 +3275,7 @@ msgstr ""
 "палепшыць ПЗ."
 
 #. Translators: This is used for "License    Proprietary"
-#: src/gs-license-tile.c:166 src/gs-safety-context-dialog.c:586
+#: src/gs-license-tile.c:166 src/gs-safety-context-dialog.c:575
 msgid "Proprietary"
 msgstr "Прапрыетарная"
 
@@ -3305,7 +3308,7 @@ msgstr ""
 "Вы не маеце магчымасці ўдзельнічаць у яго распрацоўцы."
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-license-tile.c:190 src/gs-safety-context-dialog.c:450
+#: src/gs-license-tile.c:190 src/gs-safety-context-dialog.c:447
 msgid "Special License"
 msgstr "Спецыяльная ліцэнзія"
 
@@ -3370,11 +3373,11 @@ msgstr ""
 msgid "Downloading Software Catalog"
 msgstr "Спампоўваецца каталог праграмнага забеспячэння"
 
-#: src/gs-loading-page.ui:6
+#: src/gs-loading-page.ui:7
 msgid "Loading page"
 msgstr "Загрузка старонкі"
 
-#: src/gs-loading-page.ui:11
+#: src/gs-loading-page.ui:12
 msgid "Starting Up"
 msgstr "Запуск"
 
@@ -3392,46 +3395,46 @@ msgstr "Невядомая крыніца"
 
 # Нібы крыніца, трэба кантэкст
 #. Translators: It's like a beta version of the software, a test version
-#: src/gs-origin-popover-row.ui:108
+#: src/gs-origin-popover-row.ui:105
 msgid "Beta"
 msgstr "Бэта-версія"
 
 #. TRANSLATORS: This is the header for package additions during
 #. * a system update
-#: src/gs-os-update-page.c:283
+#: src/gs-os-update-page.c:284
 msgid "Additions"
 msgstr "Дадаванні"
 
 #. TRANSLATORS: This is the header for package removals during
 #. * a system update
-#: src/gs-os-update-page.c:287
+#: src/gs-os-update-page.c:288
 msgid "Removals"
 msgstr "Выдаленні"
 
 #. TRANSLATORS: This is the header for package updates during
 #. * a system update
-#: src/gs-os-update-page.c:291
+#: src/gs-os-update-page.c:292
 msgctxt "Packages to be updated during a system upgrade"
 msgid "Updates"
 msgstr "Абнаўленні"
 
 #. TRANSLATORS: This is the header for package downgrades during
 #. * a system update
-#: src/gs-os-update-page.c:295
+#: src/gs-os-update-page.c:296
 msgid "Downgrades"
 msgstr "Паніжэнні версіі"
 
 #. Translators: This is a clickable link on the third party repositories message dialog. It's
 #. part of a constructed sentence: "Provides access to additional software from [selected external sources].
 #. Some proprietary software is included."
-#: src/gs-overview-page.c:734
+#: src/gs-overview-page.c:733
 msgid "selected external sources"
 msgstr "выбраных знешніх крыніц"
 
 #. Translators: This is the third party repositories message dialog.
 #. The %s is replaced with "selected external sources" link.
 #. Repositories Preferences is an item from Software's main menu.
-#: src/gs-overview-page.c:738
+#: src/gs-overview-page.c:737
 #, c-format
 msgid ""
 "Provides access to additional software from %s. Some proprietary software is "
@@ -3445,34 +3448,34 @@ msgstr ""
 "Вы можаце ўключыць гэтыя сховішчы пазней у наладах."
 
 #. TRANSLATORS: Heading asking whether to turn third party software repositories on of off.
-#: src/gs-overview-page.c:744
+#: src/gs-overview-page.c:741
 msgid "Enable Third Party Software Repositories?"
 msgstr "Уключыць староннія сховішчы праграмнага забеспячэння?"
 
 #. TRANSLATORS: button to keep the third party software repositories off
-#: src/gs-overview-page.c:749
+#: src/gs-overview-page.c:746
 msgid "_Ignore"
 msgstr "І_гнараваць"
 
 #. TRANSLATORS: button to turn on third party software repositories
 #. TRANSLATORS: button to accept the agreement
-#: src/gs-overview-page.c:751 src/gs-repos-dialog.c:177
+#: src/gs-overview-page.c:748 src/gs-repos-dialog.c:177
 msgid "_Enable"
 msgstr "_Уключыць"
 
-#: src/gs-overview-page.c:954
+#: src/gs-overview-page.c:951
 msgid "Available for your operating system"
 msgstr "Даступна для вашай аперацыйнай сістэмы"
 
 #. Translators: the '%s' is replaced with the distribution name, constructing
 #. for example: "Available for Fedora Linux"
-#: src/gs-overview-page.c:958
+#: src/gs-overview-page.c:955
 #, c-format
 msgid "Available for %s"
 msgstr "Даступна для %s"
 
 #. Translators: This is the title of the main page of the UI.
-#: src/gs-overview-page.c:1255
+#: src/gs-overview-page.c:1252
 msgid "Explore"
 msgstr "Агляд"
 
@@ -3494,36 +3497,36 @@ msgstr "Іншыя катэгорыі"
 msgid "No App Data Found"
 msgstr "Даныя праграмы не знойдзены"
 
-#: lib/gs-plugin-loader.c:2814
+#: lib/gs-plugin-loader.c:2744
 msgctxt "Distribution name"
 msgid "Unknown"
 msgstr "Невядома"
 
 #. TRANSLATORS: button text
-#: src/gs-page.c:93
+#: src/gs-page.c:91
 msgid "_OK"
 msgstr "_ОК"
 
-#: src/gs-page.c:290
+#: src/gs-page.c:272
 msgid "User declined installation"
 msgstr "Усталяванне адхілена карыстальнікам"
 
 #. TRANSLATORS: this is a prompt message, and
 #. * '%s' is an app summary, e.g. 'GNOME Clocks'
-#: src/gs-page.c:429
+#: src/gs-page.c:418
 #, c-format
 msgid "Prepare %s"
 msgstr "Падрыхтоўка %s"
 
 #. TRANSLATORS: this is a prompt message, and '%s' is an
 #. * repository name, e.g. 'GNOME Nightly'
-#: src/gs-page.c:568
+#: src/gs-page.c:563
 #, c-format
 msgid "Are you sure you want to remove the %s repository?"
 msgstr "Сапраўды выдаліць сховішча %s?"
 
-#. TRANSLATORS: longer dialog text
-#: src/gs-page.c:572
+#. TRANSLATORS: Longer dialog text. The placeholder is a repository name.
+#: src/gs-page.c:567
 #, c-format
 msgid ""
 "All apps from %s will be uninstalled, and you will have to re-install the "
@@ -3532,43 +3535,57 @@ msgstr ""
 "Усе праграмы з %s будуць выдалены. Каб карыстацца імі зноў, вам прыйдзецца "
 "пераўсталяваць сховішча."
 
+#. TRANSLATORS: this is a prompt message, and '%s' is the
+#. * name of an addon or an input method
+#. TRANSLATORS: this is a prompt message, and '%s' is the
+#. * name of a runtime
+#. TRANSLATORS: this is a prompt message, and '%s' is the
+#. * name of a font
+#. TRANSLATORS: this is a prompt message, and '%s' is the
+#. * name of a codec
+#. TRANSLATORS: this is a prompt message, and '%s' is the
+#. * name of a firmware
 #. TRANSLATORS: this is a prompt message, and '%s' is an
 #. * app summary, e.g. 'GNOME Clocks'
-#: src/gs-page.c:582
+#: src/gs-page.c:576 src/gs-page.c:587 src/gs-page.c:598 src/gs-page.c:609
+#: src/gs-page.c:620 src/gs-page.c:632
 #, c-format
 msgid "Uninstall %s?"
 msgstr "Выдаліць %s?"
 
-#: src/gs-page.c:591
+#: src/gs-page.c:641
 msgid "App Settings & Data"
 msgstr "Налады і даныя праграмы"
 
+#. TRANSLATORS: Longer dialog text. The placeholder is the name
+#. * of an addon or an input method.
 #. Translators: the '%s' is replaced with the app name
-#: src/gs-page.c:594
+#: src/gs-page.c:580 src/gs-page.c:644
 #, c-format
 msgid "It will not be possible to use %s after removal."
 msgstr "Пасля выдалення праграмы %s, карыстацца ёй будзе немагчыма."
 
 #. Translators: this is part of section about deleting app's data, where the 'keep' means 'keep the data'
-#: src/gs-page.c:617
+#: src/gs-page.c:667
 msgid "_Keep"
 msgstr "За_хаваць"
 
-#: src/gs-page.c:623
+#: src/gs-page.c:673
 msgid "Allows restoring app settings and content"
 msgstr "Дазваляе аднавіць налады і змесціва праграмы"
 
 #. Translators: this is part of section about deleting app's data
-#: src/gs-page.c:632
+#: src/gs-page.c:682
 msgid "_Delete"
 msgstr "_Выдаліць"
 
-#: src/gs-page.c:638
+#: src/gs-page.c:688
 msgid "Permanently deletes data to save disk space"
 msgstr "Незваротна выдаляе даныя, каб зберагчы месца на дыску"
 
-#. TRANSLATORS: longer dialog text
-#: src/gs-page.c:645
+#. TRANSLATORS: Longer dialog text. The placeholder is
+#. * the name of an app.
+#: src/gs-page.c:696
 #, c-format
 msgid ""
 "It will not be possible to use %s after removal. App data and settings will "
@@ -3578,64 +3595,64 @@ msgstr ""
 "захоўваюцца на дыску, каб мець магчымасць аднавіць праграму ў будучыні."
 
 #. TRANSLATORS: this is button text to remove the app
-#: src/gs-page.c:660
+#: src/gs-page.c:710
 msgid "_Uninstall"
 msgstr "_Выдаліць"
 
-#: src/gs-prefs-dialog.ui:5
+#: src/gs-prefs-dialog.ui:6
 msgid "Preferences"
 msgstr "Налады"
 
-#: src/gs-prefs-dialog.ui:14
+#: src/gs-prefs-dialog.ui:12
 msgid "Software Updates"
 msgstr "Абнаўленні праграмнага забеспячэння"
 
-#: src/gs-prefs-dialog.ui:26
+#: src/gs-prefs-dialog.ui:42
 msgid "_Automatic"
 msgstr "_Аўтаматычна"
 
-#: src/gs-prefs-dialog.ui:27
+#: src/gs-prefs-dialog.ui:43
 msgid "Automatically check for and download updates"
 msgstr "Аўтаматычна правяраць наяўнасць абнаўленняў і спампоўваць іх"
 
-#: src/gs-prefs-dialog.ui:41
+#: src/gs-prefs-dialog.ui:57
 msgid "_Manual"
 msgstr "_Уручную"
 
-#: src/gs-prefs-dialog.ui:42
+#: src/gs-prefs-dialog.ui:58
 msgid "Checking for and downloading updates must be done manually"
 msgstr "Праверка наяўнасці абнаўленняў і спампоўванне выконваецца ўручную"
 
-#: src/gs-prefs-dialog.ui:60
+#: src/gs-prefs-dialog.ui:76
 msgid "Automatic Update _Notifications"
 msgstr "Апа_вяшчэнні для аўтаматычнага абнаўлення"
 
-#: src/gs-prefs-dialog.ui:61
+#: src/gs-prefs-dialog.ui:77
 msgid "Notify when updates have been automatically installed"
 msgstr "Апавяшчаць, калі выканана аўтаматычнае ўсталяванне абнаўленняў"
 
-#: src/gs-prefs-dialog.ui:76
+#: src/gs-prefs-dialog.ui:86
 msgid "Content Filters"
 msgstr "Фільтры змесціва"
 
-#: src/gs-prefs-dialog.ui:79
+#: src/gs-prefs-dialog.ui:89
 msgid "Only Show _Free Software"
 msgstr "Паказваць толькі _свабоднае ПЗ"
 
-#: src/gs-prefs-dialog.ui:80
+#: src/gs-prefs-dialog.ui:90
 msgid "Hide proprietary software when browsing and searching"
 msgstr "Падчас агляду і пошуку хаваць прапрыетарнае праграмнае забеспячэнне"
 
-#: src/gs-prefs-dialog.ui:93
+#: src/gs-prefs-dialog.ui:97
 msgid "Only Show _Verified Developers"
 msgstr "Паказваць толькі _правераных распрацоўшчыкаў"
 
-#: src/gs-prefs-dialog.ui:94
+#: src/gs-prefs-dialog.ui:98
 msgid "Show only apps from developers whose identity has been verified"
 msgstr ""
 "Паказваць толькі праграмы ад распрацоўшчыкаў, якія пазначаны як правераныя"
 
-#: src/gs-prefs-dialog.ui:120
+#: src/gs-prefs-dialog.ui:26
 msgid ""
 "Checking for and downloading updates uses data and power. Automatic update "
 "features are therefore paused when on metered network connections and when "
@@ -3657,16 +3674,16 @@ msgstr ""
 "Усталяванае праграмнае забеспячэнне несумяшчальна з %s, падчас абнаўлення "
 "яно будзе аўтаматычна выдалена."
 
-#: src/gs-removal-dialog.ui:7
+#: src/gs-removal-dialog.ui:6
 msgid "Incompatible Software"
 msgstr "Несумяшчальныя праграмы"
 
-#: src/gs-removal-dialog.ui:35
+#: src/gs-removal-dialog.ui:33
 msgid "_Upgrade"
 msgstr "_Абнавіць"
 
 #. TRANSLATORS: The '%s' is replaced with a repository name, like "Fedora Modular - x86_64"
-#: src/gs-repos-dialog.c:245
+#: src/gs-repos-dialog.c:244
 #, c-format
 msgid ""
 "Software that has been installed from “%s” will cease to receive updates."
@@ -3674,25 +3691,28 @@ msgstr ""
 "Праграмнае забеспячэнне, усталяванае з «%s», больш не будзе атрымліваць "
 "абнаўленні."
 
-#: src/gs-repos-dialog.c:250
+#. ask for confirmation
+#: src/gs-repos-dialog.c:248
 msgid "Disable Repository?"
 msgstr "Адключыць сховішча?"
 
-#: src/gs-repos-dialog.c:250
+#: src/gs-repos-dialog.c:248
 msgid "Remove Repository?"
 msgstr "Выдаліць сховішча?"
 
 #. TRANSLATORS: this is button text to disable a repo
-#: src/gs-repos-dialog.c:257
+#: src/gs-repos-dialog.c:255
 msgid "_Disable"
 msgstr "_Адключыць"
 
 #. TRANSLATORS: this is button text to remove a repo
-#: src/gs-repos-dialog.c:261
+#. TRANSLATORS: button text when
+#. * removing a review
+#: src/gs-repos-dialog.c:259 src/gs-review-row.c:266
 msgid "_Remove"
 msgstr "_Выдаліць"
 
-#: src/gs-repos-dialog.c:618
+#: src/gs-repos-dialog.c:611
 msgid "Enable New Repositories"
 msgstr "Уключаць новыя сховішчы"
 
@@ -3702,42 +3722,42 @@ msgstr "Уключыць новыя сховішчы, калі дадаюцца.
 
 #. TRANSLATORS: this is the clickable
 #. * link on the third party repositories info bar
-#: src/gs-repos-dialog.c:628
+#: src/gs-repos-dialog.c:619
 msgid "more information"
 msgstr "дадатковыя звесткі"
 
 #. TRANSLATORS: this is the third party repositories info bar. The '%s' is replaced
 #. with a link consisting a text "more information", which constructs a sentence:
 #. "Additional repositories from selected third parties - more information."
-#: src/gs-repos-dialog.c:633
+#: src/gs-repos-dialog.c:624
 #, c-format
 msgid "Additional repositories from selected third parties — %s."
 msgstr "Сховішчы з выбраных старонніх крыніц — %s."
 
-#: src/gs-repos-dialog.c:638
+#: src/gs-repos-dialog.c:629
 msgid "Fedora Third Party Repositories"
 msgstr "Староннія сховішчы Fedora"
 
 #. TRANSLATORS: this is the fallback text we use if we can't
 #. figure out the name of the operating system
-#: src/gs-repos-dialog.c:790
+#: src/gs-repos-dialog.c:783
 msgid "the operating system"
 msgstr "аперацыйнай сістэмай"
 
 #. TRANSLATORS: This is the description text displayed in the Software Repositories dialog.
 #. %s gets replaced by the name of the actual distro, e.g. Fedora.
-#: src/gs-repos-dialog.c:846
+#: src/gs-repos-dialog.c:839
 #, c-format
 msgid "These repositories supplement the default software provided by %s."
 msgstr ""
 "Гэтыя сховішчы дапаўняюць прадвызначанае праграмнае забеспячэнне, якое "
 "пастаўляецца з %s."
 
-#: src/gs-repos-dialog.ui:8 src/gs-toast.c:62
+#: src/gs-repos-dialog.ui:6
 msgid "Software Repositories"
 msgstr "Сховішчы праграмнага забеспячэння"
 
-#: src/gs-repos-dialog.ui:52
+#: src/gs-repos-dialog.ui:46
 msgid "No Repositories"
 msgstr "Няма сховішчаў"
 
@@ -3900,11 +3920,11 @@ msgid "Write a Review"
 msgstr "Напісаць водгук"
 
 #. Translators: A button to publish the user's opinion about the app.
-#: src/gs-review-dialog.ui:35
+#: src/gs-review-dialog.ui:32
 msgid "_Send"
 msgstr "_Адправіць"
 
-#: src/gs-review-dialog.ui:54
+#: src/gs-review-dialog.ui:42
 msgid ""
 "Please provide a rating, summary and review text. Reviews should not be used "
 "to report problems: instead, contact the developer or your support provider."
@@ -3913,17 +3933,17 @@ msgstr ""
 "выкарыстоўваць водгукі для паведамлення аб праблемах, замест гэтага "
 "звяжыцеся з распрацоўшчыкам або са сваёй службай падтрымкі."
 
-#: src/gs-review-dialog.ui:100
+#: src/gs-review-dialog.ui:76
 msgid "Review Summary"
 msgstr "Падагульненне (загаловак)"
 
 #. Translators: This is where the users enter their opinions about the apps.
-#: src/gs-review-dialog.ui:132
+#: src/gs-review-dialog.ui:108
 msgctxt "app review"
 msgid "Write a short review"
 msgstr "Напісаць кароткі водгук"
 
-#: src/gs-review-dialog.ui:176
+#: src/gs-review-dialog.ui:150
 msgid ""
 "Find what data is sent in our <a "
 "href=\"https://odrs.gnome.org/privacy\">privacy policy</a>. The full name "
@@ -3946,19 +3966,19 @@ msgid "out of 5 stars"
 msgstr "з 5 зорак"
 
 #. TRANSLATORS: this is when a user doesn't specify a name
-#: src/gs-review-row.c:60
+#: src/gs-review-row.c:59
 msgctxt "Reviewer name"
 msgid "Unknown"
 msgstr "Невядома"
 
 #. TRANSLATORS: we explain what the action is going to do
-#: src/gs-review-row.c:226
+#: src/gs-review-row.c:227
 msgid "You can report reviews for abusive, rude, or discriminatory behavior."
 msgstr ""
 "Вы можаце паскардзіцца на абразлівыя, грубыя або дыскрымінацыйныя водгукі."
 
 #. TRANSLATORS: we ask the user if they really want to do this
-#: src/gs-review-row.c:231
+#: src/gs-review-row.c:232
 msgid ""
 "Once reported, a review will be hidden until it has been checked by an "
 "administrator."
@@ -3966,16 +3986,15 @@ msgstr ""
 "Пасля адпраўкі скаргі, водгук будзе схаваны, пакуль яго не праверыць "
 "адміністратар."
 
-#. TRANSLATORS: window title when
-#. * reporting a user-submitted review
+#. TRANSLATORS: window title when reporting a user-submitted review
 #. * for moderation
-#: src/gs-review-row.c:239
+#: src/gs-review-row.c:237
 msgid "Report Review?"
 msgstr "Паскардзіцца на водгук?"
 
 #. TRANSLATORS: button text when
-#. * sending a review for moderation
-#: src/gs-review-row.c:244
+#. * * sending a review for moderation
+#: src/gs-review-row.c:242
 msgid "_Report"
 msgstr "_Паскардзіцца"
 
@@ -3997,235 +4016,235 @@ msgstr "Не"
 msgid "Meh"
 msgstr "Так сабе"
 
-#: src/gs-review-row.ui:128
+#: src/gs-review-row.ui:117
 msgid "Report…"
 msgstr "Паскардзіцца…"
 
-#: src/gs-review-row.ui:137
+#: src/gs-review-row.ui:130
 msgid "Remove…"
 msgstr "Выдаліць…"
 
-#: src/gs-safety-context-dialog.c:157
+#: src/gs-safety-context-dialog.c:154
 msgid ""
 "App isn’t sandboxed but the distribution has checked that it is not malicious"
 msgstr ""
 "Праграма выконваецца не ў «пясочніцы», але стваральнікі дыстрыбутыву "
 "праверылі, што гэта не шкоднае ПЗ"
 
-#: src/gs-safety-context-dialog.c:165
+#: src/gs-safety-context-dialog.c:162
 msgid "Check that you trust the vendor, as the app isn’t sandboxed"
 msgstr ""
 "Праверце, ці давярайце вы пастаўшчыку, таму што праграма выконваецца не ў "
 "«пясочніцы»"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:180
+#: src/gs-safety-context-dialog.c:177
 msgid "No Permissions"
 msgstr "Не патрабуе дазволаў"
 
-#: src/gs-safety-context-dialog.c:181
+#: src/gs-safety-context-dialog.c:178
 msgid "App is fully sandboxed"
 msgstr "Праграма цалкам выконваецца ў «пясочніцы»"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:192
+#: src/gs-safety-context-dialog.c:189
 msgid "Network Access"
 msgstr "Доступ да сеткі"
 
-#: src/gs-safety-context-dialog.c:193
+#: src/gs-safety-context-dialog.c:190
 msgid "Can access the internet"
 msgstr "Мае доступ да інтэрнэту"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:196
+#: src/gs-safety-context-dialog.c:193
 msgid "No Network Access"
 msgstr "Без доступу да сеткі"
 
-#: src/gs-safety-context-dialog.c:197
+#: src/gs-safety-context-dialog.c:194
 msgid "Cannot access the internet"
 msgstr "Не мае доступу да інтэрнэту"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:203
+#: src/gs-safety-context-dialog.c:200
 msgid "Uses System Services"
 msgstr "Выкарыстоўвае сістэмныя сэрвісы"
 
-#: src/gs-safety-context-dialog.c:204
+#: src/gs-safety-context-dialog.c:201
 msgid "Can request data from system services"
 msgstr "Можа запытваць даныя з сістэмных сэрвісаў"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:211
+#: src/gs-safety-context-dialog.c:208
 msgid "Uses Session Services"
 msgstr "Выкарыстоўвае сэрвісы сеанса"
 
-#: src/gs-safety-context-dialog.c:212
+#: src/gs-safety-context-dialog.c:209
 msgid "Can request data from session services"
 msgstr "Можа запытваць даныя з сэрвісаў сеанса"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:219
+#: src/gs-safety-context-dialog.c:216
 msgid "User Device Access"
 msgstr "Доступ да прылад карыстальніка"
 
-#: src/gs-safety-context-dialog.c:220
+#: src/gs-safety-context-dialog.c:217
 msgid "Can access devices such as webcams or gaming controllers"
 msgstr "Мае доступ да прылад накшталт вэб-камер або гульнявых кантролераў"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:223
+#: src/gs-safety-context-dialog.c:220
 msgid "No User Device Access"
 msgstr "Без доступу да прылад карыстальніка"
 
-#: src/gs-safety-context-dialog.c:224
+#: src/gs-safety-context-dialog.c:221
 msgid "Cannot access devices such as webcams or gaming controllers"
 msgstr ""
 "Не мае доступу да прылад накшталт вэб-камер або гульнявых кантролераў"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:230
+#: src/gs-safety-context-dialog.c:227
 msgid "Input Device Access"
 msgstr "Доступ да прылад уводу"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:238
+#: src/gs-safety-context-dialog.c:235
 msgid "Microphone Access"
 msgstr "Доступ да мікрафона"
 
-#: src/gs-safety-context-dialog.c:239
+#: src/gs-safety-context-dialog.c:236
 msgid "Can listen using microphones without asking permission"
 msgstr "Можа весці праслухоўванне праз мікрафон не пытаючы дазволу"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:246
+#: src/gs-safety-context-dialog.c:243
 msgid "System Device Access"
 msgstr "Доступ да сістэмных прылад"
 
-#: src/gs-safety-context-dialog.c:247
+#: src/gs-safety-context-dialog.c:244
 msgid "Can access system devices which require elevated permissions"
 msgstr ""
 "Мае доступ да сістэмных прылад, якія патрабуюць павышанага ўзроўню дазволаў"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:254
+#: src/gs-safety-context-dialog.c:251
 msgid "Screen Contents Access"
 msgstr "Доступ да змесціва экрана"
 
-#: src/gs-safety-context-dialog.c:255
+#: src/gs-safety-context-dialog.c:252
 msgid "Can access the contents of the screen or other windows"
 msgstr "Мае доступ да змесціва экрана або іншых акон"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:262
+#: src/gs-safety-context-dialog.c:259
 msgid "Legacy Windowing System"
 msgstr "Састарэлы аконны інтэрфейс"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:270
+#: src/gs-safety-context-dialog.c:267
 msgid "Arbitrary Permissions"
 msgstr "Адвольныя дазволы"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:278
+#: src/gs-safety-context-dialog.c:275
 msgid "User Settings"
 msgstr "Налады карыстальніка"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:290
+#: src/gs-safety-context-dialog.c:287
 msgid "Full File System Read/Write Access"
 msgstr "Доступ на чытанне і запіс усёй файлавай сістэмы"
 
-#: src/gs-safety-context-dialog.c:291
+#: src/gs-safety-context-dialog.c:288
 msgid "Can read and write all data on the file system"
 msgstr "Мае доступ на чытанне і запіс даных усёй файлавай сістэмы"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:299
+#: src/gs-safety-context-dialog.c:296
 msgid "Home Folder Read/Write Access"
 msgstr "Доступ на чытанне і запіс у хатняй папцы"
 
-#: src/gs-safety-context-dialog.c:300
+#: src/gs-safety-context-dialog.c:297
 msgid "Can read and write all data in your home directory"
 msgstr "Мае доступ на чытанне і запіс у вашай хатняй папцы"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:308
+#: src/gs-safety-context-dialog.c:305
 msgid "Full File System Read Access"
 msgstr "Доступ на чытанне ўсёй файлавай сістэмы"
 
-#: src/gs-safety-context-dialog.c:309
+#: src/gs-safety-context-dialog.c:306
 msgid "Can read all data on the file system"
 msgstr "Мае доступ на чытанне даных усёй файлавай сістэмы"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:318
+#: src/gs-safety-context-dialog.c:315
 msgid "Home Folder Read Access"
 msgstr "Доступ на чытанне ў хатняй папцы"
 
-#: src/gs-safety-context-dialog.c:319
+#: src/gs-safety-context-dialog.c:316
 msgid "Can read all data in your home directory"
 msgstr "Мае доступ на чытанне ў вашай хатняй папцы"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:328
+#: src/gs-safety-context-dialog.c:325
 msgid "Download Folder Read/Write Access"
 msgstr "Доступ на чытанне і запіс у папцы спамповак"
 
-#: src/gs-safety-context-dialog.c:329
+#: src/gs-safety-context-dialog.c:326
 msgid "Can read and write all data in your downloads directory"
 msgstr "Мае доступ на чытанне і запіс у папцы спамповак"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:340
+#: src/gs-safety-context-dialog.c:337
 msgid "Download Folder Read Access"
 msgstr "Доступ на чытанне ў папцы спамповак"
 
-#: src/gs-safety-context-dialog.c:341
+#: src/gs-safety-context-dialog.c:338
 msgid "Can read all data in your downloads directory"
 msgstr "Мае доступ на чытанне ў папцы спамповак"
 
-#: src/gs-safety-context-dialog.c:351
+#: src/gs-safety-context-dialog.c:348
 msgid "Can read and write all data in the directory"
 msgstr "Мае доступ на чытанне і запіс у каталогу"
 
-#: src/gs-safety-context-dialog.c:362
+#: src/gs-safety-context-dialog.c:359
 msgid "Can read all data in the directory"
 msgstr "Мае доступ на чытанне ў каталогу"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:378
+#: src/gs-safety-context-dialog.c:375
 msgid "No File System Access"
 msgstr "Без доступу да файлавай сістэмы"
 
-#: src/gs-safety-context-dialog.c:379
+#: src/gs-safety-context-dialog.c:376
 msgid "Cannot access the file system at all"
 msgstr "Не мае доступу да ўсёй файлавай сістэмы"
 
 #. Translators: This indicates an app was written and released by a developer who has been verified.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-safety-context-dialog.c:389
+#: src/gs-safety-context-dialog.c:386
 msgid "App developer is verified"
 msgstr "Распрацоўшчык праграмы правераны"
 
-#: src/gs-safety-context-dialog.c:390
+#: src/gs-safety-context-dialog.c:387
 msgid ""
 "The developer of this app has been verified to be who they say they are"
 msgstr "Распрацоўшчык гэтай праграмы прайшоў праверку сапраўднасці"
 
 #. Translators: This indicates an app uses an outdated SDK.
 #. * It’s used in a context tile, so should be short.
-#: src/gs-safety-context-dialog.c:401
+#: src/gs-safety-context-dialog.c:398
 msgid "Insecure Dependencies"
 msgstr "Небяспечныя залежнасці"
 
-#: src/gs-safety-context-dialog.c:402
+#: src/gs-safety-context-dialog.c:399
 msgid ""
 "Software or its dependencies are no longer supported and may be insecure"
 msgstr ""
 "Праграмнае забеспячэнне або яго залежнасці больш не падтрымліваюцца могуць "
 "быць небяспечнымі"
 
-#: src/gs-safety-context-dialog.c:415
+#: src/gs-safety-context-dialog.c:412
 msgid ""
 "This app does not specify what license it is developed under, and may be "
 "proprietary"
@@ -4233,7 +4252,7 @@ msgstr ""
 "Гэта праграма распрацоўваецца адпаведна з умовамі нявызначанай ліцэнзіі, "
 "магчыма прапрыетарнай"
 
-#: src/gs-safety-context-dialog.c:416
+#: src/gs-safety-context-dialog.c:413
 msgid ""
 "This software does not specify what license it is developed under, and may "
 "be proprietary"
@@ -4242,11 +4261,11 @@ msgstr ""
 "нявызначанай ліцэнзіі, магчыма прапрыетарнай"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:429
+#: src/gs-safety-context-dialog.c:426
 msgid "Proprietary Code"
 msgstr "Прапрыетарны код"
 
-#: src/gs-safety-context-dialog.c:430
+#: src/gs-safety-context-dialog.c:427
 msgid ""
 "The source code is not public, so it cannot be independently audited and "
 "might be unsafe"
@@ -4255,14 +4274,14 @@ msgstr ""
 "быць небяспечным"
 
 #. Translators: The placeholder here is the name of a software license.
-#: src/gs-safety-context-dialog.c:438
+#: src/gs-safety-context-dialog.c:435
 #, c-format
 msgid "This app is developed under the special license “%s”"
 msgstr ""
 "Гэта праграма распрацоўваецца адпаведна з умовамі спецыяльнай ліцэнзіі «%s»"
 
 #. Translators: The placeholder here is the name of a software license.
-#: src/gs-safety-context-dialog.c:441
+#: src/gs-safety-context-dialog.c:438
 #, c-format
 msgid "This software is developed under the special license “%s”"
 msgstr ""
@@ -4270,11 +4289,11 @@ msgstr ""
 "ліцэнзіі «%s»"
 
 #. Translators: This refers to permissions (for example, from flatpak) which an app requests from the user.
-#: src/gs-safety-context-dialog.c:454
+#: src/gs-safety-context-dialog.c:451
 msgid "Auditable Code"
 msgstr "Правяральны код"
 
-#: src/gs-safety-context-dialog.c:455
+#: src/gs-safety-context-dialog.c:452
 msgid ""
 "The source code is public and can be independently audited, which makes the "
 "app more likely to be safe"
@@ -4284,60 +4303,60 @@ msgstr ""
 
 #. Translators: The app is considered privileged, aka provided by the distribution.
 #. * The placeholder is the app name.
-#: src/gs-safety-context-dialog.c:464
+#: src/gs-safety-context-dialog.c:461
 #, c-format
 msgid "%s is privileged"
 msgstr "%s прывілеяваная"
 
 #. Translators: The app is considered safe to install and run.
 #. * The placeholder is the app name.
-#: src/gs-safety-context-dialog.c:471
+#: src/gs-safety-context-dialog.c:468
 #, c-format
 msgid "%s is safe"
 msgstr "%s бяспечная"
 
 #. Translators: The app is considered probably safe to install and run.
 #. * The placeholder is the app name.
-#: src/gs-safety-context-dialog.c:478
+#: src/gs-safety-context-dialog.c:475
 #, c-format
 msgid "%s is probably safe"
 msgstr "%s верагодна бяспечная"
 
 #. Translators: The app is considered potentially unsafe to install and run.
 #. * The placeholder is the app name.
-#: src/gs-safety-context-dialog.c:485
+#: src/gs-safety-context-dialog.c:482
 #, c-format
 msgid "%s is potentially unsafe"
 msgstr "%s патэнцыяльна небяспечная"
 
 #. Translators: The app is considered unsafe to install and run.
 #. * The placeholder is the app name.
-#: src/gs-safety-context-dialog.c:492
+#: src/gs-safety-context-dialog.c:489
 #, c-format
 msgid "%s is unsafe"
 msgstr "%s небяспечная"
 
 #. Translators: This is used for "License    Unknown"
-#: src/gs-safety-context-dialog.c:583
+#: src/gs-safety-context-dialog.c:572
 msgctxt "Unknown license"
 msgid "Unknown"
 msgstr "Невядома"
 
 #. Translators: This is the title of the dialog which contains information about the permissions of an app
-#: src/gs-safety-context-dialog.ui:5
+#: src/gs-safety-context-dialog.ui:6
 msgid "Safety"
 msgstr "Бяспечная"
 
-#: src/gs-safety-context-dialog.ui:100
+#: src/gs-safety-context-dialog.ui:70
 msgid "License"
 msgstr "Ліцэнзія"
 
 #. Translators: This is a heading for a row showing the origin/source of an app (such as ‘flathub’).
-#: src/gs-safety-context-dialog.ui:140
+#: src/gs-safety-context-dialog.ui:80
 msgid "Source"
 msgstr "Крыніца"
 
-#: src/gs-safety-context-dialog.ui:220
+#: src/gs-safety-context-dialog.ui:100
 msgid "SDK"
 msgstr "SDK"
 
@@ -4409,15 +4428,15 @@ msgstr[0] "Яшчэ %u супадзенне"
 msgstr[1] "Яшчэ %u супадзенні"
 msgstr[2] "Яшчэ %u супадзенняў"
 
-#: src/gs-search-page.ui:6
+#: src/gs-search-page.ui:7
 msgid "Search page"
 msgstr "Старонка пошуку"
 
-#: src/gs-search-page.ui:17
+#: src/gs-search-page.ui:18
 msgid "Search for Apps"
 msgstr "Пошук праграм"
 
-#: src/gs-search-page.ui:46
+#: src/gs-search-page.ui:47
 msgid "No App Found"
 msgstr "Праграма не знойдзена"
 
@@ -4429,120 +4448,120 @@ msgstr "Праграма не знойдзена"
 #. TRANSLATORS: this is part of the in-app notification,
 #. * where the %s is a multi-word localised app name
 #. * e.g. 'Getting things GNOME!"
-#: src/gs-shell.c:1205 src/gs-shell.c:1210 src/gs-shell.c:1225
-#: src/gs-shell.c:1229
+#: src/gs-shell.c:1183 src/gs-shell.c:1188 src/gs-shell.c:1203
+#: src/gs-shell.c:1207
 #, c-format
 msgid "“%s”"
 msgstr "«%s»"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1282 src/gs-shell.c:1321
+#: src/gs-shell.c:1261 src/gs-shell.c:1313
 msgid "Unable to download updates"
 msgstr "Немагчыма спампаваць абнаўленні"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1287
+#: src/gs-shell.c:1266
 msgid "Unable to download firmware updates"
 msgstr "Немагчыма спампаваць абнаўленні ўбудаванай праграмы"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1296 src/gs-shell.c:1437
+#: src/gs-shell.c:1281 src/gs-shell.c:1499
 msgid "Unable to update: internet access required"
 msgstr "Немагчыма абнавіць: патрабуецца доступ да інтэрнэту"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1300 src/gs-shell.c:1441
+#: src/gs-shell.c:1284 src/gs-shell.c:1502
 msgid "Unable to update: not enough disk space"
 msgstr "Немагчыма абнавіць: недастаткова месца на дыску"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1304 src/gs-shell.c:1445
+#: src/gs-shell.c:1295 src/gs-shell.c:1513
 msgid "Unable to update: authentication required"
 msgstr "Немагчыма абнавіць: патрабуецца праверка сапраўднасці"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1308 src/gs-shell.c:1449
+#: src/gs-shell.c:1299 src/gs-shell.c:1524
 msgid "Unable to update: invalid authentication"
 msgstr "Немагчыма абнавіць: сапраўднасць не пацверджана"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1312 src/gs-shell.c:1453
+#: src/gs-shell.c:1303 src/gs-shell.c:1535
 msgid "Unable to update: permission required"
 msgstr "Немагчыма абнавіць: патрабуецца дазвол"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1324
+#: src/gs-shell.c:1316
 msgid "Unable to get list of updates"
 msgstr "Немагчыма атрымаць спіс абнаўленняў"
 
-#: src/gs-shell.c:1357
+#: src/gs-shell.c:1351
 msgid "Unable to install: download failed"
 msgstr "Немагчыма ўсталяваць: не ўдалося спампаваць"
 
-#: src/gs-shell.c:1361
+#: src/gs-shell.c:1368
 msgid "Unable to install: missing runtime"
 msgstr "Немагчыма ўсталяваць: адсутнічае асяроддзе выканання"
 
 #. TRANSLATORS: failure text for the in-app notification,
 #. * where the %s is the app name (e.g. "GIMP")
-#: src/gs-shell.c:1363 src/gs-shell.c:1397
+#: src/gs-shell.c:1377 src/gs-shell.c:1433 src/gs-shell.c:1435
 #, c-format
 msgid "Unable to install %s"
 msgstr "Немагчыма ўсталяваць %s"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1369
+#: src/gs-shell.c:1383
 msgid "Unable to install: internet access required"
 msgstr "Немагчыма ўсталяваць: патрабуецца доступ да інтэрнэту"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1373
+#: src/gs-shell.c:1386
 msgid "Unable to install: invalid app format"
 msgstr "Немагчыма ўсталяваць: няправільны фармат праграмы"
 
-#: src/gs-shell.c:1376
+#: src/gs-shell.c:1389
 msgid "Unable to install: not enough disk space"
 msgstr "Немагчыма ўсталяваць: недастаткова месца на дыску"
 
-#: src/gs-shell.c:1379
+#: src/gs-shell.c:1396
 msgid "Unable to install: authentication required"
 msgstr "Немагчыма ўсталяваць: патрабуецца праверка сапраўднасці"
 
-#: src/gs-shell.c:1382
+#: src/gs-shell.c:1402
 msgid "Unable to install: invalid authentication"
 msgstr "Не ўдалося ўсталяваць: сапраўднасць не пацверджана"
 
-#: src/gs-shell.c:1385
+#: src/gs-shell.c:1409
 msgid "Unable to install: permission required"
 msgstr "Немагчыма ўсталяваць: патрабуецца дазвол"
 
-#: src/gs-shell.c:1388
+#: src/gs-shell.c:1416
 msgid "Unable to install: device must be plugged in"
 msgstr ""
 "Немагчыма ўсталяваць: прылада павінна быць падключана да электрасеткі"
 
-#: src/gs-shell.c:1390
+#: src/gs-shell.c:1422
 msgid "Unable to install: low battery"
 msgstr "Немагчыма ўсталяваць: нізкі зарад батарэі"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1433
+#: src/gs-shell.c:1495
 msgid "Unable to update: download failed"
 msgstr "Немагчыма абнавіць: не ўдалося спампаваць"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1457
+#: src/gs-shell.c:1546
 msgid "Unable to update: device must be plugged in"
 msgstr "Немагчыма абнавіць: прылада павінна быць падключана да электрасеткі"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1460
+#: src/gs-shell.c:1556
 msgid "Unable to update: low battery"
 msgstr "Немагчыма абнавіць: нізкі зарад батарэі"
 
 #. TRANSLATORS: failure text for the in-app notification,
 #. * where the %s is the app name (e.g. "GIMP")
-#: src/gs-shell.c:1469
+#: src/gs-shell.c:1572
 #, c-format
 msgid "Unable to update %s"
 msgstr "Немагчыма абнавіць %s"
@@ -4553,52 +4572,52 @@ msgid "Unable to install updates"
 msgstr "Немагчыма ўсталяваць абнаўленні"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1509 src/gs-shell.c:1546
+#: src/gs-shell.c:1613 src/gs-shell.c:1686
 msgid "Unable to upgrade"
 msgstr "Немагчыма абнавіць"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1512
+#: src/gs-shell.c:1621
 msgid "Unable to upgrade: download failed"
 msgstr "Немагчыма абнавіць: не ўдалося спампаваць"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1517
+#: src/gs-shell.c:1630
 msgid "Unable to upgrade: internet access required"
 msgstr "Немагчыма абнавіць: патрабуецца доступ да інтэрнэту"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1521
+#: src/gs-shell.c:1637
 msgid "Unable to upgrade: not enough disk space"
 msgstr "Немагчыма абнавіць: недастаткова месца на дыску"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1525
+#: src/gs-shell.c:1645
 msgid "Unable to upgrade: authentication required"
 msgstr "Немагчыма абнавіць: патрабуецца праверка сапраўднасці"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1529
+#: src/gs-shell.c:1653
 msgid "Unable to upgrade: invalid authentication"
 msgstr "Немагчыма абнавіць: сапраўднасць не пацверджана"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1533
+#: src/gs-shell.c:1661
 msgid "Unable to upgrade: permission required"
 msgstr "Немагчыма абнавіць: патрабуецца дазвол"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1537
+#: src/gs-shell.c:1669
 msgid "Unable to upgrade: device must be plugged in"
 msgstr "Немагчыма абнавіць: прылада павінна быць падключана да электрасеткі"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1540
+#: src/gs-shell.c:1676
 msgid "Unable to upgrade: low battery"
 msgstr "Немагчыма абнавіць: нізкі зарад батарэі"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1579
+#: src/gs-shell.c:1723
 msgid "Unable to uninstall: authentication required"
 msgstr "Немагчыма выдаліць: патрабуецца праверка сапраўднасці"
 
@@ -4608,23 +4627,23 @@ msgid "Unable to uninstall: authentication invalid"
 msgstr "Немагчыма выдаліць: сапраўднасць не пацверджана"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1587
+#: src/gs-shell.c:1739
 msgid "Unable to uninstall: permission required"
 msgstr "Немагчыма выдаліць: патрабуецца дазвол"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1591
+#: src/gs-shell.c:1747
 msgid "Unable to uninstall: device must be plugged in"
 msgstr "Немагчыма выдаліць: прылада павінна быць падключана да электрасеткі"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1594
+#: src/gs-shell.c:1754
 msgid "Unable to uninstall: low battery"
 msgstr "Немагчыма выдаліць: нізкі зарад батарэі"
 
 #. TRANSLATORS: failure text for the in-app notification,
 #. * where the %s is the app name (e.g. "GIMP")
-#: src/gs-shell.c:1604
+#: src/gs-shell.c:1768
 #, c-format
 #| msgid "Unable to install %s"
 msgid "Unable to uninstall %s"
@@ -4632,59 +4651,59 @@ msgstr "Немагчыма выдаліць %s"
 
 #. TRANSLATORS: failure text for the in-app notification, where the '%s' is
 #. replaced with the app name (e.g. "GIMP")
-#: src/gs-shell.c:1640
+#: src/gs-shell.c:1807
 #, c-format
 msgid "Unable to launch %s"
 msgstr "Немагчыма запусціць %s"
 
 #. TRANSLATORS: failure text for the in-app notification
 #. TRANSLATORS: we failed to get a proper error code
-#: src/gs-shell.c:1645 src/gs-shell.c:1665 src/gs-shell.c:1709
-#: src/gs-shell.c:1753 src/gs-shell.c:1813
+#: src/gs-shell.c:1812 src/gs-shell.c:1840 src/gs-shell.c:1884
+#: src/gs-shell.c:1928 src/gs-shell.c:1988
 msgid "Sorry, something went wrong"
 msgstr "Нешта пайшло не так"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1655 src/gs-shell.c:1699 src/gs-shell.c:1743
-#: src/gs-shell.c:1793
+#: src/gs-shell.c:1830 src/gs-shell.c:1874 src/gs-shell.c:1918
+#: src/gs-shell.c:1968
 msgid "Not enough disk space for operation"
 msgstr "Для выканання аперацыі недастаткова месца на дыску"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1691
+#: src/gs-shell.c:1866
 msgid "Unable to install: file type not supported"
 msgstr "Немагчыма ўсталяваць: тып файла не падтрымліваецца"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1695 src/gs-shell.c:1739
+#: src/gs-shell.c:1870 src/gs-shell.c:1914
 msgid "Unable to install: authentication failed"
 msgstr "Не ўдалося ўсталяваць: сапраўднасць не пацверджана"
 
 #. TRANSLATORS: failure text for the in-app notification
-#: src/gs-shell.c:1735
+#: src/gs-shell.c:1910
 msgid "Unable to install"
 msgstr "Немагчыма ўсталяваць"
 
 #. TRANSLATORS: failure text for the in-app notification,
 #. * the %s is the origin, e.g. "Fedora" or
 #. * "Fedora Project [fedoraproject.org]"
-#: src/gs-shell.c:1786
+#: src/gs-shell.c:1961
 #, c-format
 msgid "Unable to contact %s"
 msgstr "Немагчыма звязацца з %s"
 
 #. TRANSLATORS: failure text for the in-app notification, where the 'Software' means this app, aka 'GNOME Software'.
-#: src/gs-shell.c:1797
+#: src/gs-shell.c:1972
 msgid "Restart Software to use new plugins"
 msgstr "Перазапусціце Software, каб выкарыстоўваць новыя ўбудовы"
 
 #. TRANSLATORS: need to be connected to the AC power
-#: src/gs-shell.c:1801
+#: src/gs-shell.c:1976
 msgid "Device needs to be plugged in"
 msgstr "Прылада павінна быць падключана да электрасеткі"
 
 #. TRANSLATORS: not enough juice to do this safely
-#: src/gs-shell.c:1804
+#: src/gs-shell.c:1979
 msgid "Battery level is too low"
 msgstr "Нізкі ўзровень зараду батарэі"
 
@@ -4713,23 +4732,23 @@ msgid "Search apps"
 msgstr "Пошук праграм"
 
 #. Translators: A label for a button to show all available software.
-#: src/gs-shell.ui:202
+#: src/gs-shell.ui:203
 msgid "_Explore"
 msgstr "_Агляд"
 
 #. Translators: A label for a button to show only software which is already installed.
-#: src/gs-shell.ui:216
+#: src/gs-shell.ui:217
 msgctxt "List of installed apps"
 msgid "_Installed"
 msgstr "_Усталяваныя"
 
 #. Translators: A label for a button to show only updates which are available to install.
-#: src/gs-shell.ui:238
+#: src/gs-shell.ui:239
 msgctxt "Header bar button for list of apps to be updated"
 msgid "_Updates"
 msgstr "А_бнаўленні"
 
-#: src/gs-shell.ui:274 src/gs-shell.ui:354
+#: src/gs-shell.ui:275 src/gs-shell.ui:346
 msgid "Go back"
 msgstr "Вярнуцца"
 
@@ -4783,7 +4802,7 @@ msgid "Unknown"
 msgstr "Невядома"
 
 #. Translators: This is the title of the dialog which contains information about the storage or download size needed for an app
-#: src/gs-storage-context-dialog.ui:5
+#: src/gs-storage-context-dialog.ui:6
 msgid "Storage"
 msgstr "Сховішча"
 
@@ -4814,7 +4833,7 @@ msgstr "%s (спампоўванне)"
 msgid "%s (Removing)"
 msgstr "%s (выдаленне)"
 
-#: src/gs-toast.c:58
+#: src/gs-toast.c:58 src/gs-toast.c:68
 msgid "_Details"
 msgstr "_Падрабязнасці"
 
@@ -4840,56 +4859,56 @@ msgid "Installed on %s"
 msgstr "Усталявана %s"
 
 #. TRANSLATORS: this is the title of the installed updates dialog window
-#: src/gs-update-dialog.c:130
+#: src/gs-update-dialog.c:131
 msgid "Installed Updates"
 msgstr "Усталяваныя абнаўленні"
 
-#: src/gs-update-dialog.ui:71
+#: src/gs-update-dialog.ui:66
 msgid "No Updates Installed"
 msgstr "Абнаўленні не ўсталяваны"
 
-#: src/gs-update-monitor.c:216
+#: src/gs-update-monitor.c:215
 msgid "Updates Are Out of Date"
 msgstr "Абнаўленні састарэлі"
 
-#: src/gs-update-monitor.c:217
+#: src/gs-update-monitor.c:216
 msgid "Please check for available updates"
 msgstr "Праверце даступныя абнаўленні"
 
-#: src/gs-update-monitor.c:223
+#: src/gs-update-monitor.c:222
 msgid "Critical Updates Ready to Install"
 msgstr "Крытычнае абнаўленні гатовы да ўсталявання"
 
-#: src/gs-update-monitor.c:224
+#: src/gs-update-monitor.c:223
 msgid "Install critical updates as soon as possible"
 msgstr "Усталёўвайце крытычныя абнаўленні як мага хутчэй"
 
-#: src/gs-update-monitor.c:227
+#: src/gs-update-monitor.c:226
 msgid "Critical Updates Available to Download"
 msgstr "Крытычныя абнаўленні даступны для спампоўвання"
 
-#: src/gs-update-monitor.c:228
+#: src/gs-update-monitor.c:227
 msgid "Download critical updates as soon as possible"
 msgstr "Спампоўвайце крытычныя абнаўленні як мага хутчэй"
 
-#: src/gs-update-monitor.c:234
+#: src/gs-update-monitor.c:233
 msgid "Updates Ready to Install"
 msgstr "Абнаўленні гатовы да ўсталявання"
 
-#: src/gs-update-monitor.c:235
+#: src/gs-update-monitor.c:234
 msgid "Software updates are ready and waiting"
 msgstr "Абнаўленні ПЗ гатовы да ўсталявання і чакаюць"
 
-#: src/gs-update-monitor.c:241
+#: src/gs-update-monitor.c:240
 msgid "Updates Available to Download"
 msgstr "Абнаўленні даступны для спампоўвання"
 
-#: src/gs-update-monitor.c:242
+#: src/gs-update-monitor.c:241
 msgid "Software updates can be downloaded"
 msgstr "Абнаўленні ПЗ даступны для спампоўвання"
 
 #. TRANSLATORS: apps were auto-updated and restart is required
-#: src/gs-update-monitor.c:358
+#: src/gs-update-monitor.c:357
 #, c-format
 msgid "%u App Updated — Restart Required"
 msgid_plural "%u Apps Updated — Restart Required"
@@ -4898,7 +4917,7 @@ msgstr[1] "Абноўлена %u праграмы — патрабуецца п�
 msgstr[2] "Абноўлена %u праграм — патрабуецца перазапуск"
 
 #. TRANSLATORS: apps were auto-updated
-#: src/gs-update-monitor.c:364
+#: src/gs-update-monitor.c:363
 #, c-format
 msgid "%u App Updated"
 msgid_plural "%u Apps Updated"
@@ -4907,24 +4926,24 @@ msgstr[1] "Абноўлена %u праграмы"
 msgstr[2] "Абноўлена %u праграм"
 
 #. TRANSLATORS: %1 is an app name, e.g. Firefox
-#: src/gs-update-monitor.c:375
+#: src/gs-update-monitor.c:374
 #, c-format
 msgid "%s has been updated."
 msgstr "%s — абнаўленне выканана."
 
 #. TRANSLATORS: the app needs restarting
-#: src/gs-update-monitor.c:378
+#: src/gs-update-monitor.c:377
 msgid "Please restart the app."
 msgstr "Перазапусціце праграму."
 
 #. TRANSLATORS: %1 and %2 are both app names, e.g. Firefox
-#: src/gs-update-monitor.c:386
+#: src/gs-update-monitor.c:385
 #, c-format
 msgid "%s and %s have been updated."
 msgstr "%s і %s — абнаўленне выканана."
 
 #. TRANSLATORS: at least one app needs restarting
-#: src/gs-update-monitor.c:392 src/gs-update-monitor.c:411
+#: src/gs-update-monitor.c:391 src/gs-update-monitor.c:410
 #, c-format
 msgid "%u app requires a restart."
 msgid_plural "%u apps require a restart."
@@ -4933,7 +4952,7 @@ msgstr[1] "%u праграмам патрабуецца перазапуск."
 msgstr[2] "%u праграмам патрабуецца перазапуск."
 
 #. TRANSLATORS: %1, %2 and %3 are all app names, e.g. Firefox
-#: src/gs-update-monitor.c:404
+#: src/gs-update-monitor.c:403
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "У тым ліку %s, %s і %s."
@@ -4951,13 +4970,13 @@ msgstr ""
 
 #. TRANSLATORS: this is a distro upgrade, the replacement would be the
 #. * distro name, e.g. 'Fedora'
-#: src/gs-update-monitor.c:761
+#: src/gs-update-monitor.c:760
 #, c-format
 msgid "A new version of %s is available to install"
 msgstr "Новая версія %s даступна для ўсталявання"
 
 #. TRANSLATORS: this is a distro upgrade
-#: src/gs-update-monitor.c:765
+#: src/gs-update-monitor.c:764
 msgid "Software Upgrade Available"
 msgstr "Даступна абнаўленне праграмнага забеспячэння"
 
@@ -5015,24 +5034,24 @@ msgid "Review"
 msgstr "Праглядзець"
 
 #. TRANSLATORS: this is when the offline update failed
-#: src/gs-update-monitor.c:1338
+#: src/gs-update-monitor.c:1341
 msgid "Failed To Update"
 msgstr "Не ўдалося абнавіць"
 
 #. TRANSLATORS: the user must have updated manually after
 #. * the updates were prepared
-#: src/gs-update-monitor.c:1343
+#: src/gs-update-monitor.c:1346
 msgid "The system was already up to date."
 msgstr "Сістэма ўжо абноўлена."
 
 #. TRANSLATORS: the user aborted the update manually
-#: src/gs-update-monitor.c:1348
+#: src/gs-update-monitor.c:1351
 msgid "The update was cancelled."
 msgstr "Абнаўленне скасавана."
 
 #. TRANSLATORS: the package manager needed to download
 #. * something with no network available
-#: src/gs-update-monitor.c:1353
+#: src/gs-update-monitor.c:1356
 msgid ""
 "Internet access was required but wasn’t available. Please make sure that you "
 "have internet access and try again."
@@ -5041,7 +5060,7 @@ msgstr ""
 "інтэрнэту і паўтарыце спробу."
 
 #. TRANSLATORS: if the package is not signed correctly
-#: src/gs-update-monitor.c:1358
+#: src/gs-update-monitor.c:1361
 msgid ""
 "There were security issues with the update. Please consult your software "
 "provider for more details."
@@ -5050,13 +5069,13 @@ msgstr ""
 "звярніцеся да пастаўшчыка праграмнага забеспячэння."
 
 #. TRANSLATORS: we ran out of disk space
-#: src/gs-update-monitor.c:1363
+#: src/gs-update-monitor.c:1366
 msgid ""
 "There wasn’t enough disk space. Please free up some space and try again."
 msgstr "Недастаткова месца на дыску, вызваліце месца і паўтарыце спробу."
 
 #. TRANSLATORS: We didn't handle the error type
-#: src/gs-update-monitor.c:1367
+#: src/gs-update-monitor.c:1370
 msgid ""
 "We’re sorry: the update failed to install. Please wait for another update "
 "and try again. If the problem persists, contact your software provider."
@@ -5066,40 +5085,40 @@ msgstr ""
 "праграмнага забеспячэння."
 
 #. TRANSLATORS: This is the time when we last checked for updates
-#: src/gs-updates-page.c:255
+#: src/gs-updates-page.c:256
 #, c-format
 msgid "Last checked: %s"
 msgstr "Апошняя праверка адбывалася %s"
 
-#: src/gs-updates-page.c:304
+#: src/gs-updates-page.c:313
 msgid "Stop"
 msgstr "Спыніць"
 
-#: src/gs-updates-page.c:313 src/gs-updates-page.c:325
+#: src/gs-updates-page.c:322 src/gs-updates-page.c:334
 msgid "Check for Updates"
 msgstr "Праверыць абнаўленні"
 
 #. TRANSLATORS:  the first %s is the distro name, e.g. 'Fedora'
 #. * and the second %s is the distro version, e.g. '25'
-#: src/gs-updates-page.c:575
+#: src/gs-updates-page.c:586
 #, c-format
 msgid "%s %s has stopped receiving critical software updates"
 msgstr "%s %s больш не будзе атрымліваць крытычныя абнаўленні ПЗ"
 
 #. TRANSLATORS: This message is meant to tell users that they need to upgrade
 #. * or else their distro will not get important updates.
-#: src/gs-updates-page.c:581
+#: src/gs-updates-page.c:592
 msgid "Your operating system has stopped receiving critical software updates"
 msgstr ""
 "Ваша аперацыйная сістэма больш не будзе атрымліваць крытычныя абнаўленні ПЗ"
 
 #. TRANSLATORS: this is to explain that downloading updates may cost money
-#: src/gs-updates-page.c:850
+#: src/gs-updates-page.c:848
 msgid "Charges May Apply"
 msgstr "Можа спаганяцца плата"
 
 #. TRANSLATORS: we need network to do the updates check
-#: src/gs-updates-page.c:852
+#: src/gs-updates-page.c:850
 msgid ""
 "Checking for updates while using mobile broadband could cause you to incur "
 "charges."
@@ -5108,7 +5127,7 @@ msgstr ""
 "непрадбачаных выдаткаў."
 
 #. TRANSLATORS: this is a link to the control-center network panel
-#: src/gs-updates-page.c:856
+#: src/gs-updates-page.c:854
 msgid "Check _Anyway"
 msgstr "Усё адно _праверыць"
 
@@ -5128,7 +5147,7 @@ msgstr ""
 msgid "Network _Settings"
 msgstr "_Налады сеткі"
 
-#: src/gs-updates-page.c:911
+#: src/gs-updates-page.c:892
 msgid "Software Upgrades Downloaded"
 msgstr "Абнаўленні ПЗ спампаваныя"
 
@@ -5137,39 +5156,39 @@ msgid "Software upgrades have been downloaded and are ready to be installed."
 msgstr ""
 "Абнаўленні праграмнага забеспячэння спампаваны і гатовы да ўсталявання."
 
-#: src/gs-updates-page.c:1247
+#: src/gs-updates-page.c:1220
 msgid "Check for updates"
 msgstr "Праверыць абнаўленні"
 
-#: src/gs-updates-page.c:1283
+#: src/gs-updates-page.c:1256
 msgctxt "Apps to be updated"
 msgid "Updates"
 msgstr "Абнаўленні"
 
-#: src/gs-updates-page.ui:6
+#: src/gs-updates-page.ui:7
 msgid "Updates page"
 msgstr "Старонка абнаўленняў"
 
 #. TRANSLATORS: the updates panel is starting up.
-#: src/gs-updates-page.ui:58
+#: src/gs-updates-page.ui:59
 msgid "Loading Updates"
 msgstr "Загрузка абнаўленняў"
 
 #. TRANSLATORS: the updates panel is starting up.
-#: src/gs-updates-page.ui:71
+#: src/gs-updates-page.ui:72
 msgid "This could take a while"
 msgstr "Гэта можа заняць некаторы час"
 
 #. TRANSLATORS: This means all software (plural) installed on this system is up to date.
-#: src/gs-updates-page.ui:179
+#: src/gs-updates-page.ui:192
 msgid "Up to Date"
 msgstr "Абнаўленне не патрабуецца"
 
-#: src/gs-updates-page.ui:218
+#: src/gs-updates-page.ui:231
 msgid "Use Mobile Data?"
 msgstr "Выкарыстоўваць мабільную сетку?"
 
-#: src/gs-updates-page.ui:219
+#: src/gs-updates-page.ui:232
 msgid ""
 "Checking for updates when using mobile broadband could cause you to incur "
 "charges"
@@ -5177,40 +5196,40 @@ msgstr ""
 "Выкарыстанне мабільнай сеткі для праверкі абнаўленняў можа прывесці да "
 "непрадбачаных выдаткаў"
 
-#: src/gs-updates-page.ui:222
+#: src/gs-updates-page.ui:235
 msgid "_Check Anyway"
 msgstr "_Усё адно праверыць"
 
-#: src/gs-updates-page.ui:238
+#: src/gs-updates-page.ui:254
 msgid "No Connection"
 msgstr "Няма злучэння"
 
-#: src/gs-updates-page.ui:239
+#: src/gs-updates-page.ui:255
 msgid "Go online to check for updates"
 msgstr "Злучыцеся з сеткай, каб праверыць абнаўленні"
 
-#: src/gs-updates-page.ui:242
+#: src/gs-updates-page.ui:258
 msgid "_Network Settings"
 msgstr "_Сеткавыя налады"
 
-#: src/gs-updates-page.ui:262 src/gs-updates-page.ui:276
+#: src/gs-updates-page.ui:278 src/gs-updates-page.ui:292
 msgid "Error"
 msgstr "Памылка"
 
-#: src/gs-updates-page.ui:277
+#: src/gs-updates-page.ui:293
 msgid "Updates are automatically managed"
 msgstr "Абнаўленне выконваецца аўтаматычна"
 
-#: src/gs-updates-paused-banner.c:45
+#: src/gs-updates-paused-banner.c:44
 msgid "Software Updates Paused"
 msgstr "Абнаўленне ПЗ прыпынена"
 
-#: src/gs-updates-paused-banner.c:48
+#: src/gs-updates-paused-banner.c:47
 msgid ""
 "Automatic software updates have been paused for the following reasons:\n"
 msgstr "Аўтаматычнае абнаўленне ПЗ прыпынена па адной з наступных прычын:\n"
 
-#: src/gs-updates-paused-banner.c:50
+#: src/gs-updates-paused-banner.c:49
 msgid ""
 "\n"
 "• The current network connection is metered"
@@ -5218,7 +5237,7 @@ msgstr ""
 "\n"
 "• Выкарыстоўваецца злучэнне з тарыфікацыяй"
 
-#: src/gs-updates-paused-banner.c:52
+#: src/gs-updates-paused-banner.c:51
 msgid ""
 "\n"
 "• The current network connection prohibits large downloads"
@@ -5226,7 +5245,7 @@ msgstr ""
 "\n"
 "• Выкарыстоўваецца злучэнне, якое не дазваляе спампоўваць вялікія файлы"
 
-#: src/gs-updates-paused-banner.c:54
+#: src/gs-updates-paused-banner.c:53
 msgid ""
 "\n"
 "• Power saver mode is active"
@@ -5234,7 +5253,7 @@ msgstr ""
 "\n"
 "• Задзейнічаны рэжым энергазберажэння"
 
-#: src/gs-updates-paused-banner.c:56
+#: src/gs-updates-paused-banner.c:55
 msgid ""
 "\n"
 "• Game mode is active"
@@ -5242,7 +5261,7 @@ msgstr ""
 "\n"
 "• Задзейнічаны рэжым гульні"
 
-#: src/gs-updates-paused-banner.c:80
+#: src/gs-updates-paused-banner.c:79
 msgid "Software updates paused"
 msgstr "Абнаўленне праграмнага забеспячэння прыпынена"
 
@@ -5267,17 +5286,17 @@ msgstr "Задзейнічаны рэжым энергазберажэння - �
 
 #. TRANSLATORS: This is the button for installing all
 #. * offline updates
-#: src/gs-updates-section.c:375
+#: src/gs-updates-section.c:321
 msgid "_Restart & Update…"
 msgstr "_Перазапусціць і абнавіць…"
 
 #. TRANSLATORS: This is the button for upgrading all
 #. * online-updatable apps
-#: src/gs-updates-section.c:381
+#: src/gs-updates-section.c:327
 msgid "U_pdate All"
 msgstr "Абнавіць _усё"
 
-#: src/gs-updates-section.c:458
+#: src/gs-updates-section.c:404
 msgid "Software Updates Downloaded"
 msgstr "Абнаўленні ПЗ спампаваныя"
 
@@ -5288,29 +5307,29 @@ msgstr ""
 
 #. TRANSLATORS: This is the header for system firmware that
 #. * requires a reboot to apply
-#: src/gs-updates-section.c:550
+#: src/gs-updates-section.c:496
 msgid "Integrated Firmware"
 msgstr "Убудаванае ПЗ"
 
 #. TRANSLATORS: This is the header for offline OS and offline
 #. * app updates that require a reboot to apply
-#: src/gs-updates-section.c:555
+#: src/gs-updates-section.c:501
 msgid "Requires Restart"
 msgstr "Патрабуе перазапуску"
 
 #. TRANSLATORS: This is the header for online runtime and
 #. * app updates, typically flatpaks or snaps
-#: src/gs-updates-section.c:560
+#: src/gs-updates-section.c:506
 msgid "App Updates"
 msgstr "Абнаўленні праграм"
 
 #. TRANSLATORS: This is the header for device firmware that can
 #. * be installed online
-#: src/gs-updates-section.c:565
+#: src/gs-updates-section.c:511
 msgid "Device Firmware"
 msgstr "Убудаванае ПЗ прылады"
 
-#: src/gs-updates-section.ui:33 src/gs-upgrade-banner.ui:72
+#: src/gs-updates-section.ui:33 src/gs-upgrade-banner.ui:73
 #: plugins/packagekit/gs-packagekit-task.c:154
 msgid "_Download"
 msgstr "_Спампаваць"
@@ -5349,25 +5368,25 @@ msgstr "Спампавана %s з %s"
 msgid "%u%% downloaded"
 msgstr "Спампавана %u%%"
 
-#: src/gs-upgrade-banner.ui:42
+#: src/gs-upgrade-banner.ui:43
 msgid "A major upgrade, with new features and added polish."
 msgstr "Вялікае абнаўленне з новымі магчымасцямі і ўдасканаленнямі."
 
-#: src/gs-upgrade-banner.ui:187
+#: src/gs-upgrade-banner.ui:188
 msgid "_Restart & Upgrade…"
 msgstr "_Перазапусціць і абнавіць…"
 
-#: src/gs-upgrade-banner.ui:215
+#: src/gs-upgrade-banner.ui:216
 msgid "Remember to back up data and files before upgrading."
 msgstr ""
 "Не забудзьцеся стварыць рэзервовую копію даных і файлаў перад абнаўленнем."
 
-#: lib/gs-utils.c:523 lib/gs-utils.c:554
+#: lib/gs-utils.c:581 lib/gs-utils.c:612
 #, c-format
 msgid "Failed to delete file “%s”: %s"
 msgstr "Не ўдалося выдаліць файл «%s»: %s"
 
-#: lib/gs-utils.c:565
+#: lib/gs-utils.c:623
 #, c-format
 msgid "Failed to delete directory “%s”: %s"
 msgstr "Не ўдалося выдаліць папку «%s»: %s"
@@ -5383,21 +5402,21 @@ msgid ""
 "Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;So"
 "ftware;App;Store;"
 msgstr ""
-"Абнаўленні;Абнавіць;Крыніцы;Сховішчы;Рэпазіторыі;Параметры;Усталяваць;Высталя"
-"ваць;Выдаліць;Праграма;Праграмнае;забеспячэнне;Крама;Program;Software;App;Sto"
-"re;"
+"Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;So"
+"ftware;App;Store;Абнаўленні;Абнавіць;Крыніцы;Сховішчы;Рэпазіторыі;Параметры;У"
+"сталяваць;Высталяваць;Выдаліць;Праграма;Праграмнае;забеспячэнне;Крама;"
 
 #. TRANSLATORS: this is a group of updates that are not
 #. * packages and are not shown in the main list
 #: plugins/core/gs-plugin-generic-updates.c:71
-#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3302
+#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3167
 msgid "System Updates"
 msgstr "Абнаўленні сістэмы"
 
 #. TRANSLATORS: this is a longer description of the
 #. * "System Updates" string
 #: plugins/core/gs-plugin-generic-updates.c:76
-#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3307
+#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3172
 msgid ""
 "General system updates, such as security or bug fixes, and performance "
 "improvements."
@@ -5406,17 +5425,17 @@ msgstr ""
 "памылак, а таксама паляпшэнне прадукцыйнасці."
 
 #. Translators: The '%s' is replaced with the OS name, like "Endless OS"
-#: plugins/eos-updater/gs-plugin-eos-updater.c:689
+#: plugins/eos-updater/gs-plugin-eos-updater.c:688
 #, c-format
 msgid "%s update with new features and fixes."
 msgstr "Абнаўленне %s з новымі магчымасцямі і выпраўленнямі."
 
-#: plugins/eos-updater/gs-plugin-eos-updater.c:1306
+#: plugins/eos-updater/gs-plugin-eos-updater.c:1331
 msgid "EOS update service could not fetch and apply the update."
 msgstr "Сэрвісу абнаўлення EOS не ўдалося атрымаць і ўжыць абнаўленне."
 
+#: plugins/epiphany/gs-plugin-epiphany.c:496
 #: plugins/epiphany/gs-plugin-epiphany.c:500
-#: plugins/epiphany/gs-plugin-epiphany.c:504
 msgid "Web App"
 msgstr "Вэб-праграма"
 
@@ -5434,7 +5453,7 @@ msgid "Downloading upgrade information…"
 msgstr "Спампоўванне звестак пра абнаўленне…"
 
 #. TRANSLATORS: this is a title for Fedora distro upgrades
-#: plugins/fedora-pkgdb-collections/gs-plugin-fedora-pkgdb-collections.c:413
+#: plugins/fedora-pkgdb-collections/gs-plugin-fedora-pkgdb-collections.c:417
 #: plugins/opensuse-distro-upgrade/gs-plugin-opensuse-distro-upgrade.c:95
 msgid ""
 "Upgrade for the latest features, performance and stability improvements."
@@ -5574,12 +5593,12 @@ msgid "Filesystem access to %s"
 msgstr "Доступ файлавай сістэмы да %s"
 
 #. TRANSLATORS: status text when downloading new metadata
-#: plugins/flatpak/gs-flatpak.c:1379
+#: plugins/flatpak/gs-flatpak.c:1374
 #, c-format
 msgid "Getting flatpak metadata for %s…"
 msgstr "Атрыманне метаданых flatpak для %s…"
 
-#: plugins/flatpak/gs-flatpak.c:3607
+#: plugins/flatpak/gs-flatpak.c:3590
 #, c-format
 msgid "Failed to refine addon ‘%s’: %s"
 msgstr "Не ўдалося ўдакладніць дадатак «%s»: %s"
@@ -5596,17 +5615,17 @@ msgstr "Усталявана сістэмай"
 msgid "App ID"
 msgstr "ID праграмы"
 
-#: plugins/flatpak/gs-plugin-flatpak.c:1338
+#: plugins/flatpak/gs-plugin-flatpak.c:1353
 #, c-format
 msgid "Failed to add to install for addon ‘%s’: %s"
 msgstr "Не ўдалося ўсталяваць дадатак «%s»: %s"
 
-#: plugins/flatpak/gs-plugin-flatpak.c:1352
+#: plugins/flatpak/gs-plugin-flatpak.c:1367
 #, c-format
 msgid "Failed to add to uninstall for addon ‘%s’: %s"
 msgstr "Не ўдалося выдаліць дадатак «%s»: %s"
 
-#: plugins/flatpak/gs-plugin-flatpak.c:1619
+#: plugins/flatpak/gs-plugin-flatpak.c:1956
 #, c-format
 msgid ""
 "Remote “%s” doesn't allow install of “%s”, possibly due to its filter. "
@@ -5843,11 +5862,11 @@ msgstr "Абнаўленне для док-станцыі %s"
 msgid "%s USB Dock Update"
 msgstr "Абнаўленне для док-станцыі USB %s"
 
-#: plugins/fwupd/gs-plugin-fwupd.c:1737
+#: plugins/fwupd/gs-plugin-fwupd.c:1922
 msgid "Firmware update could not be applied: "
 msgstr "Немагчыма ўжыць абнаўленне ўбудаванага ПЗ: "
 
-#: plugins/fwupd/gs-plugin-fwupd.c:1877
+#: plugins/fwupd/gs-plugin-fwupd.c:914
 msgid "Firmware"
 msgstr "Убудаванае ПЗ"
 
@@ -5901,15 +5920,15 @@ msgstr ""
 "праграмнага забеспячэння будзе адключана, пакуль не выдалены або не "
 "абноўлены непадпісаныя абнаўленні."
 
-#: plugins/packagekit/gs-plugin-packagekit.c:355
+#: plugins/packagekit/gs-plugin-packagekit.c:1568
 msgid "Packages"
 msgstr "Пакеты"
 
-#: plugins/packagekit/gs-plugin-packagekit.c:3221
+#: plugins/packagekit/gs-plugin-packagekit.c:1473
 msgid "Failed to install updates: "
 msgstr "Не ўдалося ўсталяваць абнаўленні: "
 
-#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3016
+#: plugins/rpm-ostree/gs-plugin-rpm-ostree.c:3267
 msgid "Operating System (OSTree)"
 msgstr "Аперацыйная сістэма (OSTree)"
 

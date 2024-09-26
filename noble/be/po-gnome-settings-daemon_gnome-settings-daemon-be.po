@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-05-24 06:27+0000\n"
-"X-Generator: Launchpad (build 0e1f616671af724398db43b36ddfb3ed1f2682ec)\n"
+"X-Launchpad-Export-Date: 2024-09-25 22:24+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: be\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
 "X-Project-Style: gnome\n"
@@ -1426,6 +1426,10 @@ msgid ""
 "only honor the 'nothing' action, and will shutdown otherwise. Tablets always "
 "suspend, ignoring all the other action options."
 msgstr ""
+"Дзеянне, якое трэба выканаць пры націсканні кнопкі сілкавання. На "
+"віртуальных машынах дзейнічае толькі значэнне nothing (нічога), а пры іншых "
+"выконваецца выключэнне. На планшэтах заўсёды выконваецца прыпыненне працы, а "
+"ўсе іншыя налады ігнаруюцца."
 
 #: data/org.gnome.settings-daemon.plugins.power.gschema.xml.in:68
 msgid "Enable power-saver profile when battery is low"
@@ -1729,11 +1733,11 @@ msgstr "Рэжым палёту адключаны"
 msgid "Hardware Airplane Mode"
 msgstr "Апаратны рэжым палёту"
 
-#: plugins/power/gpm-common.c:91
+#: plugins/power/gpm-common.c:88
 msgid "Unknown time"
 msgstr "Час невядомы"
 
-#: plugins/power/gpm-common.c:96
+#: plugins/power/gpm-common.c:93
 #, c-format
 msgid "%i minute"
 msgid_plural "%i minutes"
@@ -1741,7 +1745,7 @@ msgstr[0] "%i хвіліна"
 msgstr[1] "%i хвіліны"
 msgstr[2] "%i хвілін"
 
-#: plugins/power/gpm-common.c:106
+#: plugins/power/gpm-common.c:103
 #, c-format
 msgid "%i hour"
 msgid_plural "%i hours"
@@ -1751,19 +1755,19 @@ msgstr[2] "%i гадзін"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
-#: plugins/power/gpm-common.c:112
+#: plugins/power/gpm-common.c:109
 #, c-format
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
 
-#: plugins/power/gpm-common.c:113
+#: plugins/power/gpm-common.c:110
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "гадзіна"
 msgstr[1] "гадзіны"
 msgstr[2] "гадзін"
 
-#: plugins/power/gpm-common.c:114
+#: plugins/power/gpm-common.c:111
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "хвіліна"
@@ -1771,7 +1775,7 @@ msgstr[1] "хвіліны"
 msgstr[2] "хвілін"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gpm-common.c:424 plugins/power/gsd-power-manager.c:925
+#: plugins/power/gpm-common.c:419 plugins/power/gsd-power-manager.c:925
 #: plugins/power/gsd-power-manager.c:1009
 msgid "Battery is critically low"
 msgstr "Крытычна нізкі зарад батарэі"
@@ -2513,43 +2517,43 @@ msgid "UPS is Empty"
 msgstr "Батарэя UPS разраджана"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:1496
+#: plugins/power/gsd-power-manager.c:1494
 msgid "Lid has been opened"
 msgstr "Вечка ноўтбука адкрыта"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:1530
+#: plugins/power/gsd-power-manager.c:1528
 msgid "Lid has been closed"
 msgstr "Вечка ноўтбука закрыта"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:2183
+#: plugins/power/gsd-power-manager.c:2178
 msgid "On battery power"
 msgstr "Ад батарэі"
 
 #. TRANSLATORS: this is the sound description
-#: plugins/power/gsd-power-manager.c:2188
+#: plugins/power/gsd-power-manager.c:2183
 msgid "On AC power"
 msgstr "Ад электрасеткі"
 
-#: plugins/power/gsd-power-manager.c:2457
+#: plugins/power/gsd-power-manager.c:2452
 msgid "Automatic logout"
 msgstr "Аўтаматычны выхад з сеанса"
 
-#: plugins/power/gsd-power-manager.c:2457
+#: plugins/power/gsd-power-manager.c:2452
 msgid "You will soon log out because of inactivity."
 msgstr "Неўзабаве ваш сеанс будзе завершаны з-за бяздзейнасці."
 
-#: plugins/power/gsd-power-manager.c:2462
+#: plugins/power/gsd-power-manager.c:2457
 msgid "Automatic suspend"
 msgstr "Аўтаматычнае прыпыненне працы"
 
+#: plugins/power/gsd-power-manager.c:2457
 #: plugins/power/gsd-power-manager.c:2462
-#: plugins/power/gsd-power-manager.c:2467
 msgid "Suspending soon because of inactivity."
 msgstr "Неўзабаве праца прыпыніцца з-за бяздзейнасці."
 
-#: plugins/power/gsd-power-manager.c:2467
+#: plugins/power/gsd-power-manager.c:2462
 msgid "Automatic hibernation"
 msgstr "Аўтаматычная гібернацыя"
 
@@ -2873,6 +2877,8 @@ msgid ""
 "active. If you want to activate the device, disable the USB protection and "
 "re-plug the device."
 msgstr ""
+"Новая ўстаўленая прылада была заблакіравана, бо дзейнічае абарона USB. Калі "
+"хочаце задзейнічаць прыладу, адключыце абарону USB і перападлучыце прыладу."
 
 #. SECURITY:
 #. - A normal active user on the local machine does not need permission

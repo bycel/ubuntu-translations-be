@@ -15,30 +15,32 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-08-21 06:16+0000\n"
+"X-Launchpad-Export-Date: 2024-09-25 22:20+0000\n"
 "X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: be\n"
 
 #: data/org.gnome.remotedesktop.configure-system-daemon.policy.in:11
 msgid "Allow to configure gnome-remote-desktop's system daemon settings."
-msgstr ""
+msgstr "Дазваляе змяняць налады сістэмнага дэмана gnome-remote-desktop."
 
 #: data/org.gnome.remotedesktop.configure-system-daemon.policy.in:12
 msgid ""
 "Authentication is required to configure gnome-remote-desktop's system daemon "
 "settings."
 msgstr ""
+"Каб змяняць налады сістэмнага дэмана gnome-remote-desktop, патрабуецца "
+"праверка сапраўднасці."
 
 #: data/org.gnome.RemoteDesktop.Handover.desktop.in:4
 msgid "GNOME Remote Desktop Handover Daemon"
-msgstr ""
+msgstr "Дэман перадачы для аддаленага працоўнага стала GNOME"
 
-#: src/grd-ctl.c:59
+#: src/grd-ctl.c:70
 #, c-format
 msgid "Usage: %s [OPTIONS...] COMMAND [SUBCOMMAND]...\n"
 msgstr "Выкарыстанне: %s [ПАРАМЕТРЫ...] КАМАНДА [ПАДКАМАНДА ]...\n"
 
-#: src/grd-ctl.c:576
+#: src/grd-ctl.c:590
 msgid "Commands:\n"
 msgstr "Каманды:\n"
 
@@ -89,7 +91,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/grd-ctl.c:625
+#: src/grd-ctl.c:639
 msgid ""
 "  status [--show-credentials]                - Show current status\n"
 "\n"
@@ -99,15 +101,22 @@ msgid ""
 "  --system                                   - Configure system daemon\n"
 "  --help                                     - Print this help text\n"
 msgstr ""
+"  status [--show-credentials]                - Паказаць бягучы стан\n"
+"\n"
+"Параметры:\n"
+"  --headless                                 - Выкарыстоўваць аўтаномнае\n"
+"                                                сховішча ўліковых даных\n"
+"  --system                                   - Наладзіць сістэмны дэман\n"
+"  --help                                     - Вывесці гэту даведку\n"
 
-#: src/grd-daemon.c:1263
+#: src/grd-daemon.c:992
 msgid "GNOME Remote Desktop"
 msgstr "Аддалены працоўны стол GNOME"
 
 #: src/grd-daemon-handover.c:346
 #, c-format
 msgid "This connection is insecure"
-msgstr ""
+msgstr "Гэта неабароненае злучэнне"
 
 #. Translators: Don't translate "use redirection server name:i:1".
 #. * It's a menu option, and it's the same for all languages.
@@ -118,21 +127,24 @@ msgid ""
 "To make it secure set <b>“use redirection server name:i:1”</b> in the RDP "
 "config file."
 msgstr ""
+"Ці працягваць працу праз неабароненае злучэнне?\n"
+"Каб зрабіць яго абароненым, задайце параметр <b>“use redirection server "
+"name:i:1”</b> у файле канфігурацыі RDP."
 
-#: src/grd-daemon-handover.c:354
+#: src/grd-daemon-handover.c:305 src/grd-daemon-handover.c:367
 #, c-format
 msgid "Disconnect"
-msgstr ""
+msgstr "Адлучыцца"
 
-#: src/grd-daemon-handover.c:355
+#: src/grd-daemon-handover.c:306 src/grd-daemon-handover.c:368
 #, c-format
 msgid "Continue"
-msgstr ""
+msgstr "Працягнуць"
 
 #: src/grd-daemon-user.c:99
 #, c-format
 msgid "Desktop Sharing port changed"
-msgstr ""
+msgstr "Порт супольнага доступу да працоўнага стала зменены"
 
 #: src/grd-daemon-user.c:101
 #, c-format
@@ -141,6 +153,10 @@ msgid ""
 "This is because the Remote Sessions service has been activated and it has a "
 "higher priority to use port <b>%i</b>."
 msgstr ""
+"Порт супольнага доступу да працоўнага стала зменены з <b>%i</b> на "
+"<b>%i</b>.\n"
+"Гэта адбылося таму, што задзейнічаны сэрвіс аддаленых сеансаў і ён мае больш "
+"высокі прыярытэт на выкарыстанне порта <b>%i</b>."
 
 #: src/grd-daemon-user.c:107 src/grd-session-vnc.c:310
 #, c-format
@@ -159,7 +175,7 @@ msgid ""
 "desktop."
 msgstr ""
 "Карыстальнік камп'ютара «%s» спрабуе аддалена праглядаць або кіраваць вашым "
-"працоўным столом."
+"працоўным сталом."
 
 #: src/grd-session-vnc.c:309
 #, c-format
@@ -168,21 +184,24 @@ msgstr "Адхіліць"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:7
 msgid "The port used by the RDP server"
-msgstr ""
+msgstr "Порт, які выкарыстоўваецца серверам RDP"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:8
 msgid "The RDP client will connect to this port to use this RDP server."
 msgstr ""
+"Кліент RDP будзе падключацца да гэтага порта, каб выкарыстоўваць сервер RDP."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:14
 msgid "Search a different RDP port if the configured one is used"
-msgstr ""
+msgstr "Пошук іншага порта RDP, калі порт з налад ужо выкарыстоўваецца"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:15
 msgid ""
 "When negotiate-port is set to 'true' the RDP server will attempt to listen "
 "to the first available of the next 10 ports starting from the configured one."
 msgstr ""
+"Калі параметр negotiate-port мае значэнне «true», сервер RDP паспрабуе "
+"праслухоўваць першы даступны з 10 наступных партоў пасля порта з налад."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:23
 msgid "Whether the RDP backend is enabled or not"
@@ -258,21 +277,24 @@ msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
 msgid "The port used by the VNC server"
-msgstr ""
+msgstr "Порт, які выкарыстоўваецца серверам VNC"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:84
 msgid "The VNC client will connect to this port to use this VNC server."
 msgstr ""
+"Кліент VNC будзе падключацца да гэтага порта, каб выкарыстоўваць сервер VNC."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:90
 msgid "Search a different VNC port if the configured one is used"
-msgstr ""
+msgstr "Пошук іншага порта VNC, калі порт з налад ужо выкарыстоўваецца"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:91
 msgid ""
 "When negotiate-port is set to 'true' the VNC server will attempt to listen "
 "to the first available of the next 10 ports starting from the configured one."
 msgstr ""
+"Калі параметр negotiate-port мае значэнне «true», сервер VNC паспрабуе "
+"праслухоўваць першы даступны з 10 наступных партоў пасля порта з налад."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:99
 msgid "Whether the VNC backend is enabled or not"

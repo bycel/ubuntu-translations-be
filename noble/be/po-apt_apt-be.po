@@ -16,46 +16,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-08-21 06:18+0000\n"
+"X-Launchpad-Export-Date: 2024-09-25 22:27+0000\n"
 "X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 
 #. TRANSLATOR: Very short word to be displayed before unchanged files in 'apt-get update'
-#: apt-private/acqprogress.cc:78
+#: apt-private/acqprogress.cc:77
 #, c-format
 msgid "Hit:%lu %s"
 msgstr "Hit:%lu %s"
 
 #. TRANSLATOR: Very short word to be displayed for files processed in 'apt-get update'
 #. Potentially replaced later by "Hit:", "Ign:" or "Err:" if something (bad) happens
-#: apt-private/acqprogress.cc:100
+#: apt-private/acqprogress.cc:99
 #, c-format
 msgid "Get:%lu %s"
 msgstr "Get:%lu %s"
 
 #. TRANSLATOR: Very short word to be displayed for files in 'apt-get update'
 #. which failed to download, but the error is ignored (compare "Err:")
-#: apt-private/acqprogress.cc:131
+#: apt-private/acqprogress.cc:130
 #, c-format
 msgid "Ign:%lu %s"
 msgstr "Ign:%lu %s"
 
 #. TRANSLATOR: Very short word to be displayed for files in 'apt-get update'
 #. which failed to download and the error is critical (compare "Ign:")
-#: apt-private/acqprogress.cc:140
+#: apt-private/acqprogress.cc:139
 #, c-format
 msgid "Err:%lu %s"
 msgstr "Err:%lu %s"
 
-#: apt-private/acqprogress.cc:179
+#: apt-private/acqprogress.cc:178
 #, c-format
 msgid "Fetched %sB in %s (%sB/s)\n"
 msgstr "Атрымана %sБ за %s (%sБ/c)\n"
 
-#: apt-private/acqprogress.cc:248
+#: apt-private/acqprogress.cc:247
 msgid " [Working]"
 msgstr " [Апрацоўка]"
 
-#: apt-private/acqprogress.cc:316
+#: apt-private/acqprogress.cc:315
 #, c-format
 msgid ""
 "Media change: please insert the disc labeled\n"
@@ -63,7 +63,7 @@ msgid ""
 "in the drive '%s' and press [Enter]\n"
 msgstr ""
 
-#: apt-private/acqprogress.cc:353
+#: apt-private/acqprogress.cc:352
 msgid ""
 "Do you want to accept these changes and continue updating from this "
 "repository?"
@@ -89,11 +89,11 @@ msgstr "Немагчыма мінімізаваць набор абнаўлен�
 msgid " Done"
 msgstr " Выканана"
 
-#: apt-private/private-cachefile.cc:111 apt-private/private-install.cc:872
+#: apt-private/private-cachefile.cc:111 apt-private/private-install.cc:712
 msgid "You might want to run 'apt --fix-broken install' to correct these."
 msgstr ""
 
-#: apt-private/private-cachefile.cc:113 apt-private/private-install.cc:874
+#: apt-private/private-cachefile.cc:113 apt-private/private-install.cc:714
 msgid ""
 "Unmet dependencies. Try 'apt --fix-broken install' with no packages (or "
 "specify a solution)."
@@ -162,12 +162,12 @@ msgid "Virtual packages like '%s' can't be removed\n"
 msgstr "Віртуальныя пакеты як '%s' не могуць быць выдаленыя\n"
 
 #. TRANSLATORS: Note, this is not an interactive question
-#: apt-private/private-cacheset.cc:411 apt-private/private-install.cc:1301
+#: apt-private/private-cacheset.cc:411 apt-private/private-install.cc:1133
 #, c-format
 msgid "Package '%s' is not installed, so not removed. Did you mean '%s'?\n"
 msgstr ""
 
-#: apt-private/private-cacheset.cc:417 apt-private/private-install.cc:1307
+#: apt-private/private-cacheset.cc:417 apt-private/private-install.cc:1139
 #, c-format
 msgid "Package '%s' is not installed, so not removed\n"
 msgstr ""
@@ -177,16 +177,16 @@ msgstr ""
 msgid "Note, selecting '%s' instead of '%s'\n"
 msgstr "Заўважце, выбіраецца '%s' замест '%s'\n"
 
-#: apt-private/private-cmndline.cc:430
+#: apt-private/private-cmndline.cc:420
 msgid "Most used commands:"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:470
+#: apt-private/private-cmndline.cc:460
 #, c-format
 msgid "See %s for more information about the available commands."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:474
+#: apt-private/private-cmndline.cc:464
 msgid ""
 "Configuration options and syntax is detailed in apt.conf(5).\n"
 "Information about how to configure sources can be found in sources.list(5).\n"
@@ -194,24 +194,24 @@ msgid ""
 "Security details are available in apt-secure(8).\n"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:479
+#: apt-private/private-cmndline.cc:469
 msgid "This APT has Super Cow Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:481
+#: apt-private/private-cmndline.cc:471
 msgid "This APT helper has Super Meep Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:584
+#: apt-private/private-cmndline.cc:569
 msgid ""
 "--force-yes is deprecated, use one of the options starting with --allow "
 "instead."
 msgstr ""
 
 #: apt-private/private-depends.cc:35 apt-private/private-download.cc:255
-#: apt-private/private-show.cc:416 apt-private/private-show.cc:418
-#: apt-private/private-show.cc:481 cmdline/apt-mark.cc:57
-#: cmdline/apt-mark.cc:116 cmdline/apt-mark.cc:327
+#: apt-private/private-show.cc:411 apt-private/private-show.cc:413
+#: apt-private/private-show.cc:468 cmdline/apt-mark.cc:57
+#: cmdline/apt-mark.cc:116 cmdline/apt-mark.cc:314
 msgid "No packages found"
 msgstr "Не знойдзена аніводнага пакета"
 
@@ -252,11 +252,11 @@ msgstr "Не атрымалася вызначыць вольную прасто
 msgid "You don't have enough free space in %s."
 msgstr "Недастаткова вольнага месца на %s."
 
-#: apt-private/private-download.cc:380
+#: apt-private/private-download.cc:369
 msgid "Unable to lock the download directory"
 msgstr "Немагчыма заблакаваць дырэкторыю для загрузкі"
 
-#: apt-private/private-install.cc:59
+#: apt-private/private-install.cc:55
 msgid ""
 "Some packages could not be installed. This may mean that you have\n"
 "requested an impossible situation or if you are using the unstable\n"
@@ -277,11 +277,11 @@ msgstr ""
 #. "that package should be filed.") << std::endl;
 #. }
 #. 
-#: apt-private/private-install.cc:74 apt-private/private-install.cc:703
+#: apt-private/private-install.cc:70 apt-private/private-install.cc:551
 msgid "The following information may help to resolve the situation:"
 msgstr "Наступная інфармацыя магчыма дапаможа Вам выправіць сітуацыю:"
 
-#: apt-private/private-install.cc:80
+#: apt-private/private-install.cc:76
 msgid "Broken packages"
 msgstr "Зламаныя пакеты"
 
@@ -297,7 +297,7 @@ msgstr ""
 msgid "See %s for more details."
 msgstr ""
 
-#: apt-private/private-install.cc:211 apt-private/private-install.cc:481
+#: apt-private/private-install.cc:174 apt-private/private-install.cc:354
 msgid ""
 "Unable to fetch some archives, maybe run apt-get update or try with --fix-"
 "missing?"
@@ -305,106 +305,108 @@ msgstr ""
 "Немагчыма загрузіць некаторыя архівы, верагодна, трэба выканаць apt-get "
 "update або паспрабаваць паўтарыць запуск з ключом --fix-missing?"
 
-#: apt-private/private-install.cc:266
+#: apt-private/private-install.cc:206
 msgid "Internal error, InstallPackages was called with broken packages!"
 msgstr ""
 "Унутраная памылка, InstallPackages была выкліканая са зламанымі пакетамі!"
 
-#: apt-private/private-install.cc:275
+#: apt-private/private-install.cc:215
 msgid "Packages need to be removed but remove is disabled."
 msgstr "Пакеты неабходна выдаліць, але выдаленне забаронена."
 
-#: apt-private/private-install.cc:288
+#: apt-private/private-install.cc:224
 msgid ""
 "Essential packages were removed and -y was used without --allow-remove-"
 "essential."
 msgstr ""
 
-#: apt-private/private-install.cc:290
+#: apt-private/private-install.cc:226
 msgid "Packages were downgraded and -y was used without --allow-downgrades."
 msgstr ""
 
-#: apt-private/private-install.cc:292
+#: apt-private/private-install.cc:228
 msgid ""
 "Held packages were changed and -y was used without --allow-change-held-"
 "packages."
 msgstr ""
 
-#: apt-private/private-install.cc:308
+#: apt-private/private-install.cc:244
 msgid "Internal error, Ordering didn't finish"
 msgstr "Унутраная памылка, Ordering не завершаны"
 
-#: apt-private/private-install.cc:321
+#: apt-private/private-install.cc:257
 msgid "How odd... The sizes didn't match, email apt@packages.debian.org"
 msgstr ""
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement strings, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:328
+#: apt-private/private-install.cc:264
 #, c-format
 msgid "Need to get %sB/%sB of archives.\n"
 msgstr "Неабходна загрузіць %sB/%sB архіваў.\n"
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:333
+#: apt-private/private-install.cc:269
 #, c-format
 msgid "Need to get %sB of archives.\n"
 msgstr "Неабходна загрузіць %sB архіваў.\n"
 
-#: apt-private/private-install.cc:343
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-install.cc:277
 #, c-format
 msgid "After this operation, %sB of additional disk space will be used.\n"
 msgstr "Пасля гэтай аперацыі будзе выкарыстана %sB дадатковага месца.\n"
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-install.cc:405
+#: apt-private/private-install.cc:282
 #, c-format
 msgid "After this operation, %sB disk space will be freed.\n"
 msgstr "Пасля гэтай аперацыі будзе вызвалена %sB месца.\n"
 
-#: apt-private/private-install.cc:430 apt-private/private-install.cc:440
+#: apt-private/private-install.cc:305 apt-private/private-install.cc:315
 msgid "Trivial Only specified but this is not a trivial operation."
 msgstr ""
 "Паказана выкананне толькі трывіяльных аперацыяў, але гэтая аперацыя такой не "
 "з'яўляецца."
 
-#: apt-private/private-install.cc:432
+#: apt-private/private-install.cc:307
 msgid ""
 "Removing essential system-critical packages is not permitted. This might "
 "break the system."
 msgstr ""
 
-#: apt-private/private-install.cc:447 cmdline/apt-mark.cc:266
+#: apt-private/private-install.cc:320 cmdline/apt-mark.cc:253
 msgid "Do you want to continue?"
 msgstr ""
 
-#: apt-private/private-install.cc:449
+#: apt-private/private-install.cc:322
 msgid "Abort."
 msgstr "Перапынена."
 
-#: apt-private/private-install.cc:475
+#: apt-private/private-install.cc:348
 msgid "Some files failed to download"
 msgstr "Некаторыя файлы не атрымалася загрузіць"
 
-#: apt-private/private-install.cc:476 apt-private/private-source.cc:498
+#: apt-private/private-install.cc:349 apt-private/private-source.cc:492
 msgid "Download complete and in download only mode"
 msgstr "Паказаны рэжым \"толькі загрузка\", і яно завершана"
 
-#: apt-private/private-install.cc:484
+#: apt-private/private-install.cc:357
 msgid "--fix-missing and media swapping is not currently supported"
 msgstr "--fix-missing і змена носьбіта на гэтую хвіліну не падтрымліваецца"
 
-#: apt-private/private-install.cc:489
+#: apt-private/private-install.cc:362
 msgid "Unable to correct missing packages."
 msgstr "Немагчыма выправіць страчаныя пакеты."
 
-#: apt-private/private-install.cc:490
+#: apt-private/private-install.cc:363
 msgid "Aborting install."
 msgstr "Усталёўка спыненая."
 
-#: apt-private/private-install.cc:518
+#: apt-private/private-install.cc:391
 msgid ""
 "The following package disappeared from your system as\n"
 "all files have been overwritten by other packages:"
@@ -421,15 +423,15 @@ msgstr[2] ""
 "Названыя пакеты зніклі з вашае сістэмы, бо\n"
 "усе файлы былі перазапісаны іншымі пакетамі:"
 
-#: apt-private/private-install.cc:525
+#: apt-private/private-install.cc:398
 msgid "Note: This is done automatically and on purpose by dpkg."
 msgstr ""
 
-#: apt-private/private-install.cc:568
+#: apt-private/private-install.cc:441
 msgid "We are not supposed to delete stuff, can't start AutoRemover"
 msgstr "Нам не дазволена выдаляць, немагчыма запусціць AutoRemover"
 
-#: apt-private/private-install.cc:700
+#: apt-private/private-install.cc:548
 msgid ""
 "Hmm, seems like the AutoRemover destroyed something which really\n"
 "shouldn't happen. Please file a bug report against apt."
@@ -437,11 +439,11 @@ msgstr ""
 "Хм, выглядае так, што AutoRemover памылкова знішчыў нешта патрэбнае.\n"
 "Калі ласка адпраўце справаздачу аб недахопах у apt."
 
-#: apt-private/private-install.cc:707
+#: apt-private/private-install.cc:555
 msgid "Internal Error, AutoRemover broke stuff"
 msgstr "Унутраная памылка, AutoRemover нешта паламаў"
 
-#: apt-private/private-install.cc:728
+#: apt-private/private-install.cc:566
 msgid ""
 "The following package was automatically installed and is no longer required:"
 msgid_plural ""
@@ -453,7 +455,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Наступныя пакеты былі ўсталяваныя аўтаматычна і больш не патрэбныя:"
 
-#: apt-private/private-install.cc:736
+#: apt-private/private-install.cc:573
 #, c-format
 msgid "%lu package was automatically installed and is no longer required.\n"
 msgid_plural ""
@@ -464,68 +466,68 @@ msgstr[1] ""
 msgstr[2] ""
 "%lu пакетаў было ўстаноўлена аўтаматычна і яны больш не патрэбныя.\n"
 
-#: apt-private/private-install.cc:722
+#: apt-private/private-install.cc:583
 #, c-format
 msgid "Use '%s' to remove it."
 msgid_plural "Use '%s' to remove them."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-install.cc:953 apt-private/private-install.cc:960
-#: apt-private/private-install.cc:968
+#: apt-private/private-install.cc:793 apt-private/private-install.cc:800
+#: apt-private/private-install.cc:808
 #, c-format
 msgid "Unsupported file %s given on commandline"
 msgstr ""
 
-#: apt-private/private-install.cc:1134
+#: apt-private/private-install.cc:877
 msgid "The following additional packages will be installed:"
 msgstr ""
 
-#: apt-private/private-install.cc:1097
+#: apt-private/private-install.cc:966
 msgid "Suggested packages:"
 msgstr "Прапанаваныя пакеты:"
 
-#: apt-private/private-install.cc:1099
+#: apt-private/private-install.cc:968
 msgid "Recommended packages:"
 msgstr "Рэкамендаваныя пакеты:"
 
-#: apt-private/private-install.cc:1180
+#: apt-private/private-install.cc:1010
 #, c-format
 msgid "Skipping %s, it is already installed and upgrade is not set.\n"
 msgstr ""
 "Прапускаецца %s , бо пакет ужо ўсталяваны і опцыя АБНАЎЛЕННЕ не "
 "ўсталяваная.\n"
 
-#: apt-private/private-install.cc:1184
+#: apt-private/private-install.cc:1014
 #, c-format
 msgid "Skipping %s, it is not installed and only upgrades are requested.\n"
 msgstr ""
 "Прапускаецца %s, пакет не ўсталяваны, а запытваюцца толькі абнаўленні.\n"
 
-#: apt-private/private-install.cc:1196
+#: apt-private/private-install.cc:1026
 #, c-format
 msgid "Reinstallation of %s is not possible, it cannot be downloaded.\n"
 msgstr ""
 "Пераўсталёўка %s немагчыма, таму што гэты пакет не можа быць загружаны.\n"
 
 #. TRANSLATORS: First string is package name, second is version
-#: apt-private/private-install.cc:1202
+#: apt-private/private-install.cc:1032
 #, c-format
 msgid "%s is already the newest version (%s).\n"
 msgstr ""
 
-#: apt-private/private-install.cc:1221 cmdline/apt-get.cc:121
+#: apt-private/private-install.cc:1051 cmdline/apt-get.cc:121
 #: cmdline/apt-mark.cc:95
 #, c-format
 msgid "%s set to manually installed.\n"
 msgstr "%s пазначаны як усталяваны ўручную.\n"
 
-#: apt-private/private-install.cc:1254
+#: apt-private/private-install.cc:1084
 #, c-format
 msgid "Selected version '%s' (%s) for '%s'\n"
 msgstr "Абраная версія '%s' (%s) для '%s'\n"
 
-#: apt-private/private-install.cc:1263
+#: apt-private/private-install.cc:1093
 #, c-format
 msgid "Selected version '%s' (%s) for '%s' because of '%s'\n"
 msgstr "Абраная версія '%s' (%s) для '%s' праз '%s'\n"
@@ -552,80 +554,80 @@ msgid ""
 "      so don't depend on the relevance to the real current situation!\n"
 msgstr ""
 
-#: apt-private/private-output.cc:131 apt-private/private-show.cc:244
-#: apt-private/private-show.cc:250
+#: apt-private/private-output.cc:120 apt-private/private-show.cc:239
+#: apt-private/private-show.cc:244
 msgid "unknown"
 msgstr ""
 
-#: apt-private/private-output.cc:298
+#: apt-private/private-output.cc:287
 #, c-format
 msgid "[installed,upgradable to: %s]"
 msgstr ""
 
-#: apt-private/private-output.cc:301
+#: apt-private/private-output.cc:290
 msgid "[installed,local]"
 msgstr ""
 
-#: apt-private/private-output.cc:303
+#: apt-private/private-output.cc:292
 msgid "[installed,auto-removable]"
 msgstr ""
 
-#: apt-private/private-output.cc:305
+#: apt-private/private-output.cc:294
 msgid "[installed,automatic]"
 msgstr ""
 
-#: apt-private/private-output.cc:307
+#: apt-private/private-output.cc:296
 msgid "[installed]"
 msgstr ""
 
-#: apt-private/private-output.cc:310
+#: apt-private/private-output.cc:299
 #, c-format
 msgid "[upgradable from: %s]"
 msgstr ""
 
-#: apt-private/private-output.cc:314
+#: apt-private/private-output.cc:303
 msgid "[residual-config]"
 msgstr ""
 
-#: apt-private/private-output.cc:506
+#: apt-private/private-output.cc:418
 #, c-format
 msgid "but %s is installed"
 msgstr "але %s ужо ўсталяваны"
 
-#: apt-private/private-output.cc:508
+#: apt-private/private-output.cc:420
 #, c-format
 msgid "but %s is to be installed"
 msgstr "але %s будзе ўсталяваны"
 
-#: apt-private/private-output.cc:515
+#: apt-private/private-output.cc:427
 msgid "but it is not installable"
 msgstr "але яго немагчыма ўсталяваць"
 
-#: apt-private/private-output.cc:517
+#: apt-private/private-output.cc:429
 msgid "but it is a virtual package"
 msgstr "але гэта віртуальны пакет"
 
-#: apt-private/private-output.cc:520
+#: apt-private/private-output.cc:432
 msgid "but it is not going to be installed"
 msgstr "але ён не будзе ўсталяваны"
 
-#: apt-private/private-output.cc:520
+#: apt-private/private-output.cc:432
 msgid "but it is not installed"
 msgstr "але ён не ўсталяваны"
 
-#: apt-private/private-output.cc:525
+#: apt-private/private-output.cc:437
 msgid " or"
 msgstr " ці"
 
-#: apt-private/private-output.cc:539 apt-private/private-output.cc:552
+#: apt-private/private-output.cc:451 apt-private/private-output.cc:461
 msgid "The following packages have unmet dependencies:"
 msgstr "Пакеты, што маюць незадаволеныя залежнасці:"
 
-#: apt-private/private-output.cc:565
+#: apt-private/private-output.cc:471
 msgid "The following NEW packages will be installed:"
 msgstr "Наступныя НОВЫЯ пакеты будуць усталяваны:"
 
-#: apt-private/private-output.cc:589
+#: apt-private/private-output.cc:481
 msgid "The following packages will be REMOVED:"
 msgstr "Наступныя пакеты будуць ВЫДАЛЕНЫ:"
 
@@ -633,28 +635,28 @@ msgstr "Наступныя пакеты будуць ВЫДАЛЕНЫ:"
 msgid "The following upgrades have been deferred due to phasing:"
 msgstr ""
 
-#: apt-private/private-output.cc:620
+#: apt-private/private-output.cc:497
 msgid "The following packages have been kept back:"
 msgstr "Пакеты, якія пакінутыя ў нязменным стане:"
 
-#: apt-private/private-output.cc:631
+#: apt-private/private-output.cc:507
 msgid "The following packages will be upgraded:"
 msgstr "Наступныя пакеты будуць абноўлены:"
 
-#: apt-private/private-output.cc:648
+#: apt-private/private-output.cc:522
 msgid "The following packages will be DOWNGRADED:"
 msgstr "Наступныя пакеты будуць заменены на СТАРЫЯ версіі:"
 
-#: apt-private/private-output.cc:663
+#: apt-private/private-output.cc:535
 msgid "The following held packages will be changed:"
 msgstr "Пакеты, якія павінны застацца без зменаў, але будуць замененыя:"
 
-#: apt-private/private-output.cc:691
+#: apt-private/private-output.cc:562
 #, c-format
 msgid "%s (due to %s)"
 msgstr ""
 
-#: apt-private/private-output.cc:741
+#: apt-private/private-output.cc:612
 msgid ""
 "WARNING: The following essential packages will be removed.\n"
 "This should NOT be done unless you know exactly what you are doing!"
@@ -662,27 +664,27 @@ msgstr ""
 "УВАГА: Наступныя важныя пакеты будуць выдаленыя.\n"
 "Не рабіце гэтага, калі вы НЕ ўяўляеце сабе ўсе магчымыя наступствы!"
 
-#: apt-private/private-output.cc:776
+#: apt-private/private-output.cc:643
 #, c-format
 msgid "%lu upgraded, %lu newly installed, "
 msgstr "абноўлена %lu, ўстаноўлена %lu новых, "
 
-#: apt-private/private-output.cc:780
+#: apt-private/private-output.cc:647
 #, c-format
 msgid "%lu reinstalled, "
 msgstr "%lu пераўстаноўлены, "
 
-#: apt-private/private-output.cc:782
+#: apt-private/private-output.cc:649
 #, c-format
 msgid "%lu downgraded, "
 msgstr "%lu заменены на старыя версіі, "
 
-#: apt-private/private-output.cc:784
+#: apt-private/private-output.cc:651
 #, c-format
 msgid "%lu to remove and %lu not upgraded.\n"
 msgstr "для выдалення пазначаныя %lu пакетаў, і %lu пакетаў ня абноўленыя.\n"
 
-#: apt-private/private-output.cc:790
+#: apt-private/private-output.cc:655
 #, c-format
 msgid "%lu not fully installed or removed.\n"
 msgstr "не ўстаноўлена да канца або выдалена %lu пакетаў.\n"
@@ -691,7 +693,7 @@ msgstr "не ўстаноўлена да канца або выдалена %lu 
 #. e.g. "Do you want to continue? [Y/n] "
 #. The user has to answer with an input matching the
 #. YESEXPR/NOEXPR defined in your l10n.
-#: apt-private/private-output.cc:828
+#: apt-private/private-output.cc:690
 msgid "[Y/n]"
 msgstr "[Т/н]"
 
@@ -699,21 +701,21 @@ msgstr "[Т/н]"
 #. e.g. "Should this file be removed? [y/N] "
 #. The user has to answer with an input matching the
 #. YESEXPR/NOEXPR defined in your l10n.
-#: apt-private/private-output.cc:834
+#: apt-private/private-output.cc:696
 msgid "[y/N]"
 msgstr "[т/Н]"
 
 #. TRANSLATOR: "Yes" answer printed for a yes/no question if --assume-yes is set
-#: apt-private/private-output.cc:845
+#: apt-private/private-output.cc:707
 msgid "Y"
 msgstr "Т"
 
 #. TRANSLATOR: "No" answer printed for a yes/no question if --assume-no is set
-#: apt-private/private-output.cc:851
+#: apt-private/private-output.cc:713
 msgid "N"
 msgstr "Н"
 
-#: apt-private/private-output.cc:873
+#: apt-private/private-output.cc:735
 #, c-format
 msgid "Regex compilation error - %s"
 msgstr "Памылка кампіляцыі рэгулярнага выразу - %s"
@@ -726,7 +728,7 @@ msgstr "Вы мусіце задаць не менш за адзін шабло�
 msgid "Full Text Search"
 msgstr ""
 
-#: apt-private/private-show.cc:400
+#: apt-private/private-show.cc:395
 #, c-format
 msgid "There is %i additional record. Please use the '-a' switch to see it"
 msgid_plural ""
@@ -734,94 +736,94 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-show.cc:408
+#: apt-private/private-show.cc:403
 msgid "not a real package (virtual)"
 msgstr ""
 
-#: apt-private/private-show.cc:476
+#: apt-private/private-show.cc:463
 #, c-format
 msgid "Unable to locate package %s"
 msgstr "Немагчыма адшукаць пакет %s"
 
-#: apt-private/private-show.cc:502
+#: apt-private/private-show.cc:489
 msgid "Package files:"
 msgstr "Пералікі пакетаў:"
 
-#: apt-private/private-show.cc:511 apt-private/private-show.cc:595
+#: apt-private/private-show.cc:498 apt-private/private-show.cc:582
 msgid "Cache is out of sync, can't x-ref a package file"
 msgstr ""
 "Кэш не сынхранізаваны, немагчыма немагчыма знайсці спасылкі на пералік "
 "пакетаў"
 
 #. Show any packages have explicit pins
-#: apt-private/private-show.cc:525
+#: apt-private/private-show.cc:512
 msgid "Pinned packages:"
 msgstr "Прышпіленыя пакеты:"
 
 #. Print the package name and the version we are forcing to
-#: apt-private/private-show.cc:536
+#: apt-private/private-show.cc:523
 #, c-format
 msgid "%s -> %s with priority %d\n"
 msgstr ""
 
-#: apt-private/private-show.cc:542
+#: apt-private/private-show.cc:529
 msgid "  Installed: "
 msgstr "  Усталяваны: "
 
-#: apt-private/private-show.cc:543
+#: apt-private/private-show.cc:530
 msgid "  Candidate: "
 msgstr "  Кандыдат: "
 
-#: apt-private/private-show.cc:561 apt-private/private-show.cc:569
+#: apt-private/private-show.cc:548 apt-private/private-show.cc:556
 msgid "(none)"
 msgstr "(няма)"
 
 #. Show the priority tables
-#: apt-private/private-show.cc:574
+#: apt-private/private-show.cc:561
 msgid "  Version table:"
 msgstr "  Табліца версіяў:"
 
-#: apt-private/private-show.cc:586
+#: apt-private/private-show.cc:573
 msgid "phased"
 msgstr ""
 
-#: apt-private/private-source.cc:124
+#: apt-private/private-source.cc:118
 #, c-format
 msgid "Can not find a package for architecture '%s'"
 msgstr ""
 
-#: apt-private/private-source.cc:200
+#: apt-private/private-source.cc:194
 #, c-format
 msgid "Can not find a package '%s' with version '%s'"
 msgstr ""
 
-#: apt-private/private-source.cc:203
+#: apt-private/private-source.cc:197
 #, c-format
 msgid "Can not find a package '%s' with release '%s'"
 msgstr ""
 
-#: apt-private/private-source.cc:243
+#: apt-private/private-source.cc:237
 #, c-format
 msgid "Picking '%s' as source package instead of '%s'\n"
 msgstr "Абіраю '%s' як пакет зыходных тэкстаў замест пакета '%s'\n"
 
-#: apt-private/private-source.cc:295
+#: apt-private/private-source.cc:289
 #, c-format
 msgid "Can not find version '%s' of package '%s'"
 msgstr ""
 
-#: apt-private/private-source.cc:317
+#: apt-private/private-source.cc:311
 msgid "Must specify at least one package to fetch source for"
 msgstr ""
 "Пакажыце хаця адзін пакет, для якога неабходна загрузіць зыходныя тэксты"
 
-#: apt-private/private-source.cc:351 apt-private/private-source.cc:766
-#: apt-private/private-source.cc:776 apt-private/private-source.cc:803
+#: apt-private/private-source.cc:345 apt-private/private-source.cc:760
+#: apt-private/private-source.cc:770 apt-private/private-source.cc:797
 #, c-format
 msgid "Unable to find a source package for %s"
 msgstr "Немагчыма знайсці пакет з зыходнымі тэкстамі для %s"
 
-#: apt-private/private-source.cc:371
+#: apt-private/private-source.cc:365
 #, c-format
 msgid ""
 "NOTICE: '%s' packaging is maintained in the '%s' version control system at:\n"
@@ -830,7 +832,7 @@ msgstr ""
 "УВАГА: Упакоўка '%s' адбываецца ў сістэме кантролю версій '%s' на:\n"
 "%s\n"
 
-#: apt-private/private-source.cc:382
+#: apt-private/private-source.cc:376
 #, c-format
 msgid ""
 "Please use:\n"
@@ -838,64 +840,64 @@ msgid ""
 "to retrieve the latest (possibly unreleased) updates to the package.\n"
 msgstr ""
 
-#: apt-private/private-source.cc:430
+#: apt-private/private-source.cc:424
 #, c-format
 msgid "Skipping already downloaded file '%s'\n"
 msgstr "Прапускаем ўжо загружаны файл '%s'\n"
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement strings, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-source.cc:462
+#: apt-private/private-source.cc:456
 #, c-format
 msgid "Need to get %sB/%sB of source archives.\n"
 msgstr "Неабходна загрузіць %sB/%sB з архіваў зыходных тэкстаў.\n"
 
 #. TRANSLATOR: The required space between number and unit is already included
 #. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
-#: apt-private/private-source.cc:467
+#: apt-private/private-source.cc:461
 #, c-format
 msgid "Need to get %sB of source archives.\n"
 msgstr "Трэба загрузіць %sB архіваў з зыходнымі тэкстамі.\n"
 
-#: apt-private/private-source.cc:473
+#: apt-private/private-source.cc:467
 #, c-format
 msgid "Fetch source %s\n"
 msgstr "Загрузка зыходнікаў %s\n"
 
-#: apt-private/private-source.cc:494
+#: apt-private/private-source.cc:488
 msgid "Failed to fetch some archives."
 msgstr "Некаторыя архівы не атрымалася загрузіць."
 
-#: apt-private/private-source.cc:515
+#: apt-private/private-source.cc:509
 #, c-format
 msgid "Skipping unpack of already unpacked source in %s\n"
 msgstr "Прапускаецца распакаванне зыходнікаў, бо ужо распакаваны ў %s\n"
 
-#: apt-private/private-source.cc:528
+#: apt-private/private-source.cc:522
 #, c-format
 msgid "Unpack command '%s' failed.\n"
 msgstr "Каманда распакавання '%s' завяршылася няўдала.\n"
 
-#: apt-private/private-source.cc:531
+#: apt-private/private-source.cc:525
 msgid "Check if the 'dpkg-dev' package is installed.\n"
 msgstr "Праверце, ці усталяваны пакет 'dpkg-dev \".\n"
 
-#: apt-private/private-source.cc:561
+#: apt-private/private-source.cc:555
 #, c-format
 msgid "Build command '%s' failed.\n"
 msgstr "Каманда пабудовы '%s' завяршылася няўдала.\n"
 
-#: apt-private/private-source.cc:586 apt-private/private-source.cc:592
+#: apt-private/private-source.cc:580 apt-private/private-source.cc:586
 #, c-format
 msgid "Unable to get build-dependency information for %s"
 msgstr "Немагчыма атрымаць інфармацыю пра залежнасці для пабудовы %s"
 
-#: apt-private/private-source.cc:597
+#: apt-private/private-source.cc:591
 #, c-format
 msgid "%s has no build depends.\n"
 msgstr "%s не мае залежнасцяў для пабудовы.\n"
 
-#: apt-private/private-source.cc:650
+#: apt-private/private-source.cc:644
 #, c-format
 msgid ""
 "No architecture information available for %s. See apt.conf(5) "
@@ -904,28 +906,28 @@ msgstr ""
 "Адсутнічае інфармацыя пра архітэктуру для %s. Глядзі apt.conf(5) "
 "APT::Архітэктуры для налады"
 
-#: apt-private/private-source.cc:665
+#: apt-private/private-source.cc:659
 msgid "Must specify at least one package to check builddeps for"
 msgstr ""
 "Для праверкі залежнасцяў для зборкі неабходна ўказаць хаця адзін пакет"
 
-#: apt-private/private-source.cc:708
+#: apt-private/private-source.cc:702
 #, c-format
 msgid ""
 "Invalid operator '%c' at offset %d, did you mean '%c%c' or '%c='? - in: %s"
 msgstr ""
 
-#: apt-private/private-source.cc:770
+#: apt-private/private-source.cc:764
 #, c-format
 msgid "Note, using directory '%s' to get the build dependencies\n"
 msgstr ""
 
-#: apt-private/private-source.cc:772
+#: apt-private/private-source.cc:766
 #, c-format
 msgid "Note, using file '%s' to get the build dependencies\n"
 msgstr ""
 
-#: apt-private/private-source.cc:902
+#: apt-private/private-source.cc:896
 msgid "Failed to process build dependencies"
 msgstr "Апрацоўка залежнасцяў для пабудовы скончылася няўдала"
 
@@ -956,12 +958,12 @@ msgid ""
 "More information about this can be found online in the Release notes at: %s"
 msgstr ""
 
-#: apt-private/private-update.cc:53
+#: apt-private/private-update.cc:34
 msgid "The update command takes no arguments"
 msgstr "Камандзе update не патрэбныя аргументы"
 
 #. TRANSLATOR: the first two are manpage references, the last the URI from a sources.list
-#: apt-private/private-update.cc:123
+#: apt-private/private-update.cc:117
 #, c-format
 msgid ""
 "Usage of %s should be preferred over embedding login information directly in "
@@ -974,7 +976,7 @@ msgstr ""
 msgid "Missing Signed-By in the %s entry for '%s'"
 msgstr ""
 
-#: apt-private/private-update.cc:263
+#: apt-private/private-update.cc:135
 #, c-format
 msgid "%i package can be upgraded. Run 'apt list --upgradable' to see it.\n"
 msgid_plural ""
@@ -982,11 +984,11 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: apt-private/private-update.cc:267
+#: apt-private/private-update.cc:139
 msgid "All packages are up to date."
 msgstr ""
 
-#: cmdline/apt-cache.cc:184 cmdline/apt-mark.cc:188
+#: cmdline/apt-cache.cc:184 cmdline/apt-mark.cc:175
 #, c-format
 msgid "%s does not take any arguments"
 msgstr ""
@@ -1195,71 +1197,71 @@ msgid ""
 "with their dependencies.\n"
 msgstr ""
 
-#: cmdline/apt-get.cc:408
+#: cmdline/apt-get.cc:407
 msgid "Retrieve new lists of packages"
 msgstr ""
 
-#: cmdline/apt-get.cc:409
+#: cmdline/apt-get.cc:408
 msgid "Perform an upgrade"
 msgstr ""
 
-#: cmdline/apt-get.cc:410
+#: cmdline/apt-get.cc:409
 msgid "Install new packages (pkg is libc6 not libc6.deb)"
 msgstr ""
 
-#: cmdline/apt-get.cc:411
+#: cmdline/apt-get.cc:410
 msgid "Reinstall packages (pkg is libc6 not libc6.deb)"
 msgstr ""
 
-#: cmdline/apt-get.cc:412
+#: cmdline/apt-get.cc:411
 msgid "Remove packages"
 msgstr "Выдаліць пакеты"
 
-#: cmdline/apt-get.cc:413
+#: cmdline/apt-get.cc:412
 msgid "Remove packages and config files"
 msgstr ""
 
-#: cmdline/apt-get.cc:414
+#: cmdline/apt-get.cc:413 cmdline/apt.cc:68
 msgid "Remove automatically all unused packages"
 msgstr ""
 
-#: cmdline/apt-get.cc:419
+#: cmdline/apt-get.cc:418
 msgid "Distribution upgrade, see apt-get(8)"
 msgstr ""
 
-#: cmdline/apt-get.cc:421
+#: cmdline/apt-get.cc:420
 msgid "Follow dselect selections"
 msgstr ""
 
-#: cmdline/apt-get.cc:422
+#: cmdline/apt-get.cc:421
 msgid "Configure build-dependencies for source packages"
 msgstr ""
 
-#: cmdline/apt-get.cc:423
+#: cmdline/apt-get.cc:422
 msgid "Satisfy dependency strings"
 msgstr ""
 
-#: cmdline/apt-get.cc:424
+#: cmdline/apt-get.cc:423
 msgid "Erase downloaded archive files"
 msgstr ""
 
-#: cmdline/apt-get.cc:425
+#: cmdline/apt-get.cc:424
 msgid "Erase old downloaded archive files"
 msgstr ""
 
-#: cmdline/apt-get.cc:429
+#: cmdline/apt-get.cc:426
 msgid "Verify that there are no broken dependencies"
 msgstr ""
 
-#: cmdline/apt-get.cc:430
+#: cmdline/apt-get.cc:427
 msgid "Download source archives"
 msgstr ""
 
-#: cmdline/apt-get.cc:431
+#: cmdline/apt-get.cc:428
 msgid "Download the binary package into the current directory"
 msgstr ""
 
-#: cmdline/apt-get.cc:432
+#: cmdline/apt-get.cc:429
 msgid "Download and display the changelog for the given package"
 msgstr ""
 
@@ -1333,54 +1335,54 @@ msgstr "%s ужо быў пазначаны, як усталяваны ўруч�
 msgid "%s was already set to automatically installed.\n"
 msgstr "%s ужо быў пазначаны, як аўтаматычна усталяваны.\n"
 
-#: cmdline/apt-mark.cc:255
+#: cmdline/apt-mark.cc:242
 msgid "No changes necessary"
 msgstr ""
 
-#: cmdline/apt-mark.cc:259
+#: cmdline/apt-mark.cc:246
 msgid "The following packages will be marked as automatically installed:"
 msgstr ""
 
-#: cmdline/apt-mark.cc:340
+#: cmdline/apt-mark.cc:327
 #, c-format
 msgid "%s was already set on hold.\n"
 msgstr "%s ужо быў зафіксаваны.\n"
 
-#: cmdline/apt-mark.cc:342
+#: cmdline/apt-mark.cc:329
 #, c-format
 msgid "%s was already not on hold.\n"
 msgstr ""
 
-#: cmdline/apt-mark.cc:369
+#: cmdline/apt-mark.cc:356
 msgid "Executing dpkg failed. Are you root?"
 msgstr "Збой dpkg. Вы root?"
 
-#: cmdline/apt-mark.cc:372
+#: cmdline/apt-mark.cc:359
 #, c-format
 msgid "%s set on hold.\n"
 msgstr "%s зафіксаваны.\n"
 
-#: cmdline/apt-mark.cc:374
+#: cmdline/apt-mark.cc:361
 #, c-format
 msgid "Canceled hold on %s.\n"
 msgstr "Адмененая фіксацыя для %s.\n"
 
-#: cmdline/apt-mark.cc:376
+#: cmdline/apt-mark.cc:363
 #, c-format
 msgid "Selected %s for purge.\n"
 msgstr ""
 
-#: cmdline/apt-mark.cc:378
+#: cmdline/apt-mark.cc:365
 #, c-format
 msgid "Selected %s for removal.\n"
 msgstr ""
 
-#: cmdline/apt-mark.cc:380
+#: cmdline/apt-mark.cc:367
 #, c-format
 msgid "Selected %s for installation.\n"
 msgstr ""
 
-#: cmdline/apt-mark.cc:432
+#: cmdline/apt-mark.cc:419
 msgid ""
 "Usage: apt-mark [options] {auto|manual} pkg1 [pkg2 ...]\n"
 "\n"
@@ -1390,35 +1392,35 @@ msgid ""
 "all packages with or without a certain marking.\n"
 msgstr ""
 
-#: cmdline/apt-mark.cc:444
+#: cmdline/apt-mark.cc:431
 msgid "Mark the given packages as automatically installed"
 msgstr "Пазначыць дадзеныя пакеты, як усталяваныя аўтаматычна"
 
-#: cmdline/apt-mark.cc:445
+#: cmdline/apt-mark.cc:432
 msgid "Mark the given packages as manually installed"
 msgstr "Пазначыць дадзеныя пакеты, як усталяваныя ўручную"
 
-#: cmdline/apt-mark.cc:446
+#: cmdline/apt-mark.cc:433
 msgid "Mark all dependencies of meta packages as automatically installed."
 msgstr ""
 
-#: cmdline/apt-mark.cc:447
+#: cmdline/apt-mark.cc:434
 msgid "Mark a package as held back"
 msgstr ""
 
-#: cmdline/apt-mark.cc:448
+#: cmdline/apt-mark.cc:435
 msgid "Unset a package set as held back"
 msgstr ""
 
-#: cmdline/apt-mark.cc:453
+#: cmdline/apt-mark.cc:440
 msgid "Print the list of automatically installed packages"
 msgstr ""
 
-#: cmdline/apt-mark.cc:454
+#: cmdline/apt-mark.cc:441
 msgid "Print the list of manually installed packages"
 msgstr ""
 
-#: cmdline/apt-mark.cc:455
+#: cmdline/apt-mark.cc:442
 msgid "Print the list of packages on hold"
 msgstr ""
 
@@ -1434,28 +1436,28 @@ msgid ""
 msgstr ""
 
 #. query
-#: cmdline/apt.cc:61
+#: cmdline/apt.cc:60
 msgid "list packages based on package names"
 msgstr ""
 
-#: cmdline/apt.cc:62
+#: cmdline/apt.cc:61
 msgid "search in package descriptions"
 msgstr ""
 
-#: cmdline/apt.cc:63
+#: cmdline/apt.cc:62
 msgid "show package details"
 msgstr ""
 
 #. package stuff
-#: cmdline/apt.cc:66
+#: cmdline/apt.cc:65
 msgid "install packages"
 msgstr "усталяваць пакеты"
 
-#: cmdline/apt.cc:67
+#: cmdline/apt.cc:66
 msgid "reinstall packages"
 msgstr ""
 
-#: cmdline/apt.cc:68
+#: cmdline/apt.cc:67
 msgid "remove packages"
 msgstr "выдаліць пакеты"
 
@@ -1464,24 +1466,24 @@ msgid "automatically remove all unused packages"
 msgstr ""
 
 #. system wide stuff
-#: cmdline/apt.cc:75
+#: cmdline/apt.cc:74
 msgid "update list of available packages"
 msgstr ""
 
-#: cmdline/apt.cc:76
+#: cmdline/apt.cc:75
 msgid "upgrade the system by installing/upgrading packages"
 msgstr ""
 
-#: cmdline/apt.cc:77
+#: cmdline/apt.cc:76
 msgid "upgrade the system by removing/installing/upgrading packages"
 msgstr ""
 
 #. misc
-#: cmdline/apt.cc:80
+#: cmdline/apt.cc:79
 msgid "edit the source information file"
 msgstr ""
 
-#: cmdline/apt.cc:82
+#: cmdline/apt.cc:81
 msgid "satisfy dependency strings"
 msgstr ""
 
@@ -1560,8 +1562,8 @@ msgstr ""
 msgid "Connection failed"
 msgstr ""
 
-#: methods/basehttp.cc:760 methods/ftp.cc:970 methods/http.cc:637
-#: methods/http.cc:875
+#: methods/basehttp.cc:760 methods/ftp.cc:970 methods/http.cc:622
+#: methods/http.cc:860
 #, c-format
 msgid "File has unexpected size (%llu != %llu). Mirror sync in progress?"
 msgstr ""
@@ -1601,88 +1603,88 @@ msgstr ""
 msgid "Disk not found."
 msgstr ""
 
-#: methods/cdrom.cc:262 methods/file.cc:123 methods/rsh.cc:310
+#: methods/cdrom.cc:262 methods/file.cc:123 methods/rsh.cc:296
 msgid "File not found"
 msgstr ""
 
 #. TRANSLATOR: %s is e.g. Tor's ".onion" which would likely fail or leak info (RFC7686)
-#: methods/connect.cc:78
+#: methods/connect.cc:76
 #, c-format
 msgid "Direct connection to %s domains is blocked by default."
 msgstr ""
 
-#: methods/connect.cc:80
+#: methods/connect.cc:78
 #, c-format
 msgid "If you meant to use Tor remember to use %s instead of %s."
 msgstr ""
 
-#: methods/connect.cc:150
+#: methods/connect.cc:148
 #, c-format
 msgid "[IP: %s %s]"
 msgstr ""
 
-#: methods/connect.cc:152
+#: methods/connect.cc:150
 #, c-format
 msgid "Connected to %s (%s)"
 msgstr ""
 
-#: methods/connect.cc:169 methods/connect.cc:578 methods/http.cc:322
+#: methods/connect.cc:167 methods/connect.cc:576 methods/http.cc:322
 #, c-format
 msgid "Connecting to %s (%s)"
 msgstr ""
 
-#: methods/connect.cc:179
+#: methods/connect.cc:177
 #, c-format
 msgid "Could not create a socket for %s (f=%u t=%u p=%u)"
 msgstr ""
 
-#: methods/connect.cc:188
+#: methods/connect.cc:186
 #, c-format
 msgid "Cannot initiate the connection to %s:%s (%s)."
 msgstr ""
 
-#: methods/connect.cc:204 methods/ftp.cc:756 methods/rsh.cc:113
+#: methods/connect.cc:202 methods/ftp.cc:756 methods/rsh.cc:99
 msgid "Failed"
 msgstr "Няўдача"
 
-#: methods/connect.cc:216
+#: methods/connect.cc:214
 #, c-format
 msgid "Could not connect to %s:%s (%s)."
 msgstr ""
 
-#: methods/connect.cc:313
+#: methods/connect.cc:311
 #, c-format
 msgid "Could not connect to %s:%s (%s), connection timed out"
 msgstr ""
 
 #. We say this mainly because the pause here is for the
 #. ssh connection that is still going
-#: methods/connect.cc:363 methods/rsh.cc:471
+#: methods/connect.cc:361 methods/rsh.cc:457
 #, c-format
 msgid "Connecting to %s"
 msgstr ""
 
-#: methods/connect.cc:399 methods/connect.cc:420
+#: methods/connect.cc:397 methods/connect.cc:418
 #, c-format
 msgid "Could not resolve '%s'"
 msgstr ""
 
-#: methods/connect.cc:427
+#: methods/connect.cc:425
 #, c-format
 msgid "Temporary failure resolving '%s'"
 msgstr ""
 
-#: methods/connect.cc:432
+#: methods/connect.cc:430
 #, c-format
 msgid "System error resolving '%s:%s'"
 msgstr ""
 
-#: methods/connect.cc:435
+#: methods/connect.cc:433
 #, c-format
 msgid "Something wicked happened resolving '%s:%s' (%i - %s)"
 msgstr ""
 
-#: methods/connect.cc:471
+#: methods/connect.cc:469
 #, c-format
 msgid "Unable to connect to %s:%s:"
 msgstr ""
@@ -1739,7 +1741,7 @@ msgstr ""
 msgid "TYPE failed, server said: %s"
 msgstr ""
 
-#: methods/ftp.cc:371 methods/ftp.cc:483 methods/rsh.cc:224 methods/rsh.cc:272
+#: methods/ftp.cc:371 methods/ftp.cc:483 methods/rsh.cc:210 methods/rsh.cc:258
 msgid "Connection timeout"
 msgstr ""
 
@@ -1747,11 +1749,11 @@ msgstr ""
 msgid "Server closed the connection"
 msgstr ""
 
-#: methods/ftp.cc:380 methods/rsh.cc:231
+#: methods/ftp.cc:380 methods/rsh.cc:217
 msgid "Read error"
 msgstr ""
 
-#: methods/ftp.cc:387 methods/rsh.cc:238
+#: methods/ftp.cc:387 methods/rsh.cc:224
 msgid "A response overflowed the buffer."
 msgstr ""
 
@@ -1759,7 +1761,7 @@ msgstr ""
 msgid "Protocol corruption"
 msgstr ""
 
-#: methods/ftp.cc:489 methods/rsh.cc:278
+#: methods/ftp.cc:489 methods/rsh.cc:264
 msgid "Write error"
 msgstr "Памылка запісу"
 
@@ -1813,7 +1815,7 @@ msgstr ""
 msgid "Unable to accept connection"
 msgstr ""
 
-#: methods/ftp.cc:918 methods/http.cc:1032 methods/rsh.cc:348
+#: methods/ftp.cc:918 methods/http.cc:1017 methods/rsh.cc:334
 msgid "Problem hashing file"
 msgstr ""
 
@@ -1822,7 +1824,7 @@ msgstr ""
 msgid "Unable to fetch file, server said '%s'"
 msgstr ""
 
-#: methods/ftp.cc:946 methods/rsh.cc:367
+#: methods/ftp.cc:946 methods/rsh.cc:353
 msgid "Data socket timed out"
 msgstr ""
 
@@ -1851,7 +1853,7 @@ msgid "%s will be deprecated in a future release"
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:449
+#: methods/gpgv.cc:390
 #, c-format
 msgid ""
 "Clearsigned file isn't valid, got '%s' (does the network require "
@@ -1859,30 +1861,30 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:457
+#: methods/gpgv.cc:398
 #, c-format
 msgid ""
 "Signed file isn't valid, got '%s' (does the network require authentication?)"
 msgstr ""
 
-#: methods/gpgv.cc:467 methods/gpgv.cc:477
+#: methods/gpgv.cc:408 methods/gpgv.cc:418
 msgid "At least one invalid signature was encountered."
 msgstr ""
 
-#: methods/gpgv.cc:472
+#: methods/gpgv.cc:413
 msgid ""
 "Internal error: Good signature, but could not determine key fingerprint?!"
 msgstr ""
 
-#: methods/gpgv.cc:479
+#: methods/gpgv.cc:420
 msgid "Could not execute 'apt-key' to verify signature (is gnupg installed?)"
 msgstr ""
 
-#: methods/gpgv.cc:481
+#: methods/gpgv.cc:422
 msgid "Unknown error executing apt-key"
 msgstr ""
 
-#: methods/gpgv.cc:516
+#: methods/gpgv.cc:457
 #, c-format
 msgid ""
 "Key is stored in legacy trusted.gpg keyring (%s), see the DEPRECATION "
@@ -1895,37 +1897,37 @@ msgstr ""
 msgid "Signature by key %s uses weak algorithm (%s)"
 msgstr ""
 
-#: methods/gpgv.cc:602 methods/gpgv.cc:608
+#: methods/gpgv.cc:536 methods/gpgv.cc:542
 msgid "The following signatures were invalid:\n"
 msgstr ""
 
-#: methods/gpgv.cc:618
+#: methods/gpgv.cc:548
 msgid ""
 "The following signatures couldn't be verified because the public key is not "
 "available:\n"
 msgstr ""
 
-#: methods/http.cc:741
+#: methods/http.cc:726
 msgid "Error reading from server. Remote end closed connection"
 msgstr ""
 
-#: methods/http.cc:745
+#: methods/http.cc:730
 msgid "Error reading from server"
 msgstr ""
 
-#: methods/http.cc:764
+#: methods/http.cc:749
 msgid "Error writing to file"
 msgstr ""
 
-#: methods/http.cc:832
+#: methods/http.cc:817
 msgid "Select failed"
 msgstr ""
 
-#: methods/http.cc:838
+#: methods/http.cc:823
 msgid "Connection timed out"
 msgstr ""
 
-#: methods/mirror.cc:313
+#: methods/mirror.cc:301
 msgid "The list of sources could not be read."
 msgstr ""
 
@@ -1938,11 +1940,11 @@ msgstr "Не атрымалася атрымаць атрыбуты %s"
 msgid "Failed to set modification time"
 msgstr ""
 
-#: methods/rsh.cc:120
+#: methods/rsh.cc:106
 msgid "Failed to create IPC pipe to subprocess"
 msgstr "Не атрымалася стварыць IPC канал для подпроцесса"
 
-#: methods/rsh.cc:375
+#: methods/rsh.cc:361
 msgid "Connection closed prematurely"
 msgstr ""
 
