@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-08-13 16:47+0200\n"
-"PO-Revision-Date: 2024-09-26 07:14\n"
+"PO-Revision-Date: 2024-11-06 10:06\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2024-09-25 22:27+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-11-05 06:41+0000\n"
+"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: be\n"
@@ -25,7 +25,7 @@ msgstr "Абнаўленне з такога рэпазіторыя не мож�
 
 #: apt-pkg/acquire-item.cc
 msgid "Data from such a repository can't be authenticated and is therefore potentially dangerous to use."
-msgstr ""
+msgstr "Даныя з такога рэпазіторыя не могуць быць аўтэнтыфікаваны, таму іх патэнцыйна небяспечна выкарыстоўваць."
 
 #: apt-pkg/acquire-item.cc
 msgid "See apt-secure(8) manpage for repository creation and user configuration details."
@@ -34,7 +34,7 @@ msgstr ""
 #: apt-pkg/acquire-item.cc
 #, c-format
 msgid "The repository '%s' is no longer signed."
-msgstr ""
+msgstr "Рэпазіторый «%s» больш не падпісаны."
 
 #: apt-pkg/acquire-item.cc
 #, c-format
@@ -48,7 +48,7 @@ msgstr ""
 #: apt-pkg/acquire-item.cc
 #, c-format
 msgid "The repository '%s' is not signed."
-msgstr ""
+msgstr "Рэпазіторый «%s» не падпісаны."
 
 #: apt-pkg/acquire-item.cc
 #, c-format
@@ -63,16 +63,16 @@ msgstr ""
 #: apt-pkg/acquire-item.cc ftparchive/writer.cc
 #, c-format
 msgid "Failed to readlink %s"
-msgstr ""
+msgstr "Не ўдалося прачытаць спасылку %s"
 
 #: apt-pkg/acquire-item.cc ftparchive/cachedb.cc methods/rred.cc
 #, c-format
 msgid "Failed to stat %s"
-msgstr ""
+msgstr "Не ўдалося атрымаць атрыбуты %s"
 
 #: apt-pkg/acquire-item.cc
 msgid "Hash Sum mismatch"
-msgstr ""
+msgstr "Хэш-сума не супадае"
 
 #: apt-pkg/acquire-item.cc
 msgid "Insufficient information available to perform this download securely"
@@ -110,7 +110,7 @@ msgstr ""
 #: apt-pkg/acquire-item.cc
 #, c-format
 msgid "GPG error: %s: %s"
-msgstr ""
+msgstr "Памылка GPG: %s: %s"
 
 #: apt-pkg/acquire-item.cc
 #, c-format
@@ -153,7 +153,8 @@ msgstr ""
 msgid "Conflicting distribution: %s (expected %s but got %s)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc
+#. Both messages are reused from the ReleaseInfoChange feature in acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid "Repository '%s' changed its '%s' value from '%s' to '%s'"
 msgstr ""
@@ -164,7 +165,7 @@ msgid "Repository '%s' changed its default priority for %s from %hi to %hi."
 msgstr ""
 
 #. TRANSLATOR: the "this" refers to changes in the repository like a new release or owner change
-#: apt-pkg/acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid "More information about this can be found online in the Release notes at: %s"
 msgstr ""
@@ -194,7 +195,7 @@ msgstr ""
 #: apt-pkg/acquire-item.cc
 #, c-format
 msgid "Changelog unavailable for %s=%s"
-msgstr ""
+msgstr "Changelog недаступны для %s=%s"
 
 #: apt-pkg/acquire-worker.cc
 #, c-format
@@ -295,7 +296,7 @@ msgstr ""
 
 #: apt-pkg/cachefile.cc
 msgid "The package lists or status file could not be parsed or opened."
-msgstr "Не ўдалося адкрыць або апрацаваць файл статусу або спісы пакетаў."
+msgstr ""
 
 #: apt-pkg/cachefile.cc
 msgid "You may want to run apt-get update to correct these problems"
@@ -329,7 +330,7 @@ msgstr ""
 #: apt-pkg/cacheset.cc apt-private/private-show.cc
 #, c-format
 msgid "Unable to locate package %s"
-msgstr ""
+msgstr "Немагчыма знайсці пакет %s"
 
 #: apt-pkg/cacheset.cc
 #, c-format
@@ -368,7 +369,7 @@ msgstr ""
 
 #: apt-pkg/cdrom.cc
 msgid "Unmounting CD-ROM...\n"
-msgstr ""
+msgstr "Адключэнне CD-ROM...\n"
 
 #: apt-pkg/cdrom.cc
 #, c-format
@@ -377,15 +378,15 @@ msgstr ""
 
 #: apt-pkg/cdrom.cc
 msgid "Waiting for disc...\n"
-msgstr ""
+msgstr "Чаканне дыска...\n"
 
 #: apt-pkg/cdrom.cc
 msgid "Mounting CD-ROM...\n"
-msgstr ""
+msgstr "Падключэнне CD-ROM...\n"
 
 #: apt-pkg/cdrom.cc
 msgid "Identifying... "
-msgstr ""
+msgstr "Ідэнтыфікацыя... "
 
 #: apt-pkg/cdrom.cc
 #, c-format
@@ -509,7 +510,7 @@ msgstr ""
 #: apt-pkg/contrib/cmndline.cc
 #, c-format
 msgid "Invalid operation %s"
-msgstr ""
+msgstr "Памылковая аперацыя %s"
 
 #: apt-pkg/contrib/configuration.cc
 #, c-format
@@ -787,7 +788,7 @@ msgstr ""
 #: apt-pkg/contrib/progress.cc
 #, c-format
 msgid "%c%s... Error!"
-msgstr ""
+msgstr "%c%s... Памылка!"
 
 #: apt-pkg/contrib/progress.cc
 #, c-format
@@ -796,7 +797,7 @@ msgstr ""
 
 #: apt-pkg/contrib/progress.cc
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: apt-pkg/contrib/progress.cc
 #, c-format
@@ -963,7 +964,7 @@ msgstr ""
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
 msgid "Preparing %s"
-msgstr ""
+msgstr "Падрыхтоўка %s"
 
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
@@ -973,12 +974,12 @@ msgstr ""
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
 msgid "Preparing for removal of %s"
-msgstr ""
+msgstr "Падрыхтоўка да выдалення %s"
 
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
 msgid "Preparing to completely remove %s"
-msgstr ""
+msgstr "Падрыхтоўка да поўнага выдалення %s"
 
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
@@ -1029,12 +1030,12 @@ msgstr "Выдаленне %s"
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "Выконваецца поўнае выдаленне %s"
 
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "%s цалкам выдалены"
 
 #: apt-pkg/deb/dpkgpm.cc
 #, c-format
@@ -1080,7 +1081,7 @@ msgstr ""
 
 #: apt-pkg/depcache.cc
 msgid "Building dependency tree"
-msgstr ""
+msgstr "Пабудова дрэва залежнасцей"
 
 #: apt-pkg/depcache.cc
 msgid "Candidate versions"
@@ -1088,7 +1089,7 @@ msgstr ""
 
 #: apt-pkg/depcache.cc
 msgid "Dependency generation"
-msgstr ""
+msgstr "Генерацыя залежнасцей"
 
 #: apt-pkg/depcache.cc
 msgid "Reading state information"
@@ -1097,22 +1098,22 @@ msgstr ""
 #: apt-pkg/depcache.cc
 #, c-format
 msgid "Failed to open StateFile %s"
-msgstr ""
+msgstr "Не ўдалося адкрыць StateFile %s"
 
 #: apt-pkg/depcache.cc
 #, c-format
 msgid "Failed to write temporary StateFile %s"
-msgstr ""
+msgstr "Не ўдалося запісаць часовы StateFile %s"
 
 #: apt-pkg/dirstream.cc
 #, c-format
 msgid "Failed to write file %s"
-msgstr ""
+msgstr "Не ўдалося запісаць файл %s"
 
 #: apt-pkg/dirstream.cc
 #, c-format
 msgid "Failed to close file %s"
-msgstr ""
+msgstr "Не ўдалося закрыць файл %s"
 
 #: apt-pkg/edsp.cc
 msgid "Send scenario to solver"
@@ -1242,19 +1243,19 @@ msgstr ""
 
 #: apt-pkg/pkgcache.cc
 msgid "Depends"
-msgstr ""
+msgstr "Залежыць"
 
 #: apt-pkg/pkgcache.cc
 msgid "PreDepends"
-msgstr ""
+msgstr "Папярэдне залежыць"
 
 #: apt-pkg/pkgcache.cc
 msgid "Suggests"
-msgstr ""
+msgstr "Прапануе"
 
 #: apt-pkg/pkgcache.cc
 msgid "Conflicts"
-msgstr ""
+msgstr "Канфлікты"
 
 #: apt-pkg/pkgcache.cc
 msgid "Recommends"
@@ -1266,7 +1267,7 @@ msgstr "Замяняе"
 
 #: apt-pkg/pkgcache.cc
 msgid "Breaks"
-msgstr ""
+msgstr "Пашкоджвае"
 
 #: apt-pkg/pkgcache.cc
 msgid "Enhances"
@@ -1274,27 +1275,27 @@ msgstr "Паляпшае"
 
 #: apt-pkg/pkgcache.cc
 msgid "Obsoletes"
-msgstr ""
+msgstr "Замяшчае"
 
 #: apt-pkg/pkgcache.cc
 msgid "important"
-msgstr ""
+msgstr "важны"
 
 #: apt-pkg/pkgcache.cc
 msgid "required"
-msgstr ""
+msgstr "неабходны"
 
 #: apt-pkg/pkgcache.cc
 msgid "standard"
-msgstr ""
+msgstr "стандартны"
 
 #: apt-pkg/pkgcache.cc
 msgid "extra"
-msgstr ""
+msgstr "дадатковы"
 
 #: apt-pkg/pkgcache.cc
 msgid "optional"
-msgstr ""
+msgstr "неабавязковы"
 
 #: apt-pkg/pkgcachegen.cc
 msgid "Cache has an incompatible versioning system"
@@ -1325,7 +1326,7 @@ msgstr ""
 
 #: apt-pkg/pkgcachegen.cc
 msgid "Reading package lists"
-msgstr ""
+msgstr "Чытанне спісаў пакетаў"
 
 #: apt-pkg/pkgcachegen.cc
 msgid "IO Error saving source cache"
@@ -1409,7 +1410,7 @@ msgstr ""
 msgid "Some index files failed to download. They have been ignored, or old ones used instead."
 msgstr ""
 
-#: apt-pkg/upgrade.cc
+#: apt-pkg/edsp.cc apt-pkg/upgrade.cc
 msgid "Calculating upgrade"
 msgstr ""
 
@@ -1443,11 +1444,11 @@ msgstr ""
 #: apt-private/acqprogress.cc
 #, c-format
 msgid "Fetched %sB in %s (%sB/s)\n"
-msgstr ""
+msgstr "Атрымана %sБ за %s (%sБ/с)\n"
 
 #: apt-private/acqprogress.cc
 msgid " [Working]"
-msgstr ""
+msgstr " [Апрацоўванне]"
 
 #: apt-private/acqprogress.cc
 #, c-format
@@ -1478,7 +1479,7 @@ msgstr "Немагчыма мінімізаваць набор абнаўлен�
 
 #: apt-private/private-cachefile.cc
 msgid " Done"
-msgstr ""
+msgstr " Гатова"
 
 #: apt-private/private-cachefile.cc apt-private/private-install.cc
 msgid "You might want to run 'apt --fix-broken install' to correct these."
@@ -1490,7 +1491,7 @@ msgstr ""
 
 #: apt-private/private-cacheset.cc apt-private/private-search.cc
 msgid "Sorting"
-msgstr ""
+msgstr "Сартаванне"
 
 #: apt-private/private-cacheset.cc
 #, c-format
@@ -1592,7 +1593,7 @@ msgstr ""
 #: apt-private/private-depends.cc apt-private/private-download.cc
 #: apt-private/private-show.cc cmdline/apt-mark.cc
 msgid "No packages found"
-msgstr ""
+msgstr "Не знойдзена ніводнага пакета"
 
 #: apt-private/private-download.cc
 msgid "WARNING: The following packages cannot be authenticated!"
@@ -1604,11 +1605,11 @@ msgstr ""
 
 #: apt-private/private-download.cc
 msgid "Some packages could not be authenticated"
-msgstr ""
+msgstr "Некаторыя пакеты не ўдалося аўтэнтыфікаваць"
 
 #: apt-private/private-download.cc
 msgid "Install these packages without verification?"
-msgstr ""
+msgstr "Усталяваць гэтыя пакеты без праверкі?"
 
 #: apt-private/private-download.cc
 msgid "There were unauthenticated packages and -y was used without --allow-unauthenticated"
@@ -1617,12 +1618,12 @@ msgstr ""
 #: apt-private/private-download.cc
 #, c-format
 msgid "Couldn't determine free space in %s"
-msgstr ""
+msgstr "Не атрымалася вызначыць вольную прастору ў %s"
 
 #: apt-private/private-download.cc
 #, c-format
 msgid "You don't have enough free space in %s."
-msgstr ""
+msgstr "Недастаткова вольнага месца на %s."
 
 #: apt-private/private-download.cc
 msgid "Unable to lock the download directory"
@@ -1651,7 +1652,7 @@ msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Broken packages"
-msgstr "Зламаныя пакеты"
+msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Unmerged usr is no longer supported, use usrmerge to convert to a merged-usr system."
@@ -1669,15 +1670,15 @@ msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Internal error, InstallPackages was called with broken packages!"
-msgstr "Унутраная памылка, InstallPackages была выкліканая са зламанымі пакетамі!"
+msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Packages need to be removed but remove is disabled."
-msgstr ""
+msgstr "Пакеты неабходна выдаліць, але выдаленне забаронена."
 
 #: apt-private/private-install.cc
 msgid "Essential packages were removed and -y was used without --allow-remove-essential."
-msgstr ""
+msgstr "Важныя пакеты былі выдалены, і -y выкарыстоўваўся без --allow-remove-essential."
 
 #: apt-private/private-install.cc
 msgid "Packages were downgraded and -y was used without --allow-downgrades."
@@ -1709,8 +1710,6 @@ msgstr ""
 msgid "Need to get %sB of archives.\n"
 msgstr ""
 
-#. TRANSLATOR: The required space between number and unit is already included
-#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
 #: apt-private/private-install.cc
 #, c-format
 msgid "After this operation, %sB of additional disk space will be used.\n"
@@ -1737,11 +1736,11 @@ msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Abort."
-msgstr ""
+msgstr "Перарваць."
 
 #: apt-private/private-install.cc
 msgid "Some files failed to download"
-msgstr ""
+msgstr "Некаторыя файлы не ўдалося спампаваць"
 
 #: apt-private/private-install.cc apt-private/private-source.cc
 msgid "Download complete and in download only mode"
@@ -1757,7 +1756,7 @@ msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Aborting install."
-msgstr ""
+msgstr "Перарыванне ўсталявання."
 
 #: apt-private/private-install.cc
 msgid "The following package disappeared from your system as\n"
@@ -1818,11 +1817,11 @@ msgstr ""
 
 #: apt-private/private-install.cc
 msgid "Suggested packages:"
-msgstr ""
+msgstr "Прапанаваныя пакеты:"
 
 #: apt-private/private-install.cc
 msgid "Recommended packages:"
-msgstr ""
+msgstr "Рэкамендаваныя пакеты:"
 
 #: apt-private/private-install.cc
 #, c-format
@@ -1848,7 +1847,7 @@ msgstr ""
 #: apt-private/private-install.cc cmdline/apt-get.cc cmdline/apt-mark.cc
 #, c-format
 msgid "%s set to manually installed.\n"
-msgstr ""
+msgstr "%s пазначаны як усталяваны ўручную.\n"
 
 #: apt-private/private-install.cc
 #, c-format
@@ -1884,7 +1883,7 @@ msgstr ""
 
 #: apt-private/private-output.cc apt-private/private-show.cc
 msgid "unknown"
-msgstr ""
+msgstr "невядома"
 
 #: apt-private/private-output.cc
 #, c-format
@@ -1932,11 +1931,11 @@ msgstr ""
 
 #: apt-private/private-output.cc
 msgid "but it is a virtual package"
-msgstr ""
+msgstr "але гэта віртуальны пакет"
 
 #: apt-private/private-output.cc
 msgid "but it is not going to be installed"
-msgstr ""
+msgstr "але ён не будзе ўсталяваны"
 
 #: apt-private/private-output.cc
 msgid "but it is not installed"
@@ -1944,7 +1943,7 @@ msgstr "але ён не ўсталяваны"
 
 #: apt-private/private-output.cc
 msgid " or"
-msgstr ""
+msgstr " або"
 
 #: apt-private/private-output.cc
 msgid "The following packages have unmet dependencies:"
@@ -1956,7 +1955,7 @@ msgstr "Наступныя НОВЫЯ пакеты будуць усталява
 
 #: apt-private/private-output.cc
 msgid "The following packages will be REMOVED:"
-msgstr ""
+msgstr "Наступныя пакеты будуць ВЫДАЛЕНЫ:"
 
 #: apt-private/private-output.cc
 msgid "The following upgrades have been deferred due to phasing:"
@@ -1968,11 +1967,11 @@ msgstr ""
 
 #: apt-private/private-output.cc
 msgid "The following packages will be upgraded:"
-msgstr ""
+msgstr "Наступныя пакеты будуць абноўлены:"
 
 #: apt-private/private-output.cc
 msgid "The following packages will be DOWNGRADED:"
-msgstr ""
+msgstr "Наступныя пакеты будуць заменены на СТАРЫЯ версіі:"
 
 #: apt-private/private-output.cc
 msgid "The following held packages will be changed:"
@@ -2019,7 +2018,7 @@ msgstr ""
 #. YESEXPR/NOEXPR defined in your l10n.
 #: apt-private/private-output.cc
 msgid "[Y/n]"
-msgstr ""
+msgstr "[Т/н]"
 
 #. TRANSLATOR: Yes/No question help-text: defaulting to N[o]
 #. e.g. "Should this file be removed? [y/N] "
@@ -2032,12 +2031,12 @@ msgstr ""
 #. TRANSLATOR: "Yes" answer printed for a yes/no question if --assume-yes is set
 #: apt-private/private-output.cc
 msgid "Y"
-msgstr ""
+msgstr "Т"
 
 #. TRANSLATOR: "No" answer printed for a yes/no question if --assume-no is set
 #: apt-private/private-output.cc
 msgid "N"
-msgstr ""
+msgstr "Н"
 
 #: apt-private/private-search.cc
 msgid "You must give at least one search pattern"
@@ -2085,7 +2084,7 @@ msgstr ""
 
 #: apt-private/private-show.cc
 msgid "  Candidate: "
-msgstr ""
+msgstr "  Кандыдат: "
 
 #: apt-private/private-show.cc
 msgid "(none)"
@@ -2094,7 +2093,7 @@ msgstr ""
 #. Show the priority tables
 #: apt-private/private-show.cc
 msgid "  Version table:"
-msgstr ""
+msgstr "  Табліца версій:"
 
 #: apt-private/private-show.cc
 msgid "phased"
@@ -2132,7 +2131,7 @@ msgstr ""
 #: apt-private/private-source.cc
 #, c-format
 msgid "Unable to find a source package for %s"
-msgstr ""
+msgstr "Немагчыма знайсці пакет з зыходнымі тэкстамі для %s"
 
 #: apt-private/private-source.cc
 #, c-format
@@ -2283,27 +2282,27 @@ msgstr ""
 
 #: cmdline/apt-cache.cc
 msgid "Total package names: "
-msgstr ""
+msgstr "Агулам назваў пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "Total package structures: "
-msgstr ""
+msgstr "Агулам структур пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "  Normal packages: "
-msgstr ""
+msgstr "  Звычайных пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "  Pure virtual packages: "
-msgstr ""
+msgstr "  Цалкам віртуальных пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "  Single virtual packages: "
-msgstr ""
+msgstr "  Асобных віртуальных пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "  Mixed virtual packages: "
-msgstr ""
+msgstr "  Змешаных віртуальных пакетаў: "
 
 #: cmdline/apt-cache.cc
 msgid "  Missing: "
@@ -2319,11 +2318,11 @@ msgstr ""
 
 #: cmdline/apt-cache.cc
 msgid "Total dependencies: "
-msgstr ""
+msgstr "Агулам залежнасцей: "
 
 #: cmdline/apt-cache.cc
 msgid "Total ver/file relations: "
-msgstr ""
+msgstr "Агулам стасункаў версія/файл: "
 
 #: cmdline/apt-cache.cc
 msgid "Total Desc/File relations: "
@@ -2339,11 +2338,11 @@ msgstr ""
 
 #: cmdline/apt-cache.cc
 msgid "Total slack space: "
-msgstr ""
+msgstr "Пустога месца ў кэшы: "
 
 #: cmdline/apt-cache.cc
 msgid "Total space accounted for: "
-msgstr ""
+msgstr "Агульная прастора вылучаная для: "
 
 #: cmdline/apt-cache.cc
 msgid "This command is deprecated. Please use 'apt-mark showauto' instead."
@@ -2420,7 +2419,7 @@ msgstr ""
 
 #: cmdline/apt-config.cc
 msgid "Arguments not in pairs"
-msgstr ""
+msgstr "Аргументы не ў парах"
 
 #: cmdline/apt-config.cc
 msgid "Usage: apt-config [options] command\n\n"
@@ -2456,12 +2455,12 @@ msgstr ""
 #: cmdline/apt-get.cc
 #, c-format
 msgid "Couldn't find package %s"
-msgstr ""
+msgstr "Не ўдалося знайсці пакет %s"
 
 #: cmdline/apt-get.cc cmdline/apt-mark.cc
 #, c-format
 msgid "%s set to automatically installed.\n"
-msgstr ""
+msgstr "%s пазначаны як аўтаматычна ўсталяваны.\n"
 
 #: cmdline/apt-get.cc cmdline/apt-mark.cc
 msgid "This command is deprecated. Please use 'apt-mark auto' and 'apt-mark manual' instead."
@@ -2473,7 +2472,7 @@ msgstr ""
 
 #: cmdline/apt-get.cc
 msgid "Supported modules:"
-msgstr ""
+msgstr "Падтрымліваюцца модулі:"
 
 #: cmdline/apt-get.cc
 msgid "Usage: apt-get [options] command\n"
@@ -2491,7 +2490,7 @@ msgstr ""
 
 #: cmdline/apt-get.cc
 msgid "Perform an upgrade"
-msgstr ""
+msgstr "Выканаць абнаўленне"
 
 #: cmdline/apt-get.cc
 msgid "Install new packages (pkg is libc6 not libc6.deb)"
@@ -2503,15 +2502,15 @@ msgstr ""
 
 #: cmdline/apt-get.cc
 msgid "Remove packages"
-msgstr ""
+msgstr "Выдаліць пакеты"
 
 #: cmdline/apt-get.cc
 msgid "Remove packages and config files"
-msgstr ""
+msgstr "Выдаліць пакеты і файлы канфігурацыі"
 
-#: cmdline/apt-get.cc cmdline/apt.cc
+#: cmdline/apt-get.cc
 msgid "Remove automatically all unused packages"
-msgstr ""
+msgstr "Выдаліць аўтаматычна ўсе пакеты, якія не выкарыстоўваюцца"
 
 #: cmdline/apt-get.cc
 msgid "Distribution upgrade, see apt-get(8)"
@@ -2646,7 +2645,7 @@ msgstr ""
 #: cmdline/apt-mark.cc
 #, c-format
 msgid "%s was already set on hold.\n"
-msgstr ""
+msgstr "%s ужо быў зафіксаваны.\n"
 
 #: cmdline/apt-mark.cc
 #, c-format
@@ -2753,20 +2752,20 @@ msgstr ""
 
 #: cmdline/apt.cc
 msgid "show package details"
-msgstr ""
+msgstr "паказаць падрабязнасці пакета"
 
 #. package stuff
 #: cmdline/apt.cc
 msgid "install packages"
-msgstr ""
+msgstr "усталяваць пакеты"
 
 #: cmdline/apt.cc
 msgid "reinstall packages"
-msgstr ""
+msgstr "пераўсталяваць пакеты"
 
 #: cmdline/apt.cc
 msgid "remove packages"
-msgstr ""
+msgstr "выдаліць пакеты"
 
 #: cmdline/apt.cc
 msgid "automatically remove all unused packages"
@@ -2775,15 +2774,15 @@ msgstr ""
 #. system wide stuff
 #: cmdline/apt.cc
 msgid "update list of available packages"
-msgstr ""
+msgstr "абнавіць спіс даступных пакетаў"
 
 #: cmdline/apt.cc
 msgid "upgrade the system by installing/upgrading packages"
-msgstr ""
+msgstr "абнавіць сістэму, усталяваўшы/абнавіўшы пакеты"
 
 #: cmdline/apt.cc
 msgid "upgrade the system by removing/installing/upgrading packages"
-msgstr ""
+msgstr "абнавіць сістэму, выдаліўшы/усталяваўшы/абнавіўшы пакеты"
 
 #. misc
 #: cmdline/apt.cc
@@ -2966,7 +2965,7 @@ msgstr ""
 #: ftparchive/multicompress.cc
 #, c-format
 msgid "Failed to rename %s to %s"
-msgstr ""
+msgstr "Не ўдалося перайменаваць %s на %s"
 
 #: ftparchive/override.cc
 #, c-format
@@ -3039,7 +3038,7 @@ msgstr ""
 #: ftparchive/writer.cc
 #, c-format
 msgid " DeLink %s [%s]\n"
-msgstr ""
+msgstr " DeLink %s [%s]\n"
 
 #: ftparchive/writer.cc
 #, c-format
@@ -3101,7 +3100,7 @@ msgstr ""
 
 #: methods/basehttp.cc
 msgid "Unknown date format"
-msgstr ""
+msgstr "Невядомы фармат даных"
 
 #: methods/basehttp.cc
 msgid "Bad header data"
@@ -3123,7 +3122,7 @@ msgstr ""
 
 #: methods/basehttp.cc
 msgid "Internal error"
-msgstr ""
+msgstr "Унутраная памылка"
 
 #: methods/cdrom.cc
 #, c-format
@@ -3145,11 +3144,11 @@ msgstr ""
 
 #: methods/cdrom.cc
 msgid "Disk not found."
-msgstr ""
+msgstr "Дыск не знойдзены."
 
 #: methods/cdrom.cc methods/file.cc methods/rsh.cc
 msgid "File not found"
-msgstr ""
+msgstr "Файл не знойдзены"
 
 #. TRANSLATOR: %s is e.g. Tor's ".onion" which would likely fail or leak info (RFC7686)
 #: methods/connect.cc
@@ -3160,7 +3159,7 @@ msgstr ""
 #: methods/connect.cc
 #, c-format
 msgid "[IP: %s %s]"
-msgstr ""
+msgstr "[IP: %s %s]"
 
 #: methods/connect.cc
 #, c-format
@@ -3239,7 +3238,7 @@ msgstr ""
 #. Login must be before getpeername otherwise dante won't work.
 #: methods/ftp.cc
 msgid "Logging in"
-msgstr ""
+msgstr "Уваход"
 
 #: methods/ftp.cc
 msgid "Unable to determine the peer name"
@@ -3284,7 +3283,7 @@ msgstr ""
 
 #: methods/ftp.cc
 msgid "Server closed the connection"
-msgstr ""
+msgstr "Сервер закрыў спалучэнне"
 
 #: methods/ftp.cc methods/rsh.cc
 msgid "A response overflowed the buffer."
@@ -3428,11 +3427,11 @@ msgstr ""
 
 #: methods/http.cc
 msgid "Error reading from server"
-msgstr ""
+msgstr "Памылка чытання з сервера"
 
 #: methods/http.cc
 msgid "Error writing to file"
-msgstr ""
+msgstr "Памылка запісу ў файл"
 
 #: methods/http.cc
 msgid "Select failed"
