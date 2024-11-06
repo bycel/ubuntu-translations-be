@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-09-25 22:27+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-11-05 06:41+0000\n"
+"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
 
 #: apt-pkg/acquire-item.cc
 msgid ""
@@ -179,7 +179,8 @@ msgstr ""
 msgid "Conflicting distribution: %s (expected %s but got %s)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc
+#. Both messages are reused from the ReleaseInfoChange feature in acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid "Repository '%s' changed its '%s' value from '%s' to '%s'"
 msgstr ""
@@ -190,7 +191,7 @@ msgid "Repository '%s' changed its default priority for %s from %hi to %hi."
 msgstr ""
 
 #. TRANSLATOR: the "this" refers to changes in the repository like a new release or owner change
-#: apt-pkg/acquire-item.cc
+#: apt-pkg/acquire-item.cc apt-private/private-update.cc
 #, c-format
 msgid ""
 "More information about this can be found online in the Release notes at: %s"
@@ -1495,7 +1496,7 @@ msgid ""
 "used instead."
 msgstr ""
 
-#: apt-pkg/upgrade.cc
+#: apt-pkg/edsp.cc apt-pkg/upgrade.cc
 msgid "Calculating upgrade"
 msgstr ""
 
@@ -1821,8 +1822,6 @@ msgstr "Неабходна загрузіць %sB/%sB архіваў.\n"
 msgid "Need to get %sB of archives.\n"
 msgstr "Неабходна загрузіць %sB архіваў.\n"
 
-#. TRANSLATOR: The required space between number and unit is already included
-#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
 #: apt-private/private-install.cc
 #, c-format
 msgid "After this operation, %sB of additional disk space will be used.\n"
@@ -2686,7 +2685,7 @@ msgstr ""
 msgid "Remove packages and config files"
 msgstr ""
 
-#: cmdline/apt-get.cc cmdline/apt.cc
+#: cmdline/apt-get.cc
 msgid "Remove automatically all unused packages"
 msgstr ""
 
