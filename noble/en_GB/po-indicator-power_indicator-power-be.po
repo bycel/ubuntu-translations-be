@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: indicator-power\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-04-11 19:57+0000\n"
-"PO-Revision-Date: 2024-05-26 20:39+0000\n"
+"PO-Revision-Date: 2024-11-06 14:16+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-11-05 06:39+0000\n"
-"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
+"X-Launchpad-Export-Date: 2025-01-09 07:40+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #. TRANSLATORS: system power cord
 #: ../src/device.c:553
@@ -27,17 +27,17 @@ msgstr "Адаптар сілкавання"
 #. TRANSLATORS: laptop primary battery
 #: ../src/device.c:557 ../src/service.c:441
 msgid "Battery"
-msgstr "Батарэя"
+msgstr "Акумулятар"
 
 #. TRANSLATORS: battery-backed AC power source
 #: ../src/device.c:561
 msgid "UPS"
-msgstr "Блок безперапыннага сілкавання"
+msgstr "КБС"
 
 #. TRANSLATORS: a monitor is a device to measure voltage and current
 #: ../src/device.c:565
 msgid "Monitor"
-msgstr "Назіральнік"
+msgstr "Манітор"
 
 #. TRANSLATORS: wireless mice with internal batteries
 #: ../src/device.c:569
@@ -52,7 +52,7 @@ msgstr "Клавіятура"
 #. TRANSLATORS: portable device
 #: ../src/device.c:577
 msgid "PDA"
-msgstr "PDA"
+msgstr "КПК"
 
 #. TRANSLATORS: cell phone (mobile...)
 #: ../src/device.c:581
@@ -67,7 +67,7 @@ msgstr "Медыяпрайгравальнік"
 #. TRANSLATORS: tablet device
 #: ../src/device.c:589
 msgid "Tablet"
-msgstr "Тэблет"
+msgstr "Планшэт"
 
 #. TRANSLATORS: tablet device
 #: ../src/device.c:593
@@ -82,31 +82,31 @@ msgstr "Невядомая прылада"
 #: ../src/device.c:637
 #, c-format
 msgid "estimating…"
-msgstr "ацэньванне..."
+msgstr "ацэнка…"
 
 #: ../src/device.c:641
 #, c-format
 msgid "unknown"
-msgstr "невядомы"
+msgstr "невядомая прылада"
 
 #. TRANSLATORS: H:MM (hours, minutes) to charge the battery. Example: "1:30 to charge"
 #: ../src/device.c:670
 #, c-format
 msgid "%0d:%02d to charge"
-msgstr "%0d:%02d, каб зарадзіць"
+msgstr "%0d:%02d да поўнага зараду"
 
 #. TRANSLATORS: H:MM (hours, minutes) to discharge the battery. Example: "1:30 left"
 #: ../src/device.c:675
 #, c-format
 msgid "%0d:%02d left"
-msgstr "%0d:%02d засталося"
+msgstr "%0d:%02d засталося да разрадкі"
 
 #. TRANSLATORS: "X (hour,hours) Y (minute,minutes) to charge" the battery.
 #. Example: "1 hour 10 minutes to charge"
 #: ../src/device.c:710
 #, c-format
 msgid "%d %s %d %s to charge"
-msgstr "%d %s %d %s, каб зарадзіць"
+msgstr "%d %s %d %s да поўнага зараду"
 
 #: ../src/device.c:711 ../src/device.c:729
 msgid "hour"
@@ -128,21 +128,21 @@ msgstr[2] "хвілін"
 #: ../src/device.c:718
 #, c-format
 msgid "%d %s to charge"
-msgstr "%d %s, каб зарадзіць"
+msgstr "%d %s да поўнага зараду"
 
 #. TRANSLATORS: "X (hour,hours) Y (minute,minutes) left" until the battery's empty.
 #. Example: "1 hour 10 minutes left"
 #: ../src/device.c:728
 #, c-format
 msgid "%d %s %d %s left"
-msgstr "%d %s %d %s засталося"
+msgstr "%d %s %d %s засталося да поўнай разрадкі"
 
 #. TRANSLATORS: "Y (minute,minutes) left" until the battery's empty.
 #. Example: "59 minutes left"
 #: ../src/device.c:736
 #, c-format
 msgid "%d %s left"
-msgstr "%d %s засталося"
+msgstr "%d %s засталося да поўнай разрадкі"
 
 #. TRANSLATORS: example: "battery (charged)"
 #: ../src/device.c:793
@@ -176,16 +176,16 @@ msgstr "(%.0lf%%)"
 
 #: ../src/notifier.c:276
 msgid "Battery Low"
-msgstr "Нізкі зарад батарэі"
+msgstr "Нізкі зарад акумулятара"
 
 #: ../src/notifier.c:277
 msgid "Battery Critical"
-msgstr "Крытычна нізкі зарад батарэі"
+msgstr "Крытычна нізкі зарад акумулятара"
 
 #: ../src/notifier.c:279
 #, c-format
 msgid "%.0f%% charge remaining"
-msgstr "%.0f%% засталося"
+msgstr "Засталося %.0f%% зараду"
 
 #: ../src/notifier.c:311
 msgid "OK"
@@ -201,7 +201,7 @@ msgstr "Паказваць час на панэлі меню"
 
 #: ../src/service.c:638
 msgid "Show Percentage in Menu Bar"
-msgstr "Паказваць працэнты на паліцы"
+msgstr "Паказваць працэнты на панэлі меню"
 
 #: ../src/service.c:642
 msgid "Power Settings…"
@@ -209,8 +209,8 @@ msgstr "Налады сілкавання…"
 
 #: ../src/service.c:668
 msgid "Adjust brightness automatically"
-msgstr "Адрэгуляваць яркасць аўтаматычна"
+msgstr "Рэгуляваць яркасць аўтаматычна"
 
 #: ../src/service.c:674
 msgid "Battery settings…"
-msgstr "Налады батарэі..."
+msgstr "Налады акумулятара…"

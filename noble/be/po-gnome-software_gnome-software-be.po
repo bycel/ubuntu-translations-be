@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-11-05 06:35+0000\n"
-"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
+"X-Launchpad-Export-Date: 2025-01-09 07:34+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 "Language: be\n"
 
 #: data/metainfo/org.gnome.Software.metainfo.xml.in:7 src/gs-shell.ui:27
@@ -72,7 +72,7 @@ msgid "The update details"
 msgstr "Падрабязнасці абнаўлення"
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/metainfo/org.gnome.Software.metainfo.xml.in:2645
+#: data/metainfo/org.gnome.Software.metainfo.xml.in:2668
 #: src/gs-application.c:263
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
@@ -1041,7 +1041,7 @@ msgstr "Пра гэта выданне няма звестак"
 
 #. TRANSLATORS: This is the date string with: day number, month name, year.
 #. i.e. "25 May 2012"
-#: src/gs-app-version-history-row.c:158 src/gs-review-row.c:66
+#: src/gs-app-version-history-row.c:158 src/gs-review-row.c:63
 msgid "%e %B %Y"
 msgstr "%e %B %Y"
 
@@ -1623,10 +1623,10 @@ msgstr "Патрабуецца ўваход"
 #. TRANSLATORS: button text
 #: src/gs-basic-auth-dialog.ui:17 src/gs-common.c:300 src/gs-common.c:752
 #: src/gs-details-page.ui:331 src/gs-dkms-dialog.ui:28
-#: src/gs-dkms-dialog.ui:120 src/gs-page.c:423 src/gs-page.c:708
+#: src/gs-dkms-dialog.ui:120 src/gs-page.c:423 src/gs-page.c:701
 #: src/gs-removal-dialog.ui:24 src/gs-repos-dialog.c:175
-#: src/gs-repos-dialog.c:251 src/gs-review-dialog.ui:24 src/gs-review-row.c:239
-#: src/gs-review-row.c:263 src/gs-updates-page.c:852
+#: src/gs-repos-dialog.c:251 src/gs-review-dialog.ui:24 src/gs-review-row.c:236
+#: src/gs-review-row.c:260 src/gs-updates-page.c:852
 #: src/gs-upgrade-banner.ui:202
 msgid "_Cancel"
 msgstr "_Скасаваць"
@@ -2363,7 +2363,7 @@ msgstr "Патрабуюцца дадатковыя пакеты"
 msgid "Find in Software"
 msgstr "Пошук у Software"
 
-#: src/gs-description-box.c:93 src/gs-description-box.c:342
+#: src/gs-description-box.c:93 src/gs-description-box.c:348
 msgid "_Show More"
 msgstr "Паказаць _больш"
 
@@ -3566,26 +3566,26 @@ msgid "It will not be possible to use %s after removal."
 msgstr "Пасля выдалення праграмы %s, карыстацца ёй будзе немагчыма."
 
 #. Translators: this is part of section about deleting app's data, where the 'keep' means 'keep the data'
-#: src/gs-page.c:667
+#: src/gs-page.c:664
 msgid "_Keep"
 msgstr "За_хаваць"
 
-#: src/gs-page.c:673
+#: src/gs-page.c:669
 msgid "Allows restoring app settings and content"
 msgstr "Дазваляе аднавіць налады і змесціва праграмы"
 
 #. Translators: this is part of section about deleting app's data
-#: src/gs-page.c:682
+#: src/gs-page.c:677
 msgid "_Delete"
 msgstr "_Выдаліць"
 
-#: src/gs-page.c:688
+#: src/gs-page.c:682
 msgid "Permanently deletes data to save disk space"
 msgstr "Незваротна выдаляе даныя, каб зберагчы месца на дыску"
 
 #. TRANSLATORS: Longer dialog text. The placeholder is
 #. * the name of an app.
-#: src/gs-page.c:696
+#: src/gs-page.c:689
 #, c-format
 msgid ""
 "It will not be possible to use %s after removal. App data and settings will "
@@ -3595,7 +3595,7 @@ msgstr ""
 "захоўваюцца на дыску, каб мець магчымасць аднавіць праграму ў будучыні."
 
 #. TRANSLATORS: this is button text to remove the app
-#: src/gs-page.c:710
+#: src/gs-page.c:703
 msgid "_Uninstall"
 msgstr "_Выдаліць"
 
@@ -3708,7 +3708,7 @@ msgstr "_Адключыць"
 #. TRANSLATORS: this is button text to remove a repo
 #. TRANSLATORS: button text when
 #. * removing a review
-#: src/gs-repos-dialog.c:259 src/gs-review-row.c:266
+#: src/gs-repos-dialog.c:259 src/gs-review-row.c:263
 msgid "_Remove"
 msgstr "_Выдаліць"
 
@@ -3966,19 +3966,19 @@ msgid "out of 5 stars"
 msgstr "з 5 зорак"
 
 #. TRANSLATORS: this is when a user doesn't specify a name
-#: src/gs-review-row.c:59
+#: src/gs-review-row.c:56
 msgctxt "Reviewer name"
 msgid "Unknown"
 msgstr "Невядома"
 
 #. TRANSLATORS: we explain what the action is going to do
-#: src/gs-review-row.c:227
+#: src/gs-review-row.c:224
 msgid "You can report reviews for abusive, rude, or discriminatory behavior."
 msgstr ""
 "Вы можаце паскардзіцца на абразлівыя, грубыя або дыскрымінацыйныя водгукі."
 
 #. TRANSLATORS: we ask the user if they really want to do this
-#: src/gs-review-row.c:232
+#: src/gs-review-row.c:229
 msgid ""
 "Once reported, a review will be hidden until it has been checked by an "
 "administrator."
@@ -3988,13 +3988,13 @@ msgstr ""
 
 #. TRANSLATORS: window title when reporting a user-submitted review
 #. * for moderation
-#: src/gs-review-row.c:237
+#: src/gs-review-row.c:234
 msgid "Report Review?"
 msgstr "Паскардзіцца на водгук?"
 
 #. TRANSLATORS: button text when
 #. * * sending a review for moderation
-#: src/gs-review-row.c:242
+#: src/gs-review-row.c:239
 msgid "_Report"
 msgstr "_Паскардзіцца"
 

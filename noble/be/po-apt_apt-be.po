@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: apt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-08-14 10:42+0000\n"
-"PO-Revision-Date: 2015-12-23 16:04+0000\n"
-"Last-Translator: XiveZ <kyrsant2008@list.ru>\n"
+"PO-Revision-Date: 2024-11-06 14:16+0000\n"
+"Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-11-05 06:41+0000\n"
-"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
+"X-Launchpad-Export-Date: 2025-01-09 07:42+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #. TRANSLATOR: Very short word to be displayed before unchanged files in 'apt-get update'
 #: apt-private/acqprogress.cc:78
@@ -41,21 +41,21 @@ msgstr "Ign:%lu %s"
 
 #. TRANSLATOR: Very short word to be displayed for files in 'apt-get update'
 #. which failed to download and the error is critical (compare "Ign:")
-#: apt-private/acqprogress.cc:140
+#: apt-private/acqprogress.cc:152
 #, c-format
 msgid "Err:%lu %s"
 msgstr "Err:%lu %s"
 
-#: apt-private/acqprogress.cc:179
+#: apt-private/acqprogress.cc:203
 #, c-format
 msgid "Fetched %sB in %s (%sB/s)\n"
 msgstr "Атрымана %sБ за %s (%sБ/c)\n"
 
-#: apt-private/acqprogress.cc:248
+#: apt-private/acqprogress.cc:272
 msgid " [Working]"
 msgstr " [Апрацоўка]"
 
-#: apt-private/acqprogress.cc:316
+#: apt-private/acqprogress.cc:340
 #, c-format
 msgid ""
 "Media change: please insert the disc labeled\n"
@@ -63,7 +63,7 @@ msgid ""
 "in the drive '%s' and press [Enter]\n"
 msgstr ""
 
-#: apt-private/acqprogress.cc:353
+#: apt-private/acqprogress.cc:377
 msgid ""
 "Do you want to accept these changes and continue updating from this "
 "repository?"
@@ -177,16 +177,16 @@ msgstr ""
 msgid "Note, selecting '%s' instead of '%s'\n"
 msgstr "Заўважце, выбіраецца '%s' замест '%s'\n"
 
-#: apt-private/private-cmndline.cc:432
+#: apt-private/private-cmndline.cc:433
 msgid "Most used commands:"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:472
+#: apt-private/private-cmndline.cc:473
 #, c-format
 msgid "See %s for more information about the available commands."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:476
+#: apt-private/private-cmndline.cc:477
 msgid ""
 "Configuration options and syntax is detailed in apt.conf(5).\n"
 "Information about how to configure sources can be found in sources.list(5).\n"
@@ -194,15 +194,15 @@ msgid ""
 "Security details are available in apt-secure(8).\n"
 msgstr ""
 
-#: apt-private/private-cmndline.cc:481
+#: apt-private/private-cmndline.cc:482
 msgid "This APT has Super Cow Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:483
+#: apt-private/private-cmndline.cc:484
 msgid "This APT helper has Super Meep Powers."
 msgstr ""
 
-#: apt-private/private-cmndline.cc:586
+#: apt-private/private-cmndline.cc:587
 msgid ""
 "--force-yes is deprecated, use one of the options starting with --allow "
 "instead."
@@ -665,7 +665,7 @@ msgstr ""
 #: apt-private/private-output.cc:777
 #, c-format
 msgid "%lu upgraded, %lu newly installed, "
-msgstr "абноўлена %lu, ўстаноўлена %lu новых, "
+msgstr "абноўлена: %lu, усталявана новых: %lu, "
 
 #: apt-private/private-output.cc:781
 #, c-format
@@ -680,7 +680,7 @@ msgstr "%lu заменены на старыя версіі, "
 #: apt-private/private-output.cc:785
 #, c-format
 msgid "%lu to remove and %lu not upgraded.\n"
-msgstr "для выдалення пазначаныя %lu пакетаў, і %lu пакетаў ня абноўленыя.\n"
+msgstr "пазначана для выдалення: %lu, і не абноўлена: %lu.\n"
 
 #: apt-private/private-output.cc:791
 #, c-format
@@ -762,7 +762,7 @@ msgstr "Прышпіленыя пакеты:"
 #: apt-private/private-show.cc:536
 #, c-format
 msgid "%s -> %s with priority %d\n"
-msgstr ""
+msgstr "%s -> %s з прыярэтэтам %d\n"
 
 #: apt-private/private-show.cc:542
 msgid "  Installed: "
@@ -779,7 +779,7 @@ msgstr "(няма)"
 #. Show the priority tables
 #: apt-private/private-show.cc:574
 msgid "  Version table:"
-msgstr "  Табліца версіяў:"
+msgstr "  Табліца версій:"
 
 #: apt-private/private-show.cc:586
 msgid "phased"
@@ -893,7 +893,7 @@ msgstr "Немагчыма атрымаць інфармацыю пра зале
 #: apt-private/private-source.cc:597
 #, c-format
 msgid "%s has no build depends.\n"
-msgstr "%s не мае залежнасцяў для пабудовы.\n"
+msgstr "%s не мае залежнасцей для пабудовы.\n"
 
 #: apt-private/private-source.cc:650
 #, c-format
@@ -1548,32 +1548,31 @@ msgstr ""
 msgid "This HTTP server has broken range support"
 msgstr ""
 
-#: methods/basehttp.cc:247
+#: methods/basehttp.cc:247 methods/basehttp.cc:278
 msgid "Unknown date format"
 msgstr ""
 
-#: methods/basehttp.cc:688
+#: methods/basehttp.cc:703
 msgid "Bad header data"
 msgstr ""
 
-#: methods/basehttp.cc:707
+#: methods/basehttp.cc:722
 msgid "Connection failed"
 msgstr ""
 
-#: methods/basehttp.cc:760 methods/ftp.cc:970 methods/http.cc:637
-#: methods/http.cc:875
+#: methods/basehttp.cc:775 methods/http.cc:636 methods/http.cc:874
 #, c-format
 msgid "File has unexpected size (%llu != %llu). Mirror sync in progress?"
 msgstr ""
 
-#: methods/basehttp.cc:802
+#: methods/basehttp.cc:817
 #, c-format
 msgid ""
 "Automatically disabled %s due to incorrect response from server/proxy. (man "
 "5 apt.conf)"
 msgstr ""
 
-#: methods/basehttp.cc:904
+#: methods/basehttp.cc:931
 msgid "Internal error"
 msgstr ""
 
@@ -1601,7 +1600,7 @@ msgstr ""
 msgid "Disk not found."
 msgstr ""
 
-#: methods/cdrom.cc:262 methods/file.cc:123 methods/rsh.cc:310
+#: methods/cdrom.cc:262 methods/file.cc:138
 msgid "File not found"
 msgstr ""
 
@@ -1619,14 +1618,14 @@ msgstr ""
 #: methods/connect.cc:150
 #, c-format
 msgid "[IP: %s %s]"
-msgstr ""
+msgstr "[IP: %s %s]"
 
 #: methods/connect.cc:152
 #, c-format
 msgid "Connected to %s (%s)"
 msgstr ""
 
-#: methods/connect.cc:169 methods/connect.cc:578 methods/http.cc:322
+#: methods/connect.cc:169 methods/connect.cc:578 methods/http.cc:321
 #, c-format
 msgid "Connecting to %s (%s)"
 msgstr ""
@@ -1641,7 +1640,7 @@ msgstr ""
 msgid "Cannot initiate the connection to %s:%s (%s)."
 msgstr ""
 
-#: methods/connect.cc:204 methods/ftp.cc:756 methods/rsh.cc:113
+#: methods/connect.cc:204
 msgid "Failed"
 msgstr "Няўдача"
 
@@ -1655,9 +1654,7 @@ msgstr ""
 msgid "Could not connect to %s:%s (%s), connection timed out"
 msgstr ""
 
-#. We say this mainly because the pause here is for the
-#. ssh connection that is still going
-#: methods/connect.cc:363 methods/rsh.cc:471
+#: methods/connect.cc:363
 #, c-format
 msgid "Connecting to %s"
 msgstr ""
@@ -1687,11 +1684,11 @@ msgstr ""
 msgid "Unable to connect to %s:%s:"
 msgstr ""
 
-#: methods/copy.cc:49
+#: methods/copy.cc:55
 msgid "Failed to stat"
 msgstr ""
 
-#: methods/file.cc:50
+#: methods/file.cc:48
 msgid "Invalid URI, local URIS must not start with //"
 msgstr "Памылковы URI, лакальны URIS не павінен пачынацца з //"
 
@@ -1813,7 +1810,7 @@ msgstr ""
 msgid "Unable to accept connection"
 msgstr ""
 
-#: methods/ftp.cc:918 methods/http.cc:1032 methods/rsh.cc:348
+#: methods/http.cc:1031
 msgid "Problem hashing file"
 msgstr ""
 
@@ -1840,18 +1837,18 @@ msgstr ""
 msgid "Unable to invoke "
 msgstr ""
 
-#: methods/gpgv.cc:259
+#: methods/gpgv.cc:264
 #, c-format
 msgid "untrusted public key algorithm: %s"
 msgstr ""
 
-#: methods/gpgv.cc:273
+#: methods/gpgv.cc:278
 #, c-format
 msgid "%s will be deprecated in a future release"
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:449
+#: methods/gpgv.cc:454
 #, c-format
 msgid ""
 "Clearsigned file isn't valid, got '%s' (does the network require "
@@ -1859,30 +1856,30 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:457
+#: methods/gpgv.cc:462
 #, c-format
 msgid ""
 "Signed file isn't valid, got '%s' (does the network require authentication?)"
 msgstr ""
 
-#: methods/gpgv.cc:467 methods/gpgv.cc:477
+#: methods/gpgv.cc:472 methods/gpgv.cc:482
 msgid "At least one invalid signature was encountered."
 msgstr ""
 
-#: methods/gpgv.cc:472
+#: methods/gpgv.cc:477
 msgid ""
 "Internal error: Good signature, but could not determine key fingerprint?!"
 msgstr ""
 
-#: methods/gpgv.cc:479
+#: methods/gpgv.cc:484
 msgid "Could not execute 'apt-key' to verify signature (is gnupg installed?)"
 msgstr ""
 
-#: methods/gpgv.cc:481
+#: methods/gpgv.cc:486
 msgid "Unknown error executing apt-key"
 msgstr ""
 
-#: methods/gpgv.cc:516
+#: methods/gpgv.cc:521
 #, c-format
 msgid ""
 "Key is stored in legacy trusted.gpg keyring (%s), see the DEPRECATION "
@@ -1890,38 +1887,38 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: The second %s is the reason and is untranslated for repository owners.
-#: methods/gpgv.cc:579 methods/gpgv.cc:586
+#: methods/gpgv.cc:584 methods/gpgv.cc:591
 #, c-format
 msgid "Signature by key %s uses weak algorithm (%s)"
 msgstr ""
 
-#: methods/gpgv.cc:602 methods/gpgv.cc:608
+#: methods/gpgv.cc:607 methods/gpgv.cc:613
 msgid "The following signatures were invalid:\n"
 msgstr ""
 
-#: methods/gpgv.cc:618
+#: methods/gpgv.cc:623
 msgid ""
 "The following signatures couldn't be verified because the public key is not "
 "available:\n"
 msgstr ""
 
-#: methods/http.cc:741
+#: methods/http.cc:740
 msgid "Error reading from server. Remote end closed connection"
 msgstr ""
 
-#: methods/http.cc:745
+#: methods/http.cc:744
 msgid "Error reading from server"
 msgstr ""
 
-#: methods/http.cc:764
+#: methods/http.cc:763
 msgid "Error writing to file"
 msgstr ""
 
-#: methods/http.cc:832
+#: methods/http.cc:831
 msgid "Select failed"
 msgstr ""
 
-#: methods/http.cc:838
+#: methods/http.cc:837
 msgid "Connection timed out"
 msgstr ""
 
@@ -1946,6 +1943,6 @@ msgstr "Не атрымалася стварыць IPC канал для под�
 msgid "Connection closed prematurely"
 msgstr ""
 
-#: methods/store.cc:80
+#: methods/store.cc:81
 msgid "Empty files can't be valid archives"
 msgstr ""

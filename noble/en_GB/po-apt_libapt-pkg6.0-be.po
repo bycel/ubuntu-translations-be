@@ -14,101 +14,101 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-11-05 07:05+0000\n"
-"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
+"X-Launchpad-Export-Date: 2025-01-09 08:16+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
-#: apt-pkg/acquire-item.cc:176
+#: apt-pkg/acquire-item.cc:179
 msgid ""
 "Updating from such a repository can't be done securely, and is therefore "
 "disabled by default."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:181
+#: apt-pkg/acquire-item.cc:184
 msgid ""
 "Data from such a repository can't be authenticated and is therefore "
 "potentially dangerous to use."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:183
+#: apt-pkg/acquire-item.cc:186
 msgid ""
 "See apt-secure(8) manpage for repository creation and user configuration "
 "details."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:224
+#: apt-pkg/acquire-item.cc:227
 #, c-format
 msgid "The repository '%s' is no longer signed."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:225
+#: apt-pkg/acquire-item.cc:228
 #, c-format
 msgid "The repository '%s' no longer has a Release file."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:234
+#: apt-pkg/acquire-item.cc:237
 msgid ""
 "This is normally not allowed, but the option "
 "Acquire::AllowDowngradeToInsecureRepositories was given to override it."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:252
+#: apt-pkg/acquire-item.cc:255
 #, c-format
 msgid "The repository '%s' is not signed."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:253
+#: apt-pkg/acquire-item.cc:256
 #, c-format
 msgid "The repository '%s' does not have a Release file."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:254
+#: apt-pkg/acquire-item.cc:257
 #, c-format
 msgid "The repository '%s' provides only weak security information."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:598
+#: apt-pkg/acquire-item.cc:602
 #, c-format
 msgid "Failed to readlink %s"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:607
+#: apt-pkg/acquire-item.cc:611
 #, c-format
 msgid "Failed to stat %s"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:950 apt-pkg/acquire-item.cc:1090
+#: apt-pkg/acquire-item.cc:963 apt-pkg/acquire-item.cc:1114
 msgid "Hash Sum mismatch"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:953
+#: apt-pkg/acquire-item.cc:966
 msgid "Insufficient information available to perform this download securely"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1065 apt-pkg/contrib/fileutl.cc:3193
+#: apt-pkg/acquire-item.cc:1089 apt-pkg/contrib/fileutl.cc:3186
 #, c-format
 msgid "rename failed, %s (%s -> %s)."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1093
+#: apt-pkg/acquire-item.cc:1117
 msgid "Size mismatch"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1097
+#: apt-pkg/acquire-item.cc:1121
 msgid "Invalid file format"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1102
+#: apt-pkg/acquire-item.cc:1126
 msgid "Signature error"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1106
+#: apt-pkg/acquire-item.cc:1130
 #, c-format
 msgid ""
 "Clearsigned file isn't valid, got '%s' (does the network require "
 "authentication?)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1355
+#: apt-pkg/acquire-item.cc:1379
 #, c-format
 msgid ""
 "An error occurred during the signature verification. The repository is not "
@@ -116,33 +116,33 @@ msgid ""
 msgstr ""
 
 #. Invalid signature file, reject (LP: #346386) (Closes: #627642)
-#: apt-pkg/acquire-item.cc:1364 apt-pkg/acquire-item.cc:1370
+#: apt-pkg/acquire-item.cc:1388 apt-pkg/acquire-item.cc:1394
 #, c-format
 msgid "GPG error: %s: %s"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1605
+#: apt-pkg/acquire-item.cc:1629
 #, c-format
 msgid ""
 "Skipping acquire of configured file '%s' as repository '%s' doesn't have the "
 "component '%s' (component misspelt in sources.list?)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1624
+#: apt-pkg/acquire-item.cc:1648
 #, c-format
 msgid ""
 "Skipping acquire of configured file '%s' as repository '%s' doesn't support "
 "architecture '%s'"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1641
+#: apt-pkg/acquire-item.cc:1665
 #, c-format
 msgid ""
 "Skipping acquire of configured file '%s' as repository '%s' does not seem to "
 "provide it (sources.list entry misspelt?)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1659
+#: apt-pkg/acquire-item.cc:1683
 #, c-format
 msgid ""
 "Skipping acquire of configured file '%s' as repository '%s' provides only "
@@ -152,7 +152,7 @@ msgstr ""
 #. TRANSLATOR: The first %s is the URL of the bad Release file, the second is
 #. the time since then the file is invalid - formatted in the same way as in
 #. the download progress display (e.g. 7d 3h 42min 1s)
-#: apt-pkg/acquire-item.cc:1758
+#: apt-pkg/acquire-item.cc:1782
 #, c-format
 msgid ""
 "Release file for %s is expired (invalid since %s). Updates for this "
@@ -162,62 +162,62 @@ msgstr ""
 #. TRANSLATOR: The first %s is the URL of the bad Release file, the second is
 #. the time until the file will be valid - formatted in the same way as in
 #. the download progress display (e.g. 7d 3h 42min 1s)
-#: apt-pkg/acquire-item.cc:1777
+#: apt-pkg/acquire-item.cc:1801
 #, c-format
 msgid ""
 "Release file for %s is not valid yet (invalid for another %s). Updates for "
 "this repository will not be applied."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1812
+#: apt-pkg/acquire-item.cc:1836
 #, c-format
 msgid "Conflicting distribution: %s (expected %s but got %s)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1842
+#: apt-pkg/acquire-item.cc:1866
 #, c-format
 msgid "Repository '%s' changed its '%s' value from '%s' to '%s'"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:1858
+#: apt-pkg/acquire-item.cc:1882
 #, c-format
 msgid "Repository '%s' changed its default priority for %s from %hi to %hi."
 msgstr ""
 
 #. TRANSLATOR: the "this" refers to changes in the repository like a new release or owner change
-#: apt-pkg/acquire-item.cc:1871
+#: apt-pkg/acquire-item.cc:1895
 #, c-format
 msgid ""
 "More information about this can be found online in the Release notes at: %s"
 msgstr ""
 
 #. TRANSLATOR: %s is the name of the manpage in question, e.g. apt-secure(8)
-#: apt-pkg/acquire-item.cc:1878
+#: apt-pkg/acquire-item.cc:1902
 #, c-format
 msgid ""
 "This must be accepted explicitly before updates for this repository can be "
 "applied. See %s manpage for details."
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:2009 apt-pkg/update.cc:112 apt-pkg/update.cc:115
+#: apt-pkg/acquire-item.cc:2033 apt-pkg/update.cc:112 apt-pkg/update.cc:115
 #, c-format
 msgid "Failed to fetch %s  %s"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:3356
+#: apt-pkg/acquire-item.cc:3380
 #, c-format
 msgid ""
 "I wasn't able to locate a file for the %s package. This might mean you need "
 "to manually fix this package. (due to missing arch)"
 msgstr ""
 
-#: apt-pkg/acquire-item.cc:3485
+#: apt-pkg/acquire-item.cc:3509
 #, c-format
 msgid "Can't find a source to download version '%s' of '%s'"
 msgstr ""
 
 #. TRANSLATOR: %s=%s is sourcename=sourceversion, e.g. apt=1.1
-#: apt-pkg/acquire-item.cc:3642 apt-pkg/acquire-item.cc:3876
+#: apt-pkg/acquire-item.cc:3666 apt-pkg/acquire-item.cc:3900
 #, c-format
 msgid "Changelog unavailable for %s=%s"
 msgstr ""
@@ -229,32 +229,32 @@ msgid ""
 "to http(s). Set Dir::Bin::Methods::%s to \"%s\" to enable it again."
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:109
+#: apt-pkg/acquire-worker.cc:108
 #, c-format
 msgid "The method '%s' is explicitly disabled via configuration."
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:111
+#: apt-pkg/acquire-worker.cc:110
 #, c-format
 msgid "If you meant to use Tor remember to use %s instead of %s."
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:114
+#: apt-pkg/acquire-worker.cc:113
 #, c-format
 msgid "The method driver %s could not be found."
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:118
+#: apt-pkg/acquire-worker.cc:117
 #, c-format
 msgid "Is the package %s installed?"
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:173
+#: apt-pkg/acquire-worker.cc:172
 #, c-format
 msgid "Method %s did not start correctly"
 msgstr ""
 
-#: apt-pkg/acquire-worker.cc:744
+#: apt-pkg/acquire-worker.cc:812
 #, c-format
 msgid ""
 "Please insert the disc labeled: '%s' in the drive '%s' and press [Enter]."
@@ -298,8 +298,8 @@ msgstr ""
 #: apt-pkg/clean.cc:51 apt-pkg/contrib/cdromutl.cc:189
 #: apt-pkg/contrib/cdromutl.cc:211 apt-pkg/contrib/fileutl.cc:468
 #: apt-pkg/contrib/fileutl.cc:470 apt-pkg/contrib/fileutl.cc:585
-#: apt-pkg/contrib/fileutl.cc:3425 apt-pkg/deb/dpkgpm.cc:1367
-#: apt-pkg/init.cc:238 apt-pkg/init.cc:246 apt-pkg/policy.cc:390
+#: apt-pkg/contrib/fileutl.cc:3418 apt-pkg/deb/dpkgpm.cc:1378
+#: apt-pkg/init.cc:238 apt-pkg/init.cc:246 apt-pkg/policy.cc:389
 #: apt-pkg/sourcelist.cc:323 apt-pkg/sourcelist.cc:330
 #, c-format
 msgid "Unable to read %s"
@@ -315,19 +315,19 @@ msgstr ""
 msgid "Retrieving file %li of %li"
 msgstr ""
 
-#: apt-pkg/algorithms.cc:335
+#: apt-pkg/algorithms.cc:334
 #, c-format
 msgid ""
 "The package %s needs to be reinstalled, but I can't find an archive for it."
 msgstr ""
 
-#: apt-pkg/algorithms.cc:1194
+#: apt-pkg/algorithms.cc:1193
 msgid ""
 "Error, pkgProblemResolver::Resolve generated breaks, this may be caused by "
 "held packages."
 msgstr ""
 
-#: apt-pkg/algorithms.cc:1196
+#: apt-pkg/algorithms.cc:1195 apt-pkg/algorithms.cc:1426
 msgid "Unable to correct problems, you have held broken packages."
 msgstr ""
 
@@ -343,7 +343,7 @@ msgstr ""
 msgid "The list of sources could not be read."
 msgstr ""
 
-#: apt-pkg/cachefilter-patterns.cc:569 apt-pkg/cachefilter.cc:44
+#: apt-pkg/cachefilter-patterns.cc:571 apt-pkg/cachefilter.cc:44
 #, c-format
 msgid "Regex compilation error - %s"
 msgstr ""
@@ -562,53 +562,53 @@ msgstr ""
 msgid "Invalid operation %s"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:727
+#: apt-pkg/contrib/configuration.cc:761
 #, c-format
 msgid "Unrecognized type abbreviation: '%c'"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:983
+#: apt-pkg/contrib/configuration.cc:1017
 #, c-format
 msgid "Syntax error %s:%u: Block starts with no name."
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:997
+#: apt-pkg/contrib/configuration.cc:1031
 #, c-format
 msgid "Syntax error %s:%u: Malformed tag"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1014
+#: apt-pkg/contrib/configuration.cc:1048
 #, c-format
 msgid "Syntax error %s:%u: Extra junk after value"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1052
+#: apt-pkg/contrib/configuration.cc:1086
 #, c-format
 msgid "Syntax error %s:%u: Directives can only be done at the top level"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1059
+#: apt-pkg/contrib/configuration.cc:1093
 #, c-format
 msgid "Syntax error %s:%u: Too many nested includes"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1063 apt-pkg/contrib/configuration.cc:1068
+#: apt-pkg/contrib/configuration.cc:1097 apt-pkg/contrib/configuration.cc:1102
 #, c-format
 msgid "Syntax error %s:%u: Included from here"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1077
+#: apt-pkg/contrib/configuration.cc:1111
 #, c-format
 msgid "Syntax error %s:%u: Unsupported directive '%s'"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1080
+#: apt-pkg/contrib/configuration.cc:1114
 #, c-format
 msgid ""
 "Syntax error %s:%u: clear directive requires an option tree as argument"
 msgstr ""
 
-#: apt-pkg/contrib/configuration.cc:1124
+#: apt-pkg/contrib/configuration.cc:1158
 #, c-format
 msgid "Syntax error %s:%u: Extra junk at end of file"
 msgstr ""
@@ -693,104 +693,104 @@ msgid ""
 "Ignoring file '%s' in directory '%s' as it has an invalid filename extension"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:966 apt-pkg/contrib/gpgv.cc:395
+#: apt-pkg/contrib/fileutl.cc:968 apt-pkg/contrib/gpgv.cc:512
 #: apt-pkg/deb/debsystem.cc:506
 #, c-format
 msgid "Waited for %s but it wasn't there"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:978
+#: apt-pkg/contrib/fileutl.cc:980
 #, c-format
 msgid "Sub-process %s received a segmentation fault."
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:980
+#: apt-pkg/contrib/fileutl.cc:982
 #, c-format
 msgid "Sub-process %s received signal %u."
 msgstr ""
 
 #. we forward the statuscode, so don't generate a message on the fd in this case
-#: apt-pkg/contrib/fileutl.cc:984 apt-pkg/contrib/gpgv.cc:410
+#: apt-pkg/contrib/fileutl.cc:986 apt-pkg/contrib/gpgv.cc:527
 #, c-format
 msgid "Sub-process %s returned an error code (%u)"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:986 apt-pkg/contrib/gpgv.cc:402
+#: apt-pkg/contrib/fileutl.cc:988 apt-pkg/contrib/gpgv.cc:519
 #, c-format
 msgid "Sub-process %s exited unexpectedly"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:1160 apt-pkg/contrib/fileutl.cc:1466
-#: apt-pkg/contrib/fileutl.cc:1593 apt-pkg/contrib/fileutl.cc:1710
-#: apt-pkg/contrib/fileutl.cc:1885 apt-pkg/contrib/fileutl.cc:2144
-#: apt-pkg/contrib/fileutl.cc:2761
+#: apt-pkg/contrib/fileutl.cc:1156 apt-pkg/contrib/fileutl.cc:1460
+#: apt-pkg/contrib/fileutl.cc:1587 apt-pkg/contrib/fileutl.cc:1704
+#: apt-pkg/contrib/fileutl.cc:1879 apt-pkg/contrib/fileutl.cc:2137
+#: apt-pkg/contrib/fileutl.cc:2754
 msgid "Read error"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:1207 apt-pkg/contrib/fileutl.cc:1482
-#: apt-pkg/contrib/fileutl.cc:1605 apt-pkg/contrib/fileutl.cc:1729
-#: apt-pkg/contrib/fileutl.cc:1913 apt-pkg/contrib/fileutl.cc:2023
-#: apt-pkg/contrib/fileutl.cc:2177 apt-pkg/contrib/fileutl.cc:2861
+#: apt-pkg/contrib/fileutl.cc:1203 apt-pkg/contrib/fileutl.cc:1476
+#: apt-pkg/contrib/fileutl.cc:1599 apt-pkg/contrib/fileutl.cc:1723
+#: apt-pkg/contrib/fileutl.cc:1907 apt-pkg/contrib/fileutl.cc:2016
+#: apt-pkg/contrib/fileutl.cc:2170 apt-pkg/contrib/fileutl.cc:2854
 msgid "Write error"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:1560
+#: apt-pkg/contrib/fileutl.cc:1554
 #, c-format
 msgid "Problem closing the gzip file %s"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:1686 apt-pkg/contrib/fileutl.cc:1847
+#: apt-pkg/contrib/fileutl.cc:1680 apt-pkg/contrib/fileutl.cc:1841
 msgid "Unexpected end of file"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2231 apt-pkg/contrib/fileutl.cc:3208
+#: apt-pkg/contrib/fileutl.cc:2224 apt-pkg/contrib/fileutl.cc:3201
 msgid "Failed to create subprocess IPC"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2289
+#: apt-pkg/contrib/fileutl.cc:2282
 msgid "Failed to exec compressor "
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2573
+#: apt-pkg/contrib/fileutl.cc:2566
 #, c-format
 msgid "Could not open file %s"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2632 apt-pkg/contrib/fileutl.cc:2683
+#: apt-pkg/contrib/fileutl.cc:2625 apt-pkg/contrib/fileutl.cc:2676
 #, c-format
 msgid "Could not open file descriptor %d"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2746 apt-pkg/contrib/fileutl.cc:2775
+#: apt-pkg/contrib/fileutl.cc:2739 apt-pkg/contrib/fileutl.cc:2768
 #, c-format
 msgid "read, still have %llu to read but none left"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2849 apt-pkg/contrib/fileutl.cc:2873
+#: apt-pkg/contrib/fileutl.cc:2842 apt-pkg/contrib/fileutl.cc:2866
 #, c-format
 msgid "write, still have %llu to write but couldn't"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:2990
+#: apt-pkg/contrib/fileutl.cc:2983
 #, c-format
 msgid "Problem closing the file %s"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:3002
+#: apt-pkg/contrib/fileutl.cc:2995
 #, c-format
 msgid "Problem renaming the file %s to %s"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:3025
+#: apt-pkg/contrib/fileutl.cc:3018
 msgid "Problem syncing the file"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:3173
+#: apt-pkg/contrib/fileutl.cc:3166
 #, c-format
 msgid "Unable to mkstemp %s"
 msgstr ""
 
-#: apt-pkg/contrib/fileutl.cc:3179
+#: apt-pkg/contrib/fileutl.cc:3172
 #, c-format
 msgid "Unable to write to %s"
 msgstr ""
@@ -906,7 +906,7 @@ msgstr ""
 msgid "%lis"
 msgstr ""
 
-#: apt-pkg/contrib/strutl.cc:1412
+#: apt-pkg/contrib/strutl.cc:1479
 #, c-format
 msgid "Selection %s not found"
 msgstr ""
@@ -1042,129 +1042,129 @@ msgid "Not locked"
 msgstr ""
 
 #. we don't care for the difference
-#: apt-pkg/deb/dpkgpm.cc:145 apt-pkg/deb/dpkgpm.cc:147
+#: apt-pkg/deb/dpkgpm.cc:151 apt-pkg/deb/dpkgpm.cc:153
 #, c-format
 msgid "Preparing %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:148
+#: apt-pkg/deb/dpkgpm.cc:154
 #, c-format
 msgid "Preparing to configure %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:149
+#: apt-pkg/deb/dpkgpm.cc:155
 #, c-format
 msgid "Preparing for removal of %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:150
+#: apt-pkg/deb/dpkgpm.cc:156
 #, c-format
 msgid "Preparing to completely remove %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:151
+#: apt-pkg/deb/dpkgpm.cc:157
 #, c-format
 msgid "Noting disappearance of %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:152
+#: apt-pkg/deb/dpkgpm.cc:158
 #, c-format
 msgid "Running post-installation trigger %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:853 apt-pkg/deb/dpkgpm.cc:1153
+#: apt-pkg/deb/dpkgpm.cc:862 apt-pkg/deb/dpkgpm.cc:1164
 #, c-format
 msgid "Installed %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:854 apt-pkg/deb/dpkgpm.cc:1152
+#: apt-pkg/deb/dpkgpm.cc:863 apt-pkg/deb/dpkgpm.cc:1163
 #, c-format
 msgid "Configuring %s"
 msgstr ""
 
 #. FIXME: use a better string after freeze
-#: apt-pkg/deb/dpkgpm.cc:1002 apt-pkg/deb/dpkgpm.cc:1035
+#: apt-pkg/deb/dpkgpm.cc:1011 apt-pkg/deb/dpkgpm.cc:1044
 #, c-format
 msgid "Directory '%s' missing"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1016 apt-pkg/deb/dpkgpm.cc:1040 apt-pkg/edsp.cc:762
+#: apt-pkg/deb/dpkgpm.cc:1025 apt-pkg/deb/dpkgpm.cc:1049 apt-pkg/edsp.cc:761
 #, c-format
 msgid "Could not open file '%s'"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1147
+#: apt-pkg/deb/dpkgpm.cc:1158
 #, c-format
 msgid "Unpacking %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1148
+#: apt-pkg/deb/dpkgpm.cc:1159
 #, c-format
 msgid "Installing %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1157 apt-pkg/deb/dpkgpm.cc:1158
+#: apt-pkg/deb/dpkgpm.cc:1168 apt-pkg/deb/dpkgpm.cc:1169
 #, c-format
 msgid "Removing %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1162
+#: apt-pkg/deb/dpkgpm.cc:1173
 #, c-format
 msgid "Completely removing %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1163
+#: apt-pkg/deb/dpkgpm.cc:1174
 #, c-format
 msgid "Completely removed %s"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1228 apt-pkg/deb/dpkgpm.cc:1322
+#: apt-pkg/deb/dpkgpm.cc:1239 apt-pkg/deb/dpkgpm.cc:1333
 #, c-format
 msgid "Can not write log (%s)"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:1228 apt-pkg/deb/dpkgpm.cc:1322
+#: apt-pkg/deb/dpkgpm.cc:1239 apt-pkg/deb/dpkgpm.cc:1333
 msgid "Is /dev/pts mounted?"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2176
+#: apt-pkg/deb/dpkgpm.cc:2187
 msgid "Operation was interrupted before it could finish"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2261
+#: apt-pkg/deb/dpkgpm.cc:2285
 msgid "No apport report written because MaxReports is reached already"
 msgstr ""
 
 #. check if its not a follow up error
-#: apt-pkg/deb/dpkgpm.cc:2266
+#: apt-pkg/deb/dpkgpm.cc:2290
 msgid "dependency problems - leaving unconfigured"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2268
+#: apt-pkg/deb/dpkgpm.cc:2292
 msgid ""
 "No apport report written because the error message indicates its a followup "
 "error from a previous failure."
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2274
+#: apt-pkg/deb/dpkgpm.cc:2298
 msgid ""
 "No apport report written because the error message indicates a disk full "
 "error"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2281
+#: apt-pkg/deb/dpkgpm.cc:2305
 msgid ""
 "No apport report written because the error message indicates a out of memory "
 "error"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2288 apt-pkg/deb/dpkgpm.cc:2294
+#: apt-pkg/deb/dpkgpm.cc:2312 apt-pkg/deb/dpkgpm.cc:2318
 msgid ""
 "No apport report written because the error message indicates an issue on the "
 "local system"
 msgstr ""
 
-#: apt-pkg/deb/dpkgpm.cc:2316
+#: apt-pkg/deb/dpkgpm.cc:2340
 msgid ""
 "No apport report written because the error message indicates a dpkg I/O error"
 msgstr ""
@@ -1205,39 +1205,39 @@ msgstr ""
 msgid "Failed to close file %s"
 msgstr ""
 
-#: apt-pkg/edsp.cc:289 apt-pkg/edsp.cc:317
+#: apt-pkg/edsp.cc:288 apt-pkg/edsp.cc:316
 msgid "Send scenario to solver"
 msgstr ""
 
-#: apt-pkg/edsp.cc:347
+#: apt-pkg/edsp.cc:346
 msgid "Send request to solver"
 msgstr ""
 
-#: apt-pkg/edsp.cc:430 apt-pkg/edsp.cc:1060
+#: apt-pkg/edsp.cc:429 apt-pkg/edsp.cc:1059
 msgid "Prepare for receiving solution"
 msgstr ""
 
-#: apt-pkg/edsp.cc:443
+#: apt-pkg/edsp.cc:442
 msgid "External solver failed without a proper error message"
 msgstr ""
 
-#: apt-pkg/edsp.cc:809 apt-pkg/edsp.cc:812 apt-pkg/edsp.cc:817
+#: apt-pkg/edsp.cc:808 apt-pkg/edsp.cc:811 apt-pkg/edsp.cc:816
 msgid "Execute external solver"
 msgstr ""
 
-#: apt-pkg/edsp.cc:854 apt-pkg/edsp.cc:857 apt-pkg/edsp.cc:864
+#: apt-pkg/edsp.cc:853 apt-pkg/edsp.cc:856 apt-pkg/edsp.cc:863
 msgid "Execute external planner"
 msgstr ""
 
-#: apt-pkg/edsp.cc:885
+#: apt-pkg/edsp.cc:884
 msgid "Send request to planner"
 msgstr ""
 
-#: apt-pkg/edsp.cc:967
+#: apt-pkg/edsp.cc:966
 msgid "Send scenario to planner"
 msgstr ""
 
-#: apt-pkg/edsp.cc:1073
+#: apt-pkg/edsp.cc:1072
 msgid "External planner failed without a proper error message"
 msgstr ""
 
@@ -1392,44 +1392,44 @@ msgstr ""
 msgid "optional"
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:135
+#: apt-pkg/pkgcachegen.cc:136
 msgid "Cache has an incompatible versioning system"
 msgstr ""
 
 #. TRANSLATOR: The first placeholder is a package name,
 #. the other two should be copied verbatim as they include debug info
-#: apt-pkg/pkgcachegen.cc:276 apt-pkg/pkgcachegen.cc:338
-#: apt-pkg/pkgcachegen.cc:433 apt-pkg/pkgcachegen.cc:437
-#: apt-pkg/pkgcachegen.cc:454 apt-pkg/pkgcachegen.cc:464
-#: apt-pkg/pkgcachegen.cc:468 apt-pkg/pkgcachegen.cc:472
-#: apt-pkg/pkgcachegen.cc:493 apt-pkg/pkgcachegen.cc:498
-#: apt-pkg/pkgcachegen.cc:542 apt-pkg/pkgcachegen.cc:556
+#: apt-pkg/pkgcachegen.cc:277 apt-pkg/pkgcachegen.cc:339
+#: apt-pkg/pkgcachegen.cc:434 apt-pkg/pkgcachegen.cc:438
+#: apt-pkg/pkgcachegen.cc:455 apt-pkg/pkgcachegen.cc:465
+#: apt-pkg/pkgcachegen.cc:469 apt-pkg/pkgcachegen.cc:473
+#: apt-pkg/pkgcachegen.cc:494 apt-pkg/pkgcachegen.cc:499
+#: apt-pkg/pkgcachegen.cc:543 apt-pkg/pkgcachegen.cc:557
 #, c-format
 msgid "Error occurred while processing %s (%s%d)"
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:296
+#: apt-pkg/pkgcachegen.cc:297
 msgid "Wow, you exceeded the number of package names this APT is capable of."
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:299
+#: apt-pkg/pkgcachegen.cc:300
 msgid "Wow, you exceeded the number of versions this APT is capable of."
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:302
+#: apt-pkg/pkgcachegen.cc:303
 msgid "Wow, you exceeded the number of descriptions this APT is capable of."
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:305
+#: apt-pkg/pkgcachegen.cc:306
 msgid "Wow, you exceeded the number of dependencies this APT is capable of."
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:1577 apt-pkg/pkgcachegen.cc:1715
-#: apt-pkg/pkgcachegen.cc:1744 apt-pkg/pkgcachegen.cc:1860
+#: apt-pkg/pkgcachegen.cc:1578 apt-pkg/pkgcachegen.cc:1716
+#: apt-pkg/pkgcachegen.cc:1745 apt-pkg/pkgcachegen.cc:1861
 msgid "Reading package lists"
 msgstr ""
 
-#: apt-pkg/pkgcachegen.cc:1652 apt-pkg/pkgcachegen.cc:1659
+#: apt-pkg/pkgcachegen.cc:1653 apt-pkg/pkgcachegen.cc:1660
 msgid "IO Error saving source cache"
 msgstr ""
 
@@ -1438,35 +1438,35 @@ msgstr ""
 msgid "Index file type '%s' is not supported"
 msgstr ""
 
-#: apt-pkg/policy.cc:86
+#: apt-pkg/policy.cc:85
 #, c-format
 msgid ""
 "The value '%s' is invalid for APT::Default-Release as such a release is not "
 "available in the sources"
 msgstr ""
 
-#: apt-pkg/policy.cc:439
+#: apt-pkg/policy.cc:438
 #, c-format
 msgid "Invalid record in the preferences file %s, no Package header"
 msgstr ""
 
-#: apt-pkg/policy.cc:463
+#: apt-pkg/policy.cc:462
 #, c-format
 msgid "Did not understand pin type %s"
 msgstr ""
 
-#: apt-pkg/policy.cc:475
+#: apt-pkg/policy.cc:474
 #, c-format
 msgid ""
 "%s: The special 'Pin-Priority: %s' can only be used for 'Package: *' records"
 msgstr ""
 
-#: apt-pkg/policy.cc:483
+#: apt-pkg/policy.cc:482
 #, c-format
 msgid "%s: Value %s is outside the range of valid pin priorities (%d to %d)"
 msgstr ""
 
-#: apt-pkg/policy.cc:490
+#: apt-pkg/policy.cc:489
 msgid "No priority (or zero) specified for pin"
 msgstr ""
 
@@ -1523,7 +1523,7 @@ msgid ""
 "used instead."
 msgstr ""
 
-#: apt-pkg/edsp.cc:775 apt-pkg/upgrade.cc:37 apt-pkg/upgrade.cc:170
+#: apt-pkg/edsp.cc:774 apt-pkg/upgrade.cc:37 apt-pkg/upgrade.cc:170
 #: apt-pkg/upgrade.cc:218
 msgid "Calculating upgrade"
 msgstr ""
