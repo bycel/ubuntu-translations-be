@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://github.com/linux-pam/linux-pam/issues\n"
 "POT-Creation-Date: 2023-04-29 11:11+0000\n"
-"PO-Revision-Date: 2024-11-06 10:04\n"
+"PO-Revision-Date: 2025-01-13 12:32\n"
 "Last-Translator: Iryna Nikanchuk <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2024-11-05 06:38+0000\n"
-"X-Generator: Launchpad (build 22ade00ab50b929fac63b8ee7252243aceda294a)\n"
+"X-Launchpad-Export-Date: 2025-01-09 07:38+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 "Language: be\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -21,48 +21,48 @@ msgstr ""
 "X-Crowdin-File: /main/noble/en_GB/po-pam_linux-pam-be.po\n"
 "X-Crowdin-File-ID: 195\n"
 
-#: libpam/pam_get_authtok.c:40 modules/pam_exec/pam_exec.c:183
-#: modules/pam_userdb/pam_userdb.c:53
+#: libpam/pam_get_authtok.c:39 modules/pam_exec/pam_exec.c:178
+#: modules/pam_userdb/pam_userdb.c:55
 msgid "Password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:42
+#: libpam/pam_get_authtok.c:41
 #, c-format
 msgid "Current %s password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:43
+#: libpam/pam_get_authtok.c:42
 msgid "Current password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:45
+#: libpam/pam_get_authtok.c:44
 #, c-format
 msgid "New %s password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:46
+#: libpam/pam_get_authtok.c:45
 msgid "New password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:48
+#: libpam/pam_get_authtok.c:47
 #, c-format
 msgid "Retype new %s password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:49
+#: libpam/pam_get_authtok.c:48
 msgid "Retype new password: "
 msgstr ""
 
-#: libpam/pam_get_authtok.c:50
+#: libpam/pam_get_authtok.c:49
 msgid "Sorry, passwords do not match."
 msgstr ""
 
-#: libpam/pam_get_authtok.c:143 libpam/pam_get_authtok.c:245
+#: libpam/pam_get_authtok.c:142 libpam/pam_get_authtok.c:240
 #, c-format
 msgid "Retype %s"
 msgstr ""
 
-#: libpam/pam_get_authtok.c:183 libpam/pam_get_authtok.c:263
+#: libpam/pam_get_authtok.c:178 libpam/pam_get_authtok.c:258
 msgid "Password change has been aborted."
 msgstr ""
 
@@ -202,30 +202,30 @@ msgstr ""
 msgid "Unknown PAM error"
 msgstr ""
 
-#: libpam_misc/misc_conv.c:34
+#: libpam_misc/misc_conv.c:33
 msgid "...Time is running out...\n"
 msgstr ""
 
-#: libpam_misc/misc_conv.c:35
+#: libpam_misc/misc_conv.c:34
 msgid "...Sorry, your time is up!\n"
 msgstr ""
 
-#: libpam_misc/misc_conv.c:349
+#: libpam_misc/misc_conv.c:346
 #, c-format
 msgid "erroneous conversation (%d)\n"
 msgstr ""
 
-#: modules/pam_exec/pam_exec.c:300
+#: modules/pam_exec/pam_exec.c:275
 #, c-format
 msgid "%s failed: exit code %d"
 msgstr ""
 
-#: modules/pam_exec/pam_exec.c:310
+#: modules/pam_exec/pam_exec.c:284
 #, c-format
 msgid "%s failed: caught signal %d%s"
 msgstr ""
 
-#: modules/pam_exec/pam_exec.c:320
+#: modules/pam_exec/pam_exec.c:293
 #, c-format
 msgid "%s failed: unknown status 0x%x"
 msgstr ""
@@ -240,7 +240,8 @@ msgstr ""
 msgid "Login           Failures    Latest failure         From\n"
 msgstr ""
 
-#: modules/pam_faillock/pam_faillock.c:404
+#: modules/pam_faillock/pam_faillock.c:645 modules/pam_tally/pam_tally.c:553
+#: modules/pam_tally2/pam_tally2.c:562
 #, c-format
 msgid "The account is locked due to %u failed logins."
 msgstr ""
@@ -255,46 +256,45 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#. TRANSLATORS: only used if dngettext is not supported.
-#: modules/pam_faillock/pam_faillock.c:422
+#: modules/pam_faillock/pam_faillock.c:650
 #, c-format
 msgid "(%d minutes left to unlock)"
 msgstr ""
 
 #. TRANSLATORS: "strftime options for date of last login"
-#: modules/pam_lastlog/pam_lastlog.c:326 modules/pam_lastlog/pam_lastlog.c:595
+#: modules/pam_lastlog/pam_lastlog.c:318 modules/pam_lastlog/pam_lastlog.c:579
 msgid " %a %b %e %H:%M:%S %Z %Y"
 msgstr ""
 
 #. TRANSLATORS: " from <host>"
-#: modules/pam_lastlog/pam_lastlog.c:335 modules/pam_lastlog/pam_lastlog.c:604
+#: modules/pam_lastlog/pam_lastlog.c:327 modules/pam_lastlog/pam_lastlog.c:588
 #, c-format
 msgid " from %.*s"
 msgstr ""
 
 #. TRANSLATORS: " on <terminal>"
-#: modules/pam_lastlog/pam_lastlog.c:347 modules/pam_lastlog/pam_lastlog.c:616
+#: modules/pam_lastlog/pam_lastlog.c:339 modules/pam_lastlog/pam_lastlog.c:600
 #, c-format
 msgid " on %.*s"
 msgstr ""
 
 #. TRANSLATORS: "Last login: <date> from <host> on <terminal>"
-#: modules/pam_lastlog/pam_lastlog.c:357
+#: modules/pam_lastlog/pam_lastlog.c:349
 #, c-format
 msgid "Last login:%s%s%s"
 msgstr ""
 
-#: modules/pam_lastlog/pam_lastlog.c:363
+#: modules/pam_lastlog/pam_lastlog.c:355
 msgid "Welcome to your new account!"
 msgstr ""
 
 #. TRANSLATORS: "Last failed login: <date> from <host> on <terminal>"
-#: modules/pam_lastlog/pam_lastlog.c:626
+#: modules/pam_lastlog/pam_lastlog.c:610
 #, c-format
 msgid "Last failed login:%s%s%s"
 msgstr ""
 
-#: modules/pam_lastlog/pam_lastlog.c:635 modules/pam_lastlog/pam_lastlog.c:642
+#: modules/pam_lastlog/pam_lastlog.c:619 modules/pam_lastlog/pam_lastlog.c:626
 #, c-format
 msgid "There was %d failed login attempt since the last successful login."
 msgid_plural "There were %d failed login attempts since the last successful login."
@@ -304,12 +304,12 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: only used if dngettext is not supported
-#: modules/pam_lastlog/pam_lastlog.c:647
+#: modules/pam_lastlog/pam_lastlog.c:631
 #, c-format
 msgid "There were %d failed login attempts since the last successful login."
 msgstr ""
 
-#: modules/pam_limits/pam_limits.c:1269
+#: modules/pam_limits/pam_limits.c:1088
 #, c-format
 msgid "There were too many logins for '%s'."
 msgstr ""
@@ -350,22 +350,22 @@ msgstr ""
 msgid "You have mail in folder %s."
 msgstr ""
 
-#: modules/pam_mkhomedir/pam_mkhomedir.c:123
+#: modules/pam_mkhomedir/pam_mkhomedir.c:107
 #, c-format
 msgid "Creating directory '%s'."
 msgstr ""
 
-#: modules/pam_mkhomedir/pam_mkhomedir.c:206
+#: modules/pam_mkhomedir/pam_mkhomedir.c:174
 #, c-format
 msgid "Unable to create and initialize directory '%s'."
 msgstr ""
 
-#: modules/pam_pwhistory/pam_pwhistory.c:378
-#: modules/pam_unix/pam_unix_passwd.c:580
+#: modules/pam_pwhistory/pam_pwhistory.c:211
+#: modules/pam_unix/pam_unix_passwd.c:589
 msgid "Password has been already used. Choose another."
 msgstr ""
 
-#: modules/pam_pwhistory/pam_pwhistory.c:385
+#: modules/pam_pwhistory/pam_pwhistory.c:218
 msgid "Password has been already used."
 msgstr ""
 
@@ -395,17 +395,17 @@ msgstr ""
 msgid "This is not a valid security context."
 msgstr ""
 
-#: modules/pam_selinux/pam_selinux.c:508
+#: modules/pam_selinux/pam_selinux.c:509
 #, c-format
 msgid "A valid context for %s could not be obtained."
 msgstr ""
 
-#: modules/pam_selinux/pam_selinux.c:639
+#: modules/pam_selinux/pam_selinux.c:629
 #, c-format
 msgid "Security context %s has been assigned."
 msgstr ""
 
-#: modules/pam_selinux/pam_selinux.c:655
+#: modules/pam_selinux/pam_selinux.c:645
 #, c-format
 msgid "Key creation context %s has been assigned."
 msgstr ""
@@ -425,7 +425,7 @@ msgstr ""
 msgid "login: failure forking: %m"
 msgstr ""
 
-#: modules/pam_timestamp/pam_timestamp.c:382
+#: modules/pam_timestamp/pam_timestamp.c:354
 #, c-format
 msgid "Access has been granted (last access was %ld seconds ago)."
 msgstr ""
@@ -442,7 +442,7 @@ msgstr ""
 msgid "You are required to change your password immediately (password expired)."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_acct.c:269 modules/pam_unix/pam_unix_acct.c:276
+#: modules/pam_unix/pam_unix_acct.c:265 modules/pam_unix/pam_unix_acct.c:272
 #, c-format
 msgid "Warning: your password will expire in %d day."
 msgid_plural "Warning: your password will expire in %d days."
@@ -452,37 +452,39 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: only used if dngettext is not supported
-#: modules/pam_unix/pam_unix_acct.c:281
+#: modules/pam_unix/pam_unix_acct.c:277
 #, c-format
 msgid "Warning: your password will expire in %d days."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:456
+#: modules/pam_unix/pam_unix_passwd.c:465
 msgid "NIS password could not be changed."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:554
+#: modules/pam_cracklib/pam_cracklib.c:684
+#: modules/pam_unix/pam_unix_passwd.c:563
 msgid "No password has been supplied."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:555
+#: modules/pam_cracklib/pam_cracklib.c:685
+#: modules/pam_unix/pam_unix_passwd.c:564
 msgid "The password has not been changed."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:572
+#: modules/pam_unix/pam_unix_passwd.c:581
 msgid "You must choose a shorter password."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:576
+#: modules/pam_unix/pam_unix_passwd.c:585
 msgid "You must choose a longer password."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:683
+#: modules/pam_unix/pam_unix_passwd.c:692
 #, c-format
 msgid "Changing password for %s."
 msgstr ""
 
-#: modules/pam_unix/pam_unix_passwd.c:713
+#: modules/pam_unix/pam_unix_passwd.c:722
 msgid "You must wait longer to change your password."
 msgstr ""
 
