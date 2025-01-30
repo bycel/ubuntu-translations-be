@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-07 23:31+0000\n"
-"PO-Revision-Date: 2025-01-24 14:14\n"
+"PO-Revision-Date: 2025-01-30 11:22\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
@@ -3104,7 +3104,7 @@ msgstr "Шлюз:"
 #. :sl1:
 #: ../netcfg-static.templates:5001
 msgid "The gateway is an IP address (four numbers separated by periods) that indicates the gateway router, also known as the default router.  All traffic that goes outside your LAN (for instance, to the Internet) is sent through this router.  In rare circumstances, you may have no router; in that case, you can leave this blank.  If you don't know the proper answer to this question, consult your network administrator."
-msgstr ""
+msgstr "Шлюз — гэта IP-адрас (чатыры лічбы, раздзеленыя кропкамі), які вызначае шлюзавы маршрутызатар, таксама вядомы як прадвызначаны маршрутызатар. Увесь трафік, які выходзіць за межы вашай лакальнай сеткі (напрыклад, у інтэрнэт) адпраўляецца праз гэты маршрутызатар. Вы можаце не мець такога маршрутызатара; у гэтым выпадку пакіньце гэта поле пустым. Калі вы не ведаеце дакладнага адказу на гэта пытанне, звярніцеся да свайго сеткавага адміністратара."
 
 #. Type: error
 #. Description
@@ -3132,14 +3132,14 @@ msgstr ""
 #. :sl1:
 #: ../netcfg-static.templates:7001
 msgid "Is this information correct?"
-msgstr ""
+msgstr "Ці з'яўляюцца правільнымі гэтыя звесткі?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../netcfg-static.templates:7001
 msgid "Currently configured network parameters:"
-msgstr ""
+msgstr "Бягучая канфігурацыя параметраў сеткі:"
 
 #. Type: boolean
 #. Description
@@ -3151,7 +3151,12 @@ msgid " interface     = ${interface}\n"
 " gateway       = ${gateway}\n"
 " pointopoint   = ${pointopoint}\n"
 " nameservers   = ${nameservers}"
-msgstr ""
+msgstr " інтэрфейс     = ${interface}\n"
+" ip-адрас     = ${ipaddress}\n"
+" маска сеткі       = ${netmask}\n"
+" шлюз       = ${gateway}\n"
+" пратакол PPP   = ${pointopoint}\n"
+" серверы імёнаў   = ${nameservers}"
 
 #. Type: text
 #. Description
@@ -3159,28 +3164,28 @@ msgstr ""
 #. :sl1:
 #: ../netcfg-static.templates:8001
 msgid "Configure a network using static addressing"
-msgstr ""
+msgstr "Канфігурацыя сеткі з выкарыстаннем статычнай адрасацыі"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../choose-mirror-bin.templates-in:5001
 msgid "Checking the Ubuntu archive mirror"
-msgstr ""
+msgstr "Праверка люстры архіву Ubuntu"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../choose-mirror-bin.templates-in:6001
 msgid "Downloading Release files..."
-msgstr ""
+msgstr "Спампоўванне файлаў Release..."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:7001
 msgid "Go back and try a different mirror?"
-msgstr ""
+msgstr "Вярнуцца і паспрабаваць іншую люстру?"
 
 #. Type: boolean
 #. Description
@@ -3194,35 +3199,35 @@ msgstr ""
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:8001
 msgid "Bad archive mirror"
-msgstr ""
+msgstr "Неадпаведнае люстэрка архіву"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:8001
 msgid "An error has been detected while trying to use the specified Ubuntu archive mirror."
-msgstr ""
+msgstr "Выяўлена памылка падчас спробы выкарыстання пазначанага люстэрка архіву Ubuntu."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:8001
 msgid "Possible reasons for the error are: incorrect mirror specified; mirror is not available (possibly due to an unreliable network connection); mirror is broken (for example because an invalid Release file was found); mirror does not support the correct Ubuntu version."
-msgstr ""
+msgstr "Магчымыя прычыны памылкі: пазначана няправільная люстра; люстра недаступна (прычынай гэтаму могуць быць праблемы з падключэннем да сеткі); люстра сапсавана (напрыклад, быў знойдзены памылковы файл Release); люстра не падтрымлівае правільную версію Ubuntu."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:8001
 msgid "Additional details may be available in /var/log/syslog or on virtual console 4."
-msgstr ""
+msgstr "Дадатковыя падрабязнасці могуць быць даступнымі ў файле /var/log/syslog або на віртуальнай кансолі 4."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:8001
 msgid "Please check the specified mirror or try a different one."
-msgstr ""
+msgstr "Праверце пазначаную люстру або паспрабуйце іншую."
 
 #. Type: error
 #. Description
@@ -3243,14 +3248,14 @@ msgstr ""
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:10001
 msgid "oldstable"
-msgstr ""
+msgstr "старая стабільная"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates-in:11001
 msgid "stable"
-msgstr ""
+msgstr "стабільна"
 
 #. Type: text
 #. Description
@@ -3272,14 +3277,14 @@ msgstr ""
 #. :sl1:
 #: ../choose-mirror-bin.templates-in:14001
 msgid "Choose a mirror of the Ubuntu archive"
-msgstr ""
+msgstr "Выберыце люстру архіву Ubuntu"
 
 #. Type: select
 #. Choices
 #: ../choose-mirror-bin.templates.http-in:2001
 #: ../choose-mirror-bin.templates.ftp.sel-in:2001
 msgid "enter information manually"
-msgstr ""
+msgstr "увесці звесткі ўручную"
 
 #. Type: select
 #. Default
@@ -3300,7 +3305,7 @@ msgstr ""
 #. :sl1:
 #: ../choose-mirror-bin.templates.http-in:2002
 msgid "GB[ Default value for http]"
-msgstr ""
+msgstr "BY"
 
 #. Type: select
 #. Description
@@ -3344,7 +3349,7 @@ msgstr ""
 #: ../choose-mirror-bin.templates.http-in:3001
 #: ../choose-mirror-bin.templates.ftp.sel-in:3001
 msgid "Please select an Ubuntu archive mirror. You should use a mirror in your country or region if you do not know which mirror has the best Internet connection to you."
-msgstr ""
+msgstr "Выберыце люстру архіву Ubuntu. Калі вы не ведаеце люстру, якая будзе пасаваць для вашага падключэння лепш за ўсё, скарыстайцеся той, якая прызначана для вашай краіны або рэгіёна."
 
 #. Type: select
 #. Description
@@ -3377,7 +3382,7 @@ msgstr ""
 #: ../choose-mirror-bin.templates.http-in:4001
 #: ../choose-mirror-bin.templates.ftp.base-in:2001
 msgid "Please enter the hostname of the mirror from which Ubuntu will be downloaded."
-msgstr ""
+msgstr "Увядзіце імя вузла люстры, з якой будзе спампавана Ubuntu."
 
 #. Type: string
 #. Description
@@ -3388,7 +3393,7 @@ msgstr ""
 #: ../choose-mirror-bin.templates.http-in:4001
 #: ../choose-mirror-bin.templates.ftp.base-in:2001
 msgid "An alternate port can be specified using the standard [hostname]:[port] format."
-msgstr ""
+msgstr "Альтэрнатыўны порт можа быць пазначаны ў стандартным фармаце [імя вузла]:[порт]."
 
 #. Type: string
 #. Description
@@ -3404,7 +3409,7 @@ msgstr ""
 #: ../choose-mirror-bin.templates.http-in:5001
 #: ../choose-mirror-bin.templates.ftp.base-in:3001
 msgid "Please enter the directory in which the mirror of the Ubuntu archive is located."
-msgstr ""
+msgstr "Увядзіце назву каталога, у якім размяшчаецца люстра з архівам Ubuntu."
 
 #. Type: string
 #. Description
@@ -3418,7 +3423,7 @@ msgstr ""
 #. :sl1:
 #: ../choose-mirror-bin.templates.http-in:6001
 msgid "If you need to use a HTTP proxy to access the outside world, enter the proxy information here. Otherwise, leave this blank."
-msgstr ""
+msgstr "Увядзіце ў гэтым полі звесткі проксі-сервера, калі вам неабходна выкарыстоўваць проксі-сервер HTTP для камунікацыі з іншымі серверамі. Пакіньце поле пустым, калі гэта магчымасць вам не патрабуецца."
 
 #. Type: string
 #. Description
@@ -3436,14 +3441,14 @@ msgstr ""
 #. :sl2:
 #: ../choose-mirror-bin.templates.ftp.base-in:4001
 msgid "FTP proxy information (blank for none):"
-msgstr ""
+msgstr "Інфармацыя аб FTP-проксі (пакіньце пустым для працы без проксі):"
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates.ftp.base-in:4001
 msgid "If you need to use a FTP proxy to access the outside world, enter the proxy information here. Otherwise, leave this blank."
-msgstr ""
+msgstr "Увядзіце ў гэтым полі звесткі проксі-сервера, калі вам неабходна выкарыстоўваць проксі-сервер FTP для камунікацыі з іншымі серверамі. Пакіньце поле пустым, калі гэта магчымасць вам не патрабуецца."
 
 #. Type: select
 #. Default
@@ -3464,28 +3469,28 @@ msgstr ""
 #. :sl2:
 #: ../choose-mirror-bin.templates.ftp.sel-in:2002
 msgid "GB[ Default value for ftp]"
-msgstr ""
+msgstr "BY"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates.both-in:2001
 msgid "Protocol for file downloads:"
-msgstr ""
+msgstr "Пратакол для спампоўвання файлаў:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../choose-mirror-bin.templates.both-in:2001
 msgid "Please select the protocol to be used for downloading files. If unsure, select \"http\"; it is less prone to problems involving firewalls."
-msgstr ""
+msgstr "Выберыце пратакол для спампоўвання файлаў. Калі не ўпэўненыя, то варта выбраць «http», бо ў яго значна менш праблем пры выкарыстанні міжсеткавых экранаў."
 
 #. Type: text
 #. Description
 #. Main menu item
 #: ../download-installer.templates:1001
 msgid "Download installer components"
-msgstr ""
+msgstr "Спампаваць кампаненты ўсталёўшчыка"
 
 #. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Type: select
@@ -3518,7 +3523,7 @@ msgstr "Паўтарыць"
 #. an infinitive form
 #: ../net-retriever.templates:1001 ../apt-mirror-setup.templates:4001
 msgid "Change mirror"
-msgstr ""
+msgstr "Змяніць люстру"
 
 #. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Type: select
@@ -3529,14 +3534,14 @@ msgstr ""
 #. Description
 #: ../net-retriever.templates:1002 ../apt-mirror-setup.templates:4002
 msgid "Downloading a file failed:"
-msgstr ""
+msgstr "Збой спампоўвання файла:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../net-retriever.templates:1002
 msgid "The installer failed to download a file from the mirror. This may be a problem with your network, or with the mirror. You can choose to retry the download, select a different mirror, or cancel and choose another installation method."
-msgstr ""
+msgstr "Праграме ўсталявання не ўдалося спампаваць файл з люстры. Праблема можа быць як у вашай сетцы, так і ў люстры. Вы можаце паўтарыць спробу, выбраць іншую люстру або скасаваць і выбраць іншы спосаб усталявання."
 
 #. Type: text
 #. Description
@@ -3550,14 +3555,14 @@ msgstr "Загрузка кампанентаў праграмы ўсталяв�
 #. :sl2:
 #: ../cdrom-retriever.templates:1001
 msgid "Failed to copy file from CD-ROM. Retry?"
-msgstr ""
+msgstr "Не ўдалося скапіяваць файл з CD-ROM. Паўтарыць?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../cdrom-retriever.templates:1001
 msgid "There was a problem reading data from the CD-ROM. Please make sure it is in the drive. If retrying does not work, you should check the integrity of your CD-ROM."
-msgstr ""
+msgstr "Немагчыма прачытаць даных з CD-ROM. Пераканайцеся, што ён знаходзіцца ў дыскаводзе. Праверце цэльнасць CD-ROM, калі ўсе далейшыя спробы будуць беспаспяховымі."
 
 #. Type: text
 #. Description
@@ -3587,14 +3592,14 @@ msgstr "Пачакайце..."
 #. :sl1:
 #: ../partman-base.templates:3001
 msgid "Scanning disks..."
-msgstr ""
+msgstr "Сканаванне дыскаў..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-base.templates:4001
 msgid "Detecting file systems..."
-msgstr ""
+msgstr "Выяўленне файлавых сістэм..."
 
 #. Type: error
 #. Description
@@ -3608,7 +3613,7 @@ msgstr "Прылада выкарыстоўваецца"
 #. :sl2:
 #: ../partman-base.templates:5001
 msgid "No modifications can be made to the device ${DEVICE} for the following reasons:"
-msgstr ""
+msgstr "Нельга ўносіць змяненні ў раздзел прылады ${DEVICE} па наступных прычынах:"
 
 #. Type: error
 #. Description
@@ -3625,35 +3630,35 @@ msgstr "Раздзел выкарыстоўваецца"
 #. NUMBER and not the partition NAME
 #: ../partman-base.templates:6001
 msgid "No modifications can be made to the partition #${PARTITION} of device ${DEVICE} for the following reasons:"
-msgstr ""
+msgstr "Нельга ўносіць змяненні ў раздзел #${PARTITION} прылады ${DEVICE} па наступных прычынах:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-base.templates:9001
 msgid "This is an overview of your currently configured partitions and mount points. Select a partition to modify its settings (file system, mount point, etc.), a free space to create partitions, or a device to initialize its partition table."
-msgstr "Гэта агляд вашых бягучых раздзелаў дыска і пунктаў мантавання. Выберыце раздзел, каб змяніць яго налады (файлавую сістэму, пункт мантавання і г.д.), вольнае месца, каб стварыць новыя раздзелы, або пазначце прыладу, каб ініцыялізаваць яе табліцу раздзелаў."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-base.templates:10001
 msgid "Continue with the installation?"
-msgstr ""
+msgstr "Працягнуць усталяванне?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-base.templates:10001
 msgid "No partition table changes and no creation of file systems have been planned."
-msgstr ""
+msgstr "Табліца раздзелаў не зменена, а стварэнне файлавых сістэм не запланавана."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-base.templates:10001
 msgid "If you plan on using already created file systems, be aware that existing files may prevent the successful installation of the base system."
-msgstr ""
+msgstr "Пераканайцеся, што існуючыя файлы не перашкодзяць паспяховаму ўсталяванню асноўнай сістэмы, калі вы збіраецеся выкарыстоўваць ужо створаныя файлавыя сістэмы."
 
 #. Type: boolean
 #. Description
@@ -3673,7 +3678,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-base.templates:11001 ../partman-base.templates:12001
 msgid "If you continue, the changes listed below will be written to the disks. Otherwise, you will be able to make further changes manually."
-msgstr ""
+msgstr "Пасля працягу змяненні, якія пералічаны ніжэй, будуць запісаны на дыск. У адваротным выпадку, вы можаце зрабіць усе змяненні ўручную."
 
 #. Type: boolean
 #. Description
@@ -3695,7 +3700,7 @@ msgstr "Наступныя раздзелы будуць адфармаціра�
 #. for example: "partition #6 of IDE0 master as ext3 journaling file system"
 #: ../partman-base.templates:14001
 msgid "partition #${PARTITION} of ${DEVICE} as ${TYPE}"
-msgstr ""
+msgstr "раздзел #${PARTITION} на прыладзе ${DEVICE} як ${TYPE}"
 
 #. Type: text
 #. Description
@@ -3725,7 +3730,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-base.templates:18001
 msgid "How to use this free space:"
-msgstr ""
+msgstr "Як выкарыстоўваць гэта вольнае месца:"
 
 #. Type: select
 #. Description
@@ -3753,14 +3758,14 @@ msgstr "Гэты раздзел адфармаціраваны як ${FILESYSTEM
 #. :sl2:
 #: ../partman-base.templates:21001
 msgid "No existing file system was detected in this partition."
-msgstr ""
+msgstr "На гэтым раздзеле не знойдзены файлавых сістэм."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-base.templates:22001
 msgid "All data in it WILL BE DESTROYED!"
-msgstr ""
+msgstr "Усе даныя, якія знаходзяцца тут БУДУЦЬ ЗНІШЧАНЫЯ!"
 
 #. Type: note
 #. Description
@@ -3781,7 +3786,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-base.templates:26001
 msgid "Partitions formatting"
-msgstr ""
+msgstr "Фармаціраванне раздзелаў"
 
 #. Type: text
 #. Description
@@ -3798,7 +3803,7 @@ msgstr "Апрацоўка..."
 #. :sl2:
 #: ../partman-base.templates:29001 ../partman-base.templates:33001
 msgid "Show Cylinder/Head/Sector information"
-msgstr ""
+msgstr "Паказаць геаметрыю дыска (цыліндр/галоўка/сектар)"
 
 #. Type: text
 #. Description
@@ -3812,7 +3817,7 @@ msgstr "Наладжванне раздзела завершана"
 #. :sl1:
 #: ../partman-base.templates:31001
 msgid "Finish partitioning and write changes to disk"
-msgstr ""
+msgstr "Скончыць разметку дыскаў і запісаць змены на дыск"
 
 #. Type: text
 #. Description
@@ -3827,7 +3832,7 @@ msgstr "Адрабіць змены раздзелаў"
 #: ../partman-base.templates:34001
 #, no-c-format
 msgid "Dump partition info in %s"
-msgstr ""
+msgstr "Захаваць звесткі аб раздзеле ў %s"
 
 #. Type: text
 #. Description
@@ -3835,7 +3840,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-base.templates:35001
 msgid "FREE SPACE"
-msgstr ""
+msgstr "ВОЛЬНАЯ ПРАСТОРА"
 
 #. Type: text
 #. Description
@@ -3975,7 +3980,7 @@ msgstr "SCSI%s, раздзел #%s (%s)"
 #: ../partman-base.templates:51001
 #, no-c-format
 msgid "MMC/SD card #%s (%s)"
-msgstr ""
+msgstr "Картка MMC/SD #%s (%s)"
 
 #. Type: text
 #. Description
@@ -3984,7 +3989,7 @@ msgstr ""
 #: ../partman-base.templates:52001
 #, no-c-format
 msgid "MMC/SD card #%s, partition #%s (%s)"
-msgstr ""
+msgstr "Картка MMC/SD #%s, раздзел #%s (%s)"
 
 #. Type: text
 #. Description
@@ -3992,7 +3997,7 @@ msgstr ""
 #: ../partman-base.templates:53001
 #, no-c-format
 msgid "RAID%s device #%s"
-msgstr ""
+msgstr "Прылада RAID%s #%s"
 
 #. Type: text
 #. Description
@@ -4000,7 +4005,7 @@ msgstr ""
 #: ../partman-base.templates:54001
 #, no-c-format
 msgid "Encrypted volume (%s)"
-msgstr ""
+msgstr "Зашыфраваны том (%s)"
 
 #. Type: text
 #. Description
@@ -4018,7 +4023,7 @@ msgstr "Serial ATA RAID %s (%s)"
 #: ../partman-base.templates:56001
 #, no-c-format
 msgid "Serial ATA RAID %s (partition #%s)"
-msgstr ""
+msgstr "Serial ATA RAID %s (радзел #%s)"
 
 #. Type: text
 #. Description
@@ -4110,7 +4115,7 @@ msgstr "Віртуальны дыск %s, раздзел #%s (%s)"
 #. :sl1:
 #: ../partman-base.templates:66001
 msgid "Cancel this menu"
-msgstr ""
+msgstr "Скасаваць гэта меню"
 
 #. Type: text
 #. Description
@@ -4118,7 +4123,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-base.templates:67001
 msgid "Partition disks"
-msgstr ""
+msgstr "Раздзяліць дыскі"
 
 #. Type: boolean
 #. Description
@@ -4142,7 +4147,7 @@ msgstr "Вы сапраўды хочаце, каб усталёўшчык пра
 #. Description
 #: ../partman-base.templates:66001
 msgid "Installation medium on ${PARTITION}"
-msgstr ""
+msgstr "Носьбіт усталявання знаходзіцца на ${PARTITION}"
 
 #. Type: note
 #. Description
@@ -4171,7 +4176,7 @@ msgstr "Разлік новых раздзелаў..."
 #: ../partman-auto.templates:3001 ../partman-auto.templates:4001
 #: ../partman-auto-lvm.templates:4001
 msgid "Failed to partition the selected disk"
-msgstr ""
+msgstr "Не ўдалося размеціць выбраны дыск"
 
 #. Type: error
 #. Description
@@ -4195,7 +4200,7 @@ msgstr "Гэта адбылося хутчэй за ўсё па прычыне �
 #. :sl1:
 #: ../partman-auto.templates:5001 ../partman-auto.templates:8001
 msgid "Partitioning method:"
-msgstr ""
+msgstr "Спосаб разметкі:"
 
 #. Type: select
 #. Description
@@ -4212,14 +4217,14 @@ msgstr ""
 #. :sl1:
 #: ../partman-auto.templates:5001 ../partman-auto.templates:8001
 msgid "If you choose guided partitioning for an entire disk, you will next be asked which disk should be used."
-msgstr ""
+msgstr "На наступным кроку вас спытаюць аб выкарыстанні неабходнага дыска, калі выбраць разметку ўсяго дыска."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:9001
 msgid "Partitioning scheme:"
-msgstr ""
+msgstr "Схема разметкі:"
 
 #. Type: select
 #. Description
@@ -4232,7 +4237,7 @@ msgstr ""
 #. at the end of the sentence. Please keep it.
 #: ../partman-auto.templates:9001
 msgid "Selected for partitioning:"
-msgstr ""
+msgstr "Выбрана для разметкі:"
 
 #. Type: select
 #. Description
@@ -4253,7 +4258,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-auto.templates:10001
 msgid "Partitioning failed because the chosen free space may not be used. There are probably too many (primary) partitions in the partition table."
-msgstr ""
+msgstr "Збой разметкі. Немагчыма выкарыстаць вольную прастору, якую вы выбралі. Магчыма, што табліца з раздзеламі змяшчае занадта шмат (асноўных) раздзелаў."
 
 #. Type: text
 #. Description
@@ -4261,7 +4266,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:13001
 msgid "Guided partitioning"
-msgstr ""
+msgstr "Прадвызначаная разметка"
 
 #. Type: text
 #. Description
@@ -4269,7 +4274,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:14001
 msgid "Guided - use the largest continuous free space"
-msgstr ""
+msgstr "Указанні: выкарыстоўваць найбольшую вольную прастору"
 
 #. Type: text
 #. Description
@@ -4277,7 +4282,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:15001
 msgid "Guided - use entire disk"
-msgstr ""
+msgstr "Указанні: выкарыстоўваць увесь дыск"
 
 #. Type: select
 #. Description
@@ -4291,21 +4296,21 @@ msgstr "Выбраць дыск для разметкі:"
 #. :sl1:
 #: ../partman-auto.templates:16001
 msgid "Note that all data on the disk you select will be erased, but not before you have confirmed that you really want to make the changes."
-msgstr ""
+msgstr "Звярніце ўвагу, што ўсе даныя на выбраным дыску будуць сцёртыя. Гэтыя змены адбудуцца толькі пасля таго, як вы пацвердзіце сваё жаданне гэта зрабіць."
 
 #. Type: multiselect
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:17001
 msgid "Select disk(s) to partition:"
-msgstr ""
+msgstr "Выбраць дыск(і) для разметкі:"
 
 #. Type: multiselect
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:17001
 msgid "Note that all data on the disk(s) you select will be erased, but not before you have confirmed that you really want to make the changes."
-msgstr ""
+msgstr "Звярніце ўвагу, што ўсе даныя на выбраным дыску(ах) будуць сцёртыя. Гэтыя змены адбудуцца толькі пасля таго, як вы пацвердзіце сваё жаданне гэта зрабіць."
 
 #. Type: text
 #. Description
@@ -4314,7 +4319,7 @@ msgstr ""
 #. This is a method for partioning - as in guided (automatic) versus manual
 #: ../partman-auto.templates:18001
 msgid "Manual"
-msgstr ""
+msgstr "Уручную"
 
 #. Type: text
 #. Description
@@ -4322,7 +4327,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:19001
 msgid "Automatically partition the free space"
-msgstr ""
+msgstr "Аўтаматычна раздзяліць вольную прастору"
 
 #. Type: text
 #. Description
@@ -4330,7 +4335,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:20001
 msgid "All files in one partition (recommended for new users)"
-msgstr ""
+msgstr "Усе файлы на адным раздзеле (рэкамендавана для новых карыстальнікаў)"
 
 #. Type: text
 #. Description
@@ -4354,25 +4359,25 @@ msgstr "Асобныя раздзелы /home, /usr, /var, /tmp"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:23001
 msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr ""
+msgstr "Схема разметкі дыскаў з невялікім аб'ёмам (менш за 1 ГБ)"
 
 #. Type: text
 #. Description
 #: ../partman-auto.templates:24001
 msgid "Guided - resize ${PARTITION} and use freed space"
-msgstr ""
+msgstr "Указанні: змяніць памер раздзела ${PARTITION} і скарыстацца месцам, якое было вызвалена"
 
 #. Type: text
 #. Description
 #: ../partman-auto.templates:25001
 msgid "Guided - use entire partition, ${PARTITION}"
-msgstr ""
+msgstr "Указанні: выкарыстоўваць увесь раздзел ${PARTITION}"
 
 #. Type: error
 #. Description
 #: ../partman-auto.templates:26001
 msgid "Failed to create enough space for installation"
-msgstr ""
+msgstr "Не ўдалося стварыць дастаткова прасторы для ўсталявання"
 
 #. Type: error
 #. Description
@@ -4385,28 +4390,28 @@ msgstr "Аперацыя змянення памеру не змагла выд�
 #. :sl2:
 #: ../partman-basicmethods.templates:1001
 msgid "Go back to the menu?"
-msgstr ""
+msgstr "Вярнуцца ў меню?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-basicmethods.templates:1001
 msgid "No file system is specified for partition #${PARTITION} of ${DEVICE}."
-msgstr ""
+msgstr "Не вызначана файлавая сістэма для раздзела #${PARTITION} прылады ${DEVICE}."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-basicmethods.templates:1001
 msgid "If you do not go back to the partitioning menu and assign a file system to this partition, it won't be used at all."
-msgstr ""
+msgstr "Калі вы вернецеся ў меню разметкі і прызначыце файлавую сістэму для гэтага раздзела, то ён увогуле не будзе выкарыстоўвацца."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-basicmethods.templates:2001
 msgid "do not use the partition"
-msgstr ""
+msgstr "не выкарыстоўваць раздзел"
 
 #. Type: text
 #. Description
@@ -4414,7 +4419,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-basicmethods.templates:3001
 msgid "Format the partition:"
-msgstr ""
+msgstr "Фарматаваць раздзел:"
 
 #. Type: text
 #. Description
@@ -4428,14 +4433,14 @@ msgstr ""
 #. :sl2:
 #: ../partman-basicmethods.templates:5001
 msgid "no, keep existing data"
-msgstr ""
+msgstr "не, пакінуць існуючыя даныя"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-basicmethods.templates:6001
 msgid "do not use"
-msgstr ""
+msgstr "не выкарыстоўваць"
 
 #. Type: text
 #. Description
@@ -4450,7 +4455,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-basicmethods.templates:8001
 msgid "format the partition"
-msgstr ""
+msgstr "фарматаваць раздзел"
 
 #. Type: text
 #. Description
@@ -4458,14 +4463,14 @@ msgstr ""
 #. :sl1:
 #: ../partman-basicmethods.templates:9001
 msgid "format"
-msgstr ""
+msgstr "фарматаваць"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-basicmethods.templates:10001
 msgid "keep and use the existing data"
-msgstr ""
+msgstr "пакінуць і выкарыстоўваць існуючыя даныя"
 
 #. Type: text
 #. Description
@@ -4473,7 +4478,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-basicmethods.templates:11001
 msgid "keep"
-msgstr ""
+msgstr "пакінуць"
 
 #. Type: text
 #. Description
@@ -4494,7 +4499,7 @@ msgstr "Капіяванне раздзела..."
 #. :sl1:
 #: ../partman-partitioning.templates:3001
 msgid "Computing the new state of the partition table..."
-msgstr ""
+msgstr "Разлік новага стану табліцы раздзелаў..."
 
 #. Type: boolean
 #. Description
@@ -4512,7 +4517,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-partitioning.templates:4001
 msgid "Before you can select a partition to copy, any previous changes have to be written to disk."
-msgstr ""
+msgstr "Любыя папярэднія змяненні будуць запісаны на дыск перад тым, як вы зможаце выбраць раздзел для капіявання."
 
 #. Type: boolean
 #. Description
@@ -4530,28 +4535,28 @@ msgstr ""
 #. :sl2:
 #: ../partman-partitioning.templates:4001
 msgid "Please note that the copy operation may take a long time."
-msgstr ""
+msgstr "Звярніце ўвагу, што аперацыя капіявання можа заняць шмат часу."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:5001
 msgid "Source partition:"
-msgstr ""
+msgstr "Зыходны раздзел:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:5001
 msgid "Please choose the partition which contains the data you want to copy."
-msgstr ""
+msgstr "Выберыце раздзел, які змяшчае даныя для капіявання."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:6001
 msgid "Copy operation failure"
-msgstr ""
+msgstr "Збой падчас капіявання"
 
 #. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Type: error
@@ -4567,7 +4572,7 @@ msgstr ""
 #: ../partman-partitioning.templates:6001
 #: ../partman-partitioning.templates:13001 ../partman-md.templates:21001
 msgid "An error occurred while writing the changes to the storage devices."
-msgstr ""
+msgstr "Адбылася памылка падчас запісу змяненняў на прыладу захоўвання."
 
 #. Type: error
 #. Description
@@ -4588,7 +4593,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-partitioning.templates:7001
 msgid "Because of an unknown reason it is impossible to resize this partition."
-msgstr ""
+msgstr "Па нейкай невядомай прычыне немагчыма змяніць памер раздзела."
 
 #. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Type: error
@@ -4666,21 +4671,21 @@ msgstr ""
 #: ../partman-lvm.templates:57001 ../partman-lvm.templates:60001
 #: ../partman-auto-lvm.templates:7001
 msgid "Check /var/log/syslog or see virtual console 4 for the details."
-msgstr ""
+msgstr "Падрабязнасці глядзіце ў файле /var/log/syslog або на віртуальнай кансолі 4."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:8001
 msgid "Before you can select a new partition size, any previous changes have to be written to disk."
-msgstr ""
+msgstr "Любыя папярэднія змяненні будуць запісаны на дыск перад тым, як вы зможаце выбраць новы памер раздзела."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:8001
 msgid "Please note that the resize operation may take a long time."
-msgstr ""
+msgstr "Звярніце ўвагу, што аперацыя па змяненні памеру можа заняць шмат часу."
 
 #. Type: string
 #. Description
@@ -4715,7 +4720,7 @@ msgstr "Мінімальны памер, які можна прызначыць 
 #: ../partman-partitioning.templates:14001 ../partman-auto-lvm.templates:11001
 #, no-c-format
 msgid "Hint: \"max\" can be used as a shortcut to specify the maximum size, or enter a percentage (e.g. \"20%\") to use that percentage of the maximum size."
-msgstr ""
+msgstr "Падказка: «max» можа быць выкарыстаны ў якасці ярлыка для пазначэння максімальнага памеру. Таксама можна ўвесці значэнне ў працэнтах (напрыклад, «20%») ад максімальнага памеру."
 
 #. Type: error
 #. Description
@@ -4764,7 +4769,7 @@ msgstr "Памер, які вы ўвялі, менш чым мінімальны
 #. :sl2:
 #: ../partman-partitioning.templates:13001
 msgid "Resize operation failure"
-msgstr ""
+msgstr "Збой аперацыі змянення памеру"
 
 #. Type: error
 #. Description
@@ -4785,7 +4790,7 @@ msgstr "Максімальны памер для гэтага раздзела �
 #. :sl2:
 #: ../partman-partitioning.templates:15001
 msgid "Invalid size"
-msgstr ""
+msgstr "Памылковы памер"
 
 #. Type: select
 #. Choices
@@ -4806,14 +4811,14 @@ msgstr "Канец"
 #. :sl1:
 #: ../partman-partitioning.templates:16002
 msgid "Location for the new partition:"
-msgstr ""
+msgstr "Размяшчэнне новага раздзела:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-partitioning.templates:16002
 msgid "Please choose whether you want the new partition to be created at the beginning or at the end of the available space."
-msgstr ""
+msgstr "Выберыце, дзе вы хочаце стварыць новы раздзел: у пачатку або ў канцы даступнай прасторы."
 
 #. Type: select
 #. Choices
@@ -4841,14 +4846,14 @@ msgstr "Тып новага раздзела:"
 #. :sl2:
 #: ../partman-partitioning.templates:18001
 msgid "Flags for the new partition:"
-msgstr ""
+msgstr "Сцягі для новага раздзела:"
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:19001
 msgid "Partition name:"
-msgstr ""
+msgstr "Назва раздзела:"
 
 #. Type: boolean
 #. Description
@@ -4859,21 +4864,21 @@ msgstr ""
 #: ../partman-partitioning.templates:20001
 #: ../partman-partitioning.templates:21001
 msgid "Continue with partitioning?"
-msgstr ""
+msgstr "Працягнуць разметку?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:20001
 msgid "This partitioner doesn't have information about the default type of the partition tables on your architecture.  Please send an e-mail message to debian-boot@lists.debian.org with information."
-msgstr ""
+msgstr "Гэта праграма разметкі не змяшчае звесткі пра прадвызначаныя тыпы табліц раздзелаў для вашай архітэктуры. Адпраўце электронны ліст на паштовы адрас debian-boot@lists.debian.org з гэтымі звесткамі."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:20001
 msgid "Please note that if the type of the partition table is unsupported by libparted, then this partitioner will not work properly."
-msgstr ""
+msgstr "Звярніце ўвагу, што калі табліца раздзелаў не падтрымліваецца бібліятэкай libparted, то тады гэта праграма разметкі будзе працаваць некарэктна."
 
 #. Type: boolean
 #. Description
@@ -4887,7 +4892,7 @@ msgstr "Гэтая праграма разметкі дыскаў заснава
 #. :sl2:
 #: ../partman-partitioning.templates:21001
 msgid "If you can, please help to add support for your partition table type to libparted."
-msgstr ""
+msgstr "Па магчымасці, дапамажыце дадаць падтрымку вашага тыпу табліцы раздзелаў у libparted."
 
 #. Type: select
 #. Description
@@ -4901,7 +4906,7 @@ msgstr "Тып табліцы раздзела:"
 #. :sl2:
 #: ../partman-partitioning.templates:22001
 msgid "Select the type of partition table to use."
-msgstr ""
+msgstr "Выберыце неабходны тып табліцы раздзелаў."
 
 #. Type: boolean
 #. Description
@@ -4922,7 +4927,7 @@ msgstr "Вы выбралі разметку ўсяго дыска. Калі в�
 #. :sl2:
 #: ../partman-partitioning.templates:23001
 msgid "Note that you will be able to undo this operation later if you wish."
-msgstr ""
+msgstr "Звярніце ўвагу, што вы можаце адрабіць вынікі гэтай аперацыі пазней пры жаданні."
 
 #. Type: boolean
 #. Description
@@ -4936,7 +4941,7 @@ msgstr "Запісаць новую пустую табліцу раздзела
 #. :sl2:
 #: ../partman-partitioning.templates:24001
 msgid "Because of limitations in the current implementation of the Sun partition tables in libparted, the newly created partition table has to be written to the disk immediately."
-msgstr ""
+msgstr "Па прычыне абмежаванняў існуючай рэалізацыі табліц раздзелаў Sun у libparted, новыя табліцы раздзелаў адразу запісваюцца на дыск."
 
 #. Type: boolean
 #. Description
@@ -4950,35 +4955,35 @@ msgstr "У вас НЕ будзе магчымасці адрабіць гэту
 #. :sl2:
 #: ../partman-partitioning.templates:24001
 msgid "Confirm whether you actually want to create a new partition table and write it to disk."
-msgstr ""
+msgstr "Пацвердзіце, што вы сапраўды хочаце стварыць новую табліцу раздзелаў і запісаць яе на дыск."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:25001
 msgid "Are you sure you want a bootable logical partition?"
-msgstr ""
+msgstr "Вы сапраўды хочаце зрабіць загрузачным лагічны раздзел?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:25001
 msgid "You are trying to set the bootable flag on a logical partition. The bootable flag is generally only useful on primary partitions, so setting it on logical partitions is normally discouraged. Some BIOS versions are known to fail to boot if there is no bootable primary partition."
-msgstr ""
+msgstr "Вы спрабуеце задаць загрузачны сцяг на лагічны раздзел. У большасці выпадкаў загрузачны сцяг з'яўляецца карысным толькі на першасных раздзелах, таму яго не варта прызначаць лагічнаму раздзелу. Некаторыя версіі BIOS не загружаюцца, калі першасны раздзел адсутнічае."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:25001
 msgid "However, if you are sure that your BIOS does not have this problem, or if you are using a custom boot manager that pays attention to bootable logical partitions, then setting this flag may make sense."
-msgstr ""
+msgstr "Аднак, калі вы ўпэўнены, што ваш BIOS зможа выканаць загрузку або вы карыстаецеся адмысловым менеджарам загрузкі, які здольны загрузіць лагічныя раздзелы, то ўстаноўка гэтага сцяга магчыма будзе мець сэнс."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:26001
 msgid "Set the partition flags"
-msgstr ""
+msgstr "Задаць сцягі раздзела"
 
 #. Type: text
 #. Description
@@ -4992,28 +4997,28 @@ msgstr "Назва:"
 #. :sl2:
 #: ../partman-partitioning.templates:28001
 msgid "Bootable flag:"
-msgstr ""
+msgstr "Загрузачны сцяг:"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:29001
 msgid "on"
-msgstr ""
+msgstr "укл"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:30001
 msgid "off"
-msgstr ""
+msgstr "выкл"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../partman-partitioning.templates:31001
 msgid "Resize the partition (currently ${SIZE})"
-msgstr ""
+msgstr "Змяніць памер раздзела (бягучы памер: ${SIZE})"
 
 #. Type: text
 #. Description
@@ -5041,7 +5046,7 @@ msgstr "Стварыць новы раздзел"
 #. :sl2:
 #: ../partman-partitioning.templates:35001
 msgid "Create a new empty partition table on this device"
-msgstr ""
+msgstr "Стварыць новую пустую табліцу раздзелаў на гэтай прыладзе"
 
 #. Type: text
 #. Description
@@ -5050,7 +5055,7 @@ msgstr ""
 #. such as GRUB.
 #: ../partman-partitioning.templates:36001
 msgid "Reserved BIOS boot area"
-msgstr ""
+msgstr "Рэзервовая вобласць загрузкі BIOS"
 
 #. Type: text
 #. Description
@@ -5066,21 +5071,21 @@ msgstr "biosgrub"
 #. :sl1:
 #: ../partman-basicfilesystems.templates:1001
 msgid "Checking the ${TYPE} file system in partition #${PARTITION} of ${DEVICE}..."
-msgstr ""
+msgstr "Праверка файлавай сістэмы ${TYPE} на раздзеле #${PARTITION} прылады ${DEVICE}..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-basicfilesystems.templates:2001
 msgid "Checking the swap space in partition #${PARTITION} of ${DEVICE}..."
-msgstr ""
+msgstr "Праверка прасторы своп на раздзеле #${PARTITION} прылады ${DEVICE}..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-basicfilesystems.templates:3001
 msgid "Creating ${TYPE} file system in partition #${PARTITION} of ${DEVICE}..."
-msgstr ""
+msgstr "Ствараецца файлавая сістэма ${TYPE} на раздзеле #${PARTITION} прылады ${DEVICE}..."
 
 #. Type: text
 #. Description
@@ -5094,7 +5099,7 @@ msgstr "Ствараецца файлавая сістэма ${TYPE} для па
 #. :sl1:
 #: ../partman-basicfilesystems.templates:5001
 msgid "Formatting swap space in partition #${PARTITION} of ${DEVICE}..."
-msgstr ""
+msgstr "Фармаціраванне прасторы своп у раздзеле #${PARTITION} прылады ${DEVICE}..."
 
 #. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Type: boolean
