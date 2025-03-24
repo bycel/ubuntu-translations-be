@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-font-viewer/issues\n"
 "POT-Creation-Date: 2024-04-01 08:26+0000\n"
-"PO-Revision-Date: 2025-01-13 12:44\n"
+"PO-Revision-Date: 2025-03-24 14:09\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-09 07:36+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-03-21 06:21+0000\n"
+"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Crowdin-File-ID: 147\n"
 
 #: data/org.gnome.font-viewer.appdata.xml.in:6
-#: data/org.gnome.font-viewer.desktop.in.in:3 src/font-view-application.c:124
+#: data/org.gnome.font-viewer.desktop.in.in:2 src/font-view-application.c:124
 #: src/font-view-application.c:150
 msgid "Fonts"
 msgstr ""
 
 #: data/org.gnome.font-viewer.appdata.xml.in:7
-#: data/org.gnome.font-viewer.desktop.in.in:4
+#: data/org.gnome.font-viewer.desktop.in.in:3
 msgid "View fonts on your system"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgid "The GNOME Project"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.font-viewer.desktop.in.in:6
+#: data/org.gnome.font-viewer.desktop.in.in:5
 msgid "fonts;fontface;"
 msgstr ""
 
@@ -240,6 +240,8 @@ msgctxt "OpenType layout"
 msgid "Above-base Forms"
 msgstr ""
 
+# Lookup type 4
+# https://learn.microsoft.com/en-us/typography/opentype/spec/gpos
 #: src/open-type-layout.h:15
 msgctxt "OpenType layout"
 msgid "Above-base Mark Positioning"
@@ -440,11 +442,13 @@ msgctxt "OpenType layout"
 msgid "Discretionary Ligatures"
 msgstr ""
 
+# dnom, ніжняя частка дробу, fraction
 #: src/open-type-layout.h:55
 msgctxt "OpenType layout"
 msgid "Denominators"
 msgstr ""
 
+# розныя матэматычныя абазначэнні, каб замест кропкі паставіць над 𝑖 нейкі іншы гачык
 #: src/open-type-layout.h:56
 msgctxt "OpenType layout"
 msgid "Dotless Forms"
@@ -645,6 +649,7 @@ msgctxt "OpenType layout"
 msgid "Mark Positioning via Substitution"
 msgstr ""
 
+# анатацыя мае іншы сэнс, функцыя заключае сімвал у геаметрычныя фігуры, дужкі
 #: src/open-type-layout.h:96
 msgctxt "OpenType layout"
 msgid "Alternate Annotation Forms"
@@ -660,11 +665,13 @@ msgctxt "OpenType layout"
 msgid "Nukta Forms"
 msgstr ""
 
+# numr, верхняя частка дробу, fraction
 #: src/open-type-layout.h:99
 msgctxt "OpenType layout"
 msgid "Numerators"
 msgstr ""
 
+# https://helpx.adobe.com/fonts/using/open-type-syntax.html#onum
 #: src/open-type-layout.h:100
 msgctxt "OpenType layout"
 msgid "Oldstyle Figures"
@@ -685,6 +692,7 @@ msgctxt "OpenType layout"
 msgid "Ornaments"
 msgstr ""
 
+# https://helpx.adobe.com/fonts/using/open-type-syntax.html#palt
 #: src/open-type-layout.h:104
 msgctxt "OpenType layout"
 msgid "Proportional Alternate Widths"
