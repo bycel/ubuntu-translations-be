@@ -13,8 +13,8 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || "
 "n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Launchpad-Export-Date: 2025-01-09 07:55+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-03-21 06:43+0000\n"
+"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
 "Language: be_BY\n"
 "X-Crowdin-File: /master/sources/glib-networking/en_GB.po\n"
 "X-Crowdin-File-ID: 98\n"
@@ -56,9 +56,7 @@ msgstr "Сервер патрабуе сертыфікат TLS"
 #: tls/base/gtlsconnection-base.c:1519
 #, c-format
 msgid "Handshake is not finished, no channel binding information yet"
-msgstr ""
-"Пацвярджэнне сувязі не завершана. Звесткі пра прывязку канала пакуль "
-"адсутнічаюць"
+msgstr "Вітанне не завершана, яшчэ няма інфармацыі аб прывязцы канала"
 
 #: tls/base/gtlsconnection-base.c:1598
 msgid "Peer does not support safe renegotiation"
@@ -66,15 +64,14 @@ msgstr "Вузел не падтрымлівае бяспечнае пераўз
 
 #: tls/base/gtlsconnection-base.c:1746 tls/gnutls/gtlsconnection-gnutls.c:490
 #: tls/openssl/gtlsconnection-openssl.c:209
-#: tls/openssl/gtlsconnection-openssl.c:850
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:852
 msgid "Unacceptable TLS certificate"
 msgstr "Недапушчальны сертыфікат TLS"
 
 #: tls/base/gtlsconnection-base.c:2218
 #, c-format
 msgid "Receive flags are not supported"
-msgstr "Атрыманыя сцягі не падтрымліваюцца"
+msgstr "Сцягі атрымання не падтрымліваюцца"
 
 #: tls/base/gtlsconnection-base.c:2365
 #, c-format
@@ -85,7 +82,7 @@ msgstr "Адпраўленыя сцягі не падтрымліваюцца"
 #: tls/openssl/gtlscertificate-openssl.c:309
 #, c-format
 msgid "Failed to import PKCS #12: %s"
-msgstr "Не ўдалося імпартаваць PKCS #12: %s"
+msgstr "Не ўдалося імпартаваць PKCS#12: %s"
 
 #: tls/gnutls/gtlscertificate-gnutls.c:520
 #: tls/openssl/gtlscertificate-openssl.c:519
@@ -114,7 +111,7 @@ msgstr "Не атрымалася прааналізаваць прыватны 
 #: tls/gnutls/gtlscertificate-gnutls.c:613
 #, c-format
 msgid "Could not import PKCS #11 certificate URI: %s"
-msgstr "Не атрымалася імпартаваць сертыфікат PKCS #11 URI: %s"
+msgstr "Не ўдалося імпартаваць URI сертыфіката PKCS#11: %s"
 
 #: tls/gnutls/gtlscertificate-gnutls.c:657
 #: tls/openssl/gtlscertificate-openssl.c:620
@@ -125,20 +122,19 @@ msgstr "Даныя сертыфікату не забяспечаны"
 #: tls/gnutls/gtlsconnection-gnutls.c:1057
 #, c-format
 msgid "Cannot verify peer identity of unexpected type %s"
-msgstr ""
-"Немагчыма праверыць ідэнтычнасць аднарангавага вузла нечаканага тыпу %s"
+msgstr "Немагчыма праверыць ідэнтыфікатар вузла нечаканага тыпу %s"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:213
 #: tls/gnutls/gtlsconnection-gnutls.c:223
 msgid "Could not create TLS connection:"
-msgstr "Не атрымалася стварыць злучэнне TLS:"
+msgstr "Не ўдалося стварыць злучэнне TLS:"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:243
 #: tls/openssl/gtlsclientconnection-openssl.c:560
 #: tls/openssl/gtlsserverconnection-openssl.c:455
 #, c-format
 msgid "Could not create TLS connection: %s"
-msgstr "Не атрымалася стварыць злучэнне TLS: %s"
+msgstr "Не ўдалося стварыць злучэнне TLS: %s"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:434
 #: tls/gnutls/gtlsconnection-gnutls.c:445
@@ -189,7 +185,7 @@ msgid "Error performing TLS handshake: %s"
 msgstr "Памылка пацвярджэння сувязі TLS: %s"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:981
-#: tls/openssl/gtlsconnection-openssl.c:629
+#: tls/openssl/gtlsconnection-openssl.c:630
 msgid "Error performing TLS handshake"
 msgstr "Памылка пацвярджэння сувязі TLS"
 
@@ -198,35 +194,35 @@ msgstr "Памылка пацвярджэння сувязі TLS"
 msgid ""
 "Empty channel binding data indicates a bug in the TLS library implementation"
 msgstr ""
-"Пусты канал прывязкі даных паказвае на памылку ў рэалізацыі бібліятэкі TLS"
+"Пустыя даныя прывязкі канала сведчаць аб памылцы ў рэалізацыі бібліятэкі TLS"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1174
 #, c-format
 msgid "Channel binding type is not implemented in the TLS library"
-msgstr "Тып канала прывязкі не рэалізаваны ў бібліятэцы TLS"
+msgstr "Тып прывязкі канала не рэалізаваны ў бібліятэцы TLS"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1178
 #, c-format
 msgid "Channel binding data is not yet available"
-msgstr "Даныя канала прывязкі яшчэ недаступны"
+msgstr "Даныя аб прывязцы канала больш недаступны"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1230
-#: tls/openssl/gtlsconnection-openssl.c:825
+#: tls/openssl/gtlsconnection-openssl.c:827
 #, c-format
 msgid "Requested channel binding type is not implemented"
-msgstr "Запытаны канал тыпу прывязкі не рэалізаваны"
+msgstr "Запытаны тып прывязкі канала не рэалізаваны"
 
 #: tls/gnutls/gtlsconnection-gnutls.c:1251
 #: tls/gnutls/gtlsconnection-gnutls.c:1311
-#: tls/openssl/gtlsconnection-openssl.c:843
-#: tls/openssl/gtlsconnection-openssl.c:939
+#: tls/openssl/gtlsconnection-openssl.c:845
+#: tls/openssl/gtlsconnection-openssl.c:941
 msgid "Error reading data from TLS socket"
 msgstr "Памылка чытання даных з сокета TLS"
 
 #. flags
 #: tls/gnutls/gtlsconnection-gnutls.c:1333
 #: tls/gnutls/gtlsconnection-gnutls.c:1396
-#: tls/openssl/gtlsconnection-openssl.c:1018
+#: tls/openssl/gtlsconnection-openssl.c:1020
 msgid "Error writing data to TLS socket"
 msgstr "Памылка запісу даных у сокет TLS"
 
@@ -276,13 +272,13 @@ msgid ""
 "System trust contains zero trusted certificates; please investigate your "
 "GnuTLS configuration"
 msgstr ""
-"Сістэма даверу замяшчае нуль давераных сертыфікатаў; пераправерце сваю "
-"канфігурацыю GnuTLS"
+"Сістэма даверу змяшчае сертыфікаты нулявога даверу; праверце канфігурацыю "
+"GnuTLS"
 
 #: tls/gnutls/gtlsdatabase-gnutls.c:621
 #, c-format
 msgid "Failed to initialize trust list: %s"
-msgstr "Не ўдалося ініцыялізаваць спіс давераных: %s"
+msgstr "Не ўдалося ініцыялізаваць спіс давераных сертыфікатаў: %s"
 
 #: tls/gnutls/gtlsfiledatabase-gnutls.c:153
 #: tls/openssl/gtlsfiledatabase-openssl.c:456
@@ -300,22 +296,21 @@ msgstr "У сертыфіката адсутнічае прыватны ключ
 #: tls/openssl/gtlsserverconnection-openssl.c:299
 #, c-format
 msgid "Could not set TLS cipher list: %s"
-msgstr "Не атрымалася задаць спіс шыфраў TLS: %s"
+msgstr "Не ўдалося задаць спіс шыфраў TLS: %s"
 
 #: tls/openssl/gtlsclientconnection-openssl.c:416
 #: tls/openssl/gtlsserverconnection-openssl.c:327
 #, c-format
 msgid "Could not set MAX protocol to %d: %s"
-msgstr "Не атрымалася задаць пратакол MAX для %d: %s"
+msgstr "Не ўдалося задаць максімальным пратаколам %d: %s"
 
 #: tls/openssl/gtlsclientconnection-openssl.c:505
 #: tls/openssl/gtlsserverconnection-openssl.c:390
 #, c-format
 msgid "Could not create TLS context: %s"
-msgstr "Не атрымалася стварыць кантэкст TLS: %s"
+msgstr "Не ўдалося стварыць кантэкст TLS: %s"
 
 #: tls/openssl/gtlsconnection-openssl.c:217
-#, c-format
 msgid "Unacceptable TLS certificate authority"
 msgstr "Недапушчальны сертыфікат сертыфікацыйнага цэнтра TLS"
 
@@ -333,68 +328,60 @@ msgstr "Бяспечнае пераўзгадненне адключана"
 msgid "%s: The connection is broken"
 msgstr "%s: злучэнне пашкоджана"
 
-#: tls/openssl/gtlsconnection-openssl.c:675
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:676
 msgid "The request is invalid."
-msgstr "Памылковы запыт."
+msgstr "Запыт несапраўдны."
 
-#: tls/openssl/gtlsconnection-openssl.c:698
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:699
 msgid "Channel binding data tls-unique is not available"
-msgstr "Канал прывязкі даных tls-unique недаступны"
+msgstr "Даныя прывязкі канала tls-unique недаступны"
 
-#: tls/openssl/gtlsconnection-openssl.c:721
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:722
 msgid "X.509 Certificate is not available on the connection"
 msgstr "Сертыфікат X.509 недаступны на злучэнні"
 
-#: tls/openssl/gtlsconnection-openssl.c:729
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:731
 msgid "Unable to obtain certificate signature algorithm"
-msgstr "Немагчыма атрымаць сертыфікат подпісу алгарытму"
+msgstr "Немагчыма атрымаць алгарытм подпісу сертыфікату"
 
-#: tls/openssl/gtlsconnection-openssl.c:749
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:751
 msgid ""
 "Current X.509 certificate uses unknown or unsupported signature algorithm"
 msgstr ""
-"Бягучы сертыфікат X.509 выкарыстоўвае невядомы алгарытм подпісу, які не "
+"Бягучы сертыфікат X.509 выкарыстоўвае алгарытм подпісу, які невядомы або не "
 "падтрымліваецца"
 
-#: tls/openssl/gtlsconnection-openssl.c:767
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:769
 msgid "Failed to generate X.509 certificate digest"
-msgstr "Не ўдалося згенерыраваць дайджэст сертыфіката X.509"
+msgstr "Не ўдалося згенераваць дайджэст сертыфікату X.509"
 
-#: tls/openssl/gtlsconnection-openssl.c:798
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:800
 msgid "TLS Connection does not support TLS-Exporter feature"
 msgstr "Злучэнне TLS не падтрымлівае функцыю TLS-Exporter"
 
-#: tls/openssl/gtlsconnection-openssl.c:801
-#, c-format
+#: tls/openssl/gtlsconnection-openssl.c:803
 msgid "Unexpected error while exporting keying data"
-msgstr "Нечаканая памылка пры экспартаванні ўводу даных"
+msgstr "Нечаканая памылка падчас экспартавання даных вязкі ключоў"
 
-#: tls/openssl/gtlsconnection-openssl.c:1079
+#: tls/openssl/gtlsconnection-openssl.c:1081
 msgid "Error performing TLS close"
 msgstr "Памылка закрыцця TLS"
 
 #: tls/openssl/gtlsdatabase-openssl.c:174
 msgid "Could not get trust settings for certificate"
-msgstr "Немагчыма атрымаць давераныя налады для сертыфіката"
+msgstr "Не ўдалося атрымаць налады даверу для сертыфікату"
 
 #: tls/openssl/gtlsdatabase-openssl.c:261
 msgid "Could not retrieve certificates"
-msgstr "Немагчыма атрымаць сертыфікаты"
+msgstr "Не ўдалося атрымаць сертыфікаты"
 
 #: tls/openssl/gtlsdatabase-openssl.c:358
 msgid "Could not get root certificate store"
-msgstr "Не ўдалося атрымаць суперкарыстальніка са сховішча сертыфікатаў"
+msgstr "Не ўдалося атрымаць каранёвае сховішча сертыфікатаў"
 
 #: tls/openssl/gtlsdatabase-openssl.c:365
 msgid "Could not get CA certificate store"
-msgstr "Не ўдалося атрымаць ЦС са сховішча сертыфікатаў"
+msgstr "Не ўдалося атрымаць сховішча сертыфікатаў ад цэнтра сертыфікацыі"
 
 #: tls/openssl/gtlsdatabase-openssl.c:430
 msgid "Could not create CA store"
