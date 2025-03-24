@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-09 08:15+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-03-21 07:04+0000\n"
+"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
 
 #: .pc/Revert-kern-ieee1275-init-ppc64-Add-support-for-alignment.patch/grub-core/kern/ieee1275/init.c:272
 #: .pc/Revert-kern-ieee1275-init-ppc64-Decide-by-request-whether.patch/grub-core/kern/ieee1275/init.c:272
@@ -63,6 +63,17 @@ msgstr ""
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:280
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:352
+#: .pc/cve-2025-jan/commands-hexdump-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/hexdump.c:47
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:44
+#: .pc/cve-2025-jan/disk-loopback-Reference-tracking-for-the-loopback.patch/grub-core/disk/loopback.c:98
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:44
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1468
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1813
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2091
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:676
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1059
+#: .pc/cve-2025-jan/misc-Ensure-consistent-overflow-error-messages.patch/grub-core/video/readers/png.c:1118
+#: .pc/cve-2025-jan/video-readers-jpeg-Do-not-permit-duplicate-SOF0-markers-i.patch/grub-core/video/readers/jpeg.c:916
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:519
 #: .pc/efi-chainloader-Do-not-print-device-path-of-chainloaded-f.patch/grub-core/loader/efi/chainloader.c:230
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:44
@@ -74,19 +85,19 @@ msgstr ""
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:98
 #: grub-core/commands/blocklist.c:124 grub-core/commands/cat.c:57
 #: grub-core/commands/configfile.c:35 grub-core/commands/efi/loadbios.c:150
-#: grub-core/commands/file.c:160 grub-core/commands/hexdump.c:47
+#: grub-core/commands/file.c:160 grub-core/commands/hexdump.c:48
 #: grub-core/commands/legacycfg.c:228 grub-core/commands/legacycfg.c:334
 #: grub-core/commands/minicmd.c:44 grub-core/commands/syslinuxcfg.c:146
 #: grub-core/commands/testload.c:60 grub-core/commands/testspeed.c:52
-#: grub-core/disk/loopback.c:98 grub-core/efiemu/main.c:293
+#: grub-core/disk/loopback.c:102 grub-core/efiemu/main.c:293
 #: grub-core/font/font_cmd.c:32 grub-core/kern/emu/hostdisk.c:519
 #: grub-core/loader/arm/linux.c:365 grub-core/loader/arm/linux.c:410
 #: grub-core/loader/arm/linux.c:473 grub-core/loader/arm64/xen_boot.c:384
 #: grub-core/loader/arm64/xen_boot.c:397 grub-core/loader/arm64/xen_boot.c:448
 #: grub-core/loader/efi/chainloader.c:229 grub-core/loader/efi/linux.c:379
 #: grub-core/loader/efi/linux.c:466 grub-core/loader/emu/linux.c:119
-#: grub-core/loader/emu/linux.c:152 grub-core/loader/i386/bsd.c:1468
-#: grub-core/loader/i386/bsd.c:1813 grub-core/loader/i386/bsd.c:2091
+#: grub-core/loader/emu/linux.c:152 grub-core/loader/i386/bsd.c:1474
+#: grub-core/loader/i386/bsd.c:1819 grub-core/loader/i386/bsd.c:2097
 #: grub-core/loader/i386/coreboot/chainloader.c:438
 #: grub-core/loader/i386/linux.c:676 grub-core/loader/i386/linux.c:1059
 #: grub-core/loader/i386/pc/chainloader.c:290
@@ -108,12 +119,17 @@ msgstr ""
 #: grub-core/loader/xnu.c:479 grub-core/loader/xnu.c:797
 #: grub-core/loader/xnu.c:911 grub-core/loader/xnu.c:1296
 #: grub-core/loader/xnu.c:1446 grub-core/loader/xnu.c:1472
-#: grub-core/video/readers/jpeg.c:916 grub-core/video/readers/png.c:1118
+#: grub-core/video/readers/jpeg.c:920 grub-core/video/readers/png.c:1118
 msgid "filename expected"
 msgstr ""
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:291
-#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:629
+#: .pc/cve-2025-jan/kern-dl-Check-for-the-SHF_INFO_LINK-flag-in-grub_dl_reloc.patch/grub-core/kern/dl.c:732
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/kern/dl.c:725
+#: .pc/nx/modules-Don-t-allocate-space-for-non-allocable-sections.patch/grub-core/kern/dl.c:629
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/dl.c:632
+#: .pc/nx/nx-set-page-permissions-for-loaded-modules.patch/grub-core/kern/dl.c:653
+#: grub-core/efiemu/loadcore.c:346 grub-core/kern/dl.c:735
 #: grub-core/loader/ia64/efi/linux.c:345 grub-core/loader/mips/linux.c:248
 #: grub-core/loader/multiboot_elfxx.c:89
 #: grub-core/loader/powerpc/ieee1275/linux.c:266
@@ -122,12 +138,22 @@ msgid "this ELF file is not of the right type"
 msgstr ""
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:305
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1451
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/arm/dl.c:277
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/arm64/dl.c:44
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/i386/dl.c:36
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/ia64/dl.c:41
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/mips/dl.c:48
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/powerpc/dl.c:36
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/riscv/dl.c:47
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/sparc64/dl.c:36
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/x86_64/dl.c:36
 #: grub-core/kern/arm/dl.c:277 grub-core/kern/arm64/dl.c:44
 #: grub-core/kern/i386/dl.c:36 grub-core/kern/ia64/dl.c:41
 #: grub-core/kern/loongarch64/dl.c:37 grub-core/kern/mips/dl.c:48
 #: grub-core/kern/powerpc/dl.c:36 grub-core/kern/riscv/dl.c:47
 #: grub-core/kern/sparc64/dl.c:36 grub-core/kern/x86_64/dl.c:36
-#: grub-core/loader/i386/bsd.c:1451 grub-core/loader/i386/bsdXX.c:52
+#: grub-core/loader/i386/bsd.c:1457 grub-core/loader/i386/bsdXX.c:52
 #: grub-core/loader/ia64/efi/linux.c:341 grub-core/loader/mips/linux.c:298
 #: grub-core/loader/multiboot.c:232 grub-core/loader/multiboot_elfxx.c:86
 #: grub-core/loader/powerpc/ieee1275/linux.c:280
@@ -136,13 +162,19 @@ msgid "invalid arch-dependent ELF magic"
 msgstr ""
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:358
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1805
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1906
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2013
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2046
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2095
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1065
 #: .pc/secure-boot/loader-framework.patch/grub-core/loader/efi/linux.c:391
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:392
 #: grub-core/commands/boot.c:197 grub-core/commands/legacycfg.c:552
 #: grub-core/commands/legacycfg.c:593 grub-core/loader/efi/linux.c:391
-#: grub-core/loader/i386/bsd.c:1805 grub-core/loader/i386/bsd.c:1906
-#: grub-core/loader/i386/bsd.c:2013 grub-core/loader/i386/bsd.c:2046
-#: grub-core/loader/i386/bsd.c:2095 grub-core/loader/i386/linux.c:1065
+#: grub-core/loader/i386/bsd.c:1811 grub-core/loader/i386/bsd.c:1912
+#: grub-core/loader/i386/bsd.c:2019 grub-core/loader/i386/bsd.c:2052
+#: grub-core/loader/i386/bsd.c:2101 grub-core/loader/i386/linux.c:1065
 #: grub-core/loader/i386/pc/linux.c:412 grub-core/loader/i386/xen.c:783
 #: grub-core/loader/i386/xen.c:866 grub-core/loader/ia64/efi/linux.c:545
 #: grub-core/loader/mips/linux.c:432 grub-core/loader/multiboot.c:388
@@ -156,6 +188,7 @@ msgid "you need to load the kernel first"
 msgstr ""
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:406
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1157
 #: .pc/secure-boot/loader-framework.patch/grub-core/loader/efi/linux.c:566
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:583
 #: grub-core/loader/arm/linux.c:494 grub-core/loader/efi/linux.c:566
@@ -169,6 +202,7 @@ msgid "Load Linux."
 msgstr "Загрузіць Linux."
 
 #: .pc/Revert-loader-powerpc-ieee1275-Use-new-allocation-functio.patch/grub-core/loader/powerpc/ieee1275/linux.c:408
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1159
 #: .pc/secure-boot/loader-framework.patch/grub-core/loader/efi/linux.c:568
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:585
 #: grub-core/loader/arm/linux.c:496 grub-core/loader/efi/linux.c:568
@@ -387,6 +421,9 @@ msgstr ""
 #. TRANSLATORS: The first %s is the file being looked at, the second %s is
 #. the error message.
 #: .pc/core-in-fs.patch/util/setup.c:786
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:730
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:91
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:147
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:152
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:262
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:434
@@ -400,7 +437,7 @@ msgstr ""
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:184
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:190
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:212
-#: grub-core/disk/cryptodisk.c:730 grub-core/kern/emu/hostdisk.c:152
+#: grub-core/disk/cryptodisk.c:731 grub-core/kern/emu/hostdisk.c:152
 #: grub-core/kern/emu/hostdisk.c:262 grub-core/kern/emu/hostdisk.c:434
 #: grub-core/kern/emu/misc.c:185 grub-core/kern/emu/misc.c:191
 #: grub-core/kern/emu/misc.c:213 grub-core/osdep/bsd/getroot.c:92
@@ -430,6 +467,8 @@ msgid "cannot open `%s': %s"
 msgstr ""
 
 #: .pc/core-in-fs.patch/util/setup.c:791
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:114
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:129
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:342
 #: grub-core/kern/emu/hostdisk.c:342 util/editenv.c:66 util/grub-editenv.c:203
 #: util/grub-fstest.c:191 util/grub-mkfont.c:841 util/misc.c:114
@@ -453,11 +492,14 @@ msgid "cannot close `%s': %s"
 msgstr ""
 
 #: .pc/core-in-fs.patch/util/setup.c:817 .pc/core-in-fs.patch/util/setup.c:836
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:806
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:850
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:95
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:307
 #: .pc/install-locale-langpack.patch/util/grub-install-common.c:1130
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:216
-#: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:806
-#: grub-core/disk/cryptodisk.c:850 grub-core/kern/emu/hostdisk.c:307
+#: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:807
+#: grub-core/disk/cryptodisk.c:851 grub-core/kern/emu/hostdisk.c:307
 #: grub-core/kern/emu/hostfs.c:149 grub-core/kern/emu/misc.c:217
 #: grub-core/osdep/linux/ofpath.c:195 grub-core/osdep/linux/ofpath.c:521
 #: grub-core/osdep/linux/ofpath.c:534 util/glue-efi.c:90 util/glue-efi.c:104
@@ -491,12 +533,18 @@ msgstr ""
 msgid "big file signature isn't implemented yet"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1282
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2123
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:687
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:803
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1023
 #: .pc/debug_verifiers.patch/grub-core/kern/verifiers.c:156
 #: .pc/efi-chainloader-Do-not-print-device-path-of-chainloaded-f.patch/grub-core/loader/efi/chainloader.c:281
 #: .pc/efi-chainloader-Do-not-print-device-path-of-chainloaded-f.patch/grub-core/loader/efi/chainloader.c:302
 #: .pc/efi-chainloader-Do-not-print-device-path-of-chainloaded-f.patch/grub-core/loader/efi/chainloader.c:334
 #: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:145
 #: .pc/fdt-device-tree-fixup-protocol.patch/grub-core/loader/efi/fdt.c:146
+#: .pc/loader-efi-fdt-Add-fdtdump-command-to-access-device-tree.patch/grub-core/loader/efi/fdt.c:182
 #: .pc/pc-verifiers-module.patch/grub-core/kern/verifiers.c:156
 #: .pc/secure-boot/loader-framework.patch/grub-core/loader/efi/chainloader.c:283
 #: .pc/secure-boot/loader-framework.patch/grub-core/loader/efi/chainloader.c:304
@@ -511,9 +559,9 @@ msgstr ""
 #: grub-core/kern/verifiers.c:158 grub-core/loader/arm/linux.c:320
 #: grub-core/loader/arm64/xen_boot.c:342 grub-core/loader/efi/chainloader.c:277
 #: grub-core/loader/efi/chainloader.c:298
-#: grub-core/loader/efi/chainloader.c:330 grub-core/loader/efi/fdt.c:182
+#: grub-core/loader/efi/chainloader.c:330 grub-core/loader/efi/fdt.c:193
 #: grub-core/loader/efi/linux.c:513 grub-core/loader/i386/bsd.c:1282
-#: grub-core/loader/i386/bsd.c:2123 grub-core/loader/i386/bsdXX.c:20
+#: grub-core/loader/i386/bsd.c:2129 grub-core/loader/i386/bsdXX.c:20
 #: grub-core/loader/i386/bsdXX.c:39 grub-core/loader/i386/bsdXX.c:70
 #: grub-core/loader/i386/bsdXX.c:379 grub-core/loader/i386/bsdXX.c:398
 #: grub-core/loader/i386/bsdXX.c:545 grub-core/loader/i386/bsdXX.c:561
@@ -562,8 +610,11 @@ msgstr ""
 msgid "device count exceeds limit"
 msgstr ""
 
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:802
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:846
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:111
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:270
-#: grub-core/disk/cryptodisk.c:802 grub-core/disk/cryptodisk.c:846
+#: grub-core/disk/cryptodisk.c:803 grub-core/disk/cryptodisk.c:847
 #: grub-core/kern/emu/hostdisk.c:270 grub-core/kern/emu/hostfs.c:142
 #: grub-core/osdep/linux/hostdisk.c:418 util/grub-editenv.c:144
 #: util/grub-editenv.c:155 util/grub-fstest.c:326 util/misc.c:111
@@ -571,12 +622,19 @@ msgstr ""
 msgid "cannot seek `%s': %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:3892
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:3869
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:3869
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:3835
+#: .pc/cve-2025-jan/kern-file-Ensure-file-data-is-set.patch/grub-core/kern/file.c:44
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:3835
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/kern/file.c:44
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:458
 #: .pc/disable-floppies.patch/grub-core/kern/emu/hostdisk.c:473
 #: grub-core/commands/pcidump.c:109 grub-core/commands/pcidump.c:137
 #: grub-core/commands/setpci.c:183 grub-core/commands/setpci.c:213
-#: grub-core/fs/zfs/zfs.c:3835 grub-core/kern/emu/hostdisk.c:458
-#: grub-core/kern/emu/hostdisk.c:473 grub-core/kern/file.c:44
+#: grub-core/fs/zfs/zfs.c:3894 grub-core/kern/emu/hostdisk.c:458
+#: grub-core/kern/emu/hostdisk.c:473 grub-core/kern/file.c:45
 #, c-format
 msgid "missing `%c' symbol"
 msgstr ""
@@ -622,6 +680,8 @@ msgid ""
 "You will have to set `boot-device' variable manually"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:605
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:675
 #: .pc/efi-variable-storage-minimise-writes.patch/grub-core/osdep/unix/platform.c:92
 #: .pc/efi-variable-storage-minimise-writes.patch/grub-core/osdep/unix/platform.c:100
 #: .pc/install-powerpc-machtypes.patch/grub-core/osdep/unix/platform.c:92
@@ -630,7 +690,7 @@ msgstr ""
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:675
 #: .pc/zpool-full-device-name.patch/grub-core/osdep/unix/getroot.c:249
 #: .pc/zpool-full-device-name.patch/grub-core/osdep/unix/getroot.c:638
-#: grub-core/osdep/linux/getroot.c:605 grub-core/osdep/linux/getroot.c:675
+#: grub-core/osdep/linux/getroot.c:608 grub-core/osdep/linux/getroot.c:678
 #: grub-core/osdep/unix/getroot.c:250 grub-core/osdep/unix/getroot.c:639
 #, c-format
 msgid "Unable to open stream from %s: %s"
@@ -703,6 +763,11 @@ msgid "pre-load specified modules MODULES"
 msgstr ""
 
 #. TRANSLATORS: "embed" is a verb (command description).  "
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:213
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:213
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2144
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2147
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2150
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:32
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:64
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:66
@@ -749,8 +814,8 @@ msgstr ""
 #: grub-core/commands/syslinuxcfg.c:200 grub-core/commands/syslinuxcfg.c:206
 #: grub-core/commands/testload.c:165 grub-core/efiemu/main.c:312
 #: grub-core/kern/emu/main.c:100 grub-core/kern/emu/main.c:103
-#: grub-core/loader/i386/bsd.c:2144 grub-core/loader/i386/bsd.c:2147
-#: grub-core/loader/i386/bsd.c:2150
+#: grub-core/loader/i386/bsd.c:2150 grub-core/loader/i386/bsd.c:2153
+#: grub-core/loader/i386/bsd.c:2156
 #: grub-core/loader/i386/coreboot/chainloader.c:505
 #: grub-core/loader/ia64/efi/linux.c:594 include/grub/util/install.h:32
 #: include/grub/util/install.h:64 include/grub/util/install.h:66
@@ -852,6 +917,7 @@ msgid "choose the compression to use for core image"
 msgstr ""
 
 #. TRANSLATORS: platform here isn't identifier. It can be translated.
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:150
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:50
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:53
 #: .pc/efi-variable-storage-minimise-writes.patch/include/grub/util/install.h:56
@@ -1116,6 +1182,8 @@ msgstr ""
 msgid "use identifier file even if UUID is available"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:222
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:222
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:276
 #: .pc/grub-install-efi-title.patch/util/grub-install.c:293
 #: .pc/grub-install-pvxen-paths.patch/util/grub-install.c:276
@@ -1208,6 +1276,9 @@ msgid ""
 "only available on x86 BIOS targets."
 msgstr ""
 
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write-or-read.patch/grub-core/gettext/gettext.c:525
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write.patch/grub-core/gettext/gettext.c:525
+#: .pc/cve-2025-jan/gettext-Remove-variables-hooks-on-module-unload.patch/grub-core/gettext/gettext.c:525
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:292
 #: .pc/efi-variable-storage-minimise-writes.patch/util/grub-install.c:305
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:520
@@ -1231,7 +1302,7 @@ msgstr ""
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:292
 #: .pc/uefi-secure-boot-cryptomount.patch/util/grub-install.c:305
 #: grub-core/commands/menuentry.c:31 grub-core/commands/menuentry.c:38
-#: grub-core/commands/menuentry.c:39 grub-core/gettext/gettext.c:525
+#: grub-core/commands/menuentry.c:39 grub-core/gettext/gettext.c:530
 #: util/grub-fstest.c:526 util/grub-install.c:309 util/grub-install.c:322
 #: util/grub-mknetdir.c:51 util/grub-mkrescue.c:109 util/grub-mkrescue.c:110
 #: util/grub-mount.c:473 util/grub-render-label.c:65
@@ -1925,22 +1996,53 @@ msgstr ""
 
 #: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:151
 #: .pc/fdt-device-tree-fixup-protocol.patch/grub-core/loader/efi/fdt.c:152
-#: grub-core/loader/arm/linux.c:451 grub-core/loader/efi/fdt.c:188
+#: .pc/loader-efi-fdt-Add-fdtdump-command-to-access-device-tree.patch/grub-core/loader/efi/fdt.c:188
+#: grub-core/loader/arm/linux.c:451 grub-core/loader/efi/fdt.c:199
 msgid "invalid device tree"
 msgstr ""
 
 #. TRANSLATORS: DTB stands for device tree blob.
 #: .pc/fdt-add-debug-output-to-devicetree-command.patch/grub-core/loader/efi/fdt.c:176
 #: .pc/fdt-device-tree-fixup-protocol.patch/grub-core/loader/efi/fdt.c:178
-#: grub-core/loader/arm/linux.c:499 grub-core/loader/efi/fdt.c:215
+#: .pc/loader-efi-fdt-Add-fdtdump-command-to-access-device-tree.patch/grub-core/loader/efi/fdt.c:215
+#: grub-core/loader/arm/linux.c:499 grub-core/loader/efi/fdt.c:261
 msgid "Load DTB file."
 msgstr ""
 
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write-or-read.patch/grub-core/gettext/gettext.c:85
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write.patch/grub-core/gettext/gettext.c:85
+#: .pc/cve-2025-jan/gettext-Remove-variables-hooks-on-module-unload.patch/grub-core/gettext/gettext.c:85
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:85
-#: grub-core/gettext/gettext.c:85
+#: grub-core/gettext/gettext.c:86
 msgid "premature end of file"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:48
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:193
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:738
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:792
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write-or-read.patch/grub-core/gettext/gettext.c:497
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write.patch/grub-core/gettext/gettext.c:497
+#: .pc/cve-2025-jan/gettext-Remove-variables-hooks-on-module-unload.patch/grub-core/gettext/gettext.c:497
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:193
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:727
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1204
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:712
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1189
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:718
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:750
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:727
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1204
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:712
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1156
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:712
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1156
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:711
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:743
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:712
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1189
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:139
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:131
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:492
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:709
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1081
@@ -1956,11 +2058,11 @@ msgstr ""
 #: grub-core/commands/search.c:324 grub-core/commands/search_wrap.c:182
 #: grub-core/commands/setpci.c:242 grub-core/commands/sleep.c:71
 #: grub-core/fs/zfs/zfsinfo.c:279 grub-core/fs/zfs/zfsinfo.c:358
-#: grub-core/gettext/gettext.c:497 grub-core/kern/corecmd.c:68
+#: grub-core/gettext/gettext.c:502 grub-core/kern/corecmd.c:68
 #: grub-core/kern/corecmd.c:82 grub-core/mmap/mmap.c:433
-#: grub-core/net/dns.c:711 grub-core/net/dns.c:743 grub-core/net/net.c:712
-#: grub-core/net/net.c:1156 grub-core/normal/context.c:194
-#: grub-core/script/execute.c:131 grub-core/term/gfxterm_background.c:136
+#: grub-core/net/dns.c:718 grub-core/net/dns.c:750 grub-core/net/net.c:732
+#: grub-core/net/net.c:1209 grub-core/normal/context.c:194
+#: grub-core/script/execute.c:139 grub-core/term/gfxterm_background.c:136
 msgid "one argument expected"
 msgstr ""
 
@@ -1968,8 +2070,11 @@ msgstr ""
 #. So it's "translate" in the same meaning as in what you're
 #. doing now.
 #. 
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write-or-read.patch/grub-core/gettext/gettext.c:530
+#: .pc/cve-2025-jan/gettext-Integer-overflow-leads-to-heap-OOB-write.patch/grub-core/gettext/gettext.c:530
+#: .pc/cve-2025-jan/gettext-Remove-variables-hooks-on-module-unload.patch/grub-core/gettext/gettext.c:530
 #: .pc/gettext-quiet.patch/grub-core/gettext/gettext.c:525
-#: grub-core/gettext/gettext.c:530
+#: grub-core/gettext/gettext.c:535
 msgid "Translates the string with the current settings."
 msgstr ""
 
@@ -2265,6 +2370,8 @@ msgstr ""
 msgid "no SGI routines are available for your platform"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:212
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:212
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:212
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:212
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:212
@@ -2276,6 +2383,8 @@ msgstr ""
 msgid "GNU GRUB  version %s"
 msgstr "GNU GRUB, версія %s"
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:449
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:449
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:378
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:378
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:405
@@ -2286,6 +2395,8 @@ msgstr "GNU GRUB, версія %s"
 msgid "ESC at any time exits."
 msgstr "Для выхаду націсьніце ESC у любы момант."
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:452
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:452
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:381
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:381
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:408
@@ -2301,6 +2412,8 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: it's command line prompt.
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:494
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:494
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:414
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:423
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:450
@@ -2312,6 +2425,8 @@ msgid ">"
 msgstr ""
 
 #. TRANSLATORS: it's command line prompt.
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:497
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:497
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:417
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:426
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:453
@@ -2322,6 +2437,8 @@ msgstr ""
 msgid "grub>"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:619
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:619
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:537
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:548
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:575
@@ -2332,6 +2449,8 @@ msgstr ""
 msgid "Clear the screen."
 msgstr "Ачысьціць экран."
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:628
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:628
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:546
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:557
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:584
@@ -2342,6 +2461,8 @@ msgstr "Ачысьціць экран."
 msgid "Enter normal mode."
 msgstr "Увайсьці ў звычайны рэжым."
 
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/normal/main.c:630
+#: .pc/cve-2025-jan/normal-Remove-variables-hooks-on-module-unload.patch/grub-core/normal/main.c:630
 #: .pc/maybe-quiet.patch/grub-core/normal/main.c:548
 #: .pc/network/add-fw_path-variable-to-detect-config-file-on-efi.patch/grub-core/normal/main.c:559
 #: .pc/network/discover-the-device-to-read-the-config-from-as-fallback.patch/grub-core/normal/main.c:586
@@ -2352,159 +2473,233 @@ msgstr "Увайсьці ў звычайны рэжым."
 msgid "Exit from normal mode."
 msgstr "Выйсьці са звычайнага рэжыма."
 
+#: .pc/cve-2025-jan/normal-menu-Use-safe-math-to-avoid-an-integer-overflow.patch/grub-core/normal/menu.c:66
 #: .pc/maybe-quiet.patch/grub-core/normal/menu.c:66
-#: .pc/quick-boot.patch/grub-core/normal/menu.c:66 grub-core/normal/menu.c:66
+#: .pc/quick-boot.patch/grub-core/normal/menu.c:66 grub-core/normal/menu.c:67
 #: grub-core/normal/menu_entry.c:1458
 msgid "Press any key to continue..."
 msgstr "Націсьніце любую клявішу каб працягваць..."
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:651
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/diskfilter.c:797
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/diskfilter.c:807
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ntfs.c:449
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:1950
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:1943
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:1943
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:1943
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ntfs.c:449
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:1943
+#: .pc/cve-2025-jan/misc-Ensure-consistent-overflow-error-messages.patch/grub-core/fs/ntfs.c:450
+#: .pc/cve-2025-jan/normal-menu-Use-safe-math-to-avoid-an-integer-overflow.patch/grub-core/normal/menu.c:427
 #: .pc/maybe-quiet.patch/grub-core/normal/menu.c:427
 #: .pc/quick-boot.patch/grub-core/normal/menu.c:427
-#: grub-core/commands/pgp.c:651 grub-core/disk/diskfilter.c:797
-#: grub-core/disk/diskfilter.c:807 grub-core/fs/ntfs.c:449
-#: grub-core/fs/zfs/zfs.c:1943 grub-core/normal/menu.c:427
+#: grub-core/commands/pgp.c:651 grub-core/disk/diskfilter.c:798
+#: grub-core/disk/diskfilter.c:808 grub-core/fs/ntfs.c:450
+#: grub-core/fs/zfs/zfs.c:1950 grub-core/normal/menu.c:428
 #, c-format
 msgid "module `%s' isn't loaded"
 msgstr ""
 
+#: .pc/cve-2025-jan/normal-menu-Use-safe-math-to-avoid-an-integer-overflow.patch/grub-core/normal/menu.c:848
 #: .pc/maybe-quiet.patch/grub-core/normal/menu.c:824
-#: .pc/quick-boot.patch/grub-core/normal/menu.c:824 grub-core/normal/menu.c:848
+#: .pc/quick-boot.patch/grub-core/normal/menu.c:824 grub-core/normal/menu.c:847
 #, c-format
 msgid "Booting `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/normal-menu-Use-safe-math-to-avoid-an-integer-overflow.patch/grub-core/normal/menu.c:865
 #: .pc/maybe-quiet.patch/grub-core/normal/menu.c:837
-#: .pc/quick-boot.patch/grub-core/normal/menu.c:841 grub-core/normal/menu.c:865
+#: .pc/quick-boot.patch/grub-core/normal/menu.c:841 grub-core/normal/menu.c:864
 #, c-format
 msgid "Falling back to `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/normal-menu-Use-safe-math-to-avoid-an-integer-overflow.patch/grub-core/normal/menu.c:881
 #: .pc/maybe-quiet.patch/grub-core/normal/menu.c:853
-#: .pc/quick-boot.patch/grub-core/normal/menu.c:857 grub-core/normal/menu.c:881
+#: .pc/quick-boot.patch/grub-core/normal/menu.c:857 grub-core/normal/menu.c:880
 msgid "Failed to boot both default and fallback entries.\n"
 msgstr ""
 
 #: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:704
 #: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:733
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:750 util/mkimage.c:704
-#: util/mkimage.c:733 util/mkimage.c:750
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:750
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:704
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:733
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:750
+#: util/mkimage.c:704 util/mkimage.c:733 util/mkimage.c:750
 msgid "cannot compress the kernel image"
 msgstr "ня ўдалося сьціснуць выяву ядра"
 
 #: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:782
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1157 util/mkimage.c:782
-#: util/mkimage.c:1157
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1157
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:782
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1157
+#: util/mkimage.c:782 util/mkimage.c:1157
 #, c-format
 msgid "unknown compression %d"
 msgstr ""
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:849 util/mkimage.c:849
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:849
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:849
+#: util/mkimage.c:849
 #, c-format
 msgid "section name %s length is bigger than %lu"
 msgstr ""
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:946 util/mkimage.c:946
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:946
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:946
+#: util/mkimage.c:946
 msgid ".sbat section can be embedded into EFI images only"
 msgstr ""
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1168 util/mkimage.c:1168
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1168
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1168
+#: util/mkimage.c:1168
 msgid "Decompressor is too big"
 msgstr ""
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1213 util/mkimage.c:1213
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1213
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1213
+#: util/mkimage.c:1213
 #, c-format
 msgid "core image is too big (0x%x > 0x%x)"
 msgstr ""
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1220 util/mkimage.c:1220
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1220
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1220
+#: util/mkimage.c:1220
 #, c-format
 msgid "kernel image is too big (0x%x > 0x%x)"
 msgstr ""
 
 #: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1300
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1569 util/mkimage.c:1300
-#: util/mkimage.c:1572
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1569
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1300
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1572
+#: util/mkimage.c:1300 util/mkimage.c:1573
 #, c-format
 msgid "diskboot.img size must be %u bytes"
 msgstr "памер diskboot.img павінен быць %u байтаў"
 
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1639 util/mkimage.c:1642
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1639
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1642
+#: util/mkimage.c:1643
 msgid ""
 "fwstart.img doesn't match the known good version. proceed at your own risk"
 msgstr ""
 
 #: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1643
-#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1669 util/mkimage.c:1646
-#: util/mkimage.c:1672
+#: .pc/mkimage-fix-section-sizes.patch/util/mkimage.c:1669
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1646
+#: .pc/nx/nx-set-the-nx-compatible-flag-in-EFI-grub-images.patch/util/mkimage.c:1672
+#: util/mkimage.c:1647 util/mkimage.c:1673
 msgid "firmware image is too big"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1487
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:692
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1432
-#: grub-core/net/bootp.c:1487
+#: grub-core/net/bootp.c:1489
 msgid "four arguments expected"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1307
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1292
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1307
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1259
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1259
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1495
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1292
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:700
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1184
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1440
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1256
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1259
-#: grub-core/net/bootp.c:1495 grub-core/net/net.c:1259
+#: grub-core/net/bootp.c:1497 grub-core/net/net.c:1312
 #, c-format
 msgid "unrecognised network interface `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1498
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:703
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1443
-#: grub-core/net/bootp.c:1498
+#: grub-core/net/bootp.c:1500
 msgid "no DHCP info found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1508
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:713
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1453
-#: grub-core/net/bootp.c:1508
+#: grub-core/net/bootp.c:1510
 msgid "no DHCP options found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1516
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:721
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1461
-#: grub-core/net/bootp.c:1516
+#: grub-core/net/bootp.c:1518
 msgid "invalid DHCP option code"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1520
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:725
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1465
-#: grub-core/net/bootp.c:1520
+#: grub-core/net/bootp.c:1522
 #, c-format
 msgid "no DHCP option %u found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1577
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:782
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1522
-#: grub-core/net/bootp.c:1577
+#: grub-core/net/bootp.c:1589
 #, c-format
 msgid "unrecognised DHCP option format specification `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1601
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:806
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1546
-#: grub-core/net/bootp.c:1601
+#: grub-core/net/bootp.c:1613
 msgid "no network card found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:413
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:398
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:413
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:398
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:398
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1693
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1856
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:398
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:898
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:395
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1638
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1801
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:395
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:398
-#: grub-core/net/bootp.c:1693 grub-core/net/bootp.c:1856
-#: grub-core/net/net.c:398
+#: grub-core/net/bootp.c:1705 grub-core/net/bootp.c:1868
+#: grub-core/net/net.c:418
 #, c-format
 msgid "couldn't autoconfigure %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2185
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2188
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2157
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2160
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2185
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2188
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2124
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2127
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2124
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2127
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1871
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1874
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1880
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2158
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2161
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:912
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:915
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1816
@@ -2512,34 +2707,50 @@ msgstr ""
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1825
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2124
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2127
-#: grub-core/net/bootp.c:1871 grub-core/net/bootp.c:1874
-#: grub-core/net/bootp.c:1880 grub-core/net/net.c:2124 grub-core/net/net.c:2127
+#: grub-core/net/bootp.c:1883 grub-core/net/bootp.c:1886
+#: grub-core/net/bootp.c:1892 grub-core/net/net.c:2190 grub-core/net/net.c:2193
 msgid "[CARD]"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2186
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2189
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2158
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2161
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2186
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2189
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2125
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2128
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2125
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2128
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1872
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2159
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2162
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:913
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1817
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2125
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2128
-#: grub-core/net/bootp.c:1872 grub-core/net/net.c:2125 grub-core/net/net.c:2128
+#: grub-core/net/bootp.c:1884 grub-core/net/net.c:2191 grub-core/net/net.c:2194
 msgid "perform a bootp autoconfiguration"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1875
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:916
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1820
-#: grub-core/net/bootp.c:1875
+#: grub-core/net/bootp.c:1887
 msgid "perform a DHCP autoconfiguration"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1877
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:918
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1822
-#: grub-core/net/bootp.c:1877
+#: grub-core/net/bootp.c:1889
 msgid "VAR INTERFACE NUMBER DESCRIPTION"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1878
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/bootp.c:919
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1823
-#: grub-core/net/bootp.c:1878
+#: grub-core/net/bootp.c:1890
 msgid ""
 "retrieve DHCP option and save it into VAR. If VAR is - then print the value."
 msgstr ""
@@ -2554,6 +2765,7 @@ msgstr ""
 msgid "network protocol not available, can't send packet"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/drivers/ieee1275/ofnet.c:75
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/drivers/efi/efinet.c:52
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/drivers/efi/efinet.c:68
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/drivers/efi/efinet.c:80
@@ -2575,84 +2787,156 @@ msgstr ""
 #: grub-core/net/drivers/efi/efinet.c:59 grub-core/net/drivers/efi/efinet.c:75
 #: grub-core/net/drivers/efi/efinet.c:87 grub-core/net/drivers/emu/emunet.c:62
 #: grub-core/net/drivers/i386/pc/pxe.c:273
-#: grub-core/net/drivers/ieee1275/ofnet.c:75
+#: grub-core/net/drivers/ieee1275/ofnet.c:76
 #: grub-core/net/drivers/uboot/ubootnet.c:62
 msgid "couldn't send network packet"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:188
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:187
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:188
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:187
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:187
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:187
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:184
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:184
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:187
-#: grub-core/net/net.c:187
+#: grub-core/net/net.c:188
 msgid "timeout: could not resolve hardware address"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:581
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:566
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:581
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:566
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:566
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:566
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:563
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:563
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:566
-#: grub-core/net/net.c:566
+#: grub-core/net/net.c:586
 #, c-format
 msgid "unresolvable address %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:627
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:612
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:627
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:612
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:612
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:612
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:609
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:609
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:612
-#: grub-core/net/net.c:612
+#: grub-core/net/net.c:632
 #, c-format
 msgid "unrecognised network address `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:694
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:679
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:694
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:679
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:679
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:679
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:676
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:676
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:679
-#: grub-core/net/net.c:679
+#: grub-core/net/net.c:699
 msgid "destination unreachable"
 msgstr ""
 
 #. TRANSLATORS: route loop is a condition when e.g.
 #. to contact server A you need to go through B
 #. and to contact B you need to go through A.
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:717
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:702
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:717
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:702
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:702
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:702
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:699
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:699
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:702
-#: grub-core/net/net.c:702
+#: grub-core/net/net.c:722
 msgid "route loop detected"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:733
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:718
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:733
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:718
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:718
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:718
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:715
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:715
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:718
-#: grub-core/net/net.c:718
+#: grub-core/net/net.c:738
 msgid "address not found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:737
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:722
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:737
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:722
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:722
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:722
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:719
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:719
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:722
-#: grub-core/net/net.c:722
+#: grub-core/net/net.c:742
 msgid "you can't delete this address"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:809
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:839
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:794
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:824
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:809
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:839
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:794
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:824
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:794
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:824
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:794
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:824
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:791
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:821
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:791
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:821
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:794
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:824
-#: grub-core/net/net.c:794 grub-core/net/net.c:824
+#: grub-core/net/net.c:814 grub-core/net/net.c:844
 #, c-format
 msgid "Unsupported hw address type %d\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:860
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:845
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:860
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:845
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:845
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:845
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:842
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:842
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:845
-#: grub-core/net/net.c:845
+#: grub-core/net/net.c:865
 #, c-format
 msgid "Unsupported address type %d\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1169
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1283
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1154
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1268
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1169
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1283
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1121
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1235
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1121
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1235
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1154
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1268
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1046
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1160
 #: .pc/network/efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1143
@@ -2660,19 +2944,35 @@ msgstr ""
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1232
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1121
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1235
-#: grub-core/net/efi/net.c:1143 grub-core/net/net.c:1121
-#: grub-core/net/net.c:1235
+#: grub-core/net/efi/net.c:1143 grub-core/net/net.c:1174
+#: grub-core/net/net.c:1288
 msgid "three arguments expected"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1175
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1160
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1175
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1127
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1127
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1160
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1052
 #: .pc/network/efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1152
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1124
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1127
-#: grub-core/net/efi/net.c:1152 grub-core/net/net.c:1127
+#: grub-core/net/efi/net.c:1152 grub-core/net/net.c:1180
 msgid "card not found"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:85
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:826
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1321
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1306
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:642
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1321
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1273
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1273
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:635
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1306
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1198
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1270
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1273
@@ -2681,218 +2981,408 @@ msgstr ""
 #: grub-core/commands/memrw.c:85 grub-core/commands/password.c:75
 #: grub-core/commands/password_pbkdf2.c:94 grub-core/commands/pgp.c:826
 #: grub-core/commands/regexp.c:113 grub-core/mmap/mmap.c:520
-#: grub-core/net/dns.c:635 grub-core/net/net.c:1273
+#: grub-core/net/dns.c:642 grub-core/net/net.c:1326
 msgid "two arguments expected"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1328
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1313
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1328
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1280
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1280
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1313
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1205
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1277
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1280
-#: grub-core/net/net.c:1280
+#: grub-core/net/net.c:1333
 #, c-format
 msgid "non-numeric or invalid number `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1332
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1317
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1332
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1284
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1284
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1317
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1209
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1281
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1284
-#: grub-core/net/net.c:1284
+#: grub-core/net/net.c:1337
 #, c-format
 msgid "vlan id `%s' not in the valid range of 0-4094"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1345
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1330
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1345
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1297
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1297
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1330
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1222
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1294
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1297
-#: grub-core/net/net.c:1297
+#: grub-core/net/net.c:1350
 msgid "network interface not found"
 msgstr ""
 
 #. TRANSLATORS: it refers to the network address.
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1355
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1340
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1355
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1307
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1307
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1340
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1232
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1304
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1307
-#: grub-core/net/net.c:1307
+#: grub-core/net/net.c:1360
 msgid "temporary"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1378
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1363
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1378
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1330
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1330
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1363
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1255
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1327
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1330
-#: grub-core/net/net.c:1330
+#: grub-core/net/net.c:1383
 #, c-format
 msgid "Unknown address type %d\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1491
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1476
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1491
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1443
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1443
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1476
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1368
 #: .pc/network/efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1215
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1440
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1443
-#: grub-core/net/efi/net.c:1215 grub-core/net/net.c:1443
+#: grub-core/net/efi/net.c:1215 grub-core/net/net.c:1496
 msgid "no server is specified"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1506
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1491
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1506
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1458
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1458
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1491
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1383
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1455
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1458
-#: grub-core/net/net.c:1458
+#: grub-core/net/net.c:1511
 msgid "mismatched [ in address"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1516
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1551
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1501
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1530
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1516
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1551
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1468
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1497
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1468
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1497
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1501
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1530
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1393
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1422
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1465
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1494
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1468
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1497
-#: grub-core/net/net.c:1468 grub-core/net/net.c:1497
+#: grub-core/net/net.c:1521 grub-core/net/net.c:1556
 msgid "bad port number"
 msgstr ""
 
+#: .pc/cve-2025-jan/kern-disk-Limit-recursion-depth.patch/grub-core/kern/disk.c:236
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1651
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1630
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1651
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1597
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1597
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1630
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1522
 #: .pc/network/efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:1254
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1594
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1597
-#: grub-core/kern/disk.c:236 grub-core/net/efi/net.c:1254
-#: grub-core/net/net.c:1597
+#: grub-core/kern/disk.c:240 grub-core/net/efi/net.c:1254
+#: grub-core/net/net.c:1656
 #, c-format
 msgid "disk `%s' not found"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:1907
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:1880
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:1907
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:1847
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:1847
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:1880
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:1772
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:1844
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:1847
-#: grub-core/net/net.c:1847
+#: grub-core/net/net.c:1912
 #, c-format
 msgid "timeout reading `%s'"
 msgstr ""
 
 #. TRANSLATORS: HWADDRESS stands for
 #. "hardware address".
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2182
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2211
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2154
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2183
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2182
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2211
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2121
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2150
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2121
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2150
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2155
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2184
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2035
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2107
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2121
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2150
-#: grub-core/net/net.c:2121 grub-core/net/net.c:2150
+#: grub-core/net/net.c:2187 grub-core/net/net.c:2216
 msgid "SHORTNAME CARD ADDRESS [HWADDRESS]"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2183
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2212
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2155
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2184
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2183
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2212
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2122
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2151
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2122
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2151
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2156
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2185
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2036
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2108
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2122
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2151
-#: grub-core/net/net.c:2122 grub-core/net/net.c:2151
+#: grub-core/net/net.c:2188 grub-core/net/net.c:2217
 msgid "Add a network address."
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2215
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2187
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2215
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2154
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2154
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2188
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2039
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2111
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2154
-#: grub-core/net/net.c:2154
+#: grub-core/net/net.c:2220
 msgid "[CARD [HWADDRESS]]"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2216
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2188
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2216
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2155
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2155
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2189
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2040
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2112
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2155
-#: grub-core/net/net.c:2155
+#: grub-core/net/net.c:2221
 msgid "Perform an IPV6 autoconfiguration"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2219
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2226
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2191
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2198
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2219
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2226
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2158
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2165
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2158
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2165
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2192
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2199
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2043
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2050
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2115
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2122
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2158
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2165
-#: grub-core/net/net.c:2158 grub-core/net/net.c:2165
+#: grub-core/net/net.c:2224 grub-core/net/net.c:2231
 msgid "SHORTNAME"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2220
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2192
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2220
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2159
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2159
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2193
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2044
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2116
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2159
-#: grub-core/net/net.c:2159
+#: grub-core/net/net.c:2225
 msgid "Delete a network address."
 msgstr ""
 
 #. TRANSLATORS: "gw" is a keyword.
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2223
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2195
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2223
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2162
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2162
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2196
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2047
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2119
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2162
-#: grub-core/net/net.c:2162
+#: grub-core/net/net.c:2228
 msgid "SHORTNAME NET [INTERFACE| gw GATEWAY]"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2224
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2196
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2224
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2163
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2163
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2197
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2048
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2120
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2163
-#: grub-core/net/net.c:2163
+#: grub-core/net/net.c:2229
 msgid "Add a network route."
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2227
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2199
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2227
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2166
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2166
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2200
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2051
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2123
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2166
-#: grub-core/net/net.c:2166
+#: grub-core/net/net.c:2232
 msgid "Delete a network route."
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2229
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2201
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2229
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2168
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2168
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2202
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2053
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2125
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2168
-#: grub-core/net/net.c:2168
+#: grub-core/net/net.c:2234
 msgid "SHORTNAME VLANID"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2230
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2202
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2230
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2169
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2169
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2203
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2054
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2126
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2169
-#: grub-core/net/net.c:2169
+#: grub-core/net/net.c:2235
 msgid "Set an interface's vlan id."
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2176
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2232
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2148
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2204
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2176
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2232
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2115
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2171
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2115
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2171
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2149
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2205
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2056
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2128
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2115
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2171
-#: grub-core/net/net.c:2115 grub-core/net/net.c:2171
+#: grub-core/net/net.c:2181 grub-core/net/net.c:2237
 msgid "list network routes"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2178
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2234
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2150
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2206
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2178
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2234
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2117
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2173
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2117
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2173
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2151
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2207
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2058
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2130
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2117
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2173
-#: grub-core/net/net.c:2117 grub-core/net/net.c:2173
+#: grub-core/net/net.c:2183 grub-core/net/net.c:2239
 msgid "list network cards"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2180
+#: .pc/cve-2025-jan/net-Check-if-returned-pointer-for-allocated-memory-is-NUL.patch/grub-core/net/net.c:2236
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2152
+#: .pc/cve-2025-jan/net-Fix-OOB-write-in-grub_net_search_config_file.patch/grub-core/net/net.c:2208
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2180
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/net.c:2236
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2119
+#: .pc/cve-2025-jan/net-Remove-variables-hooks-when-interface-is-unregisted.patch/grub-core/net/net.c:2175
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2119
+#: .pc/cve-2025-jan/net-Unregister-net_default_ip-and-net_default_mac-variabl.patch/grub-core/net/net.c:2175
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2153
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/net.c:2209
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/net.c:2060
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/net.c:2132
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2119
 #: .pc/network/try-prefixes-for-tftp-config-file.patch/grub-core/net/net.c:2175
-#: grub-core/net/net.c:2119 grub-core/net/net.c:2175
+#: grub-core/net/net.c:2185 grub-core/net/net.c:2241
 msgid "list network addresses"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-tftp-Fix-stack-buffer-overflow-in-tftp_open.patch/grub-core/net/tftp.c:403
 #: .pc/network/bootp-new-net_bootp6-command.patch/grub-core/net/tftp.c:400
 #: .pc/network/http-prepend-prefix-when-the-http-path-is-relative.patch/grub-core/net/http.c:447
 #: .pc/network/net-http-check-result-of-grub_netbuff_put-in-http_receive.patch/grub-core/net/http.c:442
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/http.c:444
-#: grub-core/net/http.c:448 grub-core/net/tftp.c:403
+#: grub-core/net/http.c:448 grub-core/net/tftp.c:413
 #, c-format
 msgid "time out opening `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:971
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:916
 #: .pc/network/efinet-also-use-the-firmware-acceleration-for-http.patch/grub-core/net/efi/net.c:219
-#: grub-core/net/bootp.c:971 grub-core/net/efi/net.c:219
+#: grub-core/net/bootp.c:972 grub-core/net/efi/net.c:219
 msgid "DHCPv6 packet size too small"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/bootp.c:1881
 #: .pc/network/bootp-process-dhcpack-http-boot.patch/grub-core/net/bootp.c:1826
-#: grub-core/net/bootp.c:1881
+#: grub-core/net/bootp.c:1893
 msgid "perform a DHCPv6 autoconfiguration"
 msgstr ""
 
@@ -2904,6 +3394,52 @@ msgstr ""
 msgid "couldn't configure http protocol, reason: %d"
 msgstr ""
 
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/jfs.c:749
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:430
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:544
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:1858
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:1887
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:1937
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:2033
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:2057
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/archelp.c:268
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:1857
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:1886
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:1930
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:2018
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:2042
+#: .pc/cve-2025-jan/fs-bfs-Disable-under-lockdown.patch/grub-core/fs/bfs.c:623
+#: .pc/cve-2025-jan/fs-bfs-Disable-under-lockdown.patch/grub-core/fs/bfs.c:706
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-caused-by-invalid-dir-slot-index.patch/grub-core/fs/jfs.c:720
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-in-jfs_getent.patch/grub-core/fs/jfs.c:707
+#: .pc/cve-2025-jan/fs-jfs-Inconsistent-signed-unsigned-types-usage-in-return.patch/grub-core/fs/jfs.c:746
+#: .pc/cve-2025-jan/fs-jfs-Use-full-40-bits-offset-and-address-for-a-data-ext.patch/grub-core/fs/jfs.c:729
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:544
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:2100
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:2112
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:2319
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:2093
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:2105
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:2312
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:2093
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:2105
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:2312
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:2093
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:2105
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:2312
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/bfs.c:623
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/bfs.c:706
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:1857
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:1886
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:1930
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:2018
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:2042
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/jfs.c:749
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:430
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:544
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:2093
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:2105
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:2312
 #: .pc/network/efi-http-enclose-literal-ipv6-addresses-in-square-br.patch/grub-core/net/efi/http.c:283
 #: .pc/network/efi-http-match-protocol-hostname-of-boot-url-in-root.patch/grub-core/net/efi/http.c:239
 #: .pc/network/http-prepend-prefix-when-the-http-path-is-relative.patch/grub-core/net/http.c:127
@@ -2911,12 +3447,12 @@ msgstr ""
 #: .pc/network/prepend-prefix-when-http-path-is-relative.patch/grub-core/net/efi/http.c:240
 #: .pc/network/support-uefi-networking-protocols.patch/grub-core/net/http.c:124
 #: grub-core/commands/i386/pc/play.c:151 grub-core/commands/macbless.c:172
-#: grub-core/fs/archelp.c:268 grub-core/fs/bfs.c:623 grub-core/fs/bfs.c:706
-#: grub-core/fs/btrfs.c:1857 grub-core/fs/btrfs.c:1886
-#: grub-core/fs/btrfs.c:1930 grub-core/fs/btrfs.c:2018
-#: grub-core/fs/btrfs.c:2042 grub-core/fs/fshelp.c:257 grub-core/fs/jfs.c:707
-#: grub-core/fs/minix.c:430 grub-core/fs/ufs.c:544 grub-core/fs/zfs/zfs.c:2093
-#: grub-core/fs/zfs/zfs.c:2105 grub-core/fs/zfs/zfs.c:2312
+#: grub-core/fs/archelp.c:275 grub-core/fs/bfs.c:624 grub-core/fs/bfs.c:707
+#: grub-core/fs/btrfs.c:1858 grub-core/fs/btrfs.c:1887
+#: grub-core/fs/btrfs.c:1937 grub-core/fs/btrfs.c:2033
+#: grub-core/fs/btrfs.c:2057 grub-core/fs/fshelp.c:257 grub-core/fs/jfs.c:750
+#: grub-core/fs/minix.c:431 grub-core/fs/ufs.c:545 grub-core/fs/zfs/zfs.c:2100
+#: grub-core/fs/zfs/zfs.c:2112 grub-core/fs/zfs/zfs.c:2319
 #: grub-core/net/efi/http.c:302 grub-core/net/http.c:128
 #, c-format
 msgid "file `%s' not found"
@@ -3006,12 +3542,15 @@ msgid ""
 "Netboot directory for %s created. Configure your DHCP server to point to %s\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:151
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:151
 #: grub-core/osdep/linux/getroot.c:151
 #, c-format
 msgid "ioctl RAID_VERSION error: %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:157
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:161
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:157
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:161
 #: grub-core/osdep/linux/getroot.c:157 grub-core/osdep/linux/getroot.c:161
@@ -3019,40 +3558,54 @@ msgstr ""
 msgid "unsupported RAID version: %d.%d"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:166
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:166
 #: grub-core/osdep/linux/getroot.c:166
 #, c-format
 msgid "ioctl GET_ARRAY_INFO error: %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:176
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:176
 #: grub-core/osdep/linux/getroot.c:176
 #, c-format
 msgid "ioctl GET_DISK_INFO error: %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/osdep-unix-getroot-Fix-potential-underflow.patch/grub-core/osdep/linux/getroot.c:1056
 #: .pc/probe-fusionio.patch/grub-core/osdep/linux/getroot.c:1043
-#: grub-core/osdep/linux/getroot.c:1056
+#: grub-core/osdep/linux/getroot.c:1059
 #, c-format
 msgid "unknown kind of RAID device `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/squash4.c:467
+#: .pc/cve-2025-jan/fs-ext2-Fix-out-of-bounds-read-for-inline-extents.patch/grub-core/fs/ext2.c:750
+#: .pc/cve-2025-jan/fs-ext2-Rework-out-of-bounds-read-for-inline-and-external.patch/grub-core/fs/ext2.c:758
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ext2.c:758
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/squash4.c:467
+#: .pc/cve-2025-jan/kern-misc-Add-sanity-check-after-grub_strtoul-call.patch/grub-core/kern/misc.c:420
+#: .pc/cve-2025-jan/kern-misc-Add-sanity-check-after-grub_strtoul-call.patch/grub-core/kern/misc.c:478
+#: .pc/cve-2025-jan/misc-Ensure-consistent-overflow-error-messages.patch/grub-core/video/readers/png.c:327
+#: .pc/cve-2025-jan/misc-Ensure-consistent-overflow-error-messages.patch/grub-core/video/readers/png.c:332
+#: .pc/cve-2025-jan/misc-Implement-grub_strlcpy.patch/include/grub/misc.h:318
+#: .pc/cve-2025-jan/misc-Implement-grub_strlcpy.patch/include/grub/misc.h:327
 #: .pc/probe-fusionio.patch/util/deviceiter.c:601
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:420
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:478
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:318
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/include/grub/misc.h:327
-#: grub-core/fs/ext2.c:750 grub-core/fs/squash4.c:467
-#: grub-core/kern/buffer.c:111 grub-core/kern/misc.c:420
-#: grub-core/kern/misc.c:478 grub-core/kern/mm.c:568 grub-core/lib/arg.c:224
-#: grub-core/lib/arg.c:471 grub-core/loader/i386/pc/linux.c:225
-#: grub-core/loader/linux.c:152 grub-core/loader/linux.c:261
-#: grub-core/osdep/unix/config.c:112 grub-core/osdep/unix/config.c:137
-#: grub-core/osdep/unix/config.c:162 grub-core/script/lexer.c:179
-#: grub-core/video/bitmap.c:145 grub-core/video/readers/png.c:327
-#: grub-core/video/readers/png.c:332 include/grub/buffer.h:79
-#: include/grub/buffer.h:117 include/grub/misc.h:318 include/grub/misc.h:327
-#: util/deviceiter.c:607
+#: grub-core/commands/read.c:66 grub-core/commands/read.c:71
+#: grub-core/fs/ext2.c:771 grub-core/kern/buffer.c:111
+#: grub-core/kern/misc.c:420 grub-core/kern/misc.c:478 grub-core/kern/mm.c:568
+#: grub-core/lib/arg.c:224 grub-core/lib/arg.c:471
+#: grub-core/loader/i386/pc/linux.c:225 grub-core/loader/linux.c:152
+#: grub-core/loader/linux.c:261 grub-core/osdep/unix/config.c:112
+#: grub-core/osdep/unix/config.c:137 grub-core/osdep/unix/config.c:162
+#: grub-core/script/lexer.c:179 grub-core/video/bitmap.c:145
+#: grub-core/video/readers/png.c:327 grub-core/video/readers/png.c:332
+#: include/grub/buffer.h:79 include/grub/buffer.h:117 include/grub/misc.h:357
+#: include/grub/misc.h:366 util/deviceiter.c:607
 msgid "overflow is detected"
 msgstr ""
 
@@ -3148,41 +3701,57 @@ msgstr "Наладзіць пасьлядоўны порт"
 #. (how many modules or open descriptors use it).
 #. Dependencies are the other modules it uses.
 #. 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:165
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:165
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:165
 #: grub-core/commands/minicmd.c:165
 msgid "Name\tRef Count\tDependencies\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:213
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:213
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:201
 #: grub-core/commands/cat.c:163 grub-core/commands/minicmd.c:213
 msgid "Show the contents of a file."
 msgstr "Паказаць  зьмест файла."
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:216
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:216
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:204
 #: grub-core/commands/minicmd.c:216
 msgid "Show this message."
 msgstr "Паказаць гэтае паведамленьне."
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:219
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:219
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:207
 #: grub-core/commands/minicmd.c:219
 msgid "ADDR [SIZE]"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:219
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:219
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:207
 #: grub-core/commands/minicmd.c:219
 msgid "Show memory contents."
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:222
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:222
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:210
 #: grub-core/commands/minicmd.c:222
 msgid "Remove a module."
 msgstr "Выдаліць модуль."
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:225
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:225
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:213
 #: grub-core/commands/minicmd.c:225
 msgid "Show loaded modules."
 msgstr "Паказаць загружаныя модулі."
 
+#: .pc/cve-2025-jan/commands-minicmd-Block-the-dump-command-in-lockdown-mode.patch/grub-core/commands/minicmd.c:228
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/commands/minicmd.c:228
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/commands/minicmd.c:216
 #: grub-core/commands/minicmd.c:228
 msgid "Exit from GRUB."
@@ -3193,11 +3762,13 @@ msgstr "Выйсьці з GRUB."
 msgid "DEVICE_NAME"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:137
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:170
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:99
 #: grub-core/kern/emu/main.c:99 grub-core/loader/i386/bsd.c:137
 #: grub-core/loader/i386/bsd.c:170 util/grub-fstest.c:522 util/grub-mount.c:472
 msgid "Set root device."
-msgstr "Задаць каранёвыя прылады."
+msgstr "Задаць каранёвую прыладу."
 
 #. TRANSLATORS: There are many devices in device map.
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/main.c:102
@@ -3286,6 +3857,14 @@ msgid "%s: error:"
 msgstr ""
 
 #: .pc/efi-chainloader-Do-not-print-device-path-of-chainloaded-f.patch/grub-core/loader/efi/chainloader.c:294
+#: .pc/kern-efi-mm-Change-grub_efi_allocate_pages_real-to-call-s.patch/grub-core/kern/efi/mm.c:143
+#: .pc/kern-efi-mm-Change-grub_efi_allocate_pages_real-to-call-s.patch/grub-core/kern/efi/mm.c:156
+#: .pc/kern-efi-mm-Change-grub_efi_mm_add_regions-to-keep-track-.patch/grub-core/kern/efi/mm.c:143
+#: .pc/kern-efi-mm-Change-grub_efi_mm_add_regions-to-keep-track-.patch/grub-core/kern/efi/mm.c:156
+#: .pc/kern-efi-mm-Detect-calls-to-grub_efi_drop_alloc-with-wron.patch/grub-core/kern/efi/mm.c:143
+#: .pc/kern-efi-mm-Detect-calls-to-grub_efi_drop_alloc-with-wron.patch/grub-core/kern/efi/mm.c:156
+#: .pc/nx/nx-add-memory-attribute-get-set-API.patch/grub-core/kern/efi/mm.c:145
+#: .pc/nx/nx-add-memory-attribute-get-set-API.patch/grub-core/kern/efi/mm.c:158
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:96
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:108
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/emu/misc.c:118
@@ -3299,8 +3878,8 @@ msgstr ""
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:433
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:521
 #: .pc/secure-boot/revert-efi-fallback-to-legacy.patch/grub-core/loader/efi/linux.c:540
-#: grub-core/commands/acpihalt.c:368 grub-core/kern/efi/mm.c:143
-#: grub-core/kern/efi/mm.c:156 grub-core/kern/emu/misc.c:96
+#: grub-core/commands/acpihalt.c:368 grub-core/kern/efi/mm.c:145
+#: grub-core/kern/efi/mm.c:158 grub-core/kern/emu/misc.c:96
 #: grub-core/kern/emu/misc.c:108 grub-core/kern/emu/misc.c:118
 #: grub-core/kern/emu/misc.c:147 grub-core/kern/emu/mm.c:34
 #: grub-core/kern/emu/mm.c:44 grub-core/kern/emu/mm.c:73
@@ -3333,15 +3912,21 @@ msgstr ""
 msgid "Exit failed"
 msgstr ""
 
+#: .pc/cve-2025-jan/kern-misc-Add-sanity-check-after-grub_strtoul-call.patch/grub-core/kern/misc.c:493
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:146
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:252
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:138
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:244
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:493
 #: grub-core/commands/i386/pc/play.c:162 grub-core/commands/i386/pc/play.c:171
-#: grub-core/kern/misc.c:493 grub-core/script/execute.c:138
-#: grub-core/script/execute.c:244
+#: grub-core/kern/misc.c:493 grub-core/script/execute.c:146
+#: grub-core/script/execute.c:252
 msgid "unrecognized number"
 msgstr ""
 
+#: .pc/cve-2025-jan/kern-misc-Add-sanity-check-after-grub_strtoul-call.patch/grub-core/kern/misc.c:1351
 #: .pc/rhboot-f34-make-exit-take-a-return-code.patch/grub-core/kern/misc.c:1342
-#: grub-core/kern/misc.c:1351
+#: grub-core/kern/misc.c:1356
 msgid "string too long"
 msgstr ""
 
@@ -3382,25 +3967,29 @@ msgstr ""
 
 #. TRANSLATORS: The disk is simply removed from the list of available ones,
 #. not wiped, avoid to scare user.
+#: .pc/cve-2025-jan/disk-loopback-Reference-tracking-for-the-loopback.patch/grub-core/disk/loopback.c:45
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:45
-#: grub-core/disk/loopback.c:45
+#: grub-core/disk/loopback.c:47
 msgid "Delete the specified loopback drive."
 msgstr ""
 
+#: .pc/cve-2025-jan/disk-loopback-Reference-tracking-for-the-loopback.patch/grub-core/disk/loopback.c:46
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:46
-#: grub-core/disk/loopback.c:46
+#: grub-core/disk/loopback.c:48
 msgid "Transparently decompress backing file."
 msgstr ""
 
+#: .pc/cve-2025-jan/disk-loopback-Reference-tracking-for-the-loopback.patch/grub-core/disk/loopback.c:233
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:233
-#: grub-core/disk/loopback.c:233
+#: grub-core/disk/loopback.c:251
 msgid "[-d] [-D] DEVICENAME FILE."
 msgstr ""
 
 #. TRANSLATORS: The file itself is not destroyed
 #. or transformed into drive.
+#: .pc/cve-2025-jan/disk-loopback-Reference-tracking-for-the-loopback.patch/grub-core/disk/loopback.c:236
 #: .pc/ubuntu-dont-verify-loopback-images.patch/grub-core/disk/loopback.c:236
-#: grub-core/disk/loopback.c:236
+#: grub-core/disk/loopback.c:254
 msgid "Make a virtual drive from a file."
 msgstr ""
 
@@ -3625,7 +4214,7 @@ msgstr ""
 
 #: grub-core/commands/date.c:142
 msgid "[[year-]month-day] [hour:minute[:second]]"
-msgstr "[[год-]месяц-дзень] [гадзіна:хвіліна[:сэкунда]]"
+msgstr "[[год-]месяц-дзень] [гадзіна:хвіліна[:секунда]]"
 
 #: grub-core/commands/date.c:143
 msgid "Display/set current datetime."
@@ -3745,30 +4334,38 @@ msgstr ""
 msgid "Load BIOS dump."
 msgstr "Загрузіць дамп BIOS."
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:141
 #: grub-core/commands/efi/tpm.c:141
 msgid "command failed"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:143
 #: grub-core/commands/efi/tpm.c:143
 msgid "invalid parameter"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:145
 #: grub-core/commands/efi/tpm.c:145
 msgid "output buffer too small"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:147
 #: grub-core/commands/efi/tpm.c:147
 msgid "TPM unavailable"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:149
 #: grub-core/commands/efi/tpm.c:149
 msgid "unknown TPM error"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:174
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:208
 #: grub-core/commands/efi/tpm.c:174 grub-core/commands/efi/tpm.c:208
 msgid "cannot allocate TPM event buffer"
 msgstr ""
 
+#: .pc/commands-efi-tpm-Re-enable-measurements-on-confidential-c.patch/grub-core/commands/efi/tpm.c:249
 #: grub-core/commands/efi/tpm.c:249
 msgid "cannot allocate CC event buffer"
 msgstr ""
@@ -3781,7 +4378,8 @@ msgstr ""
 msgid "Evaluate arguments as GRUB commands"
 msgstr ""
 
-#: grub-core/commands/extcmd.c:120 grub-core/kern/command.c:88
+#: .pc/cve-2025-jan/commands-extcmd-Missing-check-for-failed-allocation.patch/grub-core/commands/extcmd.c:120
+#: grub-core/commands/extcmd.c:123 grub-core/kern/command.c:88
 #, c-format
 msgid "%s: the command is not allowed when lockdown is enforced"
 msgstr ""
@@ -3916,11 +4514,16 @@ msgstr ""
 
 #. TRANSLATORS: it's a standalone boolean value,
 #. opposite of "true".
+#: .pc/cve-2025-jan/commands-test-Stack-overflow-due-to-unlimited-recursion-d.patch/grub-core/commands/test.c:436
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:255
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:1058
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:247
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:1044
 #: grub-core/commands/file.c:688 grub-core/commands/i386/cmostest.c:63
 #: grub-core/commands/i386/cpuid.c:71 grub-core/commands/keystatus.c:65
 #: grub-core/commands/keystatus.c:69 grub-core/commands/keystatus.c:78
-#: grub-core/commands/test.c:436 grub-core/commands/true.c:39
-#: grub-core/script/execute.c:247 grub-core/script/execute.c:1044
+#: grub-core/commands/test.c:451 grub-core/commands/true.c:39
+#: grub-core/script/execute.c:255 grub-core/script/execute.c:1061
 msgid "false"
 msgstr ""
 
@@ -3934,7 +4537,8 @@ msgstr ""
 
 #. TRANSLATORS: It means that the specified partition e.g.
 #. hd0,msdos1=/dev/sda1 doesn't exist.
-#: grub-core/commands/gptsync.c:140 grub-core/kern/disk.c:258
+#: .pc/cve-2025-jan/kern-disk-Limit-recursion-depth.patch/grub-core/kern/disk.c:258
+#: grub-core/commands/gptsync.c:140 grub-core/kern/disk.c:262
 msgid "no such partition"
 msgstr ""
 
@@ -4103,19 +4707,23 @@ msgstr "[ШАБЛЁН ...]"
 msgid "Show a help message."
 msgstr "Паказаць дапаможнае паведамленне."
 
-#: grub-core/commands/hexdump.c:31
+#: .pc/cve-2025-jan/commands-hexdump-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/hexdump.c:31
+#: grub-core/commands/hexdump.c:32
 msgid "Skip offset bytes from the beginning of file."
 msgstr "Прапусьціць пазначаную колькасьць байтаў ад пачатку файла."
 
-#: grub-core/commands/hexdump.c:33
+#: .pc/cve-2025-jan/commands-hexdump-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/hexdump.c:33
+#: grub-core/commands/hexdump.c:34
 msgid "Read only LENGTH bytes."
 msgstr "Прачытаць толькі ЗАДАНУЮ КОЛЬКАСЬЦЬ байтаў."
 
-#: grub-core/commands/hexdump.c:125
+#: .pc/cve-2025-jan/commands-hexdump-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/hexdump.c:125
+#: grub-core/commands/hexdump.c:130
 msgid "[OPTIONS] FILE_OR_DEVICE"
 msgstr "[ПАРАМЭТРЫ] ФАЙЛ_АБО_ПРЫЛАДА"
 
-#: grub-core/commands/hexdump.c:126
+#: .pc/cve-2025-jan/commands-hexdump-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/hexdump.c:126
+#: grub-core/commands/hexdump.c:131
 msgid "Show raw contents of a file or memory."
 msgstr ""
 
@@ -4371,11 +4979,13 @@ msgstr ""
 msgid "Emulate a keystroke sequence"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:34
 #: grub-core/commands/i386/rdmsr.c:37 grub-core/commands/iorw.c:35
 #: grub-core/commands/memrw.c:34 grub-core/commands/setpci.c:73
 msgid "Save read value into variable VARNAME."
 msgstr "Захаваць прачытанае значэньне ў зьменную ІМЯ_ЗЬМЕННАЙ."
 
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:35
 #: grub-core/commands/i386/rdmsr.c:38 grub-core/commands/iorw.c:36
 #: grub-core/commands/memrw.c:35 grub-core/commands/probe.c:42
 #: grub-core/commands/search_wrap.c:40 grub-core/commands/setpci.c:74
@@ -4389,13 +4999,18 @@ msgstr ""
 msgid "unsupported instruction"
 msgstr ""
 
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:732
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:725
 #: grub-core/commands/i386/rdmsr.c:77 grub-core/commands/i386/wrmsr.c:70
-#: grub-core/commands/i386/wrmsr.c:78 grub-core/net/dns.c:725
+#: grub-core/commands/i386/wrmsr.c:78 grub-core/net/dns.c:732
 msgid "invalid argument"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:126
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:130
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:134
 #: grub-core/commands/i386/rdmsr.c:94 grub-core/commands/memrw.c:126
-#: grub-core/commands/memrw.c:130 grub-core/commands/memrw.c:134
+#: grub-core/commands/memrw.c:131 grub-core/commands/memrw.c:136
 msgid "ADDR"
 msgstr "ADDR"
 
@@ -4448,8 +5063,11 @@ msgstr ""
 msgid "Write 16-bit VALUE to PORT."
 msgstr ""
 
-#: grub-core/commands/iorw.c:144 grub-core/commands/memrw.c:138
-#: grub-core/commands/memrw.c:142 grub-core/commands/memrw.c:146
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:138
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:142
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:146
+#: grub-core/commands/iorw.c:144 grub-core/commands/memrw.c:141
+#: grub-core/commands/memrw.c:145 grub-core/commands/memrw.c:149
 msgid "ADDR VALUE [MASK]"
 msgstr "АДРАС ЗНАЧЭНЬНЕ [МАСКА]"
 
@@ -4457,10 +5075,15 @@ msgstr "АДРАС ЗНАЧЭНЬНЕ [МАСКА]"
 msgid "Write 32-bit VALUE to PORT."
 msgstr ""
 
+#: .pc/cve-2025-jan/kern-dl-Check-for-the-SHF_INFO_LINK-flag-in-grub_dl_reloc.patch/grub-core/kern/dl.c:869
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/kern/dl.c:862
+#: .pc/nx/modules-Don-t-allocate-space-for-non-allocable-sections.patch/grub-core/kern/dl.c:760
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/dl.c:763
+#: .pc/nx/nx-set-page-permissions-for-loaded-modules.patch/grub-core/kern/dl.c:784
 #: grub-core/commands/keylayouts.c:215 grub-core/commands/loadenv.c:61
 #: grub-core/commands/nativedisk.c:189 grub-core/efiemu/main.c:235
 #: grub-core/font/font.c:464 grub-core/gfxmenu/gfxmenu.c:63
-#: grub-core/kern/device.c:42 grub-core/kern/dl.c:760
+#: grub-core/kern/device.c:42 grub-core/kern/dl.c:872
 #, c-format
 msgid "variable `%s' isn't set"
 msgstr ""
@@ -4585,27 +5208,33 @@ msgstr "[-f FILE] назва_пераменнай [...]"
 msgid "Save variables to environment block file."
 msgstr "Захаваць зьменныя ў файл блёка асяродзьдзя."
 
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:40
 #: grub-core/commands/ls.c:40
 msgid "Show a long list with more detailed information."
 msgstr "Паказаць доўгі сьпіс з больш падрабязнай інфармацыяй."
 
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:41
 #: grub-core/commands/ls.c:41
 msgid "Print sizes in a human readable format."
 msgstr "Паказаць памеры ў зразумелым для чалавека фармаце."
 
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:42
 #: grub-core/commands/ls.c:42
 msgid "List all files."
 msgstr "Паказаць сьпіс усіх файлаў."
 
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:73
 #: grub-core/commands/ls.c:73
 msgid "Network protocols:"
 msgstr ""
 
-#: grub-core/commands/ls.c:295
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:295
+#: grub-core/commands/ls.c:299
 msgid "[-l|-h|-a] [FILE ...]"
 msgstr ""
 
-#: grub-core/commands/ls.c:296
+#: .pc/cve-2025-jan/commands-ls-Fix-NULL-dereference.patch/grub-core/commands/ls.c:296
+#: grub-core/commands/ls.c:300
 msgid "List devices and files."
 msgstr "Сьпіс прылад і файлаў."
 
@@ -4687,27 +5316,33 @@ msgstr ""
 msgid "Bless DIR of HFS or HFS+ partition for PPC macs."
 msgstr ""
 
-#: grub-core/commands/memrw.c:126
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:126
+#: grub-core/commands/memrw.c:127
 msgid "Read 8-bit value from ADDR."
 msgstr ""
 
-#: grub-core/commands/memrw.c:130
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:130
+#: grub-core/commands/memrw.c:132
 msgid "Read 16-bit value from ADDR."
 msgstr ""
 
-#: grub-core/commands/memrw.c:134
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:134
+#: grub-core/commands/memrw.c:137
 msgid "Read 32-bit value from ADDR."
 msgstr ""
 
-#: grub-core/commands/memrw.c:139
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:139
+#: grub-core/commands/memrw.c:142
 msgid "Write 8-bit VALUE to ADDR."
 msgstr ""
 
-#: grub-core/commands/memrw.c:143
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:143
+#: grub-core/commands/memrw.c:146
 msgid "Write 16-bit VALUE to ADDR."
 msgstr ""
 
-#: grub-core/commands/memrw.c:147
+#: .pc/cve-2025-jan/commands-memrw-Disable-memory-reading-in-lockdown-mode.patch/grub-core/commands/memrw.c:147
+#: grub-core/commands/memrw.c:150
 msgid "Write 32-bit VALUE to ADDR."
 msgstr ""
 
@@ -4919,11 +5554,37 @@ msgstr ""
 msgid "Show raw dump of the PCI configuration space."
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:45
 #: grub-core/commands/pgp.c:45
 msgid "Skip signature-checking of the public key file."
 msgstr ""
 
 #. TRANSLATORS: it's about GNUPG signatures.
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:71
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:81
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:86
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:96
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:103
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:107
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:114
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:119
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:124
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:128
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:268
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:276
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:281
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:289
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:320
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:327
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:332
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:342
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:468
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:471
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:474
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:477
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:484
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:490
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:665
 #: grub-core/commands/pgp.c:71 grub-core/commands/pgp.c:81
 #: grub-core/commands/pgp.c:86 grub-core/commands/pgp.c:96
 #: grub-core/commands/pgp.c:103 grub-core/commands/pgp.c:107
@@ -4940,40 +5601,49 @@ msgstr ""
 msgid "bad signature"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:637
 #: grub-core/commands/pgp.c:637
 msgid "public key %08"
 msgstr ""
 
 #. TRANSLATORS: %08x is 32-bit key id.
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:812
 #: grub-core/commands/pgp.c:812
 #, c-format
 msgid "public key %08x not found"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:994
 #: grub-core/commands/pgp.c:994
 msgid "[-s|--skip-sig] FILE SIGNATURE_FILE [PUBKEY_FILE]"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:995
 #: grub-core/commands/pgp.c:995
 msgid "Verify detached signature."
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:998
 #: grub-core/commands/pgp.c:998
 msgid "[-s|--skip-sig] PUBKEY_FILE"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:999
 #: grub-core/commands/pgp.c:999
 msgid "Add PUBKEY_FILE to trusted keys."
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:1003
 #: grub-core/commands/pgp.c:1003
 msgid "Show the list of trusted keys."
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:1005
 #: grub-core/commands/pgp.c:1005
 msgid "PUBKEY_ID"
 msgstr ""
 
+#: .pc/cve-2025-jan/commands-pgp-Unregister-the-check_signatures-hooks-on-mod.patch/grub-core/commands/pgp.c:1006
 #: grub-core/commands/pgp.c:1006
 msgid "Remove PUBKEY_ID from trusted keys."
 msgstr ""
@@ -5014,6 +5684,7 @@ msgstr ""
 msgid "filesystem `%s' does not support labels"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:170
 #: grub-core/commands/probe.c:243 grub-core/fs/zfs/zfsinfo.c:430
 #: grub-core/loader/i386/bsd.c:170 util/grub-setup.c:223
 msgid "DEVICE"
@@ -5023,15 +5694,18 @@ msgstr "ПРЫЛАДА"
 msgid "Retrieve device info."
 msgstr "Атрымаць інфармацыю аб прыладзе."
 
-#: grub-core/commands/read.c:33
+#: .pc/cve-2025-jan/commands-read-Fix-an-integer-overflow-when-supplying-more.patch/grub-core/commands/read.c:33
+#: grub-core/commands/read.c:34
 msgid "Do not echo input"
 msgstr ""
 
-#: grub-core/commands/read.c:96
+#: .pc/cve-2025-jan/commands-read-Fix-an-integer-overflow-when-supplying-more.patch/grub-core/commands/read.c:96
+#: grub-core/commands/read.c:107
 msgid "[-s] [ENVVAR]"
 msgstr ""
 
-#: grub-core/commands/read.c:97
+#: .pc/cve-2025-jan/commands-read-Fix-an-integer-overflow-when-supplying-more.patch/grub-core/commands/read.c:97
+#: grub-core/commands/read.c:108
 msgid "Set variable with user input."
 msgstr "Задаць зьменную з уведзенымі дадзенымі карыстальніка."
 
@@ -5204,6 +5878,8 @@ msgstr "Пачакаць пазначаную колькасьць сэкунд�
 msgid "Match structures with the given type."
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:490
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:556
 #: grub-core/commands/smbios.c:198 grub-core/loader/i386/bsd.c:490
 #: grub-core/loader/i386/bsd.c:556
 msgid "type"
@@ -5255,11 +5931,12 @@ msgstr ""
 msgid "Get the UUID's value at the given offset."
 msgstr ""
 
-#: grub-core/commands/smbios.c:215
+#: grub-core/commands/smbios.c:215 grub-core/loader/efi/fdt.c:45
 msgid "Store the value in the given variable name."
 msgstr ""
 
 #: grub-core/commands/smbios.c:216 grub-core/commands/smbios.c:218
+#: grub-core/loader/efi/fdt.c:46
 msgid "variable"
 msgstr ""
 
@@ -5392,15 +6069,19 @@ msgstr ""
 msgid "List or select an output terminal."
 msgstr ""
 
-#: grub-core/commands/test.c:444
+#: .pc/cve-2025-jan/commands-test-Stack-overflow-due-to-unlimited-recursion-d.patch/grub-core/commands/test.c:444
+#: grub-core/commands/test.c:459
 msgid "EXPRESSION ]"
 msgstr "ВЫРАЗ ]"
 
-#: grub-core/commands/test.c:444 grub-core/commands/test.c:447
+#: .pc/cve-2025-jan/commands-test-Stack-overflow-due-to-unlimited-recursion-d.patch/grub-core/commands/test.c:444
+#: .pc/cve-2025-jan/commands-test-Stack-overflow-due-to-unlimited-recursion-d.patch/grub-core/commands/test.c:447
+#: grub-core/commands/test.c:459 grub-core/commands/test.c:462
 msgid "Evaluate an expression."
 msgstr "Вылічыць выраз."
 
-#: grub-core/commands/test.c:447
+#: .pc/cve-2025-jan/commands-test-Stack-overflow-due-to-unlimited-recursion-d.patch/grub-core/commands/test.c:447
+#: grub-core/commands/test.c:462
 msgid "EXPRESSION"
 msgstr "ВЫРАЗ"
 
@@ -5439,7 +6120,9 @@ msgstr ""
 msgid "Test file read speed."
 msgstr ""
 
-#: grub-core/commands/time.c:38 grub-core/script/execute.c:979
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:993
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:979
+#: grub-core/commands/time.c:38 grub-core/script/execute.c:996
 msgid "no command is specified"
 msgstr ""
 
@@ -5638,117 +6321,147 @@ msgid ""
 "lowercase as done by blkid."
 msgstr ""
 
+#: .pc/cve-2025-jan/disk-Check-if-returned-pointer-for-allocated-memory-is-NU.patch/grub-core/disk/ieee1275/obdisk.c:558
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/ieee1275/obdisk.c:527
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/ieee1275/ofdisk.c:582
+#: .pc/cve-2025-jan/disk-ieee1275-ofdisk-Call-grub_ieee1275_close-when-grub_m.patch/grub-core/disk/ieee1275/ofdisk.c:618
 #: grub-core/disk/arc/arcdisk.c:248 grub-core/disk/efi/efidisk.c:613
 #: grub-core/disk/i386/pc/biosdisk.c:494 grub-core/disk/i386/pc/biosdisk.c:539
-#: grub-core/disk/ieee1275/nand.c:198 grub-core/disk/ieee1275/obdisk.c:527
-#: grub-core/disk/ieee1275/ofdisk.c:582
+#: grub-core/disk/ieee1275/nand.c:198 grub-core/disk/ieee1275/obdisk.c:564
+#: grub-core/disk/ieee1275/ofdisk.c:621
 #, c-format
 msgid "failure reading sector 0x%llx from `%s'"
 msgstr ""
 
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/ieee1275/ofdisk.c:602
+#: .pc/cve-2025-jan/disk-ieee1275-ofdisk-Call-grub_ieee1275_close-when-grub_m.patch/grub-core/disk/ieee1275/ofdisk.c:638
 #: grub-core/disk/arc/arcdisk.c:284 grub-core/disk/efi/efidisk.c:636
-#: grub-core/disk/i386/pc/biosdisk.c:544 grub-core/disk/ieee1275/ofdisk.c:602
+#: grub-core/disk/i386/pc/biosdisk.c:544 grub-core/disk/ieee1275/ofdisk.c:641
 #, c-format
 msgid "failure writing sector 0x%llx to `%s'"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:52
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:52
+#: grub-core/disk/cryptodisk.c:53
 msgid "Mount by UUID."
 msgstr ""
 
 #. TRANSLATORS: It's still restricted to cryptodisks only.
-#: grub-core/disk/cryptodisk.c:54
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:54
+#: grub-core/disk/cryptodisk.c:55
 msgid "Mount all."
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:55
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:55
+#: grub-core/disk/cryptodisk.c:56
 msgid "Mount all volumes with `boot' flag set."
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:56
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:56
+#: grub-core/disk/cryptodisk.c:57
 msgid "Password to open volumes."
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:57
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:57
+#: grub-core/disk/cryptodisk.c:58
 msgid "Key file"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:58
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:58
+#: grub-core/disk/cryptodisk.c:59
 msgid "Key file offset (bytes)"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:59
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:59
+#: grub-core/disk/cryptodisk.c:60
 msgid "Key file data size (bytes)"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:60
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:60
+#: grub-core/disk/cryptodisk.c:61
 msgid "Read header from file"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:740
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:740
+#: grub-core/disk/cryptodisk.c:741
 #, c-format
 msgid "failed to query size of device `%s': %s"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1039
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1039
+#: grub-core/disk/cryptodisk.c:1040
 msgid "header file not found"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1049
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1049
+#: grub-core/disk/cryptodisk.c:1050
 msgid "header file too small"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1122
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1122
+#: grub-core/disk/cryptodisk.c:1123
 #, c-format
 msgid "Enter passphrase for %s%s%s (%s): "
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1124 grub-core/disk/plainmount.c:374
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1124
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:374
+#: grub-core/disk/cryptodisk.c:1125 grub-core/disk/plainmount.c:379
 msgid "UNKNOWN"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1293
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1293
+#: grub-core/disk/cryptodisk.c:1294
 #, c-format
 msgid "non-numeric or invalid keyfile offset `%s'"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1304
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1304
+#: grub-core/disk/cryptodisk.c:1305
 #, c-format
 msgid "non-numeric or invalid keyfile size `%s'"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1308
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1308
+#: grub-core/disk/cryptodisk.c:1309
 msgid "key file size is 0"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1312
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1312
+#: grub-core/disk/cryptodisk.c:1313
 #, c-format
 msgid "key file size exceeds maximum (%d)"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1323
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1323
+#: grub-core/disk/cryptodisk.c:1324
 msgid "Keyfile offset, %llu, is greater thankeyfile size, %"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1334
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1334
+#: grub-core/disk/cryptodisk.c:1335
 msgid "keyfile is too small: requested %llu bytes, but the file only has %"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1351
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1351
+#: grub-core/disk/cryptodisk.c:1352
 msgid "failed to read key file"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1358
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1358
+#: grub-core/disk/cryptodisk.c:1359
 msgid "cannot use UUID lookup with detached header"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1591
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1591
+#: grub-core/disk/cryptodisk.c:1609
 msgid ""
 "[ [-p password] | [-k keyfile [-O keyoffset] [-S keysize] ] ] [-H file] "
 "<SOURCE|-u UUID|-a|-b>"
 msgstr ""
 
-#: grub-core/disk/cryptodisk.c:1594
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/cryptodisk.c:1594
+#: grub-core/disk/cryptodisk.c:1612
 msgid "Mount a crypto device."
 msgstr ""
 
@@ -5763,14 +6476,28 @@ msgstr ""
 #. in the case of degraded RAID and means that autodetection may
 #. fail to include some of modules. It's an installation time
 #. message, not runtime message.
-#: grub-core/disk/diskfilter.c:351 grub-core/disk/diskfilter.c:403
+#. TRANSLATORS: This message kicks in during the detection of
+#. which modules needs to be included in core image. This happens
+#. in the case of degraded RAID and means that autodetection may
+#. fail to include some of modules. It's an installation time
+#. message, not runtime message.
+#. 
+#. TRANSLATORS: This message kicks in during the detection of
+#. which modules needs to be included in core image. This happens
+#. in the case of degraded RAID and means that autodetection may
+#. fail to include some of modules. It's an installation time
+#. message, not runtime message.
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/diskfilter.c:351
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/diskfilter.c:403
+#: grub-core/disk/diskfilter.c:352 grub-core/disk/diskfilter.c:404
 #, c-format
 msgid ""
 "Couldn't find physical volume `%s'. Some modules may be missing from core "
 "image."
 msgstr ""
 
-#: grub-core/disk/diskfilter.c:507
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/diskfilter.c:507
+#: grub-core/disk/diskfilter.c:508
 #, c-format
 msgid "physical volume %s not found"
 msgstr ""
@@ -5829,210 +6556,261 @@ msgstr ""
 #. usable for bootloaders (called generically
 #. "embedding zone") and this operation is
 #. called "embedding".
-#: grub-core/disk/ldm.c:1074
+#: .pc/cve-2025-jan/disk-Check-if-returned-pointer-for-allocated-memory-is-NU.patch/grub-core/disk/ldm.c:1100
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/ldm.c:1074
+#: grub-core/disk/ldm.c:1106
 msgid ""
 "your LDM Embedding Partition is too small; embedding won't be possible"
 msgstr ""
 
 #. TRANSLATORS: it's a partition for embedding,
 #. not a partition embed into something.
-#: grub-core/disk/ldm.c:1092
+#: .pc/cve-2025-jan/disk-Check-if-returned-pointer-for-allocated-memory-is-NU.patch/grub-core/disk/ldm.c:1118
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/ldm.c:1092
+#: grub-core/disk/ldm.c:1124
 msgid "this LDM has no Embedding Partition; embedding won't be possible"
 msgstr ""
 
-#: grub-core/disk/luks2.c:388
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/luks2.c:388
+#: grub-core/disk/luks2.c:389
 msgid "could not unescape Base64 string"
 msgstr ""
 
-#: grub-core/disk/luks2.c:393
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/luks2.c:393
+#: grub-core/disk/luks2.c:394
 msgid "could not decode Base64 string"
 msgstr ""
 
 #. TRANSLATORS: It's a cryptographic key slot: one element of an array
 #. where each element is either empty or holds a key.
 #. 
-#: grub-core/disk/luks2.c:754
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/luks2.c:754
+#: grub-core/disk/luks2.c:759
 #, c-format
 msgid "Slot \"%s\" opened\n"
 msgstr ""
 
 #. TRANSLATORS: It's still restricted to this module only.
-#: grub-core/disk/plainmount.c:49
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:49
+#: grub-core/disk/plainmount.c:50
 msgid "Password hash"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:50
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:50
+#: grub-core/disk/plainmount.c:51
 msgid "Password cipher"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:51
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:51
+#: grub-core/disk/plainmount.c:52
 msgid "Key size (in bits)"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:52
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:52
+#: grub-core/disk/plainmount.c:53
 msgid "Device sector size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:53
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:53
+#: grub-core/disk/plainmount.c:54
 msgid "Password (key)"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:54
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:54
+#: grub-core/disk/plainmount.c:55
 msgid "Keyfile path"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:55
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:55
+#: grub-core/disk/plainmount.c:56
 msgid "Keyfile offset"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:56
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:56
+#: grub-core/disk/plainmount.c:57
 msgid "Set device UUID"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:69
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:69
+#: grub-core/disk/plainmount.c:70
 msgid "cannot set specified key"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:102
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:102
+#: grub-core/disk/plainmount.c:103
 #, c-format
 msgid "cannot determine disk %s size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:112
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:112
+#: grub-core/disk/plainmount.c:113
 #, c-format
 msgid "cannot set specified sector size on disk %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:188
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:188
+#: grub-core/disk/plainmount.c:193
 #, c-format
 msgid "cannot open keyfile %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:193
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:193
+#: grub-core/disk/plainmount.c:198
 msgid "cannot seek keyfile at offset %"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:197
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:197
+#: grub-core/disk/plainmount.c:202
 msgid "Specified key size (%"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:203
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:203
+#: grub-core/disk/plainmount.c:208
 msgid "error reading key file"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:222
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:222
+#: grub-core/disk/plainmount.c:227
 msgid "device name required"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:235
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:235
+#: grub-core/disk/plainmount.c:240
 #, c-format
 msgid "couldn't load hash %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:240
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:240
+#: grub-core/disk/plainmount.c:245
 msgid "hash length %"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:248
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:248
+#: grub-core/disk/plainmount.c:253
 msgid "invalid cipher mode, must be of format cipher-mode"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:254
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:254
+#: grub-core/disk/plainmount.c:259
 msgid "password exceeds maximium size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:260
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:260
+#: grub-core/disk/plainmount.c:265
 msgid "specified UUID exceeds maximum size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:262
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:262
+#: grub-core/disk/plainmount.c:267
 msgid "specified UUID too short"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:271
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:271
+#: grub-core/disk/plainmount.c:276
 msgid "unrecognized keyfile offset"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:278
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:278
+#: grub-core/disk/plainmount.c:283
 msgid "unrecognized sector size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:284
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:284
+#: grub-core/disk/plainmount.c:289
 msgid "unrecognized key size"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:287
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:287
+#: grub-core/disk/plainmount.c:292
 #, c-format
 msgid "key size is not multiple of %d bits"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:291
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:291
+#: grub-core/disk/plainmount.c:296
 msgid "key size %"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:298
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:298
+#: grub-core/disk/plainmount.c:303
 #, c-format
 msgid "sector size -S must be at least %d"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:302
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:302
+#: grub-core/disk/plainmount.c:307
 msgid "sector size -S %"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:341
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:341
+#: grub-core/disk/plainmount.c:346
 #, c-format
 msgid "invalid cipher %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:343
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:343
+#: grub-core/disk/plainmount.c:348
 #, c-format
 msgid "invalid mode %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:345
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:345
+#: grub-core/disk/plainmount.c:350
 #, c-format
 msgid "invalid cipher %s or mode %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:364
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:364
+#: grub-core/disk/plainmount.c:369
 #, c-format
 msgid "cannot open disk %s"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:372
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:372
+#: grub-core/disk/plainmount.c:377
 #, c-format
 msgid "Enter passphrase for %s%s%s: "
 msgstr ""
 
-#: grub-core/disk/plainmount.c:379
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:379
+#: grub-core/disk/plainmount.c:384
 msgid "error reading password"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:391
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:391
+#: grub-core/disk/plainmount.c:396
 msgid "warning: hash is ignored if keyfile is specified\n"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:395
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:395
+#: grub-core/disk/plainmount.c:400
 msgid ""
 "warning: password specified with -p option is ignored if keyfile is "
 "provided\n"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:400
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:400
+#: grub-core/disk/plainmount.c:405
 msgid ""
 "warning: keyfile offset option -O specified without keyfile option -d\n"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:448
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:448
+#: grub-core/disk/plainmount.c:453
 msgid ""
 "-c cipher -s key-size [-h hash] [-S sector-size] [-o offset] [-p password] [-"
 "u uuid]  [[-d keyfile] [-O keyfile offset]] <SOURCE>"
 msgstr ""
 
-#: grub-core/disk/plainmount.c:451
+#: .pc/cve-2025-jan/disk-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/disk/plainmount.c:451
+#: grub-core/disk/plainmount.c:456
 msgid "Open partition encrypted in plain mode."
 msgstr ""
 
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/arm/dl.c:256
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/i386/dl.c:75
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/mips/dl.c:258
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/powerpc/dl.c:163
 #: grub-core/efiemu/i386/loadcore32.c:111 grub-core/kern/arm/dl.c:256
 #: grub-core/kern/i386/dl.c:75 grub-core/kern/mips/dl.c:258
 #: grub-core/kern/powerpc/dl.c:163 util/grub-mkimagexx.c:757
@@ -6047,6 +6825,11 @@ msgstr ""
 msgid "relocation 0x%x is not implemented yet"
 msgstr ""
 
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/arm64/dl.c:192
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/ia64/dl.c:145
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/riscv/dl.c:340
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/sparc64/dl.c:185
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/x86_64/dl.c:115
 #: grub-core/efiemu/i386/loadcore64.c:130 grub-core/kern/arm64/dl.c:192
 #: grub-core/kern/ia64/dl.c:145 grub-core/kern/loongarch64/dl.c:144
 #: grub-core/kern/riscv/dl.c:340 grub-core/kern/sparc64/dl.c:185
@@ -6072,7 +6855,12 @@ msgstr ""
 msgid "Unload EFI emulator."
 msgstr ""
 
-#: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:379
+#: .pc/cve-2025-jan/kern-dl-Check-for-the-SHF_INFO_LINK-flag-in-grub_dl_reloc.patch/grub-core/kern/dl.c:404
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/kern/dl.c:403
+#: .pc/nx/modules-Don-t-allocate-space-for-non-allocable-sections.patch/grub-core/kern/dl.c:379
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/dl.c:382
+#: .pc/nx/nx-set-page-permissions-for-loaded-modules.patch/grub-core/kern/dl.c:403
+#: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:404
 #, c-format
 msgid "symbol `%s' not found"
 msgstr ""
@@ -6093,38 +6881,125 @@ msgstr ""
 msgid "List the loaded fonts."
 msgstr ""
 
-#: grub-core/fs/archelp.c:186 grub-core/fs/btrfs.c:1829
-#: grub-core/fs/btrfs.c:2094 grub-core/fs/fshelp.c:189
-#: grub-core/fs/fshelp.c:309 grub-core/fs/jfs.c:442 grub-core/fs/minix.c:418
-#: grub-core/fs/minix.c:580 grub-core/fs/reiserfs.c:732 grub-core/fs/ufs.c:531
-#: grub-core/fs/ufs.c:671 grub-core/fs/zfs/zfs.c:2848
-#: grub-core/fs/zfs/zfs.c:4305
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/jfs.c:468
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:418
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:580
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/reiserfs.c:732
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:531
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:671
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:1830
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:2110
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/archelp.c:186
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:1829
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:2094
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-caused-by-invalid-dir-slot-index.patch/grub-core/fs/jfs.c:448
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-in-jfs_getent.patch/grub-core/fs/jfs.c:442
+#: .pc/cve-2025-jan/fs-jfs-Inconsistent-signed-unsigned-types-usage-in-return.patch/grub-core/fs/jfs.c:465
+#: .pc/cve-2025-jan/fs-jfs-Use-full-40-bits-offset-and-address-for-a-data-ext.patch/grub-core/fs/jfs.c:449
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:531
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:671
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:2873
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:4369
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:2855
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:4343
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:2855
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:4343
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:2848
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:4305
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:1829
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:2094
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/jfs.c:468
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:418
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:580
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/reiserfs.c:732
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:531
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:671
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:2848
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:4305
+#: grub-core/fs/archelp.c:193 grub-core/fs/btrfs.c:1830
+#: grub-core/fs/btrfs.c:2110 grub-core/fs/fshelp.c:189
+#: grub-core/fs/fshelp.c:309 grub-core/fs/jfs.c:469 grub-core/fs/minix.c:419
+#: grub-core/fs/minix.c:581 grub-core/fs/reiserfs.c:733 grub-core/fs/ufs.c:532
+#: grub-core/fs/ufs.c:672 grub-core/fs/zfs/zfs.c:2873
+#: grub-core/fs/zfs/zfs.c:4371
 msgid "not a directory"
 msgstr ""
 
-#: grub-core/fs/archelp.c:224 grub-core/fs/archelp.c:286
-#: grub-core/fs/btrfs.c:1946 grub-core/fs/fshelp.c:227 grub-core/fs/jfs.c:747
-#: grub-core/fs/minix.c:371 grub-core/fs/ufs.c:454
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/jfs.c:789
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:371
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:454
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:1953
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/archelp.c:224
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/archelp.c:286
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:1946
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-caused-by-invalid-dir-slot-index.patch/grub-core/fs/jfs.c:760
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-in-jfs_getent.patch/grub-core/fs/jfs.c:747
+#: .pc/cve-2025-jan/fs-jfs-Inconsistent-signed-unsigned-types-usage-in-return.patch/grub-core/fs/jfs.c:786
+#: .pc/cve-2025-jan/fs-jfs-Use-full-40-bits-offset-and-address-for-a-data-ext.patch/grub-core/fs/jfs.c:769
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:454
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:1946
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/jfs.c:789
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:371
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:454
+#: grub-core/fs/archelp.c:231 grub-core/fs/archelp.c:293
+#: grub-core/fs/btrfs.c:1953 grub-core/fs/fshelp.c:227 grub-core/fs/jfs.c:790
+#: grub-core/fs/minix.c:372 grub-core/fs/ufs.c:455
 msgid "too deep nesting of symlinks"
 msgstr ""
 
-#: grub-core/fs/bfs.c:228 grub-core/fs/fshelp.c:380 grub-core/fs/minix.c:272
-#: grub-core/kern/file.c:161
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:272
+#: .pc/cve-2025-jan/fs-bfs-Disable-under-lockdown.patch/grub-core/fs/bfs.c:228
+#: .pc/cve-2025-jan/kern-file-Ensure-file-data-is-set.patch/grub-core/kern/file.c:161
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/bfs.c:228
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:272
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/kern/file.c:164
+#: grub-core/fs/bfs.c:229 grub-core/fs/fshelp.c:380 grub-core/fs/minix.c:273
+#: grub-core/kern/file.c:168
 msgid "attempt to read past the end of file"
 msgstr ""
 
-#: grub-core/fs/btrfs.c:2225 grub-core/fs/fshelp.c:307 grub-core/fs/jfs.c:846
-#: grub-core/fs/zfs/zfs.c:3842
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/jfs.c:888
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:2247
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:2225
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-caused-by-invalid-dir-slot-index.patch/grub-core/fs/jfs.c:859
+#: .pc/cve-2025-jan/fs-jfs-Fix-OOB-read-in-jfs_getent.patch/grub-core/fs/jfs.c:846
+#: .pc/cve-2025-jan/fs-jfs-Inconsistent-signed-unsigned-types-usage-in-return.patch/grub-core/fs/jfs.c:885
+#: .pc/cve-2025-jan/fs-jfs-Use-full-40-bits-offset-and-address-for-a-data-ext.patch/grub-core/fs/jfs.c:868
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:3899
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:3876
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:3876
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:3842
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:2225
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/jfs.c:888
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:3842
+#: grub-core/fs/btrfs.c:2247 grub-core/fs/fshelp.c:307 grub-core/fs/jfs.c:889
+#: grub-core/fs/zfs/zfs.c:3901
 msgid "not a regular file"
 msgstr ""
 
-#: grub-core/fs/btrfs.c:2375 grub-core/fs/zfs/zfs.c:4391
+#: .pc/cve-2025-jan/fs-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/fs/btrfs.c:2397
+#: .pc/cve-2025-jan/fs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/btrfs.c:2375
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:4455
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:4429
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:4429
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:4391
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/btrfs.c:2375
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:4391
+#: grub-core/fs/btrfs.c:2397 grub-core/fs/zfs/zfs.c:4457
 #: grub-core/partmap/msdos.c:404
 msgid "your core.img is unusually large.  It won't fit in the embedding area"
 msgstr ""
 
-#: grub-core/fs/fshelp.c:281 grub-core/fs/minix.c:648 grub-core/fs/ufs.c:661
-#: grub-core/fs/ufs.c:757 grub-core/kern/fs.c:172 grub-core/kern/fs.c:188
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/minix.c:648
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:661
+#: .pc/cve-2025-jan/fs-Disable-many-filesystems-under-lockdown.patch/grub-core/fs/ufs.c:757
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:661
+#: .pc/cve-2025-jan/fs-ufs-Fix-a-heap-OOB-write.patch/grub-core/fs/ufs.c:757
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/minix.c:648
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:661
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/ufs.c:757
+#: grub-core/fs/fshelp.c:281 grub-core/fs/minix.c:649 grub-core/fs/ufs.c:662
+#: grub-core/fs/ufs.c:758 grub-core/kern/fs.c:172 grub-core/kern/fs.c:188
 #, c-format
 msgid "invalid file name `%s'"
 msgstr ""
@@ -6133,11 +7008,21 @@ msgstr ""
 msgid "blocksize too large"
 msgstr ""
 
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:459
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:459
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:459
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:459
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:459
 #: grub-core/fs/zfs/zfs.c:459
 msgid "checksum verification failed"
 msgstr ""
 
-#: grub-core/fs/zfs/zfs.c:1474
+#: .pc/cve-2025-jan/fs-zfs-Add-missing-NULL-check-after-grub_strdup-call.patch/grub-core/fs/zfs/zfs.c:1481
+#: .pc/cve-2025-jan/fs-zfs-Check-if-returned-pointer-for-allocated-memory-is-.patch/grub-core/fs/zfs/zfs.c:1474
+#: .pc/cve-2025-jan/fs-zfs-Prevent-overflows-when-allocating-memory-for-array.patch/grub-core/fs/zfs/zfs.c:1474
+#: .pc/cve-2025-jan/fs-zfs-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/fs/zfs/zfs.c:1474
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/fs/zfs/zfs.c:1474
+#: grub-core/fs/zfs/zfs.c:1481
 msgid "couldn't find a necessary member device of multi-device filesystem"
 msgstr ""
 
@@ -6432,7 +7317,9 @@ msgstr ""
 msgid "Say `Hello World'."
 msgstr ""
 
-#: grub-core/io/gzio.c:409 grub-core/kern/file.c:215
+#: .pc/cve-2025-jan/kern-file-Ensure-file-data-is-set.patch/grub-core/kern/file.c:215
+#: .pc/cve-2025-jan/kern-file-Implement-filesystem-reference-counting.patch/grub-core/kern/file.c:218
+#: grub-core/io/gzio.c:409 grub-core/kern/file.c:225
 msgid "attempt to seek outside of the file"
 msgstr ""
 
@@ -6490,7 +7377,12 @@ msgstr ""
 msgid "attempt to read or write outside of partition"
 msgstr ""
 
-#: grub-core/kern/dl.c:212 grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
+#: .pc/cve-2025-jan/kern-dl-Check-for-the-SHF_INFO_LINK-flag-in-grub_dl_reloc.patch/grub-core/kern/dl.c:213
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/grub-core/kern/dl.c:212
+#: .pc/nx/modules-Don-t-allocate-space-for-non-allocable-sections.patch/grub-core/kern/dl.c:212
+#: .pc/nx/modules-load-module-sections-at-page-aligned-addresses.patch/grub-core/kern/dl.c:212
+#: .pc/nx/nx-set-page-permissions-for-loaded-modules.patch/grub-core/kern/dl.c:212
+#: grub-core/kern/dl.c:213 grub-core/kern/elf.c:61 grub-core/kern/elf.c:79
 #: grub-core/loader/i386/bsdXX.c:49 grub-core/loader/ia64/efi/linux.c:335
 #: grub-core/loader/multiboot_elfxx.c:82
 msgid "invalid arch-independent ELF magic"
@@ -6500,7 +7392,11 @@ msgstr ""
 msgid "Print infomation useful for GDB debugging"
 msgstr ""
 
-#: grub-core/kern/efi/mm.c:135
+#: .pc/kern-efi-mm-Change-grub_efi_allocate_pages_real-to-call-s.patch/grub-core/kern/efi/mm.c:135
+#: .pc/kern-efi-mm-Change-grub_efi_mm_add_regions-to-keep-track-.patch/grub-core/kern/efi/mm.c:135
+#: .pc/kern-efi-mm-Detect-calls-to-grub_efi_drop_alloc-with-wron.patch/grub-core/kern/efi/mm.c:135
+#: .pc/nx/nx-add-memory-attribute-get-set-API.patch/grub-core/kern/efi/mm.c:137
+#: grub-core/kern/efi/mm.c:137
 #, c-format
 msgid "invalid memory address (0x%s > 0x%s)"
 msgstr ""
@@ -6564,7 +7460,9 @@ msgstr ""
 msgid "unknown filesystem"
 msgstr ""
 
-#: grub-core/kern/partition.c:51 grub-core/partmap/bsdlabel.c:108
+#: .pc/cve-2025-jan/kern-partition-Add-sanity-check-after-grub_strtoul-call.patch/grub-core/kern/partition.c:54
+#: .pc/cve-2025-jan/kern-partition-Limit-recursion-in-part_iterate.patch/grub-core/kern/partition.c:51
+#: grub-core/kern/partition.c:54 grub-core/partmap/bsdlabel.c:108
 #, c-format
 msgid "Discarding improperly nested partition (%s,%s,%s%d)"
 msgstr ""
@@ -6743,62 +7641,87 @@ msgstr ""
 msgid "Cannot find initrd file %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:104
 #: grub-core/loader/i386/bsd.c:104
 msgid "Display output on all consoles."
 msgstr "Вывадзіць паведамленьні на ўсіх кансолях."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:105
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:139
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:172
 #: grub-core/loader/i386/bsd.c:105 grub-core/loader/i386/bsd.c:139
 #: grub-core/loader/i386/bsd.c:172
 msgid "Use serial console."
 msgstr "Выкарыстоўваць кансоль на пасьлядоўным порце."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:106
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:132
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:160
 #: grub-core/loader/i386/bsd.c:106 grub-core/loader/i386/bsd.c:132
 #: grub-core/loader/i386/bsd.c:160
 msgid "Ask for file name to reboot from."
 msgstr "Запытаць імя файла для перазагрузкі."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:107
 #: grub-core/loader/i386/bsd.c:107
 msgid "Use CD-ROM as root."
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:108
 #: grub-core/loader/i386/bsd.c:108
 msgid "Invoke user configuration routing."
 msgstr "Выканаць карыстальніцкую наладку маршрутызацыі."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:109
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:136
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:163
 #: grub-core/loader/i386/bsd.c:109 grub-core/loader/i386/bsd.c:136
 #: grub-core/loader/i386/bsd.c:163
 msgid "Enter in KDB on boot."
 msgstr "Увайсьці ў KDB пры загрузке."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:110
 #: grub-core/loader/i386/bsd.c:110
 msgid "Use GDB remote debugger instead of DDB."
 msgstr "Выкарыстоўваць аддалены адладчык GDB замест DDB."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:111
 #: grub-core/loader/i386/bsd.c:111
 msgid "Disable all boot output."
 msgstr "Выключыць вывад пры загрузке."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:113
 #: grub-core/loader/i386/bsd.c:113
 msgid "Wait for keypress after every line of output."
 msgstr "Чакаць націску любой клявішы пасьля кожнага вывадзімага радка."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:115
 #: grub-core/loader/i386/bsd.c:115
 msgid "Use compiled-in root device."
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:116
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:135
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:166
 #: grub-core/loader/i386/bsd.c:116 grub-core/loader/i386/bsd.c:135
 #: grub-core/loader/i386/bsd.c:166
 msgid "Boot into single mode."
 msgstr "Загрузіцца ў аднакарыстальніцкі рэжым."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:117
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:167
 #: grub-core/loader/i386/bsd.c:117 grub-core/loader/i386/bsd.c:167
 msgid "Boot with verbose messages."
 msgstr "Паказваць падрабязныя памедамленьні пры загрузке."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:133
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:161
 #: grub-core/loader/i386/bsd.c:133 grub-core/loader/i386/bsd.c:161
 msgid "Don't reboot, just halt."
 msgstr "Не перазапускаць, толькі спыніць."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:134
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:162
 #: grub-core/loader/i386/bsd.c:134 grub-core/loader/i386/bsd.c:162
 msgid "Change configured devices."
 msgstr "Зьмяніць наладжаныя прылады."
@@ -6806,26 +7729,32 @@ msgstr "Зьмяніць наладжаныя прылады."
 #. TRANSLATORS: "com" is static and not to be translated. It refers to
 #. serial ports e.g. com1.
 #. 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:143
 #: grub-core/loader/i386/bsd.c:143
 msgid "comUNIT[,SPEED]"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:158
 #: grub-core/loader/i386/bsd.c:158
 msgid "Disable SMP."
 msgstr "Выключыць SMP."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:159
 #: grub-core/loader/i386/bsd.c:159
 msgid "Disable ACPI."
 msgstr "Выключыць ACPI."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:165
 #: grub-core/loader/i386/bsd.c:165
 msgid "Don't display boot diagnostic messages."
 msgstr "Не выводзіць адладачныя загрузачныя паведамленьні."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:168
 #: grub-core/loader/i386/bsd.c:168
 msgid "Boot with debug messages."
 msgstr "Загружацца з вывадам адладачных паведамленняў."
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:169
 #: grub-core/loader/i386/bsd.c:169
 msgid "Suppress normal output (warnings remain)."
 msgstr ""
@@ -6833,62 +7762,80 @@ msgstr ""
 #. TRANSLATORS: "com" is static and not to be translated. It refers to
 #. serial ports e.g. com1.
 #. 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:176
 #: grub-core/loader/i386/bsd.c:176
 msgid "[ADDR|comUNIT][,SPEED]"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:490
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:556
 #: grub-core/loader/i386/bsd.c:490 grub-core/loader/i386/bsd.c:556
 msgid "name"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:490
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:556
 #: grub-core/loader/i386/bsd.c:490 grub-core/loader/i386/bsd.c:556
 msgid "addr"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:491
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:557
 #: grub-core/loader/i386/bsd.c:491 grub-core/loader/i386/bsd.c:557
 msgid "size"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:1153
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:467
 #: grub-core/loader/i386/bsd.c:1153 grub-core/loader/i386/linux.c:467
 #: grub-core/loader/i386/xnu.c:1025
 msgid "Booting in blind mode"
 msgstr ""
 
-#: grub-core/loader/i386/bsd.c:2144
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2144
+#: grub-core/loader/i386/bsd.c:2150
 msgid "Load kernel of FreeBSD."
 msgstr "Загрузіць ядро FreeBSD."
 
-#: grub-core/loader/i386/bsd.c:2147
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2147
+#: grub-core/loader/i386/bsd.c:2153
 msgid "Load kernel of OpenBSD."
 msgstr "Загрузіць ядро OpenBSD."
 
-#: grub-core/loader/i386/bsd.c:2150
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2150
+#: grub-core/loader/i386/bsd.c:2156
 msgid "Load kernel of NetBSD."
 msgstr "Загрузіць ядро NetBSD."
 
-#: grub-core/loader/i386/bsd.c:2154
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2154
+#: grub-core/loader/i386/bsd.c:2160
 msgid "Load FreeBSD env."
 msgstr "Загрузіць асяродзьдзе FreeBSD."
 
-#: grub-core/loader/i386/bsd.c:2157
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2157
+#: grub-core/loader/i386/bsd.c:2163
 msgid "Load FreeBSD kernel module."
 msgstr "Загрузіць модуль ядра FreeBSD."
 
-#: grub-core/loader/i386/bsd.c:2160
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2160
+#: grub-core/loader/i386/bsd.c:2166
 msgid "Load NetBSD kernel module."
 msgstr ""
 
-#: grub-core/loader/i386/bsd.c:2163
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2163
+#: grub-core/loader/i386/bsd.c:2169
 msgid "Load NetBSD kernel module (ELF)."
 msgstr ""
 
-#: grub-core/loader/i386/bsd.c:2166
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2166
+#: grub-core/loader/i386/bsd.c:2172
 msgid "Load FreeBSD kernel module (ELF)."
 msgstr "Загрузіць модуль ядра FreeBSD (ELF)."
 
 #. TRANSLATORS: ramdisk isn't identifier,
 #. it can be translated.
-#: grub-core/loader/i386/bsd.c:2172
+#: .pc/cve-2025-jan/loader-i386-bsd-Use-safe-math-to-avoid-underflow.patch/grub-core/loader/i386/bsd.c:2172
+#: grub-core/loader/i386/bsd.c:2178
 msgid "Load kOpenBSD ramdisk."
 msgstr ""
 
@@ -6900,10 +7847,14 @@ msgstr ""
 msgid "Load another coreboot payload"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:894
 #: grub-core/loader/i386/linux.c:894
 msgid "Legacy `ask' parameter no longer supported."
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:910
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:920
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:950
 #: grub-core/loader/i386/linux.c:910 grub-core/loader/i386/linux.c:920
 #: grub-core/loader/i386/linux.c:950
 #, c-format
@@ -6913,6 +7864,7 @@ msgstr ""
 
 #. TRANSLATORS: "x" has to be entered in, like an identifier,
 #. so please don't use better Unicode codepoints.
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:933
 #: grub-core/loader/i386/linux.c:933
 #, c-format
 msgid ""
@@ -6920,6 +7872,7 @@ msgid ""
 "gfxpayload=WIDTHxHEIGHT[xDEPTH] before linux command instead.\n"
 msgstr ""
 
+#: .pc/cve-2025-jan/loader-i386-linux-Cast-left-shift-to-grub_uint32_t.patch/grub-core/loader/i386/linux.c:1104
 #: grub-core/loader/i386/linux.c:1104
 msgid "the size of initrd is bigger than addr_max"
 msgstr ""
@@ -7120,67 +8073,101 @@ msgstr ""
 msgid "Remove any memory regions in specified range."
 msgstr ""
 
-#: grub-core/net/dns.c:455
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:462
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:455
+#: grub-core/net/dns.c:462
 msgid "no DNS servers configured"
 msgstr ""
 
-#: grub-core/net/dns.c:518
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:525
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:518
+#: grub-core/net/dns.c:525
 msgid "domain name component is too long"
 msgstr ""
 
-#: grub-core/net/dns.c:614 grub-core/net/dns.c:664
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:621
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:671
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:614
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:664
+#: grub-core/net/dns.c:621 grub-core/net/dns.c:671
 msgid "no DNS record found"
 msgstr ""
 
-#: grub-core/net/dns.c:622
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:629
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:622
+#: grub-core/net/dns.c:629
 msgid "no DNS reply received"
 msgstr ""
 
-#: grub-core/net/dns.c:680
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:687
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:680
+#: grub-core/net/dns.c:687
 msgid "only ipv4"
 msgstr ""
 
-#: grub-core/net/dns.c:684
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:691
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:684
+#: grub-core/net/dns.c:691
 msgid "only ipv6"
 msgstr ""
 
-#: grub-core/net/dns.c:688
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:695
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:688
+#: grub-core/net/dns.c:695
 msgid "prefer ipv4"
 msgstr ""
 
-#: grub-core/net/dns.c:692
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:699
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:692
+#: grub-core/net/dns.c:699
 msgid "prefer ipv6"
 msgstr ""
 
-#: grub-core/net/dns.c:760
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:767
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:760
+#: grub-core/net/dns.c:767
 msgid "ADDRESS DNSSERVER"
 msgstr ""
 
-#: grub-core/net/dns.c:761
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:768
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:761
+#: grub-core/net/dns.c:768
 msgid "Perform a DNS lookup"
 msgstr ""
 
-#: grub-core/net/dns.c:763 grub-core/net/dns.c:766
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:770
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:773
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:763
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:766
+#: grub-core/net/dns.c:770 grub-core/net/dns.c:773
 msgid "DNSSERVER"
 msgstr ""
 
-#: grub-core/net/dns.c:764
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:771
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:764
+#: grub-core/net/dns.c:771
 msgid "Add a DNS server"
 msgstr ""
 
-#: grub-core/net/dns.c:767
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:774
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:767
+#: grub-core/net/dns.c:774
 msgid "Remove a DNS server"
 msgstr ""
 
-#: grub-core/net/dns.c:769
+#: .pc/cve-2025-jan/net-Prevent-overflows-when-allocating-memory-for-arrays.patch/grub-core/net/dns.c:776
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/dns.c:769
+#: grub-core/net/dns.c:776
 msgid "List DNS servers"
 msgstr ""
 
-#: grub-core/net/drivers/ieee1275/ofnet.c:329
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/drivers/ieee1275/ofnet.c:329
+#: grub-core/net/drivers/ieee1275/ofnet.c:330
 msgid "alloc-mem failed"
 msgstr ""
 
-#: grub-core/net/drivers/ieee1275/ofnet.c:357
+#: .pc/cve-2025-jan/net-Use-safe-math-macros-to-prevent-overflows.patch/grub-core/net/drivers/ieee1275/ofnet.c:357
+#: grub-core/net/drivers/ieee1275/ofnet.c:358
 msgid "free-mem failed"
 msgstr ""
 
@@ -7374,7 +8361,7 @@ msgstr ""
 #: grub-core/normal/misc.c:148
 #, c-format
 msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
-msgstr "- Час апошняй зьмены %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- Час апошняй змены %d-%02d-%02d %02d:%02d:%02d %s"
 
 #: grub-core/normal/misc.c:171
 msgid "No known filesystem detected"
@@ -7527,7 +8514,7 @@ msgstr ""
 #: grub-core/osdep/generic/blocklist.c:80
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB"
-msgstr "спроба прачытаць базавую выяву %s з GRUB"
+msgstr "спроба прачытаць базавы відарыс %s з GRUB"
 
 #: grub-core/osdep/generic/blocklist.c:81
 #, c-format
@@ -7747,7 +8734,9 @@ msgstr ""
 #. TRANSLATORS: 0 is a quantifier. "break" (similar to bash)
 #. can be used e.g. to break 3 loops at once.
 #. But asking it to break 0 loops makes no sense.
-#: grub-core/script/execute.c:143
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:151
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:143
+#: grub-core/script/execute.c:151
 msgid "can't break 0 loops"
 msgstr ""
 
@@ -7755,16 +8744,22 @@ msgstr ""
 #. inside a function. "return" can be used only
 #. in a function and this error occurs if it's used
 #. anywhere else.
-#: grub-core/script/execute.c:227
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:235
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:227
+#: grub-core/script/execute.c:235
 msgid "not in function body"
 msgstr ""
 
-#: grub-core/script/execute.c:371
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:379
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:371
+#: grub-core/script/execute.c:379
 #, c-format
 msgid "invalid variable name `%s'"
 msgstr ""
 
-#: grub-core/script/execute.c:958
+#: .pc/cve-2025-jan/script-execute-Fix-potential-underflow-and-NULL-dereferen.patch/grub-core/script/execute.c:972
+#: .pc/cve-2025-jan/script-execute-Limit-the-recursion-depth.patch/grub-core/script/execute.c:958
+#: grub-core/script/execute.c:975
 msgid "cannot allocate command buffer"
 msgstr ""
 
@@ -7956,6 +8951,7 @@ msgstr ""
 msgid "cannot open OS file `%s': %s"
 msgstr ""
 
+#: .pc/cve-2025-jan/kern-dl-Fix-for-an-integer-overflow-in-grub_dl_ref.patch/util/misc.c:126
 #: util/grub-fstest.c:225 util/misc.c:126
 #, c-format
 msgid "cannot write to the stdout: %s"
