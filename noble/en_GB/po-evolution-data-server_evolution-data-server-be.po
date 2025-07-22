@@ -21,8 +21,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-03-21 06:21+0000\n"
-"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
+"X-Launchpad-Export-Date: 2025-07-22 07:24+0000\n"
+"X-Generator: Launchpad (build 4a935a27f849d9e76af17c154eb3e276e860afb7)\n"
 "Language: be\n"
 
 #. Translators: The first “%s” is replaced with an account name and the second “%s”
@@ -101,9 +101,6 @@ msgstr[1] ""
 
 #~ msgid "Permission denied"
 #~ msgstr "Адмоўлена ў доступе"
-
-#~ msgid "Invalid object"
-#~ msgstr "Памылковы аб'ект"
 
 #~ msgid "Weather: Cloudy"
 #~ msgstr "Надвор'е: Воблачна"
@@ -394,6 +391,9 @@ msgstr[1] ""
 #~ msgid "Insufficient memory"
 #~ msgstr "Не стае памяці"
 
+#~ msgid "Invalid query: "
+#~ msgstr "Хібны запыт: "
+
 #~ msgid "Unsupported authentication method"
 #~ msgstr "Спосаб ідэнтыфікацыі не падтрымліваецца"
 
@@ -403,8 +403,15 @@ msgstr[1] ""
 #~ msgid "Search time limit exceeded"
 #~ msgstr "Дасягнута абмежаванне працягласці пошуку"
 
+#, c-format
+#~ msgid "Invalid query"
+#~ msgstr "Хібны запыт"
+
 #~ msgid "Query refused"
 #~ msgstr "Адмоўлена ў выкананні запыту"
+
+#~ msgid "Invalid argument"
+#~ msgstr "Хібны аргумент"
 
 #~ msgid "Backend is not opened yet"
 #~ msgstr "Драйвер адраснай кнігі яшчэ не адкрыты"
@@ -473,6 +480,9 @@ msgstr[1] ""
 #~ msgid "Object not found"
 #~ msgstr "Аб'ект не знойдзены"
 
+#~ msgid "Invalid object"
+#~ msgstr "Хібны аб'ект"
+
 #~ msgid "Object ID already exists"
 #~ msgstr "Аб'ект з такім ідэнтыфікатарам ужо існуе"
 
@@ -481,6 +491,9 @@ msgstr[1] ""
 
 #~ msgid "Authentication required"
 #~ msgstr "Патрабуецца ідэнтыфікацыя"
+
+#~ msgid "Invalid range"
+#~ msgstr "Хібны дыяпазон"
 
 #~ msgid "Untitled appointment"
 #~ msgstr "Сустрэча без назвы"
@@ -677,6 +690,10 @@ msgstr[1] ""
 #~ msgid "You must be working online to complete this operation"
 #~ msgstr "Каб працягнуць гэту аперацыю, трэба перайсці ў сеткавы рэжым"
 
+#, c-format
+#~ msgid "Invalid message stream received from %s: %s"
+#~ msgstr "З %s атрыманы хібны струмень паведамленняў: %s"
+
 #~ msgid "Syncing folders"
 #~ msgstr "Сінхранізацыя папак"
 
@@ -712,6 +729,12 @@ msgstr[1] ""
 
 #~ msgid "Failed to retrieve message"
 #~ msgstr "Не ўдалося атрымаць паведамленне"
+
+#~ msgid "Invalid arguments to (system-flag)"
+#~ msgstr "Хібныя аргументы для \"system-flag\""
+
+#~ msgid "Invalid arguments to (user-tag)"
+#~ msgstr "Хібныя аргументы для \"user-tag\""
 
 #, c-format
 #~ msgid "Error executing filter search: %s: %s"
@@ -920,6 +943,10 @@ msgstr[1] ""
 #~ msgstr "Адказ сервера надта вялікі (больш 2048 актэтаў)"
 
 #, c-format
+#~ msgid "Server challenge invalid\n"
+#~ msgstr "Хібны адказ сервера\n"
+
+#, c-format
 #~ msgid "Server response did not contain authorization data"
 #~ msgstr "Адказ сервера не змяшчаў даных упаўнаважання"
 
@@ -946,11 +973,24 @@ msgstr[1] ""
 #~ msgstr "Пададзены параметр target_name мае хібны фармат."
 
 #~ msgid ""
+#~ "The provided target_name parameter contained an invalid or unsupported type "
+#~ "of name."
+#~ msgstr ""
+#~ "Пададзены параметр target_name змяшчае хібны тып назвы або тып, які не "
+#~ "падтрымліваецца"
+
+#~ msgid ""
 #~ "The input_token contains different channel bindings to those specified via "
 #~ "the input_chan_bindings parameter."
 #~ msgstr ""
 #~ "input_token змяшчае канальныя сувязі, якія адрозніваюцца ад вызначаных "
 #~ "параметрам input_chan_bindings."
+
+#~ msgid ""
+#~ "The input_token contains an invalid signature, or a signature that could not "
+#~ "be verified."
+#~ msgstr ""
+#~ "input_token змяшчае хібны подпіс або подпіс, які немагчыма праверыць."
 
 #~ msgid ""
 #~ "The supplied credentials were not valid for context initiation, or the "
@@ -1075,6 +1115,10 @@ msgstr[1] ""
 #, c-format
 #~ msgid "Cannot create a folder by this name."
 #~ msgstr "Не ўдалося стварыць папку з такой назвай."
+
+#, c-format
+#~ msgid "Internal error: UID in invalid format: %s"
+#~ msgstr "Унутраная памылка: UID у хібным фармаце: %s"
 
 #~ msgid "Default NNTP port"
 #~ msgstr "Прадвызначаны порт NNTP"
@@ -1309,6 +1353,22 @@ msgstr[1] ""
 #~ msgstr "Вызначэнне адрасу: %s"
 
 #, c-format
+#~ msgid ""
+#~ "Invalid email address trace information:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Хібныя звесткі для трасіравання электроннага адрасу:\n"
+#~ "%s"
+
+#, c-format
+#~ msgid ""
+#~ "Invalid opaque trace information:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Хібныя звесткі для непразрыстага трасіравання:\n"
+#~ "%s"
+
+#, c-format
 #~ msgid "%s authentication failed"
 #~ msgstr "Няўдалая ідэнтыфікацыя %s"
 
@@ -1434,6 +1494,9 @@ msgstr[1] ""
 #~ msgid "Birthday and anniversary reminder"
 #~ msgstr "Нагадванне аб дні нараджэння або гадавіну"
 
+#~ msgid "Whether to set a reminder for birthdays and anniversaries"
+#~ msgstr "Ці трэба настаўляць нагадванне для дзён нараджэння і гадавін"
+
 #~ msgid "Birthday and anniversary reminder value"
 #~ msgstr "Значэнне нагадвання аб дні нараджэння або гадавіне"
 
@@ -1495,6 +1558,9 @@ msgstr[1] ""
 #~ msgid "Not a phone number"
 #~ msgstr "Гэта не тэлефонны нумар"
 
+#~ msgid "Invalid country calling code"
+#~ msgstr "Хібны код краіны"
+
 #~ msgid ""
 #~ "Remaining text after the country calling code is too short for a phone number"
 #~ msgstr ""
@@ -1519,6 +1585,10 @@ msgstr[1] ""
 #, c-format
 #~ msgid "Query contained unsupported elements"
 #~ msgstr "Запыт змяшчае элементы, якія не падтрымліваюцца"
+
+#, c-format
+#~ msgid "Invalid Query"
+#~ msgstr "Хібны запыт"
 
 #, c-format
 #~ msgid ""
@@ -2115,6 +2185,15 @@ msgstr[1] ""
 #~ msgid "Cannot login to POP server %s: SASL Protocol error"
 #~ msgstr "Не ўдалося ўвайсці на POP-сервер %s: памылка SASL-пратакола"
 
+#, c-format
+#~ msgid ""
+#~ "Unable to connect to POP server %s:\tInvalid APOP ID received. Impersonation "
+#~ "attack suspected. Please contact your admin."
+#~ msgstr ""
+#~ "Не ўдалося злучыцца з POP-серверам %s:\tАтрыманы хібны APOP-ідэнтыфікатар. "
+#~ "Ёсць падазрэнні наконт магчымай спробы імітацыі вашай тоеснасці. Звярніцеся "
+#~ "да вашага адміністратара."
+
 #~ msgid "Sendmail"
 #~ msgstr "Sendmail"
 
@@ -2220,6 +2299,11 @@ msgstr[1] ""
 #, c-format
 #~ msgid "Cannot send message: no recipients defined."
 #~ msgstr "Не ўдалося выслаць паведамленне: атрымальнікі не вызначаны."
+
+#, c-format
+#~ msgid "Cannot send message: one or more invalid recipients"
+#~ msgstr ""
+#~ "Не ўдалося выслаць паведамленне: прынамсі адзін з атрымальнікаў хібны"
 
 #~ msgid "Personal"
 #~ msgstr "Асабістыя"
@@ -2402,6 +2486,14 @@ msgstr[1] ""
 #, c-format
 #~ msgid "Cannot create folder: %s: folder exists"
 #~ msgstr "Не ўдалося стварыць папку: %s: папка існуе"
+
+#, c-format
+#~ msgid "Cannot delete folder: %s: Invalid operation"
+#~ msgstr "Не ўдалося выдаліць папку: %s: хібная аперацыя"
+
+#, c-format
+#~ msgid "Cannot rename folder: %s: Invalid operation"
+#~ msgstr "Не ўдалося пераназваць папку: %s: хібная аперацыя"
 
 #~ msgid "Trash"
 #~ msgstr "Сметніца"
@@ -2634,6 +2726,9 @@ msgstr[1] ""
 #~ msgid "Not connected"
 #~ msgstr "Няма злучэння"
 
+#~ msgid "Invalid DN syntax"
+#~ msgstr "Хібны сінтаксіс DN"
+
 #~ msgid "No space"
 #~ msgstr "Няма дыскавай прасторы"
 
@@ -2794,99 +2889,3 @@ msgstr[1] ""
 
 #~ msgid "_No"
 #~ msgstr "_Не"
-
-#~ msgid "Whether to set a reminder for birthdays and anniversaries"
-#~ msgstr "Вызначае, ці задаваць нагадванне для дзён нараджэння і гадавін"
-
-#~ msgid "Invalid DN syntax"
-#~ msgstr "Памылковы сінтаксіс DN"
-
-#~ msgid "Invalid country calling code"
-#~ msgstr "Памылковы тэлефонны код краіны"
-
-#, c-format
-#~ msgid "Invalid Query"
-#~ msgstr "Памылковы запыт"
-
-#, c-format
-#~ msgid "Invalid query"
-#~ msgstr "Памылковы запыт"
-
-#~ msgid "Invalid query: "
-#~ msgstr "Памылковы запыт: "
-
-#~ msgid "Invalid range"
-#~ msgstr "Памылковы дыяпазон"
-
-#, c-format
-#~ msgid "Invalid message stream received from %s: %s"
-#~ msgstr "Ад %s атрымана памылковая плынь паведамленняў: %s"
-
-#~ msgid "Invalid arguments to (system-flag)"
-#~ msgstr "Памылковыя аргументы да (system-flag)"
-
-#~ msgid "Invalid arguments to (user-tag)"
-#~ msgstr "Памылковыя аргументы да (user-tag)"
-
-#, c-format
-#~ msgid ""
-#~ "Invalid email address trace information:\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Памылковыя звесткі трасіроўкі электроннага адраса:\n"
-#~ "%s"
-
-#, c-format
-#~ msgid ""
-#~ "Invalid opaque trace information:\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Памылковыя звесткі непразрыстай трасіроўкі:\n"
-#~ "%s"
-
-#~ msgid "Invalid argument"
-#~ msgstr "Памылковы аргумент"
-
-#, c-format
-#~ msgid "Server challenge invalid\n"
-#~ msgstr "Памылковы адказ сервера\n"
-
-#~ msgid ""
-#~ "The provided target_name parameter contained an invalid or unsupported type "
-#~ "of name."
-#~ msgstr ""
-#~ "Пастаўлены параметр target_name змяшчае памылковы або тып, які не "
-#~ "падтрымліваецца."
-
-#~ msgid ""
-#~ "The input_token contains an invalid signature, or a signature that could not "
-#~ "be verified."
-#~ msgstr ""
-#~ "input_token змяшчае памылковы подпіс або подпіс, які немагчыма праверыць."
-
-#, c-format
-#~ msgid "Cannot delete folder: %s: Invalid operation"
-#~ msgstr "Немагчыма выдаліць папку: %s: памылковая аперацыя"
-
-#, c-format
-#~ msgid "Cannot rename folder: %s: Invalid operation"
-#~ msgstr "Немагчыма перайменаваць папку: %s: памылковая аперацыя"
-
-#, c-format
-#~ msgid "Internal error: UID in invalid format: %s"
-#~ msgstr "Унутраная памылка: UID у памылковым фармаце: %s"
-
-#, c-format
-#~ msgid ""
-#~ "Unable to connect to POP server %s:\tInvalid APOP ID received. Impersonation "
-#~ "attack suspected. Please contact your admin."
-#~ msgstr ""
-#~ "Немагчыма злучыцца з серверам POP %s:\t\tАтрыманы памылковы ідэнтыфікатар "
-#~ "APOP. Гэта можа сведчыць пра атаку метадам імітацыі іншай асобы. Звяжыцеся з "
-#~ "вашым сістэмным адміністратарам."
-
-#, c-format
-#~ msgid "Cannot send message: one or more invalid recipients"
-#~ msgstr ""
-#~ "Немагчыма адправіць паведамленне: адзін або больш атрымальнікаў з'яўляюцца "
-#~ "памылковымі"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: synaptic\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 18:18+0000\n"
-"PO-Revision-Date: 2025-01-13 16:30+0000\n"
+"PO-Revision-Date: 2025-03-24 17:58+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-03-21 07:08+0000\n"
-"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
+"X-Launchpad-Export-Date: 2025-07-22 08:00+0000\n"
+"X-Generator: Launchpad (build 4a935a27f849d9e76af17c154eb3e276e860afb7)\n"
 "Language: be\n"
 
 #. TRANSLATORS: Alias for the Debian package section "admin"
@@ -449,36 +449,36 @@ msgstr "Немагчыма перайсці ў %s"
 msgid "Unable to read %s"
 msgstr "Немагчыма прачытаць %s"
 
-#: ../common/rconfiguration.cc:118 ../common/rconfiguration.cc:285
+#: ../common/rconfiguration.cc:118 ../common/rconfiguration.cc:327
 #, c-format
 msgid "ERROR: couldn't open %s for writing"
 msgstr "ПАМЫЛКА: немагчыма адкрыць %s для запісу"
 
-#: ../common/rconfiguration.cc:144
+#: ../common/rconfiguration.cc:148
 msgid "ERROR: Could not get password entry for superuser"
 msgstr "ПАМЫЛКА: Не ўдалося атрымаць пароль для суперкарыстальніка"
 
-#: ../common/rconfiguration.cc:153
+#: ../common/rconfiguration.cc:196
 #, c-format
 msgid "ERROR: could not create configuration directory %s"
 msgstr "ПАМЫЛКА: не ўдалося стварыць каталог канфігурацыі %s"
 
-#: ../common/rconfiguration.cc:177
+#: ../common/rconfiguration.cc:219
 #, c-format
 msgid "ERROR: could not create state directory %s"
 msgstr "ПАМЫЛКА: не ўдалося стварыць каталог стану %s"
 
-#: ../common/rconfiguration.cc:194
+#: ../common/rconfiguration.cc:236
 #, c-format
 msgid "ERROR: could not create tmp directory %s"
 msgstr "ПАМЫЛКА: не ўдалося стварыць часовы каталог %s"
 
-#: ../common/rconfiguration.cc:212
+#: ../common/rconfiguration.cc:254
 #, c-format
 msgid "ERROR: could not create log directory %s"
 msgstr "ПАМЫЛКА: не ўдалося стварыць журнальны каталог %s"
 
-#: ../common/rconfiguration.cc:310
+#: ../common/rconfiguration.cc:352
 #, c-format
 msgid "couldn't open %s for writing"
 msgstr "не ўдалося адкрыць %s для запісу"
@@ -552,14 +552,14 @@ msgstr " %s: %s %s але %s будзе ўсталяваны"
 #: ../common/rpackage.cc:698
 #, c-format
 msgid "\t%s %s but it is not installable"
-msgstr "\t%s %s але пакет не можа быць усталяваны"
+msgstr "\t%s %s, але яго немагчыма ўсталяваць"
 
 #. TRANSLATORS: dependency error message, example:
 #. "apt but it is a virtual package"
 #: ../common/rpackage.cc:710
 #, c-format
 msgid "\t%s but it is a virtual package"
-msgstr "\t%s але гэта віртуальны пакет"
+msgstr "\t%s, але гэта віртуальны пакет"
 
 #. TRANSLATORS: dependency error message, example:
 #. "Depends: apt but it is a virtual package"
@@ -1888,6 +1888,7 @@ msgid "Found %i packages"
 msgstr "Знойдзена %i пакетаў"
 
 #: ../gtk/rgmainwindow.cc:2338 ../data/synaptic.desktop.in.h:1
+#: ../data/io.github.mvo5.synaptic.metainfo.xml.in.h:1
 msgid "Synaptic Package Manager"
 msgstr "Кіраўнік пакетаў Synaptic"
 
@@ -1909,6 +1910,8 @@ msgstr ""
 "  Mikola Susla https://launchpad.net/~mikolabel\n"
 "  Mikola Tsekhan https://launchpad.net/~tsekhan\n"
 "  Ubuntu Belarusian Translators Team https://launchpad.net/~btt4ubuntu\n"
+"  Ubuntu Belarusian Translators Team https://launchpad.net/~ubuntu-"
+"belarusian-translators\n"
 "  Vital Khilko https://launchpad.net/~vk\n"
 "  Vitaly Danilovich https://launchpad.net/~danvyr\n"
 "  Зьміцер https://launchpad.net/~elghoul\n"
@@ -2338,7 +2341,7 @@ msgstr "_Адкаціць"
 
 #: ../gtk/gtkbuilder/window_main.ui.h:14
 msgid "_Redo"
-msgstr "В_ярнуцца"
+msgstr "_Узнавіць"
 
 #: ../gtk/gtkbuilder/window_main.ui.h:15
 msgid "U_nmark All"
@@ -2450,7 +2453,7 @@ msgstr "_Задаць свае опцыі..."
 
 #: ../gtk/gtkbuilder/window_main.ui.h:42
 msgid "_Toolbar"
-msgstr "_Панэль прылад"
+msgstr "Панэль _інструментаў"
 
 #: ../gtk/gtkbuilder/window_main.ui.h:43
 msgid "_Icons Only"
@@ -3578,6 +3581,7 @@ msgid "Package Manager"
 msgstr "Кіраўнік пакетаў"
 
 #: ../data/synaptic.desktop.in.h:3
+#: ../data/io.github.mvo5.synaptic.metainfo.xml.in.h:2
 msgid "Install, remove and upgrade software packages"
 msgstr "Усталяванне, выдаленне і абнаўленне праграмных пакетаў"
 
