@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-02-22 16:09+0100\n"
-"PO-Revision-Date: 2025-07-22 18:04\n"
+"PO-Revision-Date: 2025-07-22 19:20\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
@@ -1745,7 +1745,7 @@ msgstr ""
 #: src/libnm-core-impl/nm-setting-bond.c:1159
 #, c-format
 msgid "%s requires xmit_hash_policy \"vlan+srcmac\""
-msgstr ""
+msgstr "%s патрабуе xmit_hash_policy «vlan+srcmac»"
 
 #: ../src/libnm-core-impl/nm-setting-bond.c:1035
 #, c-format
@@ -1950,7 +1950,7 @@ msgstr ""
 #: ../src/libnm-core-impl/nm-setting-gsm.c:341
 #, c-format
 msgid "'%s' contains invalid char(s) (use [A-Za-z._-])"
-msgstr ""
+msgstr "«%s» змяшчае памылковы(я) сімвал(ы) (выкарыстоўвайце [A-Za-z._-])"
 
 #: ../src/libnm-core-impl/nm-setting-gsm.c:367
 #, c-format
@@ -1985,7 +1985,7 @@ msgstr ""
 
 #: ../src/libnm-core-impl/nm-setting-infiniband.c:240
 msgid "InfiniBand P_Key connection did not specify parent interface name"
-msgstr ""
+msgstr "У злучэнні InfiniBand P_Key не пазначана назва бацькоўскага інтэрфейсу"
 
 #: src/libnm-core-impl/nm-setting-infiniband.c:232
 msgid "the values 0 and 0x8000 are not allowed"
@@ -2529,7 +2529,7 @@ msgstr ""
 #: ../src/libnm-core-impl/nm-setting-ovs-bridge.c:174
 #, c-format
 msgid "'%s' is not allowed in fail_mode"
-msgstr ""
+msgstr "«%s» забаронена ў рэжыме fail_mode"
 
 #: src/libnm-core-impl/nm-setting-ovs-dpdk.c:124
 #: src/libnm-core-impl/nm-setting-ovs-dpdk.c:136
@@ -2640,7 +2640,7 @@ msgstr ""
 #: ../src/libnm-core-impl/nm-setting-ovs-port.c:215
 #, c-format
 msgid "'%s' is not allowed in vlan_mode"
-msgstr ""
+msgstr "«%s» забаронена ў рэжыме vlan_mode"
 
 #: ../src/libnm-core-impl/nm-setting-ovs-port.c:228
 #, c-format
@@ -2655,7 +2655,7 @@ msgstr ""
 #: ../src/libnm-core-impl/nm-setting-ovs-port.c:251
 #, c-format
 msgid "'%s' is not allowed in bond_mode"
-msgstr ""
+msgstr "«%s» забаронена ў рэжыме bond_mode"
 
 #: ../src/libnm-core-impl/nm-setting-ppp.c:353
 #, c-format
@@ -3517,7 +3517,7 @@ msgstr "немагчыма загрузіць убудову «%s»: %s"
 #: ../src/libnm-core-impl/nm-vpn-editor-plugin.c:295
 #, c-format
 msgid "failed to load nm_vpn_editor_plugin_factory() from %s (%s)"
-msgstr ""
+msgstr "не ўдалося загрузіць nm_vpn_editor_plugin_factory() з %s (%s)"
 
 #: ../src/libnm-core-impl/nm-vpn-editor-plugin.c:321
 #, c-format
@@ -5015,7 +5015,7 @@ msgstr ""
 #: ../src/libnmc-setting/nm-meta-setting-desc.c:3213
 #, c-format
 msgid "'%s' is not a valid IBoIP P_Key"
-msgstr ""
+msgstr "«%s» з'яўляецца несапраўдным IBoIP P_Key"
 
 #: ../src/libnmc-setting/nm-meta-setting-desc.c:3236
 msgid "default"
@@ -5161,7 +5161,17 @@ msgid "Enter a list of link watchers formatted as dictionaries where the keys ar
 "Properties flagged with a '*' are mandatory.\n\n"
 "Example:\n"
 "   name=arp_ping source-host=172.16.1.1 target-host=172.16.1.254, name=ethtool delay-up=3\n"
-msgstr ""
+msgstr "Увядзіце спіс назіральнікаў за сувяззю ў фармаце слоўнікаў, дзе ключы з'яўляюцца ўласцівасцямі teamd. Слоўнікавыя пары патрабуецца ўвесці ў наступным фармаце: ключ=значэнне. Пары раздзяляюцца прабеламі « », а слоўнікі коскамі «,».\n"
+"Дазволеныя або неабходныя ключы ў слоўніку змяняюцца на падставе тыпу назіральнікаў за сувяззю. Адзінай агульнай уласцівасцю для ўсіх назіральнікаў за сувяззю з'яўляецца «name»*. Дадзены параметр вызначае назіральніка за сувяззю, які будзе пазначаны.\n\n"
+"Уласцівасці даступныя для назіральніка за сувяззю «ethtool»:\n"
+"  «delay-up», «delay-down»\n\n"
+"Уласцівасці даступныя для назіральніка за сувяззю «nsna_ping»:\n"
+" «init-wait», «interval», «missed-max», «target-host»*\n\n"
+"Уласцівасці даступныя для «arp_ping» уключаюць усе тыя, што для «nsna_ping» з дадатковымі ўласцівасцямі:\n"
+"  «source-host»*, «validate-active», «validate-inactive», «send-always».\n\n"
+"Уласцівасці, якія пазначаныя зорачкай «*» павінны прысутнічаць абавязкова.\n\n"
+"Прыклад:\n"
+"   name=arp_ping source-host=172.16.1.1 target-host=172.16.1.254, name=ethtool delay-up=3\n"
 
 #: ../src/libnmc-setting/nm-meta-setting-desc.c:4745
 msgid "IEEE 802.15.4 (WPAN) parent device or connection UUID"
@@ -5344,7 +5354,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/nm-meta-setting-desc.c:5897
 msgid "P_KEY [none]"
-msgstr ""
+msgstr "P_KEY [няма]"
 
 #: ../src/libnmc-setting/nm-meta-setting-desc.c:5906
 msgid "Parent interface [none]"
@@ -6029,11 +6039,11 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:66
 msgid "Enables or disables in-line provisioning of EAP-FAST credentials when FAST is specified as the EAP method in the \"eap\" property. Recognized values are \"0\" (disabled), \"1\" (allow unauthenticated provisioning), \"2\" (allow authenticated provisioning), and \"3\" (allow both authenticated and unauthenticated provisioning).  See the wpa_supplicant documentation for more details."
-msgstr ""
+msgstr "Уключае або адключае ўбудаваную падрыхтоўку ўліковых даных EAP-FAST, калі FAST указаны як метад EAP ва ўласцівасці «eap». Распазнаныя значэнні: «0» (адключана), «1» (дазволена праходзіць не пройдзеную аўтэнтыфікацыю), «2» (дазволіць падрыхтоўку да аўтэнтыфікацыі) і «3» (дазволена праходзіць не пройдзеную аўтэнтыфікацыю і рабіць падрыхтоўку да яе). Глядзіце, дакументацыю па wpa_supplicant для атрымання дадатковых звестак."
 
 #: ../src/libnmc-setting/settings-docs.h.in:67
 msgid "Forces use of the new PEAP label during key derivation.  Some RADIUS servers may require forcing the new PEAP label to interoperate with PEAPv1.  Set to \"1\" to force use of the new PEAP label.  See the wpa_supplicant documentation for more details."
-msgstr ""
+msgstr "Прымусова выкарыстоўвае новую метку PEAP падчас утварэння ключа. Некаторым серверам RADIUS можа спатрэбіцца прымусовае прызначэнне новай меткі PEAP з PEAPv1. Задайце «1», каб прымусова выкарыстоўваць новую метку PEAP. Дадатковыя звесткі можна знайсці ў дакументацыі wpa_supplicant."
 
 #: ../src/libnmc-setting/settings-docs.h.in:68
 msgid "Forces which PEAP version is used when PEAP is set as the EAP method in the \"eap\" property.  When unset, the version reported by the server will be used.  Sometimes when using older RADIUS servers, it is necessary to force the client to use a particular PEAP version.  To do so, this property may be set to \"0\" or \"1\" to force that specific PEAP version."
@@ -6592,7 +6602,7 @@ msgstr ""
 
 #: src/libnmc-setting/settings-docs.h.in:204
 msgid "A IPv6 address followed by a slash and a prefix length. If set, the value is sent to the DHCPv6 server as hint indicating the prefix delegation (IA_PD) we want to receive. To only hint a prefix length without prefix, set the address part to the zero address (for example \"::/60\")."
-msgstr ""
+msgstr "Адрасы IPv6 з наступным сімвалам косай рысы і даўжынёй прэфікса. Калі зададзена, то значэнне будзе адпраўляцца на сервер DHCPv6 як падказка, якая ўказвае дэлегаванне прэфікса (IA_PD), якое неабходна атрымаць. Для ўказання падказкі даўжыні прэфікса без прэфікса, задайце частку адраса нулявому адрасу (напрыклад, «::/60»)."
 
 #: src/libnmc-setting/settings-docs.h.in:209
 msgid "DNS options for /etc/resolv.conf as described in resolv.conf(5) manual. The currently supported options are \"attempts\", \"debug\", \"edns0\", \"ndots\", \"no-aaaa\", \"no-check-names\", \"no-reload\", \"no-tld-query\", \"rotate\", \"single-request\", \"single-request-reopen\", \"timeout\", \"trust-ad\", \"use-vc\" and \"inet6\", \"ip6-bytestring\", \"ip6-dotint\", \"no-ip6-dotint\". See the resolv.conf(5) manual. Note that there is a distinction between an unset (default) list and an empty list. In nmcli, to unset the list set the value to \"\". To set an empty list, set it to \" \". Currently, an unset list has the same meaning as an empty list. That might change in the future. The \"trust-ad\" setting is only honored if the profile contributes name servers to resolv.conf, and if all contributing profiles have \"trust-ad\" enabled. When using a caching DNS plugin (dnsmasq or systemd-resolved in NetworkManager.conf) then \"edns0\" and \"trust-ad\" are automatically added. The valid \"ipv4.dns-options\" and \"ipv6.dns-options\" get merged together."
@@ -6748,7 +6758,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:301
 msgid "A list of paths to match against the ID_PATH udev property of devices. ID_PATH represents the topological persistent path of a device. It typically contains a subsystem string (pci, usb, platform, etc.) and a subsystem-specific identifier. For PCI devices the path has the form \"pci-$domain:$bus:$device.$function\", where each variable is an hexadecimal value; for example \"pci-0000:0a:00.0\". The path of a device can be obtained with \"udevadm info /sys/class/net/$dev | grep ID_PATH=\" or by looking at the \"path\" property exported by NetworkManager (\"nmcli -f general.path device show $dev\"). Each element of the list is a shell wildcard pattern. See NMSettingMatch:interface-name for how special characters '|', '&', '!' and '\\' are used for optional and mandatory matches and inverting the pattern."
-msgstr ""
+msgstr "Спіс шляхоў для адпаведнасці параўнання з уласцівасцю прылад ID_PATH udev. ID_PATH уяўляе сабой пастаянны тапалагічных шлях прылады. Ён звычайна змяшчае радок падсістэмы (pci, usb, platform і г.д.) і вызначаны ідэнтыфікатар падсістэмы. Для прылад PCI шлях выглядае, як «pci-$domain:$bus:$device.$function», дзе кожная пераменная з'яўляецца шаснаццатковым значэннем; напрыклад, «pci-0000:0a:00.0». Шлях прылады можа быць атрыманы з дапамогай каманды «udevadm info /sys/class/net/$dev | grep ID_PATH=» або пры дапамозе прагляду ўласцівасці «path», якая экспартавана з NetworkManager («nmcli -f general.path device show $dev»). Кожны з элементаў уяўляе сабой узор shell з падстаноўчых знакаў. Глядзіце, NMSettingMatch:interface-name, каб больш даведацца, якія спецыяльныя сімвалы «|», «&», «!» і «\\» выкарыстоўваюцца для абавязковых і неабавязковых супадзенняў і інвертавання ўзораў."
 
 #: ../src/libnmc-setting/settings-docs.h.in:4
 msgid "Channel on which the mesh network to join is located."
@@ -6988,7 +6998,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:353
 msgid "Array of TC queueing disciplines. When the \"tc\" setting is present, qdiscs from this property are applied upon activation. If the property is empty, all qdiscs are removed and the device will only have the default qdisc assigned by kernel according to the \"net.core.default_qdisc\" sysctl. If the \"tc\" setting is not present, NetworkManager doesn't touch the qdiscs present on the interface."
-msgstr ""
+msgstr "Масіў дысцыплін чаргі TC. Пры наяўнасці налады «tc», планіроўшчык чэргаў з гэтай уласцівасці ўжываецца па факце актывацыі. Калі ўласцівасць нічога не змяшчае, то ўсе планіроўшчыкі чэргаў выдаляюцца і прылада будзе мець толькі прадвызначаны планіроўшчык чэргаў, які прызначаны ядром адпаведна агульнасістэмнага параметра «net.core.default_qdisc». Калі налады «tc» няма ў наяўнасці, то NetworkManager не будзе ўмешвацца ў наяўны планіроўшчык чэргі інтэрфейсу."
 
 #: ../src/libnmc-setting/settings-docs.h.in:354
 msgid "Array of TC traffic filters. When the \"tc\" setting is present, filters from this property are applied upon activation. If the property is empty, NetworkManager removes all the filters. If the \"tc\" setting is not present, NetworkManager doesn't touch the filters present on the interface."
@@ -7001,23 +7011,23 @@ msgstr ""
 #: ../src/libnmc-setting/settings-docs.h.in:356
 #: ../src/libnmc-setting/settings-docs.h.in:374
 msgid "Link watchers configuration for the connection: each link watcher is defined by a dictionary, whose keys depend upon the selected link watcher. Available link watchers are 'ethtool', 'nsna_ping' and 'arp_ping' and it is specified in the dictionary with the key 'name'. Available keys are:   ethtool: 'delay-up', 'delay-down', 'init-wait'; nsna_ping: 'init-wait', 'interval', 'missed-max', 'target-host'; arp_ping: all the ones in nsna_ping and 'source-host', 'validate-active', 'validate-inactive', 'send-always'. See teamd.conf man for more details."
-msgstr ""
+msgstr "Канфігурацыя спосабаў назірання за сувяззю: кожны назіральнік за сувяззю вызначаецца слоўнікам, ключы якога залежаць ад выбранага спосабу назірання. Даступнымі спосабамі назірання за сувяззю з'яўляюцца наступныя значэнні: «ethtool», «nsna_ping» і «arp_ping». Спосаб назірання пазначаецца ў слоўніку з дапамогай ключа «name». Даступнымі ключамі з'яўляюцца: ethtool: «delay-up», «delay-down», «init-wait»; nsna_ping: «init-wait», «interval», «missed-max», «target-host»; arp_ping: усе ў nsna_ping і «source-host», «validate-active», «validate-inactive», «send-always». Глядзіце старонку даведніка teamd.conf, каб атрымаць дадатковыя звесткі."
 
 #: ../src/libnmc-setting/settings-docs.h.in:357
 msgid "Corresponds to the teamd mcast_rejoin.count."
-msgstr ""
+msgstr "Адпавядае mcast_rejoin.count у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:358
 msgid "Corresponds to the teamd mcast_rejoin.interval."
-msgstr ""
+msgstr "Адпавядае mcast_rejoin.interval у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:359
 msgid "Corresponds to the teamd notify_peers.count."
-msgstr ""
+msgstr "Адпавядае notify_peers.count у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:360
 msgid "Corresponds to the teamd notify_peers.interval."
-msgstr ""
+msgstr "Адпавядае notify_peers.interval у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:361
 msgid "Corresponds to the teamd runner.name. Permitted values are: \"roundrobin\", \"broadcast\", \"activebackup\", \"loadbalance\", \"lacp\", \"random\"."
@@ -7029,35 +7039,35 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:363
 msgid "Corresponds to the teamd runner.agg_select_policy."
-msgstr ""
+msgstr "Адпавядае runner.agg_select_policy у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:364
 msgid "Corresponds to the teamd runner.fast_rate."
-msgstr ""
+msgstr "Адпавядае runner.fast_rate у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:365
 msgid "Corresponds to the teamd runner.hwaddr_policy."
-msgstr ""
+msgstr "Адпавядае runner.hwaddr_policy у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:366
 msgid "Corresponds to the teamd runner.min_ports."
-msgstr ""
+msgstr "Адпавядае runner.min_ports у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:367
 msgid "Corresponds to the teamd runner.sys_prio."
-msgstr ""
+msgstr "Адпавядае runner.sys_prio у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:368
 msgid "Corresponds to the teamd runner.tx_balancer.name."
-msgstr ""
+msgstr "Адпавядае runner.tx_balancer.name у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:369
 msgid "Corresponds to the teamd runner.tx_balancer.interval."
-msgstr ""
+msgstr "Адпавядае runner.tx_balancer.interval у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:370
 msgid "Corresponds to the teamd runner.tx_hash."
-msgstr ""
+msgstr "Адпавядае runner.tx_hash у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:371
 msgid "The JSON configuration for the team port. The property should contain raw JSON configuration data suitable for teamd, because the value is passed directly to teamd. If not specified, the default configuration is used. See man teamd.conf for the format details."
@@ -7065,11 +7075,11 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:372
 msgid "Corresponds to the teamd ports.PORTIFNAME.lacp_key."
-msgstr ""
+msgstr "Адпавядае ports.PORTIFNAME.lacp_key у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:373
 msgid "Corresponds to the teamd ports.PORTIFNAME.lacp_prio."
-msgstr ""
+msgstr "Адпавядае ports.PORTIFNAME.lacp_prio у teamd."
 
 #: ../src/libnmc-setting/settings-docs.h.in:375
 msgid "Corresponds to the teamd ports.PORTIFNAME.prio."
@@ -7077,7 +7087,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:376
 msgid "Corresponds to the teamd ports.PORTIFNAME.queue_id. When set to -1 means the parameter is skipped from the json config."
-msgstr ""
+msgstr "Адпавядае ports.PORTIFNAME.queue_id у teamd. Калі зададзена значэнне -1, то параметр прапускаецца з канфігурацыі json."
 
 #: ../src/libnmc-setting/settings-docs.h.in:377
 msgid "Corresponds to the teamd ports.PORTIFNAME.sticky."
@@ -7105,7 +7115,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:383
 msgid "If TRUE the IFF_VNET_HDR the tunnel packets will include a virtio network header."
-msgstr ""
+msgstr "Калі ўмова выканана, то тунэляваныя пакеты IFF_VNET_HDR будуць уключаць у сябе загалоўкі сеткі virtio."
 
 #: ../src/libnmc-setting/settings-docs.h.in:384
 msgid "A dictionary of key/value pairs with user data. This data is ignored by NetworkManager and can be used at the users discretion. The keys only support a strict ascii format, but the values can be arbitrary UTF8 strings up to a certain length."
@@ -7564,7 +7574,7 @@ msgstr ""
 
 #: src/libnmc-setting/settings-docs.h.in:468
 msgid "A dictionary of key/value pairs with other_config settings for OVS. See also \"other_config\" in the \"ovs-vswitchd.conf.db\" manual for the keys that OVS supports."
-msgstr ""
+msgstr "Слоўнік пар ключ/значэнне з наладамі other_config для OVS. Глядзіце таксама «other_config» у дапаможніку «ovs-vswitchd.conf.db», каб даведацца пра ключы, якія падтрымліваюцца ў OVS."
 
 #: ../src/libnmc-setting/settings-docs.h.in:385
 msgid "This property specifies the peer interface name of the veth. This property is mandatory."
