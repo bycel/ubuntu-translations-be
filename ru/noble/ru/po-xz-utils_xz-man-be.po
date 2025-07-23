@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-11-01 20:27+0800\n"
-"PO-Revision-Date: 2025-03-24 14:38\n"
+"PO-Revision-Date: 2025-07-23 07:59\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-03-21 07:09+0000\n"
-"X-Generator: Launchpad (build aa29ae0fff49e4e804b39147c9f259d2fb023199)\n"
+"X-Launchpad-Export-Date: 2025-07-22 08:00+0000\n"
+"X-Generator: Launchpad (build 4a935a27f849d9e76af17c154eb3e276e860afb7)\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -214,6 +214,8 @@ msgstr ""
 msgid "Especially users of older systems may find the possibility of very large memory usage annoying.  To prevent uncomfortable surprises, B<xz> has a built-in memory usage limiter, which is disabled by default.  While some operating systems provide ways to limit the memory usage of processes, relying on it wasn't deemed to be flexible enough (for example, using B<ulimit>(1)  to limit virtual memory tends to cripple B<mmap>(2))."
 msgstr ""
 
+#. TRANSLATORS: Don't translate the uppercase XZ_DEFAULTS.
+#. It's a name of an environment variable.
 #. type: Plain text
 #: ../src/xz/xz.1
 msgid "The memory usage limiter can be enabled with the command line option B<--memlimit=>I<limit>.  Often it is more convenient to enable the limiter by default by setting the environment variable B<XZ_DEFAULTS>, for example, B<XZ_DEFAULTS=--memlimit=150MiB>.  It is possible to set the limits separately for compression and decompression by using B<--memlimit-compress=>I<limit> and B<--memlimit-decompress=>I<limit>.  Using these two options outside B<XZ_DEFAULTS> is rarely useful because a single run of B<xz> cannot do both compression and decompression and B<--memlimit=>I<limit> (or B<-M> I<limit>)  is shorter to type on the command line."
@@ -329,7 +331,7 @@ msgid "B<-d>, B<--decompress>, B<--uncompress>"
 msgstr ""
 
 #. type: Plain text
-#: ../src/xz/xz.1
+#: ../src/xz/xz.1:359
 msgid "Decompress."
 msgstr ""
 
@@ -516,6 +518,7 @@ msgstr ""
 msgid "Specify the file I<format> to compress or decompress:"
 msgstr ""
 
+#. TRANSLATORS: Don't translate bold string B<auto>.
 #. type: TP
 #: ../src/xz/xz.1
 #, no-wrap
@@ -597,6 +600,9 @@ msgstr ""
 msgid "Supported I<check> types:"
 msgstr ""
 
+#. TRANSLATORS: Don't translate the bold strings B<none>, B<crc32>,
+#. B<crc64>, and B<sha256>. The command line option --check accepts
+#. only the untranslated strings.
 #. type: TP
 #: ../src/xz/xz.1
 #, no-wrap
@@ -1422,6 +1428,11 @@ msgstr ""
 msgid "LZMA1 and LZMA2 share the same set of I<options>:"
 msgstr ""
 
+#. TRANSLATORS: Don't translate bold strings like B<preset>, B<dict>,
+#. B<mode>, B<nice>, B<fast>, or B<normal> because those are command line
+#. options. On the other hand, do translate the italic strings like
+#. I<preset>, I<size>, and I<mode>, because such italic strings are
+#. placeholders which a user replaces with an actual value.
 #. type: TP
 #: ../src/xz/xz.1
 #, no-wrap
@@ -2092,6 +2103,7 @@ msgstr ""
 msgid "B<xz --robot --version> prints the version number of B<xz> and liblzma in the following format:"
 msgstr ""
 
+#. TRANSLATORS: Don't translate the uppercase XZ_VERSION or LIBLZMA_VERSION.
 #. type: Plain text
 #: ../src/xz/xz.1
 msgid "B<XZ_VERSION=>I<XYYYZZZS>"
@@ -2249,6 +2261,11 @@ msgstr ""
 msgid "B<xz --robot --list> uses tab-separated output.  The first column of every line has a string that indicates the type of the information found on that line:"
 msgstr ""
 
+#. TRANSLATORS: The bold strings B<name>, B<file>, B<stream>, B<block>,
+#. B<summary>, and B<totals> are produced by the xz tool for scripts to
+#. parse, thus the untranslated strings must be included in the translated
+#. man page. It may be useful to provide a translated string in parenthesis
+#. without bold, for example: "B<name> (nimi)"
 #. type: TP
 #: ../src/xz/xz.1
 #, no-wrap
@@ -2351,6 +2368,9 @@ msgstr ""
 msgid "7."
 msgstr ""
 
+#. TRANSLATORS: Don't translate the bold strings B<None>, B<CRC32>,
+#. B<CRC64>, B<SHA-256>, or B<Unknown-> here. In robot mode, xz produces
+#. them in untranslated form for scripts to parse.
 #. type: Plain text
 #: ../src/xz/xz.1
 msgid "Comma-separated list of integrity check names.  The following strings are used for the known check types: B<None>, B<CRC32>, B<CRC64>, and B<SHA-256>.  For unknown check types, B<Unknown->I<N> is used, where I<N> is the Check ID as a decimal number (one or two digits)."
@@ -2667,6 +2687,8 @@ msgstr ""
 msgid "ENVIRONMENT"
 msgstr ""
 
+#. TRANSLATORS: Don't translate the uppercase XZ_DEFAULTS or XZ_OPT.
+#. They are names of environment variables.
 #. type: Plain text
 #: ../src/xz/xz.1
 msgid "B<xz> parses space-separated lists of options from the environment variables B<XZ_DEFAULTS> and B<XZ_OPT>, in this order, before parsing the options from the command line.  Note that only options are parsed from the environment variables; all non-options are silently ignored.  Parsing is done with B<getopt_long>(3)  which is used also for the command line arguments."
