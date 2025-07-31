@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: deja-dup\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-04-01 01:40+0000\n"
-"PO-Revision-Date: 2025-03-24 16:47+0000\n"
+"PO-Revision-Date: 2025-07-23 10:05+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-07-22 07:23+0000\n"
-"X-Generator: Launchpad (build 4a935a27f849d9e76af17c154eb3e276e860afb7)\n"
+"X-Launchpad-Export-Date: 2025-07-30 12:14+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 
 #: app/Assistant.vala:285
 msgid "Co_ntinue"
@@ -691,6 +691,13 @@ msgid ""
 "by the user’s username and can be anywhere in the path. Relative entries are "
 "relative to the user’s home directory."
 msgstr ""
+"Для гэтага спіса каталогаў будзе створана рэзервовая копія. Зарэзерваваныя "
+"значэнні $HOME, $DESKTOP, $DOCUMENTS, $DOWNLOAD, $MUSIC, $PICTURES, "
+"$PUBLIC_SHARE, $TEMPLATES, $TRASH і $VIDEOS распазнаюцца як адмысловыя "
+"каталогі карыстальніка і могуць знаходзіцца напачатку даўжэйшага шляху "
+"($HOME/падкаталог). Зарэзерваванае значэнне $USER замяняецца імем "
+"карыстальніка і можа знаходзіцца ў любым месцы шляху. Запісы з адноснымі "
+"шляхамі з'яўляюцца адноснымі да хатняга каталога карыстальніка."
 
 #: data/app.gschema.xml.in:30
 msgid "Folders to ignore"
@@ -705,6 +712,13 @@ msgid ""
 "Reserved value $USER is replaced by the user’s username and can be anywhere "
 "in the path. Relative entries are relative to the user’s home directory."
 msgstr ""
+"Для гэтага спіса каталогаў не будзе створана рэзервовая копія. "
+"Зарэзерваваныя значэнні $HOME, $DESKTOP, $DOCUMENTS, $DOWNLOAD, $MUSIC, "
+"$PICTURES, $PUBLIC_SHARE, $TEMPLATES, $TRASH і $VIDEOS распазнаюцца як "
+"адмысловыя каталогі карыстальніка і могуць знаходзіцца напачатку даўжэйшага "
+"шляху ($HOME/падкаталог). Зарэзерваванае значэнне $USER замяняецца імем "
+"карыстальніка і можа знаходзіцца ў любым месцы шляху. Запісы з адноснымі "
+"шляхамі з'яўляюцца адноснымі да хатняга каталога карыстальніка."
 
 #: data/app.gschema.xml.in:35
 msgid "The last time Déjà Dup was run"
@@ -1008,7 +1022,7 @@ msgstr "_Паўтарыць"
 
 #: data/ui/Browser.ui:159
 msgid "_Connect"
-msgstr ""
+msgstr "_Падключыцца"
 
 #: data/ui/Browser.ui:184
 msgid "Encryption password needed"
@@ -1101,7 +1115,7 @@ msgstr "_Частата аўтаматычнага рэзервавання"
 
 #: data/ui/PreferencesWindow.ui:33
 msgid "_Keep Backups"
-msgstr ""
+msgstr "Захоўваць рэзервовыя копіі"
 
 #: data/ui/PreferencesWindow.ui:40
 msgid ""
@@ -1130,7 +1144,7 @@ msgstr "Выбраць ус_е"
 
 #: data/ui/PrimaryMenuButton.ui:29
 msgid "_Preferences"
-msgstr ""
+msgstr "_Параметры"
 
 #: data/ui/PrimaryMenuButton.ui:33
 msgid "_Keyboard Shortcuts"
@@ -1224,7 +1238,7 @@ msgstr "Стварыце сваю першую _рэзервовую копію"
 
 #: data/ui/WelcomePage.ui:57
 msgid "_Restore From a Previous Backup"
-msgstr ""
+msgstr "_Аднавіць з папярэдняй рэзервовай копіі"
 
 #: data/ui/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -1317,7 +1331,7 @@ msgstr "%s на Microsoft OneDrive"
 #. Duplicity requires a folder, and this is a reasonable restriction.
 #: libdeja/BackendMicrosoft.vala:111
 msgid "You must provide a Microsoft OneDrive folder."
-msgstr ""
+msgstr "Вы павінны ўказаць папку Microsoft OneDrive."
 
 #. Translators: %s is a brand name like Microsoft or Google
 #: libdeja/BackendOAuth.vala:93
@@ -1329,7 +1343,7 @@ msgstr ""
 #: libdeja/BackendOAuth.vala:169
 #, c-format
 msgid "%s credentials for Déjà Dup"
-msgstr ""
+msgstr "Уліковыя даныя %s для Déjà Dup"
 
 #. We need a random string between 43 and 128 chars. UUIDs are an easy way
 #. to get random strings, but they are only 37 chars long. So just add two.
@@ -1338,7 +1352,7 @@ msgstr ""
 #: libdeja/BackendOAuth.vala:228
 #, c-format
 msgid "You first need to allow Backups to access your %s account."
-msgstr ""
+msgstr "Спачатку дазвольце праграме доступ да вашага ўліковага запісу %s."
 
 #: libdeja/BackendRemote.vala:94
 msgid "The network server is not available"
@@ -1405,6 +1419,8 @@ msgstr ""
 msgid ""
 "Your desktop session does not support automatically starting Flatpak apps."
 msgstr ""
+"Ваш сеанс працоўнага стала не падтрымлівае аўтаматычны запуск праграм "
+"Flatpak."
 
 #: libdeja/Operation.vala:47
 msgid "Backing up…"
@@ -1456,6 +1472,8 @@ msgid ""
 "Your backup appears to be corrupted.  You should delete the backup and try "
 "again."
 msgstr ""
+"Верагодна, што ваша рэзервовая копія пашкоджана.  Выдаліце рэзервовую копію "
+"і паспрабуйце яшчэ раз."
 
 #: libdeja/duplicity/DuplicityJob.vala:71
 #: libdeja/duplicity/DuplicityJob.vala:146

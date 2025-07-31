@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: eog.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/eog/issues\n"
 "POT-Creation-Date: 2024-04-01 08:14+0000\n"
-"PO-Revision-Date: 2025-03-24 16:48+0000\n"
+"PO-Revision-Date: 2025-07-23 10:07+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-07-22 07:23+0000\n"
-"X-Generator: Launchpad (build 4a935a27f849d9e76af17c154eb3e276e860afb7)\n"
+"X-Launchpad-Export-Date: 2025-07-30 12:14+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: be\n"
 
 #: data/eog.appdata.xml.in:6 data/org.gnome.eog.desktop.in.in:2
@@ -59,7 +59,7 @@ msgstr "_Адкрыць…"
 
 #: data/eog-gear-menu.ui:10
 msgid "Op_en With…"
-msgstr "Ад_крыць праз…"
+msgstr "Ад_крыць з дапамогай…"
 
 #: data/eog-gear-menu.ui:16 data/popup-menus.ui:12
 #: src/eog-close-confirmation-dialog.c:178 src/eog-file-chooser.c:463
@@ -161,7 +161,7 @@ msgstr "Спецыфікацыі шляхоў файлаў"
 
 #: data/eog-multiple-save-as-dialog.ui:216
 msgid "_Start counter at:"
-msgstr "Пачаць _лічыць з:"
+msgstr "Пачаць _адлік з:"
 
 #: data/eog-multiple-save-as-dialog.ui:249
 msgid "_Replace spaces with underscores"
@@ -259,7 +259,7 @@ msgstr "Маштабаванне"
 
 #: data/eog-preferences-dialog.ui:399
 msgid "E_xpand images to fit screen"
-msgstr "_Разгортваць выявы на ўвесь экран"
+msgstr "_Разгортваць відарысы на ўвесь экран"
 
 #: data/eog-preferences-dialog.ui:419
 msgid "Sequence"
@@ -373,7 +373,7 @@ msgstr "Дапасаваць відарыс да памераў акна"
 
 #: data/fullscreen-toolbar.ui:130 data/fullscreen-toolbar.ui:220
 msgid "_Best Fit"
-msgstr "_Дапасаваць як найлепш"
+msgstr "_Па шырыні"
 
 #: data/fullscreen-toolbar.ui:153 src/eog-scroll-view.c:2123
 msgid "Rotate the image 90 degrees to the left"
@@ -715,7 +715,7 @@ msgstr ""
 
 #: data/org.gnome.eog.gschema.xml.in:26
 msgid "Extrapolate Image"
-msgstr "Экстрапаліраваць выяву"
+msgstr "Экстрапаліраваць відарыс"
 
 #: data/org.gnome.eog.gschema.xml.in:27
 msgid ""
@@ -736,9 +736,9 @@ msgid ""
 "CHECK_PATTERN, COLOR and NONE. If COLOR is chosen, then the trans-color key "
 "determines the color value used."
 msgstr ""
-"Вызначае спосаб індыкацыі празрыстастых частак відарысаў. Магчымыя значэнні: "
-"CHECK_PATTERN (узор), COLOR (колер) і NONE (ніяк). Калі выбрана COLOR, колер "
-"вызначаецца значэннем ключа «trans-color»."
+"Вызначае, як павінна паказвацца празрыстасць. Магчымыя значэнні: "
+"CHECK_PATTERN, COLOR і NONE. Калі выбрана COLOR, ключ «trans-color» вызначае "
+"значэнне колеру для выкарыстання."
 
 #: data/org.gnome.eog.gschema.xml.in:36
 msgid "Scroll wheel zoom"
@@ -902,7 +902,7 @@ msgstr ""
 
 #: data/popup-menus.ui:6
 msgid "Open _With…"
-msgstr "Адкрыць праз…"
+msgstr "Адкрыць _з дапамогай…"
 
 #: data/popup-menus.ui:28
 msgid "_Copy"
@@ -910,7 +910,7 @@ msgstr "С_капіяваць"
 
 #: data/popup-menus.ui:34 src/eog-window.c:3575
 msgid "Move to _Trash"
-msgstr "Вы_кінуць у сметніцу"
+msgstr "Пера_рамясціць у сметніцу"
 
 #: data/popup-menus.ui:40
 msgid "Prope_rties"
@@ -922,7 +922,7 @@ msgstr "Паказаць у _папцы"
 
 #: data/popup-menus.ui:56
 msgid "_Best fit"
-msgstr "_Дапасаваць як найлепш"
+msgstr "_Па шырыні"
 
 #: plugins/fullscreen/fullscreen.plugin.desktop.in:4
 msgid "Fullscreen with double-click"
@@ -973,13 +973,14 @@ msgstr "Захаваць змены для выявы «%s» перад закр
 msgid "There is %d image with unsaved changes. Save changes before closing?"
 msgid_plural ""
 "There are %d images with unsaved changes. Save changes before closing?"
-msgstr[0] "%d выява мае незахаваныя змены. Захаваць іх перад закрыццём?"
-msgstr[1] "%d выявы маюць незахаваныя змены. Захаваць іх перад закрыццём?"
-msgstr[2] "%d выяў маюць незахаваныя змены. Захаваць іх перад закрыццём?"
+msgstr[0] "%d відарыс мае незахаваныя змены. Захаваць іх перад закрыццём?"
+msgstr[1] "%d відарысы маюць незахаваныя змены. Захаваць іх перад закрыццём?"
+msgstr[2] ""
+"%d відарысаў маюць незахаваныя змены. Захаваць іх перад закрыццём?"
 
 #: src/eog-close-confirmation-dialog.c:584
 msgid "S_elect the images you want to save:"
-msgstr "_Выберыце выявы, якія трэба захаваць:"
+msgstr "_Выберыце відарысы, якія неабходна захаваць:"
 
 #. Secondary label
 #: src/eog-close-confirmation-dialog.c:603
@@ -992,7 +993,7 @@ msgstr "Пера_загрузіць"
 
 #: src/eog-error-message-area.c:139
 msgid "Open with _Document Viewer"
-msgstr "Адкрыць праз _Праглядальнік дакументаў"
+msgstr "Адкрыць праз праграму _Праглядальнік дакументаў"
 
 #: src/eog-error-message-area.c:221
 #, c-format
@@ -1039,7 +1040,7 @@ msgstr ""
 #: src/eog-exif-util.c:284
 #, c-format
 msgid "%.1f (lens)"
-msgstr "%.1f (аб'ектыў)"
+msgstr "%.1f (лінза)"
 
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
@@ -1063,7 +1064,9 @@ msgstr ""
 
 #: src/eog-file-chooser.c:126
 msgid "Please try a different file extension like .png or .jpg."
-msgstr "Паспрабуйце іншае пашырэнне файла, напрыклад, «.png» або «.jpg»."
+msgstr ""
+"Паспрабуйце вызначыць іншае пашырэнне назвы файла, напрыклад, \".png\" ці "
+"\".jpg\"."
 
 #. Filter name: First description then file extension, eg. "The PNG-Format (*.png)".
 #: src/eog-file-chooser.c:161
@@ -1123,7 +1126,7 @@ msgstr "Выява не загружана."
 #: src/eog-image.c:1881 src/eog-image.c:2002
 #, c-format
 msgid "You do not have the permissions necessary to save the file."
-msgstr "Вы не маеце дазволаў, патрэбных для захавання файла."
+msgstr "Вы не маеце неабходных дазволаў, каб захаваць гэты файл."
 
 #: src/eog-image.c:1891 src/eog-image.c:2013
 #, c-format
@@ -1231,7 +1234,7 @@ msgstr "Відарыс"
 
 #: src/eog-print-image-setup.c:1161
 msgid "The image whose printing properties will be set up"
-msgstr "Выява для настройкі ўласцівасцей друку"
+msgstr "Відарыс для налад уласцівасцей друку"
 
 #: src/eog-print-image-setup.c:1167
 msgid "Page Setup"
@@ -1263,7 +1266,7 @@ msgstr "З_нізу:"
 
 #: src/eog-print-image-setup.c:1205
 msgid "C_enter:"
-msgstr "_Цэнтраванне:"
+msgstr "_Цэнтраваць:"
 
 #: src/eog-print-image-setup.c:1210
 msgid "None"
@@ -1414,7 +1417,7 @@ msgstr "Памылка запуску модуля сістэмных налад
 
 #: src/eog-window.c:2732
 msgid "_Open Background Preferences"
-msgstr "_Адкрыць налады фону стала"
+msgstr "_Адкрыць параметры фону"
 
 #: src/eog-window.c:2746
 #, c-format
@@ -1548,7 +1551,7 @@ msgstr "Уласцівасці"
 
 #: src/eog-window.c:5553
 msgid "The GNOME image viewer."
-msgstr "Праглядальнік выяў GNOME."
+msgstr "Праглядальнік відарысаў GNOME."
 
 #: src/eog-window.c:5556
 msgid "translator-credits"
