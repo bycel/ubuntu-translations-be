@@ -1,45 +1,35 @@
-# Belarusian translation for apt
-# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
-# This file is distributed under the same license as the apt package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: apt\n"
+"Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2019-05-28 21:34+0000\n"
-"PO-Revision-Date: 2025-03-24 17:53+0000\n"
+"PO-Revision-Date: 2025-07-31 09:36\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
-"Language-Team: Belarusian <be@li.org>\n"
+"Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2025-07-30 12:44+0000\n"
 "X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Crowdin-Project: ubuntu-translations\n"
+"X-Crowdin-Project-ID: 485161\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /main/noble/en_GB/po-apt_libapt-pkg5.0.c-be.po\n"
+"X-Crowdin-File-ID: 335\n"
+"Language: be_BY\n"
 
 #: apt-pkg/acquire-item.cc:177
-msgid ""
-"Updating from such a repository can't be done securely, and is therefore "
-"disabled by default."
-msgstr ""
-"Абнаўленне з падобных рэпазіторыяў можа быць небяспечным, і таму "
-"прадвызначана адключана."
+msgid "Updating from such a repository can't be done securely, and is therefore disabled by default."
+msgstr "Абнаўленне з падобных рэпазіторыяў можа быць небяспечным, і таму прадвызначана адключана."
 
 #: apt-pkg/acquire-item.cc:182
-msgid ""
-"Data from such a repository can't be authenticated and is therefore "
-"potentially dangerous to use."
+msgid "Data from such a repository can't be authenticated and is therefore potentially dangerous to use."
 msgstr ""
-"Немагчыма аўтэнтыфікаваць даныя з такіх рэпазіторыяў. Яны могуць быць "
-"патэнцыйна небяспечнымі."
 
 #: apt-pkg/acquire-item.cc:184
-msgid ""
-"See apt-secure(8) manpage for repository creation and user configuration "
-"details."
-msgstr ""
-"Падрабязнасці стварэння рэпазіторыя і канфігурацыі карыстальніка глядзіце на "
-"старонцы дакументацыі apt-secure(8)."
+msgid "See apt-secure(8) manpage for repository creation and user configuration details."
+msgstr "Падрабязнасці стварэння рэпазіторыя і канфігурацыі карыстальніка глядзіце на старонцы дакументацыі apt-secure(8)."
 
 #: apt-pkg/acquire-item.cc:225
 #, c-format
@@ -52,9 +42,7 @@ msgid "The repository '%s' no longer has a Release file."
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:235
-msgid ""
-"This is normally not allowed, but the option "
-"Acquire::AllowDowngradeToInsecureRepositories was given to override it."
+msgid "This is normally not allowed, but the option Acquire::AllowDowngradeToInsecureRepositories was given to override it."
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:253
@@ -109,16 +97,12 @@ msgstr ""
 
 #: apt-pkg/acquire-item.cc:1105
 #, c-format
-msgid ""
-"Clearsigned file isn't valid, got '%s' (does the network require "
-"authentication?)"
+msgid "Clearsigned file isn't valid, got '%s' (does the network require authentication?)"
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:1354
 #, c-format
-msgid ""
-"An error occurred during the signature verification. The repository is not "
-"updated and the previous index files will be used. GPG error: %s: %s"
+msgid "An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: %s: %s"
 msgstr ""
 
 #. Invalid signature file, reject (LP: #346386) (Closes: #627642)
@@ -129,30 +113,22 @@ msgstr "Памылка GPG: %s: %s"
 
 #: apt-pkg/acquire-item.cc:1604
 #, c-format
-msgid ""
-"Skipping acquire of configured file '%s' as repository '%s' doesn't have the "
-"component '%s' (component misspelt in sources.list?)"
+msgid "Skipping acquire of configured file '%s' as repository '%s' doesn't have the component '%s' (component misspelt in sources.list?)"
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:1623
 #, c-format
-msgid ""
-"Skipping acquire of configured file '%s' as repository '%s' doesn't support "
-"architecture '%s'"
+msgid "Skipping acquire of configured file '%s' as repository '%s' doesn't support architecture '%s'"
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:1640
 #, c-format
-msgid ""
-"Skipping acquire of configured file '%s' as repository '%s' does not seem to "
-"provide it (sources.list entry misspelt?)"
+msgid "Skipping acquire of configured file '%s' as repository '%s' does not seem to provide it (sources.list entry misspelt?)"
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:1658
 #, c-format
-msgid ""
-"Skipping acquire of configured file '%s' as repository '%s' provides only "
-"weak security information for it"
+msgid "Skipping acquire of configured file '%s' as repository '%s' provides only weak security information for it"
 msgstr ""
 
 #. TRANSLATOR: The first %s is the URL of the bad Release file, the second is
@@ -160,9 +136,7 @@ msgstr ""
 #. the download progress display (e.g. 7d 3h 42min 1s)
 #: apt-pkg/acquire-item.cc:1760
 #, c-format
-msgid ""
-"Release file for %s is expired (invalid since %s). Updates for this "
-"repository will not be applied."
+msgid "Release file for %s is expired (invalid since %s). Updates for this repository will not be applied."
 msgstr ""
 
 #. TRANSLATOR: The first %s is the URL of the bad Release file, the second is
@@ -170,9 +144,7 @@ msgstr ""
 #. the download progress display (e.g. 7d 3h 42min 1s)
 #: apt-pkg/acquire-item.cc:1779
 #, c-format
-msgid ""
-"Release file for %s is not valid yet (invalid for another %s). Updates for "
-"this repository will not be applied."
+msgid "Release file for %s is not valid yet (invalid for another %s). Updates for this repository will not be applied."
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:1814
@@ -193,16 +165,13 @@ msgstr ""
 #. TRANSLATOR: the "this" refers to changes in the repository like a new release or owner change
 #: apt-pkg/acquire-item.cc:1873
 #, c-format
-msgid ""
-"More information about this can be found online in the Release notes at: %s"
+msgid "More information about this can be found online in the Release notes at: %s"
 msgstr ""
 
 #. TRANSLATOR: %s is the name of the manpage in question, e.g. apt-secure(8)
 #: apt-pkg/acquire-item.cc:1880
 #, c-format
-msgid ""
-"This must be accepted explicitly before updates for this repository can be "
-"applied. See %s manpage for details."
+msgid "This must be accepted explicitly before updates for this repository can be applied. See %s manpage for details."
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:2011 apt-pkg/update.cc:93 apt-pkg/update.cc:96
@@ -212,9 +181,7 @@ msgstr ""
 
 #: apt-pkg/acquire-item.cc:3358
 #, c-format
-msgid ""
-"I wasn't able to locate a file for the %s package. This might mean you need "
-"to manually fix this package. (due to missing arch)"
+msgid "I wasn't able to locate a file for the %s package. This might mean you need to manually fix this package. (due to missing arch)"
 msgstr ""
 
 #: apt-pkg/acquire-item.cc:3491
@@ -230,9 +197,7 @@ msgstr ""
 
 #: apt-pkg/acquire-worker.cc:102
 #, c-format
-msgid ""
-"The method '%s' is unsupported and disabled by default. Consider switching "
-"to http(s). Set Dir::Bin::Methods::%s to \"%s\" to enable it again."
+msgid "The method '%s' is unsupported and disabled by default. Consider switching to http(s). Set Dir::Bin::Methods::%s to \"%s\" to enable it again."
 msgstr ""
 
 #: apt-pkg/acquire-worker.cc:109
@@ -262,8 +227,7 @@ msgstr ""
 
 #: apt-pkg/acquire-worker.cc:690
 #, c-format
-msgid ""
-"Please insert the disc labeled: '%s' in the drive '%s' and press [Enter]."
+msgid "Please insert the disc labeled: '%s' in the drive '%s' and press [Enter]."
 msgstr ""
 
 #: apt-pkg/acquire.cc:137 apt-pkg/acquire.cc:161 apt-pkg/cdrom.cc:833
@@ -288,9 +252,7 @@ msgstr ""
 
 #: apt-pkg/acquire.cc:649 apt-pkg/acquire.cc:666
 #, c-format
-msgid ""
-"Download is performed unsandboxed as root as file '%s' couldn't be accessed "
-"by user '%s'."
+msgid "Download is performed unsandboxed as root as file '%s' couldn't be accessed by user '%s'."
 msgstr ""
 
 #: apt-pkg/acquire.cc:789 apt-pkg/clean.cc:39
@@ -323,14 +285,11 @@ msgstr ""
 
 #: apt-pkg/algorithms.cc:322
 #, c-format
-msgid ""
-"The package %s needs to be reinstalled, but I can't find an archive for it."
+msgid "The package %s needs to be reinstalled, but I can't find an archive for it."
 msgstr ""
 
 #: apt-pkg/algorithms.cc:1137
-msgid ""
-"Error, pkgProblemResolver::Resolve generated breaks, this may be caused by "
-"held packages."
+msgid "Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages."
 msgstr ""
 
 #: apt-pkg/algorithms.cc:1139
@@ -406,9 +365,7 @@ msgstr ""
 
 #: apt-pkg/cacheset.cc:838 apt-pkg/cacheset.cc:846
 #, c-format
-msgid ""
-"Can't select installed nor candidate version from package '%s' as it has "
-"neither of them"
+msgid "Can't select installed nor candidate version from package '%s' as it has neither of them"
 msgstr ""
 
 #: apt-pkg/cdrom.cc:498
@@ -448,15 +405,11 @@ msgstr ""
 
 #: apt-pkg/cdrom.cc:735
 #, c-format
-msgid ""
-"Found %zu package indexes, %zu source indexes, %zu translation indexes and "
-"%zu signatures\n"
+msgid "Found %zu package indexes, %zu source indexes, %zu translation indexes and %zu signatures\n"
 msgstr ""
 
 #: apt-pkg/cdrom.cc:745
-msgid ""
-"Unable to locate any package files, perhaps this is not a Debian Disc or the "
-"wrong architecture?"
+msgid "Unable to locate any package files, perhaps this is not a Debian Disc or the wrong architecture?"
 msgstr ""
 
 #: apt-pkg/cdrom.cc:772
@@ -470,8 +423,7 @@ msgstr ""
 
 #: apt-pkg/cdrom.cc:818
 #, c-format
-msgid ""
-"This disc is called: \n"
+msgid "This disc is called: \n"
 "'%s'\n"
 msgstr ""
 
@@ -508,17 +460,13 @@ msgstr ""
 
 #: apt-pkg/contrib/cmndline.cc:126
 #, c-format
-msgid ""
-"Command line option '%c' [from %s] is not understood in combination with the "
-"other options."
+msgid "Command line option '%c' [from %s] is not understood in combination with the other options."
 msgstr ""
 
 #: apt-pkg/contrib/cmndline.cc:151 apt-pkg/contrib/cmndline.cc:160
 #: apt-pkg/contrib/cmndline.cc:168
 #, c-format
-msgid ""
-"Command line option %s is not understood in combination with the other "
-"options"
+msgid "Command line option %s is not understood in combination with the other options"
 msgstr ""
 
 #: apt-pkg/contrib/cmndline.cc:173
@@ -554,7 +502,7 @@ msgstr ""
 #: apt-pkg/contrib/cmndline.cc:379
 #, c-format
 msgid "Invalid operation %s"
-msgstr "Памылковая аперацыя %s"
+msgstr ""
 
 #: apt-pkg/contrib/configuration.cc:720
 #, c-format
@@ -598,8 +546,7 @@ msgstr ""
 
 #: apt-pkg/contrib/configuration.cc:1098
 #, c-format
-msgid ""
-"Syntax error %s:%u: clear directive requires an option tree as argument"
+msgid "Syntax error %s:%u: clear directive requires an option tree as argument"
 msgstr ""
 
 #: apt-pkg/contrib/configuration.cc:1142
@@ -649,8 +596,7 @@ msgstr ""
 
 #: apt-pkg/contrib/fileutl.cc:471
 #, c-format
-msgid ""
-"Ignoring file '%s' in directory '%s' as it has an invalid filename extension"
+msgid "Ignoring file '%s' in directory '%s' as it has an invalid filename extension"
 msgstr ""
 
 #: apt-pkg/contrib/fileutl.cc:912 apt-pkg/contrib/gpgv.cc:407
@@ -789,21 +735,16 @@ msgstr ""
 
 #: apt-pkg/contrib/mmap.cc:338
 #, c-format
-msgid ""
-"Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. "
-"Current value: %lu. (man 5 apt.conf)"
+msgid "Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: %lu. (man 5 apt.conf)"
 msgstr ""
 
 #: apt-pkg/contrib/mmap.cc:456
 #, c-format
-msgid ""
-"Unable to increase the size of the MMap as the limit of %lu bytes is already "
-"reached."
+msgid "Unable to increase the size of the MMap as the limit of %lu bytes is already reached."
 msgstr ""
 
 #: apt-pkg/contrib/mmap.cc:459
-msgid ""
-"Unable to increase size of the MMap as automatic growing is disabled by user."
+msgid "Unable to increase size of the MMap as automatic growing is disabled by user."
 msgstr ""
 
 #: apt-pkg/contrib/progress.cc:155
@@ -888,9 +829,7 @@ msgstr ""
 
 #: apt-pkg/deb/debmetaindex.cc:529
 #, c-format
-msgid ""
-"No Hash entry in Release file %s which is considered strong enough for "
-"security purposes"
+msgid "No Hash entry in Release file %s which is considered strong enough for security purposes"
 msgstr ""
 
 #: apt-pkg/deb/debmetaindex.cc:536 apt-pkg/deb/debmetaindex.cc:576
@@ -927,8 +866,7 @@ msgstr ""
 
 #: apt-pkg/deb/debsystem.cc:94
 #, c-format
-msgid ""
-"Unable to acquire the dpkg frontend lock (%s), is another process using it?"
+msgid "Unable to acquire the dpkg frontend lock (%s), is another process using it?"
 msgstr ""
 
 #: apt-pkg/deb/debsystem.cc:97
@@ -940,15 +878,12 @@ msgstr ""
 #. dpkg --configure -a
 #: apt-pkg/deb/debsystem.cc:120
 #, c-format
-msgid ""
-"dpkg was interrupted, you must manually run '%s' to correct the problem. "
+msgid "dpkg was interrupted, you must manually run '%s' to correct the problem. "
 msgstr ""
 
 #: apt-pkg/deb/debsystem.cc:135
 #, c-format
-msgid ""
-"Unable to lock the administration directory (%s), is another process using "
-"it?"
+msgid "Unable to lock the administration directory (%s), is another process using it?"
 msgstr ""
 
 #: apt-pkg/deb/debsystem.cc:138
@@ -1060,32 +995,23 @@ msgid "dependency problems - leaving unconfigured"
 msgstr ""
 
 #: apt-pkg/deb/dpkgpm.cc:2269
-msgid ""
-"No apport report written because the error message indicates its a followup "
-"error from a previous failure."
+msgid "No apport report written because the error message indicates its a followup error from a previous failure."
 msgstr ""
 
 #: apt-pkg/deb/dpkgpm.cc:2275
-msgid ""
-"No apport report written because the error message indicates a disk full "
-"error"
+msgid "No apport report written because the error message indicates a disk full error"
 msgstr ""
 
 #: apt-pkg/deb/dpkgpm.cc:2282
-msgid ""
-"No apport report written because the error message indicates a out of memory "
-"error"
+msgid "No apport report written because the error message indicates a out of memory error"
 msgstr ""
 
 #: apt-pkg/deb/dpkgpm.cc:2289 apt-pkg/deb/dpkgpm.cc:2295
-msgid ""
-"No apport report written because the error message indicates an issue on the "
-"local system"
+msgid "No apport report written because the error message indicates an issue on the local system"
 msgstr ""
 
 #: apt-pkg/deb/dpkgpm.cc:2317
-msgid ""
-"No apport report written because the error message indicates a dpkg I/O error"
+msgid "No apport report written because the error message indicates a dpkg I/O error"
 msgstr ""
 
 #: apt-pkg/depcache.cc:139 apt-pkg/depcache.cc:167
@@ -1202,9 +1128,7 @@ msgstr ""
 
 #: apt-pkg/packagemanager.cc:330 apt-pkg/packagemanager.cc:1018
 #, c-format
-msgid ""
-"Could not perform immediate configuration on '%s'. Please see man 5 apt.conf "
-"under APT::Immediate-Configure for details. (%d)"
+msgid "Could not perform immediate configuration on '%s'. Please see man 5 apt.conf under APT::Immediate-Configure for details. (%d)"
 msgstr ""
 
 #: apt-pkg/packagemanager.cc:589 apt-pkg/packagemanager.cc:627
@@ -1214,10 +1138,7 @@ msgstr ""
 
 #: apt-pkg/packagemanager.cc:677
 #, c-format
-msgid ""
-"This installation run will require temporarily removing the essential "
-"package %s due to a Conflicts/Pre-Depends loop. This is often bad, but if "
-"you really want to do it, activate the APT::Force-LoopBreak option."
+msgid "This installation run will require temporarily removing the essential package %s due to a Conflicts/Pre-Depends loop. This is often bad, but if you really want to do it, activate the APT::Force-LoopBreak option."
 msgstr ""
 
 #: apt-pkg/pkgcache.cc:164
@@ -1350,9 +1271,7 @@ msgstr ""
 
 #: apt-pkg/policy.cc:80
 #, c-format
-msgid ""
-"The value '%s' is invalid for APT::Default-Release as such a release is not "
-"available in the sources"
+msgid "The value '%s' is invalid for APT::Default-Release as such a release is not available in the sources"
 msgstr ""
 
 #: apt-pkg/policy.cc:376
@@ -1367,8 +1286,7 @@ msgstr ""
 
 #: apt-pkg/policy.cc:410
 #, c-format
-msgid ""
-"%s: The special 'Pin-Priority: %s' can only be used for 'Package: *' records"
+msgid "%s: The special 'Pin-Priority: %s' can only be used for 'Package: *' records"
 msgstr ""
 
 #: apt-pkg/policy.cc:418
@@ -1428,11 +1346,10 @@ msgid "Cannot convert %s to integer: out of range"
 msgstr ""
 
 #: apt-pkg/update.cc:118 apt-pkg/update.cc:120
-msgid ""
-"Some index files failed to download. They have been ignored, or old ones "
-"used instead."
+msgid "Some index files failed to download. They have been ignored, or old ones used instead."
 msgstr ""
 
 #: apt-pkg/upgrade.cc:34 apt-pkg/upgrade.cc:138 apt-pkg/upgrade.cc:182
 msgid "Calculating upgrade"
 msgstr ""
+

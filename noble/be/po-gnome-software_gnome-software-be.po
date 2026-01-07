@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-software\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-software/issues\n"
 "POT-Creation-Date: 2024-04-01 03:26+0000\n"
-"PO-Revision-Date: 2025-07-23 10:05+0000\n"
+"PO-Revision-Date: 2025-07-31 15:14+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:13+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 05:06+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: be\n"
 
 #: data/metainfo/org.gnome.Software.metainfo.xml.in:7 src/gs-shell.ui:35
@@ -72,7 +72,7 @@ msgid "The update details"
 msgstr "Падрабязнасці абнаўлення"
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/metainfo/org.gnome.Software.metainfo.xml.in:2820
+#: data/metainfo/org.gnome.Software.metainfo.xml.in:2834
 #: src/gs-application.c:263
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
@@ -207,9 +207,10 @@ msgid ""
 "updates to the screenshots may take longer to show to the user. A value of 0 "
 "means to never check the server if the image already exists in the cache."
 msgstr ""
-"Выбар большага значэння паменшыць колькасць запытаў да аддаленага сервера, "
-"але абнаўленне здымкаў можа займаць больш часу. Пры значэнні 0, праверка "
-"ніколі не выконваецца, калі здымак ужо ёсць у кэшы."
+"Большае значэнне правядзе да змяншэння колькасці запытаў да аддаленага "
+"сервера, але абнаўленне здымкаў экрана можа заняць больш працяг час. "
+"Значэнне «0» абазначае, што зварот да сервера адпраўлены не будзе, калі кэш "
+"змяшчае відарыс."
 
 #: data/org.gnome.software.gschema.xml:77
 msgid "The server to use for application reviews"
@@ -230,7 +231,7 @@ msgstr "Спіс афіцыйных сховішчаў, якія не павін
 
 #: data/org.gnome.software.gschema.xml:90
 msgid "A list of required repositories that cannot be disabled or removed"
-msgstr "Спіс абавязковых сховішчаў, якія немагчыма адключыць або выдаліць"
+msgstr "Спіс абавязковых рэпазіторыяў, якія немагчыма адключыць або выдаліць"
 
 #: data/org.gnome.software.gschema.xml:94
 msgid ""
@@ -903,7 +904,7 @@ msgstr "Мае доступ да сэрвісаў D-Bus (сістэмная шы
 
 #: src/gs-app-details-page.c:62
 msgid "Session Services"
-msgstr "Службы сеанса"
+msgstr "Сэрвісы сеанса"
 
 #: src/gs-app-details-page.c:62
 msgid "Can access D-Bus services on the session bus"
@@ -1248,7 +1249,7 @@ msgstr "Выкарыстоўвае сістэмныя сервісы"
 #. * It’s used in a context tile, so should be short.
 #: src/gs-app-context-bar.c:324
 msgid "Uses session services"
-msgstr "Выкарыстоўвае службы сеанса"
+msgstr "Выкарыстоўвае сэрвісы сеанса"
 
 #. Translators: This indicates an app can access arbitrary hardware devices.
 #. * It’s used in a context tile, so should be short.
@@ -2122,7 +2123,7 @@ msgstr "Усталяваць старонняе праграмнае забес�
 #. TRANSLATORS: window title
 #: src/gs-common.c:214
 msgid "Enable Software Repository?"
-msgstr "Уключыць сховішча праграмнага забеспячэння?"
+msgstr "Уключыць рэпазіторый праграмнага забеспячэння?"
 
 #. TRANSLATORS: window title
 #. ask for confirmation
@@ -2226,9 +2227,9 @@ msgstr[2] "Праграмы выдалены"
 #: src/gs-common.c:902
 msgid "A restart is required for it to take effect."
 msgid_plural "A restart is required for them to take effect."
-msgstr[0] "Каб змены ўступілі ў сілу, перазапусціце сістэму."
-msgstr[1] "Каб змены ўступілі ў сілу, перазапусціце сістэму."
-msgstr[2] "Каб змены ўступілі ў сілу, перазапусціце сістэму."
+msgstr[0] "Патрабуецца перазапуск, каб змены пачалі дзейнічаць."
+msgstr[1] "Патрабуецца перазапуск, каб змены пачалі дзейнічаць."
+msgstr[2] "Патрабуецца перазапуск, каб змены пачалі дзейнічаць."
 
 #. TRANSLATORS: button text
 #: src/gs-common.c:844
@@ -2592,8 +2593,8 @@ msgid ""
 "Adding this software repository will give you access to additional software "
 "and upgrades."
 msgstr ""
-"Дадаванне гэтага сховішча праграмнага забеспячэння, дасць доступ да "
-"дадатковага праграмнага забеспячэння і абнаўленняў."
+"Дадаванне гэтага рэпазіторыя праграмнага забеспячэння дазволіць вам атрымаць "
+"доступ да дадатковых праграм і абнаўленняў."
 
 #: src/gs-details-page.ui:753
 msgid "Only use software repositories that you trust."
@@ -2832,14 +2833,14 @@ msgid ""
 msgid_plural ""
 "Unable to find the %s requested by %s. Please see %s for more information."
 msgstr[0] ""
-"Не ўдалося знайсці %s, запытаны праграмай %s. Каб атрымаць дадатковы "
-"звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці кодэк %s, які запытала праграма %s. Азнаёмцеся з %s, каб "
+"атрымаць дадатковыя звесткі."
 msgstr[1] ""
-"Не ўдалося знайсці %s, запытаны праграмай %s. Каб атрымаць дадатковы "
-"звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці кодэк %s, які запытала праграма %s. Азнаёмцеся з %s, каб "
+"атрымаць дадатковыя звесткі."
 msgstr[2] ""
-"Не ўдалося знайсці %s, запытаны праграмай %s. Каб атрымаць дадатковы "
-"звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці кодэк %s, які запытала праграма %s. Азнаёмцеся з %s, каб "
+"атрымаць дадатковыя звесткі."
 
 #. TRANSLATORS: no codecs were found. First %s will be replaced by actual codec name(s), second %s is a link titled "the documentation"
 #: src/gs-extras-page.c:562
@@ -2851,11 +2852,11 @@ msgid_plural ""
 "Unable to find the %s you were searching for. Please see %s for more "
 "information."
 msgstr[0] ""
-"Не ўдалося знайсці %s. Каб атрымаць дадатковы звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці %s. Азнаёмцеся з %s, каб атрымаць дадатковыя звесткі."
 msgstr[1] ""
-"Не ўдалося знайсці %s. Каб атрымаць дадатковы звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці %s. Азнаёмцеся з %s, каб атрымаць дадатковыя звесткі."
 msgstr[2] ""
-"Не ўдалося знайсці %s. Каб атрымаць дадатковы звесткі, азнаёмцеся з %s."
+"Не ўдалося знайсці %s. Азнаёмцеся з %s, каб атрымаць дадатковыя звесткі."
 
 #: src/gs-extras-page.c:640 src/gs-extras-page.c:697 src/gs-extras-page.c:737
 #, c-format
@@ -3079,7 +3080,7 @@ msgstr "%s працуе на гэтай прыладзе"
 #: src/gs-hardware-support-context-dialog.c:738
 #, c-format
 msgid "%s possibly works on this device"
-msgstr "%s, магчыма, працуе на гэтай прыладзе"
+msgstr "%s павінна працаваць на гэтай прыладзе"
 
 #. Translators: The app may not work fully on the current hardware.
 #. * The placeholder is the app name.
@@ -3523,7 +3524,7 @@ msgstr "Падрыхтоўка %s"
 #: src/gs-page.c:566
 #, c-format
 msgid "Are you sure you want to remove the %s repository?"
-msgstr "Сапраўды выдаліць сховішча %s?"
+msgstr "Вы сапраўды хочаце выдаліць рэпазіторый %s?"
 
 #. TRANSLATORS: Longer dialog text. The placeholder is a repository name.
 #: src/gs-page.c:570
@@ -3532,8 +3533,8 @@ msgid ""
 "All apps from %s will be uninstalled, and you will have to re-install the "
 "repository to use them again."
 msgstr ""
-"Усе праграмы з %s будуць выдалены. Каб карыстацца імі зноў, вам прыйдзецца "
-"пераўсталяваць сховішча."
+"Усе праграмы з %s будуць выдалены. Вам давядзецца пераўсталяваць "
+"рэпазіторый, каб скарыстацца ім паўторна."
 
 #. TRANSLATORS: this is a prompt message, and '%s' is the
 #. * name of an addon or an input method
@@ -3581,7 +3582,7 @@ msgstr "_Выдаліць"
 
 #: src/gs-remove-app-dialog.ui:38
 msgid "Permanently deletes data to save disk space"
-msgstr "Незваротна выдаляе даныя, каб зберагчы месца на дыску"
+msgstr "Незваротна выдаляе даныя, каб сэканоміць месца на дыску"
 
 #. TRANSLATORS: Longer dialog text. The placeholder is
 #. * the name of an app.
@@ -3693,11 +3694,11 @@ msgstr ""
 #. ask for confirmation
 #: src/gs-repos-dialog.c:247
 msgid "Disable Repository?"
-msgstr "Адключыць сховішча?"
+msgstr "Адключыць рэпазіторый?"
 
 #: src/gs-repos-dialog.c:247
 msgid "Remove Repository?"
-msgstr "Выдаліць сховішча?"
+msgstr "Выдаліць рэпазіторый?"
 
 #. TRANSLATORS: this is button text to disable a repo
 #: src/gs-repos-dialog.c:254
@@ -4394,7 +4395,7 @@ msgstr "Не ўдалося загрузіць відарыс"
 #. * the generator did not create or the parser did not add
 #: src/gs-screenshot-image.c:636
 msgid "Screenshot size not found"
-msgstr "Памер здымка не вызначаны"
+msgstr "Памер здымак экрана не знойдзены"
 
 #. TRANSLATORS: this is when we try create the cache directory
 #. * but we were out of space or permission was denied
@@ -4868,48 +4869,48 @@ msgstr "Усталяваныя абнаўленні"
 msgid "No Updates Installed"
 msgstr "Абнаўленні не ўсталяваны"
 
-#: src/gs-update-monitor.c:217
+#: src/gs-update-monitor.c:229
 msgid "Updates Are Out of Date"
 msgstr "Абнаўленні састарэлі"
 
-#: src/gs-update-monitor.c:218
+#: src/gs-update-monitor.c:230
 msgid "Please check for available updates"
 msgstr "Праверце даступныя абнаўленні"
 
-#: src/gs-update-monitor.c:224
+#: src/gs-update-monitor.c:236
 msgid "Critical Updates Ready to Install"
 msgstr "Крытычнае абнаўленні гатовы да ўсталявання"
 
-#: src/gs-update-monitor.c:225
+#: src/gs-update-monitor.c:237
 msgid "Install critical updates as soon as possible"
 msgstr "Усталёўвайце крытычныя абнаўленні як мага хутчэй"
 
-#: src/gs-update-monitor.c:228
+#: src/gs-update-monitor.c:240
 msgid "Critical Updates Available to Download"
 msgstr "Крытычныя абнаўленні даступны для спампоўвання"
 
-#: src/gs-update-monitor.c:229
+#: src/gs-update-monitor.c:241
 msgid "Download critical updates as soon as possible"
 msgstr "Спампоўвайце крытычныя абнаўленні як мага хутчэй"
 
-#: src/gs-update-monitor.c:235
+#: src/gs-update-monitor.c:247
 msgid "Updates Ready to Install"
 msgstr "Абнаўленні гатовы да ўсталявання"
 
-#: src/gs-update-monitor.c:236
+#: src/gs-update-monitor.c:248
 msgid "Software updates are ready and waiting"
 msgstr "Абнаўленні ПЗ гатовы да ўсталявання і чакаюць"
 
-#: src/gs-update-monitor.c:242
+#: src/gs-update-monitor.c:253
 msgid "Updates Available to Download"
 msgstr "Абнаўленні даступны для спампоўвання"
 
-#: src/gs-update-monitor.c:243
+#: src/gs-update-monitor.c:254
 msgid "Software updates can be downloaded"
 msgstr "Абнаўленні ПЗ даступны для спампоўвання"
 
 #. TRANSLATORS: apps were auto-updated and restart is required
-#: src/gs-update-monitor.c:363
+#: src/gs-update-monitor.c:374
 #, c-format
 msgid "%u App Updated — Restart Required"
 msgid_plural "%u Apps Updated — Restart Required"
@@ -4918,7 +4919,7 @@ msgstr[1] "Абноўлена %u праграмы — патрабуецца п�
 msgstr[2] "Абноўлена %u праграм — патрабуецца перазапуск"
 
 #. TRANSLATORS: apps were auto-updated
-#: src/gs-update-monitor.c:369
+#: src/gs-update-monitor.c:380
 #, c-format
 msgid "%u App Updated"
 msgid_plural "%u Apps Updated"
@@ -4927,24 +4928,24 @@ msgstr[1] "Абноўлена %u праграмы"
 msgstr[2] "Абноўлена %u праграм"
 
 #. TRANSLATORS: %1 is an app name, e.g. Firefox
-#: src/gs-update-monitor.c:380
+#: src/gs-update-monitor.c:391
 #, c-format
 msgid "%s has been updated."
 msgstr "%s — абнаўленне выканана."
 
 #. TRANSLATORS: the app needs restarting
-#: src/gs-update-monitor.c:383
+#: src/gs-update-monitor.c:394
 msgid "Please restart the app."
 msgstr "Перазапусціце праграму."
 
 #. TRANSLATORS: %1 and %2 are both app names, e.g. Firefox
-#: src/gs-update-monitor.c:391
+#: src/gs-update-monitor.c:402
 #, c-format
 msgid "%s and %s have been updated."
 msgstr "%s і %s — абнаўленне выканана."
 
 #. TRANSLATORS: at least one app needs restarting
-#: src/gs-update-monitor.c:397 src/gs-update-monitor.c:416
+#: src/gs-update-monitor.c:408 src/gs-update-monitor.c:427
 #, c-format
 msgid "%u app requires a restart."
 msgid_plural "%u apps require a restart."
@@ -4953,7 +4954,7 @@ msgstr[1] "%u праграмам патрабуецца перазапуск."
 msgstr[2] "%u праграмам патрабуецца перазапуск."
 
 #. TRANSLATORS: %1, %2 and %3 are all app names, e.g. Firefox
-#: src/gs-update-monitor.c:409
+#: src/gs-update-monitor.c:420
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "У тым ліку %s, %s і %s."
@@ -4966,23 +4967,22 @@ msgstr "Абнаўленні аперацыйнай сістэмы недаст�
 #. TRANSLATORS: this is the message dialog for the distro EOL notice
 #: src/gs-update-monitor.c:706
 msgid "Upgrade to continue receiving security updates."
-msgstr ""
-"Абнавіце сістэму, каб надалей атрымліваць абнаўленні сістэмы бяспекі."
+msgstr "Выканайце абнаўленне, каб працягваць атрымліваць абнаўленні бяспекі."
 
 #. TRANSLATORS: this is a distro upgrade, the replacement would be the
 #. * distro name, e.g. 'Fedora'
-#: src/gs-update-monitor.c:768
+#: src/gs-update-monitor.c:779
 #, c-format
 msgid "A new version of %s is available to install"
 msgstr "Новая версія %s даступна для ўсталявання"
 
 #. TRANSLATORS: this is a distro upgrade
-#: src/gs-update-monitor.c:772
+#: src/gs-update-monitor.c:783
 msgid "Software Upgrade Available"
 msgstr "Даступна абнаўленне праграмнага забеспячэння"
 
 #. TRANSLATORS: title when we offline updates have failed
-#: src/gs-update-monitor.c:1270
+#: src/gs-update-monitor.c:1281
 msgid "Software Updates Failed"
 msgstr "Не ўдалося абнавіць праграмнае забеспячэнне"
 
@@ -4991,25 +4991,25 @@ msgstr "Не ўдалося абнавіць праграмнае забеспя
 msgid "An important operating system update failed to be installed."
 msgstr "Не ўдалося ўсталяваць важнае абнаўленне аперацыйнай сістэмы."
 
-#: src/gs-update-monitor.c:1273
+#: src/gs-update-monitor.c:1284
 msgid "Show Details"
 msgstr "Паказаць падрабязнасці"
 
 #. TRANSLATORS: Notification title when we've done a distro upgrade
-#: src/gs-update-monitor.c:1318
+#: src/gs-update-monitor.c:1329
 msgid "System Upgrade Complete"
 msgstr "Абнаўленне сістэмы завершана"
 
 #. TRANSLATORS: This is the notification body when we've done a
 #. * distro upgrade. First %s is the distro name and the 2nd %s
 #. * is the version, e.g. "Welcome to Fedora 28!"
-#: src/gs-update-monitor.c:1323
+#: src/gs-update-monitor.c:1334
 #, c-format
 msgid "Welcome to %s %s!"
 msgstr "Вітаем у %s %s!"
 
 #. TRANSLATORS: title when we've done offline updates
-#: src/gs-update-monitor.c:1332
+#: src/gs-update-monitor.c:1343
 msgid "Software Update Installed"
 msgid_plural "Software Updates Installed"
 msgstr[0] "Абнаўленне праграмнага забеспячэння ўсталявана"
@@ -5017,7 +5017,7 @@ msgstr[1] "Абнаўленні праграмнага забеспячэння 
 msgstr[2] "Абнаўленні праграмнага забеспячэння ўсталяваны"
 
 #. TRANSLATORS: message when we've done offline updates
-#: src/gs-update-monitor.c:1336
+#: src/gs-update-monitor.c:1347
 msgid "An important operating system update has been installed."
 msgid_plural "Important operating system updates have been installed."
 msgstr[0] "Усталявана важнае абнаўленне аперацыйнай сістэмы."
@@ -5029,30 +5029,30 @@ msgstr[2] "Усталяваны важныя абнаўленні аперацы
 #. * users can't express their opinions here. In some languages
 #. * "Review (evaluate) something" is a different translation than
 #. * "Review (browse) something."
-#: src/gs-update-monitor.c:1347
+#: src/gs-update-monitor.c:1358
 msgctxt "updates"
 msgid "Review"
 msgstr "Праглядзець"
 
 #. TRANSLATORS: this is when the offline update failed
-#: src/gs-update-monitor.c:1400
+#: src/gs-update-monitor.c:1411
 msgid "Failed To Update"
 msgstr "Не ўдалося абнавіць"
 
 #. TRANSLATORS: the user must have updated manually after
 #. * the updates were prepared
-#: src/gs-update-monitor.c:1405
+#: src/gs-update-monitor.c:1416
 msgid "The system was already up to date."
 msgstr "Сістэма ўжо абноўлена."
 
 #. TRANSLATORS: the user aborted the update manually
-#: src/gs-update-monitor.c:1410
+#: src/gs-update-monitor.c:1421
 msgid "The update was cancelled."
 msgstr "Абнаўленне скасавана."
 
 #. TRANSLATORS: the package manager needed to download
 #. * something with no network available
-#: src/gs-update-monitor.c:1415
+#: src/gs-update-monitor.c:1426
 msgid ""
 "Internet access was required but wasn’t available. Please make sure that you "
 "have internet access and try again."
@@ -5061,7 +5061,7 @@ msgstr ""
 "інтэрнэту і паўтарыце спробу."
 
 #. TRANSLATORS: if the package is not signed correctly
-#: src/gs-update-monitor.c:1420
+#: src/gs-update-monitor.c:1431
 msgid ""
 "There were security issues with the update. Please consult your software "
 "provider for more details."
@@ -5070,13 +5070,13 @@ msgstr ""
 "звярніцеся да пастаўшчыка праграмнага забеспячэння."
 
 #. TRANSLATORS: we ran out of disk space
-#: src/gs-update-monitor.c:1425
+#: src/gs-update-monitor.c:1436
 msgid ""
 "There wasn’t enough disk space. Please free up some space and try again."
-msgstr "Недастаткова месца на дыску, вызваліце месца і паўтарыце спробу."
+msgstr "Недастаткова месца на дыску. Вызваліце месца і паўтарыце спробу."
 
 #. TRANSLATORS: We didn't handle the error type
-#: src/gs-update-monitor.c:1429
+#: src/gs-update-monitor.c:1440
 msgid ""
 "We’re sorry: the update failed to install. Please wait for another update "
 "and try again. If the problem persists, contact your software provider."
@@ -5794,7 +5794,7 @@ msgstr "Абнаўленне для клавіятуры %s"
 #: plugins/fwupd/gs-fwupd-app.c:288
 #, c-format
 msgid "%s Storage Controller Update"
-msgstr "Абнаўленне для кантролера сховішча%s"
+msgstr "Абнаўленне для кантролера сховішча %s"
 
 #. TRANSLATORS: Network Interface refers to the physical
 #. * PCI card, not the logical wired connection
@@ -5862,7 +5862,7 @@ msgstr "Абнаўленне для док-станцыі %s"
 #: plugins/fwupd/gs-fwupd-app.c:336
 #, c-format
 msgid "%s USB Dock Update"
-msgstr "Абнаўленне для док-станцыі USB %s"
+msgstr "Абнаўленне для док-панэлі USB %s"
 
 #: plugins/fwupd/gs-plugin-fwupd.c:1945
 msgid "Firmware update could not be applied: "

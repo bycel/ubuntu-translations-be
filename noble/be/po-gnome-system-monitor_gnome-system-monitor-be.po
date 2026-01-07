@@ -16,12 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:16+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 07:17+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: be\n"
 
 #: data/interface.ui:6 data/org.gnome.SystemMonitor.metainfo.xml.in.in:7
-#: data/org.gnome.SystemMonitor.desktop.in.in:2 src/application.cpp:404
+#: data/org.gnome.SystemMonitor.desktop.in.in:2 src/application.cpp:408
 msgid "System Monitor"
 msgstr "Сістэмны манітор"
 
@@ -74,7 +74,7 @@ msgstr "Агляд файлавых сістэм"
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
-#: data/gnome-system-monitor-kde.desktop.in.in:2 src/application.cpp:430
+#: data/gnome-system-monitor-kde.desktop.in.in:2 src/application.cpp:434
 msgid "GNOME System Monitor"
 msgstr "Сістэмны манітор GNOME"
 
@@ -395,7 +395,7 @@ msgstr "_Спыніць…"
 msgid "_Continue"
 msgstr "_Працягнуць"
 
-#: data/menus.ui:155 src/procproperties.cpp:214
+#: data/menus.ui:155 src/procproperties.cpp:261
 msgid "_Terminate…"
 msgstr "_Завяршыць…"
 
@@ -529,7 +529,7 @@ msgstr "_Ужыць"
 msgid "Run on all CPUs"
 msgstr "Выконваць на ўсіх працэсарах"
 
-#: src/application.cpp:405
+#: src/application.cpp:409
 msgid "A simple process and system monitor."
 msgstr "Зручная прылада для назірання за працэсамі і сістэмай."
 
@@ -584,7 +584,7 @@ msgid "Pick a Color for “%s”"
 msgstr "Выбар колеру для «%s»"
 
 #. Set check box label value to CPU [1..2048]
-#: src/interface.cpp:273 src/setaffinity.cpp:408
+#: src/interface.cpp:273 src/setaffinity.cpp:410
 #, c-format
 msgid "CPU%d"
 msgstr "Працэсар %d"
@@ -606,6 +606,7 @@ msgstr ""
 "  Ubuntu Belarusian Translators Team https://launchpad.net/~ubuntu-"
 "belarusian-translators\n"
 "  Valanćin Susla https://launchpad.net/~ben1508\n"
+"  VeGeek https://launchpad.net/~vegeek\n"
 "  XiveZ https://launchpad.net/~kyrsant2008\n"
 "  Yuras https://launchpad.net/~shumovichy\n"
 "  Клюеў Аляксандр https://launchpad.net/~plaga-medicum"
@@ -704,23 +705,23 @@ msgstr[2] "%u сек"
 
 #. Update label
 #. Translators: CPU usage percentage label: 95.7%
-#: src/load-graph.cpp:520
+#: src/load-graph.cpp:521
 #, c-format
 msgid "%.1f%%"
 msgstr "%.1f%%"
 
-#: src/load-graph.cpp:548
+#: src/load-graph.cpp:549
 msgid "not available"
 msgstr "недаступна"
 
 #. xgettext: "540MiB (53 %) of 1.0 GiB" or "540MB (53 %) of 1.0 GB"
-#: src/load-graph.cpp:553
+#: src/load-graph.cpp:554
 #, c-format
 msgid "%s (%.1f%%) of %s"
 msgstr "%s (%.1f%%) з %s"
 
 #. xgettext: Used cache string, e.g.: "Cache 2.4GiB" or "Cache 2.4GB"
-#: src/load-graph.cpp:558
+#: src/load-graph.cpp:559
 #, c-format
 msgid "Cache %s"
 msgstr "Кэш %s"
@@ -1352,20 +1353,20 @@ msgstr ""
 #: src/procdialogs.cpp:88
 #, c-format
 msgid "Are you sure you want to kill the selected process “%s” (PID: %u)?"
-msgstr "Сапраўды забіць вылучаны працэс «%s» (PID: %u)?"
+msgstr "Сапраўды забіць выбраны працэс «%s» (PID: %u)?"
 
 #. xgettext: primary alert message for ending single process
 #: src/procdialogs.cpp:95
 #, c-format
 msgid "Are you sure you want to end the selected process “%s” (PID: %u)?"
-msgstr "Сапраўды закончыць працу вылучанага працэсу «%s» (PID: %u)?"
+msgstr "Сапраўды закончыць працу выбранага працэсу «%s» (PID: %u)?"
 
 #. SIGSTOP
 #. xgettext: primary alert message for stopping single process
 #: src/procdialogs.cpp:102
 #, c-format
 msgid "Are you sure you want to stop the selected process “%s” (PID: %u)?"
-msgstr "Сапраўды спыніць працу вылучанага працэсу «%s» (PID: %u)?"
+msgstr "Сапраўды спыніць працу выбранага працэсу «%s» (PID: %u)?"
 
 #. xgettext: primary alert message for killing multiple processes
 #: src/procdialogs.cpp:114
@@ -1521,7 +1522,7 @@ msgid "Control Group"
 msgstr "Кіроўная група"
 
 #. Translators: process name and id
-#: src/memmaps.cpp:408 src/openfiles.cpp:282 src/setaffinity.cpp:384
+#: src/memmaps.cpp:407 src/openfiles.cpp:282 src/setaffinity.cpp:384
 #, c-format
 msgid "%s (PID %u)"
 msgstr "%s (PID %u)"

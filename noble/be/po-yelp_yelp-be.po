@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:13+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 05:05+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: be_BY\n"
 "X-Crowdin-File: /master/sources/yelp/en_GB.po\n"
 "X-Crowdin-File-ID: 158\n"
@@ -38,11 +38,11 @@ msgstr "Усталяваць <string/>"
 msgid "GNOME Help"
 msgstr "Даведнік GNOME"
 
-#: data/yelp.appdata.xml.in:15
+#: data/org.gnome.Yelp.metainfo.xml.in:20
 msgid "Help viewer for GNOME"
 msgstr "Сродак для прагляду даведкі па GNOME"
 
-#: data/yelp.appdata.xml.in:17
+#: data/org.gnome.Yelp.metainfo.xml.in:22
 msgid ""
 "Yelp is the GNOME help viewer. It is the default Mallard viewer, but it can "
 "also display DocBook, info, man, and HTML documentation."
@@ -50,13 +50,13 @@ msgstr ""
 "Yelp - сродак для прагляду даведкі па GNOME. Асноўным фарматам для яго ёсць "
 "Mallard, але праграма таксама можа адлюстроўваць DocBook, info, man і HTML."
 
-#: data/yelp.appdata.xml.in:21
+#: data/org.gnome.Yelp.metainfo.xml.in:26
 msgid ""
 "It makes it easy to find the documentation you need, with interactive search "
 "and bookmarks."
 msgstr "Інтэрактыўны пошук і закладкі спрашчаюць навігацыю па дакументацыі."
 
-#: data/yelp.appdata.xml.in:25
+#: data/org.gnome.Yelp.metainfo.xml.in:30
 msgid ""
 "It also has an editor mode, which shows editorial comments and revision "
 "statuses when editing Mallard documents."
@@ -64,7 +64,7 @@ msgstr ""
 "Таксама ў праграмы ёсць рэжым рэдактара, у якім паказваюцца каментары і стан "
 "рэвізіі для дакументаў Mallard."
 
-#: data/yelp.appdata.xml.in:40
+#: data/org.gnome.Yelp.metainfo.xml.in:56 src/yelp-window.c:1168
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
@@ -142,7 +142,7 @@ msgstr "Адпаведных старонак даведкі не знойдзе
 msgid "An unknown error occurred."
 msgstr "Узнікла невядомая памылка."
 
-#: libyelp/yelp-help-list.c:537
+#: libyelp/yelp-help-list.c:539
 msgid "All Help Documents"
 msgstr "Усе дакументы даведкі"
 
@@ -159,7 +159,8 @@ msgstr ""
 msgid "The directory ‘%s’ does not exist."
 msgstr "Каталог \"%s\" не існуе."
 
-#: libyelp/yelp-search-entry.c:435
+#. Update label on the "Search for X" result
+#: src/yelp-search-entry.c:567
 #, c-format
 msgid "Search for “%s”"
 msgstr "Шукаць \"%s\""
@@ -177,111 +178,111 @@ msgstr "Атрыбут href не знойдзены ў yelp:document\n"
 msgid "Out of memory"
 msgstr "Памяць вычарпаная"
 
-#: libyelp/yelp-view.c:253
+#: libyelp/yelp-view.c:1530
 msgid "C_opy Code Block"
 msgstr "С_капіяваць урывак коду"
 
-#: libyelp/yelp-view.c:258
+#: libyelp/yelp-view.c:1431
 msgid "_Copy Link Location"
 msgstr "С_капіяваць адрас спасылкі"
 
-#: libyelp/yelp-view.c:263
+#: libyelp/yelp-view.c:1423
 msgid "_Open Link"
 msgstr "_Адкрыць спасылку"
 
-#: libyelp/yelp-view.c:268
+#: libyelp/yelp-view.c:1438
 msgid "Open Link in New _Window"
 msgstr "Адкрыць спасылку ў _новым акне"
 
-#: libyelp/yelp-view.c:278
+#: libyelp/yelp-view.c:1416
 msgid "_Install Packages"
 msgstr "_Усталяваць пакункі"
 
-#: libyelp/yelp-view.c:283
+#: libyelp/yelp-view.c:1536
 msgid "Save Code _Block As…"
 msgstr "За_хаваць урывак коду як..."
 
-#: libyelp/yelp-view.c:298
+#: libyelp/yelp-view.c:1509
 msgid "_Copy Text"
 msgstr "С_капіяваць тэкст"
 
-#: libyelp/yelp-view.c:845 libyelp/yelp-view.c:2158
+#: libyelp/yelp-view.c:814 libyelp/yelp-view.c:2094
 #, c-format
 msgid "The URI ‘%s’ does not point to a valid page."
 msgstr "URI \"%s\" не вядзе на прыдатную старонку."
 
-#: libyelp/yelp-view.c:851 libyelp/yelp-view.c:2164
+#: libyelp/yelp-view.c:820 libyelp/yelp-view.c:2100
 #, c-format
 msgid "The URI does not point to a valid page."
 msgstr "URI не вядзе на прыдатную старонку."
 
-#: libyelp/yelp-view.c:856 libyelp/yelp-view.c:2170
+#: libyelp/yelp-view.c:825 libyelp/yelp-view.c:2106
 #, c-format
 msgid "The URI ‘%s’ could not be parsed."
 msgstr "Не ўдалося прааналізаваць URI «%s»."
 
-#: libyelp/yelp-view.c:861
+#: libyelp/yelp-view.c:830
 #, c-format
 msgid "Unknown Error."
 msgstr "Невядомая памылка."
 
-#: libyelp/yelp-view.c:1015
+#: libyelp/yelp-view.c:967
 msgid "You do not have PackageKit. Package install links require PackageKit."
 msgstr ""
 "У вас няма PackageKit. Спасылкі на ўсталёўку пакункаў патрабуюць PackageKit."
 
-#: libyelp/yelp-view.c:1262
+#: libyelp/yelp-view.c:1230
 msgid "Save Image"
 msgstr "Захаваць відарыс"
 
-#: libyelp/yelp-view.c:1361
+#: libyelp/yelp-view.c:1350
 msgid "Save Code"
 msgstr "Захаваць код"
 
-#: libyelp/yelp-view.c:1457
+#: libyelp/yelp-view.c:1404
 #, c-format
 msgid "Send email to %s"
 msgstr "Адправіць электронны ліст %s"
 
-#: libyelp/yelp-view.c:1561
+#: libyelp/yelp-view.c:1485
 msgid "_Save Image As…"
 msgstr "_Захаваць відарыс як…"
 
-#: libyelp/yelp-view.c:1562
+#: libyelp/yelp-view.c:1486
 msgid "_Save Video As…"
 msgstr "_Захаваць відэа як..."
 
-#: libyelp/yelp-view.c:1570
+#: libyelp/yelp-view.c:1495
 msgid "S_end Image To…"
 msgstr "_Адправіць відарыс…"
 
-#: libyelp/yelp-view.c:1571
+#: libyelp/yelp-view.c:1496
 msgid "S_end Video To…"
 msgstr "_Адправіць відэа..."
 
-#: libyelp/yelp-view.c:1926
+#: libyelp/yelp-view.c:1853
 #, c-format
 msgid "Could not load a document for ‘%s’"
 msgstr "Не атрымалася загрузіць дакумент для \"%s\""
 
-#: libyelp/yelp-view.c:1932
+#: libyelp/yelp-view.c:1859
 #, c-format
 msgid "Could not load a document"
 msgstr "Не атрымалася загрузіць дакумент"
 
-#: libyelp/yelp-view.c:1987
+#: libyelp/yelp-view.c:1905
 msgid "Document Not Found"
 msgstr "Дакумент не знойдзены"
 
-#: libyelp/yelp-view.c:1989
+#: libyelp/yelp-view.c:1907
 msgid "Page Not Found"
 msgstr "Старонка не знойдзеная"
 
-#: libyelp/yelp-view.c:1992
+#: libyelp/yelp-view.c:1910
 msgid "Cannot Read"
 msgstr "Не атрымалася прачытаць"
 
-#: libyelp/yelp-view.c:1998
+#: libyelp/yelp-view.c:1916
 msgid "Unknown Error"
 msgstr "Невядомая памылка"
 
@@ -289,28 +290,28 @@ msgstr "Невядомая памылка"
 msgid "Search for packages containing this document."
 msgstr "Пошук пакункаў, якія змяшчаюць гэты дакумент."
 
-#: src/yelp-application.c:60
+#: src/yelp-application.c:57
 msgid "Turn on editor mode"
 msgstr "Уключыць рэжым рэдактара"
 
-#: data/yelp.appdata.xml.in:14 src/yelp-application.c:269
-#: src/yelp-window.c:1192 yelp.desktop.in:2
+#: data/org.gnome.Yelp.metainfo.xml.in:19 org.gnome.Yelp.desktop.in:2
+#: src/yelp-application.c:307 src/yelp-window.c:1112 src/yelp-window.c:1163
 msgid "Help"
 msgstr "Даведка"
 
-#: src/yelp-window.c:346
+#: src/yelp-window.ui:78 src/yelp-window.ui:218
 msgid "Back"
 msgstr "Назад"
 
-#: src/yelp-window.c:353
+#: src/yelp-window.ui:86 src/yelp-window.ui:226
 msgid "Forward"
 msgstr "Наперад"
 
-#: src/yelp-window.c:364
+#: src/yelp-window.ui:95
 msgid "Menu"
 msgstr "Меню"
 
-#: src/yelp-window.c:369
+#: src/yelp-window.ui:9
 msgid "New Window"
 msgstr "Новае акно"
 
@@ -318,15 +319,15 @@ msgstr "Новае акно"
 msgid "Find…"
 msgstr "Пошук…"
 
-#: src/yelp-window.c:371
+#: src/yelp-window.ui:17
 msgid "Print…"
 msgstr "Друк…"
 
-#: src/yelp-window.c:376
+#: src/yelp-window.ui:23
 msgid "Previous Page"
 msgstr "Да папярэдняй старонкі"
 
-#: src/yelp-window.c:377
+#: src/yelp-window.ui:27
 msgid "Next Page"
 msgstr "Да наступнай старонкі"
 
@@ -338,15 +339,15 @@ msgstr "Павялічыць тэкст"
 msgid "Smaller Text"
 msgstr "Паменшыць тэкст"
 
-#: src/yelp-window.c:388
+#: src/yelp-window.ui:38
 msgid "All Help"
 msgstr "Усе дакументы"
 
-#: src/yelp-window.c:410
+#: src/yelp-window.ui:105
 msgid "Search (Ctrl+S)"
 msgstr "Пошук (Ctrl+S)"
 
-#: src/yelp-window.c:427
+#: src/yelp-window.ui:113
 msgid "Bookmarks"
 msgstr "Закладкі"
 
@@ -354,20 +355,20 @@ msgstr "Закладкі"
 msgid "No bookmarks"
 msgstr "Няма закладак"
 
-#: src/yelp-window.c:452
+#: src/yelp-window.ui:324
 msgid "Add Bookmark"
 msgstr "Дадаць закладку"
 
-#: src/yelp-window.c:458
+#: src/yelp-window.ui:335
 msgid "Remove Bookmark"
 msgstr "Выдаліць закладку"
 
-#: yelp.desktop.in:3
+#: org.gnome.Yelp.desktop.in:3
 msgid "Get help with GNOME"
 msgstr "Даведка GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: yelp.desktop.in:5
+#: org.gnome.Yelp.desktop.in:5
 msgid "documentation;information;manual;help;"
 msgstr "дакументацыя;інфармацыя;звесткі;падручнік;дапаможнік;даведка;"
 

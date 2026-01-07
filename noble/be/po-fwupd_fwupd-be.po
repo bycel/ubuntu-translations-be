@@ -14,19 +14,20 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:23+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 07:26+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:1
+#: policy/org.freedesktop.fwupd.policy.in:28
 msgid "Install signed system firmware"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:3
+#: policy/org.freedesktop.fwupd.policy.in:30
+#: policy/org.freedesktop.fwupd.policy.in:41
 msgid "Authentication is required to update the firmware on this machine"
 msgstr ""
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:4
+#: policy/org.freedesktop.fwupd.policy.in:39
 msgid "Install unsigned system firmware"
 msgstr ""
 
@@ -35,59 +36,62 @@ msgid "Install old version of system firmware"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:7
+#: policy/org.freedesktop.fwupd.policy.in:53
+#: policy/org.freedesktop.fwupd.policy.in:65
 msgid "Authentication is required to downgrade the firmware on this machine"
 msgstr ""
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:8
+#: policy/org.freedesktop.fwupd.policy.in:75
+#: policy/org.freedesktop.fwupd.policy.in:98
 msgid "Install signed device firmware"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:10
+#: policy/org.freedesktop.fwupd.policy.in:77
+#: policy/org.freedesktop.fwupd.policy.in:88
 msgid ""
 "Authentication is required to update the firmware on a removable device"
 msgstr ""
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:11
+#: policy/org.freedesktop.fwupd.policy.in:86
+#: policy/org.freedesktop.fwupd.policy.in:109
 msgid "Install unsigned device firmware"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:13
+#: policy/org.freedesktop.fwupd.policy.in:100
+#: policy/org.freedesktop.fwupd.policy.in:111
 msgid ""
 "Authentication is required to downgrade the firmware on a removable device"
 msgstr ""
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:14
+#: policy/org.freedesktop.fwupd.policy.in:121
 msgid "Unlock the device to allow access"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:16
+#: policy/org.freedesktop.fwupd.policy.in:123
 msgid "Authentication is required to unlock a device"
 msgstr ""
 
-#: ../policy/org.freedesktop.fwupd.policy.in.h:17
+#: policy/org.freedesktop.fwupd.policy.in:167
 msgid "Update the stored device verification information"
 msgstr ""
 
 #. TRANSLATORS: this is the PolicyKit modal dialog
-#: ../policy/org.freedesktop.fwupd.policy.in.h:19
+#: policy/org.freedesktop.fwupd.policy.in:169
 msgid ""
 "Authentication is required to update the stored checksums for the device"
 msgstr ""
 
 #. TRANSLATORS: this is a command alias, e.g. 'get-devices'
-#: ../libdfu/dfu-tool.c:121 ../plugins/synapticsmst/synapticsmst-tool.c:115
-#: ../src/fu-util.c:109
+#: src/fu-util-common.c:475
 #, c-format
 msgid "Alias to %s"
 msgstr ""
 
 #. TRANSLATORS: error message
-#: ../libdfu/dfu-tool.c:194 ../plugins/synapticsmst/synapticsmst-tool.c:362
-#: ../src/fu-util.c:173
+#: src/fu-util-common.c:523
 msgid "Command not found"
 msgstr ""
 
@@ -131,14 +135,14 @@ msgstr ""
 msgid "Removed"
 msgstr ""
 
-#. TRANSLATORS: this is when a device is hotplugged
 #. TRANSLATORS: this is when the daemon state changes
-#: ../libdfu/dfu-tool.c:1387 ../src/fu-util.c:965
+#: src/fu-tool.c:2919
 msgid "Changed"
 msgstr ""
 
 #. TRANSLATORS: this is when a device ctrl+c's a watch
-#: ../libdfu/dfu-tool.c:1395 ../src/fu-util.c:927
+#. TRANSLATORS: this is from ctrl+c
+#: src/fu-tool.c:288 src/fu-util.c:5234
 msgid "Cancelled"
 msgstr "Скасавана"
 
@@ -164,8 +168,8 @@ msgstr ""
 msgid "Region"
 msgstr ""
 
-#. TRANSLATORS: detected a DFU device
-#: ../libdfu/dfu-tool.c:1972
+#. TRANSLATORS: Suffix: the HSI result
+#: src/fu-util-common.c:2228
 msgid "Found"
 msgstr ""
 
@@ -328,8 +332,8 @@ msgid "DFU Utility"
 msgstr ""
 
 #. TRANSLATORS: the user didn't read the man page
-#: ../libdfu/dfu-tool.c:2274 ../plugins/synapticsmst/synapticsmst-tool.c:439
-#: ../src/fu-util.c:1202
+#: plugins/tpm/fu-tpm-eventlog.c:172 plugins/uefi-dbx/fu-dbxtool.c:184
+#: src/fu-tool.c:6035 src/fu-util.c:5928
 msgid "Failed to parse arguments"
 msgstr ""
 
@@ -353,77 +357,81 @@ msgid "Show debugging information for all files"
 msgstr ""
 
 #. TRANSLATORS: for the --verbose arg
-#: ../src/fu-debug.c:180
+#: src/fu-debug.c:345
 msgid "Debugging Options"
 msgstr ""
 
 #. TRANSLATORS: for the --verbose arg
-#: ../src/fu-debug.c:182
+#: src/fu-debug.c:347
 msgid "Show debugging options"
 msgstr ""
 
 #. TRANSLATORS: exit after we've started up, used for user profiling
-#: ../src/fu-main.c:2757
+#: src/fu-main.c:88
 msgid "Exit after a small delay"
 msgstr ""
 
 #. TRANSLATORS: exit straight away, used for automatic profiling
-#: ../src/fu-main.c:2760
+#: src/fu-main.c:96
 msgid "Exit after the engine has loaded"
 msgstr ""
 
 #. TRANSLATORS: program name
-#: ../src/fu-main.c:2773
+#: src/fu-main.c:114
 msgid "Firmware Update Daemon"
 msgstr ""
 
 #. TRANSLATORS: program summary
-#: ../src/fu-main.c:2778
+#: src/fu-main.c:119
 msgid "Firmware Update D-Bus Service"
 msgstr ""
 
 #. TRANSLATORS: daemon is inactive
-#: ../src/fu-util.c:183
+#: src/fu-console.c:375
 msgid "Idle…"
 msgstr ""
 
 #. TRANSLATORS: decompressing the firmware file
-#: ../src/fu-util.c:187
+#: src/fu-console.c:379
 msgid "Decompressing…"
 msgstr ""
 
 #. TRANSLATORS: parsing the firmware information
-#: ../src/fu-util.c:191
+#: src/fu-console.c:383
 msgid "Loading…"
 msgstr "Загрузка…"
 
 #. TRANSLATORS: restarting the device to pick up new F/W
-#: ../src/fu-util.c:195
+#: src/fu-console.c:387
 msgid "Restarting device…"
 msgstr ""
 
 #. TRANSLATORS: writing to the flash chips
-#: ../src/fu-util.c:199
+#: src/fu-console.c:395
 msgid "Writing…"
 msgstr ""
 
 #. TRANSLATORS: verifying we wrote the firmware correctly
-#: ../src/fu-util.c:203
+#: src/fu-console.c:403
 msgid "Verifying…"
 msgstr ""
 
-#. TRANSLATORS: scheduing an update to be done on the next boot
-#: ../src/fu-util.c:207
+#. TRANSLATORS: scheduling an update to be done on the next boot
+#: src/fu-console.c:407
 msgid "Scheduling…"
 msgstr ""
 
-#. TRANSLATORS: currect daemon status is unknown
-#: ../src/fu-util.c:214
+#. TRANSLATORS: current daemon status is unknown
+#. TRANSLATORS: we don't know the license of the update
+#. TRANSLATORS: unknown release urgency
+#. TRANSLATORS: Suffix: the fallback HSI result
+#: src/fu-console.c:427 src/fu-util-common.c:1735 src/fu-util-common.c:1775
+#: src/fu-util-common.c:2262
 msgid "Unknown"
 msgstr ""
 
 #. TRANSLATORS: nothing attached that can be upgraded
-#: ../src/fu-util.c:283
+#: src/fu-tool.c:987 src/fu-util.c:605
 msgid "No hardware detected with firmware update capability"
 msgstr ""
 
@@ -456,11 +464,13 @@ msgstr ""
 msgid "Updating %s from %s to %s... "
 msgstr ""
 
-#: ../src/fu-util.c:499
+#. TRANSLATORS: success
+#: plugins/uefi-dbx/fu-dbxtool.c:336
 msgid "Done!"
 msgstr ""
 
-#: ../src/fu-util.c:541 ../src/fu-util.c:790
+#. TRANSLATORS: Suffix: the HSI result
+#: src/fu-util-common.c:2258
 msgid "OK"
 msgstr ""
 
@@ -499,22 +509,23 @@ msgid "Update Description"
 msgstr ""
 
 #. TRANSLATORS: this is when a device is hotplugged
-#: ../src/fu-util.c:938
+#: src/fu-tool.c:2877
 msgid "Device added:"
 msgstr ""
 
 #. TRANSLATORS: this is when a device is hotplugged
-#: ../src/fu-util.c:948
+#: src/fu-tool.c:2892
 msgid "Device removed:"
 msgstr ""
 
 #. TRANSLATORS: this is when a device has been updated
-#: ../src/fu-util.c:958
+#: src/fu-tool.c:2907
 msgid "Device changed:"
 msgstr ""
 
 #. TRANSLATORS: command line option
-#: ../src/fu-util.c:1068
+#: plugins/tpm/fu-tpm-eventlog.c:130 plugins/uefi-dbx/fu-dbxtool.c:112
+#: src/fu-util.c:5282
 msgid "Show extra debugging information"
 msgstr ""
 
@@ -529,7 +540,7 @@ msgid "Allow re-installing existing firmware versions"
 msgstr ""
 
 #. TRANSLATORS: command line option
-#: ../src/fu-util.c:1080
+#: src/fu-tool.c:5288 src/fu-util.c:5314
 msgid "Allow downgrading firmware versions"
 msgstr ""
 
@@ -539,7 +550,7 @@ msgid "Override plugin warning"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1106
+#: src/fu-tool.c:5539 src/fu-util.c:5525
 msgid "Get all devices that support firmware updates"
 msgstr ""
 
@@ -554,7 +565,7 @@ msgid "Install a firmware file on this hardware"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1124
+#: src/fu-tool.c:5519 src/fu-util.c:5564
 msgid "Gets details about a firmware file"
 msgstr ""
 
@@ -574,22 +585,22 @@ msgid "Gets the cryptographic hash of the dumped firmware"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1148
+#: src/fu-util.c:5594
 msgid "Unlocks the device for firmware access"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1154
+#: src/fu-util.c:5601
 msgid "Clears the results from the last update"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1160
+#: src/fu-tool.c:5805 src/fu-util.c:5608
 msgid "Gets the results from the last update"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1166
+#: src/fu-tool.c:5745 src/fu-util.c:5642
 msgid "Refresh metadata from remote server"
 msgstr ""
 
@@ -599,11 +610,11 @@ msgid "Update the stored metadata with current ROM contents"
 msgstr ""
 
 #. TRANSLATORS: command description
-#: ../src/fu-util.c:1178
+#: src/fu-tool.c:5634
 msgid "Monitor the daemon for events"
 msgstr ""
 
 #. TRANSLATORS: program name
-#: ../src/fu-util.c:1197
+#: src/fu-tool.c:6027 src/fu-util.c:5921
 msgid "Firmware Utility"
 msgstr ""

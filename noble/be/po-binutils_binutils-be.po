@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:21+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 07:25+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 
 #: addr2line.c:89
 #, c-format
@@ -97,12 +97,12 @@ msgstr ""
 msgid "%s: cannot find section %s"
 msgstr ""
 
-#: addr2line.c:514 ar.c:759 dlltool.c:3285 nm.c:1995 objcopy.c:6288
-#: objdump.c:6038 size.c:152 strings.c:356 windmc.c:958 windres.c:796
+#: addr2line.c:514 ar.c:759 dlltool.c:3285 nm.c:1995 objcopy.c:6268
+#: objdump.c:6023 size.c:152 strings.c:356 windmc.c:958 windres.c:796
 msgid "fatal error: libbfd ABI mismatch"
 msgstr ""
 
-#: addr2line.c:541 nm.c:2021 objdump.c:6090 readelf.c:6647
+#: addr2line.c:541 nm.c:2021 objdump.c:6075 readelf.c:6647
 #, c-format
 msgid "unknown demangling style `%s'"
 msgstr ""
@@ -373,7 +373,7 @@ msgstr ""
 msgid "libdeps specified more than once"
 msgstr ""
 
-#: ar.c:606 ar.c:681 nm.c:2140 objcopy.c:5012
+#: ar.c:606 ar.c:681 nm.c:2140 objcopy.c:4996
 #, c-format
 msgid "sorry - this program has been built without plugin support\n"
 msgstr ""
@@ -766,7 +766,7 @@ msgstr ""
 msgid "Symbol  %s, tag %d, number %d"
 msgstr ""
 
-#: coffdump.c:345 readelf.c:20375 readelf.c:20471
+#: coffdump.c:345 readelf.c:20372 readelf.c:20468
 #, c-format
 msgid "Type"
 msgstr ""
@@ -3115,7 +3115,7 @@ msgstr ""
 
 #: dwarf.c:5482 dwarf.c:5814 readelf.c:7990 readelf.c:8086 readelf.c:8103
 #: readelf.c:8120 readelf.c:8934 readelf.c:13173 readelf.c:13835
-#: readelf.c:13848 readelf.c:19459 readelf.c:19491
+#: readelf.c:13848 readelf.c:19456 readelf.c:19488
 msgid "<unknown>"
 msgstr ""
 
@@ -3126,9 +3126,9 @@ msgstr ""
 
 #: dwarf.c:5492 dwarf.c:5808 elfcomm.c:776 readelf.c:980 readelf.c:9112
 #: readelf.c:9725 readelf.c:11751 readelf.c:14142 readelf.c:14208
-#: readelf.c:14212 readelf.c:14326 readelf.c:18199 readelf.c:18289
-#: readelf.c:18882 readelf.c:18901 readelf.c:19020 readelf.c:19468
-#: readelf.c:20631 readelf.c:20634
+#: readelf.c:14212 readelf.c:14326 readelf.c:18196 readelf.c:18286
+#: readelf.c:18879 readelf.c:18898 readelf.c:19017 readelf.c:19465
+#: readelf.c:20628 readelf.c:20631
 #, c-format
 msgid "<corrupt>"
 msgstr ""
@@ -4364,7 +4364,7 @@ msgstr ""
 msgid "Corrupt debuglink section: %s\n"
 msgstr ""
 
-#: dwarf.c:10270
+#: dwarf.c:11710
 msgid "Out of memory"
 msgstr ""
 
@@ -4442,7 +4442,7 @@ msgstr ""
 msgid "unable to construct path for supplementary debug file"
 msgstr ""
 
-#: dwarf.c:12348
+#: dwarf.c:12065
 msgid "out of memory constructing filename for .debug_sup link\n"
 msgstr ""
 
@@ -4604,7 +4604,7 @@ msgstr ""
 
 #. PR 24049 - we cannot use filedata->file_name as this will
 #. have already been freed.
-#: elfcomm.c:518 elfcomm.c:752 elfedit.c:624 readelf.c:24047
+#: elfcomm.c:518 elfcomm.c:752 elfedit.c:624 readelf.c:24044
 #, c-format
 msgid "%s: failed to read archive header\n"
 msgstr ""
@@ -4651,7 +4651,7 @@ msgstr ""
 msgid "%s: failed to seek to next file name\n"
 msgstr ""
 
-#: elfcomm.c:757 elfedit.c:631 readelf.c:24054
+#: elfcomm.c:757 elfedit.c:631 readelf.c:24051
 #, c-format
 msgid "%s: did not find a valid archive header\n"
 msgstr ""
@@ -4737,12 +4737,12 @@ msgstr ""
 msgid "%s: Failed to seek to ELF header\n"
 msgstr ""
 
-#: elfedit.c:615 readelf.c:24035
+#: elfedit.c:615 readelf.c:24032
 #, c-format
 msgid "%s: failed to seek to next archive header\n"
 msgstr ""
 
-#: elfedit.c:646 elfedit.c:655 readelf.c:24067 readelf.c:24076
+#: elfedit.c:646 elfedit.c:655 readelf.c:24064 readelf.c:24073
 #, c-format
 msgid "%s: bad archive file name\n"
 msgstr ""
@@ -4757,22 +4757,22 @@ msgstr ""
 msgid "%s: failed to seek to archive member\n"
 msgstr ""
 
-#: elfedit.c:746 readelf.c:24195
+#: elfedit.c:746 readelf.c:24192
 #, c-format
 msgid "'%s': No such file\n"
 msgstr ""
 
-#: elfedit.c:748 readelf.c:24197
+#: elfedit.c:748 readelf.c:24194
 #, c-format
 msgid "Could not locate '%s'.  System error message: %s\n"
 msgstr ""
 
-#: elfedit.c:769 readelf.c:24204
+#: elfedit.c:769 readelf.c:24201
 #, c-format
 msgid "'%s' is not an ordinary file\n"
 msgstr ""
 
-#: elfedit.c:795 readelf.c:24226
+#: elfedit.c:795 readelf.c:24223
 #, c-format
 msgid "%s: Failed to read file's magic number\n"
 msgstr ""
@@ -5186,7 +5186,7 @@ msgstr ""
 msgid "Print width has not been initialized (%d)"
 msgstr ""
 
-#: nm.c:2111 objdump.c:6404 readelf.c:6681 strings.c:314
+#: nm.c:2111 objdump.c:6387 readelf.c:6681 strings.c:314
 #, c-format
 msgid "invalid argument to -U/--unicode: %s"
 msgstr ""
@@ -5491,7 +5491,7 @@ msgstr ""
 msgid "cannot open '%s': %s"
 msgstr ""
 
-#: objcopy.c:1140 objcopy.c:5343
+#: objcopy.c:1140 objcopy.c:5323
 #, c-format
 msgid "%s: fread failed"
 msgstr ""
@@ -5802,7 +5802,7 @@ msgstr ""
 msgid "cannot create tempdir for archive copying (error: %s)"
 msgstr ""
 
-#: objcopy.c:3513
+#: objcopy.c:3680
 #, c-format
 msgid "illegal pathname found in archive member: %s"
 msgstr ""
@@ -5811,219 +5811,219 @@ msgstr ""
 msgid "Unable to recognise the format of file"
 msgstr ""
 
-#: objcopy.c:3886
+#: objcopy.c:3883
 #, c-format
 msgid "error: the input file '%s' is empty"
 msgstr ""
 
-#: objcopy.c:3927
+#: objcopy.c:3925
 msgid ""
 "--compress-debug-sections=zstd: binutils is not built with zstd support"
 msgstr ""
 
-#: objcopy.c:3983
+#: objcopy.c:3981
 #, c-format
 msgid "--add-gnu-debuglink ignored for archive %s"
 msgstr ""
 
-#: objcopy.c:4111
+#: objcopy.c:4095
 #, c-format
 msgid "Multiple renames of section %s"
 msgstr ""
 
-#: objcopy.c:4156
+#: objcopy.c:4140
 msgid "error in private header data"
 msgstr ""
 
-#: objcopy.c:4289 objcopy.c:4297
+#: objcopy.c:4273 objcopy.c:4281
 msgid "failed to create output section"
 msgstr ""
 
-#: objcopy.c:4306
+#: objcopy.c:4290
 msgid "failed to set size"
 msgstr ""
 
-#: objcopy.c:4325
+#: objcopy.c:4309
 msgid "failed to set vma"
 msgstr ""
 
-#: objcopy.c:4359
+#: objcopy.c:4343
 msgid "failed to set alignment"
 msgstr ""
 
-#: objcopy.c:4418
+#: objcopy.c:4402
 msgid "failed to copy private data"
 msgstr ""
 
-#: objcopy.c:4572
+#: objcopy.c:4556
 msgid "relocation count is negative"
 msgstr ""
 
 #. User must pad the section up in order to do this.
-#: objcopy.c:4658
+#: objcopy.c:4642
 #, c-format
 msgid ""
 "cannot reverse bytes: length of section %s must be evenly divisible by %d"
 msgstr ""
 
-#: objcopy.c:4864
+#: objcopy.c:4848
 msgid "can't create debugging section"
 msgstr ""
 
-#: objcopy.c:4878
+#: objcopy.c:4862
 msgid "can't set debugging section contents"
 msgstr ""
 
-#: objcopy.c:4888
+#: objcopy.c:4872
 #, c-format
 msgid "don't know how to write debugging information for %s"
 msgstr ""
 
-#: objcopy.c:5103
+#: objcopy.c:5083
 msgid "could not create temporary file to hold stripped copy"
 msgstr ""
 
-#: objcopy.c:5177
+#: objcopy.c:5157
 #, c-format
 msgid "%s: bad version in PE subsystem"
 msgstr ""
 
-#: objcopy.c:5207
+#: objcopy.c:5187
 #, c-format
 msgid "unknown PE subsystem: %s"
 msgstr ""
 
-#: objcopy.c:5296 objcopy.c:5572 objcopy.c:5652 objcopy.c:5790 objcopy.c:5822
-#: objcopy.c:5878 objcopy.c:5882 objcopy.c:5902
+#: objcopy.c:5276 objcopy.c:5552 objcopy.c:5632 objcopy.c:5770 objcopy.c:5802
+#: objcopy.c:5858 objcopy.c:5862 objcopy.c:5882
 #, c-format
 msgid "bad format for %s"
 msgstr ""
 
-#: objcopy.c:5325
+#: objcopy.c:5305
 #, c-format
 msgid "cannot open: %s: %s"
 msgstr ""
 
-#: objcopy.c:5380
+#: objcopy.c:5360
 msgid "byte number must be non-negative"
 msgstr ""
 
-#: objcopy.c:5386
+#: objcopy.c:5366
 #, c-format
 msgid "architecture %s unknown"
 msgstr ""
 
-#: objcopy.c:5394
+#: objcopy.c:5374
 msgid "interleave must be positive"
 msgstr ""
 
-#: objcopy.c:5403
+#: objcopy.c:5383
 msgid "interleave width must be positive"
 msgstr ""
 
-#: objcopy.c:5727
+#: objcopy.c:5707
 #, c-format
 msgid "unrecognized --compress-debug-sections type `%s'"
 msgstr ""
 
-#: objcopy.c:5748
+#: objcopy.c:5728
 #, c-format
 msgid "unrecognized --elf-stt-common= option `%s'"
 msgstr ""
 
-#: objcopy.c:5759
+#: objcopy.c:5739
 #, c-format
 msgid "Warning: truncating gap-fill from 0x%<PRIx64> to 0x%x"
 msgstr ""
 
-#: objcopy.c:5845
+#: objcopy.c:5825
 msgid "bad format for --set-section-alignment: argument needed"
 msgstr ""
 
-#: objcopy.c:5849
+#: objcopy.c:5829
 msgid "bad format for --set-section-alignment: numeric argument needed"
 msgstr ""
 
-#: objcopy.c:5854
+#: objcopy.c:5834
 msgid ""
 "bad format for --set-section-alignment: alignment is not a power of two"
 msgstr ""
 
-#: objcopy.c:5961
+#: objcopy.c:5941
 #, c-format
 msgid "unknown long section names option '%s'"
 msgstr ""
 
-#: objcopy.c:5984
+#: objcopy.c:5964
 msgid "unable to parse alternative machine code"
 msgstr ""
 
-#: objcopy.c:6033
+#: objcopy.c:6013
 msgid "number of bytes to reverse must be positive and even"
 msgstr ""
 
-#: objcopy.c:6036
+#: objcopy.c:6016
 #, c-format
 msgid "Warning: ignoring previous --reverse-bytes value of %d"
 msgstr ""
 
-#: objcopy.c:6056
+#: objcopy.c:6036
 #, c-format
 msgid "%s: invalid reserve value for --heap"
 msgstr ""
 
-#: objcopy.c:6062
+#: objcopy.c:6042
 #, c-format
 msgid "%s: invalid commit value for --heap"
 msgstr ""
 
-#: objcopy.c:6092
+#: objcopy.c:6072
 #, c-format
 msgid "%s: invalid reserve value for --stack"
 msgstr ""
 
-#: objcopy.c:6098
+#: objcopy.c:6078
 #, c-format
 msgid "%s: invalid commit value for --stack"
 msgstr ""
 
-#: objcopy.c:6116
+#: objcopy.c:6096
 msgid "error: verilog data width must be 1, 2, 4, 8 or 16"
 msgstr ""
 
-#: objcopy.c:6134
+#: objcopy.c:6114
 msgid "--globalize-symbol(s) is incompatible with -G/--keep-global-symbol(s)"
 msgstr ""
 
-#: objcopy.c:6146
+#: objcopy.c:6126
 msgid "interleave start byte must be set with --byte"
 msgstr ""
 
-#: objcopy.c:6149
+#: objcopy.c:6129
 msgid "byte number must be less than interleave"
 msgstr ""
 
-#: objcopy.c:6152
+#: objcopy.c:6132
 msgid "interleave width must be less than or equal to interleave - byte`"
 msgstr ""
 
-#: objcopy.c:6175
+#: objcopy.c:6155
 #, c-format
 msgid "unknown input EFI target: %s"
 msgstr ""
 
-#: objcopy.c:6185
+#: objcopy.c:6165
 #, c-format
 msgid "unknown output EFI target: %s"
 msgstr ""
 
-#: objcopy.c:6209
+#: objcopy.c:6189
 #, c-format
 msgid ""
 "warning: could not create temporary file whilst copying '%s', (error: %s)"
 msgstr ""
 
-#: objcopy.c:6241 objcopy.c:6249
+#: objcopy.c:6221 objcopy.c:6229
 #, c-format
 msgid "%s %s%c0x%<PRIx64> never used"
 msgstr ""
@@ -6584,7 +6584,7 @@ msgstr ""
 msgid "failed to read symbol table from: %s"
 msgstr ""
 
-#: objdump.c:1026 objdump.c:5528 objdump.c:5610
+#: objdump.c:1026 objdump.c:5513 objdump.c:5595
 msgid "error message was"
 msgstr ""
 
@@ -6617,7 +6617,7 @@ msgstr ""
 msgid "disassemble_fn returned length %d"
 msgstr ""
 
-#: objdump.c:3869 objdump.c:5145
+#: objdump.c:3869 objdump.c:5130
 #, c-format
 msgid "Reading section %s failed because: %s"
 msgstr ""
@@ -6653,88 +6653,88 @@ msgid ""
 "Can't get contents for section '%s'.\n"
 msgstr ""
 
-#: objdump.c:4539
+#: objdump.c:4536
 #, c-format
 msgid "File %s does not contain any dwarf debug information\n"
 msgstr ""
 
-#: objdump.c:4575 objdump.c:5002
+#: objdump.c:4572 objdump.c:4999
 #, c-format
 msgid ""
 "No %s section present\n"
 "\n"
 msgstr ""
 
-#: objdump.c:4584
+#: objdump.c:4581
 #, c-format
 msgid "reading %s section of %s failed: %s"
 msgstr ""
 
-#: objdump.c:4622
+#: objdump.c:4619
 #, c-format
 msgid ""
 "Contents of %s section:\n"
 "\n"
 msgstr ""
 
-#: objdump.c:4764
+#: objdump.c:4761
 #, c-format
 msgid "architecture: %s, "
 msgstr ""
 
-#: objdump.c:4767
+#: objdump.c:4764
 #, c-format
 msgid "flags 0x%08x:\n"
 msgstr ""
 
-#: objdump.c:4780
+#: objdump.c:4777
 #, c-format
 msgid ""
 "\n"
 "start address 0x"
 msgstr ""
 
-#: objdump.c:4826 readelf.c:16942
+#: objdump.c:4823 readelf.c:16942
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: objdump.c:4826 readelf.c:16942
+#: objdump.c:4823 readelf.c:16942
 msgid "warning"
 msgstr ""
 
-#: objdump.c:4826 readelf.c:16942
+#: objdump.c:4823 readelf.c:16942
 msgid "error"
 msgstr ""
 
-#: objdump.c:4832 readelf.c:16947
+#: objdump.c:4829 readelf.c:16947
 #, c-format
 msgid "CTF error: cannot get CTF errors: `%s'"
 msgstr ""
 
-#: objdump.c:4856 readelf.c:16969
+#: objdump.c:4853 readelf.c:16969
 #, c-format
 msgid ""
 "\n"
 "CTF archive member: %s:\n"
 msgstr ""
 
-#: objdump.c:4876
+#: objdump.c:4873
 #, c-format
 msgid "Iteration failed: %s, %s"
 msgstr ""
 
-#: objdump.c:4922 objdump.c:4942 objdump.c:4955
+#: objdump.c:4919 objdump.c:4939 objdump.c:4952
 #, c-format
 msgid "CTF open failure: %s"
 msgstr ""
 
-#: objdump.c:4963
+#: objdump.c:4960
 #, c-format
 msgid "Contents of CTF section %s:\n"
 msgstr ""
 
-#: objdump.c:4973
+#: objdump.c:4970
 #, c-format
 msgid "CTF archive member open failure: %s"
 msgstr ""
@@ -6744,114 +6744,114 @@ msgstr ""
 msgid "Contents of the SFrame section %s:"
 msgstr ""
 
-#: objdump.c:5026
+#: objdump.c:5011
 #, c-format
 msgid "warning: private headers incomplete: %s"
 msgstr ""
 
-#: objdump.c:5044
+#: objdump.c:5029
 msgid "option -P/--private not supported by this file"
 msgstr ""
 
-#: objdump.c:5068
+#: objdump.c:5053
 #, c-format
 msgid "target specific dump '%s' not supported"
 msgstr ""
 
-#: objdump.c:5134
+#: objdump.c:5119
 #, c-format
 msgid "Contents of section %s:"
 msgstr ""
 
-#: objdump.c:5136
+#: objdump.c:5121
 #, c-format
 msgid "  (Starting at file offset: 0x%lx)"
 msgstr ""
 
-#: objdump.c:5141 readelf.c:16640
+#: objdump.c:5126 readelf.c:16640
 #, c-format
 msgid ""
 " NOTE: This section is compressed, but its contents have NOT been expanded "
 "for this dump.\n"
 msgstr ""
 
-#: objdump.c:5249
+#: objdump.c:5234
 #, c-format
 msgid "no symbols\n"
 msgstr ""
 
-#: objdump.c:5256
+#: objdump.c:5241
 #, c-format
 msgid "no information for symbol number %ld\n"
 msgstr ""
 
-#: objdump.c:5259
+#: objdump.c:5244
 #, c-format
 msgid "could not determine the type of symbol number %ld\n"
 msgstr ""
 
-#: objdump.c:5526 objdump.c:5608
+#: objdump.c:5511 objdump.c:5593
 #, c-format
 msgid "failed to read relocs in: %s"
 msgstr ""
 
-#: objdump.c:5751
+#: objdump.c:5736
 #, c-format
 msgid ""
 "\n"
 "%s:     file format %s\n"
 msgstr ""
 
-#: objdump.c:5864
+#: objdump.c:5849
 #, c-format
 msgid "%s: printing debugging information failed"
 msgstr ""
 
-#: objdump.c:5951
+#: objdump.c:5936
 #, c-format
 msgid "In archive %s:\n"
 msgstr ""
 
 #. Prevent corrupted files from spinning us into an
 #. infinite loop.  100 is an arbitrary heuristic.
-#: objdump.c:5956
+#: objdump.c:5941
 msgid "Archive nesting is too deep"
 msgstr ""
 
-#: objdump.c:5961
+#: objdump.c:5946
 #, c-format
 msgid "In nested archive %s:\n"
 msgstr ""
 
-#: objdump.c:6111
+#: objdump.c:6096
 msgid "error: the start address should be before the end address"
 msgstr ""
 
-#: objdump.c:6116
+#: objdump.c:6101
 msgid "error: the stop address should be after the start address"
 msgstr ""
 
-#: objdump.c:6128
+#: objdump.c:6113
 msgid "error: prefix strip must be non-negative"
 msgstr ""
 
-#: objdump.c:5135
+#: objdump.c:5999
 msgid "error: instruction width must be positive"
 msgstr ""
 
-#: objdump.c:6156
+#: objdump.c:6141
 msgid "unrecognized argument to --visualize-option"
 msgstr ""
 
-#: objdump.c:6176
+#: objdump.c:6161
 msgid "unrecognized argument to --disassembler-color"
 msgstr ""
 
-#: objdump.c:6187
+#: objdump.c:6172
 msgid "unrecognized -E option"
 msgstr ""
 
-#: objdump.c:6198
+#: objdump.c:6183
 #, c-format
 msgid "unrecognized --endian type `%s'"
 msgstr ""
@@ -7266,7 +7266,7 @@ msgstr ""
 msgid "Time/Date:\t\t\t%#08lx\t- "
 msgstr ""
 
-#: od-pe.c:399 od-xcoff.c:422 readelf.c:21740
+#: od-pe.c:399 od-xcoff.c:422 readelf.c:21737
 #, c-format
 msgid "not set\n"
 msgstr ""
@@ -7308,7 +7308,7 @@ msgstr ""
 msgid "Magic:\t\t\t\t%x\t\t- %s\n"
 msgstr ""
 
-#: od-pe.c:436 od-pe.c:538 readelf.c:19550 readelf.c:19619
+#: od-pe.c:436 od-pe.c:538 readelf.c:19547 readelf.c:19616
 msgid "Unknown"
 msgstr ""
 
@@ -8215,7 +8215,7 @@ msgstr ""
 
 #. Please keep this switch table sorted by increasing EM_ value.
 #. 0
-#: readelf.c:3212 readelf.c:19548 readelf.c:19559
+#: readelf.c:3212 readelf.c:19545 readelf.c:19556
 msgid "None"
 msgstr ""
 
@@ -8313,9 +8313,9 @@ msgstr ""
 msgid "Bare-metal C6000"
 msgstr ""
 
-#: readelf.c:5301 readelf.c:6744 readelf.c:6760 readelf.c:20988
-#: readelf.c:21088 readelf.c:21135 readelf.c:21172 readelf.c:21233
-#: readelf.c:21264 readelf.c:21291 readelf.c:21313
+#: readelf.c:5301 readelf.c:6744 readelf.c:6760 readelf.c:20985
+#: readelf.c:21085 readelf.c:21132 readelf.c:21169 readelf.c:21230
+#: readelf.c:21261 readelf.c:21288 readelf.c:21310
 #, c-format
 msgid "<unknown: %x>"
 msgstr ""
@@ -9131,7 +9131,7 @@ msgid ""
 "There are no sections in this file.\n"
 msgstr ""
 
-#: readelf.c:8196 readelf.c:23114
+#: readelf.c:8196 readelf.c:23111
 #, c-format
 msgid "In linked file '%s': "
 msgstr ""
@@ -10787,8 +10787,8 @@ msgid ""
 "String dump of section '%s':\n"
 msgstr ""
 
-#: readelf.c:16798 readelf.c:18275 readelf.c:18315 readelf.c:18353
-#: readelf.c:18400 readelf.c:18431 readelf.c:20026 readelf.c:20058
+#: readelf.c:16798 readelf.c:18272 readelf.c:18312 readelf.c:18350
+#: readelf.c:18397 readelf.c:18428 readelf.c:20023 readelf.c:20055
 #, c-format
 msgid "<corrupt>\n"
 msgstr ""
@@ -10896,534 +10896,534 @@ msgstr ""
 msgid "section '%s' has the NOBITS type - its contents are unreliable.\n"
 msgstr ""
 
-#: readelf.c:17532
+#: readelf.c:17529
 #, c-format
 msgid "Unrecognized debug section: %s\n"
 msgstr ""
 
-#: readelf.c:17562
+#: readelf.c:17559
 #, c-format
 msgid "Section '%s' was not dumped because it does not exist\n"
 msgstr ""
 
-#: readelf.c:17699
+#: readelf.c:17696
 #, c-format
 msgid "Section %d was not dumped because it does not exist!\n"
 msgstr ""
 
-#: readelf.c:17755
+#: readelf.c:17752
 msgid "<corrupt tag>\n"
 msgstr ""
 
-#: readelf.c:17769 readelf.c:17774
+#: readelf.c:17766 readelf.c:17771
 #, c-format
 msgid "<corrupt string tag>"
 msgstr ""
 
-#: readelf.c:17808
+#: readelf.c:17805
 #, c-format
 msgid "Absent/Non standard\n"
 msgstr ""
 
-#: readelf.c:17811
+#: readelf.c:17808
 #, c-format
 msgid "Bare metal/mwdt\n"
 msgstr ""
 
-#: readelf.c:17814
+#: readelf.c:17811
 #, c-format
 msgid "Bare metal/newlib\n"
 msgstr ""
 
-#: readelf.c:17817
+#: readelf.c:17814
 #, c-format
 msgid "Linux/uclibc\n"
 msgstr ""
 
-#: readelf.c:17820
+#: readelf.c:17817
 #, c-format
 msgid "Linux/glibc\n"
 msgstr ""
 
-#: readelf.c:17823 readelf.c:17902
+#: readelf.c:17820 readelf.c:17899
 #, c-format
 msgid "Unknown\n"
 msgstr ""
 
-#: readelf.c:17835 readelf.c:17865 readelf.c:17893
+#: readelf.c:17832 readelf.c:17862 readelf.c:17890
 #, c-format
 msgid "Absent\n"
 msgstr ""
 
-#: readelf.c:17877
+#: readelf.c:17874
 msgid "yes"
 msgstr "так"
 
-#: readelf.c:17877
+#: readelf.c:17874
 msgid "no"
 msgstr ""
 
-#: readelf.c:17914 readelf.c:17921
+#: readelf.c:17911 readelf.c:17918
 msgid "default"
 msgstr ""
 
-#: readelf.c:17915
+#: readelf.c:17912
 msgid "smallest"
 msgstr ""
 
-#: readelf.c:17920
+#: readelf.c:17917
 msgid "OPTFP"
 msgstr ""
 
-#: readelf.c:18141 readelf.c:18154 readelf.c:18172 readelf.c:18694
-#: readelf.c:18973 readelf.c:18985 readelf.c:18997
+#: readelf.c:18138 readelf.c:18151 readelf.c:18169 readelf.c:18691
+#: readelf.c:18970 readelf.c:18982 readelf.c:18994
 #, c-format
 msgid "None\n"
 msgstr ""
 
-#: readelf.c:18142
+#: readelf.c:18139
 #, c-format
 msgid "Application\n"
 msgstr ""
 
-#: readelf.c:18143
+#: readelf.c:18140
 #, c-format
 msgid "Realtime\n"
 msgstr ""
 
-#: readelf.c:18144
+#: readelf.c:18141
 #, c-format
 msgid "Microcontroller\n"
 msgstr ""
 
-#: readelf.c:18145
+#: readelf.c:18142
 #, c-format
 msgid "Application or Realtime\n"
 msgstr ""
 
-#: readelf.c:18155 readelf.c:18174 readelf.c:18746 readelf.c:18763
-#: readelf.c:18834 readelf.c:18854 readelf.c:21750
+#: readelf.c:18152 readelf.c:18171 readelf.c:18743 readelf.c:18760
+#: readelf.c:18831 readelf.c:18851 readelf.c:21747
 #, c-format
 msgid "8-byte\n"
 msgstr ""
 
-#: readelf.c:18156 readelf.c:18837 readelf.c:18857 readelf.c:21749
+#: readelf.c:18153 readelf.c:18834 readelf.c:18854 readelf.c:21746
 #, c-format
 msgid "4-byte\n"
 msgstr ""
 
-#: readelf.c:18160 readelf.c:18178
+#: readelf.c:18157 readelf.c:18175
 #, c-format
 msgid "8-byte and up to %d-byte extended\n"
 msgstr ""
 
-#: readelf.c:18173
+#: readelf.c:18170
 #, c-format
 msgid "8-byte, except leaf SP\n"
 msgstr ""
 
-#: readelf.c:18189 readelf.c:18272 readelf.c:18872
+#: readelf.c:18186 readelf.c:18269 readelf.c:18869
 #, c-format
 msgid "flag = %d, vendor = "
 msgstr ""
 
-#: readelf.c:18210
+#: readelf.c:18207
 #, c-format
 msgid "True\n"
 msgstr ""
 
-#: readelf.c:18230
+#: readelf.c:18227
 #, c-format
 msgid "<unknown: %d>\n"
 msgstr ""
 
-#: readelf.c:18276
+#: readelf.c:18273
 msgid "corrupt vendor attribute\n"
 msgstr ""
 
-#: readelf.c:18326
+#: readelf.c:18323
 #, c-format
 msgid "unspecified hard/soft float\n"
 msgstr ""
 
-#: readelf.c:18329
+#: readelf.c:18326
 #, c-format
 msgid "hard float\n"
 msgstr ""
 
-#: readelf.c:18332
+#: readelf.c:18329
 #, c-format
 msgid "soft float\n"
 msgstr ""
 
-#: readelf.c:18364
+#: readelf.c:18361
 #, c-format
 msgid "unspecified hard/soft float, "
 msgstr ""
 
-#: readelf.c:18367
+#: readelf.c:18364
 #, c-format
 msgid "hard float, "
 msgstr ""
 
-#: readelf.c:18370
+#: readelf.c:18367
 #, c-format
 msgid "soft float, "
 msgstr ""
 
-#: readelf.c:18373
+#: readelf.c:18370
 #, c-format
 msgid "single-precision hard float, "
 msgstr ""
 
-#: readelf.c:18380
+#: readelf.c:18377
 #, c-format
 msgid "unspecified long double\n"
 msgstr ""
 
-#: readelf.c:18383
+#: readelf.c:18380
 #, c-format
 msgid "128-bit IBM long double\n"
 msgstr ""
 
-#: readelf.c:18386
+#: readelf.c:18383
 #, c-format
 msgid "64-bit long double\n"
 msgstr ""
 
-#: readelf.c:18389
+#: readelf.c:18386
 #, c-format
 msgid "128-bit IEEE long double\n"
 msgstr ""
 
-#: readelf.c:18411 readelf.c:18442
+#: readelf.c:18408 readelf.c:18439
 #, c-format
 msgid "unspecified\n"
 msgstr ""
 
-#: readelf.c:18414
+#: readelf.c:18411
 #, c-format
 msgid "generic\n"
 msgstr ""
 
-#: readelf.c:18448
+#: readelf.c:18445
 #, c-format
 msgid "memory\n"
 msgstr ""
 
-#: readelf.c:18475
+#: readelf.c:18472
 #, c-format
 msgid "any\n"
 msgstr ""
 
-#: readelf.c:18478
+#: readelf.c:18475
 #, c-format
 msgid "software\n"
 msgstr ""
 
-#: readelf.c:18481
+#: readelf.c:18478
 #, c-format
 msgid "hardware\n"
 msgstr ""
 
-#: readelf.c:18604
+#: readelf.c:18601
 #, c-format
 msgid "Hard or soft float\n"
 msgstr ""
 
-#: readelf.c:18607
+#: readelf.c:18604
 #, c-format
 msgid "Hard float (double precision)\n"
 msgstr ""
 
-#: readelf.c:18610
+#: readelf.c:18607
 #, c-format
 msgid "Hard float (single precision)\n"
 msgstr ""
 
-#: readelf.c:18613
+#: readelf.c:18610
 #, c-format
 msgid "Soft float\n"
 msgstr ""
 
-#: readelf.c:18616
+#: readelf.c:18613
 #, c-format
 msgid "Hard float (MIPS32r2 64-bit FPU 12 callee-saved)\n"
 msgstr ""
 
-#: readelf.c:18619
+#: readelf.c:18616
 #, c-format
 msgid "Hard float (32-bit CPU, Any FPU)\n"
 msgstr ""
 
-#: readelf.c:18622
+#: readelf.c:18619
 #, c-format
 msgid "Hard float (32-bit CPU, 64-bit FPU)\n"
 msgstr ""
 
-#: readelf.c:18625
+#: readelf.c:18622
 #, c-format
 msgid "Hard float compat (32-bit CPU, 64-bit FPU)\n"
 msgstr ""
 
-#: readelf.c:18628
+#: readelf.c:18625
 #, c-format
 msgid "NaN 2008 compatibility\n"
 msgstr ""
 
-#: readelf.c:18661
+#: readelf.c:18658
 #, c-format
 msgid "Any MSA or not\n"
 msgstr ""
 
-#: readelf.c:18664
+#: readelf.c:18661
 #, c-format
 msgid "128-bit MSA\n"
 msgstr ""
 
-#: readelf.c:18726
+#: readelf.c:18723
 #, c-format
 msgid "Not used\n"
 msgstr ""
 
-#: readelf.c:18729
+#: readelf.c:18726
 #, c-format
 msgid "2 bytes\n"
 msgstr ""
 
-#: readelf.c:18732
+#: readelf.c:18729
 #, c-format
 msgid "4 bytes\n"
 msgstr ""
 
-#: readelf.c:18749 readelf.c:18766 readelf.c:18840 readelf.c:18860
+#: readelf.c:18746 readelf.c:18763 readelf.c:18837 readelf.c:18857
 #, c-format
 msgid "16-byte\n"
 msgstr ""
 
-#: readelf.c:18780
+#: readelf.c:18777
 #, c-format
 msgid "DSBT addressing not used\n"
 msgstr ""
 
-#: readelf.c:18783
+#: readelf.c:18780
 #, c-format
 msgid "DSBT addressing used\n"
 msgstr ""
 
-#: readelf.c:18797
+#: readelf.c:18794
 #, c-format
 msgid "Data addressing position-dependent\n"
 msgstr ""
 
-#: readelf.c:18800
+#: readelf.c:18797
 #, c-format
 msgid "Data addressing position-independent, GOT near DP\n"
 msgstr ""
 
-#: readelf.c:18803
+#: readelf.c:18800
 #, c-format
 msgid "Data addressing position-independent, GOT far from DP\n"
 msgstr ""
 
-#: readelf.c:18817
+#: readelf.c:18814
 #, c-format
 msgid "Code addressing position-dependent\n"
 msgstr ""
 
-#: readelf.c:18820
+#: readelf.c:18817
 #, c-format
 msgid "Code addressing position-independent\n"
 msgstr ""
 
-#: readelf.c:18974
+#: readelf.c:18971
 #, c-format
 msgid "MSP430\n"
 msgstr ""
 
-#: readelf.c:18975
+#: readelf.c:18972
 #, c-format
 msgid "MSP430X\n"
 msgstr ""
 
-#: readelf.c:18986 readelf.c:18998
+#: readelf.c:18983 readelf.c:18995
 #, c-format
 msgid "Small\n"
 msgstr ""
 
-#: readelf.c:18987 readelf.c:18999
+#: readelf.c:18984 readelf.c:18996
 #, c-format
 msgid "Large\n"
 msgstr ""
 
-#: readelf.c:19000
+#: readelf.c:18997
 #, c-format
 msgid "Restricted Large\n"
 msgstr ""
 
-#: readelf.c:19006
+#: readelf.c:19003
 #, c-format
 msgid "  <unknown tag %<PRId64>>: "
 msgstr ""
 
-#: readelf.c:19052
+#: readelf.c:19049
 #, c-format
 msgid "Any Region\n"
 msgstr ""
 
-#: readelf.c:19055
+#: readelf.c:19052
 #, c-format
 msgid "Lower Region Only\n"
 msgstr ""
 
-#: readelf.c:19121
+#: readelf.c:19118
 #, c-format
 msgid "No unaligned access\n"
 msgstr ""
 
-#: readelf.c:19124
+#: readelf.c:19121
 #, c-format
 msgid "Unaligned access\n"
 msgstr ""
 
-#: readelf.c:19130
+#: readelf.c:19127
 #, c-format
 msgid "%<PRIu64>-bytes\n"
 msgstr ""
 
-#: readelf.c:19266
+#: readelf.c:19263
 msgid "attributes"
 msgstr ""
 
-#: readelf.c:19276
+#: readelf.c:19273
 #, c-format
 msgid "Unknown attributes version '%c'(%d) - expecting 'A'\n"
 msgstr ""
 
-#: readelf.c:19293
+#: readelf.c:19290
 msgid "Tag section ends prematurely\n"
 msgstr ""
 
-#: readelf.c:19302
+#: readelf.c:19299
 #, c-format
 msgid "Bad attribute length (%u > %u)\n"
 msgstr ""
 
-#: readelf.c:19310
+#: readelf.c:19307
 #, c-format
 msgid "Attribute length of %u is too small\n"
 msgstr ""
 
-#: readelf.c:19321
+#: readelf.c:19318
 msgid "Corrupt attribute section name\n"
 msgstr ""
 
-#: readelf.c:19326
+#: readelf.c:19323
 #, c-format
 msgid "Attribute Section: "
 msgstr ""
 
-#: readelf.c:19353
+#: readelf.c:19350
 msgid "Unused bytes at end of section\n"
 msgstr ""
 
-#: readelf.c:19363
+#: readelf.c:19360
 #, c-format
 msgid "Bad subsection length (%u > %u)\n"
 msgstr ""
 
-#: readelf.c:19371
+#: readelf.c:19368
 #, c-format
 msgid "Bad subsection length (%u < 6)\n"
 msgstr ""
 
-#: readelf.c:19386
+#: readelf.c:19383
 #, c-format
 msgid "File Attributes\n"
 msgstr ""
 
-#: readelf.c:19389
+#: readelf.c:19386
 #, c-format
 msgid "Section Attributes:"
 msgstr ""
 
-#: readelf.c:19392
+#: readelf.c:19389
 #, c-format
 msgid "Symbol Attributes:"
 msgstr ""
 
-#: readelf.c:19405
+#: readelf.c:19402
 #, c-format
 msgid "Unknown tag: %d\n"
 msgstr ""
 
-#: readelf.c:19426
+#: readelf.c:19423
 #, c-format
 msgid "  Unknown attribute:\n"
 msgstr ""
 
-#: readelf.c:19467
+#: readelf.c:19464
 msgid "MIPS GOT entry extends beyond the end of available data\n"
 msgstr ""
 
-#: readelf.c:19666
+#: readelf.c:19663
 msgid "Corrupt MIPS ABI Flags section.\n"
 msgstr ""
 
-#: readelf.c:19672
+#: readelf.c:19669
 msgid "MIPS ABI Flags section"
 msgstr ""
 
-#: readelf.c:19731 readelf.c:20314
+#: readelf.c:19728 readelf.c:20311
 msgid "Global Offset Table data"
 msgstr ""
 
-#: readelf.c:19735
+#: readelf.c:19732
 #, c-format
 msgid ""
 "\n"
 "Static GOT:\n"
 msgstr ""
 
-#: readelf.c:19736 readelf.c:20319
+#: readelf.c:19733 readelf.c:20316
 #, c-format
 msgid " Canonical gp value: "
 msgstr ""
 
-#: readelf.c:19750 readelf.c:20323 readelf.c:20458
+#: readelf.c:19747 readelf.c:20320 readelf.c:20455
 #, c-format
 msgid " Reserved entries:\n"
 msgstr ""
 
-#: readelf.c:19751
+#: readelf.c:19748
 #, c-format
 msgid "  %*s %10s %*s\n"
 msgstr ""
 
-#: readelf.c:19752 readelf.c:19782 readelf.c:20325 readelf.c:20353
-#: readelf.c:20371 readelf.c:20460 readelf.c:20469
+#: readelf.c:19749 readelf.c:19779 readelf.c:20322 readelf.c:20350
+#: readelf.c:20368 readelf.c:20457 readelf.c:20466
 msgid "Address"
 msgstr ""
 
-#: readelf.c:19752 readelf.c:19782 readelf.c:20325 readelf.c:20353
-#: readelf.c:20372
+#: readelf.c:19749 readelf.c:19779 readelf.c:20322 readelf.c:20350
+#: readelf.c:20369
 msgid "Access"
 msgstr ""
 
-#: readelf.c:19753 readelf.c:19783
+#: readelf.c:19750 readelf.c:19780
 msgid "Value"
 msgstr ""
 
-#: readelf.c:19780 readelf.c:20351
+#: readelf.c:19777 readelf.c:20348
 #, c-format
 msgid " Local entries:\n"
 msgstr ""
 
-#: readelf.c:19862 readelf.c:20575
+#: readelf.c:19859 readelf.c:20572
 msgid "liblist section data"
 msgstr ""
 
-#: readelf.c:19865
+#: readelf.c:19862
 #, c-format
 msgid ""
 "\n"
@@ -11434,38 +11434,38 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:19869
+#: readelf.c:19866
 msgid ""
 "     Library              Time Stamp          Checksum   Version Flags\n"
 msgstr ""
 
-#: readelf.c:19895
+#: readelf.c:19892
 #, c-format
 msgid "<corrupt: %9ld>"
 msgstr ""
 
-#: readelf.c:19900
+#: readelf.c:19897
 msgid " NONE"
 msgstr ""
 
-#: readelf.c:19950
+#: readelf.c:19947
 msgid "No MIPS_OPTIONS header found\n"
 msgstr ""
 
-#: readelf.c:19956
+#: readelf.c:19953
 msgid "The MIPS options section is too small.\n"
 msgstr ""
 
-#: readelf.c:19961
+#: readelf.c:19958
 msgid "options"
 msgstr ""
 
-#: readelf.c:19980
+#: readelf.c:19977
 #, c-format
 msgid "Invalid size (%u) for MIPS option\n"
 msgstr ""
 
-#: readelf.c:19989
+#: readelf.c:19986
 #, c-format
 msgid ""
 "\n"
@@ -11476,28 +11476,28 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:20027 readelf.c:20059
+#: readelf.c:20024 readelf.c:20056
 msgid "Truncated MIPS REGINFO option\n"
 msgstr ""
 
-#: readelf.c:20195
+#: readelf.c:20192
 msgid "conflict list found without a dynamic symbol table\n"
 msgstr ""
 
-#: readelf.c:20203
+#: readelf.c:20200
 #, c-format
 msgid "Overlarge number of conflicts detected: %zx\n"
 msgstr ""
 
-#: readelf.c:20211
+#: readelf.c:20208
 msgid "Out of memory allocating space for dynamic conflicts\n"
 msgstr ""
 
-#: readelf.c:20221 readelf.c:20239
+#: readelf.c:20218 readelf.c:20236
 msgid "conflict"
 msgstr ""
 
-#: readelf.c:20252
+#: readelf.c:20249
 #, c-format
 msgid ""
 "\n"
@@ -11508,125 +11508,125 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:20256
+#: readelf.c:20253
 msgid "  Num:    Index       Value  Name"
 msgstr ""
 
-#: readelf.c:20263
+#: readelf.c:20260
 #, c-format
 msgid "<corrupt symbol index>"
 msgstr ""
 
-#: readelf.c:20274 readelf.c:20406 readelf.c:20494
+#: readelf.c:20271 readelf.c:20403 readelf.c:20491
 #, c-format
 msgid "<corrupt: %14ld>"
 msgstr ""
 
-#: readelf.c:20297
+#: readelf.c:20294
 #, c-format
 msgid ""
 "The GOT symbol offset (%<PRIu64>) is greater than the symbol table size "
 "(%<PRIu64>)\n"
 msgstr ""
 
-#: readelf.c:20307
+#: readelf.c:20304
 #, c-format
 msgid "Too many GOT symbols: %<PRIu64>\n"
 msgstr ""
 
-#: readelf.c:20318
+#: readelf.c:20315
 #, c-format
 msgid ""
 "\n"
 "Primary GOT:\n"
 msgstr ""
 
-#: readelf.c:20324
+#: readelf.c:20321
 #, c-format
 msgid "  %*s %10s %*s Purpose\n"
 msgstr ""
 
-#: readelf.c:20326 readelf.c:20354 readelf.c:20373 readelf.c:20460
-#: readelf.c:20470
+#: readelf.c:20323 readelf.c:20351 readelf.c:20370 readelf.c:20457
+#: readelf.c:20467
 msgid "Initial"
 msgstr ""
 
-#: readelf.c:20328
+#: readelf.c:20325
 #, c-format
 msgid " Lazy resolver\n"
 msgstr ""
 
-#: readelf.c:20343
+#: readelf.c:20340
 #, c-format
 msgid " Module pointer (GNU extension)\n"
 msgstr ""
 
-#: readelf.c:20369
+#: readelf.c:20366
 #, c-format
 msgid " Global entries:\n"
 msgstr ""
 
-#: readelf.c:20374 readelf.c:20471
+#: readelf.c:20371 readelf.c:20468
 msgid "Sym.Val."
 msgstr ""
 
 #. Note for translators: "Ndx" = abbreviated form of "Index".
-#: readelf.c:20377 readelf.c:20471
+#: readelf.c:20374 readelf.c:20468
 msgid "Ndx"
 msgstr ""
 
-#: readelf.c:20377 readelf.c:20471
+#: readelf.c:20374 readelf.c:20468
 msgid "Name"
 msgstr ""
 
-#: readelf.c:20387
+#: readelf.c:20384
 #, c-format
 msgid "<no dynamic symbols>"
 msgstr ""
 
-#: readelf.c:20409
+#: readelf.c:20406
 #, c-format
 msgid "<symbol index %zu exceeds number of dynamic symbols>"
 msgstr ""
 
-#: readelf.c:20450
+#: readelf.c:20447
 msgid "Procedure Linkage Table data"
 msgstr ""
 
-#: readelf.c:20459
+#: readelf.c:20456
 #, c-format
 msgid "  %*s %*s Purpose\n"
 msgstr ""
 
-#: readelf.c:20462
+#: readelf.c:20459
 #, c-format
 msgid " PLT lazy resolver\n"
 msgstr ""
 
-#: readelf.c:20464
+#: readelf.c:20461
 #, c-format
 msgid " Module pointer\n"
 msgstr ""
 
-#: readelf.c:20467
+#: readelf.c:20464
 #, c-format
 msgid " Entries:\n"
 msgstr ""
 
-#: readelf.c:20481
+#: readelf.c:20478
 #, c-format
 msgid "<corrupt symbol index: %<PRIu64>>"
 msgstr ""
 
-#: readelf.c:20520
+#: readelf.c:20517
 msgid "NDS32 elf flags section"
 msgstr ""
 
-#: readelf.c:20586
+#: readelf.c:20583
 msgid "liblist string table"
 msgstr ""
 
-#: readelf.c:20598
+#: readelf.c:20595
 #, c-format
 msgid ""
 "\n"
@@ -11637,479 +11637,479 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:20606
+#: readelf.c:20603
 msgid ""
 "     Library              Time Stamp          Checksum   Version Flags"
 msgstr ""
 
-#: readelf.c:20656
+#: readelf.c:20653
 msgid "NT_AUXV (auxiliary vector)"
 msgstr ""
 
-#: readelf.c:20658
+#: readelf.c:20655
 msgid "NT_PRSTATUS (prstatus structure)"
 msgstr ""
 
-#: readelf.c:20660
+#: readelf.c:20657
 msgid "NT_FPREGSET (floating point registers)"
 msgstr ""
 
-#: readelf.c:20662
+#: readelf.c:20659
 msgid "NT_PRPSINFO (prpsinfo structure)"
 msgstr ""
 
-#: readelf.c:20664
+#: readelf.c:20661
 msgid "NT_TASKSTRUCT (task structure)"
 msgstr ""
 
-#: readelf.c:20666
+#: readelf.c:20663
 msgid "NT_GDB_TDESC (GDB XML target description)"
 msgstr ""
 
-#: readelf.c:20668
+#: readelf.c:20665
 msgid "NT_PRXFPREG (user_xfpregs structure)"
 msgstr ""
 
-#: readelf.c:20670
+#: readelf.c:20667
 msgid "NT_PPC_VMX (ppc Altivec registers)"
 msgstr ""
 
-#: readelf.c:20672
+#: readelf.c:20669
 msgid "NT_PPC_VSX (ppc VSX registers)"
 msgstr ""
 
-#: readelf.c:20674
+#: readelf.c:20671
 msgid "NT_PPC_TAR (ppc TAR register)"
 msgstr ""
 
-#: readelf.c:20676
+#: readelf.c:20673
 msgid "NT_PPC_PPR (ppc PPR register)"
 msgstr ""
 
-#: readelf.c:20678
+#: readelf.c:20675
 msgid "NT_PPC_DSCR (ppc DSCR register)"
 msgstr ""
 
-#: readelf.c:20680
+#: readelf.c:20677
 msgid "NT_PPC_EBB (ppc EBB registers)"
 msgstr ""
 
-#: readelf.c:20682
+#: readelf.c:20679
 msgid "NT_PPC_PMU (ppc PMU registers)"
 msgstr ""
 
-#: readelf.c:20684
+#: readelf.c:20681
 msgid "NT_PPC_TM_CGPR (ppc checkpointed GPR registers)"
 msgstr ""
 
-#: readelf.c:20686
+#: readelf.c:20683
 msgid "NT_PPC_TM_CFPR (ppc checkpointed floating point registers)"
 msgstr ""
 
-#: readelf.c:20688
+#: readelf.c:20685
 msgid "NT_PPC_TM_CVMX (ppc checkpointed Altivec registers)"
 msgstr ""
 
-#: readelf.c:20690
+#: readelf.c:20687
 msgid "NT_PPC_TM_CVSX (ppc checkpointed VSX registers)"
 msgstr ""
 
-#: readelf.c:20692
+#: readelf.c:20689
 msgid "NT_PPC_TM_SPR (ppc TM special purpose registers)"
 msgstr ""
 
-#: readelf.c:20694
+#: readelf.c:20691
 msgid "NT_PPC_TM_CTAR (ppc checkpointed TAR register)"
 msgstr ""
 
-#: readelf.c:20696
+#: readelf.c:20693
 msgid "NT_PPC_TM_CPPR (ppc checkpointed PPR register)"
 msgstr ""
 
-#: readelf.c:20698
+#: readelf.c:20695
 msgid "NT_PPC_TM_CDSCR (ppc checkpointed DSCR register)"
 msgstr ""
 
-#: readelf.c:20700
+#: readelf.c:20697
 msgid "NT_386_TLS (x86 TLS information)"
 msgstr ""
 
-#: readelf.c:20702
+#: readelf.c:20699
 msgid "NT_386_IOPERM (x86 I/O permissions)"
 msgstr ""
 
-#: readelf.c:20704
+#: readelf.c:20701
 msgid "NT_X86_XSTATE (x86 XSAVE extended state)"
 msgstr ""
 
-#: readelf.c:20706
+#: readelf.c:20703
 msgid "NT_X86_CET (x86 CET state)"
 msgstr ""
 
-#: readelf.c:20708
+#: readelf.c:20705
 msgid "NT_X86_SHSTK (x86 SHSTK state)"
 msgstr ""
 
-#: readelf.c:20710
+#: readelf.c:20707
 msgid "NT_S390_HIGH_GPRS (s390 upper register halves)"
 msgstr ""
 
-#: readelf.c:20712
+#: readelf.c:20709
 msgid "NT_S390_TIMER (s390 timer register)"
 msgstr ""
 
-#: readelf.c:20714
+#: readelf.c:20711
 msgid "NT_S390_TODCMP (s390 TOD comparator register)"
 msgstr ""
 
-#: readelf.c:20716
+#: readelf.c:20713
 msgid "NT_S390_TODPREG (s390 TOD programmable register)"
 msgstr ""
 
-#: readelf.c:20718
+#: readelf.c:20715
 msgid "NT_S390_CTRS (s390 control registers)"
 msgstr ""
 
-#: readelf.c:20720
+#: readelf.c:20717
 msgid "NT_S390_PREFIX (s390 prefix register)"
 msgstr ""
 
-#: readelf.c:20722
+#: readelf.c:20719
 msgid "NT_S390_LAST_BREAK (s390 last breaking event address)"
 msgstr ""
 
-#: readelf.c:20724
+#: readelf.c:20721
 msgid "NT_S390_SYSTEM_CALL (s390 system call restart data)"
 msgstr ""
 
-#: readelf.c:20726
+#: readelf.c:20723
 msgid "NT_S390_TDB (s390 transaction diagnostic block)"
 msgstr ""
 
-#: readelf.c:20728
+#: readelf.c:20725
 msgid "NT_S390_VXRS_LOW (s390 vector registers 0-15 upper half)"
 msgstr ""
 
-#: readelf.c:20730
+#: readelf.c:20727
 msgid "NT_S390_VXRS_HIGH (s390 vector registers 16-31)"
 msgstr ""
 
-#: readelf.c:20732
+#: readelf.c:20729
 msgid "NT_S390_GS_CB (s390 guarded-storage registers)"
 msgstr ""
 
-#: readelf.c:20734
+#: readelf.c:20731
 msgid "NT_S390_GS_BC (s390 guarded-storage broadcast control)"
 msgstr ""
 
-#: readelf.c:20736
+#: readelf.c:20733
 msgid "NT_ARM_VFP (arm VFP registers)"
 msgstr ""
 
-#: readelf.c:20738
+#: readelf.c:20735
 msgid "NT_ARM_TLS (AArch TLS registers)"
 msgstr ""
 
-#: readelf.c:20740
+#: readelf.c:20737
 msgid "NT_ARM_HW_BREAK (AArch hardware breakpoint registers)"
 msgstr ""
 
-#: readelf.c:20742
+#: readelf.c:20739
 msgid "NT_ARM_HW_WATCH (AArch hardware watchpoint registers)"
 msgstr ""
 
-#: readelf.c:20744
+#: readelf.c:20741
 msgid "NT_ARM_SYSTEM_CALL (AArch system call number)"
 msgstr ""
 
-#: readelf.c:20746
+#: readelf.c:20743
 msgid "NT_ARM_SVE (AArch SVE registers)"
 msgstr ""
 
-#: readelf.c:20748
+#: readelf.c:20745
 msgid "NT_ARM_PAC_MASK (AArch pointer authentication code masks)"
 msgstr ""
 
-#: readelf.c:20750
+#: readelf.c:20747
 msgid "NT_ARM_PACA_KEYS (ARM pointer authentication address keys)"
 msgstr ""
 
-#: readelf.c:20752
+#: readelf.c:20749
 msgid "NT_ARM_PACG_KEYS (ARM pointer authentication generic keys)"
 msgstr ""
 
-#: readelf.c:20754
+#: readelf.c:20751
 msgid "NT_ARM_TAGGED_ADDR_CTRL (AArch tagged address control)"
 msgstr ""
 
-#: readelf.c:20756
+#: readelf.c:20753
 msgid "NT_ARM_SSVE (AArch64 streaming SVE registers)"
 msgstr ""
 
-#: readelf.c:20758
+#: readelf.c:20755
 msgid "NT_ARM_ZA (AArch64 SME ZA register)"
 msgstr ""
 
-#: readelf.c:20760
+#: readelf.c:20757
 msgid "NT_ARM_ZT (AArch64 SME2 ZT registers)"
 msgstr ""
 
-#: readelf.c:20762
+#: readelf.c:20759
 msgid "NT_ARM_PAC_ENABLED_KEYS (AArch64 pointer authentication enabled keys)"
 msgstr ""
 
-#: readelf.c:20764
+#: readelf.c:20761
 msgid "NT_ARC_V2 (ARC HS accumulator/extra registers)"
 msgstr ""
 
-#: readelf.c:20766
+#: readelf.c:20763
 msgid "NT_RISCV_CSR (RISC-V control and status registers)"
 msgstr ""
 
-#: readelf.c:20768
+#: readelf.c:20765
 msgid "NT_PSTATUS (pstatus structure)"
 msgstr ""
 
-#: readelf.c:20770
+#: readelf.c:20767
 msgid "NT_FPREGS (floating point registers)"
 msgstr ""
 
-#: readelf.c:20772
+#: readelf.c:20769
 msgid "NT_PSINFO (psinfo structure)"
 msgstr ""
 
-#: readelf.c:20774
+#: readelf.c:20771
 msgid "NT_LWPSTATUS (lwpstatus_t structure)"
 msgstr ""
 
-#: readelf.c:20776
+#: readelf.c:20773
 msgid "NT_LWPSINFO (lwpsinfo_t structure)"
 msgstr ""
 
-#: readelf.c:20778
+#: readelf.c:20775
 msgid "NT_WIN32PSTATUS (win32_pstatus structure)"
 msgstr ""
 
-#: readelf.c:20780
+#: readelf.c:20777
 msgid "NT_SIGINFO (siginfo_t data)"
 msgstr ""
 
-#: readelf.c:20782
+#: readelf.c:20779
 msgid "NT_FILE (mapped files)"
 msgstr ""
 
-#: readelf.c:20790
+#: readelf.c:20787
 msgid "NT_VERSION (version)"
 msgstr ""
 
-#: readelf.c:20792
+#: readelf.c:20789
 msgid "NT_ARCH (architecture)"
 msgstr ""
 
-#: readelf.c:20794
+#: readelf.c:20791
 msgid "OPEN"
 msgstr ""
 
-#: readelf.c:20796
+#: readelf.c:20793
 msgid "func"
 msgstr ""
 
-#: readelf.c:20798
+#: readelf.c:20795
 msgid "GO BUILDID"
 msgstr ""
 
-#: readelf.c:20800
+#: readelf.c:20797
 msgid "FDO_PACKAGING_METADATA"
 msgstr ""
 
-#: readelf.c:20807 readelf.c:20917 readelf.c:21106 readelf.c:21723
-#: readelf.c:21893 readelf.c:22022 readelf.c:22155
+#: readelf.c:20804 readelf.c:20914 readelf.c:21103 readelf.c:21720
+#: readelf.c:21890 readelf.c:22019 readelf.c:22152
 #, c-format
 msgid "Unknown note type: (0x%08x)"
 msgstr ""
 
-#: readelf.c:17495
+#: readelf.c:20200
 #, c-format
 msgid "    Cannot decode 64-bit note in 32-bit build\n"
 msgstr ""
 
-#: readelf.c:20827
+#: readelf.c:20824
 msgid "    Malformed note - too short for header\n"
 msgstr ""
 
-#: readelf.c:20836
+#: readelf.c:20833
 msgid "    Malformed note - does not end with \\0\n"
 msgstr ""
 
-#: readelf.c:20849
+#: readelf.c:20846
 msgid "    Malformed note - too short for supplied file count\n"
 msgstr ""
 
-#: readelf.c:20853
+#: readelf.c:20850
 #, c-format
 msgid "    Page size: "
 msgstr ""
 
-#: readelf.c:20857
+#: readelf.c:20854
 #, c-format
 msgid "    %*s%*s%*s\n"
 msgstr ""
 
-#: readelf.c:20858
+#: readelf.c:20855
 msgid "Start"
 msgstr ""
 
-#: readelf.c:20859
+#: readelf.c:20856
 msgid "End"
 msgstr ""
 
-#: readelf.c:20860
+#: readelf.c:20857
 msgid "Page Offset"
 msgstr ""
 
-#: readelf.c:20868
+#: readelf.c:20865
 msgid "    Malformed note - filenames end too early\n"
 msgstr ""
 
-#: readelf.c:20900
+#: readelf.c:20897
 msgid "NT_GNU_ABI_TAG (ABI version tag)"
 msgstr ""
 
-#: readelf.c:20902
+#: readelf.c:20899
 msgid "NT_GNU_HWCAP (DSO-supplied software HWCAP info)"
 msgstr ""
 
-#: readelf.c:20904
+#: readelf.c:20901
 msgid "NT_GNU_BUILD_ID (unique build ID bitstring)"
 msgstr ""
 
-#: readelf.c:20906
+#: readelf.c:20903
 msgid "NT_GNU_GOLD_VERSION (gold version)"
 msgstr ""
 
-#: readelf.c:20908
+#: readelf.c:20905
 msgid "NT_GNU_PROPERTY_TYPE_0"
 msgstr ""
 
-#: readelf.c:20910
+#: readelf.c:20907
 msgid "NT_GNU_BUILD_ATTRIBUTE_OPEN"
 msgstr ""
 
-#: readelf.c:20912
+#: readelf.c:20909
 msgid "NT_GNU_BUILD_ATTRIBUTE_FUNC"
 msgstr ""
 
-#: readelf.c:21001 readelf.c:21148 readelf.c:21185
+#: readelf.c:20998 readelf.c:21145 readelf.c:21182
 #, c-format
 msgid "<None>"
 msgstr ""
 
-#: readelf.c:21102
+#: readelf.c:21099
 msgid "NT_AMDGPU_METADATA (code object metadata)"
 msgstr ""
 
-#: readelf.c:21328
+#: readelf.c:21325
 #, c-format
 msgid "      Properties: "
 msgstr ""
 
-#: readelf.c:21332
+#: readelf.c:21329
 #, c-format
 msgid "<corrupt GNU_PROPERTY_TYPE, size = %#lx>\n"
 msgstr ""
 
-#: readelf.c:21344
+#: readelf.c:21341
 #, c-format
 msgid "<corrupt descsz: %#lx>\n"
 msgstr ""
 
-#: readelf.c:21355
+#: readelf.c:21352
 #, c-format
 msgid "<corrupt type (%#x) datasz: %#x>\n"
 msgstr ""
 
-#: readelf.c:21377 readelf.c:21431 readelf.c:21453
+#: readelf.c:21374 readelf.c:21428 readelf.c:21450
 #, c-format
 msgid "x86 ISA used: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21388 readelf.c:21442 readelf.c:21464
+#: readelf.c:21385 readelf.c:21439 readelf.c:21461
 #, c-format
 msgid "x86 ISA needed: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21399
+#: readelf.c:21396
 #, c-format
 msgid "x86 feature: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21410
+#: readelf.c:21407
 #, c-format
 msgid "x86 feature used: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21421
+#: readelf.c:21418
 #, c-format
 msgid "x86 feature needed: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21483 readelf.c:21495 readelf.c:21509 readelf.c:21517
-#: readelf.c:21523 readelf.c:21554
+#: readelf.c:21480 readelf.c:21492 readelf.c:21506 readelf.c:21514
+#: readelf.c:21520 readelf.c:21551
 #, c-format
 msgid "<corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21507
+#: readelf.c:21504
 #, c-format
 msgid "stack size: "
 msgstr ""
 
-#: readelf.c:21536
+#: readelf.c:21533
 #, c-format
 msgid "1_needed: <corrupt length: %#x> "
 msgstr ""
 
-#: readelf.c:21550
+#: readelf.c:21547
 #, c-format
 msgid "UINT32_AND (%#x): "
 msgstr ""
 
-#: readelf.c:21552
+#: readelf.c:21549
 #, c-format
 msgid "UINT32_OR (%#x): "
 msgstr ""
 
-#: readelf.c:21564
+#: readelf.c:21561
 #, c-format
 msgid "<unknown type %#x data: "
 msgstr ""
 
-#: readelf.c:21566
+#: readelf.c:21563
 #, c-format
 msgid "<processor-specific type %#x data: "
 msgstr ""
 
-#: readelf.c:21568
+#: readelf.c:21565
 #, c-format
 msgid "<application-specific type %#x data: "
 msgstr ""
 
-#: readelf.c:21597
+#: readelf.c:21594
 #, c-format
 msgid "    Build ID: "
 msgstr ""
 
-#: readelf.c:21612
+#: readelf.c:21609
 #, c-format
 msgid "    <corrupt GNU_ABI_TAG>\n"
 msgstr ""
 
-#: readelf.c:21649
+#: readelf.c:21646
 #, c-format
 msgid "    OS: %s, ABI: %d.%d.%d\n"
 msgstr ""
 
-#: readelf.c:21658
+#: readelf.c:21655
 #, c-format
 msgid "    Version: "
 msgstr ""
@@ -12119,588 +12119,588 @@ msgstr ""
 #. is a series of entries, where each entry is a single byte followed
 #. by a nul terminated string.  The byte gives the bit number to test
 #. if enabled in the bitmask.
-#: readelf.c:21674
+#: readelf.c:21671
 #, c-format
 msgid "      Hardware Capabilities: "
 msgstr ""
 
-#: readelf.c:21677
+#: readelf.c:21674
 msgid "<corrupt GNU_HWCAP>\n"
 msgstr ""
 
-#: readelf.c:21682
+#: readelf.c:21679
 #, c-format
 msgid "num entries: %d, enabled mask: %x\n"
 msgstr ""
 
-#: readelf.c:21698
+#: readelf.c:21695
 #, c-format
 msgid "    Description data: "
 msgstr ""
 
-#: readelf.c:21716
+#: readelf.c:21713
 msgid "Alignment of 8-byte objects"
 msgstr ""
 
-#: readelf.c:21717
+#: readelf.c:21714
 msgid "Sizeof double and long double"
 msgstr ""
 
-#: readelf.c:21718
+#: readelf.c:21715
 msgid "Type of FPU support needed"
 msgstr ""
 
-#: readelf.c:21719
+#: readelf.c:21716
 msgid "Use of SIMD instructions"
 msgstr ""
 
-#: readelf.c:21720
+#: readelf.c:21717
 msgid "Use of cache"
 msgstr ""
 
-#: readelf.c:21721
+#: readelf.c:21718
 msgid "Use of MMU"
 msgstr ""
 
-#: readelf.c:21757
+#: readelf.c:21754
 #, c-format
 msgid "4-bytes\n"
 msgstr ""
 
-#: readelf.c:21758
+#: readelf.c:21755
 #, c-format
 msgid "8-bytes\n"
 msgstr ""
 
-#: readelf.c:21765
+#: readelf.c:21762
 #, c-format
 msgid "FPU-2.0\n"
 msgstr ""
 
-#: readelf.c:21766
+#: readelf.c:21763
 #, c-format
 msgid "FPU-3.0\n"
 msgstr ""
 
-#: readelf.c:21775
+#: readelf.c:21772
 #, c-format
 msgid "yes\n"
 msgstr "так\n"
 
-#: readelf.c:21785
+#: readelf.c:21782
 #, c-format
 msgid "unknown value: %x\n"
 msgstr ""
 
-#: readelf.c:21841
+#: readelf.c:21838
 msgid "NT_THRMISC (thrmisc structure)"
 msgstr ""
 
-#: readelf.c:21843
+#: readelf.c:21840
 msgid "NT_PROCSTAT_PROC (proc data)"
 msgstr ""
 
-#: readelf.c:21845
+#: readelf.c:21842
 msgid "NT_PROCSTAT_FILES (files data)"
 msgstr ""
 
-#: readelf.c:21847
+#: readelf.c:21844
 msgid "NT_PROCSTAT_VMMAP (vmmap data)"
 msgstr ""
 
-#: readelf.c:21849
+#: readelf.c:21846
 msgid "NT_PROCSTAT_GROUPS (groups data)"
 msgstr ""
 
-#: readelf.c:21851
+#: readelf.c:21848
 msgid "NT_PROCSTAT_UMASK (umask data)"
 msgstr ""
 
-#: readelf.c:21853
+#: readelf.c:21850
 msgid "NT_PROCSTAT_RLIMIT (rlimit data)"
 msgstr ""
 
-#: readelf.c:21855
+#: readelf.c:21852
 msgid "NT_PROCSTAT_OSREL (osreldate data)"
 msgstr ""
 
-#: readelf.c:21857
+#: readelf.c:21854
 msgid "NT_PROCSTAT_PSSTRINGS (ps_strings data)"
 msgstr ""
 
-#: readelf.c:21859
+#: readelf.c:21856
 msgid "NT_PROCSTAT_AUXV (auxv data)"
 msgstr ""
 
-#: readelf.c:21861
+#: readelf.c:21858
 msgid "NT_PTLWPINFO (ptrace_lwpinfo structure)"
 msgstr ""
 
-#: readelf.c:21863
+#: readelf.c:21860
 msgid "NT_X86_SEGBASES (x86 segment base registers)"
 msgstr ""
 
 #. NetBSD core "procinfo" structure.
-#: readelf.c:21877
+#: readelf.c:21874
 msgid "NetBSD procinfo structure"
 msgstr ""
 
-#: readelf.c:21880
+#: readelf.c:21877
 msgid "NetBSD ELF auxiliary vector data"
 msgstr ""
 
-#: readelf.c:21883
+#: readelf.c:21880
 msgid "PT_LWPSTATUS (ptrace_lwpstatus structure)"
 msgstr ""
 
-#: readelf.c:21912 readelf.c:21929 readelf.c:21943
+#: readelf.c:21909 readelf.c:21926 readelf.c:21940
 msgid "PT_GETREGS (reg structure)"
 msgstr ""
 
-#: readelf.c:21914 readelf.c:21931 readelf.c:21945
+#: readelf.c:21911 readelf.c:21928 readelf.c:21942
 msgid "PT_GETFPREGS (fpreg structure)"
 msgstr ""
 
-#: readelf.c:21927
+#: readelf.c:21924
 msgid "PT___GETREGS40 (old reg structure)"
 msgstr ""
 
-#: readelf.c:21962
+#: readelf.c:21959
 msgid "OpenBSD procinfo structure"
 msgstr ""
 
-#: readelf.c:21964
+#: readelf.c:21961
 msgid "OpenBSD ELF auxiliary vector data"
 msgstr ""
 
-#: readelf.c:21966
+#: readelf.c:21963
 msgid "OpenBSD regular registers"
 msgstr ""
 
-#: readelf.c:21968
+#: readelf.c:21965
 msgid "OpenBSD floating point registers"
 msgstr ""
 
-#: readelf.c:21970
+#: readelf.c:21967
 msgid "OpenBSD window cookie"
 msgstr ""
 
-#: readelf.c:21982
+#: readelf.c:21979
 msgid "QNX debug fullpath"
 msgstr ""
 
-#: readelf.c:21984
+#: readelf.c:21981
 msgid "QNX debug relocation"
 msgstr ""
 
-#: readelf.c:21986
+#: readelf.c:21983
 msgid "QNX stack"
 msgstr ""
 
-#: readelf.c:21988
+#: readelf.c:21985
 msgid "QNX generator"
 msgstr ""
 
-#: readelf.c:21990
+#: readelf.c:21987
 msgid "QNX default library"
 msgstr ""
 
-#: readelf.c:21992
+#: readelf.c:21989
 msgid "QNX core sysinfo"
 msgstr ""
 
-#: readelf.c:21994
+#: readelf.c:21991
 msgid "QNX core info"
 msgstr ""
 
-#: readelf.c:21996
+#: readelf.c:21993
 msgid "QNX core status"
 msgstr ""
 
-#: readelf.c:21998
+#: readelf.c:21995
 msgid "QNX general registers"
 msgstr ""
 
-#: readelf.c:22000
+#: readelf.c:21997
 msgid "QNX floating point registers"
 msgstr ""
 
-#: readelf.c:22002
+#: readelf.c:21999
 msgid "QNX link map"
 msgstr ""
 
-#: readelf.c:22016
+#: readelf.c:22013
 msgid "NT_STAPSDT (SystemTap probe descriptors)"
 msgstr ""
 
-#: readelf.c:22084
+#: readelf.c:22081
 #, c-format
 msgid "    Provider: %s\n"
 msgstr ""
 
-#: readelf.c:22085
+#: readelf.c:22082
 #, c-format
 msgid "    Name: %s\n"
 msgstr ""
 
-#: readelf.c:22086
+#: readelf.c:22083
 #, c-format
 msgid "    Location: "
 msgstr ""
 
-#: readelf.c:22088
+#: readelf.c:22085
 #, c-format
 msgid ", Base: "
 msgstr ""
 
-#: readelf.c:22090
+#: readelf.c:22087
 #, c-format
 msgid ", Semaphore: "
 msgstr ""
 
-#: readelf.c:22093
+#: readelf.c:22090
 #, c-format
 msgid "    Arguments: %s\n"
 msgstr ""
 
-#: readelf.c:22098
+#: readelf.c:22095
 #, c-format
 msgid "  <corrupt - note is too small>\n"
 msgstr ""
 
-#: readelf.c:22099
+#: readelf.c:22096
 msgid "corrupt stapdt note - the data size is too small\n"
 msgstr ""
 
-#: readelf.c:22108
+#: readelf.c:22105
 #, c-format
 msgid "    Packaging Metadata: %.*s\n"
 msgstr ""
 
-#: readelf.c:22127
+#: readelf.c:22124
 msgid "NT_VMS_MHD (module header)"
 msgstr ""
 
-#: readelf.c:22129
+#: readelf.c:22126
 msgid "NT_VMS_LNM (language name)"
 msgstr ""
 
-#: readelf.c:22131
+#: readelf.c:22128
 msgid "NT_VMS_SRC (source files)"
 msgstr ""
 
-#: readelf.c:22135
+#: readelf.c:22132
 msgid "NT_VMS_EIDC (consistency check)"
 msgstr ""
 
-#: readelf.c:22137
+#: readelf.c:22134
 msgid "NT_VMS_FPMODE (FP mode)"
 msgstr ""
 
-#: readelf.c:22141
+#: readelf.c:22138
 msgid "NT_VMS_IMGNAM (image name)"
 msgstr ""
 
-#: readelf.c:22143
+#: readelf.c:22140
 msgid "NT_VMS_IMGID (image id)"
 msgstr ""
 
-#: readelf.c:22145
+#: readelf.c:22142
 msgid "NT_VMS_LINKID (link id)"
 msgstr ""
 
-#: readelf.c:22147
+#: readelf.c:22144
 msgid "NT_VMS_IMGBID (build id)"
 msgstr ""
 
-#: readelf.c:22149
+#: readelf.c:22146
 msgid "NT_VMS_GSTNAM (sym table name)"
 msgstr ""
 
-#: readelf.c:22176
+#: readelf.c:22173
 #, c-format
 msgid "    Creation date  : %.17s\n"
 msgstr ""
 
-#: readelf.c:22177
+#: readelf.c:22174
 #, c-format
 msgid "    Last patch date: %.17s\n"
 msgstr ""
 
-#: readelf.c:22180
+#: readelf.c:22177
 #, c-format
 msgid "    Module name    : %s\n"
 msgstr ""
 
-#: readelf.c:22182
+#: readelf.c:22179
 #, c-format
 msgid "    Module version : %s\n"
 msgstr ""
 
-#: readelf.c:22184 readelf.c:22189
+#: readelf.c:22181 readelf.c:22186
 #, c-format
 msgid "    Module version : <missing>\n"
 msgstr ""
 
-#: readelf.c:22188
+#: readelf.c:22185
 #, c-format
 msgid "    Module name    : <missing>\n"
 msgstr ""
 
-#: readelf.c:22194
+#: readelf.c:22191
 #, c-format
 msgid "   Language: %.*s\n"
 msgstr ""
 
-#: readelf.c:22198
+#: readelf.c:22195
 #, c-format
 msgid "   Floating Point mode: "
 msgstr ""
 
-#: readelf.c:22208
+#: readelf.c:22205
 #, c-format
 msgid "   Link time: "
 msgstr ""
 
-#: readelf.c:22218
+#: readelf.c:22215
 #, c-format
 msgid "   Patch time: "
 msgstr ""
 
-#: readelf.c:22231
+#: readelf.c:22228
 #, c-format
 msgid "   Major id: %u,  minor id: %u\n"
 msgstr ""
 
-#: readelf.c:22234
+#: readelf.c:22231
 #, c-format
 msgid "   Last modified  : "
 msgstr ""
 
-#: readelf.c:22236
+#: readelf.c:22233
 #, c-format
 msgid ""
 "\n"
 "   Link flags  : "
 msgstr ""
 
-#: readelf.c:22239
+#: readelf.c:22236
 #, c-format
 msgid "   Header flags: 0x%08x\n"
 msgstr ""
 
-#: readelf.c:22241
+#: readelf.c:22238
 #, c-format
 msgid "   Image id    : %.*s\n"
 msgstr ""
 
-#: readelf.c:22245
+#: readelf.c:22242
 #, c-format
 msgid "    Image name: %.*s\n"
 msgstr ""
 
-#: readelf.c:22249
+#: readelf.c:22246
 #, c-format
 msgid "    Global symbol table name: %.*s\n"
 msgstr ""
 
-#: readelf.c:22253
+#: readelf.c:22250
 #, c-format
 msgid "    Image id: %.*s\n"
 msgstr ""
 
-#: readelf.c:22257
+#: readelf.c:22254
 #, c-format
 msgid "    Linker id: %.*s\n"
 msgstr ""
 
-#: readelf.c:22267 readelf.c:22960
+#: readelf.c:22264 readelf.c:22957
 #, c-format
 msgid "  <corrupt - data size is too small>\n"
 msgstr ""
 
-#: readelf.c:22268
+#: readelf.c:22265
 msgid "corrupt IA64 note: data size is too small\n"
 msgstr ""
 
-#: readelf.c:22435 readelf.c:22444
+#: readelf.c:22432 readelf.c:22441
 #, c-format
 msgid "    Applies to region from %#<PRIx64> to %#<PRIx64>\n"
 msgstr ""
 
-#: readelf.c:22438 readelf.c:22447
+#: readelf.c:22435 readelf.c:22444
 #, c-format
 msgid "    Applies to region from %#<PRIx64>\n"
 msgstr ""
 
-#: readelf.c:22468
+#: readelf.c:22465
 #, c-format
 msgid "    <invalid description size: %lx>\n"
 msgstr ""
 
-#: readelf.c:22469
+#: readelf.c:22466
 #, c-format
 msgid "    <invalid descsz>"
 msgstr ""
 
-#: readelf.c:22495
+#: readelf.c:22492
 #, c-format
 msgid "Gap in build notes detected from %#<PRIx64> to %#<PRIx64>\n"
 msgstr ""
 
-#: readelf.c:22499 readelf.c:22510
+#: readelf.c:22496 readelf.c:22507
 #, c-format
 msgid "    Applies to region from %#<PRIx64>"
 msgstr ""
 
-#: readelf.c:22504 readelf.c:22515
+#: readelf.c:22501 readelf.c:22512
 #, c-format
 msgid " to %#<PRIx64>"
 msgstr ""
 
-#: readelf.c:22521
+#: readelf.c:22518
 #, c-format
 msgid " (%s)"
 msgstr ""
 
-#: readelf.c:22542 readelf.c:22557
+#: readelf.c:22539 readelf.c:22554
 #, c-format
 msgid "corrupt name field in GNU build attribute note: size = %ld\n"
 msgstr ""
 
-#: readelf.c:22543 readelf.c:22558
+#: readelf.c:22540 readelf.c:22555
 msgid "  <corrupt name>"
 msgstr ""
 
-#: readelf.c:22577
+#: readelf.c:22574
 #, c-format
 msgid "unrecognised attribute type in name field: %d\n"
 msgstr ""
 
-#: readelf.c:22578
+#: readelf.c:22575
 msgid "<unknown name type>"
 msgstr ""
 
-#: readelf.c:22588
+#: readelf.c:22585
 msgid "<version>"
 msgstr ""
 
-#: readelf.c:22593
+#: readelf.c:22590
 msgid "<stack prot>"
 msgstr ""
 
-#: readelf.c:22598
+#: readelf.c:22595
 msgid "<relro>"
 msgstr ""
 
-#: readelf.c:22603
+#: readelf.c:22600
 msgid "<stack size>"
 msgstr ""
 
-#: readelf.c:22608
+#: readelf.c:22605
 msgid "<tool>"
 msgstr ""
 
-#: readelf.c:22613
+#: readelf.c:22610
 msgid "<ABI>"
 msgstr ""
 
-#: readelf.c:22618
+#: readelf.c:22615
 msgid "<PIC>"
 msgstr ""
 
-#: readelf.c:22623
+#: readelf.c:22620
 msgid "<short enum>"
 msgstr ""
 
-#: readelf.c:22642
+#: readelf.c:22639
 #, c-format
 msgid "unrecognised byte in name field: %d\n"
 msgstr ""
 
-#: readelf.c:22643
+#: readelf.c:22640
 #, c-format
 msgid "<unknown:_%d>"
 msgstr ""
 
-#: readelf.c:22655
+#: readelf.c:22652
 #, c-format
 msgid "attribute does not have an expected type (%c)\n"
 msgstr ""
 
-#: readelf.c:22659
+#: readelf.c:22656
 #, c-format
 msgid "corrupt name field: namesz: %lu but parsing gets to %td\n"
 msgstr ""
 
-#: readelf.c:22686
+#: readelf.c:22683
 #, c-format
 msgid "corrupt numeric name field: too many bytes in the value: %x\n"
 msgstr ""
 
-#: readelf.c:22775
+#: readelf.c:22772
 #, c-format
 msgid "   description data: "
 msgstr ""
 
-#: readelf.c:22923
+#: readelf.c:22920
 msgid "failed to unpack msgpack contents in NT_AMDGPU_METADATA note"
 msgstr ""
 
-#: readelf.c:22946
+#: readelf.c:22943
 #, c-format
 msgid "   Stack Size: 0x%<PRIx32>\n"
 msgstr ""
 
-#: readelf.c:22948
+#: readelf.c:22945
 #, c-format
 msgid "   Stack allocated: %<PRIx32>\n"
 msgstr ""
 
-#: readelf.c:22950
+#: readelf.c:22947
 #, c-format
 msgid "   Executable: %s\n"
 msgstr ""
 
-#: readelf.c:22961
+#: readelf.c:22958
 msgid "corrupt QNX note: data size is too small\n"
 msgstr ""
 
-#: readelf.c:23106
+#: readelf.c:23103
 msgid "notes"
 msgstr ""
 
-#: readelf.c:23118
+#: readelf.c:23115
 #, c-format
 msgid "Displaying notes found in: %s\n"
 msgstr ""
 
-#: readelf.c:23120
+#: readelf.c:23117
 #, c-format
 msgid ""
 "Displaying notes found at file offset 0x%08<PRIx64> with length "
 "0x%08<PRIx64>:\n"
 msgstr ""
 
-#: readelf.c:23133
+#: readelf.c:23130
 #, c-format
 msgid "Corrupt note: alignment %<PRId64>, expecting 4 or 8\n"
 msgstr ""
 
-#: readelf.c:23139
+#: readelf.c:23136
 #, c-format
 msgid "  %-20s %-10s\tDescription\n"
 msgstr ""
 
-#: readelf.c:23139
+#: readelf.c:23136
 msgid "Owner"
 msgstr ""
 
-#: readelf.c:23139
+#: readelf.c:23136
 msgid "Data size"
 msgstr ""
 
-#: readelf.c:23157 readelf.c:23186
+#: readelf.c:23154 readelf.c:23183
 #, c-format
 msgid "Corrupt note: only %zd byte remains, not enough for a full note\n"
 msgid_plural ""
@@ -12708,25 +12708,25 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:23214
+#: readelf.c:23211
 #, c-format
 msgid "note with invalid namesz and/or descsz found at offset %#tx\n"
 msgstr ""
 
-#: readelf.c:23216
+#: readelf.c:23213
 #, c-format
 msgid " type: %#lx, namesize: %#lx, descsize: %#lx, alignment: %u\n"
 msgstr ""
 
-#: readelf.c:23234
+#: readelf.c:23231
 msgid "Out of memory allocating space for inote name\n"
 msgstr ""
 
-#: readelf.c:23292
+#: readelf.c:23289
 msgid "v850 notes"
 msgstr ""
 
-#: readelf.c:23299
+#: readelf.c:23296
 #, c-format
 msgid ""
 "\n"
@@ -12734,76 +12734,76 @@ msgid ""
 "length %#<PRIx64>:\n"
 msgstr ""
 
-#: readelf.c:23317
+#: readelf.c:23314
 #, c-format
 msgid "Corrupt note: name size is too big: %lx\n"
 msgstr ""
 
-#: readelf.c:23327
+#: readelf.c:23324
 #, c-format
 msgid "corrupt descsz found in note at offset %#tx\n"
 msgstr ""
 
-#: readelf.c:23329 readelf.c:23342
+#: readelf.c:23326 readelf.c:23339
 #, c-format
 msgid " type: %#lx, namesize: %#lx, descsize: %#lx\n"
 msgstr ""
 
-#: readelf.c:23340
+#: readelf.c:23337
 #, c-format
 msgid "corrupt namesz found in note at offset %#zx\n"
 msgstr ""
 
-#: readelf.c:23416
+#: readelf.c:23413
 #, c-format
 msgid "No notes found in linked file '%s'.\n"
 msgstr ""
 
-#: readelf.c:23419
+#: readelf.c:23416
 #, c-format
 msgid "No notes found file.\n"
 msgstr ""
 
-#: readelf.c:23428
+#: readelf.c:23425
 #, c-format
 msgid "  Unknown GNU attribute: %s\n"
 msgstr ""
 
-#: readelf.c:23757
+#: readelf.c:23754
 #, c-format
 msgid "%s: Failed to read file header\n"
 msgstr ""
 
-#: readelf.c:23772
+#: readelf.c:23769
 #, c-format
 msgid ""
 "\n"
 "File: %s\n"
 msgstr ""
 
-#: readelf.c:23933
+#: readelf.c:23930
 #, c-format
 msgid "%s: unable to dump the index as none was found\n"
 msgstr ""
 
-#: readelf.c:23940
+#: readelf.c:23937
 #, c-format
 msgid ""
 "Index of archive %s: (%<PRIu64> entries, %#<PRIx64> bytes in the symbol "
 "table)\n"
 msgstr ""
 
-#: readelf.c:23964
+#: readelf.c:23961
 #, c-format
 msgid "Contents of binary %s at offset "
 msgstr ""
 
-#: readelf.c:23976
+#: readelf.c:23973
 #, c-format
 msgid "%s: end of the symbol table reached before the end of the index\n"
 msgstr ""
 
-#: readelf.c:23995
+#: readelf.c:23992
 #, c-format
 msgid ""
 "%s: %<PRId64> byte remains in the symbol table, but without corresponding "
@@ -12814,36 +12814,36 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: readelf.c:24008
+#: readelf.c:24005
 #, c-format
 msgid "%s: failed to seek back to start of object files in the archive\n"
 msgstr ""
 
-#: readelf.c:24100 readelf.c:24219
+#: readelf.c:24097 readelf.c:24216
 #, c-format
 msgid "Input file '%s' is not readable.\n"
 msgstr ""
 
-#: readelf.c:24128
+#: readelf.c:24125
 #, c-format
 msgid "%s: contains corrupt thin archive: %s\n"
 msgstr ""
 
-#: readelf.c:24146
+#: readelf.c:24143
 #, c-format
 msgid "%s: failed to seek to archive member.\n"
 msgstr ""
 
-#: readelf.c:24211
+#: readelf.c:24208
 msgid "Out of memory allocating file data structure\n"
 msgstr ""
 
-#: readelf.c:24248
+#: readelf.c:24245
 #, c-format
 msgid "File %s is not an archive so its index cannot be displayed.\n"
 msgstr ""
 
-#: readelf.c:24314
+#: readelf.c:24311
 msgid "Nothing to do.\n"
 msgstr ""
 

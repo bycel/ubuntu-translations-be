@@ -8,124 +8,130 @@ msgstr ""
 "Project-Id-Version: packagekit\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-02 15:12+0000\n"
-"PO-Revision-Date: 2025-03-24 16:52+0000\n"
+"PO-Revision-Date: 2025-07-31 15:31+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:19+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-01-07 07:21+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 
 #. TRANSLATORS: this is an atomic transaction
-#. TRANSLATORS: the role is the point of the transaction, e.g. update-packages
-#: ../client/pk-console.c:174 ../client/pk-console.c:607
+#. TRANSLATORS: the role is the point of the transaction,
+#. * e.g. update-packages
+#: client/pkcon/pk-console.c:165 client/pkcon/pk-console.c:575
 msgid "Transaction"
 msgstr "Трансакцыя"
 
 #. TRANSLATORS: this is the time the transaction was started in system timezone
-#: ../client/pk-console.c:176
+#: client/pkcon/pk-console.c:167
 msgid "System time"
 msgstr "Сістэмны час"
 
 #. TRANSLATORS: this is if the transaction succeeded or not
-#: ../client/pk-console.c:178
+#: client/pkcon/pk-console.c:169
 msgid "Succeeded"
 msgstr "Паспяхова"
 
-#: ../client/pk-console.c:178
+#: client/pkgc-util.c:979 client/pkcon/pk-console.c:169
 msgid "True"
 msgstr "Так"
 
-#: ../client/pk-console.c:178
+#: client/pkgc-util.c:980 client/pkcon/pk-console.c:169
 msgid "False"
 msgstr "Не"
 
 #. TRANSLATORS: this is the transactions role, e.g. "update-packages"
-#: ../client/pk-console.c:180
+#: client/pkcon/pk-console.c:171
 msgid "Role"
 msgstr "Роля"
 
 #. TRANSLATORS: this is The duration of the transaction
-#: ../client/pk-console.c:185
+#: client/pkcon/pk-console.c:176
 msgid "Duration"
 msgstr "Працягласць"
 
-#: ../client/pk-console.c:185
+#: client/pkcon/pk-console.c:176
 msgid "(seconds)"
 msgstr "(секунд)"
 
 #. TRANSLATORS: this is The command line used to do the action
-#: ../client/pk-console.c:189
+#: client/pkcon/pk-console.c:180
 msgid "Command line"
 msgstr "Камандны радок"
 
 #. TRANSLATORS: this is the user ID of the user that started the action
-#: ../client/pk-console.c:191
+#: client/pkcon/pk-console.c:182
 msgid "User ID"
 msgstr "Ідэнтыфікатар карыстальніка"
 
 #. TRANSLATORS: this is the username, e.g. hughsie
-#: ../client/pk-console.c:198
+#: client/pkcon/pk-console.c:189
 msgid "Username"
 msgstr "Імя карыстальніка"
 
 #. TRANSLATORS: this is the users real name, e.g. "Richard Hughes"
-#: ../client/pk-console.c:202
+#: client/pkcon/pk-console.c:193
 msgid "Real name"
 msgstr "Сапраўднае імя"
 
-#: ../client/pk-console.c:210
+#. TRANSLATORS: Label for affected packages in transaction
+#. TRANSLATORS: these are packages touched by the transaction
+#: client/pkgc-util.c:1031 client/pkgc-util.c:1050
+#: client/pkcon/pk-console.c:201
 msgid "Affected packages:"
 msgstr "Закранутыя пакеты:"
 
-#: ../client/pk-console.c:212
+#. TRANSLATORS: these are packages touched by the transaction
+#: client/pkcon/pk-console.c:204
 msgid "Affected packages: None"
-msgstr "Закранутыя пакеты: Няма"
+msgstr "Закранутыя пакеты: няма"
 
 #. TRANSLATORS: this is the distro, e.g. Fedora 10
-#: ../client/pk-console.c:247
+#: client/pkcon/pk-console.c:230
 msgid "Distribution"
 msgstr "Дыстрыбутыў"
 
 #. TRANSLATORS: this is type of update, stable or testing
-#: ../client/pk-console.c:249
+#: client/pkcon/pk-console.c:232
 msgid "Type"
 msgstr "Тып"
 
 #. TRANSLATORS: this is any summary text describing the upgrade
 #. TRANSLATORS: this is the summary of the group
-#: ../client/pk-console.c:251 ../client/pk-console.c:290
+#: client/pkcon/pk-console.c:234 client/pkcon/pk-console.c:267
 msgid "Summary"
 msgstr "Зводка"
 
 #. TRANSLATORS: this is the group category name
-#: ../client/pk-console.c:279
+#: client/pkcon/pk-console.c:256
 msgid "Category"
 msgstr "Катэгорыя"
 
 #. TRANSLATORS: this is group identifier
-#: ../client/pk-console.c:281
+#: client/pkcon/pk-console.c:258
 msgid "ID"
 msgstr "Ідэнтыфікатар"
 
 #. TRANSLATORS: this is the parent group
-#: ../client/pk-console.c:284
+#: client/pkcon/pk-console.c:261
 msgid "Parent"
 msgstr "Бацькоўская"
 
 #. TRANSLATORS: this is the name of the parent group
-#: ../client/pk-console.c:287
+#. TRANSLATORS: this is the name of the backend
+#: client/pkcon/pk-console.c:264 client/pkcon/pk-console.c:2340
 msgid "Name"
 msgstr "Назва"
 
 #. TRANSLATORS: this is preferred icon for the group
-#: ../client/pk-console.c:293
+#: client/pkcon/pk-console.c:270
 msgid "Icon"
 msgstr "Значок"
 
 #. TRANSLATORS: this is a header for the package that can be updated
-#: ../client/pk-console.c:340
+#: client/pkcon/pk-console.c:308
 msgid "Details about the update:"
 msgstr "Звесткі пра абнаўленне:"
 
@@ -133,106 +139,116 @@ msgstr "Звесткі пра абнаўленне:"
 #. TRANSLATORS: the package that is being processed
 #. TRANSLATORS: the package that is not signed by a known key
 #. TRANSLATORS: the package name that was trying to be installed
-#: ../client/pk-console.c:346 ../client/pk-console.c:626
-#: ../lib/packagekit-glib2/pk-task-text.c:124
-#: ../lib/packagekit-glib2/pk-task-text.c:206
+#: client/pkcon/pk-console.c:314 client/pkcon/pk-console.c:594
+#: lib/packagekit-glib2/pk-task-text.c:107
+#: lib/packagekit-glib2/pk-task-text.c:178
 msgid "Package"
 msgstr "Пакет"
 
-#. TRANSLATORS: details about the update, any packages that this update updates
-#: ../client/pk-console.c:350
+#. TRANSLATORS: details about the update, any packages that
+#. * this update updates
+#: client/pkcon/pk-console.c:319
 msgid "Updates"
 msgstr "Абнаўляе"
 
-#. TRANSLATORS: details about the update, any packages that this update obsoletes
-#: ../client/pk-console.c:356
+#. TRANSLATORS: details about the update, any packages that
+#. * this update obsoletes
+#: client/pkcon/pk-console.c:326
 msgid "Obsoletes"
 msgstr "Замяшчае"
 
 #. TRANSLATORS: details about the update, the vendor URLs
 #. TRANSLATORS: the vendor (e.g. vmware) that is providing the EULA
-#: ../client/pk-console.c:362 ../lib/packagekit-glib2/pk-task-text.c:209
+#: client/pkcon/pk-console.c:332 lib/packagekit-glib2/pk-task-text.c:181
 msgid "Vendor"
 msgstr "Пастаўшчык"
 
 #. TRANSLATORS: details about the update, the bugzilla URLs
-#: ../client/pk-console.c:368
+#: client/pkcon/pk-console.c:338
 msgid "Bugzilla"
 msgstr "Bugzilla"
 
 #. TRANSLATORS: details about the update, the CVE URLs
-#: ../client/pk-console.c:374
+#: client/pkcon/pk-console.c:344
 msgid "CVE"
 msgstr "CVE"
 
-#. TRANSLATORS: details about the update, if the package requires a restart
-#: ../client/pk-console.c:379
+#. TRANSLATORS: details about the update, if the package
+#. * requires a restart
+#: client/pkcon/pk-console.c:350
 msgid "Restart"
 msgstr "Перазапуск"
 
-#. TRANSLATORS: details about the update, any description of the update
-#: ../client/pk-console.c:383
+#. TRANSLATORS: details about the update, any description of
+#. * the update
+#: client/pkcon/pk-console.c:355
 msgid "Update text"
 msgstr "Тэкст да абнаўлення"
 
-#. TRANSLATORS: details about the update, the changelog for the package
-#: ../client/pk-console.c:387
+#. TRANSLATORS: details about the update, the changelog for
+#. * the package
+#: client/pkcon/pk-console.c:360
 msgid "Changes"
 msgstr "Змены"
 
-#. TRANSLATORS: details about the update, the ongoing state of the update
-#: ../client/pk-console.c:391
+#. TRANSLATORS: details about the update, the ongoing state
+#. * of the update
+#: client/pkcon/pk-console.c:365
 msgid "State"
 msgstr "Стан"
 
-#. TRANSLATORS: details about the update, date the update was issued
-#: ../client/pk-console.c:395
+#. TRANSLATORS: details about the update, date the update
+#. * was issued
+#: client/pkcon/pk-console.c:370
 msgid "Issued"
 msgstr "Выдадзены"
 
-#. TRANSLATORS: details about the update, date the update was updated
+#. TRANSLATORS: details about the update, date the update
+#. * was updated
 #. TRANSLATORS: The action of the package, in past tense
-#: ../client/pk-console.c:399 ../lib/packagekit-glib2/pk-enum.c:1171
+#: client/pkcon/pk-console.c:375 lib/packagekit-glib2/pk-enum.c:1107
 msgid "Updated"
 msgstr "Абноўлена"
 
 #. TRANSLATORS: if the repo is enabled
-#: ../client/pk-console.c:435
+#: client/pkcon/pk-console.c:397
 msgid "Enabled"
 msgstr "Уключана"
 
 #. TRANSLATORS: if the repo is disabled
-#: ../client/pk-console.c:438
+#: client/pkcon/pk-console.c:400
 msgid "Disabled"
 msgstr "Адключана"
 
 #. TRANSLATORS: a package requires the system to be restarted
-#: ../client/pk-console.c:470
+#: client/pkcon/pk-console.c:429
 msgid "System restart required by:"
 msgstr "Патрабуе перазапуску сістэмы:"
 
 #. TRANSLATORS: a package requires the session to be restarted
-#: ../client/pk-console.c:473
+#: client/pkcon/pk-console.c:432
 msgid "Session restart required:"
 msgstr "Патрабуе перазапуску сеанса:"
 
-#. TRANSLATORS: a package requires the system to be restarted due to a security update
-#: ../client/pk-console.c:476
+#. TRANSLATORS: a package requires the system to be restarted
+#. * due to a security update
+#: client/pkcon/pk-console.c:436
 msgid "System restart (security) required by:"
 msgstr "Патрабуе перазапуску сістэмы (бяспека):"
 
-#. TRANSLATORS: a package requires the session to be restarted due to a security update
-#: ../client/pk-console.c:479
+#. TRANSLATORS: a package requires the session to be restarted
+#. * due to a security update
+#: client/pkcon/pk-console.c:440
 msgid "Session restart (security) required:"
 msgstr "Патрабуе перазапуску сеанса (бяспека):"
 
 #. TRANSLATORS: a package requires the application to be restarted
-#: ../client/pk-console.c:482
+#: client/pkcon/pk-console.c:443
 msgid "Application restart required by:"
 msgstr "Патрабуе перазапуску праграмы:"
 
 #. TRANSLATORS: This a list of details about the package
-#: ../client/pk-console.c:517
+#: client/pkcon/pk-console.c:488
 msgid "Package description"
 msgstr "Апісанне пакета"
 
@@ -242,67 +258,71 @@ msgid "Message:"
 msgstr ""
 
 #. TRANSLATORS: This where the package has no files
-#: ../client/pk-console.c:569
+#: client/pkcon/pk-console.c:509
 msgid "No files"
 msgstr "Няма файлаў"
 
 #. TRANSLATORS: This a list files contained in the package
-#: ../client/pk-console.c:574
+#: client/pkcon/pk-console.c:514
 msgid "Package files"
 msgstr "Файлы пакета"
 
 #. TRANSLATORS: the percentage complete of the transaction
-#: ../client/pk-console.c:642
+#: client/pkcon/pk-console.c:610
 msgid "Percentage"
 msgstr "Працэнт"
 
 #. TRANSLATORS: the status of the transaction (e.g. downloading)
-#: ../client/pk-console.c:660
+#: client/pkcon/pk-console.c:633
 msgid "Status"
 msgstr "Стан"
 
 #. TRANSLATORS: the results from the transaction
-#: ../client/pk-console.c:692
+#: client/pkcon/pk-console.c:671
 msgid "Results:"
 msgstr "Вынікі:"
 
-#. TRANSLATORS: we failed to get any results, which is pretty fatal in my book
-#: ../client/pk-console.c:699 ../client/pk-console.c:855
+#. TRANSLATORS: we failed to get any results, which is pretty
+#. * fatal in my book
+#: client/pkcon/pk-console.c:677 client/pkcon/pk-console.c:838
 msgid "Fatal error"
 msgstr "Фатальная памылка"
 
-#. TRANSLATORS: the user asked to update everything, but there is nothing that can be updated
-#: ../client/pk-console.c:716
+#. TRANSLATORS: the user asked to update everything,
+#. * but there is nothing that can be updated
+#: client/pkcon/pk-console.c:702
 msgid "There are no packages to update."
 msgstr "Няма пакетаў для абнаўлення."
 
+#. TRANSLATORS: the transaction failed in a way we could
+#. * not expect
 #. TRANSLATORS: the transaction failed in a way we could not expect
-#: ../client/pk-console.c:719
-#: ../contrib/command-not-found/pk-command-not-found.c:716
+#: client/pkcon/pk-console.c:706
+#: contrib/command-not-found/pk-command-not-found.c:670
 msgid "The transaction failed"
 msgstr "Не ўдалося выканаць трансакцыю"
 
 #. TRANSLATORS: print a message when there are no updates
-#: ../client/pk-console.c:748
+#: client/pkcon/pk-console.c:735
 msgid "There are no updates available at this time."
 msgstr "У гэты час абнаўленняў няма."
 
-#: ../client/pk-console.c:771
+#: client/pkcon/pk-console.c:758
 msgid "There are no upgrades available at this time."
 msgstr "У гэты час абнаўленняў няма."
 
 #. TRANSLATORS: a package needs to restart their system
-#: ../client/pk-console.c:838
+#: client/pkcon/pk-console.c:820
 msgid "Please restart the computer to complete the update."
 msgstr "Перазапусціце камп'ютар, каб завяршыць абнаўленне."
 
 #. TRANSLATORS: a package needs to restart the session
-#: ../client/pk-console.c:841
+#: client/pkcon/pk-console.c:823
 msgid "Please logout and login to complete the update."
 msgstr "Выйдзіце з сеанса і ўвайдзіце зноў, каб завяршыць абнаўленне."
 
 #. TRANSLATORS: a package needs to restart their system (due to security)
-#: ../client/pk-console.c:844
+#: client/pkcon/pk-console.c:826
 msgid ""
 "Please restart the computer to complete the update as important security "
 "updates have been installed."
@@ -311,7 +331,7 @@ msgstr ""
 "бяспекі."
 
 #. TRANSLATORS: a package needs to restart the session (due to security)
-#: ../client/pk-console.c:847
+#: client/pkcon/pk-console.c:829
 msgid ""
 "Please logout and login to complete the update as important security updates "
 "have been installed."
@@ -319,8 +339,10 @@ msgstr ""
 "Выйдзіце з сеанса і ўвайдзіце зноў, каб завяршыць усталяванне важных "
 "абнаўленняў бяспекі."
 
-#. TRANSLATORS: The user used 'pkcon install dave.rpm' rather than 'pkcon install-local dave.rpm'
-#: ../client/pk-console.c:887
+#. TRANSLATORS: The user used
+#. * 'pkcon install dave.rpm' rather than
+#. * 'pkcon install-local dave.rpm'
+#: client/pkcon/pk-console.c:1024
 #, c-format
 msgid ""
 "Expected package name, actually got file. Try using 'pkcon install-local %s' "
@@ -329,73 +351,81 @@ msgstr ""
 "Чакалася назва пакета, але атрыманы файл. Паспрабуйце выкарыстаць каманду "
 "«pkcon install-local %s»."
 
-#. TRANSLATORS: There was an error getting the list of files for the package. The detailed error follows
-#: ../client/pk-console.c:900
+#. TRANSLATORS: There was an error finding a package
+#. * for installation. The detailed error follows.
+#: client/pkcon/pk-console.c:1059
 #, c-format
 msgid "This tool could not find any available package: %s"
 msgstr "Інструменту не ўдалося знайсці ні аднаго даступнага пакета: %s"
 
-#. TRANSLATORS: There was an error getting the list of files for the package. The detailed error follows
-#: ../client/pk-console.c:929
+#. TRANSLATORS: There was an error getting the list
+#. * of files for the package. The detailed error follows
+#: client/pkcon/pk-console.c:1113
 #, c-format
 msgid "This tool could not find the installed package: %s"
 msgstr "Інструменту не ўдалося знайсці ўсталяваны пакет: %s"
 
-#. TRANSLATORS: There was an error getting the list of files for the package. The detailed error follows
-#: ../client/pk-console.c:957 ../client/pk-console.c:992
+#. TRANSLATORS: There was an error getting the list
+#. * of files for the package. The detailed error follows
+#: client/pkcon/pk-console.c:1142 client/pkcon/pk-console.c:1173
 #, c-format
 msgid "This tool could not find the package: %s"
 msgstr "Інструменту не ўдалося знайсці пакет: %s"
 
 #. TRANSLATORS: there are no updates, so nothing to do
-#: ../client/pk-console.c:1036
+#: client/pkcon/pk-console.c:1220
 msgid "No packages require updating to newer versions."
 msgstr "Няма пакетаў, якім патрабуецца абнаўленне да больш новай версіі."
 
-#. TRANSLATORS: There was an error getting the list of files for the package. The detailed error follows
-#. TRANSLATORS: There was an error getting the dependencies for the package. The detailed error follows
-#. TRANSLATORS: There was an error getting the details about the package. The detailed error follows
-#. TRANSLATORS: The package name was not found in any software sources. The detailed error follows
-#: ../client/pk-console.c:1066 ../client/pk-console.c:1098
-#: ../client/pk-console.c:1126 ../client/pk-console.c:1154
-#: ../client/pk-console.c:1182
+#. TRANSLATORS: There was an error getting the list
+#. * of files for the package. The detailed error follows
+#. TRANSLATORS: There was an error getting the
+#. * dependencies for the package. The detailed error follows
+#. TRANSLATORS: There was an error getting the
+#. * details about the package. The detailed error follows
+#. TRANSLATORS: The package name was not found in
+#. * any software repositories. The detailed error follows
+#: client/pkcon/pk-console.c:1258 client/pkcon/pk-console.c:1287
+#: client/pkcon/pk-console.c:1326 client/pkcon/pk-console.c:1385
+#: client/pkcon/pk-console.c:1413
 #, c-format
 msgid "This tool could not find all the packages: %s"
 msgstr "Інструменту не ўдалося знайсці ўсе пакеты: %s"
 
-#. TRANSLATORS: This is when the daemon crashed, and we are up shit creek without a paddle
-#: ../client/pk-console.c:1211
+#. TRANSLATORS: This is when the daemon crashed, and we are up
+#. * shit creek without a paddle
+#: client/pkgc-context.c:123 client/pkcon/pk-console.c:1440
 msgid "The daemon crashed mid-transaction!"
 msgstr "Дэман аварыйна завяршыў працу падчас выканання трансакцыі!"
 
 #. TRANSLATORS: This is the header to the --help menu
-#: ../client/pk-console.c:1245
+#: client/pkcon/pk-console.c:1472
 msgid "PackageKit Console Interface"
 msgstr "Кансольны інтэрфейс PackageKit"
 
 #. these are commands we can use with pkcon
-#: ../client/pk-console.c:1247
+#: client/pkcon/pk-console.c:1474
 msgid "Subcommands:"
 msgstr "Падкаманды:"
 
-#. TRANSLATORS: we keep a database updated with the time that an action was last executed
-#: ../client/pk-console.c:1334
+#. TRANSLATORS: we keep a database updated with the time that an
+#. * action was last executed
+#: client/pkgc-query.c:895 client/pkcon/pk-console.c:1572
 msgid "Failed to get the time since this action was last completed"
 msgstr "Не ўдалося атрымаць час, калі было выканана гэта дзеянне"
 
 #. TRANSLATORS: command line argument, just show the version string
-#: ../client/pk-console.c:1498 ../client/pk-monitor.c:380
+#: client/pkcon/pk-console.c:1706 client/pkcon/pk-monitor.c:330
 msgid "Show the program version and exit"
 msgstr "Паказаць версію праграмы і выйсці"
 
 #. TRANSLATORS: command line argument, use a filter to narrow down results
-#: ../client/pk-console.c:1501
+#: client/pkcon/pk-console.c:1709
 msgid "Set the filter, e.g. installed"
 msgstr "Задаць значэнне фільтра, напрыклад «installed»"
 
 #. command line argument, do we ask questions
-#: ../client/pk-console.c:1504
-#: ../contrib/debuginfo-install/pk-debuginfo-install.c:525
+#: client/pkcon/pk-console.c:1712
 msgid "Install the packages without asking for confirmation"
 msgstr "Усталяваць пакеты без пацвярджэння"
 
@@ -405,14 +435,14 @@ msgid "Prepare the transaction by downloading pakages only"
 msgstr ""
 
 #. TRANSLATORS: command line argument, this command is not a priority
-#: ../client/pk-console.c:1510
+#: client/pkgctl.c:95 client/pkcon/pk-console.c:1725
 msgid ""
 "Run the command using idle network bandwidth and also using less power"
 msgstr ""
 "Выконваць каманду калі сетка не задзейнічана і спажываючы менш энергіі"
 
 #. TRANSLATORS: command line argument, just output without fancy formatting
-#: ../client/pk-console.c:1513
+#: client/pkcon/pk-console.c:1728
 msgid ""
 "Print to screen a machine readable output, rather than using animated widgets"
 msgstr ""
@@ -424,33 +454,38 @@ msgid "The maximum metadata cache age. Use -1 for 'never'."
 msgstr ""
 
 #. TRANSLATORS: we failed to contact the daemon
-#: ../client/pk-console.c:1548
+#: client/pkcon/pk-console.c:1769
 msgid "Failed to parse command line"
 msgstr "Не ўдалося разабраць аргументы каманднага радка"
 
 #. TRANSLATORS: we failed to contact the daemon
-#: ../client/pk-console.c:1559
+#: client/pkcon/pk-console.c:1779
 msgid "Failed to contact PackageKit"
 msgstr "Не ўдалося звязацца з PackageKit"
 
-#. TRANSLATORS: The user specified an incorrect filter
-#: ../client/pk-console.c:1614
+#. TRANSLATORS: The network settings could not be sent
+#: client/pkcon/pk-console.c:1665
 msgid "The proxy could not be set"
 msgstr "Не ўдалося задаць параметры проксі-сервера"
 
-#. TRANSLATORS: The user specified an incorrect filter
-#: ../client/pk-console.c:1626
+#. TRANSLATORS: The user specified
+#. * an incorrect filter
+#: client/pkgctl.c:254 client/pkcon/pk-console.c:1842
 msgid "The filter specified was invalid"
 msgstr "Указаны няправільны фільтр"
 
-#. TRANSLATORS: a search type can be name, details, file, etc
-#: ../client/pk-console.c:1648
+#. TRANSLATORS: a search type can
+#. * be name, details, file, etc
+#: client/pkcon/pk-console.c:1868
 msgid "A search type is required, e.g. name"
 msgstr "Патрабуецца ўказаць тып пошуку, напрыклад name"
 
-#. TRANSLATORS: the user needs to provide a search term
-#: ../client/pk-console.c:1655 ../client/pk-console.c:1667
-#: ../client/pk-console.c:1679 ../client/pk-console.c:1691
+#. TRANSLATORS: the user
+#. * needs to provide a search term
+#. TRANSLATORS: the user needs
+#. * to provide a search term
+#: client/pkcon/pk-console.c:1878 client/pkcon/pk-console.c:1895
+#: client/pkcon/pk-console.c:1912 client/pkcon/pk-console.c:1929
 msgid "A search term is required"
 msgstr "Патрабуецца ўказаць слова для пошуку"
 
@@ -459,79 +494,95 @@ msgstr "Патрабуецца ўказаць слова для пошуку"
 msgid "Invalid search type"
 msgstr "Памылковы тып пошуку"
 
-#. TRANSLATORS: the user did not specify what they wanted to install
-#: ../client/pk-console.c:1707
+#. TRANSLATORS: the user did not
+#. * specify what they wanted to install
+#: client/pkcon/pk-console.c:1955
 msgid "A package name to install is required"
 msgstr "Патрабуецца ўказаць назву пакета, які неабходна ўсталяваць"
 
-#. TRANSLATORS: the user did not specify what they wanted to install
-#: ../client/pk-console.c:1716
+#. TRANSLATORS: the user did not
+#. * specify what they wanted to install
+#: client/pkcon/pk-console.c:1969
 msgid "A filename to install is required"
 msgstr "Патрабуецца ўказаць назву файла, які неабходна ўсталяваць"
 
-#. TRANSLATORS: geeky error, 99.9999% of users won't see this
-#: ../client/pk-console.c:1727
+#. TRANSLATORS: geeky error, real
+#. * users won't see this
+#: client/pkcon/pk-console.c:1985
 msgid "A type, key_id and package_id are required"
 msgstr "Патрабуецца ўказаць тып, ідэнтыфікатар ключа і ідэнтыфікатар пакета"
 
-#. TRANSLATORS: the user did not specify what they wanted to remove
-#: ../client/pk-console.c:1738
+#. TRANSLATORS: the user did not
+#. * specify what they wanted to remove
+#: client/pkcon/pk-console.c:2003
 msgid "A package name to remove is required"
 msgstr "Патрабуецца ўказаць назву пакета, які неабходна выдаліць"
 
-#. TRANSLATORS: the user did not specify anything about what to download or where
-#: ../client/pk-console.c:1747
+#. TRANSLATORS: the user did not
+#. * specify anything about what to
+#. * download or where
+#: client/pkcon/pk-console.c:2016
 msgid ""
 "A destination directory and the package names to download are required"
 msgstr ""
 "Патрабуецца ўказаць каталог прызначэння і назвы пакетаў, якія неабходна "
 "спампаваць"
 
-#. TRANSLATORS: the directory does not exist, so we can't continue
-#: ../client/pk-console.c:1754
+#. TRANSLATORS: the directory does
+#. * not exist, so we can't continue
+#: client/pkcon/pk-console.c:2026
 msgid "Directory not found"
 msgstr "Каталог не знойдзены"
 
-#. TRANSLATORS: geeky error, 99.9999% of users won't see this
-#: ../client/pk-console.c:1763
+#. TRANSLATORS: geeky error, real
+#. * users won't see this
+#: client/pkcon/pk-console.c:2041
 msgid "A licence identifier (eula-id) is required"
 msgstr "Патрабуецца ўказаць ідэнтыфікатар ліцэнзіі (eula-id)"
 
-#. TRANSLATORS: The user did not specify a package name
-#: ../client/pk-console.c:1782
+#. TRANSLATORS: The user did not
+#. * specify a package name
+#: client/pkcon/pk-console.c:2067
 msgid "A package name to resolve is required"
 msgstr "Патрабуецца ўказаць назву пакета для развязвання"
 
-#. TRANSLATORS: The user did not specify a repository (software source) name
-#: ../client/pk-console.c:1793 ../client/pk-console.c:1804
+#. TRANSLATORS: The user did not
+#. * specify a repository name
+#: client/pkcon/pk-console.c:2084 client/pkcon/pk-console.c:2101
 msgid "A repository name is required"
 msgstr "Патрабуецца ўказаць назву рэпазіторыя"
 
-#. TRANSLATORS: The user didn't provide any data
-#: ../client/pk-console.c:1815
+#: client/pkcon/pk-console.c:2117
 msgid "A repo name, parameter and value are required"
 msgstr "Патрабуецца ўказаць назву сховішча, параметр і значэнне"
 
 #. TRANSLATORS: The user didn't specify what action to use
-#: ../client/pk-console.c:1832
+#. TRANSLATORS: The user didn't
+#. * specify what action to use
+#: client/pkgc-query.c:942 client/pkcon/pk-console.c:2161
 msgid "An action, e.g. 'update-packages' is required"
 msgstr "Патрабуецца ўказаць дзеянне, напрыклад «update-packages»"
 
 #. TRANSLATORS: The user specified an invalid action
-#: ../client/pk-console.c:1839
+#. TRANSLATORS: The user specified
+#. * an invalid action
+#: client/pkgc-query.c:949 client/pkcon/pk-console.c:2171
 msgid "A correct role is required"
 msgstr "Патрабуецца ўказаць правільную ролю"
 
-#. TRANSLATORS: The user did not provide a package name
-#. TRANSLATORS: This is when the user fails to supply the package name
-#: ../client/pk-console.c:1849 ../client/pk-console.c:1863
-#: ../client/pk-console.c:1872 ../client/pk-console.c:1892
-#: ../client/pk-console.c:1901 ../client/pk-generate-pack.c:315
+#. TRANSLATORS: The user did not
+#. * provide a package name
+#: client/pkcon/pk-console.c:2191 client/pkcon/pk-console.c:2208
+#: client/pkcon/pk-console.c:2220 client/pkcon/pk-console.c:2250
+#: client/pkcon/pk-console.c:2283
 msgid "A package name is required"
 msgstr "Патрабуецца ўказаць назву пакета"
 
-#. TRANSLATORS: each package "provides" certain things, e.g. mime(gstreamer-decoder-mp3), the user didn't specify it
-#: ../client/pk-console.c:1881
+#. TRANSLATORS: each package
+#. * "provides" certain things, e.g.
+#. * mime(gstreamer-decoder-mp3),
+#. * the user didn't specify it
+#: client/pkcon/pk-console.c:2234
 msgid "A package provide string is required"
 msgstr "Патрабуецца ўказаць радок зместу (provide) пакета"
 
@@ -546,24 +597,27 @@ msgid "An upgrade type is required, e.g. 'minimal', 'default' or 'complete'"
 msgstr ""
 
 #. TRANSLATORS: The user did not provide a distro name
-#: ../client/pk-console.c:2028
+#: client/pkcon/pk-console.c:2418
 msgid "You need to specify a list file to create"
 msgstr "Патрабуецца ўказаць файл спіса, які неабходна стварыць"
 
-#. TRANSLATORS: There was an error getting the list of packages. The filename follows
-#: ../client/pk-console.c:2037
+#. TRANSLATORS: There was an error
+#. * getting the list of packages.
+#. * The filename follows
+#: client/pkcon/pk-console.c:2431
 #, c-format
 msgid "File already exists: %s"
 msgstr "Файл ужо існуе: %s"
 
-#. TRANSLATORS: The user tried to use an unsupported option on the command line
-#: ../client/pk-console.c:2053
+#. TRANSLATORS: The user tried to use an
+#. * unsupported option on the command line
+#: client/pkcon/pk-console.c:2449
 #, c-format
 msgid "Option '%s' is not supported"
 msgstr "Каманда «%s» не падтрымліваецца"
 
 #. TRANSLATORS: Generic failure of what they asked to do
-#: ../client/pk-console.c:2063
+#: client/pkcon/pk-console.c:2459
 msgid "Command failed"
 msgstr "Не ўдалося выканаць каманду"
 
@@ -640,7 +694,7 @@ msgstr ""
 #. TRANSLATORS: This is when the temporary directory cannot be created, the directory name follows
 #: ../client/pk-generate-pack.c:408
 msgid "Failed to create directory:"
-msgstr "Памылка стварэньня дырэкторыі:"
+msgstr "Не ўдалося стварыць каталог:"
 
 #. TRANSLATORS: This is when the list of packages from the remote computer cannot be opened
 #: ../client/pk-generate-pack.c:420
@@ -675,16 +729,16 @@ msgstr ""
 msgid "Failed to create '%s': %s"
 msgstr ""
 
-#: ../client/pk-monitor.c:293
+#: client/pkgc-monitor.c:381 client/pkcon/pk-monitor.c:267
 msgid "Failed to get daemon state"
 msgstr "Не ўдалося атрымаць стан дэмана"
 
-#: ../client/pk-monitor.c:358
+#: client/pkgc-monitor.c:439 client/pkcon/pk-monitor.c:310
 msgid "Failed to get properties"
 msgstr "Не ўдалося атрымаць уласцівасці"
 
 #. TRANSLATORS: this is a program that monitors PackageKit
-#: ../client/pk-monitor.c:399
+#: client/pkcon/pk-monitor.c:341
 msgid "PackageKit Monitor"
 msgstr "Манітор PackageKit"
 
@@ -748,96 +802,96 @@ msgid "Downloading details about the software sources."
 msgstr ""
 
 #. TRANSLATORS: downloading file lists so we can search
-#: ../contrib/command-not-found/pk-command-not-found.c:446
+#: contrib/command-not-found/pk-command-not-found.c:431
 msgid "Downloading filelists (this may take some time to complete)."
 msgstr "Спампоўванне спісаў файлаў (гэта зойме некаторы час)."
 
 #. TRANSLATORS: waiting for native lock
-#: ../contrib/command-not-found/pk-command-not-found.c:450
+#: contrib/command-not-found/pk-command-not-found.c:435
 msgid "Waiting for package manager lock."
 msgstr "Чаканне блакіравання кіраўніка пакетаў."
 
 #. TRANSLATORS: loading package cache so we can search
-#: ../contrib/command-not-found/pk-command-not-found.c:454
+#: contrib/command-not-found/pk-command-not-found.c:439
 msgid "Loading list of packages."
 msgstr "Загрузка спіса пакетаў."
 
 #. TRANSLATORS: we failed to find the package, this shouldn't happen
-#: ../contrib/command-not-found/pk-command-not-found.c:519
+#: contrib/command-not-found/pk-command-not-found.c:499
 msgid "Failed to search for file"
 msgstr "Не ўдалося знайсці файл"
 
 #. TRANSLATORS: the transaction failed in a way we could not expect
-#: ../contrib/command-not-found/pk-command-not-found.c:532
+#: contrib/command-not-found/pk-command-not-found.c:511
 msgid "Getting the list of files failed"
 msgstr "Не ўдалося атрымаць спіс файлаў"
 
 #. TRANSLATORS: we failed to launch the executable, the error follows
-#: ../contrib/command-not-found/pk-command-not-found.c:679
+#: contrib/command-not-found/pk-command-not-found.c:643
 msgid "Failed to launch:"
 msgstr "Не ўдалося запусціць:"
 
 #. TRANSLATORS: we failed to install the package
-#: ../contrib/command-not-found/pk-command-not-found.c:707
+#: contrib/command-not-found/pk-command-not-found.c:662
 msgid "Failed to install packages"
 msgstr "Не ўдалося ўсталяваць пакет"
 
 #. TRANSLATORS: the prefix of all the output telling the user
 #. * why it's not executing. NOTE: this is lowercase to mimic
 #. * the style of bash itself -- apologies
-#: ../contrib/command-not-found/pk-command-not-found.c:841
+#: contrib/command-not-found/pk-command-not-found.c:781
 msgid "command not found"
 msgstr "каманда не знойдзена"
 
 #. TRANSLATORS: tell the user what we think the command is
-#: ../contrib/command-not-found/pk-command-not-found.c:858
+#: contrib/command-not-found/pk-command-not-found.c:802
 msgid "Similar command is:"
 msgstr "Падобная каманда:"
 
 #. TRANSLATORS: Ask the user if we should run the similar command
-#: ../contrib/command-not-found/pk-command-not-found.c:871
+#: contrib/command-not-found/pk-command-not-found.c:815
 msgid "Run similar command:"
 msgstr "Выканайце падобную каманду:"
 
 #. TRANSLATORS: show the user a list of commands that they could have meant
 #. TRANSLATORS: show the user a list of commands we could run
-#: ../contrib/command-not-found/pk-command-not-found.c:883
-#: ../contrib/command-not-found/pk-command-not-found.c:892
+#: contrib/command-not-found/pk-command-not-found.c:827
+#: contrib/command-not-found/pk-command-not-found.c:836
 msgid "Similar commands are:"
 msgstr "Падобныя каманды:"
 
 #. TRANSLATORS: ask the user to choose a file to run
-#: ../contrib/command-not-found/pk-command-not-found.c:899
+#: contrib/command-not-found/pk-command-not-found.c:843
 msgid "Please choose a command to run"
 msgstr "Выберыце каманду для запуску"
 
 #. TRANSLATORS: tell the user what package provides the command
-#: ../contrib/command-not-found/pk-command-not-found.c:918
+#: contrib/command-not-found/pk-command-not-found.c:863
 msgid "The package providing this file is:"
 msgstr "Файл пастаўляецца з гэтым пакетам:"
 
 #. TRANSLATORS: as the user if we want to install a package to provide the command
-#: ../contrib/command-not-found/pk-command-not-found.c:925
+#: contrib/command-not-found/pk-command-not-found.c:870
 #, c-format
 msgid "Install package '%s' to provide command '%s'?"
 msgstr "Усталяваць пакет «%s», які забяспечыць выкананне каманды «%s»?"
 
 #. TRANSLATORS: Show the user a list of packages that provide this command
-#: ../contrib/command-not-found/pk-command-not-found.c:948
+#: contrib/command-not-found/pk-command-not-found.c:893
 msgid "Packages providing this file are:"
 msgstr "Файл пастаўляецца з гэтымі пакетамі:"
 
 #. TRANSLATORS: Show the user a list of packages that they can install to provide this command
-#: ../contrib/command-not-found/pk-command-not-found.c:958
+#: contrib/command-not-found/pk-command-not-found.c:903
 msgid "Suitable packages are:"
 msgstr "Прыдатныя пакеты:"
 
 #. TRANSLATORS: ask the user to choose a file to install
-#: ../contrib/command-not-found/pk-command-not-found.c:966
+#: contrib/command-not-found/pk-command-not-found.c:911
 msgid "Please choose a package to install"
 msgstr "Выберыце пакет для ўсталявання"
 
-#: ../contrib/command-not-found/pk-command-not-found.c:968
+#: contrib/command-not-found/pk-command-not-found.c:913
 msgid "User aborted selection"
 msgstr "Выбар перарваны карыстальнікам"
 
@@ -1003,11 +1057,8 @@ msgstr ""
 msgid "Not installing packages in simulate mode"
 msgstr ""
 
-#. TRANSLATORS: we are now installing the debuginfo packages we found earlier
 #. TRANSLATORS: transaction state, installing packages
-#: ../contrib/debuginfo-install/pk-debuginfo-install.c:864
-#: ../lib/packagekit-glib2/pk-console-shared.c:337
-#, c-format
+#: lib/packagekit-glib2/pk-console-shared.c:234
 msgid "Installing packages"
 msgstr "Усталяванне пакетаў"
 
@@ -1137,228 +1188,231 @@ msgstr ""
 msgid "PackageKit Service Pack"
 msgstr ""
 
-#: ../lib/packagekit-glib2/pk-console-shared.c:67
+#: lib/packagekit-glib2/pk-console-shared.c:73
 #, c-format
 msgid "Please enter a number from 1 to %i: "
 msgstr "Увядзіце лік ад 1 да %i: "
 
-#. TRANSLATORS: more than one package could be found that matched, to follow is a list of possible packages
-#: ../lib/packagekit-glib2/pk-console-shared.c:235
+#. TRANSLATORS: more than one package could be found that matched,
+#. * to follow is a list of possible packages
+#: client/pkgc-util.c:1142 client/pkcon/pk-console.c:932
 msgid "More than one package matches:"
 msgstr "Знойдзена больш за адзін пакет:"
 
+#. prompt user for selection
 #. TRANSLATORS: This finds out which package in the list to use
-#: ../lib/packagekit-glib2/pk-console-shared.c:246
+#: client/pkgc-util.c:1154 client/pkcon/pk-console.c:944
+#, c-format
 msgid "Please choose the correct package: "
 msgstr "Выберыце патрэбны пакет: "
 
 #. TRANSLATORS: This is when the transaction status is not known
-#: ../lib/packagekit-glib2/pk-console-shared.c:305
+#: lib/packagekit-glib2/pk-console-shared.c:202
 msgid "Unknown state"
 msgstr "Невядомы стан"
 
 #. TRANSLATORS: transaction state, the daemon is in the process of starting
-#: ../lib/packagekit-glib2/pk-console-shared.c:309
+#: lib/packagekit-glib2/pk-console-shared.c:206
 msgid "Starting"
 msgstr "Запуск"
 
 #. TRANSLATORS: transaction state, the transaction is waiting for another to complete
-#: ../lib/packagekit-glib2/pk-console-shared.c:313
+#: lib/packagekit-glib2/pk-console-shared.c:210
 msgid "Waiting in queue"
 msgstr "Чаканне чаргі"
 
 #. TRANSLATORS: transaction state, just started
-#: ../lib/packagekit-glib2/pk-console-shared.c:317
+#: lib/packagekit-glib2/pk-console-shared.c:214
 msgid "Running"
 msgstr "Выконваецца"
 
 #. TRANSLATORS: transaction state, is querying data
-#: ../lib/packagekit-glib2/pk-console-shared.c:321
+#: lib/packagekit-glib2/pk-console-shared.c:218
 msgid "Querying"
 msgstr "Запытваецца"
 
 #. TRANSLATORS: transaction state, getting data from a server
-#: ../lib/packagekit-glib2/pk-console-shared.c:325
+#: lib/packagekit-glib2/pk-console-shared.c:222
 msgid "Getting information"
 msgstr "Атрыманне інфармацыі"
 
 #. TRANSLATORS: transaction state, removing packages
-#: ../lib/packagekit-glib2/pk-console-shared.c:329
+#: lib/packagekit-glib2/pk-console-shared.c:226
 msgid "Removing packages"
 msgstr "Выдаленне пакетаў"
 
 #. TRANSLATORS: transaction state, downloading package files
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-console-shared.c:333
-#: ../lib/packagekit-glib2/pk-enum.c:1316
+#: lib/packagekit-glib2/pk-console-shared.c:230
+#: lib/packagekit-glib2/pk-enum.c:1258
 msgid "Downloading packages"
 msgstr "Спампоўванне пакетаў"
 
 #. TRANSLATORS: transaction state, refreshing internal lists
-#: ../lib/packagekit-glib2/pk-console-shared.c:341
+#: lib/packagekit-glib2/pk-console-shared.c:238
 msgid "Refreshing software list"
 msgstr "Абнаўленне спіса праграм"
 
 #. TRANSLATORS: transaction state, installing updates
-#: ../lib/packagekit-glib2/pk-console-shared.c:345
+#: lib/packagekit-glib2/pk-console-shared.c:242
 msgid "Installing updates"
 msgstr "Усталяванне абнаўленняў"
 
 #. TRANSLATORS: transaction state, removing old packages, and cleaning config files
-#: ../lib/packagekit-glib2/pk-console-shared.c:349
+#: lib/packagekit-glib2/pk-console-shared.c:246
 msgid "Cleaning up packages"
 msgstr "Ачыстка пакетаў"
 
 #. TRANSLATORS: transaction state, obsoleting old packages
-#: ../lib/packagekit-glib2/pk-console-shared.c:353
+#: lib/packagekit-glib2/pk-console-shared.c:250
 msgid "Obsoleting packages"
 msgstr "Замяшчэнне пакетаў"
 
 #. TRANSLATORS: transaction state, checking the transaction before we do it
-#: ../lib/packagekit-glib2/pk-console-shared.c:357
+#: lib/packagekit-glib2/pk-console-shared.c:254
 msgid "Resolving dependencies"
 msgstr "Развязванне залежнасцей"
 
 #. TRANSLATORS: transaction state, checking if we have all the security keys for the operation
-#: ../lib/packagekit-glib2/pk-console-shared.c:361
+#: lib/packagekit-glib2/pk-console-shared.c:258
 msgid "Checking signatures"
 msgstr "Праверка подпісаў"
 
 #. TRANSLATORS: transaction state, when we're doing a test transaction
-#: ../lib/packagekit-glib2/pk-console-shared.c:365
+#: lib/packagekit-glib2/pk-console-shared.c:262
 msgid "Testing changes"
 msgstr "Праверка змен"
 
 #. TRANSLATORS: transaction state, when we're writing to the system package database
-#: ../lib/packagekit-glib2/pk-console-shared.c:369
+#: lib/packagekit-glib2/pk-console-shared.c:266
 msgid "Committing changes"
 msgstr "Зацвярджэнне змен"
 
 #. TRANSLATORS: transaction state, requesting data from a server
-#: ../lib/packagekit-glib2/pk-console-shared.c:373
+#: lib/packagekit-glib2/pk-console-shared.c:270
 msgid "Requesting data"
 msgstr "Запытанне даных"
 
 #. TRANSLATORS: transaction state, all done!
-#: ../lib/packagekit-glib2/pk-console-shared.c:377
+#: lib/packagekit-glib2/pk-console-shared.c:274
 msgid "Finished"
 msgstr "Завершана"
 
 #. TRANSLATORS: transaction state, in the process of cancelling
-#: ../lib/packagekit-glib2/pk-console-shared.c:381
+#: lib/packagekit-glib2/pk-console-shared.c:278
 msgid "Cancelling"
 msgstr "Скасоўванне"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:385
+#: lib/packagekit-glib2/pk-console-shared.c:282
 msgid "Downloading repository information"
 msgstr "Спампоўванне інфармацыі аб рэпазіторыіі"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:389
+#: lib/packagekit-glib2/pk-console-shared.c:286
 msgid "Downloading list of packages"
 msgstr "Спампоўванне спіса пакетаў"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:393
+#: lib/packagekit-glib2/pk-console-shared.c:290
 msgid "Downloading file lists"
 msgstr "Спампоўванне спісаў файлаў"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:397
+#: lib/packagekit-glib2/pk-console-shared.c:294
 msgid "Downloading lists of changes"
 msgstr "Спампоўванне спісаў змен"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:401
+#: lib/packagekit-glib2/pk-console-shared.c:298
 msgid "Downloading groups"
 msgstr "Спампоўванне груп"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: ../lib/packagekit-glib2/pk-console-shared.c:405
+#: lib/packagekit-glib2/pk-console-shared.c:302
 msgid "Downloading update information"
 msgstr "Спампоўванне інфармацыі пра абнаўленні"
 
 #. TRANSLATORS: transaction state, repackaging delta files
-#: ../lib/packagekit-glib2/pk-console-shared.c:409
+#: lib/packagekit-glib2/pk-console-shared.c:306
 msgid "Repackaging files"
 msgstr "Перапакаванне файлаў"
 
 #. TRANSLATORS: transaction state, loading databases
-#: ../lib/packagekit-glib2/pk-console-shared.c:413
+#: lib/packagekit-glib2/pk-console-shared.c:310
 msgid "Loading cache"
 msgstr "Загрузка кэшу"
 
 #. TRANSLATORS: transaction state, scanning for running processes
-#: ../lib/packagekit-glib2/pk-console-shared.c:417
+#: lib/packagekit-glib2/pk-console-shared.c:314
 msgid "Scanning applications"
 msgstr "Пошук праграм"
 
 #. TRANSLATORS: transaction state, generating a list of packages installed on the system
-#: ../lib/packagekit-glib2/pk-console-shared.c:421
+#: lib/packagekit-glib2/pk-console-shared.c:318
 msgid "Generating package lists"
 msgstr "Стварэнне спіса пакетаў"
 
 #. TRANSLATORS: transaction state, when we're waiting for the native tools to exit
-#: ../lib/packagekit-glib2/pk-console-shared.c:425
+#: lib/packagekit-glib2/pk-console-shared.c:322
 msgid "Waiting for package manager lock"
 msgstr "Чаканне блакіравання кіраўніка пакетаў"
 
 #. TRANSLATORS: transaction state, waiting for user to type in a password
-#: ../lib/packagekit-glib2/pk-console-shared.c:429
+#: lib/packagekit-glib2/pk-console-shared.c:326
 msgid "Waiting for authentication"
 msgstr "Чаканне аўтэнтыфікацыі"
 
 #. TRANSLATORS: transaction state, we are updating the list of processes
-#: ../lib/packagekit-glib2/pk-console-shared.c:433
+#: lib/packagekit-glib2/pk-console-shared.c:330
 msgid "Updating running applications"
 msgstr "Абнаўленне спіса запушчаных праграм"
 
 #. TRANSLATORS: transaction state, we are checking executable files currently in use
-#: ../lib/packagekit-glib2/pk-console-shared.c:437
+#: lib/packagekit-glib2/pk-console-shared.c:334
 msgid "Checking applications in use"
 msgstr "Пошук праграм, якія цяпер выкарыстоўваюцца"
 
 #. TRANSLATORS: transaction state, we are checking for libraries currently in use
-#: ../lib/packagekit-glib2/pk-console-shared.c:441
+#: lib/packagekit-glib2/pk-console-shared.c:338
 msgid "Checking libraries in use"
 msgstr "Пошук бібліятэк, якія цяпер выкарыстоўваюцца"
 
 #. TRANSLATORS: transaction state, we are copying package files before or after the transaction
-#: ../lib/packagekit-glib2/pk-console-shared.c:445
+#: lib/packagekit-glib2/pk-console-shared.c:342
 msgid "Copying files"
 msgstr "Капіяванне файлаў"
 
 #. TRANSLATORS: turn on all debugging
-#: ../lib/packagekit-glib2/pk-debug.c:133
+#: lib/packagekit-glib2/pk-debug.c:142
 msgid "Show debugging information for all files"
 msgstr "Паказаць адладачную інфармацыю для ўсіх файлаў"
 
-#: ../lib/packagekit-glib2/pk-debug.c:201
+#: lib/packagekit-glib2/pk-debug.c:216
 msgid "Debugging Options"
 msgstr "Параметры адладкі"
 
-#: ../lib/packagekit-glib2/pk-debug.c:201
+#: lib/packagekit-glib2/pk-debug.c:216
 msgid "Show debugging options"
 msgstr "Паказаць параметры адладкі"
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1059
+#: lib/packagekit-glib2/pk-enum.c:975
 msgid "Trivial"
 msgstr "Дробнае"
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1063
+#: lib/packagekit-glib2/pk-enum.c:979
 msgid "Normal"
 msgstr "Звычайнае"
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1067
+#: lib/packagekit-glib2/pk-enum.c:983
 msgid "Important"
 msgstr "Важнае"
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1071
+#: lib/packagekit-glib2/pk-enum.c:987
 msgid "Security"
 msgstr "Бяспека"
 
@@ -1368,163 +1422,160 @@ msgid "Bug fix "
 msgstr ""
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1079
+#: lib/packagekit-glib2/pk-enum.c:995
 msgid "Enhancement"
 msgstr "Паляпшэнне"
 
 #. TRANSLATORS: The type of update
-#: ../lib/packagekit-glib2/pk-enum.c:1083
+#: lib/packagekit-glib2/pk-enum.c:999
 msgid "Blocked"
 msgstr "Заблакіраванае"
 
 #. TRANSLATORS: The state of a package
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1088
-#: ../lib/packagekit-glib2/pk-enum.c:1175
+#: lib/packagekit-glib2/pk-enum.c:1004 lib/packagekit-glib2/pk-enum.c:1111
 msgid "Installed"
 msgstr "Усталяваны"
 
 #. TRANSLATORS: The state of a package, i.e. not installed
-#: ../lib/packagekit-glib2/pk-enum.c:1093
+#: lib/packagekit-glib2/pk-enum.c:1009
 msgid "Available"
 msgstr "Даступны"
 
 #. TRANSLATORS: The action of the package, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1118
+#: lib/packagekit-glib2/pk-enum.c:1054
 msgid "Downloading"
 msgstr "Спампоўванне"
 
 #. TRANSLATORS: The action of the package, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1122
+#: lib/packagekit-glib2/pk-enum.c:1058
 msgid "Updating"
 msgstr "Абнаўленне"
 
 #. TRANSLATORS: The action of the package, in present tense
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1126
-#: ../lib/packagekit-glib2/pk-enum.c:1260
+#: lib/packagekit-glib2/pk-enum.c:1062 lib/packagekit-glib2/pk-enum.c:1197
 msgid "Installing"
 msgstr "Усталяванне"
 
 #. TRANSLATORS: The action of the package, in present tense
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1130
-#: ../lib/packagekit-glib2/pk-enum.c:1256
+#: lib/packagekit-glib2/pk-enum.c:1066 lib/packagekit-glib2/pk-enum.c:1193
 msgid "Removing"
 msgstr "Выдаленне"
 
 #. TRANSLATORS: The action of the package, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1134
+#: lib/packagekit-glib2/pk-enum.c:1070
 msgid "Cleaning up"
 msgstr "Ачыстка"
 
 #. TRANSLATORS: The action of the package, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1138
+#: lib/packagekit-glib2/pk-enum.c:1074
 msgid "Obsoleting"
 msgstr "Замяшчэнне"
 
 #. TRANSLATORS: The action of the package, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1142
+#: lib/packagekit-glib2/pk-enum.c:1078
 msgid "Reinstalling"
 msgstr "Пераўсталяванне"
 
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1167
+#: lib/packagekit-glib2/pk-enum.c:1103
 msgid "Downloaded"
 msgstr "Спампавана"
 
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1179
+#: lib/packagekit-glib2/pk-enum.c:1115
 msgid "Removed"
 msgstr "Выдалены"
 
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1183
+#: lib/packagekit-glib2/pk-enum.c:1119
 msgid "Cleaned up"
 msgstr "Ачышчаны"
 
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1187
+#: lib/packagekit-glib2/pk-enum.c:1123
 msgid "Obsoleted"
 msgstr "Замешчаны"
 
 #. TRANSLATORS: The action of the package, in past tense
-#: ../lib/packagekit-glib2/pk-enum.c:1191
+#: lib/packagekit-glib2/pk-enum.c:1127
 msgid "Reinstalled"
 msgstr "Пераўсталяваны"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1216
+#: lib/packagekit-glib2/pk-enum.c:1152
 msgid "Unknown role type"
 msgstr "Невядомы тып ролі"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1220
+#: lib/packagekit-glib2/pk-enum.c:1156
 msgid "Getting dependencies"
 msgstr "Атрыманне залежнасцей"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1224
+#: lib/packagekit-glib2/pk-enum.c:1160
 msgid "Getting update details"
 msgstr "Атрыманне звестак абнаўленняў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1228
+#: lib/packagekit-glib2/pk-enum.c:1165
 msgid "Getting details"
 msgstr "Атрыманне звестак"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1232
+#: lib/packagekit-glib2/pk-enum.c:1169
 msgid "Getting requires"
 msgstr "Атрыманне патрабаванняў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1236
+#: lib/packagekit-glib2/pk-enum.c:1173
 msgid "Getting updates"
 msgstr "Атрыманне абнаўленняў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1240
+#: lib/packagekit-glib2/pk-enum.c:1177
 msgid "Searching by details"
 msgstr "Пошук па звестках"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1244
+#: lib/packagekit-glib2/pk-enum.c:1181
 msgid "Searching by file"
 msgstr "Пошук па файлах"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1248
+#: lib/packagekit-glib2/pk-enum.c:1185
 msgid "Searching groups"
 msgstr "Пошук па групах"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1252
+#: lib/packagekit-glib2/pk-enum.c:1189
 msgid "Searching by name"
 msgstr "Пошук па назве"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1264
+#: lib/packagekit-glib2/pk-enum.c:1201
 msgid "Installing files"
 msgstr "Усталяванне файлаў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1268
+#: lib/packagekit-glib2/pk-enum.c:1205
 msgid "Refreshing cache"
 msgstr "Абнаўленне кэшу"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1272
+#: lib/packagekit-glib2/pk-enum.c:1209
 msgid "Updating packages"
 msgstr "Абнаўленне пакетаў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1276
+#: lib/packagekit-glib2/pk-enum.c:1213
 msgid "Canceling"
 msgstr "Скасаванне"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1280
+#: lib/packagekit-glib2/pk-enum.c:1217
 msgid "Getting repositories"
 msgstr "Атрыманне рэпазіторыяў"
 
@@ -1534,197 +1585,197 @@ msgid "Enabling repository"
 msgstr ""
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1288
+#: lib/packagekit-glib2/pk-enum.c:1225
 msgid "Setting data"
 msgstr "Наладжванне даных"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1292
+#: lib/packagekit-glib2/pk-enum.c:1233
 msgid "Resolving"
 msgstr "Развязванне"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1296
+#: lib/packagekit-glib2/pk-enum.c:1238
 msgid "Getting file list"
 msgstr "Атрыманне спіса файлаў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1300
+#: lib/packagekit-glib2/pk-enum.c:1242
 msgid "Getting provides"
 msgstr "Атрыманне даных пра змест"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1304
+#: lib/packagekit-glib2/pk-enum.c:1246
 msgid "Installing signature"
 msgstr "Усталяванне подпісу"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1308
+#: lib/packagekit-glib2/pk-enum.c:1250
 msgid "Getting packages"
 msgstr "Атрыманне пакетаў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1312
+#: lib/packagekit-glib2/pk-enum.c:1254
 msgid "Accepting EULA"
 msgstr "Прыняцце пагаднення"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1320
+#: lib/packagekit-glib2/pk-enum.c:1262
 msgid "Getting upgrades"
 msgstr "Атрыманне абнаўленняў"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1324
+#: lib/packagekit-glib2/pk-enum.c:1266
 msgid "Getting categories"
 msgstr "Атрыманне катэгорый"
 
 #. TRANSLATORS: The role of the transaction, in present tense
-#: ../lib/packagekit-glib2/pk-enum.c:1328
+#: lib/packagekit-glib2/pk-enum.c:1270
 msgid "Getting transactions"
 msgstr "Атрыманне трансакцый"
 
 #. TRANSLATORS: ask the user if they are comfortable installing insecure packages
-#: ../lib/packagekit-glib2/pk-task-text.c:67
+#: lib/packagekit-glib2/pk-task-text.c:54
 msgid "Do you want to allow installing of unsigned software?"
 msgstr "Дазволіць ўсталяванне праграм без подпісу?"
 
 #. TRANSLATORS: tell the user we've not done anything
-#: ../lib/packagekit-glib2/pk-task-text.c:72
+#: lib/packagekit-glib2/pk-task-text.c:59
 msgid "The unsigned software will not be installed."
 msgstr "Праграмы без подпісу не будуць усталяваны."
 
 #. TRANSLATORS: the package repository is signed by a key that is not recognised
-#: ../lib/packagekit-glib2/pk-task-text.c:121
+#: lib/packagekit-glib2/pk-task-text.c:104
 msgid "Software source signature required"
 msgstr "Патрабуецца подпіс крыніцы праграм"
 
 #. TRANSLATORS: the package repository name
-#: ../lib/packagekit-glib2/pk-task-text.c:127
+#: lib/packagekit-glib2/pk-task-text.c:110
 msgid "Software source name"
 msgstr "Назва крыніцы праграм"
 
 #. TRANSLATORS: the key URL
-#: ../lib/packagekit-glib2/pk-task-text.c:130
+#: lib/packagekit-glib2/pk-task-text.c:113
 msgid "Key URL"
 msgstr "URL ключа"
 
 #. TRANSLATORS: the username of the key
-#: ../lib/packagekit-glib2/pk-task-text.c:133
+#: lib/packagekit-glib2/pk-task-text.c:116
 msgid "Key user"
 msgstr "Карыстальнік ключа"
 
 #. TRANSLATORS: the key ID, usually a few hex digits
-#: ../lib/packagekit-glib2/pk-task-text.c:136
+#: lib/packagekit-glib2/pk-task-text.c:119
 msgid "Key ID"
 msgstr "Ідэнтыфікатар ключа"
 
 #. TRANSLATORS: the key fingerprint, again, yet more hex
-#: ../lib/packagekit-glib2/pk-task-text.c:139
+#: lib/packagekit-glib2/pk-task-text.c:122
 msgid "Key fingerprint"
 msgstr "Адбітак ключа"
 
 #. TRANSLATORS: the timestamp (a bit like a machine readable time)
-#: ../lib/packagekit-glib2/pk-task-text.c:142
+#: lib/packagekit-glib2/pk-task-text.c:125
 msgid "Key Timestamp"
 msgstr "Часавы адбітак ключа"
 
 #. TRANSLATORS: ask the user if they want to import
-#: ../lib/packagekit-glib2/pk-task-text.c:155
+#: lib/packagekit-glib2/pk-task-text.c:138
 msgid "Do you accept this signature?"
 msgstr "Прыняць гэты подпіс?"
 
 #. TRANSLATORS: tell the user we've not done anything
-#: ../lib/packagekit-glib2/pk-task-text.c:160
+#: lib/packagekit-glib2/pk-task-text.c:143
 msgid "The signature was not accepted."
 msgstr "Подпіс не прыняты."
 
 #. TRANSLATORS: this is another name for a software licence that has to be read before installing
-#: ../lib/packagekit-glib2/pk-task-text.c:203
+#: lib/packagekit-glib2/pk-task-text.c:175
 msgid "End user licence agreement required"
 msgstr "Патрабуецца ліцэнзійнае пагадненне"
 
 #. TRANSLATORS: the EULA text itself (long and boring)
-#: ../lib/packagekit-glib2/pk-task-text.c:212
+#: lib/packagekit-glib2/pk-task-text.c:184
 msgid "Agreement"
 msgstr "Ліцэнзійнае пагадненне"
 
 #. TRANSLATORS: ask the user if they've read and accepted the EULA
-#: ../lib/packagekit-glib2/pk-task-text.c:221
+#: lib/packagekit-glib2/pk-task-text.c:188
 msgid "Do you accept this agreement?"
 msgstr "Прыняць пагадненне?"
 
 #. TRANSLATORS: tell the user we've not done anything
-#: ../lib/packagekit-glib2/pk-task-text.c:226
+#: lib/packagekit-glib2/pk-task-text.c:193
 msgid "The agreement was not accepted."
 msgstr "Ліцэнзійнае пагадненне не прынята."
 
 #. TRANSLATORS: the user needs to change media inserted into the computer
-#: ../lib/packagekit-glib2/pk-task-text.c:265
+#: lib/packagekit-glib2/pk-task-text.c:228
 msgid "Media change required"
 msgstr "Патрабуецца памяняць носьбіт"
 
 #. TRANSLATORS: the type, e.g. DVD, CD, etc
-#: ../lib/packagekit-glib2/pk-task-text.c:268
+#: lib/packagekit-glib2/pk-task-text.c:231
 msgid "Media type"
 msgstr "Тып носьбіта"
 
 #. TRANSLATORS: the media label, usually like 'disk-1of3'
-#: ../lib/packagekit-glib2/pk-task-text.c:271
+#: lib/packagekit-glib2/pk-task-text.c:234
 msgid "Media label"
 msgstr "Метка носьбіта"
 
 #. TRANSLATORS: the media description, usually like 'Fedora 12 disk 5'
-#: ../lib/packagekit-glib2/pk-task-text.c:274
+#: lib/packagekit-glib2/pk-task-text.c:237
 msgid "Text"
 msgstr "Тэкст"
 
 #. TRANSLATORS: ask the user to insert the media
-#: ../lib/packagekit-glib2/pk-task-text.c:280
+#: lib/packagekit-glib2/pk-task-text.c:243
 msgid "Please insert the correct media"
 msgstr "Устаўце прыдатны носьбіт"
 
 #. TRANSLATORS: tell the user we've not done anything as they are lazy
-#: ../lib/packagekit-glib2/pk-task-text.c:285
+#: lib/packagekit-glib2/pk-task-text.c:248
 msgid "The correct media was not inserted."
 msgstr "Прыдатны носьбіт не ўстаўлены."
 
 #. TRANSLATORS: When processing, we might have to remove other dependencies
-#: ../lib/packagekit-glib2/pk-task-text.c:300
+#: lib/packagekit-glib2/pk-task-text.c:263
 msgid "The following packages have to be removed:"
 msgstr "Наступныя пакеты павінны быць выдалены:"
 
 #. TRANSLATORS: When processing, we might have to install other dependencies
-#: ../lib/packagekit-glib2/pk-task-text.c:305
+#: lib/packagekit-glib2/pk-task-text.c:268
 msgid "The following packages have to be installed:"
 msgstr "Наступныя пакеты павінны быць усталяваны:"
 
 #. TRANSLATORS: When processing, we might have to update other dependencies
-#: ../lib/packagekit-glib2/pk-task-text.c:310
+#: lib/packagekit-glib2/pk-task-text.c:273
 msgid "The following packages have to be updated:"
 msgstr "Наступныя пакеты павінны быць абноўлены:"
 
 #. TRANSLATORS: When processing, we might have to reinstall other dependencies
-#: ../lib/packagekit-glib2/pk-task-text.c:315
+#: lib/packagekit-glib2/pk-task-text.c:278
 msgid "The following packages have to be reinstalled:"
 msgstr "Наступныя пакеты павінны быць пераўсталяваны:"
 
 #. TRANSLATORS: When processing, we might have to downgrade other dependencies
-#: ../lib/packagekit-glib2/pk-task-text.c:320
+#: lib/packagekit-glib2/pk-task-text.c:283
 msgid "The following packages have to be downgraded:"
 msgstr "Версія наступных пакетаў павінна быць паніжана:"
 
 #. TRANSLATORS: When processing, untrusted and non-verified packages may be encountered
-#: ../lib/packagekit-glib2/pk-task-text.c:325
+#: lib/packagekit-glib2/pk-task-text.c:293
 msgid "The following packages are untrusted:"
 msgstr "Наступныя пакеты ненадзейныя:"
 
 #. TRANSLATORS: ask the user if the proposed changes are okay
-#: ../lib/packagekit-glib2/pk-task-text.c:385
+#: lib/packagekit-glib2/pk-task-text.c:393
 msgid "Proceed with changes?"
 msgstr "Выканаць змены?"
 
 #. TRANSLATORS: tell the user we didn't do anything
-#: ../lib/packagekit-glib2/pk-task-text.c:390
+#: lib/packagekit-glib2/pk-task-text.c:398
 msgid "The transaction did not proceed."
 msgstr "Трансакцыя не была выканана."
 
@@ -1732,23 +1783,21 @@ msgstr "Трансакцыя не была выканана."
 #. - Normal users are allowed to cancel their own task without
 #. authentication, but a different user id needs the admin password
 #. to cancel another users task.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:6
+#: policy/org.freedesktop.packagekit.policy.in:22
 msgid "Cancel foreign task"
 msgstr "Скасаваць чужую задачу"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:7
+#: policy/org.freedesktop.packagekit.policy.in:23
 msgid ""
 "Authentication is required to cancel a task that was not started by yourself"
 msgstr "Каб скасаваць чужую задачу, патрабуецца аўтэнтыфікацыя"
 
 #. SECURITY:
-#. - Normal users do not need authentication to install signed packages
-#. from signed repositories, as this cannot exploit a system.
-#. - Paranoid users (or parents!) can change this to 'auth_admin' or
-#. 'auth_admin_keep'.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:14
+#. - Normal users need authentication to install signed packages
+#. from signed repositories, because otherwise the system is
+#. only as secure as the least-secure package available in the
+#. repositories.
+#: policy/org.freedesktop.packagekit.policy.in:39
 msgid "Install signed package"
 msgstr "Усталяваць падпісаны пакет"
 
@@ -1761,8 +1810,7 @@ msgstr ""
 #. unrecognised packages, as allowing users to do this without a
 #. password would be a massive security hole.
 #. - This is not retained as each package should be authenticated.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:22
+#: policy/org.freedesktop.packagekit.policy.in:56
 msgid "Install untrusted local file"
 msgstr "Усталяваць ненадзейны лакальны файл"
 
@@ -1791,12 +1839,11 @@ msgstr ""
 #. licence agreements.
 #. - Change this to 'auth_admin' for environments where users should not
 #. be given the option to make legal decisions.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:38
+#: policy/org.freedesktop.packagekit.policy.in:128
 msgid "Accept EULA"
 msgstr "Прыняць ліцэнзійнае пагадненне"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:39
+#: policy/org.freedesktop.packagekit.policy.in:129
 msgid "Authentication is required to accept a EULA"
 msgstr "Каб прыняць ліцэнзійнае пагадненне, патрабуецца аўтэнтыфікацыя"
 
@@ -1808,8 +1855,8 @@ msgstr "Каб прыняць ліцэнзійнае пагадненне, па�
 #. admin authentication has been obtained, otherwise packages can still
 #. be removed. If this is not possible, change this authentication to
 #. 'auth_admin'.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:49
+#. TRANSLATORS: command description
+#: policy/org.freedesktop.packagekit.policy.in:148 src/pk-direct.c:448
 msgid "Remove package"
 msgstr "Выдаліць пакет"
 
@@ -1817,14 +1864,7 @@ msgstr "Выдаліць пакет"
 msgid "Authentication is required to remove packages"
 msgstr ""
 
-#. SECURITY:
-#. - Normal users do not require admin authentication to update the
-#. system as the packages will be signed, and the action is required
-#. to update the system when unattended.
-#. - Changing this to anything other than 'yes' will break unattended
-#. updates.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:58
+#: client/pkgc-manage.c:986
 msgid "Update packages"
 msgstr ""
 
@@ -1860,8 +1900,7 @@ msgstr ""
 #. SECURITY:
 #. - Normal users do not require admin authentication to set the proxy
 #. used for downloading packages.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:77
+#: policy/org.freedesktop.packagekit.policy.in:213
 msgid "Set network proxy"
 msgstr "Задаць проксі-сервер"
 
@@ -1890,12 +1929,11 @@ msgstr ""
 #. - Normal users require admin authentication to upgrade the disto as
 #. this can make the system unbootable or stop other applications from
 #. working.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:93
+#: policy/org.freedesktop.packagekit.policy.in:229
 msgid "Upgrade System"
 msgstr "Абнавіць сістэму"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:94
+#: policy/org.freedesktop.packagekit.policy.in:230
 msgid "Authentication is required to upgrade the operating system"
 msgstr "Каб абнавіць сістэму, патрабуецца аўтэнтыфікацыя"
 
@@ -1903,43 +1941,46 @@ msgstr "Каб абнавіць сістэму, патрабуецца аўтэ�
 #. - Normal users require admin authentication to repair the system
 #. since this can make the system unbootable or stop other
 #. applications from working.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:100
+#: policy/org.freedesktop.packagekit.policy.in:245
 msgid "Repair System"
 msgstr "Аднавіць сістэму"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:101
+#: policy/org.freedesktop.packagekit.policy.in:246
 msgid "Authentication is required to repair the installed software"
-msgstr "Каб аднавіць сістэму, патрабуецца аўтэнтыфікацыя"
+msgstr "Каб аднавіць усталяваныя праграмы, патрабуецца аўтэнтыфікацыя"
 
 #. SECURITY:
-#. - Administrators are able to ask updates to be installed at
+#. - Normal users are able to ask updates to be installed at
 #. early boot time without a password.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:106
+#. SECURITY:
+#. - Normal users require admin authentication to upgrade the system
+#. to a new distribution since this can make the system unbootable or
+#. stop other applications from working.
+#: policy/org.freedesktop.packagekit.policy.in:260
+#: policy/org.freedesktop.packagekit.policy.in:276
 msgid "Trigger offline updates"
 msgstr "Запусціць пазасеткавыя абнаўленні"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:107
+#: policy/org.freedesktop.packagekit.policy.in:261
+#: policy/org.freedesktop.packagekit.policy.in:277
 msgid "Authentication is required to trigger offline updates"
 msgstr "Каб запусціць пазасеткавыя абнаўленні, патрабуецца аўтэнтыфікацыя"
 
 #. SECURITY:
 #. - Normal users are able to clear the updates message that is
 #. shown after an updates are applied at boot time.
-#. 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:112
+#: policy/org.freedesktop.packagekit.policy.in:291
 msgid "Clear offline update message"
 msgstr "Ачысціць паведамленне пазасеткавага абнаўлення"
 
-#: ../policy/org.freedesktop.packagekit.policy.in.h:113
+#: policy/org.freedesktop.packagekit.policy.in:292
 msgid "Authentication is required to clear the offline updates message"
 msgstr ""
 "Каб ачысціць паведамленне пазасеткавага абнаўлення, патрабуецца "
 "аўтэнтыфікацыя"
 
-#. TRANSLATORS: a backend is the system package tool, e.g. yum, apt
-#: ../src/pk-main.c:191
+#. TRANSLATORS: a backend is the system package tool, e.g. dnf, apt
+#: src/pk-direct.c:408 src/pk-main.c:117
 msgid "Packaging backend to use, e.g. dummy"
 msgstr "Унутраны сродак працы з пакетамі, напрыклад «dummy»"
 
@@ -1949,53 +1990,53 @@ msgid "Daemonize and detach from the terminal"
 msgstr ""
 
 #. TRANSLATORS: if we should not monitor how long we are inactive for
-#: ../src/pk-main.c:197
+#: src/pk-main.c:120
 msgid "Disable the idle timer"
 msgstr "Адключыць лічыльнік часу бяздзейнасці"
 
 #. TRANSLATORS: show version
-#: ../src/pk-main.c:200
+#: src/pk-main.c:123
 msgid "Show version and exit"
 msgstr "Паказаць версію і выйсці"
 
 #. TRANSLATORS: exit after we've started up, used for user profiling
-#: ../src/pk-main.c:203
+#: src/pk-main.c:126
 msgid "Exit after a small delay"
 msgstr "Выйсці пасля невялікай затрымкі"
 
 #. TRANSLATORS: exit straight away, used for automatic profiling
-#: ../src/pk-main.c:206
+#: src/pk-main.c:129
 msgid "Exit after the engine has loaded"
 msgstr "Выйсці пасля загрузкі рухавіка"
 
 #. TRANSLATORS: don't unset environment variables, used for debugging
-#: ../src/pk-main.c:209
+#: src/pk-main.c:132
 msgid "Don't clear environment on startup"
 msgstr "Не ачышчаць асяроддзе падчас запуску"
 
 #. TRANSLATORS: describing the service that is running
-#: ../src/pk-main.c:223
+#: src/pk-main.c:146
 msgid "PackageKit service"
 msgstr "Сэрвіс PackageKit"
 
 #. TRANSLATORS: is not GPG signed
-#: ../src/pk-transaction.c:2935
+#: src/pk-transaction.c:2724
 msgid "The software is not from a trusted source."
 msgstr "Праграмнае забеспячэнне не з давернай крыніцы."
 
-#: ../src/pk-transaction.c:2943
+#: src/pk-transaction.c:2732
 msgid "Do not update this package unless you are sure it is safe to do so."
 msgstr "Не абнаўляйце гэты пакет, калі не ўпэўнены ў яго бяспечнасці."
 
-#: ../src/pk-transaction.c:2944
+#: src/pk-transaction.c:2733
 msgid "Do not update these packages unless you are sure it is safe to do so."
 msgstr "Не абнаўляйце гэтыя пакеты, калі не ўпэўнены ў іх бяспечнасці."
 
-#: ../src/pk-transaction.c:2954
+#: src/pk-transaction.c:2743
 msgid "Do not install this package unless you are sure it is safe to do so."
 msgstr "Не ўсталёўвайце гэты пакет, калі не ўпэўнены ў яго бяспечнасці."
 
-#: ../src/pk-transaction.c:2955
+#: src/pk-transaction.c:2744
 msgid ""
 "Do not install these packages unless you are sure it is safe to do so."
 msgstr "Не ўсталёўвайце гэтыя пакеты, калі не ўпэўнены ў іх бяспечнасці."

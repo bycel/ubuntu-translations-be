@@ -1,21 +1,23 @@
-# Belarusian translation for xfsprogs
-# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
-# This file is distributed under the same license as the xfsprogs package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: xfsprogs\n"
+"Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-01-10 09:53+0000\n"
-"PO-Revision-Date: 2025-07-23 10:25+0000\n"
+"PO-Revision-Date: 2025-07-31 09:43\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
-"Language-Team: Belarusian <be@li.org>\n"
+"Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2025-07-30 12:29+0000\n"
 "X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Crowdin-Project: ubuntu-translations\n"
+"X-Crowdin-Project-ID: 485161\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /main/noble/en_GB/po-xfsprogs_xfsprogs-be.po\n"
+"X-Crowdin-File-ID: 699\n"
+"Language: be_BY\n"
 
 #: .././spaceman/file.c:31
 #, c-format
@@ -80,17 +82,14 @@ msgstr ""
 
 #: .././spaceman/health.c:433
 #, c-format
-msgid ""
-"\n"
-"Report all observed filesystem health problems.\n"
-"\n"
+msgid "\n"
+"Report all observed filesystem health problems.\n\n"
 " -a agno  -- Report health of the given allocation group.\n"
 " -c       -- Report on the health of all inodes.\n"
 " -f       -- Report health of the overall filesystem.\n"
 " -i inum  -- Report health of a given inode number.\n"
 " -q       -- Only report unhealthy metadata.\n"
-" paths    -- Report health of the given file path.\n"
-"\n"
+" paths    -- Report health of the given file path.\n\n"
 msgstr ""
 
 #: .././spaceman/health.c:565
@@ -104,19 +103,15 @@ msgstr ""
 
 #: .././spaceman/prealloc.c:77
 #, c-format
-msgid ""
-"\n"
-"Remove speculative preallocation\n"
-"\n"
+msgid "\n"
+"Remove speculative preallocation\n\n"
 " -g gid    -- remove prealloc on files matching group <gid>\n"
 " -m minlen -- only consider files larger than <minlen>\n"
 " -p prid   -- remove prealloc on files matching project <prid>\n"
 " -s        -- wait for removal to complete\n"
-" -u uid    -- remove prealloc on files matching user <uid>\n"
-"\n"
+" -u uid    -- remove prealloc on files matching user <uid>\n\n"
 "If none of -u, -g, or -p are specified, this command acts on all files.\n"
-"minlen can take units.\n"
-"\n"
+"minlen can take units.\n\n"
 msgstr ""
 
 #: .././spaceman/prealloc.c:102
@@ -195,10 +190,8 @@ msgstr ""
 
 #: .././spaceman/freesp.c:334
 #, c-format
-msgid ""
-"\n"
-"Examine filesystem free space\n"
-"\n"
+msgid "\n"
+"Examine filesystem free space\n\n"
 " -a agno  -- Scan only the given AG agno.\n"
 " -b       -- binary histogram bin size\n"
 " -d       -- debug output\n"
@@ -208,10 +201,8 @@ msgid ""
 "             Multiple specifications are allowed.\n"
 " -m bmult -- Use histogram bin size multiplier of bmult.\n"
 " -r       -- Display realtime device free space information.\n"
-" -s       -- Emit freespace summary information.\n"
-"\n"
-"Only one of -b, -e, -h, or -m may be specified.\n"
-"\n"
+" -s       -- Emit freespace summary information.\n\n"
+"Only one of -b, -e, -h, or -m may be specified.\n\n"
 msgstr ""
 
 #: .././spaceman/freesp.c:363
@@ -220,12 +211,10 @@ msgstr ""
 
 #: .././spaceman/info.c:17
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Pretty-prints the filesystem geometry as derived from the superblock.\n"
 " The output has the same format as mkfs.xfs, xfs_info, and other utilities.\n"
-" The opened file must be an XFS mount point.\n"
-"\n"
+" The opened file must be an XFS mount point.\n\n"
 msgstr ""
 
 #: .././spaceman/info.c:32 .././io/fsproperties.c:42 .././io/fsproperties.c:66
@@ -264,17 +253,13 @@ msgstr ""
 
 #: .././spaceman/trim.c:94
 #, c-format
-msgid ""
-"\n"
-"Discard filesystem free space\n"
-"\n"
+msgid "\n"
+"Discard filesystem free space\n\n"
 " -a agno       -- trim all the freespace in the given AG agno\n"
 " -f            -- trim all the freespace in the entire filesystem\n"
 " offset length -- trim the freespace in the range {offset, length}\n"
-" -m minlen     -- skip freespace extents smaller than minlen\n"
-"\n"
-"One of -a, -f, or the offset/length pair are required.\n"
-"\n"
+" -m minlen     -- skip freespace extents smaller than minlen\n\n"
+"One of -a, -f, or the offset/length pair are required.\n\n"
 msgstr ""
 
 #: .././spaceman/trim.c:117
@@ -283,10 +268,8 @@ msgstr ""
 
 #: .././quota/quot.c:47
 #, c-format
-msgid ""
-"\n"
-" display a summary of filesystem ownership\n"
-"\n"
+msgid "\n"
+" display a summary of filesystem ownership\n\n"
 " -a -- summarise for all local XFS filesystem mount points\n"
 " -c -- display three columns giving file size in kilobytes, number of files\n"
 "       of that size, and cumulative total of kilobytes in that size or\n"
@@ -304,8 +287,7 @@ msgid ""
 " -N -- suppress the initial header\n"
 " -f -- send output to a file\n"
 " The (optional) user/group/project can be specified either by name or by\n"
-" number (i.e. uid/gid/projid).\n"
-"\n"
+" number (i.e. uid/gid/projid).\n\n"
 msgstr ""
 
 #: .././quota/quot.c:208
@@ -395,22 +377,19 @@ msgstr ""
 
 #: .././quota/report.c:22
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " create a backup file which contains quota limits information\n"
 " -g -- dump out group quota limits\n"
 " -p -- dump out project quota limits\n"
 " -u -- dump out user quota limits (default)\n"
 " -L -- lower ID bound to dump\n"
 " -U -- upper ID bound to dump\n"
-" -f -- write the dump out to the specified file\n"
-"\n"
+" -f -- write the dump out to the specified file\n\n"
 msgstr ""
 
 #: .././quota/report.c:37
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " report used space and inodes, and quota limits, for a filesystem\n"
 " Example:\n"
 " 'report -igh'\n"
@@ -431,8 +410,7 @@ msgid ""
 " -u -- report user usage and quota information\n"
 " -b -- report blocks-used information only\n"
 " -i -- report inodes-used information only\n"
-" -r -- report realtime-blocks-used information only\n"
-"\n"
+" -r -- report realtime-blocks-used information only\n\n"
 msgstr ""
 
 #: .././quota/report.c:271
@@ -478,80 +456,64 @@ msgstr ""
 
 #: .././quota/state.c:21
 #, c-format
-msgid ""
-"\n"
-" turn filesystem quota off, both accounting and enforcement\n"
-"\n"
+msgid "\n"
+" turn filesystem quota off, both accounting and enforcement\n\n"
 " Example:\n"
 " 'off -uv'  (switch off user quota on the current filesystem)\n"
 " This command is the equivalent of the traditional quotaoff command,\n"
 " which disables quota completely on a mounted filesystem.\n"
 " Note that there is no 'on' command - for XFS filesystems (with the\n"
 " exception of the root filesystem on IRIX) quota can only be enabled\n"
-" at mount time, through the use of one of the quota mount options.\n"
-"\n"
+" at mount time, through the use of one of the quota mount options.\n\n"
 " The state command is useful for displaying the current state.  Using\n"
 " the -v (verbose) option with the 'off' command will display the quota\n"
 " state for the affected filesystem once the operation is complete.\n"
 " The affected quota type is -g (groups), -p (projects) or -u (users)\n"
-" and defaults to user quota (multiple types can be specified).\n"
-"\n"
+" and defaults to user quota (multiple types can be specified).\n\n"
 msgstr ""
 
 #: .././quota/state.c:44
 #, c-format
-msgid ""
-"\n"
-" query the state of quota on the current filesystem\n"
-"\n"
+msgid "\n"
+" query the state of quota on the current filesystem\n\n"
 " This is a verbose status command, reporting whether or not accounting\n"
 " and/or enforcement are enabled for a filesystem, which inodes are in\n"
 " use as the quota state inodes, and how many extents and blocks are\n"
 " presently being used to hold that information.\n"
 " The quota type is specified via -g (groups), -p (projects) or -u (users)\n"
-" and defaults to user quota (multiple types can be specified).\n"
-"\n"
+" and defaults to user quota (multiple types can be specified).\n\n"
 msgstr ""
 
 #: .././quota/state.c:60
 #, c-format
-msgid ""
-"\n"
-" enable quota enforcement on a filesystem\n"
-"\n"
+msgid "\n"
+" enable quota enforcement on a filesystem\n\n"
 " If a filesystem is mounted and has quota accounting enabled, but not\n"
 " quota enforcement, enforcement can be enabled with this command.\n"
 " With the -v (verbose) option, the status of the filesystem will be\n"
 " reported after the operation is complete.\n"
 " The affected quota type is -g (groups), -p (projects) or -u (users)\n"
-" and defaults to user quota (multiple types can be specified).\n"
-"\n"
+" and defaults to user quota (multiple types can be specified).\n\n"
 msgstr ""
 
 #: .././quota/state.c:76
 #, c-format
-msgid ""
-"\n"
-" disable quota enforcement on a filesystem\n"
-"\n"
+msgid "\n"
+" disable quota enforcement on a filesystem\n\n"
 " If a filesystem is mounted and is currently enforcing quota, this\n"
 " provides a mechanism to switch off the enforcement, but continue to\n"
 " perform used space (and used inodes) accounting.\n"
-" The affected quota type is -g (groups), -p (projects) or -u (users).\n"
-"\n"
+" The affected quota type is -g (groups), -p (projects) or -u (users).\n\n"
 msgstr ""
 
 #: .././quota/state.c:90
 #, c-format
-msgid ""
-"\n"
-" remove any space being used by the quota subsystem\n"
-"\n"
+msgid "\n"
+" remove any space being used by the quota subsystem\n\n"
 " Once quota has been switched 'off' on a filesystem, the space that\n"
 " was allocated to holding quota metadata can be freed via this command.\n"
 " The affected quota type is -g (groups), -p (projects) or -u (users)\n"
-" and defaults to user quota (multiple types can be specified).\n"
-"\n"
+" and defaults to user quota (multiple types can be specified).\n\n"
 msgstr ""
 
 #: .././quota/state.c:109
@@ -658,13 +620,10 @@ msgstr ""
 
 #: .././quota/edit.c:24
 #, c-format
-msgid ""
-"\n"
-" modify quota limits for the specified user\n"
-"\n"
+msgid "\n"
+" modify quota limits for the specified user\n\n"
 " Example:\n"
-" 'limit bsoft=100m bhard=110m tanya\n"
-"\n"
+" 'limit bsoft=100m bhard=110m tanya\n\n"
 " Changes the soft and/or hard block limits, inode limits and/or realtime\n"
 " block limits that are currently being used for the specified user, group,\n"
 " or project.  The filesystem identified by the current path is modified.\n"
@@ -674,20 +633,16 @@ msgid ""
 " -u -- modify user quota limits\n"
 " The block limit values can be specified with a units suffix - accepted\n"
 " units are: k (kilobytes), m (megabytes), g (gigabytes), and t (terabytes).\n"
-" The user/group/project can be specified either by name or by number.\n"
-"\n"
+" The user/group/project can be specified either by name or by number.\n\n"
 msgstr ""
 
 #: .././quota/edit.c:47
 #, c-format
-msgid ""
-"\n"
-" modify quota enforcement timeout for the current filesystem\n"
-"\n"
+msgid "\n"
+" modify quota enforcement timeout for the current filesystem\n\n"
 " Example:\n"
 " 'timer -i 3days'\n"
-" (soft inode limit timer is changed to 3 days)\n"
-"\n"
+" (soft inode limit timer is changed to 3 days)\n\n"
 " Changes the timeout value associated with the block limits, inode limits\n"
 " and/or realtime block limits for all users, groups, or projects on the\n"
 " current filesystem.\n"
@@ -705,27 +660,22 @@ msgid ""
 " The timeout value is specified as a number of seconds, by default.\n"
 " However, a suffix may be used to alternatively specify minutes (m),\n"
 " hours (h), days (d), or weeks (w) - either the full word or the first\n"
-" letter of the word can be used.\n"
-"\n"
+" letter of the word can be used.\n\n"
 msgstr ""
 
 #: .././quota/edit.c:79
 #, c-format
-msgid ""
-"\n"
-" modify the number of quota warnings sent to the specified user\n"
-"\n"
+msgid "\n"
+" modify the number of quota warnings sent to the specified user\n\n"
 " Example:\n"
 " 'warn 2 jimmy'\n"
-" (tell the quota system that two warnings have been sent to user jimmy)\n"
-"\n"
+" (tell the quota system that two warnings have been sent to user jimmy)\n\n"
 " Changes the warning count associated with the block limits, inode limits\n"
 " and/or realtime block limits for the specified user, group, or project.\n"
 " When a user has been warned the maximum number of times allowed, the soft\n"
 " limit is enforced as the hard limit.  It is intended as an alternative to\n"
 " the timeout system, where the system administrator updates a count of the\n"
-" number of warnings issued to people, and they are penalised if the "
-"warnings\n"
+" number of warnings issued to people, and they are penalised if the warnings\n"
 " are ignored.\n"
 " -d -- set maximum warning count, which triggers soft limit enforcement\n"
 " -g -- set group quota warning count\n"
@@ -734,8 +684,7 @@ msgid ""
 " -b -- set the blocks-used warning count\n"
 " -i -- set the inodes-used warning count\n"
 " -r -- set the blocks-used warn count for the (optional) realtime subvolume\n"
-" The user/group/project can be specified either by name or by number.\n"
-"\n"
+" The user/group/project can be specified either by name or by number.\n\n"
 msgstr ""
 
 #: .././quota/edit.c:131
@@ -822,20 +771,16 @@ msgstr ""
 
 #: .././quota/project.c:33
 #, c-format
-msgid ""
-"\n"
-" list projects or setup a project tree for tree quota management\n"
-"\n"
+msgid "\n"
+" list projects or setup a project tree for tree quota management\n\n"
 " Example:\n"
 " 'project -c logfiles'\n"
-" (match project 'logfiles' to a directory, and setup the directory tree)\n"
-"\n"
+" (match project 'logfiles' to a directory, and setup the directory tree)\n\n"
 " Without arguments, report all projects found in the /etc/projects file.\n"
 " The project quota mechanism in XFS can be used to implement a form of\n"
 " directory tree quota, where a specified directory and all of the files\n"
 " and subdirectories below it (i.e. a tree) can be restricted to using a\n"
-" subset of the available space in the filesystem.\n"
-"\n"
+" subset of the available space in the filesystem.\n\n"
 " A managed tree must be setup initially using the -s option with a project.\n"
 " The specified project name or identifier is matched to one or more trees\n"
 " defined in /etc/projects, and these trees are then recursively descended\n"
@@ -844,35 +789,25 @@ msgid ""
 " Once this has been done, new files created in the tree will automatically\n"
 " be accounted to the tree based on their project identifier.  An attempt to\n"
 " create a hard link to a file in the tree will only succeed if the project\n"
-" identifier matches the project identifier for the tree.  The xfs_io "
-"utility\n"
+" identifier matches the project identifier for the tree.  The xfs_io utility\n"
 " can be used to set the project ID for an arbitrary file, but this can only\n"
-" be done by a privileged user.\n"
-"\n"
+" be done by a privileged user.\n\n"
 " A previously setup tree can be cleared from project quota control through\n"
 " use of the -C option, which will recursively descend the tree, clearing\n"
-" the affected inodes from project quota control.\n"
-"\n"
+" the affected inodes from project quota control.\n\n"
 " The -c option can be used to check whether a tree is setup, it reports\n"
 " nothing if the tree is correct, otherwise it reports the paths of inodes\n"
 " which do not have the project ID of the rest of the tree, or if the inode\n"
-" flag is not set.\n"
-"\n"
+" flag is not set.\n\n"
 " The -p <path> option can be used to manually specify project path without\n"
 " need to create /etc/projects file. This option can be used multiple times\n"
 " to specify multiple paths. When using this option only one projid/name can\n"
-" be specified at command line. Note that /etc/projects is also used if "
-"exists.\n"
-"\n"
-" The -d <depth> option allows to descend at most <depth> levels of "
-"directories\n"
+" be specified at command line. Note that /etc/projects is also used if exists.\n\n"
+" The -d <depth> option allows to descend at most <depth> levels of directories\n"
 " below the command line arguments. -d 0 means only apply the actions\n"
-" to the top level of the projects. -d -1 means no recursion limit "
-"(default).\n"
-"\n"
+" to the top level of the projects. -d -1 means no recursion limit (default).\n\n"
 " The /etc/projid and /etc/projects file formats are simple, and described\n"
-" on the xfs_quota man page.\n"
-"\n"
+" on the xfs_quota man page.\n\n"
 msgstr ""
 
 #: .././quota/project.c:96 .././quota/project.c:141 .././quota/project.c:188
@@ -937,9 +872,7 @@ msgstr ""
 
 #: .././quota/project.c:259
 #, c-format
-msgid ""
-"Processed %d (%s and cmdline) paths for project %s with recursion depth %s "
-"(%d).\n"
+msgid "Processed %d (%s and cmdline) paths for project %s with recursion depth %s (%d).\n"
 msgstr ""
 
 #: .././quota/project.c:262
@@ -962,8 +895,7 @@ msgstr ""
 
 #: .././quota/project.c:320
 #, c-format
-msgid ""
-"%s: only one projid/name can be specified when using -p <path>, %d found.\n"
+msgid "%s: only one projid/name can be specified when using -p <path>, %d found.\n"
 msgstr ""
 
 #: .././quota/project.c:330
@@ -1036,10 +968,8 @@ msgstr ""
 
 #: .././quota/quota.c:21
 #, c-format
-msgid ""
-"\n"
-" display usage and quota information\n"
-"\n"
+msgid "\n"
+" display usage and quota information\n\n"
 " -g -- display group quota information\n"
 " -p -- display project quota information\n"
 " -u -- display user quota information\n"
@@ -1052,14 +982,12 @@ msgid ""
 " -v -- increase verbosity in reporting (also dumps zero values)\n"
 " -f -- send output to a file\n"
 " The (optional) user/group/project can be specified either by name or by\n"
-" number (i.e. uid/gid/projid).\n"
-"\n"
+" number (i.e. uid/gid/projid).\n\n"
 msgstr ""
 
 #: .././quota/quota.c:77
 #, c-format
-msgid ""
-"Disk quotas for %s %s (%u)\n"
+msgid "Disk quotas for %s %s (%u)\n"
 "Filesystem%s"
 msgstr ""
 
@@ -1123,10 +1051,8 @@ msgstr ""
 
 #: .././quota/free.c:20
 #, c-format
-msgid ""
-"\n"
-" reports the number of free disk blocks and inodes\n"
-"\n"
+msgid "\n"
+" reports the number of free disk blocks and inodes\n\n"
 " This command reports the number of total, used, and available disk blocks.\n"
 " It can optionally report the same set of numbers for inodes and realtime\n"
 " disk blocks, and will report on all known XFS filesystem mount points and\n"
@@ -1135,8 +1061,7 @@ msgid ""
 " -i -- report the inode count values\n"
 " -r -- report the realtime block count values\n"
 " -h -- report in a human-readable format\n"
-" -N -- suppress the header from the output\n"
-"\n"
+" -N -- suppress the header from the output\n\n"
 msgstr ""
 
 #: .././quota/free.c:161
@@ -1194,8 +1119,7 @@ msgstr ""
 
 #: .././quota/init.c:37
 #, c-format
-msgid ""
-"Usage: %s [-V] [-x] [-f] [-p prog] [-c cmd]... [-d project]... [path]\n"
+msgid "Usage: %s [-V] [-x] [-f] [-p prog] [-c cmd]... [-d project]... [path]\n"
 msgstr ""
 
 #: .././quota/init.c:119
@@ -1282,8 +1206,7 @@ msgstr ""
 
 #: .././repair/phase4.c:153
 #, c-format
-msgid ""
-"unable to finish adding attr/data fork reverse-mapping data for AG %u.\n"
+msgid "unable to finish adding attr/data fork reverse-mapping data for AG %u.\n"
 msgstr ""
 
 #: .././repair/phase4.c:169
@@ -1343,8 +1266,7 @@ msgstr ""
 
 #: .././repair/bmap.c:50
 #, c-format
-msgid ""
-"Number of extents requested in blkmap_alloc (%llu) overflows 32 bits.\n"
+msgid "Number of extents requested in blkmap_alloc (%llu) overflows 32 bits.\n"
 "If this is not a corruption, then you will need a 64 bit system\n"
 "to repair this filesystem.\n"
 msgstr ""
@@ -1361,15 +1283,13 @@ msgstr ""
 
 #: .././repair/bmap.c:284
 #, c-format
-msgid ""
-"Number of extents requested in blkmap_grow (%d) overflows 32 bits.\n"
+msgid "Number of extents requested in blkmap_grow (%d) overflows 32 bits.\n"
 "You need a 64 bit system to repair this filesystem.\n"
 msgstr ""
 
 #: .././repair/bmap.c:292
 #, c-format
-msgid ""
-"Number of extents requested in blkmap_grow (%d) overflowed the\n"
+msgid "Number of extents requested in blkmap_grow (%d) overflowed the\n"
 "maximum number of supported extents (%d).\n"
 msgstr ""
 
@@ -1422,9 +1342,7 @@ msgstr ""
 
 #: .././repair/xfs_repair.c:96
 #, c-format
-msgid ""
-"Usage: %s [options] device\n"
-"\n"
+msgid "Usage: %s [options] device\n\n"
 "Options:\n"
 "  -f           The device is a file\n"
 "  -L           Force log zeroing. Do this as a last resort.\n"
@@ -1618,15 +1536,13 @@ msgstr ""
 
 #: .././repair/xfs_repair.c:460
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "fatal error -- "
 msgstr ""
 
 #: .././repair/xfs_repair.c:520
 #, c-format
-msgid ""
-"sb %s inode value %<PRIu64> %sinconsistent with calculated value %<PRIu64>\n"
+msgid "sb %s inode value %<PRIu64> %sinconsistent with calculated value %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:526
@@ -1674,9 +1590,7 @@ msgstr ""
 
 #: .././repair/xfs_repair.c:715
 #, c-format
-msgid ""
-"sb root inode value %<PRIu64> valid but in unaligned location (expected "
-"%<PRIu64>) possibly due to sunit change\n"
+msgid "sb root inode value %<PRIu64> valid but in unaligned location (expected %<PRIu64>) possibly due to sunit change\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:722
@@ -1709,15 +1623,13 @@ msgid "Format log to cycle %d.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:842
-msgid ""
-"Cannot get host filesystem geometry.\n"
+msgid "Cannot get host filesystem geometry.\n"
 "Repair may fail if there is a sector size mismatch between\n"
 "the image and the host filesystem.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:852
-msgid ""
-"Sector size on host filesystem larger than image sector size.\n"
+msgid "Sector size on host filesystem larger than image sector size.\n"
 "Cannot turn off direct IO, so exiting.\n"
 msgstr ""
 
@@ -1747,15 +1659,13 @@ msgid "%s: couldn't stat \"%s\"\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1140
-msgid ""
-"Primary superblock would have been modified.\n"
+msgid "Primary superblock would have been modified.\n"
 "Cannot proceed further in no_modify mode.\n"
 "Exiting now.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1148
-msgid ""
-"Primary superblock bad after phase 1!\n"
+msgid "Primary superblock bad after phase 1!\n"
 "Exiting now.\n"
 msgstr ""
 
@@ -1771,22 +1681,18 @@ msgstr ""
 
 #: .././repair/xfs_repair.c:1294
 #, c-format
-msgid ""
-"        - max_mem = %lu, icount = %<PRIu64>, imem = %<PRIu64>, dblock = "
-"%<PRIu64>, dmem = %<PRIu64>\n"
+msgid "        - max_mem = %lu, icount = %<PRIu64>, imem = %<PRIu64>, dblock = %<PRIu64>, dmem = %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1303
 #, c-format
-msgid ""
-"Required memory for repair is greater that the maximum specified\n"
+msgid "Required memory for repair is greater that the maximum specified\n"
 "with the -m option. Please increase it to at least %lu.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1308
 #, c-format
-msgid ""
-"Memory available for repair (%luMB) may not be sufficient.\n"
+msgid "Memory available for repair (%luMB) may not be sufficient.\n"
 "At least %luMB is needed to repair this filesystem efficiently\n"
 "If repair fails due to lack of memory, please\n"
 msgstr ""
@@ -1835,38 +1741,32 @@ msgid "Warning:  quota inodes would be cleared.  Quotas would be disabled.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1429
-msgid ""
-"Warning:  user quota information was cleared.\n"
+msgid "Warning:  user quota information was cleared.\n"
 "User quotas can not be enforced until limit information is recreated.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1433
-msgid ""
-"Warning:  user quota information would be cleared.\n"
+msgid "Warning:  user quota information would be cleared.\n"
 "User quotas could not be enforced until limit information was recreated.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1441
-msgid ""
-"Warning:  group quota information was cleared.\n"
+msgid "Warning:  group quota information was cleared.\n"
 "Group quotas can not be enforced until limit information is recreated.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1445
-msgid ""
-"Warning:  group quota information would be cleared.\n"
+msgid "Warning:  group quota information would be cleared.\n"
 "Group quotas could not be enforced until limit information was recreated.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1453
-msgid ""
-"Warning:  project quota information was cleared.\n"
+msgid "Warning:  project quota information was cleared.\n"
 "Project quotas can not be enforced until limit information is recreated.\n"
 msgstr ""
 
 #: .././repair/xfs_repair.c:1457
-msgid ""
-"Warning:  project quota information would be cleared.\n"
+msgid "Warning:  project quota information would be cleared.\n"
 "Project quotas could not be enforced until limit information was recreated.\n"
 msgstr ""
 
@@ -1880,9 +1780,7 @@ msgstr ""
 
 #: .././repair/xfs_repair.c:1503
 #, c-format
-msgid ""
-"Note - stripe unit (%d) and width (%d) were copied from a backup "
-"superblock.\n"
+msgid "Note - stripe unit (%d) and width (%d) were copied from a backup superblock.\n"
 "Please reset with mount -o sunit=<value>,swidth=<value> if necessary\n"
 msgstr ""
 
@@ -2008,21 +1906,18 @@ msgstr ""
 
 #: .././repair/versions.c:134
 #, c-format
-msgid ""
-"Superblock has unknown compat/rocompat/incompat features (0x%x/0x%x/0x%x).\n"
+msgid "Superblock has unknown compat/rocompat/incompat features (0x%x/0x%x/0x%x).\n"
 "Using a more recent xfs_repair is recommended.\n"
 msgstr ""
 
 #: .././repair/versions.c:151
-msgid ""
-"WARNING: you have a V1 inode filesystem. It will be converted to a\n"
+msgid "WARNING: you have a V1 inode filesystem. It will be converted to a\n"
 "\tversion 2 inode filesystem. If you do not want this, run an older\n"
 "\tversion of xfs_repair.\n"
 msgstr ""
 
 #: .././repair/versions.c:156
-msgid ""
-"WARNING: you have a V1 inode filesystem. It would be converted to a\n"
+msgid "WARNING: you have a V1 inode filesystem. It would be converted to a\n"
 "\tversion 2 inode filesystem. If you do not want this, run an older\n"
 "\tversion of xfs_repair.\n"
 msgstr ""
@@ -2096,16 +1991,12 @@ msgstr ""
 
 #: .././repair/quotacheck.c:336
 #, c-format
-msgid ""
-"%s id %u is marked bigtime but file system does not support large "
-"timestamps\n"
+msgid "%s id %u is marked bigtime but file system does not support large timestamps\n"
 msgstr ""
 
 #: .././repair/quotacheck.c:377
 #, c-format
-msgid ""
-"cannot read %s inode %<PRIu64>, block %<PRIu64>, disk block %<PRIu64>, "
-"err=%d\n"
+msgid "cannot read %s inode %<PRIu64>, block %<PRIu64>, disk block %<PRIu64>, err=%d\n"
 msgstr ""
 
 #: .././repair/quotacheck.c:448
@@ -2120,9 +2011,7 @@ msgstr ""
 
 #: .././repair/quotacheck.c:485
 #, c-format
-msgid ""
-"%s record for id %u not found on disk (bcount %<PRIu64> rtbcount %<PRIu64> "
-"icount %<PRIu64>)\n"
+msgid "%s record for id %u not found on disk (bcount %<PRIu64> rtbcount %<PRIu64> icount %<PRIu64>)\n"
 msgstr ""
 
 #: .././repair/agheader.c:28
@@ -2492,9 +2381,7 @@ msgid "No memory for ACL check!\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:159
-msgid ""
-"entry contains illegal value in attribute named SGI_ACL_FILE or "
-"SGI_ACL_DEFAULT\n"
+msgid "entry contains illegal value in attribute named SGI_ACL_FILE or SGI_ACL_DEFAULT\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:185
@@ -2553,8 +2440,7 @@ msgstr ""
 
 #: .././repair/attr_repair.c:371
 #, c-format
-msgid ""
-"would have corrected attribute entry count in inode %<PRIu64> from %d to %d\n"
+msgid "would have corrected attribute entry count in inode %<PRIu64> from %d to %d\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:375
@@ -2564,14 +2450,12 @@ msgstr ""
 
 #: .././repair/attr_repair.c:386
 #, c-format
-msgid ""
-"would have corrected attribute totsize in inode %<PRIu64> from %d to %d\n"
+msgid "would have corrected attribute totsize in inode %<PRIu64> from %d to %d\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:391
 #, c-format
-msgid ""
-"corrected attribute entry totsize in inode %<PRIu64>, was %d, now %d\n"
+msgid "corrected attribute entry totsize in inode %<PRIu64>, was %d, now %d\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:442
@@ -2591,27 +2475,22 @@ msgstr ""
 
 #: .././repair/attr_repair.c:502
 #, c-format
-msgid ""
-"attribute entry %d in attr block %u, inode %<PRIu64> has bad name (namelen = "
-"%d)\n"
+msgid "attribute entry %d in attr block %u, inode %<PRIu64> has bad name (namelen = %d)\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:522
 #, c-format
-msgid ""
-"bad hashvalue for attribute entry %d in attr block %u, inode %<PRIu64>\n"
+msgid "bad hashvalue for attribute entry %d in attr block %u, inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:532
 #, c-format
-msgid ""
-"bad security value for attribute entry %d in attr block %u, inode %<PRIu64>\n"
+msgid "bad security value for attribute entry %d in attr block %u, inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:577
 #, c-format
-msgid ""
-"inconsistent remote attribute entry %d in attr block %u, ino %<PRIu64>\n"
+msgid "inconsistent remote attribute entry %d in attr block %u, ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:598
@@ -2660,43 +2539,32 @@ msgstr ""
 
 #: .././repair/attr_repair.c:724
 #, c-format
-msgid ""
-"attribute entry %d in attr block %u, inode %<PRIu64> claims already used "
-"space\n"
+msgid "attribute entry %d in attr block %u, inode %<PRIu64> claims already used space\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:747
 #, c-format
-msgid ""
-"attribute entry %d in attr block %u, inode %<PRIu64> claims used space\n"
+msgid "attribute entry %d in attr block %u, inode %<PRIu64> claims used space\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:771
 #, c-format
-msgid ""
-"- resetting first used heap value from %d to %d in block %u of attribute "
-"fork of inode %<PRIu64>\n"
+msgid "- resetting first used heap value from %d to %d in block %u of attribute fork of inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:779
 #, c-format
-msgid ""
-"- would reset first used value from %d to %d in block %u of attribute fork "
-"of inode %<PRIu64>\n"
+msgid "- would reset first used value from %d to %d in block %u of attribute fork of inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:789
 #, c-format
-msgid ""
-"- resetting usedbytes cnt from %d to %d in block %u of attribute fork of "
-"inode %<PRIu64>\n"
+msgid "- resetting usedbytes cnt from %d to %d in block %u of attribute fork of inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:797
 #, c-format
-msgid ""
-"- would reset usedbytes cnt from %d to %d in block %u of attribute fork of "
-"%<PRIu64>\n"
+msgid "- would reset usedbytes cnt from %d to %d in block %u of attribute fork of %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:853
@@ -2711,9 +2579,7 @@ msgstr ""
 
 #: .././repair/attr_repair.c:876
 #, c-format
-msgid ""
-"can't read file block %u (fsbno %<PRIu64>) for attribute fork of inode "
-"%<PRIu64>\n"
+msgid "can't read file block %u (fsbno %<PRIu64>) for attribute fork of inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:888
@@ -2723,8 +2589,7 @@ msgstr ""
 
 #: .././repair/attr_repair.c:919
 #, c-format
-msgid ""
-"bad sibling back pointer for block %u in attribute fork for inode %<PRIu64>\n"
+msgid "bad sibling back pointer for block %u in attribute fork for inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:961
@@ -2749,14 +2614,12 @@ msgstr ""
 
 #: .././repair/attr_repair.c:1089 .././repair/attr_repair.c:1141
 #, c-format
-msgid ""
-"clearing forw/back pointers in block 0 for attributes in inode %<PRIu64>\n"
+msgid "clearing forw/back pointers in block 0 for attributes in inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:1098 .././repair/attr_repair.c:1150
 #, c-format
-msgid ""
-"would clear forw/back pointers in block 0 for attributes in inode %<PRIu64>\n"
+msgid "would clear forw/back pointers in block 0 for attributes in inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/attr_repair.c:1196
@@ -2819,8 +2682,7 @@ msgstr ""
 
 #: .././repair/scan.c:247
 #, c-format
-msgid ""
-"expected level %d got %d in inode %<PRIu64>, (%s fork) bmbt block %<PRIu64>\n"
+msgid "expected level %d got %d in inode %<PRIu64>, (%s fork) bmbt block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:257
@@ -2840,22 +2702,19 @@ msgstr ""
 
 #: .././repair/scan.c:297
 #, c-format
-msgid ""
-"bad fwd (right) sibling pointer (saw %<PRIu64> parent block says %<PRIu64>)\n"
+msgid "bad fwd (right) sibling pointer (saw %<PRIu64> parent block says %<PRIu64>)\n"
 "\tin inode %<PRIu64> (%s fork) bmap btree block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:307
 #, c-format
-msgid ""
-"bad back (left) sibling pointer (saw %llu parent block says %<PRIu64>)\n"
+msgid "bad back (left) sibling pointer (saw %llu parent block says %<PRIu64>)\n"
 "\tin inode %<PRIu64> (%s fork) bmap btree block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:322
 #, c-format
-msgid ""
-"bad back (left) sibling pointer (saw %llu should be NULL (0))\n"
+msgid "bad back (left) sibling pointer (saw %llu should be NULL (0))\n"
 "\tin inode %<PRIu64> (%s fork) bmap btree block %<PRIu64>\n"
 msgstr ""
 
@@ -2876,21 +2735,17 @@ msgstr ""
 
 #: .././repair/scan.c:422
 #, c-format
-msgid ""
-"couldn't add inode %<PRIu64> bmbt block %<PRIu64> reverse-mapping data."
+msgid "couldn't add inode %<PRIu64> bmbt block %<PRIu64> reverse-mapping data."
 msgstr ""
 
 #: .././repair/scan.c:432 .././repair/scan.c:484
 #, c-format
-msgid ""
-"inode %<PRIu64> bad # of bmap records (%<PRIu64>, min - %u, max - %u)\n"
+msgid "inode %<PRIu64> bad # of bmap records (%<PRIu64>, min - %u, max - %u)\n"
 msgstr ""
 
 #: .././repair/scan.c:463
 #, c-format
-msgid ""
-"out-of-order bmap key (file offset) in inode %<PRIu64>, %s fork, fsbno "
-"%<PRIu64>\n"
+msgid "out-of-order bmap key (file offset) in inode %<PRIu64>, %s fork, fsbno %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:501
@@ -2900,22 +2755,19 @@ msgstr ""
 
 #: .././repair/scan.c:529
 #, c-format
-msgid ""
-"correcting bt key (was %llu, now %<PRIu64>) in inode %<PRIu64>\n"
+msgid "correcting bt key (was %llu, now %<PRIu64>) in inode %<PRIu64>\n"
 "\t\t%s fork, btree block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:541
 #, c-format
-msgid ""
-"bad btree key (is %llu, should be %<PRIu64>) in inode %<PRIu64>\n"
+msgid "bad btree key (is %llu, should be %<PRIu64>) in inode %<PRIu64>\n"
 "\t\t%s fork, btree block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/scan.c:559
 #, c-format
-msgid ""
-"bad fwd (right) sibling pointer (saw %<PRIu64> should be NULLFSBLOCK)\n"
+msgid "bad fwd (right) sibling pointer (saw %<PRIu64> should be NULLFSBLOCK)\n"
 "\tin inode %<PRIu64> (%s fork) bmap btree block %<PRIu64>\n"
 msgstr ""
 
@@ -2931,8 +2783,7 @@ msgstr ""
 
 #: .././repair/scan.c:651
 #, c-format
-msgid ""
-"%s freespace btree block claimed (state %d), agno %d, bno %d, suspect %d\n"
+msgid "%s freespace btree block claimed (state %d), agno %d, bno %d, suspect %d\n"
 msgstr ""
 
 #: .././repair/scan.c:671 .././repair/scan.c:778 .././repair/scan.c:1093
@@ -2974,8 +2825,7 @@ msgstr ""
 
 #: .././repair/scan.c:880
 #, c-format
-msgid ""
-"Static meta block (%d,%d-%d) mismatch in %s tree, state - %d,%<PRIx64>\n"
+msgid "Static meta block (%d,%d-%d) mismatch in %s tree, state - %d,%<PRIx64>\n"
 msgstr ""
 
 #: .././repair/scan.c:889
@@ -2990,8 +2840,7 @@ msgstr ""
 
 #: .././repair/scan.c:905
 #, c-format
-msgid ""
-"AG refcount block (%d,%d-%d) mismatch in %s tree, state - %d,%<PRIx64>\n"
+msgid "AG refcount block (%d,%d-%d) mismatch in %s tree, state - %d,%<PRIx64>\n"
 msgstr ""
 
 #: .././repair/scan.c:914
@@ -3031,28 +2880,22 @@ msgstr ""
 
 #: .././repair/scan.c:1155
 #, c-format
-msgid ""
-"record %d of block (%u/%u) in %s btree cannot have non-inode owner with "
-"flags\n"
+msgid "record %d of block (%u/%u) in %s btree cannot have non-inode owner with flags\n"
 msgstr ""
 
 #: .././repair/scan.c:1159
 #, c-format
-msgid ""
-"record %d of block (%u/%u) in %s btree cannot have non-inode owner with "
-"offset\n"
+msgid "record %d of block (%u/%u) in %s btree cannot have non-inode owner with offset\n"
 msgstr ""
 
 #: .././repair/scan.c:1181
 #, c-format
-msgid ""
-"out-of-order rmap btree record %d (%u %<PRId64> %<PRIx64> %u) block %u/%u\n"
+msgid "out-of-order rmap btree record %d (%u %<PRId64> %<PRIx64> %u) block %u/%u\n"
 msgstr ""
 
 #: .././repair/scan.c:1190 .././repair/scan.c:1527
 #, c-format
-msgid ""
-"record %d in block (%u/%u) of %s tree should be merged with previous record\n"
+msgid "record %d in block (%u/%u) of %s tree should be merged with previous record\n"
 msgstr ""
 
 #: .././repair/scan.c:1205
@@ -3102,16 +2945,12 @@ msgstr ""
 
 #: .././repair/scan.c:1459
 #, c-format
-msgid ""
-"leftover CoW extent has incorrect refcount in record %u of %s btree block "
-"%u/%u\n"
+msgid "leftover CoW extent has incorrect refcount in record %u of %s btree block %u/%u\n"
 msgstr ""
 
 #: .././repair/scan.c:1464
 #, c-format
-msgid ""
-"leftover CoW extent has invalid startblock in record %u of %s btree block "
-"%u/%u\n"
+msgid "leftover CoW extent has invalid startblock in record %u of %s btree block %u/%u\n"
 msgstr ""
 
 #: .././repair/scan.c:1494 .././db/check.c:4620
@@ -3141,8 +2980,7 @@ msgstr ""
 
 #: .././repair/scan.c:1669
 #, c-format
-msgid ""
-"bad starting inode # (%<PRIu64> (0x%x 0x%x)) in %s rec, skipping rec\n"
+msgid "bad starting inode # (%<PRIu64> (0x%x 0x%x)) in %s rec, skipping rec\n"
 msgstr ""
 
 #: .././repair/scan.c:1678
@@ -3152,26 +2990,22 @@ msgstr ""
 
 #: .././repair/scan.c:1745
 #, c-format
-msgid ""
-"ir_holemask/ir_free mismatch, %s chunk %d/%u, holemask 0x%x free 0x%llx\n"
+msgid "ir_holemask/ir_free mismatch, %s chunk %d/%u, holemask 0x%x free 0x%llx\n"
 msgstr ""
 
 #: .././repair/scan.c:1823
 #, c-format
-msgid ""
-"inode chunk claims used block, inobt block - agno %d, bno %d, inopb %d\n"
+msgid "inode chunk claims used block, inobt block - agno %d, bno %d, inopb %d\n"
 msgstr ""
 
 #: .././repair/scan.c:1841
 #, c-format
-msgid ""
-"inode rec for ino %<PRIu64> (%d/%d) overlaps existing rec (start %d/%d)\n"
+msgid "inode rec for ino %<PRIu64> (%d/%d) overlaps existing rec (start %d/%d)\n"
 msgstr ""
 
 #: .././repair/scan.c:1865
 #, c-format
-msgid ""
-"ir_freecount/free mismatch, inode chunk %d/%u, freecount %d nfree %d\n"
+msgid "ir_freecount/free mismatch, inode chunk %d/%u, freecount %d nfree %d\n"
 msgstr ""
 
 #: .././repair/scan.c:1873 .././repair/scan.c:2049
@@ -3181,28 +3015,22 @@ msgstr ""
 
 #: .././repair/scan.c:1927
 #, c-format
-msgid ""
-"sparse inode chunk claims inode block, finobt block - agno %d, bno %d, inopb "
-"%d\n"
+msgid "sparse inode chunk claims inode block, finobt block - agno %d, bno %d, inopb %d\n"
 msgstr ""
 
 #: .././repair/scan.c:1942
 #, c-format
-msgid ""
-"inode chunk claims untracked block, finobt block - agno %d, bno %d, inopb "
-"%d\n"
+msgid "inode chunk claims untracked block, finobt block - agno %d, bno %d, inopb %d\n"
 msgstr ""
 
 #: .././repair/scan.c:1950
 #, c-format
-msgid ""
-"inode chunk claims used block, finobt block - agno %d, bno %d, inopb %d\n"
+msgid "inode chunk claims used block, finobt block - agno %d, bno %d, inopb %d\n"
 msgstr ""
 
 #: .././repair/scan.c:1972
 #, c-format
-msgid ""
-"finobt rec for ino %<PRIu64> (%d/%u) does not match existing rec (%d/%d)\n"
+msgid "finobt rec for ino %<PRIu64> (%d/%u) does not match existing rec (%d/%d)\n"
 msgstr ""
 
 #: .././repair/scan.c:2014
@@ -3212,8 +3040,7 @@ msgstr ""
 
 #: .././repair/scan.c:2036
 #, c-format
-msgid ""
-"finobt ir_freecount/free mismatch, inode chunk %d/%u, freecount %d nfree %d\n"
+msgid "finobt ir_freecount/free mismatch, inode chunk %d/%u, freecount %d nfree %d\n"
 msgstr ""
 
 #: .././repair/scan.c:2042
@@ -3556,15 +3383,13 @@ msgstr ""
 
 #: .././repair/da_util.c:381
 #, c-format
-msgid ""
-"correcting bad hashval in non-leaf %s block\n"
+msgid "correcting bad hashval in non-leaf %s block\n"
 "\tin (level %d) in inode %<PRIu64>.\n"
 msgstr ""
 
 #: .././repair/da_util.c:389
 #, c-format
-msgid ""
-"would correct bad hashval in non-leaf %s block\n"
+msgid "would correct bad hashval in non-leaf %s block\n"
 "\tin (level %d) in inode %<PRIu64>.\n"
 msgstr ""
 
@@ -3595,15 +3420,13 @@ msgstr ""
 
 #: .././repair/da_util.c:676
 #, c-format
-msgid ""
-"correcting bad hashval in interior %s block\n"
+msgid "correcting bad hashval in interior %s block\n"
 "\tin (level %d) in inode %<PRIu64>.\n"
 msgstr ""
 
 #: .././repair/da_util.c:684
 #, c-format
-msgid ""
-"would correct bad hashval in interior %s block\n"
+msgid "would correct bad hashval in interior %s block\n"
 "\tin (level %d) in inode %<PRIu64>.\n"
 msgstr ""
 
@@ -3624,8 +3447,7 @@ msgid "unable to verify superblock, continuing...\n"
 msgstr ""
 
 #: .././repair/sb.c:217
-msgid ""
-"\n"
+msgid "\n"
 "attempting to find secondary superblock...\n"
 msgstr ""
 
@@ -3661,15 +3483,12 @@ msgid "couldn't malloc geometry structure\n"
 msgstr ""
 
 #: .././repair/sb.c:796
-msgid ""
-"Only two AGs detected and they do not match - cannot validate filesystem "
-"geometry.\n"
+msgid "Only two AGs detected and they do not match - cannot validate filesystem geometry.\n"
 "Use the -o force_geometry option to proceed.\n"
 msgstr ""
 
 #: .././repair/sb.c:812
-msgid ""
-"Only one AG detected - cannot validate filesystem geometry.\n"
+msgid "Only one AG detected - cannot validate filesystem geometry.\n"
 "Use the -o force_geometry option to proceed.\n"
 msgstr ""
 
@@ -3811,15 +3630,12 @@ msgstr ""
 
 #: .././repair/progress.c:268
 #, c-format
-msgid ""
-"\t- %02d:%02d:%02d: Phase %d: elapsed time %s - processed %d %s per minute\n"
+msgid "\t- %02d:%02d:%02d: Phase %d: elapsed time %s - processed %d %s per minute\n"
 msgstr ""
 
 #: .././repair/progress.c:273
 #, c-format
-msgid ""
-"\t- %02d:%02d:%02d: Phase %d: %<PRIu64>%% done - estimated remaining time "
-"%s\n"
+msgid "\t- %02d:%02d:%02d: Phase %d: %<PRIu64>%% done - estimated remaining time %s\n"
 msgstr ""
 
 #: .././repair/progress.c:282
@@ -3889,8 +3705,7 @@ msgstr ""
 
 #: .././repair/progress.c:524
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "        XFS_REPAIR Summary    %s\n"
 msgstr ""
 
@@ -3910,8 +3725,7 @@ msgstr ""
 
 #: .././repair/progress.c:544
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "Total run time: %s\n"
 msgstr ""
 
@@ -3986,9 +3800,7 @@ msgstr ""
 
 #: .././repair/dir2.c:319
 #, c-format
-msgid ""
-"entry \"%*.*s\" in shortform directory %<PRIu64> references %s inode "
-"%<PRIu64>\n"
+msgid "entry \"%*.*s\" in shortform directory %<PRIu64> references %s inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:325
@@ -4036,8 +3848,7 @@ msgstr ""
 
 #: .././repair/dir2.c:455
 #, c-format
-msgid ""
-"would have corrected entry count in directory %<PRIu64> from %d to %d\n"
+msgid "would have corrected entry count in directory %<PRIu64> from %d to %d\n"
 msgstr ""
 
 #: .././repair/dir2.c:459
@@ -4057,8 +3868,7 @@ msgstr ""
 
 #: .././repair/dir2.c:488
 #, c-format
-msgid ""
-"would have corrected directory %<PRIu64> size from %<PRId64> to %<PRIdPTR>\n"
+msgid "would have corrected directory %<PRIu64> size from %<PRId64> to %<PRIdPTR>\n"
 msgstr ""
 
 #: .././repair/dir2.c:493
@@ -4096,15 +3906,12 @@ msgstr ""
 
 #: .././repair/dir2.c:562
 #, c-format
-msgid ""
-"corrected root directory %<PRIu64> .. entry, was %<PRIu64>, now %<PRIu64>\n"
+msgid "corrected root directory %<PRIu64> .. entry, was %<PRIu64>, now %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:570
 #, c-format
-msgid ""
-"would have corrected root directory %<PRIu64> .. entry from %<PRIu64> to "
-"%<PRIu64>\n"
+msgid "would have corrected root directory %<PRIu64> .. entry from %<PRIu64> to %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:581
@@ -4127,16 +3934,12 @@ msgstr ""
 
 #: .././repair/dir2.c:795
 #, c-format
-msgid ""
-"entry \"%*.*s\" at block %d offset %<PRIdPTR> in directory inode %<PRIu64> "
-"references %s inode %<PRIu64>\n"
+msgid "entry \"%*.*s\" at block %d offset %<PRIdPTR> in directory inode %<PRIu64> references %s inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:818
 #, c-format
-msgid ""
-"entry at block %u offset %<PRIdPTR> in directory inode %<PRIu64>has 0 "
-"namelength\n"
+msgid "entry at block %u offset %<PRIdPTR> in directory inode %<PRIu64>has 0 namelength\n"
 msgstr ""
 
 #: .././repair/dir2.c:831
@@ -4151,9 +3954,7 @@ msgstr ""
 
 #: .././repair/dir2.c:850
 #, c-format
-msgid ""
-"entry at block %u offset %<PRIdPTR> in directory inode %<PRIu64> has illegal "
-"name \"%*.*s\": "
+msgid "entry at block %u offset %<PRIdPTR> in directory inode %<PRIu64> has illegal name \"%*.*s\": "
 msgstr ""
 
 #: .././repair/dir2.c:882
@@ -4241,8 +4042,7 @@ msgstr ""
 
 #: .././repair/dir2.c:1065
 #, c-format
-msgid ""
-"bad directory block magic # %#x in block %u for directory inode %<PRIu64>\n"
+msgid "bad directory block magic # %#x in block %u for directory inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:1123
@@ -4277,8 +4077,7 @@ msgstr ""
 
 #: .././repair/dir2.c:1217
 #, c-format
-msgid ""
-"bad directory leaf magic # %#x for directory inode %<PRIu64> block %u\n"
+msgid "bad directory leaf magic # %#x for directory inode %<PRIu64> block %u\n"
 msgstr ""
 
 #: .././repair/dir2.c:1245
@@ -4308,9 +4107,7 @@ msgstr ""
 
 #: .././repair/dir2.c:1428
 #, c-format
-msgid ""
-"bad directory block magic # %#x in block %<PRIu64> for directory inode "
-"%<PRIu64>\n"
+msgid "bad directory block magic # %#x in block %<PRIu64> for directory inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dir2.c:1513
@@ -4356,8 +4153,7 @@ msgid "zero_log: cannot find log head/tail (xlog_find_tail=%d)\n"
 msgstr ""
 
 #: .././repair/phase2.c:50
-msgid ""
-"ERROR: The log head and/or tail cannot be discovered. Attempt to mount the\n"
+msgid "ERROR: The log head and/or tail cannot be discovered. Attempt to mount the\n"
 "filesystem to replay the log or use the -L option to destroy the log and\n"
 "attempt a repair.\n"
 msgstr ""
@@ -4368,21 +4164,18 @@ msgid "zero_log: head block %<PRId64> tail block %<PRId64>\n"
 msgstr ""
 
 #: .././repair/phase2.c:64
-msgid ""
-"ALERT: The filesystem has valuable metadata changes in a log which is being\n"
+msgid "ALERT: The filesystem has valuable metadata changes in a log which is being\n"
 "destroyed because the -L option was used.\n"
 msgstr ""
 
 #: .././repair/phase2.c:68
-msgid ""
-"ALERT: The filesystem has valuable metadata changes in a log which is being\n"
+msgid "ALERT: The filesystem has valuable metadata changes in a log which is being\n"
 "ignored because the -n option was used.  Expect spurious inconsistencies\n"
 "which may be resolved by first mounting the filesystem to replay the log.\n"
 msgstr ""
 
 #: .././repair/phase2.c:73
-msgid ""
-"ERROR: The filesystem has valuable metadata changes in a log which needs to\n"
+msgid "ERROR: The filesystem has valuable metadata changes in a log which needs to\n"
 "be replayed.  Mount the filesystem to replay the log, and unmount it before\n"
 "re-running xfs_repair.  If you are unable to mount the filesystem, then use\n"
 "the -L option to destroy the log and attempt a repair.\n"
@@ -4446,14 +4239,12 @@ msgstr ""
 
 #: .././repair/phase2.c:408
 #, c-format
-msgid ""
-"Filesystem log too small to upgrade filesystem; need %u blocks, have %u.\n"
+msgid "Filesystem log too small to upgrade filesystem; need %u blocks, have %u.\n"
 msgstr ""
 
 #: .././repair/phase2.c:420
 #, c-format
-msgid ""
-"Cannot upgrade filesystem, root inode (%llu) cannot be moved to %llu.\n"
+msgid "Cannot upgrade filesystem, root inode (%llu) cannot be moved to %llu.\n"
 msgstr ""
 
 #: .././repair/phase2.c:468
@@ -4467,9 +4258,7 @@ msgid "filesystem feature upgrade failed, err=%d\n"
 msgstr ""
 
 #: .././repair/phase2.c:510
-msgid ""
-"This filesystem has an external log.  Specify log device with the -l "
-"option.\n"
+msgid "This filesystem has an external log.  Specify log device with the -l option.\n"
 msgstr ""
 
 #: .././repair/phase2.c:513
@@ -4655,16 +4444,12 @@ msgstr ""
 
 #: .././repair/dinode.c:240
 #, c-format
-msgid ""
-"data fork in rt ino %<PRIu64> claims dup rt extent,off - %<PRIu64>, start - "
-"%<PRIu64>, count %<PRIu64>\n"
+msgid "data fork in rt ino %<PRIu64> claims dup rt extent,off - %<PRIu64>, start - %<PRIu64>, count %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:280
 #, c-format
-msgid ""
-"data fork in rt inode %<PRIu64> found invalid rt extent %<PRIu64> state %d "
-"at rt block %<PRIu64>\n"
+msgid "data fork in rt inode %<PRIu64> found invalid rt extent %<PRIu64> state %d at rt block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:304
@@ -4674,9 +4459,7 @@ msgstr ""
 
 #: .././repair/dinode.c:310
 #, c-format
-msgid ""
-"data fork in rt inode %<PRIu64> found rt metadata extent %<PRIu64> in rt "
-"bmap\n"
+msgid "data fork in rt inode %<PRIu64> found rt metadata extent %<PRIu64> in rt bmap\n"
 msgstr ""
 
 #: .././repair/dinode.c:316
@@ -4691,83 +4474,62 @@ msgstr ""
 
 #: .././repair/dinode.c:348
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad rt extent start block number %<PRIu64>, offset "
-"%<PRIu64>\n"
+msgid "inode %<PRIu64> - bad rt extent start block number %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:358
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad rt extent last block number %<PRIu64>, offset "
-"%<PRIu64>\n"
+msgid "inode %<PRIu64> - bad rt extent last block number %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:366
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad rt extent overflows - start %<PRIu64>, end %<PRIu64>, "
-"offset %<PRIu64>\n"
+msgid "inode %<PRIu64> - bad rt extent overflows - start %<PRIu64>, end %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:448
 #, c-format
-msgid ""
-"bmap rec out of order, inode %<PRIu64> entry %<PRIu64> [o s c] [%<PRIu64> "
-"%<PRIu64> %<PRIu64>], %<PRIu64> [%<PRIu64> %<PRIu64> %<PRIu64>]\n"
+msgid "bmap rec out of order, inode %<PRIu64> entry %<PRIu64> [o s c] [%<PRIu64> %<PRIu64> %<PRIu64>], %<PRIu64> [%<PRIu64> %<PRIu64> %<PRIu64>]\n"
 msgstr ""
 
 #: .././repair/dinode.c:463
 #, c-format
-msgid ""
-"unwritten extent (off = %<PRIu64>, fsbno = %<PRIu64>) in ino %<PRIu64> attr "
-"fork\n"
+msgid "unwritten extent (off = %<PRIu64>, fsbno = %<PRIu64>) in ino %<PRIu64> attr fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:473
 #, c-format
-msgid ""
-"unwritten extent (off = %<PRIu64>, fsbno = %<PRIu64>) in non-regular file "
-"ino %<PRIu64>\n"
+msgid "unwritten extent (off = %<PRIu64>, fsbno = %<PRIu64>) in non-regular file ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:486
 #, c-format
-msgid ""
-"zero length extent (off = %<PRIu64>, fsbno = %<PRIu64>) in ino %<PRIu64>\n"
+msgid "zero length extent (off = %<PRIu64>, fsbno = %<PRIu64>) in ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:515
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad extent starting block number %<PRIu64>, offset "
-"%<PRIu64>\n"
+msgid "inode %<PRIu64> - bad extent starting block number %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:523
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad extent last block number %<PRIu64>, offset %<PRIu64>\n"
+msgid "inode %<PRIu64> - bad extent last block number %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:531
 #, c-format
-msgid ""
-"inode %<PRIu64> - bad extent overflows - start %<PRIu64>, end %<PRIu64>, "
-"offset %<PRIu64>\n"
+msgid "inode %<PRIu64> - bad extent overflows - start %<PRIu64>, end %<PRIu64>, offset %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:543
 #, c-format
-msgid ""
-"inode %<PRIu64> - extent exceeds max offset - start %<PRIu64>, count "
-"%<PRIu64>, physical block %<PRIu64>\n"
+msgid "inode %<PRIu64> - extent exceeds max offset - start %<PRIu64>, count %<PRIu64>, physical block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:563
 #, c-format
-msgid ""
-"Fatal error: inode %<PRIu64> - blkmap_set_ext(): %s\n"
+msgid "Fatal error: inode %<PRIu64> - blkmap_set_ext(): %s\n"
 "\t%s fork, off - %<PRIu64>, start - %<PRIu64>, cnt %<PRIu64>\n"
 msgstr ""
 
@@ -4831,9 +4593,7 @@ msgstr ""
 
 #: .././repair/dinode.c:815
 #, c-format
-msgid ""
-"indicated size of %s btree root (%d bytes) greater than space in inode "
-"%<PRIu64> %s fork\n"
+msgid "indicated size of %s btree root (%d bytes) greater than space in inode %<PRIu64> %s fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:919
@@ -4843,16 +4603,12 @@ msgstr ""
 
 #: .././repair/dinode.c:939
 #, c-format
-msgid ""
-"correcting key in bmbt root (was %<PRIu64>, now %<PRIu64>) in inode "
-"%<PRIu64> %s fork\n"
+msgid "correcting key in bmbt root (was %<PRIu64>, now %<PRIu64>) in inode %<PRIu64> %s fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:951
 #, c-format
-msgid ""
-"bad key in bmbt root (is %<PRIu64>, would reset to %<PRIu64>) in inode "
-"%<PRIu64> %s fork\n"
+msgid "bad key in bmbt root (is %<PRIu64>, would reset to %<PRIu64>) in inode %<PRIu64> %s fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:967
@@ -4862,14 +4618,12 @@ msgstr ""
 
 #: .././repair/dinode.c:984
 #, c-format
-msgid ""
-"extent count for ino %<PRIu64> %s fork too low (%<PRIu64>) for file format\n"
+msgid "extent count for ino %<PRIu64> %s fork too low (%<PRIu64>) for file format\n"
 msgstr ""
 
 #: .././repair/dinode.c:995
 #, c-format
-msgid ""
-"bad fwd (right) sibling pointer (saw %<PRIu64> should be NULLFSBLOCK)\n"
+msgid "bad fwd (right) sibling pointer (saw %<PRIu64> should be NULLFSBLOCK)\n"
 msgstr ""
 
 #: .././repair/dinode.c:998
@@ -4879,8 +4633,7 @@ msgstr ""
 
 #: .././repair/dinode.c:1084
 #, c-format
-msgid ""
-"local inode %<PRIu64> data fork is too large (size = %lld, max = %zu)\n"
+msgid "local inode %<PRIu64> data fork is too large (size = %lld, max = %zu)\n"
 msgstr ""
 
 #: .././repair/dinode.c:1093
@@ -4895,15 +4648,12 @@ msgstr ""
 
 #: .././repair/dinode.c:1128
 #, c-format
-msgid ""
-"mismatch between format (%d) and size (%<PRId64>) in symlink ino %<PRIu64>\n"
+msgid "mismatch between format (%d) and size (%<PRId64>) in symlink ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1135
 #, c-format
-msgid ""
-"mismatch between format (%d) and size (%<PRId64>) in symlink inode "
-"%<PRIu64>\n"
+msgid "mismatch between format (%d) and size (%<PRId64>) in symlink inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1150
@@ -4913,14 +4663,12 @@ msgstr ""
 
 #: .././repair/dinode.c:1162
 #, c-format
-msgid ""
-"bad extent #%<PRIu64> offset (%<PRIu64>) in symlink %<PRIu64> data fork\n"
+msgid "bad extent #%<PRIu64> offset (%<PRIu64>) in symlink %<PRIu64> data fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:1168
 #, c-format
-msgid ""
-"bad extent #%<PRIu64> count (%<PRIu64>) in symlink %<PRIu64> data fork\n"
+msgid "bad extent #%<PRIu64> count (%<PRIu64>) in symlink %<PRIu64> data fork\n"
 msgstr ""
 
 #: .././repair/dinode.c:1227
@@ -4937,8 +4685,7 @@ msgstr ""
 
 #: .././repair/dinode.c:1259
 #, c-format
-msgid ""
-"cannot read inode %<PRIu64>, file block %<PRIu64>, disk block %<PRIu64>\n"
+msgid "cannot read inode %<PRIu64>, file block %<PRIu64>, disk block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1273
@@ -4981,15 +4728,13 @@ msgstr ""
 
 #: .././repair/dinode.c:1384
 #, c-format
-msgid ""
-"Bad symlink buffer CRC, block %<PRIu64>, inode %<PRIu64>.\n"
+msgid "Bad symlink buffer CRC, block %<PRIu64>, inode %<PRIu64>.\n"
 "Correcting CRC, but symlink may be bad.\n"
 msgstr ""
 
 #: .././repair/dinode.c:1397
 #, c-format
-msgid ""
-"bad symlink header ino %<PRIu64>, file block %d, disk block %<PRIu64>\n"
+msgid "bad symlink header ino %<PRIu64>, file block %d, disk block %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1442
@@ -5115,9 +4860,7 @@ msgstr ""
 
 #: .././repair/dinode.c:1767
 #, c-format
-msgid ""
-"mismatch between format (%d) and size (%<PRId64>) in directory ino "
-"%<PRIu64>\n"
+msgid "mismatch between format (%d) and size (%<PRId64>) in directory ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1773
@@ -5137,15 +4880,12 @@ msgstr ""
 
 #: .././repair/dinode.c:1818
 #, c-format
-msgid ""
-"realtime bitmap inode %<PRIu64> has bad size %<PRId64> (should be "
-"%<PRIu64>)\n"
+msgid "realtime bitmap inode %<PRIu64> has bad size %<PRId64> (should be %<PRIu64>)\n"
 msgstr ""
 
 #: .././repair/dinode.c:1740
 #, c-format
-msgid ""
-"realtime summary inode %<PRIu64> has bad size %<PRId64> (should be %d)\n"
+msgid "realtime summary inode %<PRIu64> has bad size %<PRId64> (should be %d)\n"
 msgstr ""
 
 #: .././repair/dinode.c:1858
@@ -5165,8 +4905,7 @@ msgstr ""
 
 #: .././repair/dinode.c:1899
 #, c-format
-msgid ""
-"correcting nblocks for inode %<PRIu64>, was %llu - counted %<PRIu64>\n"
+msgid "correcting nblocks for inode %<PRIu64>, was %llu - counted %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1906
@@ -5181,14 +4920,12 @@ msgstr ""
 
 #: .././repair/dinode.c:1924
 #, c-format
-msgid ""
-"correcting nextents for inode %<PRIu64>, was %<PRIu64> - counted %<PRIu64>\n"
+msgid "correcting nextents for inode %<PRIu64>, was %<PRIu64> - counted %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1933
 #, c-format
-msgid ""
-"bad nextents %<PRIu64> for inode %<PRIu64>, would reset to %<PRIu64>\n"
+msgid "bad nextents %<PRIu64> for inode %<PRIu64>, would reset to %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1942
@@ -5198,14 +4935,12 @@ msgstr ""
 
 #: .././repair/dinode.c:1950
 #, c-format
-msgid ""
-"correcting anextents for inode %<PRIu64>, was %<PRIu64> - counted %<PRIu64>\n"
+msgid "correcting anextents for inode %<PRIu64>, was %<PRIu64> - counted %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1959
 #, c-format
-msgid ""
-"bad anextents %<PRIu64> for inode %<PRIu64>, would reset to %<PRIu64>\n"
+msgid "bad anextents %<PRIu64> for inode %<PRIu64>, would reset to %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/dinode.c:1970
@@ -5265,14 +5000,12 @@ msgstr ""
 
 #: .././repair/dinode.c:2332
 #, c-format
-msgid ""
-"clearing obsolete nlink field in version 2 inode %<PRIu64>, was %d, now 0\n"
+msgid "clearing obsolete nlink field in version 2 inode %<PRIu64>, was %d, now 0\n"
 msgstr ""
 
 #: .././repair/dinode.c:2338
 #, c-format
-msgid ""
-"would clear obsolete nlink field in version 2 inode %<PRIu64>, currently %d\n"
+msgid "would clear obsolete nlink field in version 2 inode %<PRIu64>, currently %d\n"
 msgstr ""
 
 #: .././repair/dinode.c:2364
@@ -5434,9 +5167,7 @@ msgstr ""
 
 #: .././repair/dinode.c:2820
 #, c-format
-msgid ""
-"inode %<PRIu64> is marked reflinked but file system does not support "
-"reflink\n"
+msgid "inode %<PRIu64> is marked reflinked but file system does not support reflink\n"
 msgstr ""
 
 #: .././repair/dinode.c:2831
@@ -5451,9 +5182,7 @@ msgstr ""
 
 #: .././repair/dinode.c:2852
 #, c-format
-msgid ""
-"inode %<PRIu64> has CoW extent size hint but file system does not support "
-"reflink\n"
+msgid "inode %<PRIu64> has CoW extent size hint but file system does not support reflink\n"
 msgstr ""
 
 #: .././repair/dinode.c:2863
@@ -5468,9 +5197,7 @@ msgstr ""
 
 #: .././repair/dinode.c:2884
 #, c-format
-msgid ""
-"inode %<PRIu64> is marked bigtime but file system does not support large "
-"timestamps\n"
+msgid "inode %<PRIu64> is marked bigtime but file system does not support large timestamps\n"
 msgstr ""
 
 #: .././repair/dinode.c:2890
@@ -5483,9 +5210,7 @@ msgstr ""
 
 #: .././repair/dinode.c:2905
 #, c-format
-msgid ""
-"inode %<PRIu64> is marked large extent counts but file system does not "
-"support large extent counts\n"
+msgid "inode %<PRIu64> is marked large extent counts but file system does not support large extent counts\n"
 msgstr ""
 
 #: .././repair/dinode.c:2917
@@ -5678,9 +5403,7 @@ msgstr ""
 
 #: .././repair/init.c:93
 #, c-format
-msgid ""
-"Unmount or use the dangerous (-d) option to repair a read-only mounted "
-"filesystem\n"
+msgid "Unmount or use the dangerous (-d) option to repair a read-only mounted filesystem\n"
 msgstr ""
 
 #: .././repair/init.c:95
@@ -5704,8 +5427,7 @@ msgid "Insufficient memory while allocating reverse mapping slabs."
 msgstr ""
 
 #: .././repair/rmap.c:83 .././repair/rmap.c:322
-msgid ""
-"Insufficient memory while allocating raw metadata reverse mapping slabs."
+msgid "Insufficient memory while allocating raw metadata reverse mapping slabs."
 msgstr ""
 
 #: .././repair/rmap.c:89
@@ -5736,9 +5458,7 @@ msgstr ""
 
 #: .././repair/rmap.c:1207
 #, c-format
-msgid ""
-"Missing reverse-mapping record for (%u/%u) %slen %u owner %<PRId64> %s%soff "
-"%<PRIu64>\n"
+msgid "Missing reverse-mapping record for (%u/%u) %slen %u owner %<PRId64> %s%soff %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/rmap.c:1211 .././repair/rmap.c:1229 .././repair/rmap.c:1239
@@ -5755,9 +5475,7 @@ msgstr ""
 
 #: .././repair/rmap.c:1225
 #, c-format
-msgid ""
-"Incorrect reverse-mapping: saw (%u/%u) %slen %u owner %<PRId64> %s%soff "
-"%<PRIu64>; should be (%u/%u) %slen %u owner %<PRId64> %s%soff %<PRIu64>\n"
+msgid "Incorrect reverse-mapping: saw (%u/%u) %slen %u owner %<PRId64> %s%soff %<PRIu64>; should be (%u/%u) %slen %u owner %<PRId64> %s%soff %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/rmap.c:1357
@@ -5804,9 +5522,7 @@ msgstr ""
 
 #: .././repair/rmap.c:1596
 #, c-format
-msgid ""
-"Incorrect reference count: saw (%u/%u) len %u nlinks %u; should be (%u/%u) "
-"len %u nlinks %u\n"
+msgid "Incorrect reference count: saw (%u/%u) len %u nlinks %u; should be (%u/%u) len %u nlinks %u\n"
 msgstr ""
 
 #: .././repair/rmap.c:1637 .././repair/rmap.c:1668
@@ -5902,9 +5618,7 @@ msgstr ""
 
 #: .././repair/phase6.c:616
 #, c-format
-msgid ""
-"can't access block %<PRIu64> (fsbno %<PRIu64>) of realtime bitmap inode "
-"%<PRIu64>\n"
+msgid "can't access block %<PRIu64> (fsbno %<PRIu64>) of realtime bitmap inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:576
@@ -5919,9 +5633,7 @@ msgstr ""
 
 #: .././repair/phase6.c:686
 #, c-format
-msgid ""
-"can't access block %<PRIu64> (fsbno %<PRIu64>) of realtime summary inode "
-"%<PRIu64>\n"
+msgid "can't access block %<PRIu64> (fsbno %<PRIu64>) of realtime summary inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:789
@@ -6055,15 +5767,12 @@ msgstr ""
 
 #: .././repair/phase6.c:1453 .././repair/phase6.c:2815
 #, c-format
-msgid ""
-"would fix ftype mismatch (%d/%d) in directory/child inode "
-"%<PRIu64>/%<PRIu64>\n"
+msgid "would fix ftype mismatch (%d/%d) in directory/child inode %<PRIu64>/%<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:1460 .././repair/phase6.c:2820
 #, c-format
-msgid ""
-"fixing ftype mismatch (%d/%d) in directory/child inode %<PRIu64>/%<PRIu64>\n"
+msgid "fixing ftype mismatch (%d/%d) in directory/child inode %<PRIu64>/%<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:1551
@@ -6091,8 +5800,7 @@ msgstr ""
 
 #: .././repair/phase6.c:1638
 #, c-format
-msgid ""
-"bad directory block magic # %#x for directory inode %<PRIu64> block %d: "
+msgid "bad directory block magic # %#x for directory inode %<PRIu64> block %d: "
 msgstr ""
 
 #: .././repair/phase6.c:1641
@@ -6120,15 +5828,12 @@ msgstr ""
 
 #: .././repair/phase6.c:1712
 #, c-format
-msgid ""
-"entry \"%s\" in directory inode %<PRIu64> points to non-existent inode "
-"%<PRIu64>, "
+msgid "entry \"%s\" in directory inode %<PRIu64> points to non-existent inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:1729
 #, c-format
-msgid ""
-"entry \"%s\" in directory inode %<PRIu64> points to free inode %<PRIu64>, "
+msgid "entry \"%s\" in directory inode %<PRIu64> points to free inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:1779 .././repair/phase6.c:2720
@@ -6143,8 +5848,7 @@ msgstr ""
 
 #: .././repair/phase6.c:1833
 #, c-format
-msgid ""
-"entry \"%s\" (ino %<PRIu64>) in dir %<PRIu64> is not in the the first block, "
+msgid "entry \"%s\" (ino %<PRIu64>) in dir %<PRIu64> is not in the the first block, "
 msgstr ""
 
 #: .././repair/phase6.c:1866
@@ -6159,23 +5863,17 @@ msgstr ""
 
 #: .././repair/phase6.c:1919
 #, c-format
-msgid ""
-"entry \"%s\" in dir %<PRIu64> points to an already connected directory inode "
-"%<PRIu64>\n"
+msgid "entry \"%s\" in dir %<PRIu64> points to an already connected directory inode %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:1928 .././repair/phase6.c:2783
 #, c-format
-msgid ""
-"entry \"%s\" in dir ino %<PRIu64> doesn't have a .. entry, will set it in "
-"ino %<PRIu64>.\n"
+msgid "entry \"%s\" in dir ino %<PRIu64> doesn't have a .. entry, will set it in ino %<PRIu64>.\n"
 msgstr ""
 
 #: .././repair/phase6.c:1938
 #, c-format
-msgid ""
-"entry \"%s\" in dir inode %<PRIu64> inconsistent with .. value (%<PRIu64>) "
-"in ino %<PRIu64>\n"
+msgid "entry \"%s\" in dir inode %<PRIu64> inconsistent with .. value (%<PRIu64>) in ino %<PRIu64>\n"
 msgstr ""
 
 #: .././repair/phase6.c:1950
@@ -6240,8 +5938,7 @@ msgstr ""
 
 #: .././repair/phase6.c:2231
 #, c-format
-msgid ""
-"can't read freespace block %u for directory inode %<PRIu64>, error %d\n"
+msgid "can't read freespace block %u for directory inode %<PRIu64>, error %d\n"
 msgstr ""
 
 #: .././repair/phase6.c:2246
@@ -6291,30 +5988,22 @@ msgstr ""
 
 #: .././repair/phase6.c:2656
 #, c-format
-msgid ""
-"entry \"%s\" in shortform directory %<PRIu64> references non-existent inode "
-"%<PRIu64>, "
+msgid "entry \"%s\" in shortform directory %<PRIu64> references non-existent inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:2673
 #, c-format
-msgid ""
-"entry \"%s\" in shortform directory inode %<PRIu64> points to free inode "
-"%<PRIu64>, "
+msgid "entry \"%s\" in shortform directory inode %<PRIu64> points to free inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:2768
 #, c-format
-msgid ""
-"entry \"%s\" in directory inode %<PRIu64> references already connected inode "
-"%<PRIu64>, "
+msgid "entry \"%s\" in directory inode %<PRIu64> references already connected inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:2792
 #, c-format
-msgid ""
-"entry \"%s\" in directory inode %<PRIu64> not consistent with .. value "
-"(%<PRIu64>) in inode %<PRIu64>, "
+msgid "entry \"%s\" in directory inode %<PRIu64> not consistent with .. value (%<PRIu64>) in inode %<PRIu64>, "
 msgstr ""
 
 #: .././repair/phase6.c:2850
@@ -6343,8 +6032,7 @@ msgstr ""
 
 #: .././repair/phase6.c:2808
 #, c-format
-msgid ""
-"can't make \"..\" entry in root inode %<PRIu64>, createname error %d\n"
+msgid "can't make \"..\" entry in root inode %<PRIu64>, createname error %d\n"
 msgstr ""
 
 #: .././repair/phase6.c:2814
@@ -6773,8 +6461,7 @@ msgstr ""
 
 #: .././scrub/unicrash.c:779
 #, c-format
-msgid ""
-"Unicode name \"%s\" in %s contains suspicious text direction overrides."
+msgid "Unicode name \"%s\" in %s contains suspicious text direction overrides."
 msgstr ""
 
 #: .././scrub/unicrash.c:792
@@ -6784,9 +6471,7 @@ msgstr ""
 
 #: .././scrub/unicrash.c:805
 #, c-format
-msgid ""
-"Unicode name \"%s\" in %s could be confused with '%s' due to invisible "
-"characters."
+msgid "Unicode name \"%s\" in %s could be confused with '%s' due to invisible characters."
 msgstr ""
 
 #: .././scrub/unicrash.c:827
@@ -6892,8 +6577,7 @@ msgid "Repair unsuccessful; offline repair required."
 msgstr ""
 
 #: .././scrub/repair.c:216
-msgid ""
-"Seems correct but cross-referencing failed; offline repair recommended."
+msgid "Seems correct but cross-referencing failed; offline repair recommended."
 msgstr ""
 
 #: .././scrub/repair.c:220
@@ -7284,9 +6968,7 @@ msgstr ""
 
 #: .././growfs/xfs_growfs.c:15
 #, c-format
-msgid ""
-"Usage: %s [options] mountpoint\n"
-"\n"
+msgid "Usage: %s [options] mountpoint\n\n"
 "Options:\n"
 "\t-d          grow data/metadata section\n"
 "\t-l          grow log section\n"
@@ -8024,9 +7706,7 @@ msgstr ""
 
 #: .././db/check.c:2656
 #, c-format
-msgid ""
-"inode %lld mode %#o fmt %s afmt %s nex %d anex %d nblk %lld sz "
-"%lld%s%s%s%s%s%s%s\n"
+msgid "inode %lld mode %#o fmt %s afmt %s nex %d anex %d nblk %lld sz %lld%s%s%s%s%s%s%s\n"
 msgstr ""
 
 #: .././db/check.c:2771
@@ -8396,8 +8076,7 @@ msgstr ""
 
 #: .././db/check.c:4374
 #, c-format
-msgid ""
-"ir_freecount/free mismatch, inode chunk %u/%u, freecount %d nfree %d\n"
+msgid "ir_freecount/free mismatch, inode chunk %u/%u, freecount %d nfree %d\n"
 msgstr ""
 
 #: .././db/check.c:4428
@@ -8622,29 +8301,23 @@ msgid "calculate hash value"
 msgstr ""
 
 #: .././db/hash.c:35
-msgid ""
-"\n"
+msgid "\n"
 " 'hash' prints out the calculated hash value for a string using the\n"
-"directory/attribute code hash function.\n"
-"\n"
-" Usage:  \"hash <string>\"\n"
-"\n"
+"directory/attribute code hash function.\n\n"
+" Usage:  \"hash <string>\"\n\n"
 msgstr ""
 
 #: .././db/hash.c:111
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Generate obfuscated variants of the provided name.  Each variant will have\n"
 " the same dahash value.  Names are written to stdout with a NULL separating\n"
-" each name.\n"
-"\n"
+" each name.\n\n"
 " -a -- create extended attributes.\n"
 " -i -- read standard input for the name, up to %d bytes.\n"
 " -n -- create this many names.\n"
 " -p -- create directory entries or extended attributes in this file.\n"
-" -s -- seed the rng with this value.\n"
-"\n"
+" -s -- seed the rng with this value.\n\n"
 msgstr ""
 
 #: .././db/hash.c:446 .././db/hash.c:460
@@ -8669,18 +8342,13 @@ msgid "set address to agi header"
 msgstr ""
 
 #: .././db/agi.c:60
-msgid ""
-"\n"
-" set allocation group inode btree\n"
-"\n"
-" Example:\n"
-"\n"
-" agi 3 (set location to 3rd allocation group inode btree and type to 'agi')\n"
-"\n"
+msgid "\n"
+" set allocation group inode btree\n\n"
+" Example:\n\n"
+" agi 3 (set location to 3rd allocation group inode btree and type to 'agi')\n\n"
 " Located in the 3rd 512 byte block of each allocation group,\n"
 " the agi inode btree tracks all used/free inodes in the allocation group.\n"
-" Inodes are allocated in 16k 'chunks', each btree entry tracks a 'chunk'.\n"
-"\n"
+" Inodes are allocated in 16k 'chunks', each btree entry tracks a 'chunk'.\n\n"
 msgstr ""
 
 #: .././db/agfl.c:95 .././db/sb.c:178 .././db/agi.c:85 .././db/agf.c:97
@@ -8738,8 +8406,7 @@ msgid "current type is \"%s\"\n"
 msgstr ""
 
 #: .././db/type.c:217
-msgid ""
-"\n"
+msgid "\n"
 " supported types are:\n"
 " "
 msgstr ""
@@ -8874,8 +8541,7 @@ msgid "[-g|-p|-u] id"
 msgstr ""
 
 #: .././db/dquot.c:26
-msgid ""
-"set current address to a group, project or user quota block for given ID"
+msgid "set current address to a group, project or user quota block for given ID"
 msgstr ""
 
 #: .././db/dquot.c:149
@@ -8924,12 +8590,10 @@ msgstr ""
 
 #: .././db/metadump.c:111
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " The 'metadump' command dumps the known metadata to a compact file suitable\n"
 " for compressing and sending to an XFS maintainer for corruption analysis \n"
-" or xfs_repair failures.\n"
-"\n"
+" or xfs_repair failures.\n\n"
 " Options:\n"
 "   -a -- Copy full metadata blocks without zeroing unused space\n"
 "   -e -- Ignore read errors and keep going\n"
@@ -8937,20 +8601,15 @@ msgid ""
 "   -m -- Specify max extent size in blocks to copy (default = %d blocks)\n"
 "   -o -- Don't obfuscate names and extended attributes\n"
 "   -v -- Metadump version to be used\n"
-"   -w -- Show warnings of bad metadata information\n"
-"\n"
+"   -w -- Show warnings of bad metadata information\n\n"
 msgstr ""
 
 #: .././db/metadump.c:2913
-msgid ""
-"Warning: log recovery of an obfuscated metadata image can leak unobfuscated "
-"metadata and/or cause image corruption.  If possible, please mount the "
-"filesystem to clean the log, or disable obfuscation."
+msgid "Warning: log recovery of an obfuscated metadata image can leak unobfuscated metadata and/or cause image corruption.  If possible, please mount the filesystem to clean the log, or disable obfuscation."
 msgstr ""
 
 #: .././db/metadump.c:2921
-msgid ""
-"Could not discern log; image will contain unobfuscated metadata in log."
+msgid "Could not discern log; image will contain unobfuscated metadata in log."
 msgstr ""
 
 #: .././db/logformat.c:78
@@ -8958,13 +8617,11 @@ msgid "The log is dirty. Please mount to replay the log.\n"
 msgstr ""
 
 #: .././db/logformat.c:110
-msgid ""
-"\n"
+msgid "\n"
 " The 'logformat' command reformats (clears) the log to the specified log\n"
 " cycle and log stripe unit. If the log cycle is not specified, the log is\n"
 " reformatted to the current cycle. If the log stripe unit is not specified,\n"
-" the stripe unit from the filesystem superblock is used.\n"
-"\n"
+" the stripe unit from the filesystem superblock is used.\n\n"
 msgstr ""
 
 #: .././db/logformat.c:126
@@ -8986,12 +8643,10 @@ msgid "minlogsize logres %u logcount %d\n"
 msgstr ""
 
 #: .././db/logformat.c:175
-msgid ""
-"\n"
+msgid "\n"
 " The 'logres' command prints information about all log reservation types.\n"
 " This includes the reservation space, the intended transaction roll count,\n"
-" and the reservation flags, if any.\n"
-"\n"
+" and the reservation flags, if any.\n\n"
 msgstr ""
 
 #: .././db/logformat.c:191
@@ -9038,16 +8693,12 @@ msgid "set current address"
 msgstr ""
 
 #: .././db/addr.c:30
-msgid ""
-"\n"
-" 'addr' uses the given field to set the filesystem address and type\n"
-"\n"
-" Examples:\n"
-"\n"
+msgid "\n"
+" 'addr' uses the given field to set the filesystem address and type\n\n"
+" Examples:\n\n"
 " sb\n"
 " a rootino - set the type to inode and set position to the root inode\n"
-" a u.bmx[0].startblock (for inode with blockmap)\n"
-"\n"
+" a u.bmx[0].startblock (for inode with blockmap)\n\n"
 msgstr ""
 
 #: .././db/addr.c:70
@@ -9114,8 +8765,7 @@ msgstr ""
 
 #: .././db/fsmap.c:25
 #, c-format
-msgid ""
-"%llu: %u/%u len %u owner %lld offset %llu bmbt %d attrfork %d extflag %d\n"
+msgid "%llu: %u/%u len %u owner %lld offset %llu bmbt %d attrfork %d extflag %d\n"
 msgstr ""
 
 #: .././db/fsmap.c:73
@@ -9163,14 +8813,10 @@ msgid "set address to agf header"
 msgstr ""
 
 #: .././db/agf.c:72
-msgid ""
-"\n"
-" set allocation group free block list\n"
-"\n"
-" Example:\n"
-"\n"
-" agf 2 - move location to AGF in 2nd filesystem allocation group\n"
-"\n"
+msgid "\n"
+" set allocation group free block list\n\n"
+" Example:\n\n"
+" agf 2 - move location to AGF in 2nd filesystem allocation group\n\n"
 " Located in the second sector of each allocation group, the AGF\n"
 " contains the root of two different freespace btrees:\n"
 " The 'cnt' btree keeps track freespace indexed on section size.\n"
@@ -9198,8 +8844,7 @@ msgid "remove the named attribute from the current inode"
 msgstr ""
 
 #: .././db/attrset.c:38
-msgid ""
-"\n"
+msgid "\n"
 " The 'attr_set' and 'attr_remove' commands provide interfaces for debugging\n"
 " the extended attribute allocation and removal code.\n"
 " Both commands require an attribute name to be specified, and the attr_set\n"
@@ -9207,13 +8852,11 @@ msgid ""
 " There are 4 namespace flags:\n"
 "  -r -- 'root'\n"
 "  -u -- 'user'\t\t(default)\n"
-"  -s -- 'secure'\n"
-"\n"
+"  -s -- 'secure'\n\n"
 " For attr_set, these options further define the type of set operation:\n"
 "  -C -- 'create'    - create attribute, fail if it already exists\n"
 "  -R -- 'replace'   - replace attribute, fail if it does not exist\n"
-" The backward compatibility mode 'noattr2' can be emulated (-n) also.\n"
-"\n"
+" The backward compatibility mode 'noattr2' can be emulated (-n) also.\n\n"
 msgstr ""
 
 #: .././db/attrset.c:241 .././db/attrset.c:442 .././db/attrset.c:572
@@ -9316,10 +8959,8 @@ msgid "can't pop anything from I/O stack\n"
 msgstr ""
 
 #: .././db/io.c:134
-msgid ""
-"\n"
-" Changes the address and data type to the first entry on the stack.\n"
-"\n"
+msgid "\n"
+" Changes the address and data type to the first entry on the stack.\n\n"
 msgstr ""
 
 #: .././db/io.c:187
@@ -9366,12 +9007,10 @@ msgid "no push form allowed for %s\n"
 msgstr ""
 
 #: .././db/io.c:302
-msgid ""
-"\n"
+msgid "\n"
 " Allows you to push the current address and data type on the stack for\n"
 " later return.  'push' also accepts an additional command to execute after\n"
-" storing the current address (ex: 'push a rootino' from the superblock).\n"
-"\n"
+" storing the current address (ex: 'push a rootino' from the superblock).\n\n"
 msgstr ""
 
 #: .././db/io.c:318 .././db/io.c:358
@@ -9383,14 +9022,11 @@ msgid "no further entries\n"
 msgstr ""
 
 #: .././db/io.c:341
-msgid ""
-"\n"
+msgid "\n"
 " The 'forward' ('f') command moves to the next location in the position\n"
-" ring, updating the current position and data type.  If the current "
-"location\n"
+" ring, updating the current position and data type.  If the current location\n"
 " is the top entry in the ring, then the 'forward' command will have\n"
-" no effect.\n"
-"\n"
+" no effect.\n\n"
 msgstr ""
 
 #: .././db/io.c:362
@@ -9398,14 +9034,10 @@ msgid "no previous entries\n"
 msgstr ""
 
 #: .././db/io.c:381
-msgid ""
-"\n"
+msgid "\n"
 " The 'back' ('b') command moves to the previous location in the position\n"
-" ring, updating the current position and data type.  If the current "
-"location\n"
-" is the last entry in the ring, then the 'back' command will have no "
-"effect.\n"
-"\n"
+" ring, updating the current position and data type.  If the current location\n"
+" is the last entry in the ring, then the 'back' command will have no effect.\n\n"
 msgstr ""
 
 #: .././db/io.c:404
@@ -9415,26 +9047,20 @@ msgstr ""
 
 #: .././db/io.c:423
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " The position ring automatically keeps track of each disk location and\n"
 " structure type for each change of position you make during your xfs_db\n"
-" session.  The last %d most recent entries are kept in the ring.\n"
-"\n"
+" session.  The last %d most recent entries are kept in the ring.\n\n"
 " To display the current list of ring entries type 'ring' by itself on\n"
 " the command line.  The entry highlighted by an asterisk ('*') is the\n"
-" current entry.\n"
-"\n"
+" current entry.\n\n"
 " To move to another entry in the ring type 'ring <num>' where <num> is\n"
-" your desired entry from the ring position list.\n"
-"\n"
+" your desired entry from the ring position list.\n\n"
 " You may also use the 'forward' ('f') or 'back' ('b') commands to move\n"
-" to the previous or next entry in the ring, respectively.\n"
-"\n"
+" to the previous or next entry in the ring, respectively.\n\n"
 " Note: Unlike the 'stack', 'push' and 'pop' commands, the ring tracks your\n"
 " location implicitly.  Use the 'push' and 'pop' commands if you wish to\n"
-" store a specific location explicitly for later return.\n"
-"\n"
+" store a specific location explicitly for later return.\n\n"
 msgstr ""
 
 #: .././db/io.c:477 .././db/io.c:494
@@ -9461,31 +9087,25 @@ msgid "xfs_db got a bbmap for %lld\n"
 msgstr ""
 
 #: .././db/io.c:718
-msgid ""
-"\n"
+msgid "\n"
 " The stack is used to explicitly store your location and data type\n"
 " for later return.  The 'push' operation stores the current address\n"
 " and type on the stack, the 'pop' operation returns you to the\n"
-" position and datatype of the top entry on the stack.\n"
-"\n"
+" position and datatype of the top entry on the stack.\n\n"
 " The 'stack' allows explicit location saves, see 'ring' for implicit\n"
-" position tracking.\n"
-"\n"
+" position tracking.\n\n"
 msgstr ""
 
 #: .././db/btdump.c:18
-msgid ""
-"\n"
+msgid "\n"
 " If the cursor points to a btree block, 'btdump' dumps the btree\n"
 " downward from that block.  If the cursor points to an inode,\n"
 " the data fork btree root is selected by default.  If the cursor\n"
 " points to a directory or extended attribute btree node, the tree\n"
-" will be printed downward from that block.\n"
-"\n"
+" will be printed downward from that block.\n\n"
 " Options:\n"
 "   -a -- Display an inode's extended attribute fork btree.\n"
-"   -i -- Print internal btree nodes.\n"
-"\n"
+"   -i -- Print internal btree nodes.\n\n"
 msgstr ""
 
 #: .././db/btdump.c:78 .././db/btdump.c:381
@@ -9540,18 +9160,14 @@ msgid "set address to agfl block"
 msgstr ""
 
 #: .././db/agfl.c:68
-msgid ""
-"\n"
-" set allocation group freelist\n"
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" set allocation group freelist\n\n"
+" Example:\n\n"
 " agfl 5\n"
 " Located in the fourth sector of each allocation group,\n"
 " the agfl freelist for internal btree space allocation is maintained\n"
 " for each allocation group.  This acts as a reserved pool of space\n"
-" separate from the general filesystem freespace (not used for user data).\n"
-"\n"
+" separate from the general filesystem freespace (not used for user data).\n\n"
 msgstr ""
 
 #: .././db/help.c:19 .././libxcmd/help.c:82
@@ -9560,8 +9176,7 @@ msgstr ""
 
 #: .././db/help.c:28 .././libxcmd/help.c:22
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "Use 'help commandname' for extended help.\n"
 msgstr ""
 
@@ -9576,23 +9191,18 @@ msgid "(or %s) "
 msgstr ""
 
 #: .././db/btheight.c:65
-msgid ""
-"\n"
+msgid "\n"
 " For a given number of btree records and a btree type, report the number of\n"
 " records and blocks for each level of the btree, and the total btree size.\n"
 " The btree type must be given after the options.  A raw btree geometry can\n"
 " be provided in the format \"record_bytes:key_bytes:ptr_bytes:header_type\"\n"
-" where header_type is one of \"short\", \"long\", \"shortcrc\", or "
-"\"longcrc\".\n"
-"\n"
+" where header_type is one of \"short\", \"long\", \"shortcrc\", or \"longcrc\".\n\n"
 " Options:\n"
 "   -b -- Override the btree block size.\n"
 "   -n -- Number of records we want to store.\n"
 "   -w max -- Show only the best case scenario.\n"
 "   -w min -- Show only the worst case scenario.\n"
-"   -w absmax -- Print the maximum possible btree height for all "
-"filesystems.\n"
-"\n"
+"   -w absmax -- Print the maximum possible btree height for all filesystems.\n\n"
 " Supported btree types:\n"
 "   all "
 msgstr ""
@@ -9674,38 +9284,32 @@ msgstr ""
 
 #: .././db/btheight.c:300
 #, c-format
-msgid ""
-"%s: cannot calculate best case scenario due to leaf geometry underflow.\n"
+msgid "%s: cannot calculate best case scenario due to leaf geometry underflow.\n"
 msgstr ""
 
 #: .././db/btheight.c:307
 #, c-format
-msgid ""
-"%s: cannot calculate best case scenario due to node geometry underflow.\n"
+msgid "%s: cannot calculate best case scenario due to node geometry underflow.\n"
 msgstr ""
 
 #: .././db/btheight.c:313
 #, c-format
-msgid ""
-"%s: best case per %u-byte block: %u records (leaf) / %u keyptrs (node)\n"
+msgid "%s: best case per %u-byte block: %u records (leaf) / %u keyptrs (node)\n"
 msgstr ""
 
 #: .././db/btheight.c:326
 #, c-format
-msgid ""
-"%s: cannot calculate worst case scenario due to leaf geometry underflow.\n"
+msgid "%s: cannot calculate worst case scenario due to leaf geometry underflow.\n"
 msgstr ""
 
 #: .././db/btheight.c:333
 #, c-format
-msgid ""
-"%s: cannot calculate worst case scenario due to node geometry underflow.\n"
+msgid "%s: cannot calculate worst case scenario due to node geometry underflow.\n"
 msgstr ""
 
 #: .././db/btheight.c:339
 #, c-format
-msgid ""
-"%s: worst case per %u-byte block: %u records (leaf) / %u keyptrs (node)\n"
+msgid "%s: worst case per %u-byte block: %u records (leaf) / %u keyptrs (node)\n"
 msgstr ""
 
 #: .././db/btheight.c:409
@@ -9736,41 +9340,32 @@ msgid "write value to disk"
 msgstr ""
 
 #: .././db/write.c:46
-msgid ""
-"\n"
+msgid "\n"
 " The 'write' command takes on different personalities depending on the\n"
-" type of object being worked with.\n"
-"\n"
+" type of object being worked with.\n\n"
 " Write has 3 modes:\n"
 "  'struct mode' - is active anytime you're looking at a filesystem object\n"
 "                  which contains individual fields (ex: an inode).\n"
 "  'data mode'   - is active anytime you set a disk address directly or set\n"
 "                  the type to 'data'.\n"
-"  'string mode' - only used for writing symlink blocks.\n"
-"\n"
+"  'string mode' - only used for writing symlink blocks.\n\n"
 " Examples:\n"
 "  Struct mode: 'write core.uid 23'          - set an inode uid field to 23.\n"
 "               'write fname \"hello\\000\"'    - write superblock fname.\n"
 "               (note: in struct mode strings are not null terminated)\n"
-"               'write fname #6669736800'    - write superblock fname with "
-"hex.\n"
+"               'write fname #6669736800'    - write superblock fname with hex.\n"
 "               'write uuid 00112233-4455-6677-8899-aabbccddeeff'\n"
 "                                            - write superblock uuid.\n"
 "  Data mode:   'write fill 0xff' - fill the entire block with 0xff's\n"
 "               'write lshift 3' - shift the block 3 bytes to the left\n"
 "               'write sequence 1 5' - write a cycle of number [1-5] through\n"
 "                                      the entire block.\n"
-"  String mode: 'write \"This_is_a_filename\" - write null terminated "
-"string.\n"
-"\n"
-" In data mode type 'write' by itself for a list of specific commands.\n"
-"\n"
+"  String mode: 'write \"This_is_a_filename\" - write null terminated string.\n\n"
+" In data mode type 'write' by itself for a list of specific commands.\n\n"
 " Specifying the -c option will allow writes of invalid (corrupt) data with\n"
-" an invalid CRC. Specifying the -d option will allow writes of invalid "
-"data,\n"
+" an invalid CRC. Specifying the -d option will allow writes of invalid data,\n"
 " but still recalculate the CRC so we are forced to check and detect the\n"
-" invalid data appropriately.\n"
-"\n"
+" invalid data appropriately.\n\n"
 msgstr ""
 
 #: .././db/write.c:92
@@ -9929,14 +9524,11 @@ msgid "set address to fsblock value"
 msgstr ""
 
 #: .././db/block.c:62
-msgid ""
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" Example:\n\n"
 " 'ablock 23' - sets the file position to the 23rd filesystem block in\n"
 " the inode's attribute fork.  The filesystem block size is specified in\n"
-" the superblock.\n"
-"\n"
+" the superblock.\n\n"
 msgstr ""
 
 #: .././db/block.c:86 .././db/block.c:254
@@ -9953,10 +9545,8 @@ msgid "file attr block is unmapped\n"
 msgstr ""
 
 #: .././db/block.c:131
-msgid ""
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" Example:\n\n"
 " 'daddr 102' - sets position to the 102nd absolute disk block\n"
 " (512 byte block).\n"
 msgstr ""
@@ -9982,14 +9572,11 @@ msgid "bad daddr %s\n"
 msgstr ""
 
 #: .././db/block.c:222
-msgid ""
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" Example:\n\n"
 " 'dblock 23' - sets the file position to the 23rd filesystem block in\n"
 " the inode's data fork.  The filesystem block size is specified in the\n"
-" superblock.\n"
-"\n"
+" superblock.\n\n"
 msgstr ""
 
 #: .././db/block.c:263
@@ -10001,14 +9588,11 @@ msgid "file data block is unmapped\n"
 msgstr ""
 
 #: .././db/block.c:294
-msgid ""
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" Example:\n\n"
 " 'fsblock 1023' - sets the file position to the 1023rd filesystem block.\n"
 " The filesystem block size is specified in the superblock and set during\n"
-" mkfs time.  Offset is absolute (not AG relative).\n"
-"\n"
+" mkfs time.  Offset is absolute (not AG relative).\n\n"
 msgstr ""
 
 #: .././db/block.c:314
@@ -10046,8 +9630,7 @@ msgid "Metadata CRC error detected for ino %lld\n"
 msgstr ""
 
 #: .././db/namei.c:174
-msgid ""
-"\n"
+msgid "\n"
 " Navigate to an inode via directory path.\n"
 msgstr ""
 
@@ -10065,14 +9648,11 @@ msgid "%s:\n"
 msgstr ""
 
 #: .././db/namei.c:516
-msgid ""
-"\n"
-" List the contents of the currently selected directory inode.\n"
-"\n"
+msgid "\n"
+" List the contents of the currently selected directory inode.\n\n"
 " Options:\n"
 "   -i -- Resolve the given paths to their corresponding inode numbers.\n"
-"         If no paths are given, display the current inode number.\n"
-"\n"
+"         If no paths are given, display the current inode number.\n\n"
 " Directory contents will be listed in the format:\n"
 " dir_cookie\tinode_number\ttype\thash\tname_length\tname\n"
 msgstr ""
@@ -10094,27 +9674,20 @@ msgid "fuzz values on disk"
 msgstr ""
 
 #: .././db/fuzz.c:47
-msgid ""
-"\n"
+msgid "\n"
 " The 'fuzz' command fuzzes fields in any on-disk data structure.  For\n"
 " block fuzzing, see the 'blocktrash' or 'write' commands.\n"
 " Examples:\n"
 "  Struct mode: 'fuzz core.uid zeroes'    - set an inode uid field to 0.\n"
 "               'fuzz crc ones'           - set a crc filed to all ones.\n"
-"               'fuzz bno[11] firstbit'   - set the high bit of a block "
-"array.\n"
-"               'fuzz keys[5].startblock add'    - increase a btree key "
-"value.\n"
-"               'fuzz uuid random'        - randomize the superblock uuid.\n"
-"\n"
-" Type 'fuzz' by itself for a list of specific commands.\n"
-"\n"
+"               'fuzz bno[11] firstbit'   - set the high bit of a block array.\n"
+"               'fuzz keys[5].startblock add'    - increase a btree key value.\n"
+"               'fuzz uuid random'        - randomize the superblock uuid.\n\n"
+" Type 'fuzz' by itself for a list of specific commands.\n\n"
 " Specifying the -c option will allow writes of invalid (corrupt) data with\n"
-" an invalid CRC. Specifying the -d option will allow writes of invalid "
-"data,\n"
+" an invalid CRC. Specifying the -d option will allow writes of invalid data,\n"
 " but still recalculate the CRC so we are forced to check and detect the\n"
-" invalid data appropriately.\n"
-"\n"
+" invalid data appropriately.\n\n"
 msgstr ""
 
 #: .././db/fuzz.c:81
@@ -10164,18 +9737,15 @@ msgid "%s: bad option for timelimit command\n"
 msgstr ""
 
 #: .././db/timelimit.c:130
-msgid ""
-"\n"
+msgid "\n"
 " Print the minimum and maximum supported values for inode timestamps,\n"
 " disk quota expiration timers, and disk quota grace periods supported\n"
-" by this filesystem.\n"
-"\n"
+" by this filesystem.\n\n"
 " Options:\n"
 "   --classic -- Force printing of the classic time limits.\n"
 "   --bigtime -- Force printing of the bigtime limits.\n"
 "   --pretty  -- Pretty-print the time limits.\n"
-"   --compact -- Print the limits in a single line.\n"
-"\n"
+"   --compact -- Print the limits in a single line.\n\n"
 msgstr ""
 
 #: .././db/timelimit.c:151
@@ -10215,20 +9785,15 @@ msgid "set feature bit(s) in the sb version field"
 msgstr ""
 
 #: .././db/sb.c:151
-msgid ""
-"\n"
-" set allocation group superblock\n"
-"\n"
-" Example:\n"
-"\n"
-" 'sb 7' - set location to 7th allocation group superblock, set type to 'sb'\n"
-"\n"
+msgid "\n"
+" set allocation group superblock\n\n"
+" Example:\n\n"
+" 'sb 7' - set location to 7th allocation group superblock, set type to 'sb'\n\n"
 " Located in the first sector of each allocation group, the superblock\n"
 " contains the base information for the filesystem.\n"
 " The superblock in allocation group 0 is the primary.  The copies in the\n"
 " remaining allocation groups only serve as backup for filesystem recovery.\n"
-" The icount/ifree/fdblocks/frextents are only updated in superblock 0.\n"
-"\n"
+" The icount/ifree/fdblocks/frextents are only updated in superblock 0.\n\n"
 msgstr ""
 
 #: .././db/sb.c:210
@@ -10260,8 +9825,7 @@ msgstr ""
 
 #: .././db/sb.c:267
 #, c-format
-msgid ""
-"ERROR: The filesystem has valuable metadata changes in a log which needs to\n"
+msgid "ERROR: The filesystem has valuable metadata changes in a log which needs to\n"
 "be replayed.  Mount the filesystem to replay the log, and unmount it before\n"
 "re-running %s.  If you are unable to mount the filesystem, then use\n"
 "the xfs_repair -L option to destroy the log and attempt a repair.\n"
@@ -10278,24 +9842,19 @@ msgid "ERROR: cannot clear the log\n"
 msgstr ""
 
 #: .././db/sb.c:316
-msgid ""
-"\n"
-" write/print FS uuid\n"
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" write/print FS uuid\n\n"
+" Example:\n\n"
 " 'uuid'                                      - print UUID\n"
 " 'uuid 01234567-0123-0123-0123-0123456789ab' - write UUID\n"
 " 'uuid generate'                             - generate and write\n"
-" 'uuid rewrite'                              - copy UUID from SB 0\n"
-"\n"
+" 'uuid rewrite'                              - copy UUID from SB 0\n\n"
 "The print function checks the UUID in each SB and will warn if the UUIDs\n"
 "differ between AGs (the log is not checked). The write commands will\n"
 "set the uuid in all AGs to either a specified value, a newly generated\n"
 "value or the value found in the first superblock (SB 0) respectively.\n"
 "As a side effect of writing the UUID, the log is cleared (which is fine\n"
-"on a CLEANLY unmounted FS).\n"
-"\n"
+"on a CLEANLY unmounted FS).\n\n"
 msgstr ""
 
 #: .././db/sb.c:454 .././db/sb.c:641
@@ -10363,21 +9922,16 @@ msgid "UUID = %s\n"
 msgstr ""
 
 #: .././db/sb.c:565
-msgid ""
-"\n"
-" write/print FS label\n"
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" write/print FS label\n\n"
+" Example:\n\n"
 " 'label'              - print label\n"
 " 'label 123456789012' - write label\n"
-" 'label --'           - write an empty label\n"
-"\n"
+" 'label --'           - write an empty label\n\n"
 "The print function checks the label in each SB and will warn if the labels\n"
 "differ between AGs. The write commands will set the label in all AGs to the\n"
 "specified value.  The maximum length of a label is 12 characters - use of a\n"
-"longer label will result in truncation and a warning will be issued.\n"
-"\n"
+"longer label will result in truncation and a warning will be issued.\n\n"
 msgstr ""
 
 #: .././db/sb.c:591
@@ -10411,23 +9965,18 @@ msgid "label = \"%s\"\n"
 msgstr ""
 
 #: .././db/sb.c:697
-msgid ""
-"\n"
-" set/print feature bits in sb version\n"
-"\n"
-" Example:\n"
-"\n"
+msgid "\n"
+" set/print feature bits in sb version\n\n"
+" Example:\n\n"
 " 'version'          - print current feature bits\n"
 " 'version extflg'   - enable unwritten extents\n"
 " 'version attr1'    - enable v1 inline extended attributes\n"
 " 'version attr2'    - enable v2 inline extended attributes\n"
-" 'version log2'     - enable v2 log format\n"
-"\n"
+" 'version log2'     - enable v2 log format\n\n"
 "The version function prints currently enabled features for a filesystem\n"
 "according to the version field of its primary superblock.\n"
 "It can also be used to enable selected features, such as support for\n"
-"unwritten extents.  The updated version is written into all AGs.\n"
-"\n"
+"unwritten extents.  The updated version is written into all AGs.\n\n"
 msgstr ""
 
 #: .././db/sb.c:725
@@ -10475,13 +10024,10 @@ msgid "manipulate crc values for V5 filesystem structures"
 msgstr ""
 
 #: .././db/crc.c:40
-msgid ""
-"\n"
+msgid "\n"
 " 'crc' validates, invalidates, or recalculates the crc value for\n"
-" the current on-disk metadata structures in Version 5 filesystems.\n"
-"\n"
-" Usage:  \"crc [-i|-r|-v]\"\n"
-"\n"
+" the current on-disk metadata structures in Version 5 filesystems.\n\n"
+" Usage:  \"crc [-i|-r|-v]\"\n\n"
 msgstr ""
 
 #: .././db/crc.c:72
@@ -10533,16 +10079,13 @@ msgid "Writing unknown directory buffer type!\n"
 msgstr ""
 
 #: .././db/freesp.c:186
-msgid ""
-"freesp arguments: [-bcds] [-a agno] [-e binsize] [-h h1]... [-m binmult]\n"
+msgid "freesp arguments: [-bcds] [-a agno] [-e binsize] [-h h1]... [-m binmult]\n"
 msgstr ""
 
 #: .././db/info.c:17
-msgid ""
-"\n"
+msgid "\n"
 " Pretty-prints the filesystem geometry as derived from the superblock.\n"
-" The output has the same format as mkfs.xfs, xfs_info, and other utilities.\n"
-"\n"
+" The output has the same format as mkfs.xfs, xfs_info, and other utilities.\n\n"
 msgstr ""
 
 #: .././db/info.c:45
@@ -10550,14 +10093,10 @@ msgid "pretty-print superblock info"
 msgstr ""
 
 #: .././db/info.c:53
-msgid ""
-"\n"
-" Print the size and per-AG reservation information some allocation groups.\n"
-"\n"
-" Specific allocation group numbers can be provided as command line "
-"arguments.\n"
-" If no arguments are provided, all allocation groups are iterated.\n"
-"\n"
+msgid "\n"
+" Print the size and per-AG reservation information some allocation groups.\n\n"
+" Specific allocation group numbers can be provided as command line arguments.\n"
+" If no arguments are provided, all allocation groups are iterated.\n\n"
 msgstr ""
 
 #: .././db/info.c:150
@@ -10574,8 +10113,7 @@ msgid "Usage: %s [-ifFrxV] [-p prog] [-l logdev] [-c cmd]... device\n"
 msgstr ""
 
 #: .././db/init.c:102
-msgid ""
-"\n"
+msgid "\n"
 "fatal error -- couldn't initialize XFS library\n"
 msgstr ""
 
@@ -10586,8 +10124,7 @@ msgstr ""
 
 #: .././db/init.c:127
 #, c-format
-msgid ""
-"%s: %s is not a valid XFS filesystem (unexpected SB magic number 0x%08x)\n"
+msgid "%s: %s is not a valid XFS filesystem (unexpected SB magic number 0x%08x)\n"
 msgstr ""
 
 #: .././db/init.c:130
@@ -10730,8 +10267,7 @@ msgstr ""
 
 #: .././rtcp/xfs_rtcp.c:307
 #, c-format
-msgid ""
-"Use the -p option to pad %s to a size which is a multiple of %d bytes.\n"
+msgid "Use the -p option to pad %s to a size which is a multiple of %d bytes.\n"
 msgstr ""
 
 #: .././rtcp/xfs_rtcp.c:349
@@ -10746,10 +10282,8 @@ msgstr ""
 
 #: .././io/fadvise.c:18
 #, c-format
-msgid ""
-"\n"
-" advise the page cache about expected I/O patterns on the current file\n"
-"\n"
+msgid "\n"
+" advise the page cache about expected I/O patterns on the current file\n\n"
 " Modifies kernel page cache behaviour when operating on the current file.\n"
 " The range arguments are required by some advise commands ([*] below).\n"
 " With no arguments, the POSIX_FADV_NORMAL advice is implied.\n"
@@ -10762,8 +10296,7 @@ msgid ""
 "   NORMAL sets the default readahead setting on the file.\n"
 "   RANDOM sets the readahead setting on the file to zero.\n"
 "   SEQUENTIAL sets double the default readahead setting on the file.\n"
-"   WILLNEED and NOREUSE are equivalent, and force the maximum readahead.\n"
-"\n"
+"   WILLNEED and NOREUSE are equivalent, and force the maximum readahead.\n\n"
 msgstr ""
 
 #: .././io/prealloc.c:58 .././io/madvise.c:155 .././io/mincore.c:35
@@ -10955,15 +10488,12 @@ msgstr ""
 
 #: .././io/stat.c:194
 #, c-format
-msgid ""
-"\n"
-" Display file system status.\n"
-"\n"
+msgid "\n"
+" Display file system status.\n\n"
 " Options:\n"
 " -c -- Print fs summary count data.\n"
 " -g -- Print fs geometry data.\n"
-" -s -- Print statfs data.\n"
-"\n"
+" -s -- Print statfs data.\n\n"
 msgstr ""
 
 #: .././io/stat.c:247
@@ -11063,18 +10593,15 @@ msgstr ""
 
 #: .././io/stat.c:326
 #, c-format
-msgid ""
-"\n"
-" Display extended file status.\n"
-"\n"
+msgid "\n"
+" Display extended file status.\n\n"
 " Options:\n"
 " -v -- More verbose output\n"
 " -r -- Print raw statx structure fields\n"
 " -m mask -- Specify the field mask for the statx call\n"
 "            (can also be 'basic' or 'all'; default STATX_ALL)\n"
 " -D -- Don't sync attributes with the server\n"
-" -F -- Force the attributes to be sync'd with the server\n"
-"\n"
+" -F -- Force the attributes to be sync'd with the server\n\n"
 msgstr ""
 
 #: .././io/stat.c:400
@@ -11158,12 +10685,10 @@ msgstr ""
 
 #: .././io/bmap.c:20
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " prints the block mapping for an XFS file's data or attribute forks\n"
 " Example:\n"
-" 'bmap -vp' - tabular format verbose map, including unwritten extents\n"
-"\n"
+" 'bmap -vp' - tabular format verbose map, including unwritten extents\n\n"
 " bmap prints the map of disk blocks used by the current file.\n"
 " The map lists each extent used by the file, as well as regions in the\n"
 " file that do not have any corresponding blocks (holes).\n"
@@ -11177,12 +10702,10 @@ msgid ""
 " -e -- print delayed allocation extents.\n"
 " -l -- also displays the length of each extent in 512-byte blocks.\n"
 " -n -- query n extents.\n"
-" -p -- obtain all unwritten extents as well (w/ -v show which are "
-"unwritten.)\n"
+" -p -- obtain all unwritten extents as well (w/ -v show which are unwritten.)\n"
 " -v -- Verbose information, specify ag info.  Show flags legend on 2nd -v\n"
 " Note: the bmap for non-regular files can be obtained provided the file\n"
-" was opened appropriately (in particular, must be opened read-only).\n"
-"\n"
+" was opened appropriately (in particular, must be opened read-only).\n\n"
 msgstr ""
 
 #: .././io/bmap.c:107 .././io/fsmap.c:478
@@ -11320,12 +10843,10 @@ msgstr ""
 
 #: .././io/fiemap.c:23
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " prints the block mapping for a file's data or attribute forks\n"
 " Example:\n"
-" 'fiemap -v' - tabular format verbose map\n"
-"\n"
+" 'fiemap -v' - tabular format verbose map\n\n"
 " fiemap prints the map of disk blocks used by the current file.\n"
 " The map lists each extent used by the file, as well as regions in the\n"
 " file that do not have any corresponding blocks (holes).\n"
@@ -11360,13 +10881,10 @@ msgstr ""
 
 #: .././io/cowextsize.c:26
 #, c-format
-msgid ""
-"\n"
-" report or modify preferred CoW extent size (in bytes) for the current path\n"
-"\n"
+msgid "\n"
+" report or modify preferred CoW extent size (in bytes) for the current path\n\n"
 " -R -- recursively descend (useful when current path is a directory)\n"
-" -D -- recursively descend, only modifying cowextsize on directories\n"
-"\n"
+" -D -- recursively descend, only modifying cowextsize on directories\n\n"
 msgstr ""
 
 #: .././io/open.c:610 .././io/cowextsize.c:70
@@ -11395,14 +10913,11 @@ msgstr ""
 
 #: .././io/utimes.c:18
 #, c-format
-msgid ""
-"\n"
-" Update file atime and mtime of the current file with nansecond precision.\n"
-"\n"
+msgid "\n"
+" Update file atime and mtime of the current file with nansecond precision.\n\n"
 " Usage: utimes atime_sec atime_nsec mtime_sec mtime_nsec.\n"
 " *_sec: Seconds elapsed since 1970-01-01 00:00:00 UTC.\n"
-" *_nsec: Nanoseconds since the corresponding *_sec.\n"
-"\n"
+" *_nsec: Nanoseconds since the corresponding *_sec.\n\n"
 msgstr ""
 
 #: .././io/utimes.c:67
@@ -11483,15 +10998,12 @@ msgstr ""
 
 #: .././io/sync_file_range.c:18
 #, c-format
-msgid ""
-"\n"
-" Trigger specific writeback commands on a range of the current file\n"
-"\n"
+msgid "\n"
+" Trigger specific writeback commands on a range of the current file\n\n"
 " With no options, the SYNC_FILE_RANGE_WRITE is implied.\n"
 " -a -- wait for IO to finish after writing (SYNC_FILE_RANGE_WAIT_AFTER).\n"
 " -b -- wait for IO to finish before writing (SYNC_FILE_RANGE_WAIT_BEFORE).\n"
-" -w -- write dirty data in range (SYNC_FILE_RANGE_WRITE).\n"
-"\n"
+" -w -- write dirty data in range (SYNC_FILE_RANGE_WRITE).\n\n"
 msgstr ""
 
 #: .././io/sync_file_range.c:95
@@ -11508,20 +11020,15 @@ msgstr ""
 
 #: .././io/scrub.c:30
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Scrubs a piece of XFS filesystem metadata.  The first argument is the type\n"
-" of metadata to examine.  Allocation group metadata types take one AG "
-"number\n"
-" as the second parameter.  Inode metadata types act on the currently open "
-"file\n"
+" of metadata to examine.  Allocation group metadata types take one AG number\n"
+" as the second parameter.  Inode metadata types act on the currently open file\n"
 " or (optionally) take an inode number and generation number to act upon as\n"
-" the second and third parameters.\n"
-"\n"
+" the second and third parameters.\n\n"
 " Example:\n"
 " 'scrub inobt 3' - scrub the inode btree in AG 3.\n"
-" 'scrub bmapbtd 128 13525' - scrubs the extent map of inode 128 gen 13525.\n"
-"\n"
+" 'scrub bmapbtd 128 13525' - scrubs the extent map of inode 128 gen 13525.\n\n"
 " Known metadata scrub types are:"
 msgstr ""
 
@@ -11595,24 +11102,16 @@ msgstr ""
 
 #: .././io/scrub.c:368
 #, c-format
-msgid ""
-"\n"
-" Repairs a piece of XFS filesystem metadata.  The first argument is the "
-"type\n"
-" of metadata to examine.  Allocation group metadata types take one AG "
-"number\n"
-" as the second parameter.  Inode metadata types act on the currently open "
-"file\n"
+msgid "\n"
+" Repairs a piece of XFS filesystem metadata.  The first argument is the type\n"
+" of metadata to examine.  Allocation group metadata types take one AG number\n"
+" as the second parameter.  Inode metadata types act on the currently open file\n"
 " or (optionally) take an inode number and generation number to act upon as\n"
-" the second and third parameters.\n"
-"\n"
-" Flags are -R to force rebuilding metadata.\n"
-"\n"
+" the second and third parameters.\n\n"
+" Flags are -R to force rebuilding metadata.\n\n"
 " Example:\n"
 " 'repair inobt 3' - repairs the inode btree in AG 3.\n"
-" 'repair bmapbtd 128 13525' - repairs the extent map of inode 128 gen "
-"13525.\n"
-"\n"
+" 'repair bmapbtd 128 13525' - repairs the extent map of inode 128 gen 13525.\n\n"
 " Known metadata repair types are:"
 msgstr ""
 
@@ -11642,16 +11141,13 @@ msgstr ""
 
 #: .././io/fsmap.c:23
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Prints the block mapping for the filesystem hosting the current file\n"
 " fsmap prints the map of disk blocks used by the whole filesystem.\n"
 " When possible, owner and offset information will be included in the\n"
-" space report.\n"
-"\n"
+" space report.\n\n"
 " By default, each line of the listing takes the following form:\n"
-"     extent: major:minor [startblock..endblock]: owner "
-"startoffset..endoffset length\n"
+"     extent: major:minor [startblock..endblock]: owner startoffset..endoffset length\n"
 " The owner field is either an inode number or a special value.\n"
 " All the file offsets and disk blocks are in units of 512-byte blocks.\n"
 " -d -- query only the data device (default).\n"
@@ -11659,12 +11155,8 @@ msgid ""
 " -r -- query only the realtime device.\n"
 " -n -- query n extents at a time.\n"
 " -m -- output machine-readable format.\n"
-" -v -- Verbose information, show AG and offsets.  Show flags legend on 2nd -"
-"v\n"
-"\n"
-"The optional start and end arguments require one of -d, -l, or -r to be "
-"set.\n"
-"\n"
+" -v -- Verbose information, show AG and offsets.  Show flags legend on 2nd -v\n\n"
+"The optional start and end arguments require one of -d, -l, or -r to be set.\n\n"
 msgstr ""
 
 #: .././io/fsmap.c:53
@@ -11793,14 +11285,11 @@ msgstr ""
 
 #: .././io/seek.c:20
 #, c-format
-msgid ""
-"\n"
-" returns the next hole and/or data offset at or after the requested offset\n"
-"\n"
+msgid "\n"
+" returns the next hole and/or data offset at or after the requested offset\n\n"
 " Example:\n"
 " 'seek -d 512'\t\t- offset of data at or following offset 512\n"
-" 'seek -a -r 0'\t- offsets of all data and hole in entire file\n"
-"\n"
+" 'seek -a -r 0'\t- offsets of all data and hole in entire file\n\n"
 " Returns the offset of the next data and/or hole. There is an implied hole\n"
 " at the end of file. If the specified offset is past end of file, or there\n"
 " is no data past the specified offset, EOF is returned.\n"
@@ -11808,8 +11297,7 @@ msgid ""
 " -d\t-- return the next data starting at the specified offset.\n"
 " -h\t-- return the next hole starting at the specified offset.\n"
 " -r\t-- return all remaining type(s) starting at the specified offset.\n"
-" -s\t-- also print the starting offset.\n"
-"\n"
+" -s\t-- also print the starting offset.\n\n"
 msgstr ""
 
 #: .././io/seek.c:218
@@ -11822,16 +11310,13 @@ msgstr ""
 
 #: .././io/reflink.c:20
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Links a range of bytes (in block size increments) from a file into a range\n"
-" of bytes in the open file.  The contents of both file ranges must match.\n"
-"\n"
+" of bytes in the open file.  The contents of both file ranges must match.\n\n"
 " Example:\n"
 " 'dedupe some_file 0 4096 32768' - links 32768 bytes from some_file at\n"
 "                                    offset 0 to into the open file at\n"
-"                                    position 4096\n"
-"\n"
+"                                    position 4096\n\n"
 " Reflink a range of blocks from a given input file to the open file.  Both\n"
 " files share the same range of physical disk blocks; a write to the shared\n"
 " range of either file should result in the write landing in a new block and\n"
@@ -11861,20 +11346,16 @@ msgstr ""
 
 #: .././io/reflink.c:175
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " Links a range of bytes (in block size increments) from a file into a range\n"
-" of bytes in the open file.  The two extent ranges need not contain "
-"identical\n"
-" data.\n"
-"\n"
+" of bytes in the open file.  The two extent ranges need not contain identical\n"
+" data.\n\n"
 " Example:\n"
 " 'reflink some_file 0 4096 32768' - links 32768 bytes from some_file at\n"
 "                                    offset 0 to into the open file at\n"
 "                                    position 4096\n"
 " 'reflink some_file' - links all bytes from some_file into the open file\n"
-"                       at position 0\n"
-"\n"
+"                       at position 0\n\n"
 " Reflink a range of blocks from a given input file to the open file.  Both\n"
 " files share the same range of physical disk blocks; a write to the shared\n"
 " range of either file should result in the write landing in a new block and\n"
@@ -11900,10 +11381,8 @@ msgstr ""
 
 #: .././io/attr.c:49
 #, c-format
-msgid ""
-"\n"
-" displays the set of extended inode flags associated with the current file\n"
-"\n"
+msgid "\n"
+" displays the set of extended inode flags associated with the current file\n\n"
 " Each individual flag is displayed as a single character, in this order:\n"
 " r -- file data is stored in the realtime section\n"
 " p -- file has preallocated extents (cannot be changed using chattr)\n"
@@ -11921,26 +11400,21 @@ msgid ""
 " S -- enable filestreams allocator for this directory\n"
 " x -- Use direct access (DAX) for data in this file\n"
 " C -- for files with shared blocks, observe the inode CoW extent size value\n"
-" X -- file has extended attributes (cannot be changed using chattr)\n"
-"\n"
+" X -- file has extended attributes (cannot be changed using chattr)\n\n"
 " Options:\n"
 " -R -- recursively descend (useful when current file is a directory)\n"
 " -D -- recursively descend, but only list attributes on directories\n"
 " -a -- show all flags which can be set alongside those which are set\n"
-" -v -- verbose mode; show long names of flags, not single characters\n"
-"\n"
+" -v -- verbose mode; show long names of flags, not single characters\n\n"
 msgstr ""
 
 #: .././io/attr.c:83
 #, c-format
-msgid ""
-"\n"
-" modifies the set of extended inode flags associated with the current file\n"
-"\n"
+msgid "\n"
+" modifies the set of extended inode flags associated with the current file\n\n"
 " Examples:\n"
 " 'chattr +a' - sets the append-only flag\n"
-" 'chattr -a' - clears the append-only flag\n"
-"\n"
+" 'chattr -a' - clears the append-only flag\n\n"
 " -R -- recursively descend (useful when current file is a directory)\n"
 " -D -- recursively descend, only modifying attributes on directories\n"
 " +/-r -- set/clear the realtime flag\n"
@@ -11958,13 +11432,11 @@ msgid ""
 " +/-S -- set/clear the filestreams allocator flag\n"
 " +/-x -- set/clear the direct access (DAX) flag\n"
 " +/-C -- set/clear the CoW extent-size flag\n"
-" Note1: user must have certain capabilities to modify immutable/append-"
-"only.\n"
+" Note1: user must have certain capabilities to modify immutable/append-only.\n"
 " Note2: immutable/append-only files cannot be deleted; removing these files\n"
 "        requires the immutable/append-only flag to be cleared first.\n"
 " Note3: the realtime flag can only be set if the filesystem has a realtime\n"
-"        section, and the (regular) file must be empty when the flag is set.\n"
-"\n"
+"        section, and the (regular) file must be empty when the flag is set.\n\n"
 msgstr ""
 
 #: .././io/attr.c:253 .././io/attr.c:337
@@ -12000,17 +11472,13 @@ msgstr ""
 
 #: .././io/inject.c:103
 #, c-format
-msgid ""
-"\n"
-" inject errors into the filesystem of the currently open file\n"
-"\n"
+msgid "\n"
+" inject errors into the filesystem of the currently open file\n\n"
 " Example:\n"
-" 'inject readagf' - cause errors on allocation group freespace reads\n"
-"\n"
+" 'inject readagf' - cause errors on allocation group freespace reads\n\n"
 " Causes the kernel to generate and react to errors within XFS, provided\n"
 " the XFS kernel code has been built with debugging features enabled.\n"
-" With no arguments, displays the list of error injection tags.\n"
-"\n"
+" With no arguments, displays the list of error injection tags.\n\n"
 msgstr ""
 
 #: .././io/inject.c:129
@@ -12028,10 +11496,8 @@ msgstr ""
 
 #: .././io/madvise.c:19
 #, c-format
-msgid ""
-"\n"
-" advise the page cache about access patterns expected for a mapping\n"
-"\n"
+msgid "\n"
+" advise the page cache about access patterns expected for a mapping\n\n"
 " Modifies page cache behavior when operating on the current mapping.\n"
 " The range arguments are required by some advise commands ([*] below).\n"
 " With no arguments, the POSIX_MADV_NORMAL advice is implied.\n"
@@ -12043,8 +11509,7 @@ msgid ""
 "   NORMAL sets the default readahead setting on the file.\n"
 "   RANDOM sets the readahead setting on the file to zero.\n"
 "   SEQUENTIAL sets double the default readahead setting on the file.\n"
-"   WILLNEED forces the maximum readahead.\n"
-"\n"
+"   WILLNEED forces the maximum readahead.\n\n"
 msgstr ""
 
 #: .././io/madvise.c:202
@@ -12057,14 +11522,11 @@ msgstr ""
 
 #: .././io/label.c:27
 #, c-format
-msgid ""
-"\n"
-" Manipulate or query the filesystem label while mounted.\n"
-"\n"
+msgid "\n"
+" Manipulate or query the filesystem label while mounted.\n\n"
 " With no arguments, displays the current filesystem label.\n"
 " -s newlabel -- set the filesystem label to newlabel\n"
-" -c          -- clear the filesystem label (sets to NULL string)\n"
-"\n"
+" -c          -- clear the filesystem label (sets to NULL string)\n\n"
 msgstr ""
 
 #: .././io/label.c:93
@@ -12077,97 +11539,70 @@ msgstr ""
 
 #: .././io/encrypt.c:197
 #, c-format
-msgid ""
-"\n"
-" display the encryption policy of the current file\n"
-"\n"
+msgid "\n"
+" display the encryption policy of the current file\n\n"
 " -1 -- Use only the old ioctl to get the encryption policy.\n"
 "       This only works if the file has a v1 encryption policy.\n"
 " -t -- Test whether v2 encryption policies are supported.\n"
-"       Prints \"supported\", \"unsupported\", or an error message.\n"
-"\n"
+"       Prints \"supported\", \"unsupported\", or an error message.\n\n"
 msgstr ""
 
 #: .././io/encrypt.c:213
 #, c-format
-msgid ""
-"\n"
-" assign an encryption policy to the currently open file\n"
-"\n"
+msgid "\n"
+" assign an encryption policy to the currently open file\n\n"
 " Examples:\n"
 " 'set_encpolicy' - assign v1 policy with default key descriptor\n"
 "                   (0000000000000000)\n"
 " 'set_encpolicy -v 2' - assign v2 policy with default key identifier\n"
 "                        (00000000000000000000000000000000)\n"
-" 'set_encpolicy 0000111122223333' - assign v1 policy with given key "
-"descriptor\n"
-" 'set_encpolicy 00001111222233334444555566667777' - assign v2 policy with "
-"given\n"
-"                                                    key identifier\n"
-"\n"
+" 'set_encpolicy 0000111122223333' - assign v1 policy with given key descriptor\n"
+" 'set_encpolicy 00001111222233334444555566667777' - assign v2 policy with given\n"
+"                                                    key identifier\n\n"
 " -c MODE -- contents encryption mode\n"
 " -n MODE -- filenames encryption mode\n"
 " -f FLAGS -- policy flags\n"
 " -s LOG2_DUSIZE -- log2 of data unit size\n"
-" -v VERSION -- policy version\n"
-"\n"
+" -v VERSION -- policy version\n\n"
 " MODE can be numeric or one of the following predefined values:\n"
 msgstr ""
 
 #: .././io/encrypt.c:240
 #, c-format
-msgid ""
-" FLAGS and VERSION must be numeric.\n"
-"\n"
+msgid " FLAGS and VERSION must be numeric.\n\n"
 " Note that it's only possible to set an encryption policy on an empty\n"
-" directory.  It's then inherited by new files and subdirectories.\n"
-"\n"
+" directory.  It's then inherited by new files and subdirectories.\n\n"
 msgstr ""
 
 #: .././io/encrypt.c:251
 #, c-format
-msgid ""
-"\n"
-" add an encryption key to the filesystem\n"
-"\n"
+msgid "\n"
+" add an encryption key to the filesystem\n\n"
 " Examples:\n"
 " 'add_enckey' - add key for v2 policies\n"
-" 'add_enckey -d 0000111122223333' - add key for v1 policies w/ given "
-"descriptor\n"
-"\n"
+" 'add_enckey -d 0000111122223333' - add key for v1 policies w/ given descriptor\n\n"
 "Unless -k is given, the key in binary is read from standard input.\n"
 " -d DESCRIPTOR -- master_key_descriptor\n"
-" -k KEY_ID -- ID of fscrypt-provisioning key containing the raw key\n"
-"\n"
+" -k KEY_ID -- ID of fscrypt-provisioning key containing the raw key\n\n"
 msgstr ""
 
 #: .././io/encrypt.c:268
 #, c-format
-msgid ""
-"\n"
-" remove an encryption key from the filesystem\n"
-"\n"
+msgid "\n"
+" remove an encryption key from the filesystem\n\n"
 " Examples:\n"
-" 'rm_enckey 0000111122223333' - remove key for v1 policies w/ given "
-"descriptor\n"
-" 'rm_enckey 00001111222233334444555566667777' - remove key for v2 policies "
-"w/ given identifier\n"
-"\n"
-" -a -- remove key for all users who have added it (privileged operation)\n"
-"\n"
+" 'rm_enckey 0000111122223333' - remove key for v1 policies w/ given descriptor\n"
+" 'rm_enckey 00001111222233334444555566667777' - remove key for v2 policies w/ given identifier\n\n"
+" -a -- remove key for all users who have added it (privileged operation)\n\n"
 msgstr ""
 
 #: .././io/encrypt.c:283
 #, c-format
-msgid ""
-"\n"
-" get the status of a filesystem encryption key\n"
-"\n"
+msgid "\n"
+" get the status of a filesystem encryption key\n\n"
 " Examples:\n"
 " 'enckey_status 0000111122223333' - get status of v1 policy key\n"
-" 'enckey_status 00001111222233334444555566667777' - get status of v2 policy "
-"key\n"
-"\n"
+" 'enckey_status 00001111222233334444555566667777' - get status of v2 policy key\n\n"
 msgstr ""
 
 #: .././io/encrypt.c:392
@@ -12214,9 +11649,7 @@ msgstr ""
 
 #: .././io/encrypt.c:505
 #, c-format
-msgid ""
-"%s: unexpected error checking for FS_IOC_GET_ENCRYPTION_POLICY_EX support: "
-"%s\n"
+msgid "%s: unexpected error checking for FS_IOC_GET_ENCRYPTION_POLICY_EX support: %s\n"
 msgstr ""
 
 #: .././io/encrypt.c:513 .././io/encrypt.c:529 .././io/encrypt.c:597
@@ -12368,8 +11801,7 @@ msgid "display the encryption policy of the current file"
 msgstr ""
 
 #: .././io/encrypt.c:948
-msgid ""
-"[-c mode] [-n mode] [-f flags] [-s log2_dusize] [-v version] [keyspec]"
+msgid "[-c mode] [-n mode] [-f flags] [-s log2_dusize] [-v version] [keyspec]"
 msgstr ""
 
 #: .././io/encrypt.c:953
@@ -12402,10 +11834,8 @@ msgstr ""
 
 #: .././io/swapext.c:21
 #, c-format
-msgid ""
-"\n"
-" Swaps extents between the open file descriptor and the supplied filename.\n"
-"\n"
+msgid "\n"
+" Swaps extents between the open file descriptor and the supplied filename.\n\n"
 msgstr ""
 
 #: .././io/swapext.c:85
@@ -12418,13 +11848,10 @@ msgstr ""
 
 #: .././io/pread.c:22
 #, c-format
-msgid ""
-"\n"
-" reads a range of bytes in a specified block size from the given offset\n"
-"\n"
+msgid "\n"
+" reads a range of bytes in a specified block size from the given offset\n\n"
 " Example:\n"
-" 'pread -v 512 20' - dumps 20 bytes read from 512 bytes into the file\n"
-"\n"
+" 'pread -v 512 20' - dumps 20 bytes read from 512 bytes into the file\n\n"
 " Reads a segment of the currently open file, optionally dumping it to the\n"
 " standard output stream (with -v option) for subsequent inspection.\n"
 " The reads are performed in sequential blocks starting at offset, with the\n"
@@ -12437,13 +11864,11 @@ msgid ""
 " -R   -- read at random offsets in the range of bytes\n"
 " -Z N -- zeed the random number generator (used when reading randomly)\n"
 "         (heh, zorry, the -s/-S arguments were already in use in pwrite)\n"
-" -V N -- use vectored IO with N iovecs of blocksize each (preadv)\n"
-"\n"
+" -V N -- use vectored IO with N iovecs of blocksize each (preadv)\n\n"
 " When in \"random\" mode, the number of read operations will equal the\n"
 " number required to do a complete forward/backward scan of the range.\n"
 " Note that the offset within the range is chosen at random each time\n"
-" (an offset may be read more than once when operating in this mode).\n"
-"\n"
+" (an offset may be read more than once when operating in this mode).\n\n"
 msgstr ""
 
 #: .././io/pread.c:384 .././io/pwrite.c:293
@@ -12472,17 +11897,13 @@ msgstr ""
 
 #: .././io/shutdown.c:44
 #, c-format
-msgid ""
-"\n"
-" Shuts down the filesystem and prevents any further IO from occurring.\n"
-"\n"
+msgid "\n"
+" Shuts down the filesystem and prevents any further IO from occurring.\n\n"
 " By default, shutdown will not flush completed transactions to disk\n"
 " before shutting the filesystem down, simulating a disk failure or crash.\n"
 " With -f, the log will be flushed to disk, matching XFS behavior when\n"
-" metadata corruption is encountered.\n"
-"\n"
-" -f -- Flush completed transactions to disk before shut down.\n"
-"\n"
+" metadata corruption is encountered.\n\n"
+" -f -- Flush completed transactions to disk before shut down.\n\n"
 msgstr ""
 
 #: .././io/shutdown.c:64
@@ -12513,12 +11934,10 @@ msgstr ""
 
 #: .././io/prealloc.c:185
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " modifies space associated with part of a file via fallocate\n"
 " Example:\n"
-" 'falloc 0 1m' - fills all holes within the first megabyte\n"
-"\n"
+" 'falloc 0 1m' - fills all holes within the first megabyte\n\n"
 " falloc uses the fallocate system call to alter space allocations in the\n"
 " open file.  The following operations are supported:\n"
 " All the file offsets are in units of bytes.\n"
@@ -12526,8 +11945,7 @@ msgid ""
 " -i -- inserts a hole into the given range of the file.\n"
 " -k -- do not change file size.\n"
 " -p -- unmap the given range from the file.\n"
-" -u -- unshare shared extents in the given range.\n"
-"\n"
+" -u -- unshare shared extents in the given range.\n\n"
 msgstr ""
 
 #: .././io/prealloc.c:388 .././io/prealloc.c:396 .././io/prealloc.c:404
@@ -12590,22 +12008,16 @@ msgstr ""
 
 #: .././io/copy_file_range.c:19
 #, c-format
-msgid ""
-"\n"
-" Copies a range of bytes from a file into the open file, overwriting any "
-"data\n"
-" already there.\n"
-"\n"
+msgid "\n"
+" Copies a range of bytes from a file into the open file, overwriting any data\n"
+" already there.\n\n"
 " Example:\n"
-" 'copy_range -s 100 -d 200 -l 300 some_file' - copies 300 bytes from "
-"some_file\n"
+" 'copy_range -s 100 -d 200 -l 300 some_file' - copies 300 bytes from some_file\n"
 "                                               at offset 100 into the open\n"
 "\t\t\t\t\t       file at offset 200\n"
-" 'copy_range some_file' - copies all bytes from some_file into the open "
-"file\n"
+" 'copy_range some_file' - copies all bytes from some_file into the open file\n"
 "                          at position 0\n"
-" 'copy_range -f 2' - copies all bytes from open file 2 into the current open "
-"file\n"
+" 'copy_range -f 2' - copies all bytes from open file 2 into the current open file\n"
 "                          at position 0\n"
 msgstr ""
 
@@ -12639,13 +12051,10 @@ msgstr ""
 
 #: .././io/open.c:206
 #, c-format
-msgid ""
-"\n"
-" opens a new file in the requested mode\n"
-"\n"
+msgid "\n"
+" opens a new file in the requested mode\n\n"
 " Example:\n"
-" 'open -cd /tmp/data' - creates/opens data file read-write for direct IO\n"
-"\n"
+" 'open -cd /tmp/data' - creates/opens data file read-write for direct IO\n\n"
 " Opens a file for subsequent use by all of the other xfs_io commands.\n"
 " With no arguments, open uses the stat command to show the current file.\n"
 " -a -- open with the O_APPEND flag (append-only mode)\n"
@@ -12663,8 +12072,7 @@ msgid ""
 " Note1: usually read/write direct IO requests must be blocksize aligned;\n"
 "        some kernels, however, allow sectorsize alignment for direct IO.\n"
 " Note2: the bmap for non-regular files can be obtained provided the file\n"
-"        was opened correctly (in particular, must be opened read-only).\n"
-"\n"
+"        was opened correctly (in particular, must be opened read-only).\n\n"
 msgstr ""
 
 #: .././io/open.c:247 .././io/init.c:116 .././io/mmap.c:169 .././io/mmap.c:177
@@ -12690,14 +12098,11 @@ msgstr ""
 
 #: .././io/open.c:399
 #, c-format
-msgid ""
-"\n"
-" displays the project identifier associated with the current path\n"
-"\n"
+msgid "\n"
+" displays the project identifier associated with the current path\n\n"
 " Options:\n"
 " -R -- recursively descend (useful when current path is a directory)\n"
-" -D -- recursively descend, but only list projects on directories\n"
-"\n"
+" -D -- recursively descend, but only list projects on directories\n\n"
 msgstr ""
 
 #: .././io/open.c:470
@@ -12707,13 +12112,10 @@ msgstr ""
 
 #: .././io/open.c:478
 #, c-format
-msgid ""
-"\n"
-" modifies the project identifier associated with the current path\n"
-"\n"
+msgid "\n"
+" modifies the project identifier associated with the current path\n\n"
 " -R -- recursively descend (useful when current path is a directory)\n"
-" -D -- recursively descend, only modifying projects on directories\n"
-"\n"
+" -D -- recursively descend, only modifying projects on directories\n\n"
 msgstr ""
 
 #: .././io/open.c:541
@@ -12723,13 +12125,10 @@ msgstr ""
 
 #: .././io/open.c:567
 #, c-format
-msgid ""
-"\n"
-" report or modify preferred extent size (in bytes) for the current path\n"
-"\n"
+msgid "\n"
+" report or modify preferred extent size (in bytes) for the current path\n\n"
 " -R -- recursively descend (useful when current path is a directory)\n"
-" -D -- recursively descend, only modifying extsize on directories\n"
-"\n"
+" -D -- recursively descend, only modifying extsize on directories\n\n"
 msgstr ""
 
 #: .././io/open.c:699
@@ -12739,15 +12138,13 @@ msgstr ""
 
 #: .././io/open.c:732
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "Query physical information about an inode\n"
 " Default:\t-- Return 1 if any inode number greater than 32 bits exists in\n"
 "\t\t   the filesystem, or 0 if none exist\n"
 " num\t\t-- Return inode number [num] if in use, or 0 if not in use\n"
 " -n num\t-- Return the next used inode after [num]\n"
-" -v\t\t-- Verbose mode - display returned inode number's size in bits\n"
-"\n"
+" -v\t\t-- Verbose mode - display returned inode number's size in bits\n\n"
 msgstr ""
 
 #: .././io/open.c:822
@@ -12757,14 +12154,11 @@ msgstr ""
 
 #: .././io/open.c:915
 #, c-format
-msgid ""
-"\n"
-" Change the read/write permissions on the current file\n"
-"\n"
+msgid "\n"
+" Change the read/write permissions on the current file\n\n"
 " Options:\n"
 " -r -- make the file read only (0444 permissions)\n"
-" -w -- make the file read/write (0664 permissions)\n"
-"\n"
+" -w -- make the file read/write (0664 permissions)\n\n"
 msgstr ""
 
 #: .././io/open.c:963
@@ -12821,13 +12215,10 @@ msgstr ""
 
 #: .././io/pwrite.c:19
 #, c-format
-msgid ""
-"\n"
-" writes a range of bytes (in block size increments) from the given offset\n"
-"\n"
+msgid "\n"
+" writes a range of bytes (in block size increments) from the given offset\n\n"
 " Example:\n"
-" 'pwrite 512 20' - writes 20 bytes at 512 bytes into the open file\n"
-"\n"
+" 'pwrite 512 20' - writes 20 bytes at 512 bytes into the open file\n\n"
 " Writes into a segment of the currently open file, using either a buffer\n"
 " filled with a set pattern (0xcdcdcdcd) or data read from an input file.\n"
 " The writes are performed in sequential blocks starting at offset, with the\n"
@@ -12848,8 +12239,7 @@ msgid ""
 "         (heh, zorry, the -s/-S arguments were already in use in pwrite)\n"
 " -V N -- use vectored IO with N iovecs of blocksize each (pwritev)\n"
 " -N   -- Perform the pwritev2() with RWF_NOWAIT\n"
-" -D   -- Perform the pwritev2() with RWF_DSYNC\n"
-"\n"
+" -D   -- Perform the pwritev2() with RWF_DSYNC\n\n"
 msgstr ""
 
 #: .././io/pwrite.c:335
@@ -12863,9 +12253,7 @@ msgid "%s: command -%c not supported\n"
 msgstr ""
 
 #: .././io/pwrite.c:487
-msgid ""
-"[-i infile [-qdDwNOW] [-s skip]] [-b bs] [-S seed] [-FBR [-Z N]] [-V N] off "
-"len"
+msgid "[-i infile [-qdDwNOW] [-s skip]] [-b bs] [-S seed] [-FBR [-Z N]] [-V N] off len"
 msgstr ""
 
 #: .././io/pwrite.c:485
@@ -12874,11 +12262,8 @@ msgstr ""
 
 #: .././io/link.c:22
 #, c-format
-msgid ""
-"\n"
-"link the open file descriptor to the supplied filename\n"
-"\n"
-"\n"
+msgid "\n"
+"link the open file descriptor to the supplied filename\n\n\n"
 msgstr ""
 
 #: .././io/link.c:52
@@ -13051,14 +12436,11 @@ msgstr ""
 
 #: .././io/parent.c:417
 #, c-format
-msgid ""
-"\n"
-" list the current file's parents and their filenames\n"
-"\n"
+msgid "\n"
+" list the current file's parents and their filenames\n\n"
 " -c -- check the current file's file system for parent consistency\n"
 " -p -- list the current file's parents and their full paths\n"
-" -v -- verbose mode\n"
-"\n"
+" -v -- verbose mode\n\n"
 msgstr ""
 
 #: .././io/parent.c:433
@@ -13091,13 +12473,10 @@ msgstr ""
 
 #: .././io/mmap.c:129
 #, c-format
-msgid ""
-"\n"
-" maps a range within the current file into memory\n"
-"\n"
+msgid "\n"
+" maps a range within the current file into memory\n\n"
 " Example:\n"
-" 'mmap -rw 0 1m' - maps one megabyte from the start of the current file\n"
-"\n"
+" 'mmap -rw 0 1m' - maps one megabyte from the start of the current file\n\n"
 " Memory maps a range of a file for subsequent use by other xfs_io commands.\n"
 " With no arguments, mmap shows the current mappings.  The current mapping\n"
 " can be set by using the single argument form (mapping number or address).\n"
@@ -13107,10 +12486,8 @@ msgid ""
 " -w -- map with PROT_WRITE protection\n"
 " -x -- map with PROT_EXEC protection\n"
 " -S -- map with MAP_SYNC and MAP_SHARED_VALIDATE flags\n"
-" -s <size> -- first do mmap(size)/munmap(size), try to reserve some free "
-"space\n"
-" If no protection mode is specified, all are used by default.\n"
-"\n"
+" -s <size> -- first do mmap(size)/munmap(size), try to reserve some free space\n"
+" If no protection mode is specified, all are used by default.\n\n"
 msgstr ""
 
 #: .././io/init.c:120 .././io/mmap.c:168 .././io/mmap.c:176
@@ -13120,34 +12497,27 @@ msgstr ""
 
 #: .././io/mmap.c:292
 #, c-format
-msgid ""
-"\n"
-" flushes a range of bytes in the current memory mapping\n"
-"\n"
+msgid "\n"
+" flushes a range of bytes in the current memory mapping\n\n"
 " Writes all modified copies of pages over the specified range (or entire\n"
 " mapping if no range specified) to their backing storage locations.  Also,\n"
 " optionally invalidates so that subsequent references to the pages will be\n"
 " obtained from their backing storage locations (instead of cached copies).\n"
 " -a -- perform asynchronous writes (MS_ASYNC)\n"
 " -i -- invalidate mapped pages (MS_INVALIDATE)\n"
-" -s -- perform synchronous writes (MS_SYNC)\n"
-"\n"
+" -s -- perform synchronous writes (MS_SYNC)\n\n"
 msgstr ""
 
 #: .././io/mmap.c:377
 #, c-format
-msgid ""
-"\n"
-" reads a range of bytes in the current memory mapping\n"
-"\n"
+msgid "\n"
+" reads a range of bytes in the current memory mapping\n\n"
 " Example:\n"
-" 'mread -v 512 20' - dumps 20 bytes read from 512 bytes into the mapping\n"
-"\n"
+" 'mread -v 512 20' - dumps 20 bytes read from 512 bytes into the mapping\n\n"
 " Accesses a range of the current memory mapping, optionally dumping it to\n"
 " the standard output stream (with -v option) for subsequent inspection.\n"
 " -f -- verbose mode, dump bytes with offsets relative to start of file.\n"
-" -r -- reverse order; start accessing from the end of range, moving "
-"backward\n"
+" -r -- reverse order; start accessing from the end of range, moving backward\n"
 " -v -- verbose mode, dump bytes with offsets relative to start of mapping.\n"
 " The accesses are performed sequentially from the start offset by default.\n"
 " Notes:\n"
@@ -13155,41 +12525,32 @@ msgid ""
 "   in delivery of the SIGBUS signal.  SIGBUS signals may also be delivered\n"
 "   on various filesystem conditions, including quota exceeded errors, and\n"
 "   for physical device errors (such as unreadable disk blocks).  No attempt\n"
-"   has been made to catch signals at this stage...\n"
-"\n"
+"   has been made to catch signals at this stage...\n\n"
 msgstr ""
 
 #: .././io/mmap.c:541
 #, c-format
-msgid ""
-"\n"
-" dirties a range of bytes in the current memory mapping\n"
-"\n"
+msgid "\n"
+" dirties a range of bytes in the current memory mapping\n\n"
 " Example:\n"
-" 'mwrite 512 20 - writes 20 bytes at 512 bytes into the current mapping.\n"
-"\n"
+" 'mwrite 512 20 - writes 20 bytes at 512 bytes into the current mapping.\n\n"
 " Stores a byte into memory for a range within a mapping.\n"
 " The default stored value is 'X', repeated to fill the range specified.\n"
 " -S -- use an alternate seed character\n"
 " -r -- reverse order; start storing from the end of range, moving backward\n"
-" The stores are performed sequentially from the start offset by default.\n"
-"\n"
+" The stores are performed sequentially from the start offset by default.\n\n"
 msgstr ""
 
 #: .././io/mmap.c:634
 #, c-format
-msgid ""
-"\n"
-" resizes the current memory mapping\n"
-"\n"
+msgid "\n"
+" resizes the current memory mapping\n\n"
 " Examples:\n"
-" 'mremap 8192' - resizes the current mapping to 8192 bytes.\n"
-"\n"
+" 'mremap 8192' - resizes the current mapping to 8192 bytes.\n\n"
 " Resizes the mapping, growing or shrinking from the current size.\n"
 " The default stored value is 'X', repeated to fill the range specified.\n"
 " -f <new_address> -- use MREMAP_FIXED flag to mremap on new_address\n"
-" -m -- use the MREMAP_MAYMOVE flag\n"
-"\n"
+" -m -- use the MREMAP_MAYMOVE flag\n\n"
 msgstr ""
 
 #: .././io/mmap.c:716
@@ -13248,21 +12609,17 @@ msgstr ""
 
 #: .././io/sendfile.c:19
 #, c-format
-msgid ""
-"\n"
-" transfer a range of bytes from the given offset between files\n"
-"\n"
+msgid "\n"
+" transfer a range of bytes from the given offset between files\n\n"
 " Example:\n"
-" 'send -f 2 512 20' - writes 20 bytes at 512 bytes into the open file\n"
-"\n"
+" 'send -f 2 512 20' - writes 20 bytes at 512 bytes into the open file\n\n"
 " Copies data between one file descriptor and another.  Because this copying\n"
 " is done within the kernel, sendfile does not need to transfer data to and\n"
 " from user space.\n"
 " -q -- quiet mode, do not write anything to standard output.\n"
 " -f -- specifies an input file from which to source data to write\n"
 " -i -- specifies an input file name from which to source data to write.\n"
-" An offset and length in the source file can be optionally specified.\n"
-"\n"
+" An offset and length in the source file can be optionally specified.\n\n"
 msgstr ""
 
 #: .././io/sendfile.c:172
@@ -13283,9 +12640,7 @@ msgstr ""
 
 #: .././io/bulkstat.c:67
 #, c-format
-msgid ""
-"Bulk-queries the filesystem for inode stat information and prints it.\n"
-"\n"
+msgid "Bulk-queries the filesystem for inode stat information and prints it.\n\n"
 "   -a <agno>  Only iterate this AG.\n"
 "   -d         Print debugging output.\n"
 "   -q         Be quiet, no output.\n"
@@ -13297,20 +12652,16 @@ msgstr ""
 
 #: .././io/bulkstat.c:201
 #, c-format
-msgid ""
-"bulkstat: startino=%lld flags=0x%x agno=%u ret=%d icount=%u ocount=%u\n"
+msgid "bulkstat: startino=%lld flags=0x%x agno=%u ret=%d icount=%u ocount=%u\n"
 msgstr ""
 
 #: .././io/bulkstat.c:232
 #, c-format
-msgid ""
-"Queries the filesystem for a single inode's stat information and prints it.\n"
+msgid "Queries the filesystem for a single inode's stat information and prints it.\n"
 "If a given inode is not allocated, information about the next allocated \n"
-"inode will be printed instead.\n"
-"\n"
+"inode will be printed instead.\n\n"
 "   -v (ver)  Use this version of the ioctl (1 or 5).\n"
-"   -d        Print debugging information.\n"
-"\n"
+"   -d        Print debugging information.\n\n"
 "Pass in inode numbers or a special inode name:\n"
 "    root     Root directory.\n"
 msgstr ""
@@ -13322,9 +12673,7 @@ msgstr ""
 
 #: .././io/bulkstat.c:361
 #, c-format
-msgid ""
-"Queries the filesystem for inode group information and prints it.\n"
-"\n"
+msgid "Queries the filesystem for inode group information and prints it.\n\n"
 "   -a <agno>  Only iterate this AG.\n"
 "   -d         Print debugging output.\n"
 "   -e <ino>   Stop after this inode.\n"
@@ -13335,9 +12684,7 @@ msgstr ""
 
 #: .././io/bulkstat.c:466
 #, c-format
-msgid ""
-"bulkstat: startino=%<PRIu64> flags=0x%<PRIx32> agno=%<PRIu32> ret=%d "
-"icount=%<PRIu32> ocount=%<PRIu32>\n"
+msgid "bulkstat: startino=%<PRIu64> flags=0x%<PRIx32> agno=%<PRIu32> ret=%d icount=%<PRIu32> ocount=%<PRIu32>\n"
 msgstr ""
 
 #: .././io/bulkstat.c:522 .././io/bulkstat.c:529
@@ -13523,8 +12870,7 @@ msgstr ""
 
 #: .././copy/xfs_copy.c:723
 #, c-format
-msgid ""
-"%s: couldn't initialize XFS library\n"
+msgid "%s: couldn't initialize XFS library\n"
 "%s: Aborting.\n"
 msgstr ""
 
@@ -13535,47 +12881,40 @@ msgstr ""
 
 #: .././copy/xfs_copy.c:758
 #, c-format
-msgid ""
-"%s: %s filesystem failed to initialize\n"
+msgid "%s: %s filesystem failed to initialize\n"
 "%s: Aborting.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:762
 #, c-format
-msgid ""
-"%s %s filesystem failed to initialize\n"
+msgid "%s %s filesystem failed to initialize\n"
 "%s: Aborting.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:766
 #, c-format
-msgid ""
-"%s: %s has an external log.\n"
+msgid "%s: %s has an external log.\n"
 "%s: Aborting.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:770
 #, c-format
-msgid ""
-"%s: %s has a real-time section.\n"
+msgid "%s: %s has a real-time section.\n"
 "%s: Aborting.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:789
-msgid ""
-"Error: source filesystem log is dirty. Mount the filesystem to replay the\n"
+msgid "Error: source filesystem log is dirty. Mount the filesystem to replay the\n"
 "log, unmount and retry xfs_copy.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:794
-msgid ""
-"Error: could not determine the log head or tail of the source filesystem.\n"
+msgid "Error: could not determine the log head or tail of the source filesystem.\n"
 "Mount the filesystem to replay the log or run xfs_repair.\n"
 msgstr ""
 
 #: .././copy/xfs_copy.c:810
-msgid ""
-"Error:  filesystem block size is smaller than the disk sectorsize.\n"
+msgid "Error:  filesystem block size is smaller than the disk sectorsize.\n"
 "Aborting XFS copy now.\n"
 msgstr ""
 
@@ -13586,8 +12925,7 @@ msgstr ""
 
 #: .././copy/xfs_copy.c:841
 #, c-format
-msgid ""
-"%s:  a filesystem is mounted on target device \"%s\".\n"
+msgid "%s:  a filesystem is mounted on target device \"%s\".\n"
 "%s cannot copy to mounted filesystems.  Aborting\n"
 msgstr ""
 
@@ -13671,15 +13009,13 @@ msgstr ""
 
 #: .././estimate/xfs_estimate.c:65
 #, c-format
-msgid ""
-"Usage: %s [opts] directory [directory ...]\n"
+msgid "Usage: %s [opts] directory [directory ...]\n"
 "\t-b blocksize (fundamental filesystem blocksize)\n"
 "\t-i logsize (internal log size)\n"
 "\t-e logsize (external log size)\n"
 "\t-v prints more verbose messages\n"
 "\t-V prints version and exits\n"
-"\t-h prints this usage message\n"
-"\n"
+"\t-h prints this usage message\n\n"
 "Note:\tblocksize may have 'k' appended to indicate x1024\n"
 "\tlogsize may also have 'm' appended to indicate (1024 x 1024)\n"
 msgstr ""
@@ -13706,9 +13042,7 @@ msgstr ""
 
 #: .././estimate/xfs_estimate.c:147
 #, c-format
-msgid ""
-"directory                               bsize   blocks    megabytes    "
-"logsize\n"
+msgid "directory                               bsize   blocks    megabytes    logsize\n"
 msgstr ""
 
 #: .././estimate/xfs_estimate.c:161
@@ -13768,8 +13102,7 @@ msgstr ""
 
 #: .././libfrog/fsgeom.c:54
 #, c-format
-msgid ""
-"meta-data=%-22s isize=%-6d agcount=%u, agsize=%u blks\n"
+msgid "meta-data=%-22s isize=%-6d agcount=%u, agsize=%u blks\n"
 "         =%-22s sectsz=%-5u attr=%u, projid32bit=%u\n"
 "         =%-22s crc=%-8u finobt=%u, sparse=%u, rmapbt=%u\n"
 "         =%-22s reflink=%-4u bigtime=%u inobtcount=%u nrext64=%u\n"
@@ -13857,16 +13190,14 @@ msgstr ""
 
 #: .././libxlog/util.c:82
 #, c-format
-msgid ""
-"* ERROR: mismatched uuid in log\n"
+msgid "* ERROR: mismatched uuid in log\n"
 "*            SB : %s\n"
 "*            log: %s\n"
 msgstr ""
 
 #: .././libxlog/util.c:95
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "LOG REC AT LSN cycle %d block %d (0x%x, 0x%x)\n"
 msgstr ""
 
@@ -14061,16 +13392,12 @@ msgstr ""
 
 #: .././libxfs/init.c:309
 #, c-format
-msgid ""
-"%s: Reflink not compatible with realtime device. Please try a newer "
-"xfsprogs.\n"
+msgid "%s: Reflink not compatible with realtime device. Please try a newer xfsprogs.\n"
 msgstr ""
 
 #: .././libxfs/init.c:316
 #, c-format
-msgid ""
-"%s: Reverse mapping btree not compatible with realtime device. Please try a "
-"newer xfsprogs.\n"
+msgid "%s: Reverse mapping btree not compatible with realtime device. Please try a newer xfsprogs.\n"
 msgstr ""
 
 #: .././libxfs/init.c:322
@@ -14232,11 +13559,9 @@ msgstr ""
 
 #: .././fsr/xfs_fsr.c:319
 #, c-format
-msgid ""
-"Usage: %s [-d] [-v] [-g] [-t time] [-p passes] [-f leftf] [-m mtab]\n"
+msgid "Usage: %s [-d] [-v] [-g] [-t time] [-p passes] [-f leftf] [-m mtab]\n"
 "       %s [-d] [-v] [-g] xfsdev | dir | file ...\n"
-"       %s -V\n"
-"\n"
+"       %s -V\n\n"
 "Options:\n"
 "       -g              Print to syslog (default if stdout not a tty).\n"
 "       -t time         How long to run in seconds.\n"
@@ -14673,8 +13998,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:989
 #, c-format
-msgid ""
-"Usage: %s\n"
+msgid "Usage: %s\n"
 "/* blocksize */\t\t[-b size=num]\n"
 "/* config file */\t[-c options=xxx]\n"
 "/* metadata */\t\t[-m crc=0|1,finobt=0|1,uuid=xxx,rmapbt=0|1,reflink=0|1,\n"
@@ -14820,9 +14144,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:1624
 #, c-format
-msgid ""
-"Option -%c %s has undefined minval/maxval.Can't verify value range. This is "
-"a bug.\n"
+msgid "Option -%c %s has undefined minval/maxval.Can't verify value range. This is a bug.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:1640
@@ -14861,8 +14183,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2329
 #, c-format
-msgid ""
-"specified blocksize %d is less than device physical sector size %d\n"
+msgid "specified blocksize %d is less than device physical sector size %d\n"
 "switching to logical sector size %d\n"
 msgstr ""
 
@@ -14913,9 +14234,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2470
 #, c-format
-msgid ""
-"ascii-ci filesystems are deprecated and will not be supported by future "
-"versions.\n"
+msgid "ascii-ci filesystems are deprecated and will not be supported by future versions.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2483 .././mkfs/xfs_mkfs.c:2793
@@ -14955,8 +14274,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2565
 #, c-format
-msgid ""
-"V4 filesystems are deprecated and will not be supported by future versions.\n"
+msgid "V4 filesystems are deprecated and will not be supported by future versions.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2578
@@ -15056,8 +14374,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2948
 #, c-format
-msgid ""
-"illegal extent size hint %lld, must be less than %u and a multiple of %u.\n"
+msgid "illegal extent size hint %lld, must be less than %u and a multiple of %u.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:2977
@@ -15097,44 +14414,32 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3095
 #, c-format
-msgid ""
-"data stripe width (%lld) is too large of a multiple of the data stripe unit "
-"(%d)\n"
+msgid "data stripe width (%lld) is too large of a multiple of the data stripe unit (%d)\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3129
 #, c-format
-msgid ""
-"%s: Volume reports invalid stripe unit (%d) and stripe width (%d), "
-"ignoring.\n"
+msgid "%s: Volume reports invalid stripe unit (%d) and stripe width (%d), ignoring.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3143
 #, c-format
-msgid ""
-"%s: small data volume, ignoring data volume stripe unit %d and stripe width "
-"%d\n"
+msgid "%s: small data volume, ignoring data volume stripe unit %d and stripe width %d\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3157
 #, c-format
-msgid ""
-"%s: Specified data stripe unit %d is not the same as the volume stripe unit "
-"%d\n"
+msgid "%s: Specified data stripe unit %d is not the same as the volume stripe unit %d\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3162
 #, c-format
-msgid ""
-"%s: Specified data stripe width %d is not the same as the volume stripe "
-"width %d\n"
+msgid "%s: Specified data stripe width %d is not the same as the volume stripe width %d\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3179
 #, c-format
-msgid ""
-"%s: Stripe unit(%d) or stripe width(%d) is not a multiple of the block "
-"size(%d)\n"
+msgid "%s: Stripe unit(%d) or stripe width(%d) is not a multiple of the block size(%d)\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3206 .././mkfs/xfs_mkfs.c:3214
@@ -15144,8 +14449,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3236
 #, c-format
-msgid ""
-"log stripe unit (%d bytes) is too large (maximum is 256KiB)\n"
+msgid "log stripe unit (%d bytes) is too large (maximum is 256KiB)\n"
 "log stripe unit adjusted to 32KiB\n"
 msgstr ""
 
@@ -15161,8 +14465,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3319
 #, c-format
-msgid ""
-"size %s specified for data subvolume is too large, maximum is %lld blocks\n"
+msgid "size %s specified for data subvolume is too large, maximum is %lld blocks\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3331
@@ -15172,8 +14475,7 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3338
 #, c-format
-msgid ""
-"Warning: the data subvolume sector size %u is less than the sector size \n"
+msgid "Warning: the data subvolume sector size %u is less than the sector size \n"
 "reported by the device (%u).\n"
 msgstr ""
 
@@ -15199,14 +14501,12 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3394
 #, c-format
-msgid ""
-"size %s specified for log subvolume is too large, maximum is %lld blocks\n"
+msgid "size %s specified for log subvolume is too large, maximum is %lld blocks\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3402
 #, c-format
-msgid ""
-"Warning: the log subvolume sector size %u is less than the sector size\n"
+msgid "Warning: the log subvolume sector size %u is less than the sector size\n"
 "reported by the device (%u).\n"
 msgstr ""
 
@@ -15222,14 +14522,12 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3435
 #, c-format
-msgid ""
-"size %s specified for rt subvolume is too large, maxi->um is %lld blocks\n"
+msgid "size %s specified for rt subvolume is too large, maxi->um is %lld blocks\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3442
 #, c-format
-msgid ""
-"Warning: the realtime subvolume sector size %u is less than the sector size\n"
+msgid "Warning: the realtime subvolume sector size %u is less than the sector size\n"
 "reported by the device (%u).\n"
 msgstr ""
 
@@ -15245,10 +14543,8 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:3660
 #, c-format
-msgid ""
-"Warning: AG size is a multiple of stripe width.  This can cause performance\n"
-"problems by aligning all AGs on the same disk.  To avoid this, run mkfs "
-"with\n"
+msgid "Warning: AG size is a multiple of stripe width.  This can cause performance\n"
+"problems by aligning all AGs on the same disk.  To avoid this, run mkfs with\n"
 "an AG size that is one stripe unit smaller or larger, for example %llu.\n"
 msgstr ""
 
@@ -15259,15 +14555,13 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:4193
 #, c-format
-msgid ""
-"Due to stripe alignment, the internal log start (%lld) cannot be aligned\n"
+msgid "Due to stripe alignment, the internal log start (%lld) cannot be aligned\n"
 "within an allocation group.\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:4214
 #, c-format
-msgid ""
-"Due to stripe alignment, the internal log size (%lld) is too large.\n"
+msgid "Due to stripe alignment, the internal log size (%lld) is too large.\n"
 "Must fit within an allocation group.\n"
 msgstr ""
 
@@ -15293,15 +14587,12 @@ msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:4372
 #, c-format
-msgid ""
-"external log device size %lld blocks too small, must be at least %lld "
-"blocks\n"
+msgid "external log device size %lld blocks too small, must be at least %lld blocks\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:4404
 #, c-format
-msgid ""
-"max log size %d smaller than min log size %d, filesystem is too small\n"
+msgid "max log size %d smaller than min log size %d, filesystem is too small\n"
 msgstr ""
 
 #: .././mkfs/xfs_mkfs.c:4449
@@ -15544,9 +14835,7 @@ msgstr ""
 
 #: .././logprint/logprint.c:33
 #, c-format
-msgid ""
-"Usage: %s [options...] <device>\n"
-"\n"
+msgid "Usage: %s [options...] <device>\n\n"
 "Options:\n"
 "    -c\t            try to continue if error found in log\n"
 "    -C <filename>   copy the log from the filesystem to filename\n"
@@ -15578,9 +14867,7 @@ msgstr ""
 
 #: .././logprint/logprint.c:92
 #, c-format
-msgid ""
-"    external log device not specified\n"
-"\n"
+msgid "    external log device not specified\n\n"
 msgstr ""
 
 #: .././logprint/logprint.c:110
@@ -15610,9 +14897,7 @@ msgstr ""
 
 #: .././logprint/logprint.c:229
 #, c-format
-msgid ""
-"daddr: %lld length: %lld\n"
-"\n"
+msgid "daddr: %lld length: %lld\n\n"
 msgstr ""
 
 #: .././logprint/log_redo.c:59
@@ -15816,8 +15101,7 @@ msgstr ""
 
 #: .././logprint/log_print_all.c:84
 #, c-format
-msgid ""
-"BUF:  #regs:%d   start blkno:0x%llx   len:%d   bmap size:%d   flags:0x%x\n"
+msgid "BUF:  #regs:%d   start blkno:0x%llx   len:%d   bmap size:%d   flags:0x%x\n"
 msgstr ""
 
 #: .././logprint/log_print_all.c:96
@@ -15962,9 +15246,7 @@ msgstr ""
 
 #: .././logprint/log_print_all.c:267
 #, c-format
-msgid ""
-"\t\tsize:0x%llx  nblks:0x%llx  exsize:%d  nextents:%<PRIu64>  "
-"anextents:%<PRIu32>\n"
+msgid "\t\tsize:0x%llx  nblks:0x%llx  exsize:%d  nextents:%<PRIu64>  anextents:%<PRIu32>\n"
 msgstr ""
 
 #: .././logprint/log_print_all.c:271
@@ -16024,8 +15306,7 @@ msgstr ""
 
 #: .././logprint/log_print_all.c:390
 #, c-format
-msgid ""
-"\tICR:  #ag: %d  agbno: 0x%x  len: %d\n"
+msgid "\tICR:  #ag: %d  agbno: 0x%x  len: %d\n"
 "\t      cnt: %d  isize: %d    gen: 0x%x\n"
 msgstr ""
 
@@ -16091,8 +15372,7 @@ msgstr ""
 
 #: .././logprint/log_print_trans.c:72
 #, c-format
-msgid ""
-"Superblock has unknown incompatible log features (0x%x) enabled.\n"
+msgid "Superblock has unknown incompatible log features (0x%x) enabled.\n"
 "Output may be incomplete or inaccurate. It is recommended that you\n"
 "upgrade your xfsprogs installation to match the filesystem features.\n"
 msgstr ""
@@ -16124,8 +15404,7 @@ msgstr ""
 
 #: .././logprint/log_misc.c:258
 #, c-format
-msgid ""
-"#regs: %d   start blkno: %lld (0x%llx)  len: %d  bmap size: %d  flags: 0x%x\n"
+msgid "#regs: %d   start blkno: %lld (0x%llx)  len: %d  bmap size: %d  flags: 0x%x\n"
 msgstr ""
 
 #: .././logprint/log_misc.c:264
@@ -16406,8 +15685,7 @@ msgstr ""
 
 #: .././logprint/log_misc.c:769
 #, c-format
-msgid ""
-"ICR:  #ag: %d  agbno: 0x%x  len: %d\n"
+msgid "ICR:  #ag: %d  agbno: 0x%x  len: %d\n"
 "      cnt: %d  isize: %d    gen: 0x%x\n"
 msgstr ""
 
@@ -16513,8 +15791,7 @@ msgstr ""
 
 #: .././logprint/log_misc.c:1229
 #, c-format
-msgid ""
-"* ERROR: for header block=%lld\n"
+msgid "* ERROR: for header block=%lld\n"
 "*        not enough hdrs for data length, required num = %d, hdr num = %d\n"
 msgstr ""
 
@@ -16596,3 +15873,4 @@ msgstr ""
 #, c-format
 msgid "%s: short write? (%lld)\n"
 msgstr ""
+
