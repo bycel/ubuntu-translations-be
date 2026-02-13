@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-10 20:21+0100\n"
-"PO-Revision-Date: 2025-07-31 09:57\n"
+"PO-Revision-Date: 2026-02-13 13:22\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:22+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:49+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: ru\n"
@@ -820,8 +820,8 @@ msgstr ""
 msgid "%s package '%s' with udeb specific field %s"
 msgstr ""
 
-#: scripts/dpkg-gencontrol.pl scripts/Dpkg/Source/Package.pm
-#: scripts/Dpkg/Source/Patch.pm
+#: scripts/dpkg-gencontrol.pl scripts/Dpkg/BuildDriver/DebianRules.pm
+#: scripts/Dpkg/Source/Package/V1.pm scripts/Dpkg/Source/Patch.pm
 #, perl-format
 msgid "cannot stat %s"
 msgstr ""
@@ -1669,8 +1669,8 @@ msgstr ""
 
 #: scripts/Dpkg/BuildFlags.pm scripts/Dpkg/Compression/FileHandle.pm
 #: scripts/Dpkg/File.pm scripts/Dpkg/Interface/Storable.pm
-#: scripts/Dpkg/Shlibs/Objdump.pm scripts/Dpkg/Source/BinaryFiles.pm
-#: scripts/Dpkg/Source/Quilt.pm
+#: scripts/Dpkg/OpenPGP/Backend/GnuPG.pm scripts/Dpkg/Shlibs/Objdump.pm
+#: scripts/Dpkg/Source/BinaryFiles.pm scripts/Dpkg/Source/Quilt.pm
 #, perl-format
 msgid "cannot read %s"
 msgstr ""
@@ -2543,17 +2543,17 @@ msgstr ""
 msgid "cannot copy %s to %s"
 msgstr ""
 
-#: scripts/Dpkg/Source/Package.pm
+#: scripts/Dpkg/BuildDriver/DebianRules.pm
 #, perl-format
 msgid "%s does not exist"
 msgstr ""
 
-#: scripts/Dpkg/Source/Package.pm
+#: scripts/Dpkg/BuildDriver/DebianRules.pm scripts/Dpkg/Source/Package/V1.pm
 #, perl-format
 msgid "cannot make %s executable"
 msgstr ""
 
-#: scripts/Dpkg/Source/Package.pm
+#: scripts/Dpkg/BuildDriver/DebianRules.pm scripts/Dpkg/Source/Package/V1.pm
 #, perl-format
 msgid "%s is not a plain file"
 msgstr ""
@@ -2732,7 +2732,7 @@ msgstr ""
 msgid "unable to stat putative unpacked orig '%s'"
 msgstr ""
 
-#: scripts/Dpkg/Source/Package/V1.pm scripts/Dpkg/Source/Package/V3/Quilt.pm
+#: scripts/Dpkg/Source/Package/V1.pm scripts/Dpkg/Source/Package/V2.pm
 msgid "non-native package version does not contain a revision"
 msgstr ""
 

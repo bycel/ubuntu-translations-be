@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-04-01 01:40+0000\n"
-"PO-Revision-Date: 2025-07-31 09:48\n"
+"PO-Revision-Date: 2026-02-13 13:08\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:14+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:38+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
 "X-Crowdin-Language: ru\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Crowdin-File-ID: 63\n"
 "Language: ru_RU\n"
 
-#: app/Assistant.vala:285
+#: app/OperationWrapper.vala:382
 msgid "Co_ntinue"
 msgstr ""
 
@@ -36,11 +36,12 @@ msgstr ""
 msgid "_Back"
 msgstr ""
 
-#: app/Assistant.vala:334
+#: app/OperationWrapper.vala:179 app/OperationWrapper.vala:252
 msgid "_Close"
 msgstr ""
 
-#: app/Assistant.vala:340 data/ui/PassphraseDialog.ui:29
+#: app/ConfigFolderPage.vala:24 app/OperationWrapper.vala:381
+#: data/ui/ActionDialog.blp:22 data/ui/PassphraseDialog.blp:53
 msgid "_Cancel"
 msgstr ""
 
@@ -53,12 +54,12 @@ msgctxt "back up is verb"
 msgid "Back Up"
 msgstr ""
 
-#: app/AssistantBackup.vala:28
+#: data/ui/FirstBackupDialog.blp:10
 msgctxt "back up is verb"
 msgid "_Back Up"
 msgstr ""
 
-#: app/AssistantBackup.vala:67
+#: libdeja/OperationBackup.vala:70
 msgid "The following folders cannot be backed up because Backups does not have access to them:"
 msgstr ""
 
@@ -100,11 +101,11 @@ msgstr ""
 msgid "Backups needs your input to continue"
 msgstr ""
 
-#: app/AssistantBackup.vala:149
+#: app/OperationLauncher.vala:284
 msgid "Backup in progress"
 msgstr ""
 
-#: app/AssistantLocation.vala:15
+#: data/ui/RestoreLocationDialog.blp:13
 msgid "Restore From Where?"
 msgstr ""
 
@@ -120,42 +121,40 @@ msgstr ""
 msgid "Scanning…"
 msgstr ""
 
-#: app/AssistantOperation.vala:265
+#: app/OperationWrapper.vala:176 app/OperationWrapper.vala:247
+#: app/OperationWrapper.vala:294 app/OperationWrapper.vala:377
 msgid "_Details"
 msgstr ""
 
-#: app/AssistantOperation.vala:312 app/Browser.vala:274
+#: libdeja/Operation.vala:613
 msgid "In order to continue, the following packages need to be installed:"
 msgstr ""
 
-#. always default to encrypted
-#: app/AssistantOperation.vala:346
+#: app/OperationWrapper.vala:296
 msgid "You will need your password to restore your files. You might want to write it down."
 msgstr ""
 
-#: app/AssistantOperation.vala:347
+#: data/ui/PassphraseDialog.blp:19
 msgid "_Password-protect your backup"
 msgstr ""
 
-#: app/AssistantOperation.vala:354 app/AssistantOperation.vala:398
-#: data/ui/PassphraseDialog.ui:16
+#: app/OperationWrapper.vala:265
 msgid "E_ncryption password"
 msgstr ""
 
-#: app/AssistantOperation.vala:363
+#: data/ui/PassphraseDialog.blp:34
 msgid "Confir_m password"
 msgstr ""
 
-#: app/AssistantOperation.vala:371 app/MountOperationAssistant.vala:25
-#: data/ui/PassphraseDialog.ui:23
+#: app/SavePasswordRow.vala:14
 msgid "_Remember password"
 msgstr ""
 
-#: app/AssistantOperation.vala:386
+#: app/OperationWrapper.vala:305
 msgid "In order to check that you will be able to retrieve your files in the case of an emergency, please enter your encryption password again to perform a brief restore test."
 msgstr ""
 
-#: app/AssistantOperation.vala:405
+#: data/ui/PassphraseDialog.blp:47
 msgid "Test every two _months"
 msgstr ""
 
@@ -183,11 +182,11 @@ msgstr ""
 msgid "Set Encryption Password"
 msgstr ""
 
-#: app/AssistantOperation.vala:763
+#: app/OperationWrapper.vala:295
 msgid "Require Password?"
 msgstr ""
 
-#: app/AssistantOperation.vala:765
+#: app/OperationWrapper.vala:300
 msgid "Encryption Password Needed"
 msgstr ""
 
@@ -195,7 +194,7 @@ msgstr ""
 msgid "Backups needs your encryption password to continue"
 msgstr ""
 
-#: app/AssistantOperation.vala:886 data/ui/Browser.ui:232
+#: libdeja/Operation.vala:618
 msgctxt "verb"
 msgid "_Install"
 msgstr ""
@@ -208,7 +207,7 @@ msgstr ""
 msgid "Restore"
 msgstr ""
 
-#: app/AssistantRestore.vala:63 data/ui/RestoreToolbarView.ui:35
+#: data/ui/RestoreTargetDialog.blp:11
 msgid "_Restore"
 msgstr ""
 
@@ -220,13 +219,14 @@ msgstr ""
 msgid "Restore to _specific folder"
 msgstr ""
 
-#: app/AssistantRestore.vala:181 data/ui/ConfigLocationGroup.ui:19
-#: data/ui/ConfigLocationGroup.ui:42 data/ui/ConfigLocationGroup.ui:81
-#: data/ui/ConfigLocationGroup.ui:90 data/ui/ConfigLocationGroup.ui:99
+#: data/ui/ConfigLocationGroup.blp:17 data/ui/ConfigLocationGroup.blp:42
+#: data/ui/ConfigLocationGroup.blp:81 data/ui/ConfigLocationGroup.blp:88
+#: data/ui/ConfigLocationGroup.blp:96 data/ui/ConfigLocationGroup.blp:146
+#: data/ui/RestoreTargetDialog.blp:57
 msgid "_Folder"
 msgstr ""
 
-#: app/AssistantRestore.vala:201
+#: data/ui/RestoreTargetWarningButton.blp:22
 msgid "Backups does not have permission to restore the following files:"
 msgstr ""
 
@@ -252,7 +252,7 @@ msgstr ""
 msgid "Restore From When?"
 msgstr ""
 
-#: app/AssistantRestore.vala:331
+#: data/ui/RestoreTargetDialog.blp:14
 msgid "Restore to Where?"
 msgstr ""
 
@@ -299,11 +299,11 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: app/AssistantRestore.vala:513 libdeja/Operation.vala:49
+#: libdeja/Operation.vala:63
 msgid "Restoring…"
 msgstr ""
 
-#: app/AssistantRestore.vala:583
+#: app/OperationLauncher.vala:295
 msgid "Restore in progress"
 msgstr ""
 
@@ -311,15 +311,15 @@ msgstr ""
 msgid "Cannot back up automatically"
 msgstr ""
 
-#: app/Browser.vala:220
+#: app/OperationWrapper.vala:355
 msgid "Authentication needed"
 msgstr ""
 
-#: app/Browser.vala:384 libdeja/duplicity/DuplicityJob.vala:1067
+#: libdeja/duplicity/DuplicityJob.vala:1022
 msgid "No backup files found"
 msgstr ""
 
-#: app/ConfigAutoBackupRow.vala:21
+#: app/ConfigAutoBackupRow.vala:22
 msgid "Back Up _Automatically"
 msgstr ""
 
@@ -389,36 +389,36 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. *** Basic entries ***
-#: app/ConfigLocationRow.vala:52 libdeja/BackendGoogle.vala:74
+#: app/ConfigLocationRow.vala:53 libdeja/BackendGoogle.vala:74
 msgid "Google Drive"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:54 libdeja/BackendMicrosoft.vala:70
+#: app/ConfigLocationRow.vala:55 libdeja/BackendMicrosoft.vala:70
 msgid "Microsoft OneDrive"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:56
+#: app/ConfigLocationRow.vala:59
 msgid "Local Folder"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:58
+#: app/ConfigLocationRow.vala:61
 msgid "Network Server"
 msgstr ""
 
 #. *** Old deprecated cloud entries, kept just for a kinder migration ***
-#: app/ConfigLocationRow.vala:63
+#: app/ConfigLocationRow.vala:66
 msgid "Google Cloud Storage"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:65
+#: app/ConfigLocationRow.vala:68
 msgid "OpenStack Swift"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:67
+#: app/ConfigLocationRow.vala:70
 msgid "Rackspace Cloud Files"
 msgstr ""
 
-#: app/ConfigLocationRow.vala:69
+#: app/ConfigLocationRow.vala:72
 msgid "Amazon S3"
 msgstr ""
 
@@ -443,15 +443,15 @@ msgstr[3] ""
 msgid "Use _Restic instead of Duplicity"
 msgstr ""
 
-#: app/FileStore.vala:196
+#: app/FileStore.vala:193
 msgid "File"
 msgstr ""
 
-#: app/FileStore.vala:198
+#: app/FileStore.vala:195
 msgid "Link"
 msgstr ""
 
-#: app/FileStore.vala:200
+#: app/FileStore.vala:197
 msgid "Folder"
 msgstr ""
 
@@ -488,15 +488,15 @@ msgstr ""
 msgid "_Domain"
 msgstr ""
 
-#: app/Notifications.vala:13
+#: app/Notifications.vala:24
 msgid "Starting scheduled backup"
 msgstr ""
 
-#: app/Notifications.vala:18
+#: app/Notifications.vala:29
 msgid "Scheduled backup delayed"
 msgstr ""
 
-#: app/Notifications.vala:25
+#: app/OperationLauncher.vala:261 app/OperationWrapper.vala:189
 msgid "Backup completed"
 msgstr ""
 
@@ -516,19 +516,19 @@ msgstr ""
 msgid "Restore failed"
 msgstr ""
 
-#: app/Notifications.vala:76
+#: app/Notifications.vala:60
 msgid "Keep your files safe by backing up regularly"
 msgstr ""
 
-#: app/Notifications.vala:77
+#: app/Notifications.vala:61
 msgid "Important documents, data, and settings can be protected by storing them in a backup. In the case of a disaster, you would be able to recover them from that backup."
 msgstr ""
 
-#: app/Notifications.vala:82
+#: app/Notifications.vala:66
 msgid "Don’t Show Again"
 msgstr ""
 
-#: app/Notifications.vala:83
+#: app/Notifications.vala:67
 msgid "Open Backups"
 msgstr ""
 
@@ -555,16 +555,16 @@ msgid "Please %sreport%s successes or failures when enabled."
 msgstr ""
 
 #. Check for some really simple/common friendly names
-#: app/RecentBackupRow.vala:43
+#: app/RecentBackupRow.vala:53
 msgid "Today"
 msgstr ""
 
-#: app/RecentBackupRow.vala:45
+#: app/RecentBackupRow.vala:55
 msgid "Yesterday"
 msgstr ""
 
 #. Translators: sentence case
-#: app/RecentBackupRow.vala:54
+#: app/RecentBackupRow.vala:64
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -574,7 +574,7 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. Translators: this is used like "Most Recent Backup: None"
-#: app/RecentBackupRow.vala:65
+#: app/RecentBackupRow.vala:82
 msgctxt "backups"
 msgid "None"
 msgstr ""
@@ -583,8 +583,9 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: app/RestoreHeaderBar.vala:26 app/RestoreHeaderBar.vala:27
-#: data/ui/RestoreToolbarView.ui:22
+#: data/ui/RestoreToolbarView.blp:49 data/ui/RestoreToolbarView.blp:51
+#: data/ui/RestoreToolbarView.blp:73 data/ui/RestoreToolbarView.blp:96
+#: data/ui/RestoreToolbarView.blp:98
 msgid "Search"
 msgstr ""
 
@@ -597,11 +598,11 @@ msgstr ""
 msgid "%x %X"
 msgstr ""
 
-#: app/WidgetUtils.vala:15
+#: app/WidgetUtils.vala:14
 msgid "_OK"
 msgstr ""
 
-#: app/main.vala:22 monitor/monitor.vala:19
+#: app/main.vala:15 monitor/monitor.vala:19
 msgid "Show version"
 msgstr ""
 
@@ -609,7 +610,7 @@ msgstr ""
 msgid "Restore given files"
 msgstr ""
 
-#: app/main.vala:24
+#: app/main.vala:16
 msgid "Immediately start a backup"
 msgstr ""
 
@@ -621,7 +622,7 @@ msgstr ""
 msgid "An operation is already in progress"
 msgstr ""
 
-#: app/main.vala:369
+#: app/main.vala:296
 msgid "translator-credits"
 msgstr ""
 
@@ -630,15 +631,16 @@ msgstr ""
 #. context is itself a reference to both the underlying command line tool
 #. "duplicity" and the act of duplicating data for backup.  As a whole, the
 #. phrase "Déjà Dup" may not be very translatable.
-#: app/main.vala:475 data/app.metainfo.xml.in:15
+#: app/main.vala:356 data/app.metainfo.xml.in:11 data/ui/MainWindow.blp:11
+#: data/ui/OverviewPage.blp:11 data/ui/WelcomePage.blp:11
 msgid "Déjà Dup Backups"
 msgstr ""
 
-#: data/app.desktop.in:5 data/ui/MainWindow.ui:9
+#: data/app.desktop.in:5 data/ui/SnapshotsPage.blp:11
 msgid "Backups"
 msgstr ""
 
-#: data/app.desktop.in:6 data/app.metainfo.xml.in:16
+#: data/app.desktop.in:6 data/app.metainfo.xml.in:12
 msgid "Protect yourself from data loss"
 msgstr ""
 
@@ -648,7 +650,7 @@ msgstr ""
 msgid "déjà;deja;dup;"
 msgstr ""
 
-#: data/app.desktop.in:36
+#: data/app.desktop.in:34
 msgid "Back Up"
 msgstr ""
 
@@ -708,125 +710,125 @@ msgstr ""
 msgid "The number of days between backups."
 msgstr ""
 
-#: data/app.gschema.xml.in:60
+#: data/app.gschema.xml.in:66
 msgid "The last time Déjà Dup checked whether it should prompt about backing up"
 msgstr ""
 
-#: data/app.gschema.xml.in:61
+#: data/app.gschema.xml.in:67
 msgid "When a user logs in, the Déjà Dup monitor checks whether it should prompt about backing up. This is used to increase discoverability for users that don’t know about backups. This time should be either ‘disabled’ to turn off this check or in ISO 8601 format."
 msgstr ""
 
-#: data/app.gschema.xml.in:65
+#: data/app.gschema.xml.in:71
 msgid "The last time Déjà Dup checked whether it should prompt about your password"
 msgstr ""
 
-#: data/app.gschema.xml.in:66
+#: data/app.gschema.xml.in:72
 msgid "In order to prevent you from forgetting your passwords, Déjà Dup will occasionally notify you to confirm the password. This time should be either ‘disabled’ to turn off this check or in ISO 8601 format."
 msgstr ""
 
-#: data/app.gschema.xml.in:70
+#: data/app.gschema.xml.in:76
 msgid "How long to keep backup files"
 msgstr ""
 
-#: data/app.gschema.xml.in:71
+#: data/app.gschema.xml.in:77
 msgid "The number of days to keep backup files on the backup location. A value of 0 means forever. This is a minimum number of days; the files may be kept longer."
 msgstr ""
 
-#: data/app.gschema.xml.in:75
+#: data/app.gschema.xml.in:81
 msgid "How long to wait between full backups"
 msgstr ""
 
-#: data/app.gschema.xml.in:76
+#: data/app.gschema.xml.in:82
 msgid "Déjà Dup needs to occasionally make fresh full backups. This is the number of days to wait between full backups."
 msgstr ""
 
-#: data/app.gschema.xml.in:80
+#: data/app.gschema.xml.in:86
 msgid "Whether to use metered networks"
 msgstr ""
 
-#: data/app.gschema.xml.in:81
+#: data/app.gschema.xml.in:87
 msgid "If false, Déjà Dup will refuse to run scheduled backups over metered network connections (like 4G)."
 msgstr ""
 
-#: data/app.gschema.xml.in:85
+#: data/app.gschema.xml.in:96
 msgid "Command to run before the backup tool"
 msgstr ""
 
-#: data/app.gschema.xml.in:86
+#: data/app.gschema.xml.in:97
 msgid "Useful if you need to manually mount a folder, for example. If this command fails, the backup won't start."
 msgstr ""
 
-#: data/app.gschema.xml.in:90
+#: data/app.gschema.xml.in:101
 msgid "Command to run after the backup tool"
 msgstr ""
 
-#: data/app.gschema.xml.in:91
+#: data/app.gschema.xml.in:102
 msgid "Useful if you need to clean up after your setup command. Failures are ignored."
 msgstr ""
 
-#: data/app.gschema.xml.in:95
+#: data/app.gschema.xml.in:106
 msgid "Command to run around the backup tool"
 msgstr ""
 
-#: data/app.gschema.xml.in:96
+#: data/app.gschema.xml.in:107
 msgid "Useful if you need to limit resources or otherwise wrap the execution of the tool command. An example value might be 'trickle -u 500' which would result in deja-dup running 'trickle -u 500 duplicity …'."
 msgstr ""
 
-#: data/app.gschema.xml.in:124
+#: data/app.gschema.xml.in:147
 msgid "Type of location to store backup"
 msgstr ""
 
-#: data/app.gschema.xml.in:125
+#: data/app.gschema.xml.in:148
 msgid "The type of backup location. If ‘auto’, a default will be chosen based on what is available."
 msgstr ""
 
-#: data/app.gschema.xml.in:137 data/app.gschema.xml.in:160
-#: data/app.gschema.xml.in:173 data/app.gschema.xml.in:181
-#: data/app.gschema.xml.in:188
+#: data/app.gschema.xml.in:161 data/app.gschema.xml.in:184
+#: data/app.gschema.xml.in:197 data/app.gschema.xml.in:205
+#: data/app.gschema.xml.in:212 data/app.gschema.xml.in:224
 msgid "The folder where backups are stored"
 msgstr ""
 
-#: data/app.gschema.xml.in:138
+#: data/app.gschema.xml.in:162
 msgid "The folder hierarchy where backups are stored. Paths can be absolute or relative to your home directory."
 msgstr ""
 
-#: data/app.gschema.xml.in:145
+#: data/app.gschema.xml.in:169
 msgid "UUID"
 msgstr ""
 
-#: data/app.gschema.xml.in:146
+#: data/app.gschema.xml.in:170
 msgid "The unique filesystem identifier for the drive, used to recognize the drive when it is plugged in."
 msgstr ""
 
-#: data/app.gschema.xml.in:150 data/ui/Browser.ui:305
+#: data/app.gschema.xml.in:174 data/ui/Browser.blp:77
 msgid "Name"
 msgstr ""
 
-#: data/app.gschema.xml.in:151
+#: data/app.gschema.xml.in:175
 msgid "The name of the external drive."
 msgstr ""
 
-#: data/app.gschema.xml.in:155
+#: data/app.gschema.xml.in:179
 msgid "Icon"
 msgstr ""
 
-#: data/app.gschema.xml.in:156
+#: data/app.gschema.xml.in:180
 msgid "The icon of the external drive, as a serialized GIcon."
 msgstr ""
 
-#: data/app.gschema.xml.in:161
+#: data/app.gschema.xml.in:185
 msgid "The folder hierarchy where backups are stored. Paths are relative to the drive."
 msgstr ""
 
-#: data/app.gschema.xml.in:168
+#: data/app.gschema.xml.in:192
 msgid "The server address"
 msgstr ""
 
-#: data/app.gschema.xml.in:169
+#: data/app.gschema.xml.in:193
 msgid "The URI of the remote server location."
 msgstr ""
 
-#: data/app.gschema.xml.in:174
+#: data/app.gschema.xml.in:198 data/app.gschema.xml.in:225
 msgid "The folder hierarchy where backups are stored. Paths can be absolute or relative to the host."
 msgstr ""
 
@@ -834,31 +836,31 @@ msgstr ""
 msgid "Déjà Dup is a simple backup tool. It hides the complexity of backing up the Right Way (encrypted, off-site, and regular) and uses duplicity as the backend."
 msgstr ""
 
-#: data/app.metainfo.xml.in:20
+#: data/app.metainfo.xml.in:16
 msgid "Support for local, remote, or cloud backup locations such as Google Drive"
 msgstr ""
 
-#: data/app.metainfo.xml.in:21
+#: data/app.metainfo.xml.in:17
 msgid "Securely encrypts and compresses your data"
 msgstr ""
 
-#: data/app.metainfo.xml.in:22
+#: data/app.metainfo.xml.in:18
 msgid "Incrementally backs up, letting you restore from any particular backup"
 msgstr ""
 
-#: data/app.metainfo.xml.in:23
+#: data/app.metainfo.xml.in:19
 msgid "Schedules regular backups"
 msgstr ""
 
-#: data/app.metainfo.xml.in:24
+#: data/app.metainfo.xml.in:20
 msgid "Integrates well into your GNOME desktop"
 msgstr ""
 
-#: data/app.metainfo.xml.in:26
+#: data/app.metainfo.xml.in:22
 msgid "Déjà Dup focuses on ease of use and recovering from personal, accidental data loss. If you need a full system backup or an archival program, you may prefer other backup apps."
 msgstr ""
 
-#: data/app.metainfo.xml.in:107
+#: data/app.metainfo.xml.in:96 data/app.metainfo.xml.in:112
 msgid "Back up your files automatically — set it and forget it"
 msgstr ""
 
@@ -866,11 +868,11 @@ msgstr ""
 msgid "Restoring is a breeze — browse your files and select which to restore"
 msgstr ""
 
-#: data/app.metainfo.xml.in:115
+#: data/app.metainfo.xml.in:104 data/app.metainfo.xml.in:120
 msgid "Back up to the cloud, a network server, or a local drive"
 msgstr ""
 
-#: data/app.metainfo.xml.in:119
+#: data/app.metainfo.xml.in:108 data/app.metainfo.xml.in:124
 msgid "Take control of your backup by choosing exactly which folders to include"
 msgstr ""
 
@@ -885,7 +887,7 @@ msgstr ""
 msgid "Schedules backups at regular intervals"
 msgstr ""
 
-#: data/ui/Browser.ui:27 data/ui/Browser.ui:298
+#: app/BrowserPage.vala:134 data/ui/Browser.blp:25 data/ui/Browser.blp:69
 msgid "Files"
 msgstr ""
 
@@ -894,15 +896,15 @@ msgstr ""
 msgid "Scanning backup files…"
 msgstr ""
 
-#: data/ui/Browser.ui:87
+#: data/ui/Browser.blp:40
 msgid "Folder is Empty"
 msgstr ""
 
-#: data/ui/Browser.ui:98
+#: data/ui/Browser.blp:49
 msgid "No Results Found"
 msgstr ""
 
-#: data/ui/Browser.ui:99
+#: data/ui/Browser.blp:50
 msgid "Try a different search"
 msgstr ""
 
@@ -914,7 +916,7 @@ msgstr ""
 msgid "_Connect"
 msgstr ""
 
-#: data/ui/Browser.ui:184
+#: app/OperationWrapper.vala:299
 msgid "Encryption password needed"
 msgstr ""
 
@@ -922,11 +924,11 @@ msgstr ""
 msgid "_Enter Password"
 msgstr ""
 
-#: data/ui/Browser.ui:269
+#: libdeja/Operation.vala:640
 msgid "Installing packages…"
 msgstr ""
 
-#: data/ui/Browser.ui:384
+#: data/ui/Browser.blp:128
 msgid "Location"
 msgstr ""
 
@@ -934,47 +936,47 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: data/ui/ConfigFolderPage.ui:10
+#: data/ui/ConfigFolderPage.blp:11
 msgid "Folders"
 msgstr ""
 
-#: data/ui/ConfigFolderPage.ui:13
+#: data/ui/ConfigIncludeFolderGroup.blp:13
 msgid "Folders to Back Up"
 msgstr ""
 
-#: data/ui/ConfigFolderPage.ui:24
+#: data/ui/ConfigExcludeFolderGroup.blp:16
 msgid "These folders are always ignored:"
 msgstr ""
 
-#: data/ui/ConfigFolderPage.ui:56
+#: data/ui/ConfigExcludeFolderGroup.blp:12
 msgid "Folders to Ignore"
 msgstr ""
 
-#: data/ui/ConfigFolderRow.ui:15
+#: app/ConfigFolderRow.vala:42
 msgid "This folder cannot be backed up because Backups does not have access to it."
 msgstr ""
 
-#: data/ui/ConfigFolderRow.ui:30
+#: data/ui/ConfigFolderRow.blp:36
 msgid "Remove"
 msgstr ""
 
-#: data/ui/ConfigLocationGroup.ui:9
+#: data/ui/FirstBackupDialog.blp:20 data/ui/MainWindow.blp:68
 msgid "Storage"
 msgstr ""
 
-#: data/ui/ConfigLocationGroup.ui:29 data/ui/ConfigLocationGroup.ui:52
+#: data/ui/ConfigLocationGroup.blp:27 data/ui/ConfigLocationGroup.blp:52
 msgid "_Reset Account Access"
 msgstr ""
 
-#: data/ui/ConfigLocationGroup.ui:66
+#: data/ui/ConfigLocationGroup.blp:67
 msgid "Ser_ver Address"
 msgstr ""
 
-#: data/ui/ConfigLocationRow.ui:48
+#: data/ui/ConfigLocationRow.blp:32
 msgid "_Location"
 msgstr ""
 
-#: data/ui/HelpButton.ui:28
+#: data/ui/HelpButton.blp:26
 msgid "Help"
 msgstr ""
 
@@ -982,11 +984,11 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: data/ui/OverviewPage.ui:34
+#: data/ui/OverviewPage.blp:94
 msgid "_Back Up Now"
 msgstr ""
 
-#: data/ui/PassphraseDialog.ui:30
+#: data/ui/PassphraseDialog.blp:54
 msgid "Con_tinue"
 msgstr ""
 
@@ -994,19 +996,19 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: data/ui/PreferencesWindow.ui:21
+#: data/ui/MainWindow.blp:33
 msgid "Schedule"
 msgstr ""
 
-#: data/ui/PreferencesWindow.ui:27
+#: data/ui/MainWindow.blp:39
 msgid "Automatic Backup _Frequency"
 msgstr ""
 
-#: data/ui/PreferencesWindow.ui:33
+#: data/ui/MainWindow.blp:44
 msgid "_Keep Backups"
 msgstr ""
 
-#: data/ui/PreferencesWindow.ui:40
+#: data/ui/MainWindow.blp:52
 msgid "The oldest backups will still be deleted earlier if the location is low on space or kept up to three months longer to avoid deleting related backups."
 msgstr ""
 
@@ -1018,11 +1020,11 @@ msgstr ""
 msgid "Restic"
 msgstr ""
 
-#: data/ui/PrimaryMenuButton.ui:15
+#: data/ui/PrimaryMenuButton.blp:16
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/PrimaryMenuButton.ui:22
+#: data/ui/PrimaryMenuButton.blp:23
 msgid "_Select All"
 msgstr ""
 
@@ -1030,11 +1032,11 @@ msgstr ""
 msgid "_Preferences"
 msgstr ""
 
-#: data/ui/PrimaryMenuButton.ui:33
+#: data/ui/PrimaryMenuButton.blp:31
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/PrimaryMenuButton.ui:37
+#: data/ui/PrimaryMenuButton.blp:36
 msgid "_Help"
 msgstr ""
 
@@ -1042,67 +1044,67 @@ msgstr ""
 msgid "_About Backups"
 msgstr ""
 
-#: data/ui/RecentBackupRow.ui:9
+#: data/ui/RecentBackupRow.blp:12
 msgid "Most Recent Backup"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:15
+#: data/ui/ServerAddressHelp.blp:15
 msgid "Server Addresses"
 msgstr ""
 
-#. Translators: This is followed by a list of valid adresses (smb://gnome.org/deja-dup, ssh://192.168.0.1, ftp://[2001:db8::1])
-#: data/ui/ServerAddressHelp.ui:27
+#. Translators: Translators: This is followed by a list of valid adresses (smb://gnome.org/deja-dup, ssh://192.168.0.1, ftp://[2001:db8::1])
+#: data/ui/ServerAddressHelp.blp:26
 msgid "Server addresses are made up of a protocol prefix, an address, and sometimes a path depending on the protocol. Examples:"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:53
+#: data/ui/ServerAddressHelp.blp:50
 msgid "Available Protocols"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:66
+#: data/ui/ServerAddressHelp.blp:60
 msgid "AppleTalk"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:76
+#: data/ui/ServerAddressHelp.blp:70
 msgid "File Transfer Protocol"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:86
+#: data/ui/ServerAddressHelp.blp:80
 msgid "Network File System"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:96
+#: data/ui/ServerAddressHelp.blp:90
 msgid "Samba"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:106
+#: data/ui/ServerAddressHelp.blp:100
 msgid "SSH File Transfer Protocol"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:116
+#: data/ui/ServerAddressHelp.blp:110
 msgid "WebDAV"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:126
+#: data/ui/ServerAddressHelp.blp:120
 msgid "Prefix"
 msgstr ""
 
-#. Translators: do not translate ftp:// and ftps://
-#: data/ui/ServerAddressHelp.ui:149
+#. Translators: Translators: do not translate ftp:// and ftps://
+#: data/ui/ServerAddressHelp.blp:141
 msgid "ftp:// or ftps://"
 msgstr ""
 
-#: data/ui/ServerAddressHelp.ui:169
+#: data/ui/ServerAddressHelp.blp:161
 msgid "smb://"
 msgstr ""
 
-#. Translators: do not translate sftp:// and ssh://
-#: data/ui/ServerAddressHelp.ui:179
+#. Translators: Translators: do not translate sftp:// and ssh://
+#: data/ui/ServerAddressHelp.blp:172
 msgid "sftp:// or ssh://"
 msgstr ""
 
-#. Translators: do not translate dav:// and davs://
-#: data/ui/ServerAddressHelp.ui:189
+#. Translators: Translators: do not translate dav:// and davs://
+#: data/ui/ServerAddressHelp.blp:183
 msgid "dav:// or davs://"
 msgstr ""
 
@@ -1122,22 +1124,22 @@ msgstr ""
 msgid "_Restore From a Previous Backup"
 msgstr ""
 
-#: data/ui/help-overlay.ui:16
+#: data/ui/shortcuts-dialog.blp:12
 msgctxt "shortcut window"
 msgid "General"
 msgstr ""
 
-#: data/ui/help-overlay.ui:20
+#: data/ui/shortcuts-dialog.blp:16
 msgctxt "shortcut window"
 msgid "Show help"
 msgstr ""
 
-#: data/ui/help-overlay.ui:26
+#: data/ui/shortcuts-dialog.blp:21
 msgctxt "shortcut window"
 msgid "Open menu"
 msgstr ""
 
-#: data/ui/help-overlay.ui:32
+#: data/ui/shortcuts-dialog.blp:26
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
@@ -1147,17 +1149,17 @@ msgctxt "shortcut window"
 msgid "Preferences"
 msgstr ""
 
-#: data/ui/help-overlay.ui:44
+#: data/ui/shortcuts-dialog.blp:31
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr ""
 
-#: data/ui/help-overlay.ui:51
+#: data/ui/shortcuts-dialog.blp:36
 msgctxt "shortcut window"
 msgid "Browsing Backed Up Files"
 msgstr ""
 
-#: data/ui/help-overlay.ui:55
+#: data/ui/shortcuts-dialog.blp:40
 msgctxt "shortcut window"
 msgid "Search"
 msgstr ""
@@ -1167,14 +1169,15 @@ msgctxt "shortcut window"
 msgid "Go back"
 msgstr ""
 
-#: data/ui/help-overlay.ui:67
+#: data/ui/shortcuts-dialog.blp:50
 msgctxt "shortcut window"
 msgid "Select all"
 msgstr ""
 
 #. Translators: %2$s is the name of a removable drive, %1$s is a folder
 #. on that removable drive.
-#: libdeja/BackendDrive.vala:75 libdeja/CommonUtils.vala:487
+#. translators: this is "folder-name on server-host"
+#: libdeja/BackendDrive.vala:75 libdeja/CommonUtils.vala:555
 #, c-format
 msgid "%1$s on %2$s"
 msgstr ""
@@ -1184,17 +1187,17 @@ msgstr ""
 msgid "Backup will begin when %s is connected."
 msgstr ""
 
-#: libdeja/BackendDrive.vala:250 libdeja/BackendRemote.vala:153
+#: libdeja/BackendDrive.vala:251 libdeja/BackendRemote.vala:164
 msgid "Storage location not available"
 msgstr ""
 
-#: libdeja/BackendDrive.vala:250
+#: libdeja/BackendDrive.vala:251
 #, c-format
 msgid "Waiting for ‘%s’ to become connected…"
 msgstr ""
 
 #: libdeja/BackendGoogle.vala:62 libdeja/BackendMicrosoft.vala:58
-#: monitor/ReadyWatcher.vala:160
+#: libdeja/BackendRclone.vala:43 monitor/ReadyWatcher.vala:164
 msgid "Backup will begin when a network connection becomes available."
 msgstr ""
 
@@ -1211,7 +1214,7 @@ msgid "%s on Microsoft OneDrive"
 msgstr ""
 
 #. Duplicity requires a folder, and this is a reasonable restriction.
-#: libdeja/BackendMicrosoft.vala:111
+#: libdeja/BackendMicrosoft.vala:100
 msgid "You must provide a Microsoft OneDrive folder."
 msgstr ""
 
@@ -1222,7 +1225,7 @@ msgid "Could not log into %s servers."
 msgstr ""
 
 #. Translators: %s is a brand name like Google or Microsoft
-#: libdeja/BackendOAuth.vala:169
+#: libdeja/BackendOAuth.vala:201
 #, c-format
 msgid "%s credentials for Déjà Dup"
 msgstr ""
@@ -1240,19 +1243,19 @@ msgstr ""
 msgid "The network server is not available"
 msgstr ""
 
-#: libdeja/BackendRemote.vala:154
+#: libdeja/BackendRemote.vala:165
 msgid "Waiting for a network connection…"
 msgstr ""
 
-#: libdeja/BackendRemote.vala:166
+#: libdeja/BackendRemote.vala:177
 msgid "Could not mount storage location."
 msgstr ""
 
-#: libdeja/BackendRemote.vala:170
+#: libdeja/BackendRemote.vala:181
 msgid "The server’s network location needs to be specified in the storage location preferences."
 msgstr ""
 
-#: libdeja/BackendRemote.vala:175
+#: libdeja/BackendRemote.vala:186
 #, c-format
 msgid "The server’s network location ‘%s’ does not look like a network location."
 msgstr ""
@@ -1260,59 +1263,59 @@ msgstr ""
 #. Special sanity check for some edge cases like smb:// where if the user
 #. just puts in smb://server/ as the root, GIO thinks it's a valid root,
 #. but the share never ends up mounted.
-#: libdeja/BackendRemote.vala:183
+#: libdeja/BackendRemote.vala:214
 msgid "Samba network locations must include both a hostname and a share name."
 msgstr ""
 
 #. Translators: this is the home folder and %s is the user's username
-#: libdeja/CommonUtils.vala:540
+#: libdeja/CommonUtils.vala:611
 #, c-format
 msgid "Home (%s)"
 msgstr ""
 
 #. Translators: this is the home folder
-#: libdeja/CommonUtils.vala:545
+#: libdeja/CommonUtils.vala:616
 msgid "Home"
 msgstr ""
 
 #. Translators: this is the trash folder
-#: libdeja/CommonUtils.vala:550
+#: libdeja/CommonUtils.vala:621
 msgid "Trash"
 msgstr ""
 
-#: libdeja/CommonUtils.vala:612
+#: libdeja/CommonUtils.vala:685
 msgid "Backup encryption password"
 msgstr ""
 
-#: libdeja/InstallEnvFlatpak.vala:111
+#: libdeja/InstallEnvFlatpak.vala:117
 msgid "Make sure Backups has permission to run in the background in your desktop session’s settings and try again."
 msgstr ""
 
 #. no portal support :(
-#: libdeja/InstallEnvFlatpak.vala:176
+#: libdeja/InstallEnvFlatpak.vala:182
 msgid "Your desktop session does not support automatically starting Flatpak apps."
 msgstr ""
 
-#: libdeja/Operation.vala:47
+#: libdeja/Operation.vala:61
 msgid "Backing up…"
 msgstr ""
 
-#: libdeja/Operation.vala:51
+#: libdeja/Operation.vala:65
 msgid "Checking for backups…"
 msgstr ""
 
-#: libdeja/Operation.vala:53
+#: libdeja/Operation.vala:67
 msgid "Listing files…"
 msgstr ""
 
-#: libdeja/Operation.vala:55 libdeja/Operation.vala:85
-#: libdeja/duplicity/DuplicityJob.vala:377
-#: libdeja/duplicity/DuplicityJob.vala:388
-#: libdeja/duplicity/DuplicityJob.vala:424
+#: libdeja/Operation.vala:72 libdeja/duplicity/DuplicityJob.vala:305
+#: libdeja/duplicity/DuplicityJob.vala:316
+#: libdeja/duplicity/DuplicityJob.vala:344
+#: libdeja/duplicity/DuplicityJob.vala:358
 msgid "Preparing…"
 msgstr ""
 
-#: libdeja/Operation.vala:96
+#: libdeja/Operation.vala:141
 msgid "Custom tool setup failed."
 msgstr ""
 
@@ -1320,7 +1323,7 @@ msgstr ""
 msgid "Could not back up the following files.  Please make sure you are able to open them."
 msgstr ""
 
-#: libdeja/OperationBackup.vala:55 libdeja/OperationVerify.vala:42
+#: libdeja/Operation.vala:70 libdeja/OperationBackup.vala:46
 msgid "Verifying backup…"
 msgstr ""
 
@@ -1336,8 +1339,8 @@ msgstr ""
 msgid "Your backup appears to be corrupted.  You should delete the backup and try again."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:71
-#: libdeja/duplicity/DuplicityJob.vala:146
+#: libdeja/duplicity/DuplicityJob.vala:79
+#: libdeja/duplicity/DuplicityJob.vala:140
 msgid "Paused (no network)"
 msgstr ""
 
@@ -1345,32 +1348,32 @@ msgstr ""
 #. Don't bother checking whether this is first or later backup.
 #. If the user adds folders to their backup and the target is just too small, let them know.
 #. Tiny backup location.  Suggest they get a larger one.
-#: libdeja/duplicity/DuplicityJob.vala:555 libdeja/restic/ResticJob.vala:319
+#: libdeja/duplicity/DuplicityJob.vala:483 libdeja/restic/ResticJob.vala:337
 msgid "Backup location is too small."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:556 libdeja/restic/ResticJob.vala:320
+#: libdeja/duplicity/DuplicityJob.vala:484 libdeja/restic/ResticJob.vala:338
 #, c-format
 msgid "Try using a location with at least %s."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:557
+#: libdeja/duplicity/DuplicityJob.vala:485
 msgid "(Space for two full backups is required.)"
 msgstr ""
 
 #. Can't delete any more backup chains ourselves. Tell the user, so they can clear out space.
-#: libdeja/duplicity/DuplicityJob.vala:578
+#: libdeja/duplicity/DuplicityJob.vala:506
 #, c-format
 msgid "Backup location does not have enough free space. Please free up at least %s."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:580
+#: libdeja/duplicity/DuplicityJob.vala:508
 #, c-format
 msgid "Backup location does not have enough free space. Try using a location with at least %s free."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:600
-#: libdeja/duplicity/DuplicityJob.vala:614
+#: libdeja/duplicity/DuplicityJob.vala:528
+#: libdeja/duplicity/DuplicityJob.vala:542
 msgid "Cleaning up…"
 msgstr ""
 
@@ -1381,25 +1384,26 @@ msgstr ""
 #. frequently fix odd metadata errors with duplicity.  If we hit an error
 #. a second time, we'll show the unknown error message.
 #. Should emit some sort of error...
-#: libdeja/duplicity/DuplicityJob.vala:698
-#: libdeja/duplicity/DuplicityJob.vala:1086 libdeja/libtool/ToolJoblet.vala:115
+#: libdeja/duplicity/DuplicityJob.vala:640
+#: libdeja/duplicity/DuplicityJob.vala:1041 libdeja/libtool/ToolJoblet.vala:102
+#: libdeja/restic/ResticInstance.vala:177
 msgid "Failed with an unknown error."
 msgstr ""
 
 #. notify upper layers, if they want to do anything
-#: libdeja/duplicity/DuplicityJob.vala:901
+#: libdeja/duplicity/DuplicityJob.vala:850
 msgid "Bad encryption password."
 msgstr ""
 
 #. make text a little nicer than duplicity gives
 #. duplicity gives something like "home/blah/blah not found in archive,
 #. no files restored".
-#: libdeja/duplicity/DuplicityJob.vala:950
+#: libdeja/duplicity/DuplicityJob.vala:901
 #, c-format
 msgid "Could not restore ‘%s’: File not found in backup"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:961
+#: libdeja/duplicity/DuplicityJob.vala:912
 #, c-format
 msgid "The existing backup is of a computer named %s, but the current computer’s name is %s.  If this is unexpected, you should back up to a different location."
 msgstr ""
@@ -1408,94 +1412,93 @@ msgstr ""
 msgid "Computer name changed"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:999
+#: libdeja/duplicity/DuplicityJob.vala:954
 #, c-format
 msgid "Permission denied when trying to create ‘%s’."
 msgstr ""
 
 #. assume error is on backend side
-#: libdeja/duplicity/DuplicityJob.vala:1003
-#: libdeja/duplicity/DuplicityJob.vala:1007
+#: libdeja/duplicity/DuplicityJob.vala:958
+#: libdeja/duplicity/DuplicityJob.vala:962
 #, c-format
 msgid "Permission denied when trying to read ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1011
+#: libdeja/duplicity/DuplicityJob.vala:966
 #, c-format
 msgid "Permission denied when trying to delete ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1018
+#: libdeja/duplicity/DuplicityJob.vala:973
 #, c-format
 msgid "Backup location ‘%s’ does not exist."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1024
-#: libdeja/duplicity/DuplicityJob.vala:1057
+#: libdeja/duplicity/DuplicityJob.vala:979
+#: libdeja/duplicity/DuplicityJob.vala:1012
 msgid "No space left."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1046
+#: libdeja/duplicity/DuplicityJob.vala:1001
 #, c-format
 msgid "Error reading file ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1048
+#: libdeja/duplicity/DuplicityJob.vala:1003
 #, c-format
 msgid "Error writing file ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1059
+#: libdeja/duplicity/DuplicityJob.vala:1014
 #, c-format
 msgid "No space left in ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityJob.vala:1117
+#: libdeja/duplicity/DuplicityJob.vala:1072
 msgid "Uploading…"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:41
+#: libdeja/duplicity/DuplicityPlugin.vala:71
 msgid "Could not understand duplicity version."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:52
+#: libdeja/duplicity/DuplicityPlugin.vala:36
 #, c-format
 msgid "Could not understand duplicity version ‘%s’."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:55
+#: libdeja/duplicity/DuplicityPlugin.vala:39
 #, c-format
 msgid "Backups requires at least version %d.%d.%.2d of duplicity, but only found version %d.%d.%.2d"
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:99
-#: libdeja/restic/ResticPlugin.vala:91
+#: libdeja/restic/ResticPlugin.vala:115
 msgid "This storage location is not yet supported."
 msgstr ""
 
-#: libdeja/duplicity/DuplicityPlugin.vala:104
+#: libdeja/duplicity/DuplicityPlugin.vala:100
 msgid "This storage location is no longer supported. You can still use duplicity directly to back up or restore your files."
 msgstr ""
 
-#: libdeja/restic/ResticPlugin.vala:42
+#: libdeja/restic/ResticPlugin.vala:86
 msgid "Could not understand restic version."
 msgstr ""
 
-#: libdeja/restic/ResticPlugin.vala:49
+#: libdeja/restic/ResticPlugin.vala:36
 #, c-format
 msgid "Could not understand restic version ‘%s’."
 msgstr ""
 
-#: libdeja/restic/ResticPlugin.vala:52
+#: libdeja/restic/ResticPlugin.vala:39
 #, c-format
 msgid "Backups requires at least version %d.%d.%d of restic, but only found version %d.%d.%d"
 msgstr ""
 
-#: monitor/ReadyWatcher.vala:151
+#: monitor/ReadyWatcher.vala:155
 msgid "Backup will begin when power saver mode is no longer active."
 msgstr ""
 
-#: monitor/ReadyWatcher.vala:165
+#: monitor/ReadyWatcher.vala:169
 msgid "Backup will begin when an unmetered network connection becomes available."
 msgstr ""
 

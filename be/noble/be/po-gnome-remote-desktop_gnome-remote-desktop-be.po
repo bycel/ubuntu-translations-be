@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-remote-desktop/issues\n"
-"POT-Creation-Date: 2024-07-31 07:28+0000\n"
-"PO-Revision-Date: 2025-07-31 09:39\n"
+"POT-Creation-Date: 2025-12-17 14:36+0000\n"
+"PO-Revision-Date: 2026-02-13 13:39\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:08+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:36+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "Language: be\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Crowdin-Project: ubuntu-translations\n"
@@ -31,12 +31,12 @@ msgstr ""
 msgid "GNOME Remote Desktop Handover Daemon"
 msgstr ""
 
-#: src/grd-ctl.c:70
+#: src/grd-ctl.c:72
 #, c-format
 msgid "Usage: %s [OPTIONS...] COMMAND [SUBCOMMAND]...\n"
 msgstr "Выкарыстанне: %s [ПАРАМЕТРЫ...] КАМАНДА [ПАДКАМАНДА ]...\n"
 
-#: src/grd-ctl.c:590
+#: src/grd-ctl.c:605
 msgid "Commands:\n"
 msgstr "Каманды:\n"
 
@@ -79,7 +79,7 @@ msgid "  vnc                                        - VNC subcommands:\n"
 "                                               to a different port\n\n"
 msgstr ""
 
-#: src/grd-ctl.c:639
+#: src/grd-ctl.c:625
 msgid "  status [--show-credentials]                - Show current status\n\n"
 "Options:\n"
 "  --headless                                 - Use headless credentials storage\n"
@@ -87,18 +87,18 @@ msgid "  status [--show-credentials]                - Show current status\n\n"
 "  --help                                     - Print this help text\n"
 msgstr ""
 
-#: src/grd-daemon.c:992
+#: src/grd-daemon.c:995
 msgid "GNOME Remote Desktop"
 msgstr "Аддалены працоўны стол GNOME"
 
-#: src/grd-daemon-handover.c:346
+#: src/grd-daemon-handover.c:324
 #, c-format
 msgid "This connection is insecure"
 msgstr ""
 
 #. Translators: Don't translate "use redirection server name:i:1".
 #. * It's a menu option, and it's the same for all languages.
-#: src/grd-daemon-handover.c:350
+#: src/grd-daemon-handover.c:328
 #, c-format
 msgid "Do you want to continue with an insecure connection?\n"
 "To make it secure set <b>“use redirection server name:i:1”</b> in the RDP config file."
@@ -146,26 +146,32 @@ msgid "Refuse"
 msgstr "Адхіліць"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:7
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
 msgid "The port used by the RDP server"
 msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:8
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:84
 msgid "The RDP client will connect to this port to use this RDP server."
 msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:14
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:90
 msgid "Search a different RDP port if the configured one is used"
 msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:15
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:91
 msgid "When negotiate-port is set to 'true' the RDP server will attempt to listen to the first available of the next 10 ports starting from the configured one."
 msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:23
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:99
 msgid "Whether the RDP backend is enabled or not"
 msgstr ""
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:24
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:100
 msgid "If set to 'true' the RDP backend will be initialized."
 msgstr ""
 
@@ -191,7 +197,7 @@ msgid "Path to the private key file"
 msgstr "Шлях да файла закрытага ключа"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:73
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:106
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:131
 msgid "Only allow remote connections to view the screen content"
 msgstr ""
 
@@ -199,47 +205,53 @@ msgstr ""
 msgid "When view-only is true, remote RDP connections cannot manipulate input devices (e.g. mouse and keyboard)."
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:108
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:180
 msgid "The port used by the VNC server"
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:84
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:109
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:181
 msgid "The VNC client will connect to this port to use this VNC server."
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:90
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:115
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:187
 msgid "Search a different VNC port if the configured one is used"
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:91
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:116
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:188
 msgid "When negotiate-port is set to 'true' the VNC server will attempt to listen to the first available of the next 10 ports starting from the configured one."
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:99
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:124
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:196
 msgid "Whether the VNC backend is enabled or not"
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:100
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:125
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:197
 msgid "If set to 'true' the VNC backend will be initialized."
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:107
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:132
 msgid "When view-only is true, remote VNC connections cannot manipulate input devices (e.g. mouse and keyboard)."
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:114
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:139
 msgid "Method used to authenticate VNC connections"
 msgstr "Метад аўтэнтыфікацыі для злучэнняў VNC"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:115
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:140
 msgid "The VNC authentication method describes how a remote connection is authenticated. It can currently be done in two different ways: * prompt - by prompting the user for each new connection, requiring a person with physical access to the workstation to explicitly approve the new connection. * password - by requiring the remote client to provide a known password"
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:127
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:152
 msgid "Screenshare mode of VNC connections"
 msgstr ""
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:128
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:153
 msgid "The screenshare mode specifies, whether the VNC backend mirrors the primary screen, or whether a virtual monitor is created. For the initial resolution of the virtual monitor, the VNC backend uses a default size of 1920x1080 pixels. When using a remote desktop session with a virtual monitor, clients can resize the resolution of the virtual monitor during a session with the setDesktopSize PDU. Allowed screenshare modes include: * mirror-primary - Record the primary monitor of the current user session. * extend - Create a new virtual monitor and use it for the remote desktop session. The initial monitor resolution of this virtual monitor is set to 1920x1080 pixels. Clients can override the initial resolution with subsequent monitor configuration updates."
 msgstr ""
 
