@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2025-07-28 18:57+0000\n"
-"PO-Revision-Date: 2025-07-31 09:48\n"
+"POT-Creation-Date: 2026-01-20 09:49+0000\n"
+"PO-Revision-Date: 2026-02-13 13:07\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Launchpad-Export-Date: 2025-07-30 12:08+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:36+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "Language: uk\n"
 "X-Crowdin-Project: ubuntu-translations\n"
 "X-Crowdin-Project-ID: 485161\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Your system contains broken packages that couldn't be fixed with this software. Please fix them first using synaptic or apt-get before proceeding."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeCache.py:679
+#: ../DistUpgrade/DistUpgradeCache.py:612
 #, python-format
 msgid "Broken packages after upgrade: %s"
 msgstr ""
@@ -134,7 +134,7 @@ msgstr ""
 msgid "The essential package '%s' is marked for removal."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeCache.py:809
+#: ../DistUpgrade/DistUpgradeCache.py:741
 #, python-format
 msgid "Trying to install deny listed version '%s'"
 msgstr ""
@@ -586,15 +586,15 @@ msgstr ""
 msgid "Lock screen disabled"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2722
+#: ../DistUpgrade/DistUpgradeController.py:2060
 msgid "Your lock screen has been disabled and will remain disabled during the upgrade."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2730
+#: ../DistUpgrade/DistUpgradeController.py:2068
 msgid "Unable to disable lock screen"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2731
+#: ../DistUpgrade/DistUpgradeController.py:2069
 msgid "It is highly recommended that the lock screen be disabled during the upgrade to prevent later issues. Please ensure your screen lock is disabled before continuing."
 msgstr ""
 
@@ -619,15 +619,15 @@ msgstr ""
 msgid "Please check your internet connection."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeFetcherCore.py:72
+#: ../DistUpgrade/DistUpgradeFetcherCore.py:70
 msgid "Could not find the release announcement"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeFetcherCore.py:73
+#: ../DistUpgrade/DistUpgradeFetcherCore.py:71
 msgid "The server may be overloaded."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeFetcherCore.py:76
+#: ../DistUpgrade/DistUpgradeFetcherCore.py:74
 msgid "Could not download the release announcement"
 msgstr ""
 
@@ -835,11 +835,11 @@ msgid "Your system appears to be a virtualised environment without an init daemo
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:478
+#: ../DistUpgrade/DistUpgradeQuirks.py:228
 msgid "The Robot Operating System (ROS) is installed"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:479
+#: ../DistUpgrade/DistUpgradeQuirks.py:229
 msgid "It appears that ROS is currently installed. Each ROS release is very strict about the versions of Ubuntu it supports, and Ubuntu upgrades can fail if that guidance isn't followed. Before continuing, please either uninstall ROS, or ensure the ROS release you have installed supports the version of Ubuntu to which you're upgrading.\n\n"
 "For ROS 1 releases, refer to REP 3:\n"
 "https://www.ros.org/reps/rep-0003.html\n\n"
@@ -848,11 +848,11 @@ msgid "It appears that ROS is currently installed. Each ROS release is very stri
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:679
+#: ../DistUpgrade/DistUpgradeQuirks.py:391
 msgid "Connection to the Snap Store failed"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:680
+#: ../DistUpgrade/DistUpgradeQuirks.py:392
 msgid "You have the package lxd installed but your system is unable to reach the Snap Store. lxd is now provided via a snap and the release upgrade will fail if snapd is not functional. Please make sure you're connected to the Internet and update any firewall or proxy settings as needed so that you can reach api.snapcraft.io. If you are an enterprise with a firewall setup you may want to configure a Snap Store proxy."
 msgstr ""
 
@@ -900,7 +900,7 @@ msgstr ""
 msgid "If needed, you can revert to your previous "
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:786
+#: ../DistUpgrade/DistUpgradeQuirks.py:487
 #, python-format
 msgid "removing snap %s"
 msgstr ""
@@ -950,7 +950,7 @@ msgstr ""
 msgid "Sorry, cannot upgrade this system to {version}"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:1927
+#: ../DistUpgrade/DistUpgradeQuirks.py:1273
 msgid "Upgrades for desktop systems running TPM FDE are not currently supported. Please see https://launchpad.net/bugs/2065229 for more information."
 msgstr ""
 
@@ -1386,27 +1386,27 @@ msgstr ""
 msgid "The upgrade is finished and a reboot is required. Do you want to do this now?"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:434
+#: ../DistUpgrade/DistUpgradeView.py:424
 msgid "Action required"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:435
+#: ../DistUpgrade/DistUpgradeView.py:425
 msgid "Exit all other instances of Ubuntu WSL before continuing."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:436
+#: ../DistUpgrade/DistUpgradeView.py:426
 msgid "Unsaved progress may otherwise be lost."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:439
+#: ../DistUpgrade/DistUpgradeView.py:429
 msgid "WSL restart required"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:440
+#: ../DistUpgrade/DistUpgradeView.py:430
 msgid "Exit this instance of Ubuntu WSL."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeView.py:441
+#: ../DistUpgrade/DistUpgradeView.py:431
 msgid "The upgrade will then be complete."
 msgstr ""
 
