@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-07 07:21+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:45+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 
 #. TRANSLATORS: this is an atomic transaction
 #. TRANSLATORS: the role is the point of the transaction,
@@ -34,11 +34,11 @@ msgstr "Сістэмны час"
 msgid "Succeeded"
 msgstr "Паспяхова"
 
-#: client/pkgc-util.c:979 client/pkcon/pk-console.c:169
+#: client/pkcon/pk-console.c:169 client/pkgc-util.c:1004
 msgid "True"
 msgstr "Так"
 
-#: client/pkgc-util.c:980 client/pkcon/pk-console.c:169
+#: client/pkcon/pk-console.c:169 client/pkgc-util.c:1005
 msgid "False"
 msgstr "Не"
 
@@ -78,8 +78,8 @@ msgstr "Сапраўднае імя"
 
 #. TRANSLATORS: Label for affected packages in transaction
 #. TRANSLATORS: these are packages touched by the transaction
-#: client/pkgc-util.c:1031 client/pkgc-util.c:1050
-#: client/pkcon/pk-console.c:201
+#: client/pkcon/pk-console.c:201 client/pkgc-util.c:1056
+#: client/pkgc-util.c:1075
 msgid "Affected packages:"
 msgstr "Закранутыя пакеты:"
 
@@ -394,7 +394,7 @@ msgstr "Інструменту не ўдалося знайсці ўсе пак�
 
 #. TRANSLATORS: This is when the daemon crashed, and we are up
 #. * shit creek without a paddle
-#: client/pkgc-context.c:123 client/pkcon/pk-console.c:1440
+#: client/pkcon/pk-console.c:1440 client/pkgc-context.c:132
 msgid "The daemon crashed mid-transaction!"
 msgstr "Дэман аварыйна завяршыў працу падчас выканання трансакцыі!"
 
@@ -410,7 +410,7 @@ msgstr "Падкаманды:"
 
 #. TRANSLATORS: we keep a database updated with the time that an
 #. * action was last executed
-#: client/pkgc-query.c:895 client/pkcon/pk-console.c:1572
+#: client/pkcon/pk-console.c:1572 client/pkgc-query.c:897
 msgid "Failed to get the time since this action was last completed"
 msgstr "Не ўдалося атрымаць час, калі было выканана гэта дзеянне"
 
@@ -435,7 +435,7 @@ msgid "Prepare the transaction by downloading pakages only"
 msgstr ""
 
 #. TRANSLATORS: command line argument, this command is not a priority
-#: client/pkgctl.c:95 client/pkcon/pk-console.c:1725
+#: client/pkcon/pk-console.c:1725 client/pkgcli.c:95
 msgid ""
 "Run the command using idle network bandwidth and also using less power"
 msgstr ""
@@ -470,7 +470,7 @@ msgstr "Не ўдалося задаць параметры проксі-сер�
 
 #. TRANSLATORS: The user specified
 #. * an incorrect filter
-#: client/pkgctl.c:254 client/pkcon/pk-console.c:1842
+#: client/pkcon/pk-console.c:1842 client/pkgcli.c:254
 msgid "The filter specified was invalid"
 msgstr "Указаны няправільны фільтр"
 
@@ -559,14 +559,14 @@ msgstr "Патрабуецца ўказаць назву сховішча, па�
 #. TRANSLATORS: The user didn't specify what action to use
 #. TRANSLATORS: The user didn't
 #. * specify what action to use
-#: client/pkgc-query.c:942 client/pkcon/pk-console.c:2161
+#: client/pkcon/pk-console.c:2161 client/pkgc-query.c:944
 msgid "An action, e.g. 'update-packages' is required"
 msgstr "Патрабуецца ўказаць дзеянне, напрыклад «update-packages»"
 
 #. TRANSLATORS: The user specified an invalid action
 #. TRANSLATORS: The user specified
 #. * an invalid action
-#: client/pkgc-query.c:949 client/pkcon/pk-console.c:2171
+#: client/pkcon/pk-console.c:2171 client/pkgc-query.c:951
 msgid "A correct role is required"
 msgstr "Патрабуецца ўказаць правільную ролю"
 
@@ -729,11 +729,11 @@ msgstr ""
 msgid "Failed to create '%s': %s"
 msgstr ""
 
-#: client/pkgc-monitor.c:381 client/pkcon/pk-monitor.c:267
+#: client/pkcon/pk-monitor.c:267 client/pkgc-monitor.c:381
 msgid "Failed to get daemon state"
 msgstr "Не ўдалося атрымаць стан дэмана"
 
-#: client/pkgc-monitor.c:439 client/pkcon/pk-monitor.c:310
+#: client/pkcon/pk-monitor.c:310 client/pkgc-monitor.c:439
 msgid "Failed to get properties"
 msgstr "Не ўдалося атрымаць уласцівасці"
 
@@ -1058,7 +1058,7 @@ msgid "Not installing packages in simulate mode"
 msgstr ""
 
 #. TRANSLATORS: transaction state, installing packages
-#: lib/packagekit-glib2/pk-console-shared.c:234
+#: lib/packagekit-glib2/pk-console-private.c:389
 msgid "Installing packages"
 msgstr "Усталяванне пакетаў"
 
@@ -1188,198 +1188,198 @@ msgstr ""
 msgid "PackageKit Service Pack"
 msgstr ""
 
-#: lib/packagekit-glib2/pk-console-shared.c:73
+#: lib/packagekit-glib2/pk-console-private.c:228
 #, c-format
 msgid "Please enter a number from 1 to %i: "
 msgstr "Увядзіце лік ад 1 да %i: "
 
 #. TRANSLATORS: more than one package could be found that matched,
 #. * to follow is a list of possible packages
-#: client/pkgc-util.c:1142 client/pkcon/pk-console.c:932
+#: client/pkcon/pk-console.c:932 client/pkgc-util.c:1167
 msgid "More than one package matches:"
 msgstr "Знойдзена больш за адзін пакет:"
 
 #. prompt user for selection
 #. TRANSLATORS: This finds out which package in the list to use
-#: client/pkgc-util.c:1154 client/pkcon/pk-console.c:944
+#: client/pkcon/pk-console.c:944 client/pkgc-util.c:1179
 #, c-format
 msgid "Please choose the correct package: "
 msgstr "Выберыце патрэбны пакет: "
 
 #. TRANSLATORS: This is when the transaction status is not known
-#: lib/packagekit-glib2/pk-console-shared.c:202
+#: lib/packagekit-glib2/pk-console-private.c:357
 msgid "Unknown state"
 msgstr "Невядомы стан"
 
 #. TRANSLATORS: transaction state, the daemon is in the process of starting
-#: lib/packagekit-glib2/pk-console-shared.c:206
+#: lib/packagekit-glib2/pk-console-private.c:361
 msgid "Starting"
 msgstr "Запуск"
 
 #. TRANSLATORS: transaction state, the transaction is waiting for another to complete
-#: lib/packagekit-glib2/pk-console-shared.c:210
+#: lib/packagekit-glib2/pk-console-private.c:365
 msgid "Waiting in queue"
 msgstr "Чаканне чаргі"
 
 #. TRANSLATORS: transaction state, just started
-#: lib/packagekit-glib2/pk-console-shared.c:214
+#: lib/packagekit-glib2/pk-console-private.c:369
 msgid "Running"
 msgstr "Выконваецца"
 
 #. TRANSLATORS: transaction state, is querying data
-#: lib/packagekit-glib2/pk-console-shared.c:218
+#: lib/packagekit-glib2/pk-console-private.c:373
 msgid "Querying"
 msgstr "Запытваецца"
 
 #. TRANSLATORS: transaction state, getting data from a server
-#: lib/packagekit-glib2/pk-console-shared.c:222
+#: lib/packagekit-glib2/pk-console-private.c:377
 msgid "Getting information"
 msgstr "Атрыманне інфармацыі"
 
 #. TRANSLATORS: transaction state, removing packages
-#: lib/packagekit-glib2/pk-console-shared.c:226
+#: lib/packagekit-glib2/pk-console-private.c:381
 msgid "Removing packages"
 msgstr "Выдаленне пакетаў"
 
 #. TRANSLATORS: transaction state, downloading package files
 #. TRANSLATORS: The role of the transaction, in present tense
-#: lib/packagekit-glib2/pk-console-shared.c:230
+#: lib/packagekit-glib2/pk-console-private.c:385
 #: lib/packagekit-glib2/pk-enum.c:1258
 msgid "Downloading packages"
 msgstr "Спампоўванне пакетаў"
 
 #. TRANSLATORS: transaction state, refreshing internal lists
-#: lib/packagekit-glib2/pk-console-shared.c:238
+#: lib/packagekit-glib2/pk-console-private.c:393
 msgid "Refreshing software list"
 msgstr "Абнаўленне спіса праграм"
 
 #. TRANSLATORS: transaction state, installing updates
-#: lib/packagekit-glib2/pk-console-shared.c:242
+#: lib/packagekit-glib2/pk-console-private.c:397
 msgid "Installing updates"
 msgstr "Усталяванне абнаўленняў"
 
 #. TRANSLATORS: transaction state, removing old packages, and cleaning config files
-#: lib/packagekit-glib2/pk-console-shared.c:246
+#: lib/packagekit-glib2/pk-console-private.c:401
 msgid "Cleaning up packages"
 msgstr "Ачыстка пакетаў"
 
 #. TRANSLATORS: transaction state, obsoleting old packages
-#: lib/packagekit-glib2/pk-console-shared.c:250
+#: lib/packagekit-glib2/pk-console-private.c:405
 msgid "Obsoleting packages"
 msgstr "Замяшчэнне пакетаў"
 
 #. TRANSLATORS: transaction state, checking the transaction before we do it
-#: lib/packagekit-glib2/pk-console-shared.c:254
+#: lib/packagekit-glib2/pk-console-private.c:409
 msgid "Resolving dependencies"
 msgstr "Развязванне залежнасцей"
 
 #. TRANSLATORS: transaction state, checking if we have all the security keys for the operation
-#: lib/packagekit-glib2/pk-console-shared.c:258
+#: lib/packagekit-glib2/pk-console-private.c:413
 msgid "Checking signatures"
 msgstr "Праверка подпісаў"
 
 #. TRANSLATORS: transaction state, when we're doing a test transaction
-#: lib/packagekit-glib2/pk-console-shared.c:262
+#: lib/packagekit-glib2/pk-console-private.c:417
 msgid "Testing changes"
 msgstr "Праверка змен"
 
 #. TRANSLATORS: transaction state, when we're writing to the system package database
-#: lib/packagekit-glib2/pk-console-shared.c:266
+#: lib/packagekit-glib2/pk-console-private.c:421
 msgid "Committing changes"
 msgstr "Зацвярджэнне змен"
 
 #. TRANSLATORS: transaction state, requesting data from a server
-#: lib/packagekit-glib2/pk-console-shared.c:270
+#: lib/packagekit-glib2/pk-console-private.c:425
 msgid "Requesting data"
 msgstr "Запытанне даных"
 
 #. TRANSLATORS: transaction state, all done!
-#: lib/packagekit-glib2/pk-console-shared.c:274
+#: lib/packagekit-glib2/pk-console-private.c:429
 msgid "Finished"
 msgstr "Завершана"
 
 #. TRANSLATORS: transaction state, in the process of cancelling
-#: lib/packagekit-glib2/pk-console-shared.c:278
+#: lib/packagekit-glib2/pk-console-private.c:433
 msgid "Cancelling"
 msgstr "Скасоўванне"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:282
+#: lib/packagekit-glib2/pk-console-private.c:437
 msgid "Downloading repository information"
 msgstr "Спампоўванне інфармацыі аб рэпазіторыіі"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:286
+#: lib/packagekit-glib2/pk-console-private.c:441
 msgid "Downloading list of packages"
 msgstr "Спампоўванне спіса пакетаў"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:290
+#: lib/packagekit-glib2/pk-console-private.c:445
 msgid "Downloading file lists"
 msgstr "Спампоўванне спісаў файлаў"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:294
+#: lib/packagekit-glib2/pk-console-private.c:449
 msgid "Downloading lists of changes"
 msgstr "Спампоўванне спісаў змен"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:298
+#: lib/packagekit-glib2/pk-console-private.c:453
 msgid "Downloading groups"
 msgstr "Спампоўванне груп"
 
 #. TRANSLATORS: transaction state, downloading metadata
-#: lib/packagekit-glib2/pk-console-shared.c:302
+#: lib/packagekit-glib2/pk-console-private.c:457
 msgid "Downloading update information"
 msgstr "Спампоўванне інфармацыі пра абнаўленні"
 
 #. TRANSLATORS: transaction state, repackaging delta files
-#: lib/packagekit-glib2/pk-console-shared.c:306
+#: lib/packagekit-glib2/pk-console-private.c:461
 msgid "Repackaging files"
 msgstr "Перапакаванне файлаў"
 
 #. TRANSLATORS: transaction state, loading databases
-#: lib/packagekit-glib2/pk-console-shared.c:310
+#: lib/packagekit-glib2/pk-console-private.c:465
 msgid "Loading cache"
 msgstr "Загрузка кэшу"
 
 #. TRANSLATORS: transaction state, scanning for running processes
-#: lib/packagekit-glib2/pk-console-shared.c:314
+#: lib/packagekit-glib2/pk-console-private.c:469
 msgid "Scanning applications"
 msgstr "Пошук праграм"
 
 #. TRANSLATORS: transaction state, generating a list of packages installed on the system
-#: lib/packagekit-glib2/pk-console-shared.c:318
+#: lib/packagekit-glib2/pk-console-private.c:473
 msgid "Generating package lists"
 msgstr "Стварэнне спіса пакетаў"
 
 #. TRANSLATORS: transaction state, when we're waiting for the native tools to exit
-#: lib/packagekit-glib2/pk-console-shared.c:322
+#: lib/packagekit-glib2/pk-console-private.c:477
 msgid "Waiting for package manager lock"
 msgstr "Чаканне блакіравання кіраўніка пакетаў"
 
 #. TRANSLATORS: transaction state, waiting for user to type in a password
-#: lib/packagekit-glib2/pk-console-shared.c:326
+#: lib/packagekit-glib2/pk-console-private.c:481
 msgid "Waiting for authentication"
 msgstr "Чаканне аўтэнтыфікацыі"
 
 #. TRANSLATORS: transaction state, we are updating the list of processes
-#: lib/packagekit-glib2/pk-console-shared.c:330
+#: lib/packagekit-glib2/pk-console-private.c:485
 msgid "Updating running applications"
 msgstr "Абнаўленне спіса запушчаных праграм"
 
 #. TRANSLATORS: transaction state, we are checking executable files currently in use
-#: lib/packagekit-glib2/pk-console-shared.c:334
+#: lib/packagekit-glib2/pk-console-private.c:489
 msgid "Checking applications in use"
 msgstr "Пошук праграм, якія цяпер выкарыстоўваюцца"
 
 #. TRANSLATORS: transaction state, we are checking for libraries currently in use
-#: lib/packagekit-glib2/pk-console-shared.c:338
+#: lib/packagekit-glib2/pk-console-private.c:493
 msgid "Checking libraries in use"
 msgstr "Пошук бібліятэк, якія цяпер выкарыстоўваюцца"
 
 #. TRANSLATORS: transaction state, we are copying package files before or after the transaction
-#: lib/packagekit-glib2/pk-console-shared.c:342
+#: lib/packagekit-glib2/pk-console-private.c:497
 msgid "Copying files"
 msgstr "Капіяванне файлаў"
 
@@ -1770,12 +1770,12 @@ msgid "The following packages are untrusted:"
 msgstr "Наступныя пакеты ненадзейныя:"
 
 #. TRANSLATORS: ask the user if the proposed changes are okay
-#: lib/packagekit-glib2/pk-task-text.c:393
+#: lib/packagekit-glib2/pk-task-text.c:423
 msgid "Proceed with changes?"
 msgstr "Выканаць змены?"
 
 #. TRANSLATORS: tell the user we didn't do anything
-#: lib/packagekit-glib2/pk-task-text.c:398
+#: lib/packagekit-glib2/pk-task-text.c:428
 msgid "The transaction did not proceed."
 msgstr "Трансакцыя не была выканана."
 
@@ -1864,7 +1864,7 @@ msgstr "Выдаліць пакет"
 msgid "Authentication is required to remove packages"
 msgstr ""
 
-#: client/pkgc-manage.c:986
+#: client/pkgc-manage.c:1031
 msgid "Update packages"
 msgstr ""
 

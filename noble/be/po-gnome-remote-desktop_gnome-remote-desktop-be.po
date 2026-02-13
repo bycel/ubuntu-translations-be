@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: gnome-remote-desktop master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-remote-"
 "desktop/issues\n"
-"POT-Creation-Date: 2025-12-17 16:06+0000\n"
-"PO-Revision-Date: 2025-12-17 17:45+0000\n"
+"POT-Creation-Date: 2025-12-17 14:36+0000\n"
+"PO-Revision-Date: 2026-01-07 20:03+0000\n"
 "Last-Translator: Yuras <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-07 05:04+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:36+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "Language: be\n"
 
 #: data/org.gnome.remotedesktop.configure-system-daemon.policy.in:11
@@ -31,16 +31,16 @@ msgstr ""
 "Каб змяняць налады сістэмнага дэмана gnome-remote-desktop, патрабуецца "
 "праверка сапраўднасці."
 
-#: data/org.gnome.RemoteDesktop.Handover.desktop.in:4
+#: data/org.gnome.RemoteDesktop.Handover.desktop.in:3
 msgid "GNOME Remote Desktop Handover Daemon"
 msgstr "Дэман перадачы для аддаленага працоўнага стала GNOME"
 
-#: src/grd-ctl.c:59
+#: src/grd-ctl.c:72
 #, c-format
 msgid "Usage: %s [OPTIONS...] COMMAND [SUBCOMMAND]...\n"
 msgstr "Выкарыстанне: %s [ПАРАМЕТРЫ...] КАМАНДА [ПАДКАМАНДА ]...\n"
 
-#: src/grd-ctl.c:576
+#: src/grd-ctl.c:605
 msgid "Commands:\n"
 msgstr "Каманды:\n"
 
@@ -109,7 +109,7 @@ msgstr ""
 "  --system                                   - Наладзіць сістэмны дэман\n"
 "  --help                                     - Вывесці гэту даведку\n"
 
-#: src/grd-daemon.c:1263
+#: src/grd-daemon.c:995
 msgid "GNOME Remote Desktop"
 msgstr "Аддалены працоўны стол GNOME"
 
@@ -131,12 +131,12 @@ msgstr ""
 "Каб зрабіць яго абароненым, задайце параметр <b>“use redirection server "
 "name:i:1”</b> у файле канфігурацыі RDP."
 
-#: src/grd-daemon-handover.c:332
+#: src/grd-daemon-handover.c:325 src/grd-daemon-handover.c:391
 #, c-format
 msgid "Disconnect"
 msgstr "Адлучыцца"
 
-#: src/grd-daemon-handover.c:333
+#: src/grd-daemon-handover.c:326 src/grd-daemon-handover.c:392
 #, c-format
 msgid "Continue"
 msgstr "Працягнуць"
@@ -175,7 +175,7 @@ msgid ""
 "desktop."
 msgstr ""
 "Карыстальнік камп'ютара «%s» спрабуе аддалена праглядаць або кіраваць вашым "
-"працоўным столом."
+"працоўным сталом."
 
 #: src/grd-session-vnc.c:309
 #, c-format
@@ -183,19 +183,23 @@ msgid "Refuse"
 msgstr "Адхіліць"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:7
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
 msgid "The port used by the RDP server"
 msgstr "Порт, які выкарыстоўваецца серверам RDP"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:8
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:84
 msgid "The RDP client will connect to this port to use this RDP server."
 msgstr ""
 "Кліент RDP будзе падключацца да гэтага порта, каб выкарыстоўваць сервер RDP."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:14
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:90
 msgid "Search a different RDP port if the configured one is used"
 msgstr "Пошук іншага порта RDP, калі порт з налад ужо выкарыстоўваецца"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:15
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:91
 msgid ""
 "When negotiate-port is set to 'true' the RDP server will attempt to listen "
 "to the first available of the next 10 ports starting from the configured one."
@@ -204,10 +208,12 @@ msgstr ""
 "праслухоўваць першы даступны з 10 наступных партоў пасля порта з налад."
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:23
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:99
 msgid "Whether the RDP backend is enabled or not"
 msgstr "Ці ўключаны бэкэнд RDP"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:24
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:100
 msgid "If set to 'true' the RDP backend will be initialized."
 msgstr "Калі значэнне «true», будзе ініцыялізаваны бэкэнд RDP."
 
@@ -262,7 +268,7 @@ msgid "Path to the private key file"
 msgstr "Шлях да файла закрытага ключа"
 
 #: src/org.gnome.desktop.remote-desktop.gschema.xml.in:73
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:106
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:131
 msgid "Only allow remote connections to view the screen content"
 msgstr "Дазволіць аддаленым злучэнням толькі праглядаць змесціва экрана"
 
@@ -275,20 +281,24 @@ msgstr ""
 "аддаленыя злучэнні RDP не могуць кіраваць прыладамі ўводу (напрыклад, мышшу "
 "і клавіятурай)."
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:83
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:108
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:180
 msgid "The port used by the VNC server"
 msgstr "Порт, які выкарыстоўваецца серверам VNC"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:84
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:109
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:181
 msgid "The VNC client will connect to this port to use this VNC server."
 msgstr ""
 "Кліент VNC будзе падключацца да гэтага порта, каб выкарыстоўваць сервер VNC."
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:90
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:115
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:187
 msgid "Search a different VNC port if the configured one is used"
 msgstr "Пошук іншага порта VNC, калі порт з налад ужо выкарыстоўваецца"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:91
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:116
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:188
 msgid ""
 "When negotiate-port is set to 'true' the VNC server will attempt to listen "
 "to the first available of the next 10 ports starting from the configured one."
@@ -296,15 +306,17 @@ msgstr ""
 "Калі параметр negotiate-port мае значэнне «true», сервер VNC паспрабуе "
 "праслухоўваць першы даступны з 10 наступных партоў пасля порта з налад."
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:99
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:124
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:196
 msgid "Whether the VNC backend is enabled or not"
 msgstr "Ці ўключаны бэкэнд VNC"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:100
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:125
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:197
 msgid "If set to 'true' the VNC backend will be initialized."
 msgstr "Калі значэнне «true», будзе ініцыялізаваны бэкэнд VNC."
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:107
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:132
 msgid ""
 "When view-only is true, remote VNC connections cannot manipulate input "
 "devices (e.g. mouse and keyboard)."
@@ -313,11 +325,11 @@ msgstr ""
 "аддаленыя злучэнні VNC не могуць кіраваць прыладамі ўводу (напрыклад, мышшу "
 "і клавіятурай)."
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:114
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:139
 msgid "Method used to authenticate VNC connections"
 msgstr "Метад аўтэнтыфікацыі для злучэнняў VNC"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:115
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:140
 msgid ""
 "The VNC authentication method describes how a remote connection is "
 "authenticated. It can currently be done in two different ways: * prompt - by "
@@ -331,11 +343,11 @@ msgstr ""
 "працоўнай станцыі, патрабуецца яўна ўхваліць новае злучэнне; * password - ад "
 "аддаленага кліента патрабуецца ўвесці вядомы яму пароль"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:127
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:152
 msgid "Screenshare mode of VNC connections"
 msgstr "Рэжым супольнага доступу да экрана для злучэнняў VNC"
 
-#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:128
+#: src/org.gnome.desktop.remote-desktop.gschema.xml.in:153
 msgid ""
 "The screenshare mode specifies, whether the VNC backend mirrors the primary "
 "screen, or whether a virtual monitor is created. For the initial resolution "

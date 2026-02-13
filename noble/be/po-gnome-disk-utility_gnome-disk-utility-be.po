@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2026-01-07 07:17+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-02-09 10:40+0000\n"
+"X-Generator: Launchpad (build 4847db153920c8fbc330ac275b92a72279fa07a2)\n"
 "Language: be\n"
 
 #: data/gnome-disk-image-mounter.desktop.in:2 src/disk-image-mounter/main.c:54
@@ -34,7 +34,7 @@ msgstr "Запіс вобразаў дыскаў"
 
 #: data/gnome-disk-image-writer.desktop.in:3
 msgid "Write Disk Images to Devices"
-msgstr "Запіс вобразаў дыскаў на прылады"
+msgstr "Запіс вобразаў дыскаў на прыладу"
 
 #: data/org.gnome.Disks.gschema.xml:6
 msgid "Default location for the Create/Restore disk image dialogs"
@@ -47,8 +47,8 @@ msgid ""
 "Default location for the Create/Restore disk image dialogs. If blank the "
 "~/Documents folder is used."
 msgstr ""
-"Прадвызначанае размяшчэнне для дыялогавых акон стварэння/аднаўлення вобразаў "
-"дыска. Калі гэты ключ не мае значэння, то будзе выкарыстоўвацца папка "
+"Прадвызначанае месцазнаходжанне для дыялогавых акон стварэння/аднаўлення "
+"вобразаў дыска. Калі гэты ключ не мае значэння, ужываецца каталог "
 "~/Дакументы."
 
 #: data/org.gnome.Disks.gschema.xml:13
@@ -115,9 +115,9 @@ msgid ""
 "disk;drive;volume;harddisk;hdd;disc;cdrom;dvd;partition;iso;image;backup;rest"
 "ore;benchmark;raid;luks;encryption;S.M.A.R.T.;smart;"
 msgstr ""
-"дыск;дыскавод;том;цвёрды "
-"дыск;hdd;дыск;cdrom;dvd;раздзел;iso;вобраз;рэзервовая "
-"копія;аднавіць;прадукцыйнасць;raid;luks;шыфраванне;S.M.A.R.T.;smart;"
+"дыск;дыскавод;том;цвёрды дыск;hdd;cdrom;dvd;раздзел;iso;вобраз;запасная "
+"копія;рэзервовая "
+"копія;аднаўленне;аднавіць;тэставанне;raid;luks;шыфраванне;S.M.A.R.T.;smart;"
 
 #: src/disk-image-mounter/main.c:52
 msgid "An error occurred"
@@ -206,7 +206,7 @@ msgstr "Памылка адкрыцця %s: %s"
 #: src/disks/gduapplication.c:150
 #, c-format
 msgid "Error looking up block device for %s"
-msgstr "Памылка пошуку блочнай прылады для %s"
+msgstr "Падчас пошуку састаўной прылады для %s адбылася памылка"
 
 #: src/disks/gduapplication.c:172
 msgid "Select device"
@@ -791,9 +791,8 @@ msgid ""
 "Number of physical erase cycles completed on the drive as a percentage of "
 "the maximum physical erase cycles the drive supports"
 msgstr ""
-"Колькасць фізічных цыклаў сцірання, якія завершаны на дыску ў працэнтных "
-"суадносінах да максімальнай колькасці цыклаў фізічнага сцірання, якую "
-"падтрымлівае дыск"
+"Колькасць выкананых фізічных цыклаў сцірання ў адсотках ад максімальнай "
+"колькасці, якую зможа вытрымаць дыск"
 
 #. Translators: SMART attribute, see http://smartmontools.sourceforge.net/doc.html
 #. * or the next string for a longer explanation.
@@ -837,7 +836,7 @@ msgstr "Час пазіцыянавання галоўкі"
 #. 
 #: src/disks/gduatasmartdialog.c:570
 msgid "Read Error Retry Rate"
-msgstr "Ацэнка паўторных памылак чытання"
+msgstr "Чашчыня паўторных чытанняў"
 
 #: src/disks/gduatasmartdialog.c:571
 msgid "Number of errors while reading from a disk"
@@ -1086,7 +1085,7 @@ msgstr "Памылка запуску самадыягностыкі SMART"
 
 #: src/disks/gduatasmartdialog.c:1445
 msgid "An error occurred when trying to toggle whether SMART is enabled"
-msgstr "Узнікла памылка пры спробе ўключэння рэжыму SMART"
+msgstr "Падчас спробы ўключэння/выключэння SMART адбылася памылка"
 
 #. Translators: This string is used as the column title in the treeview for the Attribute ID (0-255)
 #: src/disks/gduatasmartdialog.c:1565
@@ -1364,7 +1363,7 @@ msgstr "Размеркаванне вобразу дыска"
 #: src/disks/gducreatediskimagedialog.c:349
 #, c-format
 msgid "%s unreadable (replaced with zeroes)"
-msgstr "%s нечытэльны (заменена нулямі)"
+msgstr "%s нечытальны (заменена нулямі)"
 
 #. Translators: A descriptive string for the 'complete' sound, see CA_PROP_EVENT_DESCRIPTION
 #: src/disks/gducreatediskimagedialog.c:403
@@ -1409,13 +1408,13 @@ msgstr "_Закрыць"
 #: src/disks/gducreatediskimagedialog.c:691
 #: src/disks/gdurestorediskimagedialog.c:730
 msgid "Error determining size of device: "
-msgstr "Памылка вызначэння памеру прылады: "
+msgstr "Падчас вызначэння памеру прылады адбылася памылка: "
 
 #: src/disks/gducreatediskimagedialog.c:698
 #: src/disks/gdurestorediskimagedialog.c:737
 #, c-format
 msgid "Device is size 0"
-msgstr "Прылада мае нулявы памер"
+msgstr "У прылады нулявы памер"
 
 #: src/disks/gducreatediskimagedialog.c:731
 msgid "Error allocating space for disk image file: "
@@ -1443,7 +1442,7 @@ msgstr "_Замяніць"
 #: src/disks/gducreatediskimagedialog.c:943
 #: src/disks/gdunewdiskimagedialog.c:83
 msgid "Error opening file for writing"
-msgstr "Памылка адкрыцця файла для запісу"
+msgstr "Падчас адкрыцця файла для запісу адбылася памылка"
 
 #. Translators: Reason why suspend/logout is being inhibited
 #: src/disks/gducreatediskimagedialog.c:959
@@ -1803,7 +1802,7 @@ msgstr "MBR / DOS"
 
 #: src/disks/gduformatdiskdialog.c:394
 msgid "Compatible with modern systems and hard disks > 2TB"
-msgstr "Сумяшчальны з сучаснымі сістэмамі і цвёрдымі дыскамі больш за 2 ТБ"
+msgstr "Сумяшчальны з сучаснымі сістэмамі і цвёрдымі дыскамі > 2 Тб"
 
 #: src/disks/gduformatdiskdialog.c:395
 msgid "GPT"
@@ -1872,7 +1871,7 @@ msgstr "Падчас абнаўлення запісу ў /etc/fstab адбыл�
 
 #: src/disks/gdunewdiskimagedialog.c:98
 msgid "Error writing file"
-msgstr "Памылка запісу файла"
+msgstr "Падчас запісу файла адбылася памылка"
 
 #. Translators: The suggested name for the disk image to create.
 #. *              The %s is today's date and time, e.g. "March 2, 1976 6:25AM".
@@ -2001,7 +2000,7 @@ msgstr ""
 
 #: src/disks/gdurestorediskimagedialog.c:276
 msgid "File does not appear to be XZ compressed"
-msgstr "Здаецца, што файл не сціснуты праз XZ"
+msgstr "Файл не сціснуты ў фармаце XZ"
 
 #. Translators: Shown for a compressed disk image in the "Size" field.
 #. *              The %s is the uncompressed size as a long string, e.g. "4.2 MB (4,300,123 bytes)".
@@ -2031,11 +2030,11 @@ msgstr "Памылка аднаўлення вобраза дыска"
 
 #: src/disks/gdurestorediskimagedialog.c:929
 msgid "Error opening file for reading"
-msgstr "Памылка адкрыцця файла для чытання"
+msgstr "Падчас адкрыцця файла для чытання адбылася памылка"
 
 #: src/disks/gdurestorediskimagedialog.c:944
 msgid "Error determining size of file"
-msgstr "Памылка вызначэння памеру файла"
+msgstr "Падчас вызначэння памеру файла адбылася памылка"
 
 #. Translators: Reason why suspend/logout is being inhibited
 #: src/disks/gdurestorediskimagedialog.c:972
@@ -2050,11 +2049,11 @@ msgstr "Аднаўленне вобраза дыска"
 
 #: src/disks/gdurestorediskimagedialog.c:1034
 msgid "Are you sure you want to write the disk image to the device?"
-msgstr "Вы сапраўды хочаце запісаць вобраз дыска на прыладу?"
+msgstr "Сапраўды запісаць вобраз дыска на прыладу?"
 
 #: src/disks/gdurestorediskimagedialog.c:1035
 msgid "All existing data will be lost"
-msgstr "Усе існуючыя даныя будуць страчаны"
+msgstr "Усе наяўныя даныя страцяцца"
 
 #: src/disks/gdurestorediskimagedialog.c:1036
 msgid "_Restore"
@@ -2092,7 +2091,7 @@ msgstr "Файлавая сістэма"
 #: src/disks/gduvolumegrid.c:1675
 msgctxt "volume-grid"
 msgid "Swap"
-msgstr "Своп"
+msgstr "Swap"
 
 #. Translators: This is shown in the volume grid for a partition with a name/label.
 #. *              The %d is the partition number. The %s is the name
@@ -2433,11 +2432,11 @@ msgstr "Падчас вымання носьбіта адбылася памыл
 
 #: src/disks/gduwindow.c:4057
 msgid "Error starting swap"
-msgstr "Памылка запуску своп"
+msgstr "Падчас запуску swap адбылася памылка"
 
 #: src/disks/gduwindow.c:4094
 msgid "Error stopping swap"
-msgstr "Памылка спынення своп"
+msgstr "Падчас спынення swap адбылася памылка"
 
 #: src/disks/gduwindow.c:4136
 msgid "Error setting autoclear flag"
@@ -2736,7 +2735,7 @@ msgstr "_Назва"
 #: src/disks/ui/create-disk-image-dialog.ui:48
 #: src/disks/ui/new-disk-image-dialog.ui:63
 msgid "Save in _Folder"
-msgstr "Захаваць у _папцы"
+msgstr "Захаваць у _каталозе"
 
 #: src/disks/ui/create-disk-image-dialog.ui:81
 #: src/disks/ui/new-disk-image-dialog.ui:115
@@ -3459,7 +3458,7 @@ msgstr "Ачыстка некалькіх дыскаў"
 
 #: src/disks/ui/erase-multiple-disks-dialog.ui:31
 msgid "_Erase…"
-msgstr "_Сцерці…"
+msgstr "_Ачысціць…"
 
 #: src/disks/ui/erase-multiple-disks-dialog.ui:52
 msgid "Erase _Type"
