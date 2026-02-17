@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/nautilus/issues\n"
 "POT-Creation-Date: 2025-11-06 18:10+0000\n"
-"PO-Revision-Date: 2026-02-17 09:06\n"
+"PO-Revision-Date: 2026-02-17 10:48\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
@@ -1219,7 +1219,7 @@ msgstr "Назва «%s» занадта доўгая. Выберыце іншу
 #: src/nautilus-error-reporting.c:250
 #, c-format
 msgid "Could not rename “%s” because a process is using it. If it's open in another application, close it before renaming it."
-msgstr ""
+msgstr "Не ўдалося перайменаваць элемент «%s», бо ён выкарыстоўваецца нейкім працэсам. Калі элемент адкрыты ў іншай праграме, закрыйце яго перад перайменаваннем."
 
 #. fall through
 #: src/nautilus-error-reporting.c:270
@@ -1480,20 +1480,20 @@ msgstr "Файл не можа называцца «..»."
 
 #: src/nautilus-filename-validator.c:144
 msgid "Folder name is too long."
-msgstr ""
+msgstr "Занадта доўгая назва папкі."
 
 #: src/nautilus-filename-validator.c:145
 msgid "File name is too long."
-msgstr ""
+msgstr "Занадта доўгая назва файла."
 
 #. We must warn about the side effect
 #: src/nautilus-filename-validator.c:151
 msgid "Folders with “.” at the beginning of their name are hidden."
-msgstr ""
+msgstr "Папкі, назва якіх пачынаецца з кропкі «.» з'яўляюцца схаванымі."
 
 #: src/nautilus-filename-validator.c:152
 msgid "Files with “.” at the beginning of their name are hidden."
-msgstr ""
+msgstr "Файлы, назва якіх пачынаецца з кропкі «.» з'яўляюцца схаванымі."
 
 #: src/nautilus-filename-validator.c:161
 msgid "A folder with that name already exists."
@@ -1709,7 +1709,7 @@ msgstr[3] "(%d файлаў/с)"
 #: src/nautilus-file-operations.c:1305
 #, c-format
 msgid "Failed to delete all child files"
-msgstr ""
+msgstr "Не ўдалося выдаліць усе даччыныя файлы"
 
 #: src/nautilus-file-operations.c:1357 src/nautilus-file-operations.c:2627
 msgid "Error while deleting."
@@ -1879,7 +1879,7 @@ msgstr "Памылка падчас сціскання файлаў."
 #: src/nautilus-file-operations.c:2724
 #, c-format
 msgid "Files in the folder “%s” cannot be handled because you do not have permissions to see them."
-msgstr ""
+msgstr "Немагчыма апрацаваць файлы ў папцы «%s», бо ў вас няма дазволу на іх прагляд."
 
 #: src/nautilus-file-operations.c:2730 src/nautilus-file-operations.c:4244
 #, c-format
@@ -1935,11 +1935,11 @@ msgstr "Для капіявання ў месца прызначэння пат�
 
 #: src/nautilus-file-operations.c:3157
 msgid "File too Large for Destination"
-msgstr ""
+msgstr "Файл занадта вялікі для прызначэння"
 
 #: src/nautilus-file-operations.c:3158
 msgid "Files bigger than 4.3 GB cannot be copied onto a FAT filesystem."
-msgstr ""
+msgstr "Немагчыма скапіяваць файл у файлавую сістэму FAT, калі яго памер перавышае 4,3 ГБ."
 
 #: src/nautilus-file-operations.c:3174
 msgid "The destination is read-only."
@@ -2098,7 +2098,7 @@ msgstr "Узнікла памылка стварэння папкі «%s»."
 #: src/nautilus-file-operations.c:4239
 #, c-format
 msgid "Files in the folder “%s” cannot be copied because you do not have permissions to see them."
-msgstr ""
+msgstr "Немагчыма скапіяваць файлы з папкі «%s», бо ў вас няма дазволу на іх прагляд."
 
 #: src/nautilus-file-operations.c:4490
 msgid "_Skip files"
@@ -2260,7 +2260,7 @@ msgstr "Відарыс паспяхова захаваны ў файл"
 
 #: src/nautilus-file-operations.c:7022
 msgid "Failed to save image"
-msgstr ""
+msgstr "Не ўдалося захаваць відарыс"
 
 #. Translators: This is used to auto-generate a file name for pasted images from
 #. * the clipboard i.e. "Pasted image.png", "Pasted image 1.png", ...
@@ -2313,10 +2313,10 @@ msgstr "«%s» выняты ў «%s»"
 #, c-format
 msgid "Extracted %'d file to “%s”"
 msgid_plural "Extracted %'d files to “%s”"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Выняты %'d файл у «%s»"
+msgstr[1] "Вынята %'d файлы ў «%s»"
+msgstr[2] "Вынята %'d файлаў у «%s»"
+msgstr[3] "Вынята %'d файлаў у «%s»"
 
 #: src/nautilus-file-operations.c:7854
 msgid "Preparing to extract"
@@ -2574,7 +2574,7 @@ msgstr "Выняць"
 
 #: src/nautilus-files-view.c:7938
 msgid "Extract to…"
-msgstr ""
+msgstr "Выняць у…"
 
 #: src/nautilus-files-view.c:7942
 #: src/resources/menu/nautilus-files-view-context-menus.ui:103
@@ -3228,16 +3228,16 @@ msgstr "Спасылка на %s (%zu)"
 
 #: src/nautilus-location-banner.c:102
 msgid "Files in the trash are permanently deleted after 1 hour"
-msgstr ""
+msgstr "Усе файлы ў сметніцы будуць незваротна выдалены праз 1 гадзіну"
 
 #: src/nautilus-location-banner.c:107
 #, c-format
 msgid "Files in the trash are permanently deleted after %d day"
 msgid_plural "Files in the trash are permanently deleted after %d days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Усе файлы ў сметніцы будуць незваротна выдалены праз %d дзень"
+msgstr[1] "Усе файлы ў сметніцы будуць незваротна выдалены праз %d дні"
+msgstr[2] "Усе файлы ў сметніцы будуць незваротна выдалены праз %d дзён"
+msgstr[3] "Усе файлы ў сметніцы будуць незваротна выдалены праз %d дзён"
 
 #: src/nautilus-location-banner.c:226
 msgid "Executable files in this folder will appear in the Scripts menu"
@@ -3831,7 +3831,7 @@ msgstr "Пошук «%s»"
 
 #: src/nautilus-query-editor.c:646
 msgid "Filter Search Results"
-msgstr ""
+msgstr "Фільтраваць вынікі пошуку"
 
 #: src/nautilus-query-editor.c:733
 msgid "Search current folder"
@@ -4057,7 +4057,7 @@ msgstr "Пошук паўсюль"
 
 #: src/nautilus-window-slot.c:894
 msgid "Find files and folders in all search locations"
-msgstr ""
+msgstr "Знайсці файлы і папкі ва ўсіх размяшчэннях пошуку"
 
 #: src/nautilus-window-slot.c:897
 msgid "Search Settings"
@@ -5315,7 +5315,7 @@ msgstr "AppleTalk"
 
 #: src/nautilus-network-address-bar.c:302
 msgid "File Transfer Protocol"
-msgstr ""
+msgstr "Пратакол перадачы файлаў (FTP)"
 
 #. Translators: do not translate ftp:// and ftps://
 #: src/nautilus-network-address-bar.c:304
