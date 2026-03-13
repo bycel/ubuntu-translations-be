@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-translations\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-02-22 16:09+0100\n"
-"PO-Revision-Date: 2026-03-13 10:48\n"
+"PO-Revision-Date: 2026-03-13 13:25\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian\n"
 "MIME-Version: 1.0\n"
@@ -1067,7 +1067,7 @@ msgstr "памылковае значэнне «name» «%s»"
 #: ../src/libnm-core-aux-extern/nm-libnm-core-aux.c:369
 #, c-format
 msgid "attribute '%s' is invalid for \"%s\""
-msgstr ""
+msgstr "атрыбут «%s» з'яўляецца памылковым для «%s»"
 
 #: ../src/libnm-core-aux-intern/nm-libnm-core-utils.c:295
 msgid "property cannot be an empty string"
@@ -3814,17 +3814,17 @@ msgstr ""
 #: ../src/libnm-core-impl/nm-crypto.c:267
 #, c-format
 msgid "Malformed PEM file: DEK-Info was not the second tag."
-msgstr ""
+msgstr "Няправільны файл PEM: DEK-Info не з'яўляецца другім тэгам."
 
 #: ../src/libnm-core-impl/nm-crypto.c:279
 #, c-format
 msgid "Malformed PEM file: no IV found in DEK-Info tag."
-msgstr ""
+msgstr "Няправільны файл PEM: у тэгу DEK-Info не знойдзены IV."
 
 #: ../src/libnm-core-impl/nm-crypto.c:288
 #, c-format
 msgid "Malformed PEM file: invalid format of IV in DEK-Info tag."
-msgstr ""
+msgstr "Няправільны файл PEM: памылковы фармат IV у тэгу DEK-Info."
 
 #: ../src/libnm-core-impl/nm-crypto.c:300
 #, c-format
@@ -5905,7 +5905,7 @@ msgstr "Колькасць спроб падключэння, якія неаб�
 
 #: ../src/libnmc-setting/settings-docs.h.in:158
 msgid "Whether or not slaves of this connection should be automatically brought up when NetworkManager activates this connection. This only has a real effect for master connections. The properties \"autoconnect\", \"autoconnect-priority\" and \"autoconnect-retries\" are unrelated to this setting. The permitted values are: 0: leave slave connections untouched, 1: activate all the slave connections with this connection, -1: default. If -1 (default) is set, global connection.autoconnect-slaves is read to determine the real value. If it is default as well, this fallbacks to 0."
-msgstr ""
+msgstr "Вызначае, ці запускаць аўтаматычна падпарадкаванае злучэнне, калі NetworkManager актывуе гэта злучэнне. Гэта па сапраўднаму ўплывае толькі на асноўныя злучэнні. Уласцівасці \"autoconnect\", \"autoconnect-priority\" і \"autoconnect-retries\" не звязаны з гэтай наладай. Дазволеныя значэнні: 0: не ўплываць на падпарадкаванае злучэнне, 1: актывуе ўсе падпарадкаваныя злучэнні разам з гэтым злучэннем, -1: прадвызначанае значэнне. Калі зададзена -1 (прадвызначанае значэнне), то для вызначэння сапраўднага значэння выконваецца чытанне глабальнага параметра connection.autoconnect-slaves. Калі і для яго выкарыстоўваецца прадвызначанае значэнне, то выкарыстоўваецца рэзервовы варыянт 0."
 
 #: src/libnmc-setting/settings-docs.h.in:9
 msgid "Interface name of the controller device or UUID of the controller connection."
@@ -5913,7 +5913,7 @@ msgstr "Назва інтэрфейсу кантролера прылады аб
 
 #: ../src/libnmc-setting/settings-docs.h.in:159
 msgid "Whether DNSOverTls (dns-over-tls) is enabled for the connection. DNSOverTls is a technology which uses TLS to encrypt dns traffic. The permitted values are: \"yes\" (2) use DNSOverTls and disabled fallback, \"opportunistic\" (1) use DNSOverTls but allow fallback to unencrypted resolution, \"no\" (0) don't ever use DNSOverTls. If unspecified \"default\" depends on the plugin used. Systemd-resolved uses global setting. This feature requires a plugin which supports DNSOverTls. Otherwise, the setting has no effect. One such plugin is dns-systemd-resolved."
-msgstr ""
+msgstr "Вызначае, ці ўключана DNSOverTls (dns-over-tls) для злучэння. DNSOverTls — гэта тэхналогія, якая выкарыстоўвае TLS для шыфравання трафіку DNS. Дазволеныя значэнні: «yes» (2): выкарыстоўваць DNSOverTls і адключыць рэзервовыя варыянты, «opportunistic» (1): выкарыстоўваць DNSOverTls, але дазволіць рэзервовыя варыянты незашыфраванага вызначэння, «no» (0): ніколі не выкарыстоўваць DNSOverTls. Калі непазначана, то значэнне «opportunistic» залежыць ад убудовы, якая выкарыстоўваецца. У systemd-resolved выкарыстоўваецца глабальная налада. Гэта функцыя патрабуе ўбудовы з падтрымкай DNSOverTls. Калі такая ўбудова адсутнічае, то дадзеная налада ні на што не ўплывае. Адной з такіх убудоў з'яўляецца dns-systemd-resolved."
 
 #: ../src/libnmc-setting/settings-docs.h.in:160
 msgid "If greater than zero, delay success of IP addressing until either the timeout is reached, or an IP gateway replies to a ping."
@@ -5933,7 +5933,7 @@ msgstr "Вызначае, ці ўключаны LLDP для злучэння."
 
 #: ../src/libnmc-setting/settings-docs.h.in:164
 msgid "Whether Link-Local Multicast Name Resolution (LLMNR) is enabled for the connection. LLMNR is a protocol based on the Domain Name System (DNS) packet format that allows both IPv4 and IPv6 hosts to perform name resolution for hosts on the same local link. The permitted values are: \"yes\" (2) register hostname and resolving for the connection, \"no\" (0) disable LLMNR for the interface, \"resolve\" (1) do not register hostname but allow resolving of LLMNR host names If unspecified, \"default\" ultimately depends on the DNS plugin (which for systemd-resolved currently means \"yes\"). This feature requires a plugin which supports LLMNR. Otherwise, the setting has no effect. One such plugin is dns-systemd-resolved."
-msgstr ""
+msgstr "Вызначае, ці ўключаны Link-Local Multicast Name Resolution (LLMNR) для злучэння. LLMNR з'яўляецца пратаколам на аснове фармату пакетаў Domain Name System (DNS) і які дае магчымасць вузлам сетак IPv4 і IPv6 выконваць вызначэнне імён вузлоў на адным лакальным канале сувязі. Дазволеныя значэнні: «yes» (2): зарэгістраваць імя вузла і вызначыць адрас для падключэння, «no» (0): адключыць LLMNR для інтэрфейсу «resolve» (1); не рэгістраваць імя вузла, але дазволіць вырашэнне імён вузлоў у LLMNR. Калі непазначана, паводзіны значэння «default» будуць цалкам залежыць ад убудовы DNS (якая для systemd-resolved у цяперашняй версіі азначае «yes»). Гэта функцыя патрабуе ўбудову, якая падтрымлівае LLMNR. Калі такая ўбудова адсутнічае, то дадзеная налада ні на што не ўплывае. Адной з такіх убудоў з'яўляецца dns-systemd-resolved."
 
 #: src/libnmc-setting/settings-docs.h.in:16
 msgid "Interface name of the master device or UUID of the master connection. Deprecated 1.46. Use \"controller\" instead, this is just an alias."
@@ -5941,7 +5941,7 @@ msgstr "Назва інтэрфейсу галоўнай прылады або U
 
 #: ../src/libnmc-setting/settings-docs.h.in:166
 msgid "Whether mDNS is enabled for the connection. The permitted values are: \"yes\" (2) register hostname and resolving for the connection, \"no\" (0) disable mDNS for the interface, \"resolve\" (1) do not register hostname but allow resolving of mDNS host names and \"default\" (-1) to allow lookup of a global default in NetworkManager.conf. If unspecified, \"default\" ultimately depends on the DNS plugin (which for systemd-resolved currently means \"no\"). This feature requires a plugin which supports mDNS. Otherwise, the setting has no effect. One such plugin is dns-systemd-resolved."
-msgstr ""
+msgstr "Вызначае, ці ўключана mDNS для злучэння. Дазволеныя значэнні: «yes» (2): зарэгістраваць імя вузла і вызначыць адрас для падключэння, «no» (0): адключыць mDNS для інтэрфейсу «resolve» (1); не рэгістраваць імя вузла, але дазволіць вырашэнне імён вузлоў у mDNS і «default» (-1), каб дазволіць пошук глабальнага прадвызначанага значэння ў NetworkManager.conf. Калі непазначана, паводзіны значэння «default» будуць цалкам залежыць ад убудовы DNS (якая для systemd-resolved у цяперашняй версіі азначае «no»). Гэта функцыя патрабуе ўбудову, якая падтрымлівае mDNS. Калі такая ўбудова адсутнічае, то дадзеная налада ні на што не ўплывае. Адной з такіх убудоў з'яўляецца dns-systemd-resolved."
 
 #: ../src/libnmc-setting/settings-docs.h.in:167
 msgid "Whether the connection is metered. When updating this property on a currently activated connection, the change takes effect immediately."
@@ -6034,7 +6034,7 @@ msgstr "Пароль выкарыстоўваецца для доступу да
 
 #: ../src/libnmc-setting/settings-docs.h.in:50
 msgid "Flags indicating how to handle the \"ca-cert-password\" property."
-msgstr ""
+msgstr "Сцягі, якія паказваюць, як апрацоўваць «ca-cert-password»."
 
 #: ../src/libnmc-setting/settings-docs.h.in:51
 msgid "UTF-8 encoded path to a directory containing PEM or DER formatted certificates to be added to the verification chain in addition to the certificate specified in the \"ca-cert\" property. If NMSetting8021x:system-ca-certs is enabled and the built-in CA path is an existing directory, then this setting is ignored."
@@ -6094,7 +6094,7 @@ msgstr "Пароль, які выкарыстоўваецца для метад�
 
 #: ../src/libnmc-setting/settings-docs.h.in:64
 msgid "Flags indicating how to handle the \"password-raw\" property."
-msgstr ""
+msgstr "Сцягі, якія паказваюць, як апрацоўваць уласцівасць «password-raw»."
 
 #: src/libnmc-setting/settings-docs.h.in:55
 msgid "Specifies authentication flags to use in \"phase 1\" outer authentication using NMSetting8021xAuthFlags options. The individual TLS versions can be explicitly disabled. TLS time checks can be also disabled. If a certain TLS disable flag is not set, it is up to the supplicant to allow or forbid it. The TLS options map to tls_disable_tlsv1_x and tls_disable_time_checks settings. See the wpa_supplicant documentation for more details."
@@ -6247,7 +6247,7 @@ msgstr "Час старэння MAC-адраса Ethernet (у секундах).
 
 #: ../src/libnmc-setting/settings-docs.h.in:119
 msgid "The Spanning Tree Protocol (STP) forwarding delay, in seconds."
-msgstr ""
+msgstr "Затрымка перасылкі пратакола Spanning Tree Protocol (STP) (у секундах)."
 
 #: ../src/libnmc-setting/settings-docs.h.in:120
 msgid "If specified, The MAC address of the multicast group this bridge uses for STP. The address must be a link-local address in standard Ethernet MAC address format, ie an address of the form 01:80:C2:00:00:0X, with X in [0, 4..F]. If not specified the default value is 01:80:C2:00:00:00."
@@ -6315,7 +6315,7 @@ msgstr "Кіруе ўключэннем IGMP snooping для гэтага мос
 
 #: ../src/libnmc-setting/settings-docs.h.in:136
 msgid "Set the number of IGMP queries to send during startup phase."
-msgstr ""
+msgstr "Задайце колькасць запытаў IGMP адпраўляць фазы запуску."
 
 #: ../src/libnmc-setting/settings-docs.h.in:137
 msgid "Sets the time (in deciseconds) between queries sent out at startup to determine membership information."
@@ -6359,7 +6359,7 @@ msgstr "Вартасць порта ў пратаколе Spanning Tree Protocol
 
 #: ../src/libnmc-setting/settings-docs.h.in:147
 msgid "The Spanning Tree Protocol (STP) priority of this bridge port."
-msgstr ""
+msgstr "Прыярытэт пратакола Spanning Tree Protocol (STP) гэтага моставага порта."
 
 #: ../src/libnmc-setting/settings-docs.h.in:148
 msgid "Array of bridge VLAN objects. In addition to the VLANs specified here, the port will also have the default-pvid VLAN configured on the bridge by the bridge.vlan-default-pvid property. In nmcli the VLAN list can be specified with the following syntax: $vid [pvid] [untagged] [, $vid [pvid] [untagged]]... where $vid is either a single id between 1 and 4094 or a range, represented as a couple of ids separated by a dash."
@@ -6521,7 +6521,7 @@ msgstr "Прадвызначана, злучэнні VPN будуць дадав
 #: src/libnmc-setting/settings-docs.h.in:167
 #: src/libnmc-setting/settings-docs.h.in:198
 msgid "Maximum timeout in milliseconds used to check for the presence of duplicate IP addresses on the network.  If an address conflict is detected, the activation will fail. The property is currently implemented only for IPv4. A zero value means that no duplicate address detection is performed, -1 means the default value (either the value configured globally in NetworkManger.conf or 200ms).  A value greater than zero is a timeout in milliseconds.  Note that the time intervals are subject to randomization as per RFC 5227 and so the actual duration can be between half and the full time specified in this property."
-msgstr ""
+msgstr "Максімальны час чакання ў мілісекундах, якія выкарыстоўваецца для прысутнасці дубліраваных IP-адрасоў у сетцы. Калі выяўляецца канфлікт адрасоў, то актывацыя завершыцца збоем. Уласцівасць у цяперашні час рэалізавана толькі для IPv4. Нулявое значэнне азначае, што паўторнае выяўленне адраса выконвацца не будзе. Значэнне -1 з'яўляецца прадвызначаным (або значэнне сканфігурыраваным глабальна ў NetworkManger.conf або 200 мс). Значэнне большае за нуль з'яўляецца часам чакання ў мілісекундах. Звярніце ўвагу, што інтэрвал часу падвяргаецца рандамізацыі згодна RFC 5227 і таму фактычная працягласць можа быць ад паловы да поўнага часу, які пазначаны ў гэтай уласнасці."
 
 #: src/libnmc-setting/settings-docs.h.in:168
 msgid "A string sent to the DHCP server to identify the local machine which the DHCP server may use to customize the DHCP lease and options. When the property is a hex string ('aa:bb:cc') it is interpreted as a binary client ID, in which case the first byte is assumed to be the 'type' field as per RFC 2132 section 9.14 and the remaining bytes may be an hardware address (e.g. '01:xx:xx:xx:xx:xx:xx' where 1 is the Ethernet ARP type and the rest is a MAC address). If the property is not a hex string it is considered as a non-hardware-address client ID and the 'type' field is set to 0. The special values \"mac\" and \"perm-mac\" are supported, which use the current or permanent MAC address of the device to generate a client identifier with type ethernet (01). Currently, these options only work for ethernet type of links. The special value \"ipv6-duid\" uses the DUID from \"ipv6.dhcp-duid\" property as an RFC4361-compliant client identifier. As IAID it uses \"ipv4.dhcp-iaid\" and falls back to \"ipv6.dhcp-iaid\" if unset. The special value \"duid\" generates a RFC4361-compliant client identifier based on \"ipv4.dhcp-iaid\" and uses a DUID generated by hashing /etc/machine-id. The special value \"stable\" is supported to generate a type 0 client identifier based on the stable-id (see connection.stable-id) and a per-host key. If you set the stable-id, you may want to include the \"${DEVICE}\" or \"${MAC}\" specifier to get a per-device key. The special value \"none\" prevents any client identifier from being sent. Note that this is normally not recommended. If unset, a globally configured default from NetworkManager.conf is used. If still unset, the default depends on the DHCP plugin. The internal dhcp client will default to \"mac\" and the dhclient plugin will try to use one from its config file if present, or won't sent any client-id otherwise."
@@ -6592,7 +6592,7 @@ msgstr ""
 #: src/libnmc-setting/settings-docs.h.in:182
 #: src/libnmc-setting/settings-docs.h.in:212
 msgid "The gateway associated with this configuration. This is only meaningful if \"addresses\" is also set. Setting the gateway causes NetworkManager to configure a standard default route with the gateway as next hop. This is ignored if \"never-default\" is set. An alternative is to configure the default route explicitly with a manual route and /0 as prefix length. Note that the gateway usually conflicts with routing that NetworkManager configures for WireGuard interfaces, so usually it should not be set in that case. See \"ip4-auto-default-route\"."
-msgstr ""
+msgstr "Шлюз, які звязаны з гэтай канфігурацыяй. Мае сэнс толькі ў выпадку, калі зададзены параметр «addresses». Наладжванне шлюза прыводзіць да таго, што NetworkManager канфігурыруе стандартны прадвызначаны маршрут са шлюзом, як наступны пераход. Будзе праігнаравана, калі зададзена «never-default». Альтэрнатывай з'яўляецца канфігурацыя прадвызначанага маршрута з яўна ўказаным уручную маршрутам і з /0, як даўжыня прэфікса. Звярніце ўвагу, што дадзены шлюз звычайна канфліктуе з маршрутызацыяй, якую NetworkManager канфігрурыруе для інтэрфейсаў WireGuard. Такім чынам, яе не варта задаваць у гэтым выпадку. Звярніцеся да «ip4-auto-default-route»."
 
 #: ../src/libnmc-setting/settings-docs.h.in:247
 #: ../src/libnmc-setting/settings-docs.h.in:272
@@ -6681,7 +6681,7 @@ msgstr "Спосаб злучэння IPv6."
 
 #: src/libnmc-setting/settings-docs.h.in:218
 msgid "Maximum transmission unit size, in bytes. If zero (the default), the MTU is set automatically from router advertisements or is left equal to the link-layer MTU. If greater than the link-layer MTU, or greater than zero but less than the minimum IPv6 MTU of 1280, this value has no effect."
-msgstr ""
+msgstr "Максімальны памер адзінкі перадачы (у байтах). Калі нулявое значэнне (прадвызначана), то MTU задаецца аўтаматычна на падставе інструкцый маршрутызатара або з'яўляецца роўным значэнню MTU канальнага ўзроўню. Калі значэнне большае за канальны ўзровень MTU або большае за значэнне нулявога ўзроўню, але не большае за значэнне IPv6 MTU з лікам 1280, то гэта значэнне ні на што не ўплывае."
 
 #: ../src/libnmc-setting/settings-docs.h.in:278
 msgid "A timeout for waiting Router Advertisements in seconds. If zero (the default), a globally configured default is used. If still unspecified, the timeout depends on the sysctl settings of the device. Set to 2147483647 (MAXINT32) for infinity."
@@ -6841,7 +6841,7 @@ msgstr "Тып шляху да даных. Адно са значэнняў «sy
 
 #: ../src/libnmc-setting/settings-docs.h.in:303
 msgid "The bridge failure mode. One of \"secure\", \"standalone\" or empty."
-msgstr ""
+msgstr "Рэжым збою моста. Адзін са значэнняў «secure», «standalone» або пустое значэнне."
 
 #: ../src/libnmc-setting/settings-docs.h.in:304
 msgid "Enable or disable multicast snooping."
@@ -6885,7 +6885,7 @@ msgstr "Вызначае назву інтэрфейсу для іншага б�
 
 #: ../src/libnmc-setting/settings-docs.h.in:312
 msgid "The time port must be inactive in order to be considered down."
-msgstr ""
+msgstr "Порт часу павінен быць неактыўным, каб лічыць яго адключаным."
 
 #: ../src/libnmc-setting/settings-docs.h.in:313
 msgid "Bonding mode. One of \"active-backup\", \"balance-slb\", or \"balance-tcp\"."
@@ -6969,11 +6969,11 @@ msgstr "Калі ўмова выканана, метад аўтэнтыфіка�
 
 #: ../src/libnmc-setting/settings-docs.h.in:332
 msgid "If TRUE, the MSCHAPv2 authentication method will not be used."
-msgstr ""
+msgstr "Калі ўмова выканана, метад аўтэнтыфікацыі MSCHAPv2 не будзе выкарыстоўвацца."
 
 #: ../src/libnmc-setting/settings-docs.h.in:333
 msgid "If TRUE, the PAP authentication method will not be used."
-msgstr ""
+msgstr "Калі ўмова выканана, метад аўтэнтыфікацыі PAP не будзе выкарыстоўвацца."
 
 #: ../src/libnmc-setting/settings-docs.h.in:334
 msgid "If TRUE, MPPE (Microsoft Point-to-Point Encryption) will be required for the PPP session.  If either 64-bit or 128-bit MPPE is not available the session will fail.  Note that MPPE is not used on mobile broadband connections."
@@ -7298,7 +7298,7 @@ msgstr "Вызначае значэнне TOS для выкарыстання ў
 
 #: ../src/libnmc-setting/settings-docs.h.in:413
 msgid "Specifies the time-to-live value to use in outgoing packets."
-msgstr ""
+msgstr "Вызначае значэнне часу жыцця (TTL) для выкарыстання ў выходных пакетах."
 
 #: ../src/libnmc-setting/settings-docs.h.in:414
 msgid "The P2P device that should be connected to. Currently, this is the only way to create or join a group."
@@ -7372,7 +7372,7 @@ msgstr "Вызначае спецыфічныя падканалы, якія г�
 
 #: ../src/libnmc-setting/settings-docs.h.in:104
 msgid "When a value greater than 0 is set, configures the device to use the specified speed. If \"auto-negotiate\" is \"yes\" the specified speed will be the only one advertised during link negotiation: this works only for BASE-T 802.3 specifications and is useful for enforcing gigabit speeds, as in this case link negotiation is mandatory. If the value is unset (0, the default), the link configuration will be either skipped (if \"auto-negotiate\" is \"no\", the default) or will be auto-negotiated (if \"auto-negotiate\" is \"yes\") and the local device will advertise all the supported speeds. In Mbit/s, ie 100 == 100Mbit/s. Must be set together with the \"duplex\" property when non-zero. Before specifying a speed value be sure your device supports it."
-msgstr ""
+msgstr "Калі зададзена значэнне, якое больш за 0, прылада будзе сканфігурыравана для выкарыстання пазначанай хуткасці. Калі для «auto-negotiate» зададзена значэнне «yes», указаная хуткасць будзе адзінай, якая будзе прапаноўвацца пры ўзгадненні сувязі: гэта будзе працаваць толькі для спецыфікацыяй BASE-T 802.3 і карысна для забеспячэння гігабітных рэжымаў, паколькі ў гэтых рэжымах узгадненне сувязі з'яўляецца абавязковым працэсам. Калі значэнне адключана (0 з'яўляецца прадвызначаным значэннем), канфігурацыя стана будзе або прапушчана (калі «auto-negotiate» мае значэнне «no», прадвызначана) або будзе аўтаматычна ўзгоднена (калі «auto-negotiate» мае значэнне «yes)», а лакальная прылада будзе прапаноўваць усе хуткасці, якія падтрымліваюцца. Значэнні пазначаны ў Мбіт/с. Напрыклад, 100 == 100 Мбіт/с. Павінна быць зададзена разам з уласцівасцю «duplex», калі значэнне не роўнае нулю. Перад тым, як пазначыць значэнне хуткасці пераканайцеся, што яно падтрымліваецца вашай прыладай."
 
 #: src/libnmc-setting/settings-docs.h.in:399
 msgid "The NMSettingWiredWakeOnLan options to enable. Not all devices support all options. May be any combination of \"phy\" (0x2), \"unicast\" (0x4), \"multicast\" (0x8), \"broadcast\" (0x10), \"arp\" (0x20), \"magic\" (0x40) or the special values \"default\" (0x1) (to use global settings) and \"ignore\" (0x8000) (to disable management of Wake-on-LAN in NetworkManager)."
@@ -7392,7 +7392,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:421
 msgid "Like ip4-auto-default-route, but for the IPv6 default route."
-msgstr ""
+msgstr "Аналагічна ip4-auto-default-route, але прадвызначана для маршрута IPv6."
 
 #: ../src/libnmc-setting/settings-docs.h.in:422
 msgid "The listen-port. If listen-port is not specified, the port will be chosen randomly when the interface comes up."
@@ -7412,7 +7412,7 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:426
 msgid "Flags indicating how to handle the \"private-key\" property."
-msgstr ""
+msgstr "Сцягі, якія паказваюць, як апрацоўваць «private-key»."
 
 #: src/libnmc-setting/settings-docs.h.in:409
 msgid "Configures AP isolation, which prevents communication between wireless devices connected to this AP. This property can be set to a value different from \"default\" (-1) only when the interface is configured in AP mode. If set to \"true\" (1), devices are not able to communicate with each other. This increases security because it protects devices against attacks from other clients in the network. At the same time, it prevents devices to access resources on the same wireless networks as file shares, printers, etc. If set to \"false\" (0), devices can talk to each other. When set to \"default\" (-1), the global default is used; in case the global default is unspecified it is assumed to be \"false\" (0)."
@@ -7420,11 +7420,11 @@ msgstr ""
 
 #: ../src/libnmc-setting/settings-docs.h.in:8
 msgid "802.11 frequency band of the network.  One of \"a\" for 5GHz 802.11a or \"bg\" for 2.4GHz 802.11.  This will lock associations to the Wi-Fi network to the specific band, i.e. if \"a\" is specified, the device will not associate with the same network in the 2.4GHz band even if the network's settings are compatible.  This setting depends on specific driver capability and may not work with all drivers."
-msgstr ""
+msgstr "Частотны дыяпазон 802.11 сеткі. Адно са значэнняў «a» для частаты 5 ГГц 802.11a або значэнне «bg» для частаты 2.4 ГГц 802.11.  Гэта фіксуе прывязку сеткі Wi-Fi да канкрэтнага дыяпазону і гэта азначае, што калі пазначана значэнне «a», прылада не будзе звязвацца з той самай сеткай у дыяпазоне  2.4 ГГц, нават калі налады сеткі будуць сумяшчальнымі. Дадзеная налада залежыць ад магчымасцяў канкрэтнага драйвера і можа не працаваць з драйверамі ад некаторых пастаўшчыкоў."
 
 #: src/libnmc-setting/settings-docs.h.in:411
 msgid "If specified, directs the device to only associate with the given access point.  This capability is highly driver dependent and not supported by all devices.  Note: this property does not control the BSSID used when creating an Ad-Hoc network and is unlikely to in the future. Locking a client profile to a certain BSSID will prevent roaming and also disable background scanning. That can be useful, if there is only one access point for the SSID."
-msgstr ""
+msgstr "Калі пазначана, накіроўвае прыладу толькі для звязкі с зададзеным пунктам доступу. Гэта магчымасць моцна залежыць ад драйвера і не падтрымліваецца ўсімі прыладамі. Нататка: гэта ўласцівасць не кантралюе BSSID, які выкарыстоўваецца пры стварэнні сеткі Ad-Hoc і малаверагодна, што гэта функцыя з'явіцца ў будучым. Блакіроўка профілю кліента на пэўным BSSID прадухіліць пераход у роўмінг, а таксама адключыць фонавае сканіраванне. Гэта можа быць карысным у выпадку, калі ў наяўнасці ёсць толькі адзін пункт доступу для SSID."
 
 #: ../src/libnmc-setting/settings-docs.h.in:10
 msgid "Wireless channel to use for the Wi-Fi connection.  The device will only join (or create for Ad-Hoc networks) a Wi-Fi network on the specified channel.  Because channel numbers overlap between bands, this property also requires the \"band\" property to be set."
@@ -7444,7 +7444,7 @@ msgstr "Калі пазначана, то гэта функцыя будзе ў�
 
 #: ../src/libnmc-setting/settings-docs.h.in:15
 msgid "A list of permanent MAC addresses of Wi-Fi devices to which this connection should never apply.  Each MAC address should be given in the standard hex-digits-and-colons notation (eg \"00:11:22:33:44:55\")."
-msgstr ""
+msgstr "Спіс пастаянных MAC-адрасоў прылад Wi-Fi, да якіх гэта злучэнне ніколі  не павінна ўжывацца. Кожны MAC-адрас павінен быць пададзены ў стандартнай натацыі шаснаццатковых лічбаў і двукроп'яў (напрыклад, «00: 11: 22: 33: 44: 55»)."
 
 #: src/libnmc-setting/settings-docs.h.in:418
 msgid "One of \"default\" (0) (never randomize unless the user has set a global default to randomize and the supplicant supports randomization),  \"never\" (1) (never randomize the MAC address), or \"always\" (2) (always randomize the MAC address)."
@@ -7497,7 +7497,7 @@ msgstr "Пароль уваходу для састарэлых злучэння
 
 #: ../src/libnmc-setting/settings-docs.h.in:30
 msgid "Flags indicating how to handle the \"leap-password\" property."
-msgstr ""
+msgstr "Сцягі, якія паказваюць, як апрацоўваць уласцівасць «leap-password»."
 
 #: ../src/libnmc-setting/settings-docs.h.in:31
 msgid "The login username for legacy LEAP connections (ie, key-mgmt = \"ieee8021x\" and auth-alg = \"leap\")."
@@ -7595,7 +7595,7 @@ msgstr "Вызначае, ці можа быць вызначана назва �
 
 #: src/libnmc-setting/settings-docs.h.in:456
 msgid "If set to \"true\" (1), NetworkManager attempts to get the hostname via DHCPv4/DHCPv6 or reverse DNS lookup on this device only when the device has the default route for the given address family (IPv4/IPv6). If set to \"false\" (0), the hostname can be set from this device even if it doesn't have the default route. When set to \"default\" (-1), the value from global configuration is used. If the property doesn't have a value in the global configuration, NetworkManager assumes the value to be \"false\" (0)."
-msgstr ""
+msgstr "Калі зададзена значэнне «true» (1), NetworkManager пачынае спрабаваць атрымаць назву вузла праз DHCPv4/DHCPv6 або па зваротнаму пошуку DNS на гэтай прыладзе, толькі калі ў прылады ёсць прадвызначаны маршрут для дадзенага сямейства адрасоў (IPv4/IPv6). Калі задаць значэнне «false» (0), назва вузла можа быць зададзена з гэтай прылады, нават калі ў яе няма прадвызначанага маршрута. Калі задаць значэнне «default» (-1), то будзе выкарыстана значэнне з глабальнай канфігурацыі. Калі ва ўласцівасці адсутнічае значэнне ў глабальнай канфігурацыі, NetworkManager дапускае значэнне «false» (0)."
 
 #: ../src/libnmc-setting/settings-docs.h.in:212
 msgid "The relative priority of this connection to determine the system hostname. A lower numerical value is better (higher priority).  A connection with higher priority is considered before connections with lower priority. If the value is zero, it can be overridden by a global value from NetworkManager configuration. If the property doesn't have a value in the global configuration, the value is assumed to be 100. Negative values have the special effect of excluding other connections with a greater numerical priority value; so in presence of at least one negative priority, only connections with the lowest priority value will be used to determine the hostname."
@@ -8484,7 +8484,7 @@ msgstr "Збой дэактывацыі злучэння «%s»: %s\n"
 #: ../src/nmcli/connections.c:3781
 #, c-format
 msgid "Warning: master='%s' doesn't refer to any existing profile.\n"
-msgstr ""
+msgstr "Папярэджанне: master=«%s» не спасылаецца на ніводны з наяўных профіляў.\n"
 
 #: ../src/nmcli/connections.c:4156
 #, c-format
@@ -8757,7 +8757,16 @@ msgid "save [persistent|temporary]  :: save the connection\n\n"
 "persistent, but any temporary changes will not persist across reboot or\n"
 "restart. If you want to fully remove the persistent connection, the connection\n"
 "profile must be deleted.\n"
-msgstr ""
+msgstr "save [persistent|temporary]  :: захаваць падключэнне\n\n"
+"Адпраўляе профіль падключэння ў NetworkManager, які або захавае яго\n"
+"для пастаяннага выкарыстання, або толькі захавае яго ў памяці. Параметр «save» без аргументаў  \n"
+"будзе ўяўляць сабой каманду «save persistent».\n"
+"Звярніце ўвагу, што пасля захавання профілю на пастаяннай аснове, яго параметры будуць захоўвацца\n"
+"пасля перазагрузкі сістэмы або перазапуску праграмы. \n"
+"Усе наступныя змяненні могуць быць часовымі або пастаяннымі. \n"
+"Часовыя змяненні не захоўваюцца пасля перазагрузкі сістэмы або перазапуску праграмы.\n"
+"Калі вам спатрэбіцца цалкам выдаліць падключэнне, якое захавана на пастаяннай аснове,\n"
+"неабходна выдаліць яго профіль.\n"
 
 #: ../src/nmcli/connections.c:6902
 #, c-format
@@ -8922,7 +8931,7 @@ msgstr "[Тып: %s | Назва: %s | UUID: %s | Чарнавыя: %s | Час�
 #: ../src/nmcli/connections.c:7299
 #, c-format
 msgid "The connection is not saved. Do you really want to quit? %s"
-msgstr ""
+msgstr "Злучэнне не захавана. Вы сапраўды хочаце выйсці? %s"
 
 #: ../src/nmcli/connections.c:7343
 #, c-format
@@ -9008,7 +9017,7 @@ msgstr "Памылка: не выбрана налада; карэктныя з�
 #: ../src/nmcli/connections.c:7782
 #, c-format
 msgid "use 'goto <setting>' first, or 'set <setting>.<property>'\n"
-msgstr ""
+msgstr "выкарыстоўвайце «goto <setting>» або «set <setting>.<property>»\n"
 
 #: ../src/nmcli/connections.c:7802 ../src/nmcli/connections.c:7979
 #: ../src/nmcli/connections.c:8085
@@ -9059,7 +9068,7 @@ msgstr "Памылка: уласцівасці %s і не з'яўляецца н
 #: ../src/nmcli/connections.c:8064 ../src/nmcli/connections.c:8097
 #, c-format
 msgid "use 'goto <setting>' first, or 'describe <setting>.<property>'\n"
-msgstr ""
+msgstr "першапачаткова скарыстайцеся «goto <setting>» або «describe <setting>.<property>»\n"
 
 #: ../src/nmcli/connections.c:8120
 #, c-format
@@ -9167,7 +9176,7 @@ msgstr "Памылка: не ўдалося актываваць злучэнн�
 
 #: ../src/nmcli/connections.c:8406
 msgid "Monitoring connection activation (press any key to continue)\n"
-msgstr ""
+msgstr "Назіранне за актывацыяй злучэння (націсніце любую клавішу, каб працягнуць)\n"
 
 #: ../src/nmcli/connections.c:8441
 #, c-format
@@ -10225,13 +10234,15 @@ msgstr "Выкарыстанне: nmcli networking { COMMAND | help }\n\n"
 #, c-format
 msgid "Usage: nmcli networking on { help }\n\n"
 "Switch networking on.\n\n"
-msgstr ""
+msgstr "Выкарыстанне: nmcli agent { help }\n\n"
+"Уключае сеткавыя функцыі. \n\n"
 
 #: ../src/nmcli/general.c:398
 #, c-format
 msgid "Usage: nmcli networking off { help }\n\n"
 "Switch networking off.\n\n"
-msgstr ""
+msgstr "Выкарыстанне: nmcli agent { help }\n\n"
+"Адключае сеткавыя функцыі. \n\n"
 
 #: ../src/nmcli/general.c:407
 #, c-format
@@ -10974,7 +10985,7 @@ msgstr "Дадаць"
 #: ../src/nmtui/nmt-page-ip6.c:162 ../src/nmtui/nmt-page-team-port.c:92
 #: ../src/nmtui/nmt-page-team.c:145 ../src/nmtui/nmt-wireguard-peer-list.c:129
 msgid "Edit..."
-msgstr ""
+msgstr "Рэдагаваць..."
 
 #: ../src/nmtui/nmt-edit-connection-list.c:107
 #: ../src/nmtui/nmt-wireguard-peer-list.c:132 ../src/nmtui/nmtui-edit.c:518
