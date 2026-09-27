@@ -14,14 +14,14 @@ msgstr ""
 "Project-Id-Version: gnome-terminal master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-terminal/issues\n"
 "POT-Creation-Date: 2024-03-31 17:54+0000\n"
-"PO-Revision-Date: 2026-01-07 20:06+0000\n"
+"PO-Revision-Date: 2026-03-21 19:13+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-03-21 09:42+0000\n"
-"X-Generator: Launchpad (build 561ec5bf26473fffe30568d6750c495df0ae299c)\n"
+"X-Launchpad-Export-Date: 2026-09-21 05:56+0000\n"
+"X-Generator: Launchpad (build 6c05f5b586acbfd5d3a5f5142777242f41e711b8)\n"
 "Language: be\n"
 
 #: data/org.gnome.Terminal.desktop.in:2
@@ -208,8 +208,9 @@ msgid ""
 "Default color of terminal background, as a color specification (can be HTML-"
 "style hex digits, or a color name such as “red”)."
 msgstr ""
-"Прадвызначаны фонавы колер тэрмінала, згодна са спецыфікацыяй HTML (як "
-"шаснаццатковае лічбавае азначэнне або як назва колеру, напрыклад, «red»)."
+"Прадвызначаны колер фону тэрмінала, як каляровая спецыфікацыя. Можа быць у "
+"выглядзе шаснаццатковых лічбаў HTML або англійская назва колеру (напрыклад, "
+"«red»)."
 
 #: src/org.gnome.Terminal.gschema.xml:149
 msgid "Default color of bold text in the terminal"
@@ -228,7 +229,7 @@ msgstr ""
 
 #: src/org.gnome.Terminal.gschema.xml:154
 msgid "Whether bold text should use the same color as normal text"
-msgstr "Ці выкарыстоўваць адзін колер для звычайнага і тлустага тэксту"
+msgstr "Ці выводзіць тоўстыя літары тым самым колерам, што і звычайны тэкст"
 
 #: src/org.gnome.Terminal.gschema.xml:155
 msgid ""
@@ -242,28 +243,30 @@ msgid ""
 "Scale factor for the cell height to increase line spacing. (Does not "
 "increase the font’s height.)"
 msgstr ""
-"Каэфіцыент маштабавання вышыні клеткі для павелічэння адлегласці паміж "
-"радкамі. (Не ўплывае на вышыню шрыфту.)"
+"Каэфіцыент маштабавання вышыні ячэйкі для павелічэння адлегласці паміж "
+"радкамі (не павялічвае вышыню шрыфту)."
 
 #: src/org.gnome.Terminal.gschema.xml:165
 msgid ""
 "Scale factor for the cell width to increase letter spacing. (Does not "
 "increase the font’s width.)"
 msgstr ""
-"Каэфіцыент маштабавання шырыні клеткі для павелічэння адлегласці паміж "
-"літарамі. (Не ўплывае на шырыню шрыфту.)"
+"Каэфіцыент маштабавання шырыні ячэйкі для павелічэння адлегласці паміж "
+"літарамі (не павялічвае вышыню шрыфту)."
 
 #: src/org.gnome.Terminal.gschema.xml:169
 msgid "Whether to use custom cursor colors"
-msgstr "Ці выкарыстоўваць уласныя колеры курсора"
+msgstr "Ці выкарыстоўваць карыстальніцкія колеры курсора"
 
 #: src/org.gnome.Terminal.gschema.xml:170
 msgid "If true, use the cursor colors from the profile."
-msgstr "Калі значэнне «true», для курсора выкарыстоўваюцца колеры з профілю."
+msgstr ""
+"Калі зададзена значэнне «true», то будуць выкарыстоўвацца колеры курсора з "
+"профілю."
 
 #: src/org.gnome.Terminal.gschema.xml:174
 msgid "Cursor background color"
-msgstr "Фонавы колер курсора"
+msgstr "Колер фону курсора"
 
 #: src/org.gnome.Terminal.gschema.xml:175
 msgid ""
@@ -271,9 +274,10 @@ msgid ""
 "specification (can be HTML-style hex digits, or a color name such as “red”). "
 "This is ignored if cursor-colors-set is false."
 msgstr ""
-"Спецыфікацыя ўласнага фонавага колеру курсора ў тэрмінале (у фармаце HTML "
-"або англійская назва колеру, як \"red\"). Гэта налада не ўздзейнічае на "
-"праграму, калі ключ ursor-colors-set выключаны."
+"Карыстальніцкі колер фону курсора ў тэрмінале, як каляровая спецыфікацыя. "
+"Можа быць у выглядзе шаснаццатковых лічбаў HTML або англійская назва колеру "
+"(напрыклад, «red»). Значэнне будзе ігнаравацца, калі ў параметры cursor-"
+"colors-set пазначана значэнне «false»."
 
 #: src/org.gnome.Terminal.gschema.xml:179
 msgid "Cursor foreground colour"
@@ -285,13 +289,14 @@ msgid ""
 "cursor position, as a color specification (can be HTML-style hex digits, or "
 "a color name such as “red”). This is ignored if cursor-colors-set is false."
 msgstr ""
-"Спецыфікацыя ўласнага колеру пярэдняга плана курсора ў тэрмінале (у фармаце "
-"HTML або англійская назва колеру, як \"red\"). Гэта налада не ўздзейнічае на "
-"праграму, калі ключ cursor-colors-set выключаны."
+"Карыстальніцкі колер для фону сімвала тэксту ў пазіцыі курсора тэрмінала. "
+"Можа быць у выглядзе шаснаццатковых лічбаў HTML або англійская назва колеру "
+"(напрыклад, «red»). Значэнне будзе ігнаравацца, калі ў параметры cursor-"
+"colors-set пазначана значэнне «false»."
 
 #: src/org.gnome.Terminal.gschema.xml:184
 msgid "Whether to use custom highlight colors"
-msgstr "Ці выкарыстоўваць уласныя колеры вылучэння"
+msgstr "Ці выкарыстоўваць карыстальніцкія колеры падсветкі"
 
 #: src/org.gnome.Terminal.gschema.xml:185
 msgid "If true, use the highlight colors from the profile."
@@ -309,9 +314,10 @@ msgid ""
 "specification (can be HTML-style hex digits, or a color name such as “red”). "
 "This is ignored if highlight-colors-set is false."
 msgstr ""
-"Спецыфікацыя фонавага колеру выдзялення ў тэрмінале (у фармаце HTML або "
-"англійская назва колеру, як \"red\"). Гэта налада не ўздзейнічае на "
-"праграму, калі ключ highlight-colors-set выключаны."
+"Карыстальніцкі колер фону падсветкі ў тэрмінале, як каляровая спецыфікацыя. "
+"Можа быць у выглядзе шаснаццатковых лічбаў HTML або англійская назва колеру "
+"(напрыклад, «red»). Значэнне будзе ігнаравацца, калі ў параметры highlight-"
+"colors-set пазначана значэнне «false»."
 
 #: src/org.gnome.Terminal.gschema.xml:194
 msgid "Highlight foreground colour"
@@ -324,13 +330,14 @@ msgid ""
 "or a color name such as “red”). This is ignored if highlight-colors-set is "
 "false."
 msgstr ""
-"Спецыфікацыя колеру пярэдняга плана выдзеленых знакаў у тэрмінале (у фармаце "
-"HTML або англійская назва колеру, як \"red\"). Гэта налада не ўздзейнічае на "
-"праграму, калі ключ highlight-colors-set выключаны."
+"Карыстальніцкі колер для фону сімвала тэксту ў пазіцыі падсветкі тэрмінала. "
+"Можа быць у выглядзе шаснаццатковых лічбаў HTML або англійская назва колеру "
+"(напрыклад, «red»). Значэнне будзе ігнаравацца, калі ў параметры highlight-"
+"colors-set пазначана значэнне «false»."
 
 #: src/org.gnome.Terminal.gschema.xml:199
 msgid "Whether to perform bidirectional text rendering"
-msgstr "Ці выконваць двухнапрамкавы вывад тэксту"
+msgstr "Ці выконваць двухнакіраваную адмалёўку тэксту"
 
 #: src/org.gnome.Terminal.gschema.xml:200
 msgid "If true, perform bidirectional text rendering (“BiDi”)."
@@ -340,11 +347,11 @@ msgstr ""
 
 #: src/org.gnome.Terminal.gschema.xml:204
 msgid "Whether to perform Arabic shaping"
-msgstr "Ці выконваць змяненне форм арабскага тэксту"
+msgstr "Ці прыдаваць форму арабскаму тэксту"
 
 #: src/org.gnome.Terminal.gschema.xml:205
 msgid "If true, shape Arabic text."
-msgstr "Калі значэнне «true», формы арабскага тэксту змяняюцца."
+msgstr "Калі зададзена значэнне «true», то прыдаваць форму арабскаму тэксту."
 
 #: src/org.gnome.Terminal.gschema.xml:209
 msgid "Whether to enable SIXEL images"
@@ -358,19 +365,19 @@ msgstr ""
 
 #: src/org.gnome.Terminal.gschema.xml:214
 msgid "Whether bold is also bright"
-msgstr "Ці рабіць тлусты тэкст светлым"
+msgstr "Ці рабіць тоўсты шрыфт таксама светлым"
 
 #: src/org.gnome.Terminal.gschema.xml:215
 msgid ""
 "If true, setting bold on the first 8 colors also switches to their bright "
 "variants."
 msgstr ""
-"Калі значэнне «true», пры ўжыванні для тлустага тэксту першых васьмі "
-"колераў, будуць выкарыстоўвацца іх светлыя варыянты."
+"Калі зададзена значэнне «true», то тоўстыя літары першых 8 колераў таксама "
+"прымуць яркія варыянты."
 
 #: src/org.gnome.Terminal.gschema.xml:219
 msgid "Whether to ring the terminal bell"
-msgstr "Ці агучваць сігнал тэрмінала"
+msgstr "Ці падаваць гукавы сігнал тэрмінала"
 
 #: src/org.gnome.Terminal.gschema.xml:223
 msgid "List of punctuation characters that are treated as word characters"
@@ -438,9 +445,10 @@ msgid ""
 "stored on disk temporarily, so this may cause the system to run out of disk "
 "space if there is a lot of output to the terminal."
 msgstr ""
-"Калі значэнне «true», радкі для прагорткі назад не сціраюцца з памяці. "
-"Гісторыя вываду тэрмінала часова захоўваецца на дыску, таму ў выпадку, калі "
-"на тэрмінале шмат вываду, у вас можа закончыцца вольная дыскавая прастора."
+"Калі зададзена значэнне «true», то прагартаныя назад радкі не будуць "
+"скасоўвацца ў памяці. Гісторыя прагорткі тэрмінала часова захоўваецца на "
+"дыску і ў вас можа закончыцца вольная прастора на дыску, калі на тэрмінале "
+"выводзіцца вялікая колькасць радкоў."
 
 #: src/org.gnome.Terminal.gschema.xml:254
 msgid "Whether to scroll to the bottom when text is inserted"
@@ -489,7 +497,7 @@ msgstr ""
 
 #: src/org.gnome.Terminal.gschema.xml:274
 msgid "Whether to launch the command in the terminal as a login shell"
-msgstr "Ці выконваць гэтую каманду ў тэрмінале як камандную абалонку"
+msgstr "Ці запускаць гэтую каманду ў тэрмінале як абалонку ўваходу"
 
 #: src/org.gnome.Terminal.gschema.xml:275
 msgid ""
@@ -508,12 +516,12 @@ msgid ""
 "Controls when opening a new terminal from a previous one carries over the "
 "working directory of the opening terminal to the new one."
 msgstr ""
-"Пры адкрыцці новага тэрмінала з папярэдняга, кіруе, калі пераносіць працоўны "
-"каталог з адкрытага тэрмінала ў новы."
+"Кантралюе, калі адкрыццё новага тэрмінала з папярэдняга пераносіць працоўны "
+"каталог тэрмінала, які адкрываецца ў новы."
 
 #: src/org.gnome.Terminal.gschema.xml:286
 msgid "Whether to run a custom command instead of the shell"
-msgstr "Ці выконваць уласную каманду замест каманднай абалонкі"
+msgstr "Ці выконваць адмысловую каманду замест абалонкі"
 
 #: src/org.gnome.Terminal.gschema.xml:287
 msgid ""
@@ -525,7 +533,7 @@ msgstr ""
 
 #: src/org.gnome.Terminal.gschema.xml:291
 msgid "Whether to blink the cursor"
-msgstr "Ці мільгае курсор"
+msgstr "Ці ўключаць мільганне курсора"
 
 #: src/org.gnome.Terminal.gschema.xml:292
 msgid ""
@@ -569,11 +577,11 @@ msgstr "Назва і памер шрыфту Pango"
 
 #: src/org.gnome.Terminal.gschema.xml:332
 msgid "The code sequence the Backspace key generates"
-msgstr "Кодавая паслядоўнасць, якая генеруецца клавішай Backspace"
+msgstr "Кодавая паслядоўнасць, якая генерыруецца клавішай Backspace"
 
 #: src/org.gnome.Terminal.gschema.xml:336
 msgid "The code sequence the Delete key generates"
-msgstr "Кодавая паслядоўнасць, якая генеруецца клавішай Delete"
+msgstr "Кодавая паслядоўнасць, якая генерыруецца клавішай Delete"
 
 #: src/org.gnome.Terminal.gschema.xml:340
 msgid "Whether to use the colors from the theme for the terminal widget"
@@ -589,25 +597,27 @@ msgstr "Ці абнаўляць пераносы радкоў тэрмінала
 
 #: src/org.gnome.Terminal.gschema.xml:352
 msgid "Which encoding to use"
-msgstr "Кадаванне"
+msgstr "Якую кадзіроўку выкарыстоўваць"
 
 #: src/org.gnome.Terminal.gschema.xml:356
 msgid ""
 "Whether ambiguous-width characters are narrow or wide when using UTF-8 "
 "encoding"
 msgstr ""
-"Ці з'яўляюцца знакі нявызначанай шырыні вузкімі або шырокімі пры "
-"выкарыстанні кадавання UTF-8"
+"Ці з'яўляюцца сімвалы з неадназначнай шырынёй вузкімі або шырокімі пры "
+"выкарыстанні кадзіроўкі UTF-8"
 
 #: src/org.gnome.Terminal.gschema.xml:360
 msgid "Whether to use a transparent background"
-msgstr "Або выкарыстоўваць празрысты фон"
+msgstr "Ці выкарыстоўваць празрысты фон"
 
 #: src/org.gnome.Terminal.gschema.xml:364
 msgid ""
 "Whether to use the value of TerminalScreen-background-darkness, if "
 "available, from the theme for the transparency value."
 msgstr ""
+"Ці выкарыстоўваць значэнне TerminalScreen-background-darkness (пры "
+"даступнасці) з тэмы для значэння празрыстасці."
 
 #: src/org.gnome.Terminal.gschema.xml:369
 msgid "Adjust the amount of transparency"
@@ -797,7 +807,7 @@ msgstr "Спалучэнне клавіш, каб паказаць асноўн�
 
 #: src/org.gnome.Terminal.gschema.xml:653
 msgid "Whether the menubar has access keys"
-msgstr "Ці ёсць клавішы хуткага доступу для радка меню"
+msgstr "Ці маюцца клавішы хуткага доступу для радка меню"
 
 #: src/org.gnome.Terminal.gschema.xml:654
 msgid ""
@@ -805,8 +815,8 @@ msgid ""
 "with some applications run inside the terminal so it’s possible to turn them "
 "off."
 msgstr ""
-"Ці ёсць клавішы хуткага доступу (Alt+літара) для радка меню. Магчымасць "
-"выключэння прадугледжана таму, што яны могуць канфліктаваць з некаторымі "
+"Ці маюцца клавішы хуткага доступу (Alt+літара) для радка меню. Магчымасць "
+"выключэння прадугледжана, бо яны могуць канфліктаваць з некаторымі "
 "праграмамі, якія выконваюцца ў тэрмінале."
 
 #: src/org.gnome.Terminal.gschema.xml:663
@@ -818,9 +828,8 @@ msgid ""
 "Whether shortcuts are enabled. They may interfere with some applications run "
 "inside the terminal so it’s possible to turn them off."
 msgstr ""
-"Ці трэба ўключыць спалучэнні клавіш. Магчымасць выключэння прадугледжана "
-"таму, што яны могуць канфліктаваць з некаторымі праграмамі, якія выконваюцца "
-"ў тэрмінале."
+"Ці ўключаны спалучэнні клавіш. Магчымасць выключэння прадугледжана, бо яны "
+"могуць канфліктаваць з некаторымі праграмамі, якія выконваюцца ў тэрмінале."
 
 #: src/org.gnome.Terminal.gschema.xml:673
 msgid "Whether the standard GTK shortcut for menubar access is enabled"
@@ -857,7 +866,7 @@ msgstr "Ці паказваць радок меню ў новых вокнах"
 
 #: src/org.gnome.Terminal.gschema.xml:704
 msgid "Whether to open new terminals as windows or tabs"
-msgstr "Адкрываць новыя тэрміналы ў вокнах ці ва ўкладках"
+msgstr "Ці адкрываць новыя тэрміналы ў вокнах або ва ўкладках"
 
 #: src/org.gnome.Terminal.gschema.xml:709
 msgid "When to show the tabs bar"
@@ -865,18 +874,18 @@ msgstr "Калі паказваць панэль укладак"
 
 #: src/org.gnome.Terminal.gschema.xml:714
 msgid "The position of the tab bar"
-msgstr "Размяшчэнне паліцы картак"
+msgstr "Пазіцыя панэлі ўкладак"
 
 #: src/org.gnome.Terminal.gschema.xml:719
 msgid "Which theme variant to use"
-msgstr "Які варыянт тэмы выкарыстоўваецца"
+msgstr "Які варыянт тэмы выкарыстоўваць"
 
 #: src/org.gnome.Terminal.gschema.xml:724
 msgid ""
 "Whether new tabs should open next to the current one or at the last position"
 msgstr ""
-"Новыя ўкладкі будуць адкрывацца на наступнай пазіцыі за бягучай укладкай або "
-"ў самым канцы"
+"Ці павінны новыя ўкладкі адкрывацца на наступнай пазіцыі за бягучай укладкай "
+"або ў апошняй пазіцыі"
 
 #: src/org.gnome.Terminal.gschema.xml:731
 msgid "Always check whether GNOME Terminal is the default terminal"
@@ -886,12 +895,12 @@ msgstr ""
 #. Open new terminal in new window
 #: src/preferences.ui:14
 msgid "Window"
-msgstr "У вокнах"
+msgstr "Акно"
 
 #. Open new terminal in new tab
 #: src/preferences.ui:18
 msgid "Tab"
-msgstr "Ва ўкладках"
+msgstr "Укладка"
 
 #. New tab opens at the last position
 #: src/preferences.ui:32
@@ -1259,7 +1268,7 @@ msgstr "цалкам"
 
 #: src/preferences.ui:1539
 msgid "Use transparency from system theme"
-msgstr ""
+msgstr "Выкарыстоўваць празрыстасць з сістэмнай тэмы"
 
 #: src/preferences.ui:1585
 msgid "Palette"
@@ -1406,7 +1415,7 @@ msgstr "Зялёны на чорным"
 
 #: src/profile-editor.cc:173
 msgid "White on black"
-msgstr "Белы тэкст на чорным фоне"
+msgstr "Белы на чорным"
 
 #. Translators: "GNOME" is the name of a colour scheme, "light" can be translated
 #: src/profile-editor.cc:178
@@ -1469,7 +1478,7 @@ msgstr "Кітайская спрошчаная"
 #: src/profile-editor.cc:774 src/profile-editor.cc:793
 #: src/profile-editor.cc:803
 msgid "Western"
-msgstr "Заходняе"
+msgstr "Заходняя"
 
 #: src/profile-editor.cc:765 src/profile-editor.cc:776
 #: src/profile-editor.cc:789 src/profile-editor.cc:801
@@ -1485,7 +1494,7 @@ msgstr "Кірыліца"
 #: src/profile-editor.cc:767 src/profile-editor.cc:784
 #: src/profile-editor.cc:795 src/profile-editor.cc:805
 msgid "Turkish"
-msgstr "Турэцкае"
+msgstr "Турэцкая"
 
 #: src/profile-editor.cc:768 src/profile-editor.cc:783
 #: src/profile-editor.cc:792 src/profile-editor.cc:806
@@ -1537,7 +1546,7 @@ msgstr "Харвацкая"
 
 #: src/profile-editor.cc:798
 msgid "Thai"
-msgstr "Тайскае"
+msgstr "Тайская"
 
 #: src/profile-editor.cc:800 src/profile-editor.cc:816
 msgid "Unicode"
@@ -1545,7 +1554,7 @@ msgstr "Юнікод"
 
 #: src/profile-editor.cc:809
 msgid "Vietnamese"
-msgstr "В'етнамскае"
+msgstr "В'етнамская"
 
 #: src/profile-editor.cc:817
 msgid "Legacy CJK Encodings"
@@ -2025,8 +2034,7 @@ msgid ""
 "Use “%s” to terminate the options and put the command line to execute after "
 "it."
 msgstr ""
-"Выкарыстайце «%s», каб скончыць спіс параметраў, і змясціце далей камандны "
-"радок, які трэба выканаць."
+"Выкарыстоўвайце «%s», каб завяршыць параметры, а потым укажыце радок каманды."
 
 #: src/terminal-options.cc:354 src/terminal-options.cc:367
 #, c-format
@@ -2203,7 +2211,7 @@ msgstr "КАТАЛОГ"
 
 #: src/terminal-options.cc:1594
 msgid "Wait until the child exits"
-msgstr "Чакаць заканчэння працы нашчадка"
+msgstr "Чакаць, пакуль існуе даччыны працэс"
 
 #: src/terminal-options.cc:1603
 msgid "Forward file descriptor"
@@ -2251,8 +2259,8 @@ msgid ""
 "Window options; if used before the first --window or --tab argument, sets "
 "the default for all windows:"
 msgstr ""
-"Опцыі акна. Калі ўжыты перад першым аргументам --window ці --tab, "
-"прызначаюць налады для ўсіх вокнаў:"
+"Параметры акна. Калі выкарыстоўваецца перад першым аргументам --window або --"
+"tab, прадвызначана задаюцца для ўсіх акон:"
 
 #: src/terminal-options.cc:1739
 msgid "Show per-window options"
@@ -2263,8 +2271,8 @@ msgid ""
 "Terminal options; if used before the first --window or --tab argument, sets "
 "the default for all terminals:"
 msgstr ""
-"Опцыі тэрмінала. Калі ўжыты перад першым аргументам --window ці --tab, "
-"прызначаюць налады для ўсіх тэрміналаў:"
+"Параметры тэрмінала. Калі выкарыстоўваецца перад першым аргументам --window "
+"або --tab, прадвызначана задаюцца для ўсіх тэрміналаў:"
 
 #: src/terminal-options.cc:1748
 msgid "Show per-terminal options"
@@ -2359,21 +2367,21 @@ msgstr "_Перазапусціць"
 #: src/terminal-screen.cc:1992
 msgid "There was an error creating the child process for this terminal"
 msgstr ""
-"Падчас утварэння працэсу-нашчадка для гэтага тэрмінала ўзнікла памылка"
+"Адбылася памылка пры стварэнні даччынага працэсу для гэтага тэрмінала"
 
 #: src/terminal-screen.cc:2356
 #, c-format
 msgid "The child process exited normally with status %d."
-msgstr "Працэс-нашчадак завяршыў працу належным чынам з кодам стану %d."
+msgstr "Даччыны працэс завяршыў працу належным чынам са статусам %d."
 
 #: src/terminal-screen.cc:2359
 #, c-format
 msgid "The child process was aborted by signal %d."
-msgstr "Працэс-нашчадак прымусова перарваны сігналам %d."
+msgstr "Даччыны працэс перарваны сігналам %d."
 
 #: src/terminal-screen.cc:2362
 msgid "The child process was aborted."
-msgstr "Працэс-нашчадак прымусова перарваны."
+msgstr "Даччыны працэс перарваны."
 
 #: src/terminal-tab-label.cc:223
 msgid "Close tab"
@@ -2381,7 +2389,7 @@ msgstr "Закрыць укладку"
 
 #: src/terminal-util.cc:156
 msgid "There was an error displaying help"
-msgstr "Падчас паказу даведкі ўзнікла памылка"
+msgstr "Адбылася памылка пры паказе даведкі"
 
 #: src/terminal-util.cc:214
 msgid "Contributors:"
@@ -2551,15 +2559,16 @@ msgid ""
 "There are still processes running in some terminals in this window. Closing "
 "the window will kill all of them."
 msgstr ""
-"У некаторых тэрміналах гэтага акна дагэтуль выконваюцца працэсы. Закрыццё "
-"акна заб'е іх."
+"У некаторых тэрміналах гэтага акна ўсё яшчэ выконваюцца працэсы. Закрыццё "
+"акна прывядзе да перарывання ўсіх гэтых працэсаў."
 
 #: src/terminal-window.cc:3376
 msgid ""
 "There is still a process running in this terminal. Closing the terminal will "
 "kill it."
 msgstr ""
-"У гэтым тэрмінале дагэтуль выконваецца працэс. Закрыццё тэрмінала заб'е яго."
+"У гэтым тэрмінале ўсё яшчэ выконваюцца працэсы. Закрыццё тэрмінала прывядзе "
+"да перарывання ўсіх гэтых працэсаў."
 
 #: src/terminal-window.cc:3381
 msgid "C_lose Window"

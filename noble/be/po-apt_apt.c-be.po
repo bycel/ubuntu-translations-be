@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: apt\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-03-28 20:44+0000\n"
-"PO-Revision-Date: 2025-03-24 17:46+0000\n"
+"PO-Revision-Date: 2026-03-21 19:19+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2026-03-21 10:08+0000\n"
-"X-Generator: Launchpad (build 561ec5bf26473fffe30568d6750c495df0ae299c)\n"
+"X-Launchpad-Export-Date: 2026-09-21 06:17+0000\n"
+"X-Generator: Launchpad (build 6c05f5b586acbfd5d3a5f5142777242f41e711b8)\n"
 
 #: cmdline/apt.cc:48
 msgid ""
@@ -39,54 +39,54 @@ msgstr ""
 "якія больш пасуюць для інтэрактыўнага выкарыстання.\n"
 
 #. query
-#: cmdline/apt.cc:77
+#: cmdline/apt.cc:215
 msgid "list packages based on package names"
 msgstr "спіс пакетаў на падставе іх назваў"
 
-#: cmdline/apt.cc:78
+#: cmdline/apt.cc:216
 msgid "search in package descriptions"
 msgstr ""
 
-#: cmdline/apt.cc:79
+#: cmdline/apt.cc:217
 msgid "show package details"
 msgstr "паказаць падрабязнасці пакета"
 
 #. package stuff
-#: cmdline/apt.cc:82
+#: cmdline/apt.cc:220
 msgid "install packages"
 msgstr "усталяваць пакеты"
 
-#: cmdline/apt.cc:83
+#: cmdline/apt.cc:221
 msgid "reinstall packages"
 msgstr "пераўсталяваць пакеты"
 
-#: cmdline/apt.cc:84
+#: cmdline/apt.cc:222
 msgid "remove packages"
 msgstr "выдаліць пакеты"
 
-#: cmdline/apt.cc:85
+#: cmdline/apt.cc:223
 msgid "automatically remove all unused packages"
 msgstr "аўтаматычна выдаляць усе пакеты, якія не выкарыстоўваюцца"
 
 #. system wide stuff
-#: cmdline/apt.cc:91
+#: cmdline/apt.cc:229
 msgid "update list of available packages"
 msgstr "абнавіць спіс даступных пакетаў"
 
-#: cmdline/apt.cc:92
+#: cmdline/apt.cc:230
 msgid "upgrade the system by installing/upgrading packages"
 msgstr "абнавіць сістэму, усталяваўшы/абнавіўшы пакеты"
 
-#: cmdline/apt.cc:93
+#: cmdline/apt.cc:231
 msgid "upgrade the system by removing/installing/upgrading packages"
 msgstr "абнавіць сістэму, выдаліўшы/усталяваўшы/абнавіўшы пакеты"
 
 #. misc
-#: cmdline/apt.cc:103
+#: cmdline/apt.cc:241
 msgid "edit the source information file"
 msgstr "рэдагаваць крыніцу звестак файла"
 
-#: cmdline/apt.cc:106
+#: cmdline/apt.cc:244
 msgid "satisfy dependency strings"
 msgstr "задаволіць радкі залежнасцей"
 
@@ -188,7 +188,7 @@ msgstr ""
 
 #: cmdline/apt-cache.cc:1104
 msgid "Show source records"
-msgstr ""
+msgstr "Паказаць зыходныя запісы"
 
 #: cmdline/apt-cache.cc:1110
 msgid "Search the package list for a regex pattern"
@@ -282,7 +282,7 @@ msgstr "Усталяваць новыя пакеты (pkg з'яўляецца li
 msgid "Reinstall packages (pkg is libc6 not libc6.deb)"
 msgstr "Пераўсталяваць пакеты (pkg з'яўляецца libc6, а не libc6.deb)"
 
-#: cmdline/apt-get.cc:414
+#: cmdline/apt-get.cc:414 apt-private/private-cmndline.cc:452
 msgid "Remove packages"
 msgstr "Выдаліць пакеты"
 
@@ -755,16 +755,16 @@ msgstr "Пакет «%s» не ўсталяваны, таму не выдале�
 msgid "Note, selecting '%s' instead of '%s'\n"
 msgstr "Заўважце, выбіраецца '%s' замест '%s'\n"
 
-#: apt-private/private-cmndline.cc:438
+#: apt-private/private-cmndline.cc:702
 msgid "Most used commands:"
 msgstr "Каманды, якія часта выкарыстоўваюцца:"
 
-#: apt-private/private-cmndline.cc:478
+#: apt-private/private-cmndline.cc:800
 #, c-format
 msgid "See %s for more information about the available commands."
 msgstr "Падрабязныя звесткі аб даступных камандах глядзіце ў %s."
 
-#: apt-private/private-cmndline.cc:482
+#: apt-private/private-cmndline.cc:804
 msgid ""
 "Configuration options and syntax is detailed in apt.conf(5).\n"
 "Information about how to configure sources can be found in sources.list(5).\n"
@@ -776,15 +776,15 @@ msgstr ""
 "Выбраць пакет і версію можна праз apt_preferences(5).\n"
 "Падрабязнасці бяспекі даступны ў apt-secure(8).\n"
 
-#: apt-private/private-cmndline.cc:487
+#: apt-private/private-cmndline.cc:809
 msgid "This APT has Super Cow Powers."
 msgstr "У APT ёсць суперсіла каровы."
 
-#: apt-private/private-cmndline.cc:489
+#: apt-private/private-cmndline.cc:811
 msgid "This APT helper has Super Meep Powers."
 msgstr "У гэтага памочніка APT ёсць суперсіла мышы."
 
-#: apt-private/private-cmndline.cc:677
+#: apt-private/private-cmndline.cc:1000
 msgid ""
 "--force-yes is deprecated, use one of the options starting with --allow "
 "instead."
@@ -794,7 +794,7 @@ msgstr ""
 
 #: apt-private/private-download.cc:59
 msgid "WARNING: The following packages cannot be authenticated!"
-msgstr "УВАГА: Такія пакеты немагчыма аўтэнтыфікаваць!"
+msgstr "ПАПЯРЭДЖАННЕ: наступныя пакеты немагчыма аўтэнтыфікаваць!"
 
 #: apt-private/private-download.cc:66
 msgid "Authentication warning overridden.\n"
@@ -802,7 +802,7 @@ msgstr "Папярэджанне аўтэнтыфікацыі не ўзятае 
 
 #: apt-private/private-download.cc:71 apt-private/private-download.cc:77
 msgid "Some packages could not be authenticated"
-msgstr "Некаторыя пакеты немагчыма аўтэнтыфікаваць"
+msgstr "Некаторыя пакеты не ўдалося аўтэнтыфікаваць"
 
 #: apt-private/private-download.cc:76
 msgid "Install these packages without verification?"
@@ -813,8 +813,8 @@ msgid ""
 "There were unauthenticated packages and -y was used without --allow-"
 "unauthenticated"
 msgstr ""
-"Пакеты былі неаўтэнтыфікаваныя, і -y выкарыстоўваўся без --allow-"
-"unauthenticated"
+"Знойдзены не аўтэнтыфікаваныя пакеты, а параметр -y выкарыстоўваўся без --"
+"allow-unauthenticated"
 
 #: apt-private/private-download.cc:117
 #, c-format
@@ -1663,18 +1663,18 @@ msgstr "Не ўдалося атрымаць атрыбуты"
 msgid "Empty files can't be valid archives"
 msgstr "Пустыя файлы не могуць быць сапраўднымі архівамі"
 
-#: methods/gpgv.cc:257
+#: methods/gpgv.cc:258
 #, c-format
 msgid "untrusted public key algorithm: %s"
 msgstr "ненадзейны алгарытм з публічным ключом: %s"
 
-#: methods/gpgv.cc:271
+#: methods/gpgv.cc:272
 #, c-format
 msgid "%s will be deprecated in a future release"
 msgstr "У будучых выпусках %s будзе састарэлым"
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:447
+#: methods/gpgv.cc:448
 #, c-format
 msgid ""
 "Clearsigned file isn't valid, got '%s' (does the network require "
@@ -1683,7 +1683,7 @@ msgstr ""
 "Файл clearsigned несапраўдны, атрымана «%s» (сетка патрабуе аўтэнтыфікацыю?)"
 
 #. TRANSLATORS: %s is a single techy word like 'NODATA'
-#: methods/gpgv.cc:455
+#: methods/gpgv.cc:456
 #, c-format
 msgid ""
 "Signed file isn't valid, got '%s' (does the network require authentication?)"
@@ -1691,11 +1691,11 @@ msgstr ""
 "Падпісаны файл з'яўляецца несапраўдным. Атрымана «%s» (сетка патрабуе "
 "аўтэнтыфікацыю?)"
 
-#: methods/gpgv.cc:465 methods/gpgv.cc:475
+#: methods/gpgv.cc:466 methods/gpgv.cc:476
 msgid "At least one invalid signature was encountered."
 msgstr "Выяўлены прынамсі адзін памылковы подпіс."
 
-#: methods/gpgv.cc:470
+#: methods/gpgv.cc:471
 msgid ""
 "Internal error: Good signature, but could not determine key fingerprint?!"
 msgstr ""
@@ -1721,16 +1721,16 @@ msgstr ""
 "Глядзіце раздзел DEPRECATION у apt-key(8) для атрымання падрабязных звестак."
 
 #. TRANSLATORS: The second %s is the reason and is untranslated for repository owners.
-#: methods/gpgv.cc:534 methods/gpgv.cc:541
+#: methods/gpgv.cc:535 methods/gpgv.cc:542
 #, c-format
 msgid "Signature by key %s uses weak algorithm (%s)"
 msgstr "Подпіс ключа %s выкарыстоўвае ненадзейны алгарытм (%s)"
 
-#: methods/gpgv.cc:557 methods/gpgv.cc:563
+#: methods/gpgv.cc:558 methods/gpgv.cc:564
 msgid "The following signatures were invalid:\n"
 msgstr "Наступныя подпісы былі памылковымі:\n"
 
-#: methods/gpgv.cc:573
+#: methods/gpgv.cc:574
 msgid ""
 "The following signatures couldn't be verified because the public key is not "
 "available:\n"
@@ -1764,7 +1764,7 @@ msgstr ""
 msgid "Disk not found."
 msgstr "Дыск не знойдзены."
 
-#: methods/http.cc:622 methods/http.cc:860 methods/basehttp.cc:775
+#: methods/http.cc:622 methods/http.cc:860 methods/basehttp.cc:787
 #, c-format
 msgid "File has unexpected size (%llu != %llu). Mirror sync in progress?"
 msgstr ""
@@ -1822,15 +1822,15 @@ msgstr "Гэты сервер HTTP мае пашкоджаную падтрым�
 msgid "Unknown date format"
 msgstr "Невядомы фармат даты"
 
-#: methods/basehttp.cc:703
+#: methods/basehttp.cc:715
 msgid "Bad header data"
 msgstr "Неадпаведныя даныя загалоўка"
 
-#: methods/basehttp.cc:722
+#: methods/basehttp.cc:734
 msgid "Connection failed"
 msgstr ""
 
-#: methods/basehttp.cc:817
+#: methods/basehttp.cc:829
 #, c-format
 msgid ""
 "Automatically disabled %s due to incorrect response from server/proxy. (man "
@@ -1839,7 +1839,7 @@ msgstr ""
 "Аўтаматычынае адключэнне %s з прычыны няправільнага адказу ад сервера або "
 "проксі. (man 5 apt.conf)"
 
-#: methods/basehttp.cc:931
+#: methods/basehttp.cc:943
 msgid "Internal error"
 msgstr "Унутраная памылка"
 
@@ -2004,6 +2004,6 @@ msgstr "Не атрымалася стварыць IPC канал для под�
 msgid "Connection closed prematurely"
 msgstr "Падключэнне закрыта заўчасна"
 
-#: methods/mirror.cc:313
+#: methods/mirror.cc:373
 msgid "The list of sources could not be read."
 msgstr "Не ўдалося прачытаць спіс крыніц."

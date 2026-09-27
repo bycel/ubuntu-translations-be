@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vim\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2026-03-13 01:52+0000\n"
+"POT-Creation-Date: 2026-08-25 00:21+0000\n"
 "PO-Revision-Date: 2026-01-07 20:12+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2026-03-21 10:00+0000\n"
-"X-Generator: Launchpad (build 561ec5bf26473fffe30568d6750c495df0ae299c)\n"
+"X-Launchpad-Export-Date: 2026-09-21 06:12+0000\n"
+"X-Generator: Launchpad (build 6c05f5b586acbfd5d3a5f5142777242f41e711b8)\n"
 
 msgid "ERROR: "
 msgstr ""
@@ -903,9 +903,11 @@ msgstr ""
 msgid "VIM - Search..."
 msgstr ""
 
+#. "Find what:" label + entry
 msgid "Find what:"
 msgstr ""
 
+#. "Replace with:" label + entry
 msgid "Replace with:"
 msgstr ""
 
@@ -1519,7 +1521,7 @@ msgid ""
 "   or:"
 msgstr ""
 
-#: ../main.c:3573
+#: ../main.c:3565
 msgid ""
 "\n"
 "Where case is ignored prepend / to make flag upper case"
@@ -3346,7 +3348,7 @@ msgid ""
 "macOS version w/o darwin feat."
 msgstr ""
 
-#: ../version.c:2886
+#: ../version.c:992
 msgid ""
 "\n"
 "OpenVMS version"
@@ -3484,7 +3486,7 @@ msgstr ""
 msgid "Help poor children in Uganda!"
 msgstr ""
 
-#: ../version.c:3137
+#: ../version.c:1232
 msgid "type  :help iccf<Enter>       for information "
 msgstr ""
 
@@ -3527,18 +3529,18 @@ msgstr ""
 msgid "Sponsor Vim development!"
 msgstr ""
 
-#: ../version.c:3212
+#: ../version.c:1307
 msgid "Become a registered Vim user!"
 msgstr ""
 
 msgid "type  :help sponsor<Enter>    for information "
 msgstr ""
 
-#: ../version.c:3216
+#: ../version.c:1311
 msgid "type  :help register<Enter>   for information "
 msgstr ""
 
-#: ../version.c:3218
+#: ../version.c:1313
 msgid "menu  Help->Sponsor/Register  for information    "
 msgstr ""
 
@@ -5806,6 +5808,9 @@ msgstr ""
 msgid "E648: Invalid buffer identifier in close"
 msgstr ""
 
+msgid "E649: Invalid identifier name in defineAnnoType"
+msgstr ""
+
 msgid "E650: Invalid buffer identifier in defineAnnoType"
 msgstr ""
 
@@ -7408,7 +7413,7 @@ msgstr ""
 msgid "E1116: \"assert_fails()\" fifth argument must be a string"
 msgstr ""
 
-#: ../errors.h:2889
+#: ../errors.h:2882
 msgid "E1117: Cannot use ! with nested :def"
 msgstr ""
 
@@ -7479,7 +7484,7 @@ msgstr ""
 msgid "E1139: Missing matching bracket after dict key"
 msgstr ""
 
-#: ../errors.h:2936
+#: ../errors.h:2929
 msgid "E1140: :for argument must be a sequence of lists"
 msgstr ""
 
@@ -7790,7 +7795,7 @@ msgstr ""
 msgid "E1224: String, Number or List required for argument %d"
 msgstr ""
 
-#: ../errors.h:3150
+#: ../errors.h:3143
 #, c-format
 msgid "E1225: String, List or Dictionary required for argument %d"
 msgstr ""
@@ -7839,7 +7844,7 @@ msgstr ""
 msgid "E1238: Blob required for argument %d"
 msgstr ""
 
-#: ../errors.h:3185
+#: ../errors.h:3178
 #, c-format
 msgid "E1239: Invalid value for blob: %d"
 msgstr ""
@@ -7882,7 +7887,7 @@ msgstr ""
 msgid "E1250: Argument of %s must be a List, String, Dictionary or Blob"
 msgstr ""
 
-#: ../errors.h:3221
+#: ../errors.h:3214
 #, c-format
 msgid "E1251: List, Dictionary, Blob or String required for argument %d"
 msgstr ""
@@ -8060,7 +8065,7 @@ msgstr ""
 msgid "E1300: Cannot use a partial with dictionary for :defer"
 msgstr ""
 
-#: ../errors.h:3354
+#: ../errors.h:3345
 #, c-format
 msgid "E1301: String, Number, List or Blob required for argument %d"
 msgstr ""
@@ -8126,21 +8131,21 @@ msgstr ""
 msgid "E1318: Not a valid command in a class: %s"
 msgstr ""
 
-#: ../errors.h:3388
+#: ../errors.h:3389
 msgid "E1319: Using a Class as a Number"
 msgstr ""
 
 msgid "E1320: Using an Object as a Number"
 msgstr ""
 
-#: ../errors.h:3392
+#: ../errors.h:3393
 msgid "E1321: Using a Class as a Float"
 msgstr ""
 
 msgid "E1322: Using an Object as a Float"
 msgstr ""
 
-#: ../errors.h:3396
+#: ../errors.h:3397
 msgid "E1323: Using a Class as a String"
 msgstr ""
 
@@ -8167,18 +8172,18 @@ msgstr ""
 msgid "E1329: Invalid class variable declaration: %s"
 msgstr ""
 
-#: ../errors.h:3417
+#: ../errors.h:3411
 #, c-format
 msgid "E1330: Invalid type for object variable: %s"
 msgstr ""
 
-#: ../errors.h:3412
+#: ../errors.h:3413
 msgid ""
 "E1331: Public must be followed by \"var\" or \"static\" or \"final\" or "
 "\"const\""
 msgstr ""
 
-#: ../errors.h:3414
+#: ../errors.h:3415
 #, c-format
 msgid "E1332: Public variable name cannot start with underscore: %s"
 msgstr ""
@@ -8371,11 +8376,11 @@ msgstr ""
 msgid "E1386: Object method \"%s\" accessible only using class \"%s\" object"
 msgstr ""
 
-#: ../errors.h:3532
+#: ../errors.h:3533
 msgid "E1387: Public variable not supported in an interface"
 msgstr ""
 
-#: ../errors.h:3534
+#: ../errors.h:3535
 msgid "E1388: Public keyword not supported for a method"
 msgstr ""
 
@@ -8403,7 +8408,7 @@ msgstr ""
 msgid "E1394: Type name must start with an uppercase letter: %s"
 msgstr ""
 
-#: ../errors.h:3548
+#: ../errors.h:3549
 #, c-format
 msgid "E1395: Type alias \"%s\" cannot be modified"
 msgstr ""
@@ -8421,17 +8426,17 @@ msgstr ""
 msgid "E1399: Type can only be used in a script"
 msgstr ""
 
-#: ../errors.h:3558
+#: ../errors.h:3559
 #, c-format
 msgid "E1400: Using type alias \"%s\" as a Number"
 msgstr ""
 
-#: ../errors.h:3560
+#: ../errors.h:3561
 #, c-format
 msgid "E1401: Using type alias \"%s\" as a Float"
 msgstr ""
 
-#: ../errors.h:3562
+#: ../errors.h:3563
 #, c-format
 msgid "E1402: Using type alias \"%s\" as a String"
 msgstr ""
@@ -8447,7 +8452,7 @@ msgstr ""
 msgid "E1405: Class \"%s\" cannot be used as a value"
 msgstr ""
 
-#: ../errors.h:3570
+#: ../errors.h:3571
 msgid "E1406: Cannot use a Class as a variable or value"
 msgstr ""
 
@@ -8507,6 +8512,9 @@ msgstr ""
 
 #, c-format
 msgid "E1510: Value too large: %s"
+msgstr ""
+
+msgid "E1580: Too many text properties on a single line"
 msgstr ""
 
 #. type of cmdline window or 0
@@ -9400,7 +9408,7 @@ msgstr ""
 msgid "room (in pixels) left above/below the window"
 msgstr ""
 
-#: ../../runtime/optwin.vim:680
+#: ../../runtime/optwin.vim:675
 msgid "list of ASCII characters that can be combined into complex shapes"
 msgstr ""
 
@@ -9410,7 +9418,7 @@ msgstr ""
 msgid "use a pseudo-tty for I/O to external commands"
 msgstr ""
 
-#: ../../runtime/optwin.vim:690
+#: ../../runtime/optwin.vim:685
 msgid ""
 "\"last\", \"buffer\" or \"current\": which directory used for the file "
 "browser"
@@ -9434,7 +9442,7 @@ msgstr ""
 msgid "use balloon evaluation in the GUI"
 msgstr ""
 
-#: ../../runtime/optwin.vim:713
+#: ../../runtime/optwin.vim:708
 msgid "use balloon evaluation in the terminal"
 msgstr ""
 
@@ -10010,7 +10018,7 @@ msgstr ""
 msgid "encoding of the \":make\" and \":grep\" output"
 msgstr ""
 
-#: ../../runtime/optwin.vim:1227
+#: ../../runtime/optwin.vim:1218
 msgid "function to display text in the quickfix window"
 msgstr ""
 
@@ -10219,7 +10227,7 @@ msgstr ""
 msgid "name of the Python 3 dynamic library"
 msgstr ""
 
-#: ../../runtime/optwin.vim:1425
+#: ../../runtime/optwin.vim:1416
 msgid "name of the Python 3 home directory"
 msgstr ""
 

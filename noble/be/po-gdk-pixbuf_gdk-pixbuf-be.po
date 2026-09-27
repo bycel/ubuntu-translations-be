@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gdk-pixbuf.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gdk-pixbuf/issues\n"
 "POT-Creation-Date: 2023-11-15 05:15+0000\n"
-"PO-Revision-Date: 2026-02-13 16:36+0000\n"
+"PO-Revision-Date: 2026-03-21 19:18+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -22,17 +22,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2026-03-21 10:00+0000\n"
-"X-Generator: Launchpad (build 561ec5bf26473fffe30568d6750c495df0ae299c)\n"
+"X-Launchpad-Export-Date: 2026-09-21 06:12+0000\n"
+"X-Generator: Launchpad (build 6c05f5b586acbfd5d3a5f5142777242f41e711b8)\n"
 "Language: be\n"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:190 gdk-pixbuf/gdk-pixbuf-io.c:1225
-#: gdk-pixbuf/gdk-pixbuf-io.c:1498
+#: gdk-pixbuf/gdk-pixbuf-animation.c:190 gdk-pixbuf/gdk-pixbuf-io.c:1223
+#: gdk-pixbuf/gdk-pixbuf-io.c:1496
 #, c-format
 msgid "Failed to open file “%s”: %s"
 msgstr "Не ўдалося адкрыць файл \"%s\": %s"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:203 gdk-pixbuf/gdk-pixbuf-io.c:1086
+#: gdk-pixbuf/gdk-pixbuf-animation.c:203 gdk-pixbuf/gdk-pixbuf-io.c:1084
 #, c-format
 msgid "Image file “%s” contains no data"
 msgstr "Файл відарыса «%s» не змяшчае даных"
@@ -46,14 +46,14 @@ msgstr ""
 "Не ўдалося загрузіць анімацыйны файл \"%s\": прычына невядомая, відаць, файл "
 "пашкоджаны"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:309 gdk-pixbuf/gdk-pixbuf-io.c:1261
-#: gdk-pixbuf/gdk-pixbuf-io.c:1550
+#: gdk-pixbuf/gdk-pixbuf-animation.c:309 gdk-pixbuf/gdk-pixbuf-io.c:1259
+#: gdk-pixbuf/gdk-pixbuf-io.c:1548
 #, c-format
 msgid ""
 "Failed to load image “%s”: reason not known, probably a corrupt image file"
 msgstr ""
-"Не ўдалося загрузіць выяву \"%s\": прычына невядомая, відаць, выява "
-"пашкоджана."
+"Не ўдалося загрузіць відарыс «%s»: прычына невядома, хутчэй за ўсё файл "
+"пашкоджаны"
 
 #: gdk-pixbuf/gdk-pixbuf.c:248
 msgid "Number of Channels"
@@ -129,80 +129,84 @@ msgstr "Піксельныя даныя"
 msgid "Readonly pixel data"
 msgstr "Піксельныя даныя толькі для чытання"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:902
+#: gdk-pixbuf/gdk-pixbuf-io.c:900
 #, c-format
 msgid "Unable to load image-loading module: %s: %s"
-msgstr "Не ўдалося загрузіць модуль чытання выяў: %s: %s"
+msgstr "Немагчыма загрузіць модуль загрузкі відарысаў: %s: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:920
+#: gdk-pixbuf/gdk-pixbuf-io.c:918
 #, c-format
 msgid ""
 "Image-loading module %s does not export the proper interface; perhaps it’s "
 "from a different gdk-pixbuf version?"
 msgstr ""
-"Модуль чытання выяў %s не экспартаваў прыдатны інтэрфейс. Можа, ён належыць "
-"іншай версіі gdk-pixbuf?"
+"Модуль загрузкі відарысаў %s не экспартуе адпаведны інтэрфейс; магчыма, што "
+"ён належыць іншай версіі gdk-pixbuf?"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:930 gdk-pixbuf/gdk-pixbuf-io.c:973
+#: gdk-pixbuf/gdk-pixbuf-io.c:928 gdk-pixbuf/gdk-pixbuf-io.c:971
 #, c-format
 msgid "Image type “%s” is not supported"
 msgstr "Тып відарыса «%s» не падтрымліваецца"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1058
+#: gdk-pixbuf/gdk-pixbuf-io.c:1056
 #, c-format
 msgid "Couldn’t recognize the image file format for file “%s”"
-msgstr "Не ўдалося апазнаць фармат файла выявы для файла \"%s\""
+msgstr "Не ўдалося распазнаць фармат файла відарыса для файла «%s»"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1066
+#: gdk-pixbuf/gdk-pixbuf-io.c:1064
 msgid "Unrecognized image file format"
-msgstr "Неапазнаны фармат файла выявы"
+msgstr "Нераспазнаны фармат файла відарыса"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1272
+#: gdk-pixbuf/gdk-pixbuf-io.c:1270
 #, c-format
 msgid "Failed to load image “%s”: %s"
 msgstr "Не ўдалося загрузіць відарыс «%s»: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2347 gdk-pixbuf/io-gdip-utils.c:840
+#: gdk-pixbuf/gdk-pixbuf-io.c:2345 gdk-pixbuf/io-gdip-utils.c:840
 #, c-format
 msgid "Error writing to image file: %s"
 msgstr "Памылка запісу ў файл відарыса: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2389 gdk-pixbuf/gdk-pixbuf-io.c:2510
+#: gdk-pixbuf/gdk-pixbuf-io.c:2387 gdk-pixbuf/gdk-pixbuf-io.c:2508
 #, c-format
 msgid "This build of gdk-pixbuf does not support saving the image format: %s"
-msgstr "Гэта зборка gdk-pixbuf не ўмее захоўваць выявы ў такім фармаце: %s"
+msgstr ""
+"Гэта зборка gdk-pixbuf не падтрымлівае захаванне відарысаў у такім фармаце: "
+"%s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2420
+#: gdk-pixbuf/gdk-pixbuf-io.c:2418
 msgid "Insufficient memory to save image to callback"
-msgstr "Не стае памяці для захавання выявы для функцыі зваротнага выкліку"
+msgstr ""
+"Недастаткова памяці для захавання відарыса і ажыццяўлення функцыі зваротнага "
+"выкліку"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2433
+#: gdk-pixbuf/gdk-pixbuf-io.c:2431
 msgid "Failed to open temporary file"
 msgstr "Не ўдалося адкрыць часовы файл"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2456
+#: gdk-pixbuf/gdk-pixbuf-io.c:2454
 msgid "Failed to read from temporary file"
 msgstr "Не ўдалося прачытаць з часовага файла"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2678
+#: gdk-pixbuf/gdk-pixbuf-io.c:2676
 #, c-format
 msgid "Failed to open “%s” for writing: %s"
 msgstr "Не ўдалося адкрыць \"%s\" для запісу: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2704
+#: gdk-pixbuf/gdk-pixbuf-io.c:2702
 #, c-format
 msgid ""
 "Failed to close “%s” while writing image, all data may not have been saved: "
 "%s"
 msgstr ""
-"Не ўдалося закрыць \"%s\" падчас запісу выявы. Магчыма, не ўсе даныя былі "
-"захаваны: %s"
+"Не ўдалося закрыць «%s» падчас запісу відарыса. Магчыма, што не ўсе даныя "
+"былі захаваны: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2938 gdk-pixbuf/gdk-pixbuf-io.c:2993
+#: gdk-pixbuf/gdk-pixbuf-io.c:2936 gdk-pixbuf/gdk-pixbuf-io.c:2991
 msgid "Insufficient memory to save image into a buffer"
 msgstr "Недастаткова памяці для захавання відарыса ў буферы"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:3039
+#: gdk-pixbuf/gdk-pixbuf-io.c:3037
 msgid "Error writing to image stream"
 msgstr "Памылка запісу ў плынь відарыса"
 
@@ -212,13 +216,13 @@ msgid ""
 "Internal error: Image loader module “%s” failed to complete an operation, "
 "but didn’t give a reason for the failure"
 msgstr ""
-"Унутраная памылка: модуль чытання выяў \"%s\" не здолеў закончыць дзеянне, "
-"але не падаў прычыну няўдачы"
+"Унутраная памылка: збой модуля загрузкі відарысаў «%s» пры завяршэнні "
+"аперацыі, але прычына збою не была паведамлена"
 
 #: gdk-pixbuf/gdk-pixbuf-loader.c:468
 #, c-format
 msgid "Incremental loading of image type “%s” is not supported"
-msgstr "Паступовая загрузка выявы тыпу \"%s\" не падтрымліваецца"
+msgstr "Інкрэментная загрузка відарыса тыпу «%s» не падтрымліваецца"
 
 #: gdk-pixbuf/gdk-pixbuf-simple-anim.c:166
 msgid "Loop"
@@ -276,13 +280,13 @@ msgstr "Відарыс ANI абрэзаны або няпоўны."
 #: gdk-pixbuf/io-ani.c:687
 msgctxt "image format"
 msgid "Windows animated cursor"
-msgstr "Анімацыйны курсор Windows"
+msgstr "анімаваны курсор Windows"
 
 #: gdk-pixbuf/io-bmp.c:234 gdk-pixbuf/io-bmp.c:275 gdk-pixbuf/io-bmp.c:385
 #: gdk-pixbuf/io-bmp.c:412 gdk-pixbuf/io-bmp.c:437 gdk-pixbuf/io-bmp.c:472
 #: gdk-pixbuf/io-bmp.c:494 gdk-pixbuf/io-bmp.c:572
 msgid "BMP image has bogus header data"
-msgstr "Выява BMP мае дзіўныя даныя ў загалоўку"
+msgstr "Відарыс BMP мае фіктыўныя даныя ў загалоўку"
 
 #: gdk-pixbuf/io-bmp.c:245 gdk-pixbuf/io-bmp.c:507
 msgid "Not enough memory to load bitmap image"
@@ -290,23 +294,23 @@ msgstr "Недастаткова памяці для загрузкі растр
 
 #: gdk-pixbuf/io-bmp.c:339
 msgid "BMP image has unsupported header size"
-msgstr "Выява BMP мае непрымальны памер загалоўка"
+msgstr "Відарыс BMP мае памер загалоўка, які не падтрымліваецца"
 
 #: gdk-pixbuf/io-bmp.c:348
 msgid "BMP image has unsupported depth"
-msgstr "Выява BMP мае непрымальную глыбіню"
+msgstr "Відарыс BMP мае глыбіню, якая не падтрымліваецца"
 
 #: gdk-pixbuf/io-bmp.c:367
 msgid "BMP image has oversize palette"
-msgstr "Выява BMP мае завялікую палітру"
+msgstr "Відарыс BMP мае палітру, якая перавышае стандартны памер"
 
 #: gdk-pixbuf/io-bmp.c:399
 msgid "Topdown BMP images cannot be compressed"
-msgstr "Немагчыма сціснуць перакуленыя выявы BMP"
+msgstr "Немагчыма сціснуць перавернутыя відарысы BMP"
 
 #: gdk-pixbuf/io-bmp.c:424
 msgid "BMP image width too large"
-msgstr "Памер выявы BMP надта вялікі"
+msgstr "Шырыня відарыса BMP занадта вялікая"
 
 #: gdk-pixbuf/io-bmp.c:814 gdk-pixbuf/io-png.c:587 gdk-pixbuf/io-pnm.c:722
 #: gdk-pixbuf/io-pnm.c:879
@@ -319,7 +323,7 @@ msgstr "Памылка падчас дэкадавання карты колер
 
 #: gdk-pixbuf/io-bmp.c:1403 gdk-pixbuf/io-bmp.c:1415
 msgid "Image is too wide for BMP format."
-msgstr "Выява зашырокая для фармату BMP"
+msgstr "Відарыс занадта шырокі для фармату BMP."
 
 #: gdk-pixbuf/io-bmp.c:1448
 msgid "Couldn’t allocate memory for saving BMP file"
@@ -349,7 +353,7 @@ msgctxt "image format"
 msgid "Windows icon"
 msgstr "Значок Windows"
 
-#: gdk-pixbuf/io-gdip-jpeg.c:54 gdk-pixbuf/io-jpeg.c:1409
+#: gdk-pixbuf/io-gdip-jpeg.c:54 gdk-pixbuf/io-jpeg.c:1421
 #, c-format
 msgid ""
 "JPEG quality must be a value between 0 and 100; value “%s” could not be "
@@ -358,7 +362,7 @@ msgstr ""
 "Якасць відарыса JPEG павінна мець значэнне ў дыяпазоне ад 0 да 100. Не "
 "ўдалося прааналізаваць значэнне «%s»."
 
-#: gdk-pixbuf/io-gdip-jpeg.c:69 gdk-pixbuf/io-jpeg.c:1425
+#: gdk-pixbuf/io-gdip-jpeg.c:69 gdk-pixbuf/io-jpeg.c:1437
 #, c-format
 msgid ""
 "JPEG quality must be a value between 0 and 100; value “%d” is not allowed."
@@ -366,7 +370,7 @@ msgstr ""
 "Якасць выявы JPEG мусіць мець значэнне ў дыяпазоне ад 0 да 100. Значэнне "
 "\"%d\" не дазволена."
 
-#: gdk-pixbuf/io-gdip-jpeg.c:147 gdk-pixbuf/io-jpeg.c:1710
+#: gdk-pixbuf/io-gdip-jpeg.c:147 gdk-pixbuf/io-jpeg.c:1722
 msgctxt "image format"
 msgid "JPEG"
 msgstr "JPEG"
@@ -430,7 +434,7 @@ msgstr "Не стае памяці для загрузкі файла GIF"
 
 #: gdk-pixbuf/io-gif.c:509
 msgid "GIF image is corrupt (incorrect LZW compression)"
-msgstr "Выява GIF пашкоджана (хібны сціск LZW)"
+msgstr "Відарыс GIF пашкоджаны (няправільны сціск LZW)"
 
 #: gdk-pixbuf/io-gif.c:545
 msgid "File does not appear to be a GIF file"
@@ -443,15 +447,15 @@ msgstr "Версія %s фармату файлаў GIF не падтрымлі�
 
 #: gdk-pixbuf/io-gif.c:589
 msgid "Resulting GIF image has zero size"
-msgstr "Выніковая GIF-выява мае нулявы памер"
+msgstr "Выніковы відарыс GIF мае нулявы памер"
 
 #: gdk-pixbuf/io-gif.c:659
 msgid ""
 "GIF image has no global colormap, and a frame inside it has no local "
 "colormap."
 msgstr ""
-"Выява GIF не мае глабальнай карты колераў, а яго кадр не мае лакальнай карты "
-"колераў."
+"У відарыса GIF адсутнічае глабальная карта колераў, а ўнутры кадра "
+"адсутнічае лакальная карта колераў."
 
 #: gdk-pixbuf/io-gif.c:863 gdk-pixbuf/io-gif.c:988
 msgid "GIF file was missing some data (perhaps it was truncated somehow?)"
@@ -459,11 +463,11 @@ msgstr "У файле GIF адсутнічаюць некаторыя даныя
 
 #: gdk-pixbuf/io-gif.c:922
 msgid "GIF image was truncated or incomplete."
-msgstr "Выява GIF была абрэзана або не закончана."
+msgstr "Відарыс GIF быў усечаны або няпоўны."
 
 #: gdk-pixbuf/io-gif.c:929
 msgid "Not all frames of the GIF image were loaded."
-msgstr "Не ўсе кадры GIF выявы загрузіліся."
+msgstr "Не ўсе кадры відарыса GIF былі загружаны."
 
 #: gdk-pixbuf/io-icns.c:363
 #, c-format
@@ -508,15 +512,15 @@ msgstr "Не стае памяці для загрузкі файла ICO"
 
 #: gdk-pixbuf/io-ico.c:629
 msgid "ICO image was truncated or incomplete."
-msgstr "Выява ICO была абрэзана або не закончана."
+msgstr "Відарыс ICO быў усечаны або няпоўны."
 
 #: gdk-pixbuf/io-ico.c:1070
 msgid "Image too large to be saved as ICO"
-msgstr "Выява надта вялікая, каб быць захаванай як ICO"
+msgstr "Відарыс занадта вялікі, каб быць захаваны як ICO"
 
 #: gdk-pixbuf/io-ico.c:1081
 msgid "Cursor hotspot outside image"
-msgstr "Курсор па-за выявай"
+msgstr "Актыўная вобласць вызначана па-за межамі відарыса"
 
 #: gdk-pixbuf/io-ico.c:1104
 #, c-format
@@ -528,34 +532,34 @@ msgstr "Глыбіня колераў файла ICO не падтрымліва
 msgid "Error interpreting JPEG image file (%s)"
 msgstr "Памылка інтэрпрэтацыі файла відарыса JPEG (%s)"
 
-#: gdk-pixbuf/io-jpeg.c:647
+#: gdk-pixbuf/io-jpeg.c:659
 msgid ""
 "Insufficient memory to load image, try exiting some applications to free "
 "memory"
 msgstr ""
-"Не стае памяці для загрузкі выявы, паспрабуйце выйсці з некаторых праграм, "
-"каб вызваліць памяць"
+"Недастаткова памяці для загрузкі відарыса. Паспрабуйце выйсці з некаторых "
+"праграм, каб вызваліць памяць"
 
-#: gdk-pixbuf/io-jpeg.c:720 gdk-pixbuf/io-jpeg.c:970
+#: gdk-pixbuf/io-jpeg.c:732 gdk-pixbuf/io-jpeg.c:982
 #, c-format
 msgid "Unsupported JPEG color space (%s)"
 msgstr "Колеравая прастора JPEG (%s) не падтрымліваецца"
 
-#: gdk-pixbuf/io-jpeg.c:845 gdk-pixbuf/io-jpeg.c:1169 gdk-pixbuf/io-jpeg.c:1516
-#: gdk-pixbuf/io-jpeg.c:1526
+#: gdk-pixbuf/io-jpeg.c:857 gdk-pixbuf/io-jpeg.c:1181 gdk-pixbuf/io-jpeg.c:1528
+#: gdk-pixbuf/io-jpeg.c:1538
 msgid "Couldn’t allocate memory for loading JPEG file"
 msgstr "Не ўдалося выдзеліць памяць для загрузкі файла JPEG"
 
-#: gdk-pixbuf/io-jpeg.c:1127
+#: gdk-pixbuf/io-jpeg.c:1139
 msgid "Transformed JPEG has zero width or height."
-msgstr "Трансфармаваная выява JPEG мае нулявую шырыню ці вышыню."
+msgstr "Трансфармаваны відарыс JPEG мае нулявую шырыню або вышыню."
 
-#: gdk-pixbuf/io-jpeg.c:1153
+#: gdk-pixbuf/io-jpeg.c:640 gdk-pixbuf/io-jpeg.c:1165
 #, c-format
 msgid "Unsupported number of color components (%d)"
 msgstr "Непадтрымліваемая колькасць складнікаў колеру (%d)"
 
-#: gdk-pixbuf/io-jpeg.c:1446
+#: gdk-pixbuf/io-jpeg.c:1458
 #, c-format
 msgid ""
 "JPEG x-dpi must be a value between 1 and 65535; value “%s” is not allowed."
@@ -563,7 +567,7 @@ msgstr ""
 "Значэнне JPEG x-dpi мусіць быць у дыяпазоне ад 1 да 65535. Значэнне \"%s\" "
 "не дазволена."
 
-#: gdk-pixbuf/io-jpeg.c:1467
+#: gdk-pixbuf/io-jpeg.c:1479
 #, c-format
 msgid ""
 "JPEG y-dpi must be a value between 1 and 65535; value “%s” is not allowed."
@@ -571,7 +575,7 @@ msgstr ""
 "Значэнне JPEG y-dpi мусіць быць у дыяпазоне ад 1 да 65535. Значэнне \"%s\" "
 "не дазволена."
 
-#: gdk-pixbuf/io-jpeg.c:1481
+#: gdk-pixbuf/io-jpeg.c:1493
 #, c-format
 msgid "Color profile has invalid length “%u”."
 msgstr "Профіль колераў мае памылковую даўжыню «%u»."
@@ -582,7 +586,7 @@ msgstr "Памылковая колькасць бітаў на канал ві�
 
 #: gdk-pixbuf/io-png.c:145 gdk-pixbuf/io-png.c:730
 msgid "Transformed PNG has zero width or height."
-msgstr "Трансфармаваная выява PNG мае нулявую шырыню ці вышыню."
+msgstr "Трансфармаваны відарыс PNG мае нулявую шырыню або вышыню."
 
 #: gdk-pixbuf/io-png.c:153
 msgid "Bits per channel of transformed PNG is not 8."
@@ -618,8 +622,8 @@ msgid ""
 "Insufficient memory to store a %lu by %lu image; try exiting some "
 "applications to reduce memory usage"
 msgstr ""
-"Не стае памяці для захавання выявы %lux%lu. Каб зменшыць узровень "
-"выкарыстання памяці, паспрабуйце выйсці з некаторых праграм"
+"Недастаткова памяці для захавання відарыса %lux%lu; паспрабуйце выйсці з "
+"некаторых праграм, каб паменшыць выкарыстанне памяці"
 
 #: gdk-pixbuf/io-png.c:820
 msgid "Fatal error reading PNG image file"
@@ -711,7 +715,7 @@ msgstr "Памылковы тып відарыса PNM у фармаце RAW"
 
 #: gdk-pixbuf/io-pnm.c:667
 msgid "PNM image loader does not support this PNM subformat"
-msgstr "Модуль чытання PNM не падтрымлівае гэтага падфармату PNM"
+msgstr "Загрузчык відарысаў PNM не падтрымлівае гэты падфармат PNM"
 
 #: gdk-pixbuf/io-pnm.c:754 gdk-pixbuf/io-pnm.c:991
 msgid "Raw PNM formats require exactly one whitespace before sample data"
@@ -721,7 +725,7 @@ msgstr ""
 
 #: gdk-pixbuf/io-pnm.c:781
 msgid "Cannot allocate memory for loading PNM image"
-msgstr "Не ўдалося выдзеліць памяць для загрузкі выявы PNM"
+msgstr "Немагчыма вылучыць памяць для загрузкі відарыса PNM"
 
 #: gdk-pixbuf/io-pnm.c:835
 msgid "Insufficient memory to load PNM context struct"
@@ -729,7 +733,7 @@ msgstr "Не стае памяці для загрузкі структуры к
 
 #: gdk-pixbuf/io-pnm.c:892
 msgid "Unexpected end of PNM image data"
-msgstr "Нечаканае заканчэнне даных выявы PNM"
+msgstr "Нечаканы канец даных відарыса PNM"
 
 #: gdk-pixbuf/io-pnm.c:1020
 msgid "Insufficient memory to load PNM file"
@@ -790,7 +794,7 @@ msgstr "Не ўдалося стварыць аб'ект GdkPixbufLoader."
 
 #: gdk-pixbuf/io-qtif.c:424
 msgid "Failed to find an image data atom."
-msgstr "Не ўдалося адшукаць кадр даных выявы."
+msgstr "Не ўдалося знайсці атам даных відарыса."
 
 #: gdk-pixbuf/io-qtif.c:599
 msgctxt "image format"
@@ -811,7 +815,7 @@ msgstr "Нечаканая глыбіня колераў для элемента
 
 #: gdk-pixbuf/io-tga.c:535
 msgid "Pseudocolor image does not contain a colormap"
-msgstr "Псеўдакаляровая выява без карты колераў"
+msgstr "Псеўдакаляровы відарыс не змяшчае карту колераў"
 
 #: gdk-pixbuf/io-tga.c:578
 msgid "Cannot allocate TGA header memory"
@@ -823,7 +827,7 @@ msgstr "Відарыс TGA мае памылковы памер"
 
 #: gdk-pixbuf/io-tga.c:615 gdk-pixbuf/io-tga.c:622
 msgid "TGA image type not supported"
-msgstr "Тып выявы TGA не падтрымліваецца"
+msgstr "Тып відарыса TGA, які не падтрымліваецца"
 
 #: gdk-pixbuf/io-tga.c:650
 msgid "Cannot allocate memory for TGA context struct"
@@ -831,7 +835,7 @@ msgstr "Не ўдалося выдзеліць памяць для структ�
 
 #: gdk-pixbuf/io-tga.c:712
 msgid "TGA image was truncated or incomplete."
-msgstr "Выява TGA была абрэзана або не закончана."
+msgstr "Відарыс TGA быў усечаны або няпоўны."
 
 #: gdk-pixbuf/io-tga.c:764
 msgctxt "image format"
@@ -840,11 +844,11 @@ msgstr "Targa"
 
 #: gdk-pixbuf/io-tiff.c:117
 msgid "Could not get image width (bad TIFF file)"
-msgstr "Не ўдалося атрымаць даныя аб шырыні выявы (хібны файл TIFF)"
+msgstr "Не ўдалося атрымаць шырыню відарыса (праблемны файл TIFF)"
 
 #: gdk-pixbuf/io-tiff.c:125
 msgid "Could not get image height (bad TIFF file)"
-msgstr "Не ўдалося атрымаць даныя аб вышыні выявы (хібны файл TIFF)"
+msgstr "Не ўдалося атрымаць вышыню відарыса (праблемны файл TIFF)"
 
 #: gdk-pixbuf/io-tiff.c:133
 msgid "Width or height of TIFF image is zero"
@@ -852,7 +856,7 @@ msgstr "Нулявая шырыня ці вышыня выявы TIFF"
 
 #: gdk-pixbuf/io-tiff.c:141 gdk-pixbuf/io-tiff.c:151
 msgid "Dimensions of TIFF image too large"
-msgstr "Памер выявы TIFF надта вялікі"
+msgstr "Памер відарыса TIFF занадта вялікі"
 
 #: gdk-pixbuf/io-tiff.c:177 gdk-pixbuf/io-tiff.c:189 gdk-pixbuf/io-tiff.c:585
 msgid "Insufficient memory to open TIFF file"
@@ -864,7 +868,7 @@ msgstr "Не ўдалося загрузіць RGB-даныя з файла TIFF
 
 #: gdk-pixbuf/io-tiff.c:378
 msgid "Failed to open TIFF image"
-msgstr "Не ўдалося адкрыць выяву"
+msgstr "Не ўдалося адкрыць відарыс TIFF"
 
 #: gdk-pixbuf/io-tiff.c:516 gdk-pixbuf/io-tiff.c:528
 msgid "Failed to load TIFF image"
@@ -930,15 +934,15 @@ msgstr "Загаловак выявы XPM адсутнічае"
 
 #: gdk-pixbuf/io-xpm.c:481 gdk-pixbuf/io-xpm.c:507
 msgid "Invalid XPM header"
-msgstr "Хібны загаловак XPM"
+msgstr "Памылковы загаловак XPM"
 
 #: gdk-pixbuf/io-xpm.c:489
 msgid "XPM file has image width <= 0"
-msgstr "Файл XPM мае недадатную шырыню выявы"
+msgstr "Шырыня відарыса файла XPM менш або роўная нулю"
 
 #: gdk-pixbuf/io-xpm.c:497
 msgid "XPM file has image height <= 0"
-msgstr "Файл XPM мае недадатную вышыню выявы"
+msgstr "Вышыня відарыса файла XPM менш або роўная нулю"
 
 #: gdk-pixbuf/io-xpm.c:514
 msgid "XPM has invalid number of chars per pixel"
@@ -950,7 +954,7 @@ msgstr "Файл XPM мае памылковую колькасць колера
 
 #: gdk-pixbuf/io-xpm.c:535 gdk-pixbuf/io-xpm.c:544 gdk-pixbuf/io-xpm.c:593
 msgid "Cannot allocate memory for loading XPM image"
-msgstr "Неўдалося выдзеліць памяць для загрузкі выявы XPM"
+msgstr "Немагчыма вылучыць памяць для загрузкі відарыса XPM"
 
 #: gdk-pixbuf/io-xpm.c:558
 msgid "Cannot read XPM colormap"
@@ -964,7 +968,7 @@ msgstr ""
 msgid "Failed to write to temporary file when loading XPM image"
 msgstr "Не ўдалося запісаць у часовы файл пры загрузцы відарыса XPM"
 
-#: gdk-pixbuf/io-xpm.c:845
+#: gdk-pixbuf/io-xpm.c:844
 msgctxt "image format"
 msgid "XPM"
 msgstr "XPM"

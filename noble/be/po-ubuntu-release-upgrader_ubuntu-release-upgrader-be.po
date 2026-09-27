@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: update-manager\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2026-01-20 09:49+0000\n"
-"PO-Revision-Date: 2026-02-13 16:24+0000\n"
+"POT-Creation-Date: 2026-09-04 12:57+0000\n"
+"PO-Revision-Date: 2026-03-21 18:08+0000\n"
 "Last-Translator: Ubuntu Belarusian Translators Team <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2026-03-21 09:36+0000\n"
-"X-Generator: Launchpad (build 561ec5bf26473fffe30568d6750c495df0ae299c)\n"
+"X-Launchpad-Export-Date: 2026-09-21 05:52+0000\n"
+"X-Generator: Launchpad (build 6c05f5b586acbfd5d3a5f5142777242f41e711b8)\n"
 "Language: be\n"
 
 #. TRANSLATORS: %s is a country
@@ -55,9 +55,9 @@ msgstr ""
 #: ../DistUpgrade/DistUpgradeCache.py:201
 msgid "Remove package in bad state"
 msgid_plural "Remove packages in bad state"
-msgstr[0] "Выдаліць пакет, пазначаны як памылковы"
-msgstr[1] "Выдаліць пакеты, пазначаныя як памылковыя"
-msgstr[2] "Выдаліць пакеты ў кепскім стане"
+msgstr[0] "Выдаліць пакет з памылкамі"
+msgstr[1] "Выдаліць пакеты з памылкамі"
+msgstr[2] "Выдаліць пакеты з памылкамі"
 
 #: ../DistUpgrade/DistUpgradeCache.py:204
 #, python-format
@@ -827,17 +827,17 @@ msgstr "Частковае абнаўленне завершана."
 msgid "Lock screen disabled"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2060
+#: ../DistUpgrade/DistUpgradeController.py:2251
 msgid ""
 "Your lock screen has been disabled and will remain disabled during the "
 "upgrade."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2068
+#: ../DistUpgrade/DistUpgradeController.py:2259
 msgid "Unable to disable lock screen"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeController.py:2069
+#: ../DistUpgrade/DistUpgradeController.py:2260
 msgid ""
 "It is highly recommended that the lock screen be disabled during the upgrade "
 "to prevent later issues. Please ensure your screen lock is disabled before "
@@ -1168,11 +1168,11 @@ msgstr ""
 "\n"
 "Вы ўпэўнены, што хочаце працягнуць?"
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:228
+#: ../DistUpgrade/DistUpgradeQuirks.py:236
 msgid "The Robot Operating System (ROS) is installed"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:229
+#: ../DistUpgrade/DistUpgradeQuirks.py:237
 msgid ""
 "It appears that ROS is currently installed. Each ROS release is very strict "
 "about the versions of Ubuntu it supports, and Ubuntu upgrades can fail if "
@@ -1189,11 +1189,11 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:391
+#: ../DistUpgrade/DistUpgradeQuirks.py:429
 msgid "Connection to the Snap Store failed"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:392
+#: ../DistUpgrade/DistUpgradeQuirks.py:430
 msgid ""
 "You have the package lxd installed but your system is unable to reach the "
 "Snap Store. lxd is now provided via a snap and the release upgrade will fail "
@@ -1258,7 +1258,7 @@ msgstr ""
 msgid "If needed, you can revert to your previous "
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:487
+#: ../DistUpgrade/DistUpgradeQuirks.py:525
 #, python-format
 msgid "removing snap %s"
 msgstr "выдаленне snap-пакета %s"
@@ -1320,32 +1320,32 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:1924
+#: ../DistUpgrade/DistUpgradeQuirks.py:1932
 #, python-brace-format
 msgid "Sorry, cannot upgrade this system to {version}"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:1273
+#: ../DistUpgrade/DistUpgradeQuirks.py:1389
 msgid ""
 "Upgrades for desktop systems running TPM FDE are not currently supported. "
 "Please see https://launchpad.net/bugs/2065229 for more information."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:2031
+#: ../DistUpgrade/DistUpgradeQuirks.py:2039
 msgid "Cannot upgrade system with unmerged /usr"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:2034
+#: ../DistUpgrade/DistUpgradeQuirks.py:2042
 msgid ""
 "Please install the usrmerge package to fix this, and then try the upgrade "
 "again."
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:2076
+#: ../DistUpgrade/DistUpgradeQuirks.py:2084
 msgid "Unable to upgrade to Ubuntu 24.04 LTS"
 msgstr ""
 
-#: ../DistUpgrade/DistUpgradeQuirks.py:2079
+#: ../DistUpgrade/DistUpgradeQuirks.py:2087
 msgid ""
 "Currently, you have RabbitMQ server installed, which is not directly "
 "upgradable to the newer version. Upgrading may prevent the server from "
